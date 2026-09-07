@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 2 · Palp. Crânienne</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(2);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🖐️</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 2e Année</h1>
+      <p>Palp. Crânienne — IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="index.html">← Catégories</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><strong>Palp. Crânienne</strong> <span id="crumbSub">› 📖 Introduction</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="palp-cran-intro" onclick="showSub('palp-cran-intro')">📖 Introduction</button><button type="button" class="nav-tab" data-sub="palp-cran-occiput" onclick="showSub('palp-cran-occiput')">🔵 Occiput</button><button type="button" class="nav-tab" data-sub="palp-cran-parietal" onclick="showSub('palp-cran-parietal')">🟦 Pariétal</button><button type="button" class="nav-tab" data-sub="palp-cran-frontal" onclick="showSub('palp-cran-frontal')">🟨 Frontal</button><button type="button" class="nav-tab" data-sub="palp-cran-temporal" onclick="showSub('palp-cran-temporal')">🟧 Temporal</button><button type="button" class="nav-tab" data-sub="palp-cran-sphenoide" onclick="showSub('palp-cran-sphenoide')">⭐ Sphénoïde</button><button type="button" class="nav-tab" data-sub="palp-cran-zygomatique" onclick="showSub('palp-cran-zygomatique')">🟪 Zygomatique</button><button type="button" class="nav-tab" data-sub="palp-cran-maxillaire" onclick="showSub('palp-cran-maxillaire')">🔺 Maxillaire</button><button type="button" class="nav-tab" data-sub="palp-cran-palatin" onclick="showSub('palp-cran-palatin')">🔶 Palatin</button><button type="button" class="nav-tab" data-sub="palp-cran-vomer" onclick="showSub('palp-cran-vomer')">🔷 Vomer</button><button type="button" class="nav-tab" data-sub="palp-cran-mandibule" onclick="showSub('palp-cran-mandibule')">🔻 Mandibule</button><button type="button" class="nav-tab" data-sub="palp-cran-muscles" onclick="showSub('palp-cran-muscles')">💪 Muscles masticateurs</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="palp-cran-intro" style="display:block;">
+<div class="section-title">Anatomie Palpatoire Crânienne — Points Crâniométriques &amp; Généralités · Chap. 1</div>
+<div class="section-sub">Points crâniométriques · Neurocrâne · Viscérocrâne · Base du crâne — IEOQ</div>
+<div class="test-section-title">📖 Le Crâne — Généralités</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">💀</div>
+<div class="card-title">Structure du crâne</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:16px;margin-bottom:14px;">
+<div class="info-box teal">
+<strong>Neurocrâne (8 os)</strong><br/>
+<em>4 os impairs médians :</em> Occipital · Sphénoïde · Ethmoïde · Frontal<br/>
+<em>4 os pairs latéraux :</em> 2 Pariétaux · 2 Temporaux<br/><br/>
+<em>Voûte (calvaria) :</em> origine membraneuse, os plats réunis par sutures<br/>
+<em>Base :</em> origine cartilagineuse
+        </div>
+<div class="info-box navy">
+<strong>Viscérocrâne / Crâne facial (14 os)</strong><br/>
+<em>12 os pairs latéraux :</em> 2 Maxillaires · 2 Palatins · 2 Zygomatiques · 2 Lacrymaux · 2 Nasaux · 2 Cornets inférieurs<br/>
+<em>2 os impairs médians :</em> Vomer · Mandibule<br/><br/>
+<em>+ 3 paires d'osselets :</em> Malleus · Incus · Stapès
+        </div>
+</div>
+<div class="path-card">
+<h4>3 étages de la base du crâne</h4>
+<ul>
+<li><strong>Fosse crânienne antérieure :</strong> os frontal + lame criblée de l'ethmoïde + petites ailes et partie antérieure du sphénoïde</li>
+<li><strong>Fosse crânienne moyenne :</strong> corps du sphénoïde + grandes ailes du sphénoïde + écaille et face antéro-supérieure du rocher des temporaux</li>
+<li><strong>Fosse crânienne postérieure :</strong> dos de la selle turcique + partie pétreuse et mastoïdienne des temporaux + angle mastoïdien des pariétaux + os occipital</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon amber">📍</div>
+<div class="card-title">Points crâniométriques — Repères essentiels</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:12px;">
+<div class="info-box teal">
+<strong>Astérion</strong><br/>
+          Jonction des sutures lambdoïde, occipito-mastoïdienne et pariéto-mastoïdienne. Jonction sinus transverse/sigmoïde dans 87% des cas.
+        </div>
+<div class="info-box navy">
+<strong>Bregma</strong><br/>
+          Point médian à la jonction des sutures <strong>coronale et sagittale</strong>. Fontanelle antérieure chez le nouveau-né (losange, 3-6 cm, fermeture en 2e année de vie).
+        </div>
+<div class="info-box teal">
+<strong>Lambda</strong><br/>
+          Point médian à la jonction des sutures <strong>sagittale et lambdoïde</strong>. Fontanelle postérieure chez le nouveau-né (triangle ≈ 1 cm, fermeture vers 6 mois).
+        </div>
+<div class="info-box navy">
+<strong>Ptérion</strong><br/>
+          Jonction de la grande aile du sphénoïde + écaille temporale + face temporale du frontal + angle sphénoïdal du pariétal. Zone osseuse la plus fine de la boîte crânienne (toute la vie). ≈ 3-4 cm en arrière du processus zygomatique du frontal.
+        </div>
+<div class="info-box teal">
+<strong>Inion</strong><br/>
+          Sommet de la protubérance occipitale externe (POE). Repère pour le nerf grand occipital (nerf d'Arnold) = 2 travers de doigts en dehors de l'inion → névralgie en hémi-casque.
+        </div>
+<div class="info-box navy">
+<strong>Glabelle &amp; Ophryon</strong><br/>
+<em>Glabelle :</em> point le plus saillant de la ligne médiane du frontal, ≈ 1 cm au-dessus du bord nasal.<br/>
+<em>Ophryon :</em> point médian intersourcillier. Densité intra-osseuse normalement moindre qu'à la glabelle.
+        </div>
+<div class="info-box teal">
+<strong>Nasion</strong><br/>
+          Point médian à la jonction des sutures naso-frontale et internasale.
+        </div>
+<div class="info-box navy">
+<strong>Entomion &amp; Stéphanion</strong><br/>
+<em>Entomion :</em> jonction sutures pariéto-mastoïdienne et squameuse = sommet de l'angle mastoïdien du pariétal.<br/>
+<em>Stéphanion :</em> croisement suture coronale × ligne temporale supérieure = ligne d'insertion du fascia temporal.
+        </div>
+<div class="info-box teal">
+<strong>Gnathion &amp; Gonion</strong><br/>
+<em>Gnathion :</em> point le plus bas sur la ligne médiane de la mandibule.<br/>
+<em>Gonion :</em> point le plus latéral et bas de l'angle de la mandibule.
+        </div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="palp-cran-occiput" style="display:none;">
+<div class="section-title">Anatomie Palpatoire Crânienne — Occiput · Chap. 2</div>
+<div class="section-sub">Protubérance occipitale · Lignes nucales · Sutures · Angles — IEOQ</div>
+<div class="test-section-title">🦴 L'Os Occipital</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">📋</div>
+<div class="card-title">Généralités &amp; Rapports</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:16px;margin-bottom:14px;">
+<div class="info-box teal">
+<strong>Os impair, médian, base du crâne (étage postérieur)</strong><br/>
+          Composé de : écaille · masses latérales · corps.<br/>
+<em>En avant :</em> sphénoïde (symphyse sphéno-basilaire = SSB)<br/>
+<em>Latéralement :</em> os temporaux et os pariétaux
+        </div>
+<div class="info-box navy">
+<strong>Face exocrânienne de l'écaille</strong><br/>
+          • Protubérance occipitale externe (POE = inion) → insertion ligament nucal<br/>
+          • Lignes nucales : suprêmes, supérieures, inférieures<br/>
+          • Crête occipitale externe → foramen magnum<br/>
+          • Condyles occipitaux (latéralement au foramen magnum)
+        </div>
+</div>
+<div class="path-card">
+<h4>Insertions musculaires</h4>
+<ul>
+<li><strong>Ligne nucale suprême :</strong> muscle occipito-frontal</li>
+<li><strong>Ligne nucale supérieure :</strong> trapèze (en dedans) + SCM (en dehors)</li>
+<li><strong>Ligament nucal :</strong> de la POE jusqu'à l'épineuse de C7 (prolongement du ligament supra-épineux)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">👋</div>
+<div class="card-title">Étapes palpatoires</div>
+</div>
+<div class="card-body">
+<div class="path-card">
+<h4>Patient assis (praticien derrière) ou décubitus ventral</h4>
+<ul>
+<li>Palper les sutures lambdoïdes et mastoïdiennes</li>
+<li><strong>POE (inion) :</strong> demander au patient de pousser la tête vers l'arrière → contraction des trapèzes → se placer dans le sillon formé, tout en haut</li>
+<li><strong>Nerf d'Arnold :</strong> 2 travers de doigts en dehors de l'inion → émergence du 2e nerf cervical (nerf grand occipital) → névralgie en hémi-casque si atteint</li>
+<li>De chaque côté : lignes nuchales supérieures et inférieures → la supérieure se dirige vers la mastoïde</li>
+<li>Depuis la POE, descendre vers le foramen magnum le long de la crête occipitale externe</li>
+<li>Remonter vers le <strong>lambda</strong> : légère dépression = fontanelle lambdoïde (vestiges)</li>
+</ul>
+</div>
+<div class="info-box navy">
+<strong>Sutures &amp; Angles</strong><br/>
+        • <em>Suture occipito-mastoïdienne :</em> palpation possible uniquement sur la partie verticale. Rapport étroit avec le foramen jugulaire (ne pas comprimer).<br/>
+        • <em>Astérion :</em> à la jonction des sutures lambdoïde, occipito-mastoïdienne et pariéto-mastoïdienne. Chez le nourrisson = fontanelle mastoïdienne.<br/>
+        • <em>Angle latéral :</em> plus grande résilience à cet endroit. Os pariétal plus régulier, occiput plus résilient que temporal.
+      </div>
+</div>
+</div>
+</section>
+<section class="section" id="palp-cran-parietal" style="display:none;">
+<div class="section-title">Anatomie Palpatoire Crânienne — Pariétal · Chap. 3</div>
+<div class="section-sub">Face externe · 4 bords · 4 angles · Fontanelles · Sutures — IEOQ</div>
+<div class="test-section-title">🟦 L'Os Pariétal</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">📋</div>
+<div class="card-title">Généralités &amp; Fontanelles</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:16px;margin-bottom:14px;">
+<div class="info-box teal">
+<strong>Structure</strong><br/>
+          Os plat de la voûte crânienne. Complètement accessible à la palpation. Structure en sandwich : <em>table externe + diploë (os spongieux) + table interne</em>.<br/>
+          Suture sagittale (entre les 2 pariétaux) + suture coronale (avec frontal) + suture lambdoïde (avec occipital).
+        </div>
+<div class="info-box navy">
+<strong>Fontanelles (angles des pariétaux)</strong><br/>
+          6 fontanelles en tout (4 angles × 2 pariétaux).<br/>
+          • <em>Antérieure (bregmatique) :</em> losange 3-6 cm, fermeture en 2e année<br/>
+          • <em>Postérieure (lambdatique) :</em> triangle ≈ 1 cm, fermeture vers 6 mois<br/>
+          • <em>Sphénoïdales :</em> fermeture vers 6 mois<br/>
+          • <em>Mastoïdiennes :</em> fermeture vers 1 an
+        </div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">👋</div>
+<div class="card-title">Palpation — Face externe &amp; 4 Bords</div>
+</div>
+<div class="card-body">
+<div class="path-card">
+<h4>1. Face externe</h4>
+<ul>
+<li>Palper les reliefs de la face externe (voûte crânienne) — symétrie, bosses, méplats, convexité</li>
+<li>Évaluer texture tissulaire, galéa aponévrotique (adhérence, fibrose)</li>
+<li>Peau du cuir chevelu : la plus épaisse du corps, très adhérente au fascia superficiel</li>
+<li>Parties latérales (sous les lignes temporales supérieures) : muscle temporal en forme d'éventail (insertions : face temporale du frontal, grande aile du sphénoïde, écaille temporale)</li>
+</ul>
+</div>
+<div class="grid-2" style="gap:12px;margin-top:14px;">
+<div class="path-card">
+<h4>2. Les 4 Bords</h4>
+<ul>
+<li><strong>Sagittal (supérieur) :</strong> le plus long, très épais, dentelé, convexe vers le haut → suture sagittale</li>
+<li><strong>Frontal (antérieur) :</strong> moins épais, légère courbure à concavité antérieure → suture coronale. 2/3 sup. : biseau table externe ; 1/3 inf. : biseau table interne</li>
+<li><strong>Squameux (inférieur) :</strong> le plus court, biseau table externe. 3 segments : sphéno-pariétal (constitution ptérion), squameux (avec temporal), pariéto-mastoïdien</li>
+<li><strong>Occipital (postérieur) :</strong> → suture lambdoïde</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>3. Les 4 Angles</h4>
+<ul>
+<li><strong>Antérieur (frontal) :</strong> bregma</li>
+<li><strong>Postérieur (occipital) :</strong> lambda</li>
+<li><strong>Antéro-inférieur (sphénoïdal) :</strong> ptérion (fontanelle sphénoïdale)</li>
+<li><strong>Postéro-inférieur (mastoïdien) :</strong> astérion (fontanelle mastoïdienne)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="palp-cran-frontal" style="display:none;">
+<div class="section-title">Anatomie Palpatoire Crânienne — Frontal · Chap. 4</div>
+<div class="section-sub">Écaille · Partie orbito-nasale · Sutures · Glabelle &amp; Ophryon — IEOQ</div>
+<div class="test-section-title">🟨 L'Os Frontal</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">👋</div>
+<div class="card-title">Palpation de l'écaille</div>
+</div>
+<div class="card-body">
+<div class="path-card" style="margin-bottom:14px;">
+<h4>Étapes palpatoires — L'écaille</h4>
+<ul>
+<li>Palper les reliefs de l'écaille (globalement convexe) → différences entre les 2 côtés</li>
+<li>L'écaille est-elle plus antérieure d'un côté ? Différence de convexité ?</li>
+<li>Rechercher les <strong>bosses frontales</strong> (presque au centre de chaque moitié de l'écaille)</li>
+<li>Rechercher la <strong>suture métopique</strong> sur la ligne médiane (ou ses vestiges chez l'adulte)</li>
+<li>Sur les côtés : palper les <strong>processus zygomatiques</strong> du frontal</li>
+<li><strong>Bregma :</strong> légère dépression souvent perceptible à la jonction de la suture coronale et sagittale</li>
+<li><strong>Stéphanion :</strong> réunion de la ligne temporale du frontal avec la suture coronale = ligne d'insertion du fascia temporal</li>
+</ul>
+</div>
+<div class="info-box teal">
+<strong>Biseau sutural</strong><br/>
+        De chaque côté du bregma : biseau <em>table interne</em> (frontal recouvre le pariétal). Au stéphanion : inversion → biseau <em>table externe</em> (pariétal recouvre le frontal).
+      </div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">🔬</div>
+<div class="card-title">Partie orbito-nasale</div>
+</div>
+<div class="card-body">
+<div class="path-card">
+<h4>Étapes palpatoires — Région orbito-nasale</h4>
+<ul>
+<li>À partir de la glabelle (≈ 1 cm au-dessus du bord nasal) : déplacer les index de part et d'autre → <strong>arcades sourcilières</strong></li>
+<li><em>Flexion-rotation externe :</em> arcades plus horizontales, semblent plus longues</li>
+<li><em>Extension-rotation interne :</em> arcades plus convexes, semblent moins longues</li>
+<li>Palper la <strong>crête orbito-nasale</strong> → bord supra-orbitaire (rebord supérieur de l'orbite)</li>
+<li>Bord nasal : suture fronto-nasale (médiale) + suture fronto-maxillaire (latérale)</li>
+<li><strong>Incisure supra-orbitaire :</strong> à l'union du tiers médial et des 2/3 latéraux du bord supra-orbitaire → vaisseaux et nerf supra-orbitaires → zone sensible</li>
+<li>Latéralement : processus zygomatique du frontal → limite inférieure + suture fronto-zygomatique</li>
+</ul>
+</div>
+<div class="info-box navy">
+<strong>Note clinique</strong><br/>
+        La face temporale du frontal (derrière les processus zygomatiques) : insertion des fibres les plus verticales du muscle temporal (fortement impliquées dans la mastication). Asymétrie → mastication unilatérale possible.<br/>
+        La faux du cerveau s'insère sur la face endocrânienne de la suture métopique.
+      </div>
+</div>
+</div>
+</section>
+<section class="section" id="palp-cran-temporal" style="display:none;">
+<div class="section-title">Anatomie Palpatoire Crânienne — Temporal · Chap. 6</div>
+<div class="section-sub">Écaille · Partie mastoïdienne · Processus zygomatique · ATM · Pore acoustique — IEOQ</div>
+<div class="test-section-title">🟧 L'Os Temporal</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">📋</div>
+<div class="card-title">Structure &amp; Sutures</div>
+</div>
+<div class="card-body">
+<div class="info-box teal">
+<strong>Parties palpables :</strong> écaille · partie mastoïdienne · processus zygomatique · pore acoustique externe · muscles temporal et masséter · sutures squameuse, pariéto-mastoïdienne, occipito-mastoïdienne, temporo-zygomatique et ATM.<br/>
+<em>Non palpable :</em> partie pétreuse (profonde).
+      </div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">👋</div>
+<div class="card-title">Palpation systématique</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:16px;margin-bottom:14px;">
+<div class="path-card">
+<h4>1. L'écaille</h4>
+<ul>
+<li>Palper les reliefs de l'écaille temporale au-dessus des auricules → différences entre les 2 côtés</li>
+<li><em>Rotation externe :</em> écaille plus antérieure, plus convexe, plus latérale/frontalisée</li>
+<li><em>Rotation interne :</em> écaille plus plate, plus médiale/sagittalisée</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>2. Partie mastoïdienne</h4>
+<ul>
+<li>Palper sous les auricules, vers l'arrière et vers le bas → portion mastoïdienne</li>
+<li>Os plus proche de la surface cutanée qu'au niveau de l'écaille</li>
+<li><strong>Crête supra-mastoïdienne :</strong> bord supérieur des parties mastoïdiennes → insertion du fascia temporal</li>
+<li>Le côté le plus haut = temporal en rotation externe</li>
+</ul>
+</div>
+</div>
+<div class="path-card" style="margin-bottom:14px;">
+<h4>3. Insertions musculaires mastoïdiennes</h4>
+<ul>
+<li><strong>SCM :</strong> inclinaison homolatérale + rotation controlatérale pour le solliciter. Insertion : manubrium sternal + clavicule (vérifier si déséquilibre)</li>
+<li><strong>Splénius de la tête :</strong> inclinaison + rotation ipsilatérales pour le solliciter. Insertion : C7 et 3-4 premières vertèbres thoraciques (vérifier si déséquilibre)</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>4. Processus zygomatique &amp; ATM</h4>
+<ul>
+<li>Placer la pulpe de l'index et du médius juste en avant du tragus et du pore acoustique externe → au niveau de l'ATM</li>
+<li>Demander d'ouvrir doucement la bouche → le condyle mandibulaire se déplace vers l'avant sous la face inférieure du processus zygomatique</li>
+<li><em>Bouche fermée :</em> condyle dans la fosse mandibulaire ; <em>bouche ouverte :</em> condyle sur le tubercule articulaire (séparé par un ménisque)</li>
+<li>Palpation délicate du bord latéral de la fosse mandibulaire et du tubercule articulaire → souvent sensible</li>
+<li>Bord supérieur du processus zygomatique (mince, tranchant) : insertion du fascia temporal</li>
+<li>Bord inférieur (plus épais) : insertion du faisceau moyen du masséter</li>
+<li>Suture temporo-zygomatique : léger décrochage à la palpation (biseautée aux dépens du bord inférieur → processus zygomatique du temporal recouvre le processus temporal du zygomatique)</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="palp-cran-sphenoide" style="display:none;">
+<div class="section-title">Anatomie Palpatoire Crânienne — Sphénoïde · Chap. 7</div>
+<div class="section-sub">Grande aile · Processus ptérygoïde · Ptérion · Fosse temporale — IEOQ</div>
+<div class="test-section-title">⭐ L'Os Sphénoïde</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">📋</div>
+<div class="card-title">Parties palpables</div>
+</div>
+<div class="card-body">
+<div class="info-box teal">
+<strong>Parties directement palpables :</strong><br/>
+        • Face latérale de la grande aile du sphénoïde (dans la fosse temporale)<br/>
+        • Extrémité caudale de la lame latérale du processus ptérygoïde<br/>
+        • Muscles qui s'y insèrent<br/><br/>
+<strong>La fosse temporale</strong> est constituée par 5 os : frontal + grande aile du sphénoïde + pariétal + partie squameuse du temporal + zygomatique. La face latérale de la grande aile du sphénoïde en forme le fond.
+      </div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">👋</div>
+<div class="card-title">Palpation de la grande aile</div>
+</div>
+<div class="card-body">
+<div class="path-card">
+<h4>Technique — Patient en décubitus dorsal, praticien à la tête</h4>
+<ul>
+<li>Observer l'aspect de la fosse temporale. L'obliquité des lignes de cils (yeux fermés) reflète souvent la position de la grande aile.</li>
+<li>Placer la pulpe des index ou médius de chaque côté au niveau des fosses temporales</li>
+<li>Palper le muscle temporal qui remplit la fosse temporale → différences droite/gauche reflètent souvent des dysfonctions orofaciales</li>
+<li>Repérer la grande aile : zone osseuse présentant la plus grande <em>flexibilité intra-osseuse</em> (zone la plus fine de la boîte crânienne)</li>
+<li>Le bord apical de la grande aile + angle antéro-inférieur du pariétal = suture <strong>sphéno-pariétale</strong> = ligne horizontale d'un H (71,3% des cas ; aussi K, I, W ou X)</li>
+<li><strong>Ptérion :</strong> ≈ 3-4 cm en arrière du processus zygomatique du frontal. Fontanelle sphénoïdale du nourrisson (fermeture vers 6 mois)</li>
+<li>Repérer les 2 grandes ailes successivement (pas forcément symétriques)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon amber">🫦</div>
+<div class="card-title">Palpation intra-orale du processus ptérygoïde</div>
+</div>
+<div class="card-body">
+<div class="path-card">
+<h4>Lame latérale du processus ptérygoïde</h4>
+<ul>
+<li>Insérer le 5e doigt d'une main gantée entre la lèvre supérieure et la gencive du patient</li>
+<li>Longer le bord alvéolaire du maxillaire en direction postérieure</li>
+<li>Remonter légèrement sous le bord latéral de l'os maxillaire</li>
+<li>Déplacer postérieurement jusqu'à sentir le <strong>processus ptérygoïde</strong></li>
+<li>Comparer avec l'autre côté</li>
+</ul>
+</div>
+<div class="path-card" style="margin-top:12px;">
+<h4>Hamulus ptérygoïdien</h4>
+<ul>
+<li>5e doigt ganté sur la surface palatine du bord alvéolaire du maxillaire</li>
+<li>Déplacer en arrière jusqu'à sentir l'<strong>hamulus</strong></li>
+<li>⚠️ Ces 2 palpations se font avec beaucoup de prudence</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="palp-cran-zygomatique" style="display:none;">
+<div class="section-title">Anatomie Palpatoire Crânienne — Zygomatique · Chap. 8</div>
+<div class="section-sub">Face cutanée · 4 bords · 3 processus · Rôle d'ajustement — IEOQ</div>
+<div class="test-section-title">🟪 L'Os Zygomatique</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">👋</div>
+<div class="card-title">Palpation — Face cutanée &amp; 4 Bords</div>
+</div>
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:14px;">
+<strong>Os facilement accessible.</strong> Constitue la portion la plus saillante de la joue. Présente de nombreuses articulations pour un os relativement petit → site d'ajustement entre viscérocrâne et neurocrâne.
+      </div>
+<div class="grid-2" style="gap:12px;">
+<div class="path-card">
+<h4>Face cutanée (jugale)</h4>
+<ul>
+<li>Lisse, convexe, regarde en dehors</li>
+<li>Insertions : <em>masséter</em> (bord postéro-inférieur) + <em>grand zygomatique</em> (partie moyenne-latérale) + <em>petit zygomatique</em> (en avant du grand)</li>
+<li>Toute dysfonction modifie la texture tissulaire</li>
+<li><em>Rotation externe :</em> bord orbitaire plus éversé, bord massétérin effacé, pommette moins proéminente</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Les 4 Bords</h4>
+<ul>
+<li><strong>Orbitaire :</strong> concave, regard haut/dedans, inféro-latéral du rebord orbitaire → normalement épais et mousse</li>
+<li><strong>Temporal :</strong> forme de S, convexe en haut/concave en bas → insertion aponévrose temporale sur toute sa longueur</li>
+<li><strong>Maxillaire :</strong> oblique en bas et arrière, plus rugueux → suture maxillo-zygomatique</li>
+<li><strong>Massétérin :</strong> oblique en haut et arrière, épais → insertion muscle masséter sur toute sa longueur</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">🔗</div>
+<div class="card-title">Processus &amp; Rôle biomécanique</div>
+</div>
+<div class="card-body">
+<div class="path-card">
+<h4>Les 3 Processus</h4>
+<ul>
+<li><strong>Processus frontal :</strong> s'articule avec le processus zygomatique du frontal → suture fronto-zygomatique</li>
+<li><strong>Processus temporal :</strong> s'articule avec le processus zygomatique du temporal → suture temporo-zygomatique</li>
+<li><strong>Processus maxillaire :</strong> s'articule avec le processus zygomatique du maxillaire → suture maxillo-zygomatique</li>
+</ul>
+</div>
+<div class="info-box teal" style="margin-top:14px;">
+<strong>Rôle clinique :</strong> Le zygomatique ajuste continuellement les forces transmises entre le sphénoïde et le maxillaire, et entre le temporal et le maxillaire. En normalisant sa fonction, on facilite les ajustements entre viscérocrâne et neurocrâne. La fissure orbitaire inférieure offre également un site de jeu adaptatif.
+      </div>
+</div>
+</div>
+</section>
+<section class="section" id="palp-cran-maxillaire" style="display:none;">
+<div class="section-title">Anatomie Palpatoire Crânienne — Maxillaire · Chap. 9</div>
+<div class="section-sub">Observation · Palpation extra-buccale · Palpation intra-buccale — IEOQ</div>
+<div class="test-section-title">🔺 L'Os Maxillaire</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">👁️</div>
+<div class="card-title">Observation préalable du crâne et du visage</div>
+</div>
+<div class="card-body">
+<div class="path-card">
+<h4>Éléments d'observation</h4>
+<ul>
+<li><em>Type morphologique :</em> index céphalique = diamètre transverse / diamètre sagittal × 100. Brachycéphale (&gt;80) : structures semblent plus larges. Dolichocéphale (&lt;75) : structures semblent plus étroites.</li>
+<li>3 étages du visage : supérieur (frontal, au-dessus de l'ophryon) · moyen (nasal, de l'ophryon au sous-nasal) · inférieur (buccal, du sous-nasal au gnathion)</li>
+<li>Largeur de l'orifice piriforme = distance intercanine</li>
+<li>Sillons naso-labiaux : profondeur augmentée → rotation externe ipsilatérale ; profondeur diminuée → rotation interne</li>
+<li>Lèvre supérieure : du côté rotation externe → plus large ; rotation interne → plus étroite</li>
+<li>Philtrum et ses berges : s'horizontalise = rotation externe ; se verticalise = rotation interne</li>
+<li>Vérifier l'occlusion (très souvent responsable de dysfonction maxillaire)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">👋</div>
+<div class="card-title">Palpation extra-buccale &amp; intra-buccale</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:16px;margin-bottom:14px;">
+<div class="path-card">
+<h4>Extra-buccale</h4>
+<ul>
+<li>Pulpe des index, médius et annulaires sur les faces des maxillaires → texture tissulaire</li>
+<li><strong>Foramen infra-orbitaire :</strong> 8 mm sous le rebord infra-orbitaire, ≈ 3 cm en dehors de la ligne médiane → zone très sensible (sinusite, névralgie trigéminale)</li>
+<li>Comparer : convexité des faces antérieures, symétrie des bords orbitaires, processus frontaux et zygomatiques</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Intra-buccale</h4>
+<ul>
+<li>5e doigt ganté au-dessus du bord alvéolaire de chaque maxillaire</li>
+<li>Latéralement : concavité du processus zygomatique</li>
+<li><strong>Tubérosités maxillaires :</strong> sous les pommettes, 5e doigt le long du bord alvéolaire vers l'arrière</li>
+<li>Face inférieure du processus palatin (apophyse palatine) : hauteur, largeur, concavité</li>
+<li>Suture palatine intermaxillaire : toute proéminence (torus palatinus) = dysfonction vomérienne possible</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="palp-cran-palatin" style="display:none;">
+<div class="section-title">Anatomie Palpatoire Crânienne — Palatin · Chap. 11</div>
+<div class="section-sub">Face palatine · Suture palatine transverse · Dysfonctions — IEOQ</div>
+<div class="test-section-title">🔶 L'Os Palatin</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">📋</div>
+<div class="card-title">Seule partie palpable : la face palatine</div>
+</div>
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:14px;">
+        La face palatine est la face inférieure de l'os palatin, accessible par voie intra-orale. C'est la <em>lame horizontale</em> de l'os palatin.<br/>
+        Les désalignements des os palatins sont habituellement secondaires à ceux des maxillaires et du sphénoïde.
+      </div>
+<div class="path-card">
+<h4>Technique de palpation</h4>
+<ul>
+<li>Sujet en décubitus dorsal. Praticien assis à la tête.</li>
+<li>Demander d'ouvrir la bouche confortablement.</li>
+<li>Introduire la pulpe de l'index ou de l'auriculaire (main gantée) dans la cavité orale → placer la pulpe sur la face inférieure du <em>processus palatin du maxillaire</em></li>
+<li>Déplacer le doigt vers l'arrière → noter toute <strong>différence de niveau</strong> en passant au-dessus de la <strong>suture palatine transverse</strong></li>
+<li>Suture palatine transverse : ≈ à la réunion des 2/3 antérieurs et du 1/3 postérieur du palais osseux → séparation entre bord postérieur du processus palatin du maxillaire et bord antérieur de la lame horizontale du palatin. Le palatin <em>recouvre</em> le maxillaire à ce niveau.</li>
+<li>Apprécier la « continuité » entre maxillaire et palatin → toute différence de hauteur (uni- ou bilatérale) = dysfonction</li>
+<li>Comparer les 2 palatins : hauteur, largeur, concavité</li>
+<li>Suture palatine médiane : toute proéminence exagérée</li>
+<li>Limite postérieure du palais osseux → se continue par le palais mou (sa fonction peut être influencée par asymétrie des palatins)</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="palp-cran-vomer" style="display:none;">
+<div class="section-title">Anatomie Palpatoire Crânienne — Vomer &amp; Os Nasaux · Chap. 12</div>
+<div class="section-sub">Palpation intra-orale du vomer · Face antérieure des os nasaux — IEOQ</div>
+<div class="test-section-title">🔷 Le Vomer</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">📋</div>
+<div class="card-title">Palpation intra-orale du vomer</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:16px;margin-bottom:14px;">
+<div class="info-box teal">
+<strong>Articulations du vomer</strong><br/>
+          • En bas : maxillaires supérieurs et palatins (crête nasale)<br/>
+          • En haut : sphénoïde et ethmoïde<br/>
+          Os unique et central. Palpation directe impossible. Seul le bord inférieur est accessible.
+        </div>
+<div class="info-box navy">
+<strong>Crête nasale</strong><br/>
+          Formée dans les 2/3 antérieurs du palais osseux par l'union des processus palatins des maxillaires, et dans le 1/3 postérieur par les lames horizontales des palatins. C'est sur cette crête que s'articule le bord inférieur du vomer.
+        </div>
+</div>
+<div class="path-card">
+<h4>Technique de palpation</h4>
+<ul>
+<li>Patient en décubitus dorsal, praticien assis au côté de la table à hauteur de la tête</li>
+<li>Demander d'ouvrir confortablement la bouche</li>
+<li>5e doigt ou index ganté → orienter la pulpe vers la surface palatine</li>
+<li>D'avant en arrière, promener le doigt sur la <strong>suture palatine intermaxillaire</strong></li>
+<li>Toute proéminence → <strong>torus palatinus</strong> = dysfonction vomérienne</li>
+<li>Se demander : quelle prise ostéopathique utiliser pour manipuler le vomer ?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon amber">👃</div>
+<div class="card-title">Palpation des Os Nasaux</div>
+</div>
+<div class="card-body">
+<div class="path-card">
+<h4>Face antérieure (très facilement accessible)</h4>
+<ul>
+<li>Promener délicatement la pulpe des index sur la face antérieure des os nasaux → texture tissulaire</li>
+<li>Observer leur position dans l'espace → toute asymétrie</li>
+<li>Définir les 4 bords de l'os nasal de chaque côté → toute saillie ou aspérité = dysfonction de la suture correspondante</li>
+<li>Palper délicatement les <strong>cartilages latéraux</strong> et les <strong>cartilages des ailes du nez</strong> → asymétrie, déviation latérale</li>
+<li>Palper le bord antéro-supérieur du <strong>cartilage septal</strong> au-dessous des os nasaux → son alignement</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="palp-cran-mandibule" style="display:none;">
+<div class="section-title">Anatomie Palpatoire Crânienne — Mandibule · Chap. 10</div>
+<div class="section-sub">Corps · Branches · Condyles · Articulation temporo-mandibulaire — IEOQ</div>
+<div class="test-section-title">🔻 La Mandibule</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">📋</div>
+<div class="card-title">Précautions &amp; Observation préalable</div>
+</div>
+<div class="card-body">
+<div class="info-box amber">
+<strong>Recommandation clinique :</strong> Avant de normaliser la mandibule, vérifier et traiter les dysfonctions vertébrales. Observer : inclinaison/rotation/flexion-extension exagérée du rachis cervical, tension de la musculature cervicale (postérieure, latérale, antérieure/submandibulaire).
+      </div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">👋</div>
+<div class="card-title">Palpation du corps</div>
+</div>
+<div class="card-body">
+<div class="path-card">
+<h4>Étapes — Corps mandibulaire</h4>
+<ul>
+<li>Observer les expressions faciales + évaluer la musculature orofaciale</li>
+<li>Vérifier l'alignement de la ligne médiane : suture métopique + nez + symphyse mandibulaire → doivent être alignés</li>
+<li>Vérifier l'<strong>occlusion</strong> (trop souvent responsable de dysfonction mandibulaire)</li>
+<li>Palper le <strong>menton et la symphyse mandibulaire</strong> sur la ligne médiane → différence entre les 2 hémi-mandibules (parfois un côté plus saillant)</li>
+<li>Déplacer la pulpe des doigts de chaque côté du corps → aspect et tension des muscles (notamment <strong>buccinateurs</strong> → tonicité des joues)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon amber">🦷</div>
+<div class="card-title">Palpation des branches &amp; condyles</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:16px;margin-bottom:14px;">
+<div class="path-card">
+<h4>Les branches</h4>
+<ul>
+<li>Palper les faces latérales des branches → muscles masséters</li>
+<li>Toute asymétrie = fonction masticatrice asymétrique (mastication unilatérale en général)</li>
+<li>Palper les angles de la mandibule (bord inférieur + bord postérieur) → angulation et asymétrie</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Les condyles (processus condylaires)</h4>
+<ul>
+<li>Longer les bords postérieurs des branches jusqu'au niveau du col et du processus condylaire</li>
+<li>Palpation très subtile → incohérence entre position des condyles et des branches</li>
+<li>Des torsions intra-osseuses peuvent exister (souvent entre processus condylaire et col)</li>
+<li>Palper le bord latéral de la fosse mandibulaire et le tubercule articulaire sur l'os temporal → comparer les 2 côtés</li>
+<li>Évaluer le rapport du processus condylaire dans la fosse mandibulaire</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="palp-cran-muscles" style="display:none;">
+<div class="section-title">Anatomie Palpatoire Crânienne — Muscles Masticateurs · Chap. 11</div>
+<div class="section-sub">Temporal · Masséter · Ptérygoïdiens médial et latéral — IEOQ</div>
+<div class="test-section-title">💪 Les Muscles Masticateurs</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">💪</div>
+<div class="card-title">Muscle Temporal</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:16px;margin-bottom:14px;">
+<div class="info-box teal">
+<strong>Insertions</strong><br/>
+<em>De :</em> fosse temporale (5 os : frontal, grande aile sphénoïde, pariétal, temporal, zygomatique) et fascia temporal<br/>
+<em>Au :</em> processus coronoïde + bord antérieur de la branche de la mandibule<br/>
+<em>Forme :</em> en éventail
+        </div>
+<div class="info-box navy">
+<strong>Actions</strong><br/>
+          • Élévation de la mandibule (fermeture)<br/>
+          • Fibres postérieures : rétropulsion<br/>
+          • Stabilisation de l'ATM<br/>
+<em>Palpation :</em> au-dessus de l'arcade zygomatique, dans la fosse temporale. Différences droite/gauche = dysfonctions orofaciales ou mastication unilatérale.
+        </div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">💪</div>
+<div class="card-title">Muscle Masséter</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:16px;margin-bottom:14px;">
+<div class="info-box teal">
+<strong>Insertions</strong><br/>
+<em>De :</em> arcade zygomatique (bord inférieur + face médiale)<br/>
+<em>Au :</em> face latérale de la branche montante + angle de la mandibule<br/>
+<em>3 faisceaux :</em> superficiel (bord inférieur arcade), moyen (bord inférieur processus zygomatique temporal), profond (face médiale processus zygomatique)
+        </div>
+<div class="info-box navy">
+<strong>Actions</strong><br/>
+          • Élévation de la mandibule (puissant)<br/>
+          • Propulsion (faisceau superficiel)<br/>
+<em>Palpation :</em> sous le bord inférieur du processus zygomatique (faisceau moyen = plus superficiel). Asymétrie = mastication unilatérale. Interroger sur les habitudes manducatrices.
+        </div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon amber">💪</div>
+<div class="card-title">Ptérygoïdiens médial et latéral</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:16px;margin-bottom:14px;">
+<div class="info-box teal">
+<strong>Ptérygoïdien médial</strong><br/>
+<em>De :</em> fosse ptérygoïde (lame médiale du processus ptérygoïde du sphénoïde) + tubérosité maxillaire<br/>
+<em>Au :</em> face médiale de l'angle mandibulaire (face interne)<br/>
+<em>Actions :</em> élévation, propulsion, diduction controlatérale<br/>
+<em>Palpation intra-orale :</em> difficile, face médiale de la branche montante
+        </div>
+<div class="info-box navy">
+<strong>Ptérygoïdien latéral</strong><br/>
+<em>De :</em> <em>Chef supérieur :</em> grande aile du sphénoïde (face infra-temporale) ; <em>Chef inférieur :</em> lame latérale du processus ptérygoïde<br/>
+<em>Au :</em> col de la mandibule + capsule et ménisque de l'ATM<br/>
+<em>Actions :</em> ouverture de la bouche, propulsion, diduction ipsilatérale. Seul muscle abaisseur de la mandibule avec les supra-hyoïdiens.<br/>
+<em>Note :</em> dysfonction fréquente en cas de bruxisme ou de dysfonction ATM
+        </div>
+</div>
+<div class="info-box amber">
+<strong>Importance clinique des muscles masticateurs</strong><br/>
+        Une dysfonction ATM ou un trouble occlusal entraîne souvent une asymétrie de tension de ces muscles, perceptible à la palpation. Évaluer la mastication unilatérale, le bruxisme, les parafonctions. Les fibres du temporal sont souvent asymétriques en présence de troubles occlusaux.
+      </div>
+</div>
+</div>
+</section>
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["palp-cran-intro", "palp-cran-occiput", "palp-cran-parietal", "palp-cran-frontal", "palp-cran-temporal", "palp-cran-sphenoide", "palp-cran-zygomatique", "palp-cran-maxillaire", "palp-cran-palatin", "palp-cran-vomer", "palp-cran-mandibule", "palp-cran-muscles"];
+  var SUB_LABELS_LOCAL = {"palp-cran-intro": "📖 Introduction", "palp-cran-occiput": "🔵 Occiput", "palp-cran-parietal": "🟦 Pariétal", "palp-cran-frontal": "🟨 Frontal", "palp-cran-temporal": "🟧 Temporal", "palp-cran-sphenoide": "⭐ Sphénoïde", "palp-cran-zygomatique": "🟪 Zygomatique", "palp-cran-maxillaire": "🔺 Maxillaire", "palp-cran-palatin": "🔶 Palatin", "palp-cran-vomer": "🔷 Vomer", "palp-cran-mandibule": "🔻 Mandibule", "palp-cran-muscles": "💪 Muscles masticateurs"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    if (initial) applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>

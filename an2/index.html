@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 2</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(2);</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f4ec;
+    --surface: #ffffff;
+    --surface-2: #efe9db;
+    --text: #221f1a;
+    --text-dim: #4a4238;
+    --text-muted: #857a67;
+    --accent: #2f6f63;
+    --accent-dark: #1d3f38;
+    --accent-soft: rgba(47,111,99,0.1);
+    --accent-soft-border: rgba(47,111,99,0.22);
+    --copper: #c07a3f;
+    --copper-soft: rgba(192,122,63,0.12);
+    --copper-soft-border: rgba(192,122,63,0.25);
+    --sage2: #4f9c8c;
+    --sage2-soft: rgba(79,156,140,0.12);
+    --coral: #b6503c;
+    --coral-soft: rgba(182,80,60,0.12);
+    --border: #e2d9c8;
+    --radius: 18px;
+    --shadow: 0 10px 34px rgba(40,30,20,0.09);
+    --shadow-lg: 0 16px 44px rgba(40,30,20,0.16);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 15% -10%, rgba(47,111,99,0.08) 0%, transparent 55%),
+      radial-gradient(ellipse 60% 45% at 90% 100%, rgba(192,122,63,0.07) 0%, transparent 55%);
+    pointer-events: none; z-index: 0;
+  }
+  .site-header {
+    position: relative; z-index: 10;
+    padding: 1.5rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 1rem; border-bottom: 1px solid var(--border);
+  }
+  .site-header-left { display: flex; align-items: center; gap: 1rem; }
+  .logo-mark {
+    width: 38px; height: 38px; background: var(--accent); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; color: #fff;
+    flex-shrink: 0; box-shadow: 0 6px 18px rgba(47,111,99,0.25); font-size: 18px;
+  }
+  .site-name { font-family: 'Newsreader', serif; font-weight: 500; font-size: 1.1rem; color: var(--text); }
+  .site-sub { font-size: 0.72rem; color: var(--text-muted); letter-spacing: 0.04em; text-transform: uppercase; }
+  .session-info { display: flex; align-items: center; gap: 12px; }
+  .session-pill {
+    font-size: 0.72rem; font-weight: 500; color: var(--accent-dark); background: var(--accent-soft);
+    border: 1px solid var(--accent-soft-border); padding: 6px 14px; border-radius: 100px; white-space: nowrap;
+  }
+  .header-link {
+    font-size: 0.78rem; color: var(--text-muted); text-decoration: none; border: 1px solid var(--border);
+    padding: 6px 14px; border-radius: 100px; background: var(--surface); transition: all .2s;
+  }
+  .header-link:hover { color: var(--text); border-color: var(--text-muted); }
+
+  main {
+    flex: 1; position: relative; z-index: 1;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 3.5rem 1.5rem 4rem; gap: 2.75rem;
+  }
+  .hero { text-align: center; max-width: 640px; }
+  .hero-eyebrow {
+    display: inline-block; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--accent-dark); background: var(--accent-soft); border: 1px solid var(--accent-soft-border);
+    padding: 0.3rem 0.85rem; border-radius: 100px; margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    font-family: 'Newsreader', serif; font-weight: 500; font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.1; margin-bottom: 1rem;
+  }
+  .hero h1 em { font-style: italic; color: var(--accent); }
+  .hero p { font-size: 1rem; color: var(--text-dim); line-height: 1.6; max-width: 480px; margin: 0 auto; }
+
+  .site-search { position: relative; width: min(480px, 88vw); margin-top: .5rem; }
+  .site-search input {
+    width: 100%; padding: 14px 18px 14px 42px; border-radius: 30px; border: 1px solid var(--border);
+    background: var(--surface); font-size: 15px; font-family: 'Inter', sans-serif; color: var(--text);
+    box-shadow: var(--shadow);
+  }
+  .site-search input:focus { outline: none; border-color: var(--accent); }
+  .site-search-icon { position: absolute; left: 17px; top: 50%; transform: translateY(-50%); font-size: 14px; opacity: .55; }
+  .site-search-results {
+    display: none; position: absolute; top: calc(100% + 8px); left: 0; right: 0;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    box-shadow: var(--shadow-lg); max-height: 400px; overflow-y: auto; z-index: 200; text-align: left;
+  }
+  .site-search-results.open { display: block; }
+  .ssr-item { display: block; padding: 12px 16px; border-bottom: 1px solid var(--border); text-decoration: none; color: inherit; }
+  .ssr-item:last-child { border-bottom: none; }
+  .ssr-item:hover { background: var(--accent-soft); }
+  .ssr-crumb { font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--accent-dark); font-weight: 700; margin-bottom: 3px; }
+  .ssr-snippet { font-size: 13px; color: var(--text-dim); line-height: 1.5; }
+  .ssr-snippet mark { background: rgba(192,122,63,0.28); color: var(--text); padding: 0 2px; border-radius: 2px; }
+  .ssr-empty { padding: 16px; font-size: 13px; color: var(--text-muted); font-style: italic; }
+
+  .cards-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.25rem; width: 100%; max-width: 1100px;
+  }
+  .cat-card {
+    position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.75rem 1.5rem; text-decoration: none; color: var(--text);
+    display: flex; flex-direction: column; gap: 1rem; box-shadow: var(--shadow);
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .cat-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+  .cat-badge {
+    width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center;
+    font-size: 20px; background: var(--accent-soft); border: 1px solid var(--accent-soft-border);
+  }
+  .tone-copper .cat-badge { background: var(--copper-soft); border-color: var(--copper-soft-border); }
+  .tone-sage2 .cat-badge { background: var(--sage2-soft); border-color: rgba(79,156,140,0.28); }
+  .tone-coral .cat-badge { background: var(--coral-soft); border-color: rgba(182,80,60,0.28); }
+  .cat-count { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: .3rem; }
+  .tone-copper .cat-count { color: var(--copper); }
+  .tone-sage2 .cat-count { color: var(--sage2); }
+  .tone-coral .cat-count { color: var(--coral); }
+  .cat-title { font-family: 'Newsreader', serif; font-weight: 500; font-size: 1.4rem; margin-bottom: .4rem; }
+  .cat-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+  .cat-arrow { font-size: 0.75rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); }
+  .tone-copper .cat-arrow { color: var(--copper); }
+  .tone-sage2 .cat-arrow { color: var(--sage2); }
+  .tone-coral .cat-arrow { color: var(--coral); }
+  .cat-card:hover .cat-arrow span { margin-left: 4px; }
+  .cat-arrow span { display: inline-block; transition: margin .15s; }
+
+  footer {
+    position: relative; z-index: 1; text-align: center; padding: 1.5rem 2rem;
+    border-top: 1px solid var(--border); font-size: 0.75rem; color: var(--text-muted);
+  }
+
+  @media (max-width: 600px) {
+    .site-header { padding: 1.1rem 1.1rem; flex-wrap: wrap; }
+    main { padding: 2.5rem 1rem 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-left">
+    <div class="logo-mark">🔬</div>
+    <div>
+      <div class="site-name">Bibliothèque Ostéopathique</div>
+      <div class="site-sub">Année 2 · IEOQ</div>
+    </div>
+  </div>
+  <div class="session-info">
+    <span class="session-pill" id="sessionPill"></span>
+    <a class="header-link" href="../home.html">← Accueil</a>
+    <button class="header-link" onclick="osteoLogout()" style="cursor:pointer;">Se déconnecter</button>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="hero-eyebrow">Année 2 · Sélection du contenu</div>
+    <h1>Que veux-tu <em>étudier</em> ?</h1>
+    <p>Choisis une catégorie ci-dessous, ou cherche directement un terme dans toute la bibliothèque de l'année 2.</p>
+  </div>
+
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher un muscle, un test, une technique…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+
+  <div class="cards-grid">
+    <a class="cat-card tone-accent" href="neurologie.html">
+      <div class="cat-badge">🧠</div>
+      <div class="cat-body">
+        <div class="cat-count">7 sections</div>
+        <div class="cat-title">Neurologie</div>
+        <p class="cat-desc">📖 Terminologie, 🚦 Triage clinique, 💪 Routine MS…</p>
+      </div>
+      <div class="cat-arrow">Explorer <span>→</span></div>
+    </a>
+    <a class="cat-card tone-copper" href="formation-clinique.html">
+      <div class="cat-badge">🩺</div>
+      <div class="cat-body">
+        <div class="cat-count">5 sections</div>
+        <div class="cat-title">Formation Clinique</div>
+        <p class="cat-desc">🦴 Épaule, 🦾 Coude, 🦵 Genou…</p>
+      </div>
+      <div class="cat-arrow">Explorer <span>→</span></div>
+    </a>
+    <a class="cat-card tone-sage2" href="rachis.html">
+      <div class="cat-badge">🦷</div>
+      <div class="cat-body">
+        <div class="cat-count">4 sections</div>
+        <div class="cat-title">Rachis</div>
+        <p class="cat-desc">🔵 Cervicales, 🟢 Thoraciques, 🟡 Lombaires…</p>
+      </div>
+      <div class="cat-arrow">Explorer <span>→</span></div>
+    </a>
+    <a class="cat-card tone-coral" href="arthrologie.html" style="opacity:.7;">
+      <div class="cat-badge">🦴</div>
+      <div class="cat-body">
+        <div class="cat-count">Contenu à venir</div>
+        <div class="cat-title">Arthrologie</div>
+        <p class="cat-desc">Cette catégorie sera complétée prochainement par l'équipe de l'IEOQ.</p>
+      </div>
+      <div class="cat-arrow">Explorer <span>→</span></div>
+    </a>
+    <a class="cat-card tone-accent" href="palpatoire.html">
+      <div class="cat-badge">🖐️</div>
+      <div class="cat-body">
+        <div class="cat-count">7 sections</div>
+        <div class="cat-title">Anat. Palpatoire</div>
+        <p class="cat-desc">🔴 Groupe post. · Chap. 8A, 🟠 Groupe post. · Chap. 8B, 🟢 Paroi latérale · Chap. 10…</p>
+      </div>
+      <div class="cat-arrow">Explorer <span>→</span></div>
+    </a>
+    <a class="cat-card tone-copper" href="anatomie-an2.html">
+      <div class="cat-badge">🫀</div>
+      <div class="cat-body">
+        <div class="cat-count">2 sections</div>
+        <div class="cat-title">Anatomie</div>
+        <p class="cat-desc">🦷 Rachis, 🫀 Tronc & viscères</p>
+      </div>
+      <div class="cat-arrow">Explorer <span>→</span></div>
+    </a>
+    <a class="cat-card tone-sage2" href="anatomie-viscerale.html">
+      <div class="cat-badge">🫁</div>
+      <div class="cat-body">
+        <div class="cat-count">8 sections</div>
+        <div class="cat-title">Palp. Viscérale</div>
+        <p class="cat-desc">🔵 Cou & Larynx, 🫁 Thorax & Poumons, 🟢 Abdomen & Péritoine…</p>
+      </div>
+      <div class="cat-arrow">Explorer <span>→</span></div>
+    </a>
+    <a class="cat-card tone-coral" href="anatomie-cranienne-os-face.html">
+      <div class="cat-badge">💀</div>
+      <div class="cat-body">
+        <div class="cat-count">5 sections</div>
+        <div class="cat-title">Anat. Crânienne — Os de la face</div>
+        <p class="cat-desc">🗺️ Vue d'ensemble, 🟨 Frontal, 🔺 Maxillaire…</p>
+      </div>
+      <div class="cat-arrow">Explorer <span>→</span></div>
+    </a>
+    <a class="cat-card tone-accent" href="anatomie-cranienne-os-cranien.html">
+      <div class="cat-badge">💀</div>
+      <div class="cat-body">
+        <div class="cat-count">9 sections</div>
+        <div class="cat-title">Anat. Crânienne — Os du crâne</div>
+        <p class="cat-desc">🔵 Occiput, 🟦 Pariétal, ⭐ Sphénoïde…</p>
+      </div>
+      <div class="cat-arrow">Explorer <span>→</span></div>
+    </a>
+    <a class="cat-card tone-copper" href="anatomie-cranienne-nerfs.html">
+      <div class="cat-badge">💀</div>
+      <div class="cat-body">
+        <div class="cat-count">7 sections</div>
+        <div class="cat-title">Anat. Crânienne — Nerfs crâniens</div>
+        <p class="cat-desc">⚡ NC I & II, 🎯 NC III, IV & VI, 👂 NC VII & VIII…</p>
+      </div>
+      <div class="cat-arrow">Explorer <span>→</span></div>
+    </a>
+    <a class="cat-card tone-sage2" href="palp-cranienne.html">
+      <div class="cat-badge">🖐️</div>
+      <div class="cat-body">
+        <div class="cat-count">12 sections</div>
+        <div class="cat-title">Palp. Crânienne</div>
+        <p class="cat-desc">📖 Introduction, 🔵 Occiput, 🟦 Pariétal…</p>
+      </div>
+      <div class="cat-arrow">Explorer <span>→</span></div>
+    </a>
+    <a class="cat-card tone-coral" href="semiologie.html" style="opacity:.7;">
+      <div class="cat-badge">📋</div>
+      <div class="cat-body">
+        <div class="cat-count">Contenu à venir</div>
+        <div class="cat-title">Sémiologie</div>
+        <p class="cat-desc">Cette catégorie sera complétée prochainement par l'équipe de l'IEOQ.</p>
+      </div>
+      <div class="cat-arrow">Explorer <span>→</span></div>
+    </a>
+  </div>
+</main>
+
+<footer>© 2026 IEOQ · L'équipe de l'IEOQ</footer>
+
+<script src="app.js"></script>
+<script>
+  var session = osteoGetSession();
+  if (session) {
+    document.getElementById('sessionPill').textContent = 'Connecté · ' + (session.label || ('Année ' + session.year));
+  }
+  initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+</script>
+
+</body>
+</html>

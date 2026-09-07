@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 2 · Formation Clinique</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(2);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🩺</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 2e Année</h1>
+      <p>Formation Clinique — IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="index.html">← Catégories</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><strong>Formation Clinique</strong> <span id="crumbSub">› 🦴 Épaule</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="fc-epaule" onclick="showSub('fc-epaule')">🦴 Épaule</button><button type="button" class="nav-tab" data-sub="fc-coude" onclick="showSub('fc-coude')">🦾 Coude</button><button type="button" class="nav-tab" data-sub="fc-genou" onclick="showSub('fc-genou')">🦵 Genou</button><button type="button" class="nav-tab" data-sub="fc-hanche" onclick="showSub('fc-hanche')">🦴 Hanche</button><button type="button" class="nav-tab" data-sub="fc-pied" onclick="showSub('fc-pied')">🦶 Pied & Cheville</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="fc-epaule" style="display:block;">
+<div class="section-title">Raisonnement clinique — Douleur à l'épaule</div>
+<div class="section-sub">Méthode VENDICATE · H. Bouësnard D.O · Formation et pratique clinique P2 — 2025-2026</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">🧩</div><div class="card-title">Méthode VENDICATE — Vue d'ensemble épaule</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:8%">Lettre</th><th style="width:20%">Catégorie</th><th>Questions clés à poser</th><th style="width:28%">Pathologies évoquées épaule</th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--teal-600);">V</strong></td><td>Vasculaire</td><td>Claudication du membre supérieur ? Douleur à l'effort du bras ? Froid, pâleur de la main ? Différence tensionnelle entre les deux bras ? FDR CV ?</td><td>AOMI MS · Ischémie aiguë · TVP · Syndrome du défilé thoracobrachial · Infarctus du myocarde (douleur projetée)</td></tr>
+<tr><td><strong style="color:var(--teal-600);">E</strong></td><td>Infection / Inflammation</td><td>Fièvre, frissons ? Plaie ou ATCD infectieux récent ? Douleur inflammatoire (raideur matinale &gt; 30 min) ? Réveil nocturne ? Atteintes d'autres articulations ?</td><td>Arthrite septique · Ostéomyélite humérus/scapula · Endocardite infectieuse · PR · PPR · Vascularite</td></tr>
+<tr><td><strong style="color:var(--teal-600);">N</strong></td><td>Neurologique</td><td>Irradiations cervicales ? Paresthésies (4e–5e doigts) ? Faiblesse musculaire ? Douleur modifiée par position cervicale ? Diabète, alcool, chimiothérapie ?</td><td>Radiculopathie C4–C6 · Névralgie cervico-brachiale · Nerf axillaire/scapulaire/thoracique long · Pancoast-Tobias · Myélopathie</td></tr>
+<tr><td><strong style="color:var(--teal-600);">D</strong></td><td>Dégénératif</td><td>Douleur mécanique à l'effort ? Raideur matinale &lt; 30 min ? Craquements ? RE passive &gt; RE active ? Âge + surcharge ?</td><td>Omarthrose (GH) · Arthrose AC · Calcifications</td></tr>
+<tr><td><strong style="color:var(--teal-600);">I</strong></td><td>Iatrogène</td><td>Corticoïdes au long cours ? Post-infiltrations ? Chirurgie/prothèse ? Immobilisation/attelle ? Statines, aromatase inhibitors ?</td><td>Capsulite secondaire post-immobilisation · Tendinopathie iatrogène · Ostéonécrose aseptique</td></tr>
+<tr><td><strong style="color:var(--teal-600);">C</strong></td><td>Cancérologique</td><td>ATCD cancer (prostate, rein, poumons) ? Douleur nocturne progressive ? Amaigrissement, asthénie, sueurs ? Syndrome de Claude Bernard-Horner (ptosis/myosis/anhidrose) ?</td><td>Tumeur de Pancoast-Tobias (apex pulmonaire) · Métastases osseuses · Tumeur de l'humérus proximal</td></tr>
+<tr><td><strong style="color:var(--teal-600);">A</strong></td><td>Auto-immun</td><td>Douleur inflammatoire chronique ? Raideur matinale &gt; 30 min ? Atteintes multiples par poussées ? ATCD familiaux auto-immuns, psoriasis, Crohn ?</td><td>PR · SPA · Pseudo-polyarthrite rhizomélique (PPR) · Vascularite</td></tr>
+<tr><td><strong style="color:var(--teal-600);">T</strong></td><td>Traumatique</td><td>Chute, choc, faux mouvement ? Instabilité / sensation de déboîtement ? Hématome ? ATCD de luxation ?</td><td>Luxation GH · Fracture humérus/clavicule · Lésion labrale (Bankart/SLAP) · Rupture coiffe/LBB · Disjonction AC</td></tr>
+<tr><td><strong style="color:var(--teal-600);">E</strong></td><td>Environnement</td><td>Modification récente AP (overhead ++) ? Erreur d'entraînement ? Contraintes posturales ? Contexte kayak, natation, sport de lancer ?</td><td>RCRSP / SAPS · Tendinopathie coiffe · Bourse sous-acromiale · Tendon long biceps</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- V — VASCULAIRE ÉPAULE -->
+<div class="test-card" id="fc-ep-vasc">
+<div class="test-card-header" onclick="toggleTest('fc-ep-vasc')">
+<div class="test-card-name">V — Vasculaire <small>AOMI MS · Ischémie · Infarctus (douleur projetée) · Défilé thoracobrachial</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Red flags urgents</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Examen clinique vasculaire MS</div><div class="value" style="font-size:13px;">Pouls carotidien + radial (jamais avec le pouce · comparer D/G · FC : 15 sec × 4). TRC. PA bilatérale : différence &gt; 15–20 mmHg entre les deux bras → AOMI MS / sténose subclavière. Recherche froideur + pâleur de la main.</div></div>
+<div class="test-detail-item"><div class="label">Ischémie aiguë MS — Les 6 P</div><div class="value" style="font-size:13px;"><strong>Pain</strong> · <strong>Pallor</strong> · <strong>Pulselessness</strong> (pouls radial absent) · <strong>Poikilothermia</strong> (bras/main froids) · <strong>Paresthesia</strong> · <strong>Paralysis</strong>. Réorientation urgente si absent pouls + froid + déficit sensitivo-moteur + installation &lt; 6h. <strong>Toute douleur aiguë épaule/bras = triage vasculaire obligatoire.</strong></div></div>
+<div class="test-detail-item"><div class="label">AOMI MS — Signes à l'examen</div><div class="value" style="font-size:13px;">Douleur à l'effort du bras (claudication MS) · fatigabilité inhabituelle · différence tensionnelle &gt; 15–20 mmHg entre les bras · froideur + pâleur + diminution/asymétrie des pouls. Gravité : douleur au repos · déficit neurologique associé · main froide + abolition pouls.</div></div>
+<div class="test-detail-item"><div class="label">Infarctus du myocarde — Douleur projetée vers l'épaule</div><div class="value" style="font-size:13px;">Convergence viscérosomatique C5–T1. Signes d'alerte : douleur constrictive thoracique · irradiation bras gauche/épaule/mâchoire · dyspnée · nausées · sueurs. Examens : ECG 12 dérivations · troponines sériques · échocardiographie · score TIMI. <strong>Toute suspicion = URGENCE médicale.</strong></div></div>
+<div class="test-detail-item"><div class="label">Dissection aortique / Pathologie artérielle proximale</div><div class="value" style="font-size:13px;">Douleur brutale, déchirante · irradiation dorsale/scapulaire · asymétrie tensionnelle D/G · déficit neurologique possible. Examens : Angio-CT thoracique · échographie transoesophagienne · TA bilatérale comparative.</div></div>
+<div class="test-detail-item"><div class="label">Syndrome du défilé thoracobrachial (forme vasculaire)</div><div class="value" style="font-size:13px;">Douleur épaule + bras · lourdeur · paresthésies · modification de la coloration. Tests cliniques (faible valeur diagnostique isolée) : Test d'Adson · Roos · Wright. TVP MS : œdème bras · chaleur · douleur diffuse · circulation collatérale visible.</div></div>
+</div>
+</div>
+</div>
+<!-- E — INFECTION/INFLAMMATION ÉPAULE -->
+<div class="test-card" id="fc-ep-infect">
+<div class="test-card-header" onclick="toggleTest('fc-ep-infect')">
+<div class="test-card-name">E — Infection &amp; Inflammation <small>Arthrite septique · Ostéomyélite · Endocardite · PR · PPR</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Urgence hospitalière si septique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Arthrite septique d'épaule</div><div class="value" style="font-size:13px;">SC : douleur intense continue · impotence fonctionnelle majeure · épaule chaude et tuméfiée · douleur à toute mobilisation (surtout passive) · fièvre (absente chez le sujet âgé ou immunodéprimé). FDR : diabète · plaie/abrasion · immunodépression · chirurgie récente · injection récente · toxicomanie IV. Red flag absolu : apparition aiguë + chaleur + incapacité à bouger → urgence hospitalière. Ne jamais manipuler. Examens : CRP/VS/hyperleucocytose · ponction articulaire (gold standard) · IRM si doute.</div></div>
+<div class="test-detail-item"><div class="label">Ostéomyélite (humérus / scapula)</div><div class="value" style="font-size:13px;">Douleur profonde persistante · douleur nocturne · terrain diabétique fréquent · douleur pas toujours intense (surtout si neuropathie associée).</div></div>
+<div class="test-detail-item"><div class="label">Endocardite infectieuse = épaule inflammatoire + fièvre floue</div><div class="value" style="font-size:13px;">Infection de l'endocarde (souvent valvulaire). Clinique : douleurs musculo-articulaires inflammatoires · fièvre prolongée · AEG · sueurs nocturnes · nodules d'Osler · lésions de Janeway · emboles spléniques ou cérébraux. Ne pas oublier la palpation ganglionnaire.</div></div>
+<div class="test-detail-item"><div class="label">Examen clinique spécifique épaule — Routine</div><div class="value" style="font-size:13px;">Toute douleur d'épaule doit faire rechercher une atteinte cervicale. L'épaule = 3 articulations + 2 plans de glissement : GH · AC · SC · glissement sous-acromio-coracoïdien (coiffe) · scapulo-thoracique. 1. Inspection : amyotrophie deltoïdienne (disparition galbe) · décollement scapulaire · tuméfaction creux axillaire. 2. Palpation : repères anatomiques (gouttière LB, AC, SC). 3. Mobilisation : F° (180°)/E° (50°)/ABD (180°)/ADD (30°)/RE (90°)/RI (80°).</div></div>
+<div class="test-detail-item"><div class="label">Amplitudes normales de l'épaule</div><div class="value" style="font-size:13px;">Flexion : 160–180° · Extension : 40–60° · Abduction : 150–180° · RE (coude 90°) : 80–90° · RI : 60–80° · Adduction horizontale : 30–45°.</div></div>
+<div class="test-detail-item"><div class="label">Analyse de la mobilité active / passive</div><div class="value" style="font-size:13px;"><strong>Active limitée + passive normale</strong> → suspicion atteinte musculaire/tendineuse. <strong>Active ET passive limitées</strong> → capsulite · arthrite · processus inflammatoire. <strong>Passive douloureuse en fin d'amplitude</strong> → conflit sous-acromial possible.</div></div>
+<div class="test-detail-item"><div class="label">PR · PPR · Vascularite</div><div class="value" style="font-size:13px;"><strong>PR :</strong> femme 30–60 ans · bilatérale · raideur matinale &gt; 30–60 min · atteinte polyarticulaire · nodules rhumatoïdes. <strong>PPR :</strong> ≥ 50 ans · installation subaiguë · douleur bilatérale épaules + hanches · raideur matinale majeure · faiblesse fonctionnelle sans déficit neuro · fatigue intense. Urgence absolue : artérite à cellules géantes (céphalées + claudication mâchoire + troubles visuels). <strong>Vascularite :</strong> douleurs bilatérales pseudo-rhumatismales · céphalées temporales · fièvre · VS/CRP élevées.</div></div>
+<div class="test-detail-item"><div class="label">Scapular Assistance Test (SAT)</div><div class="value" style="font-size:13px;">Détermine si la douleur provient d'un défaut de cinématique scapulaire. Position : patient en élévation active (flexion ou abduction). Le clinicien guide la scapula en sonnette latérale + bascule postérieure + accompagne l'élévation. Positif : diminution significative de la douleur ou amélioration de l'amplitude → participation scapulo-thoracique · déficit dentelé antérieur ou trapèze inférieur.</div></div>
+<div class="test-detail-item"><div class="label">Scapular Retraction Test (SRT)</div><div class="value" style="font-size:13px;">Évalue l'impact de la stabilisation scapulaire sur la force et la douleur. Le clinicien stabilise la scapula en rétraction postérieure puis répète le test isométrique (Jobe ou élévation 90°). Positif : augmentation de la force + diminution de la douleur → la faiblesse apparente peut être secondaire à une instabilité scapulaire (pas toujours une vraie atteinte de coiffe).</div></div>
+<div class="test-detail-item"><div class="label">Examens spécifiques par articulation</div><div class="value" style="font-size:13px;"><strong>GH :</strong> épanchement exceptionnel visible → limitation ROM + douleur en rotation passive coude au corps. Tests instabilité : sulcus test · tiroir ant-post · test d'hyper ABD · O'Brien (labrum) · test d'armé · test de recentrage. <strong>AC :</strong> laxité en mouvements ant-post/haut-bas · Cross arm test · ADD forcée en extension. <strong>SC :</strong> palpation tuméfaction + douleur provoquée + limitation amplitudes.</div></div>
+</div>
+</div>
+</div>
+<!-- N — NEUROLOGIQUE ÉPAULE -->
+<div class="test-card" id="fc-ep-neuro">
+<div class="test-card-header" onclick="toggleTest('fc-ep-neuro')">
+<div class="test-card-name">N — Neurologique <small>Radiculopathie C4–C6 · Nerf axillaire · Pancoast · Myélopathie · Défilé</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Routine neuro cervicale obligatoire</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Examen clinique nerveux à l'épaule</div><div class="value" style="font-size:13px;">1. Observation : comportement maladaptatif en hyperflexion/hyperextension cervicale · amyotrophie musculaire. 2. Palpation nerveuse transversale (par rapport aux fibres). 3. Tests : testing musculaire · sensibilité petites et grosses fibres · ROT · mécanosensibilité (ULNT 1/2a/2b/3) · signes centraux (Babinski, Hoffman, Trömner, supinateur inversé). Cf. cours routine neurologique MS.</div></div>
+<div class="test-detail-item"><div class="label">Névralgie cervico-brachiale (NCB)</div><div class="value" style="font-size:13px;">Peut être plusieurs entités : sténose foraminale · sténose vasculaire · cancer de Pancoast-Tobias · inflammation du plexus brachial. Atteinte cervicale (hernie, canal étroit, arthrose, fibrose, kyste, cancer pleural). En fonction de l'atteinte : trouble moteur + sensitif selon le territoire. Potentiellement abolition des ROT. Position du rachis modifie la douleur.</div></div>
+<div class="test-detail-item"><div class="label">Nerf scapulaire dorsal — Névralgie</div><div class="value" style="font-size:13px;">Sports de lancer ++ / nageurs. Échancrures coracoïdienne et spino-glénoïdienne. Microtraumatismes répétés. Souvent asymptomatique ou douleur postéro-supérieure. Compensation chez sportifs. Atrophie infra-épineux → faiblesse en RE.</div></div>
+<div class="test-detail-item"><div class="label">Nerf axillaire / nerf circonflexe</div><div class="value" style="font-size:13px;">Trauma ou compression prolongée · suite luxation antérieure d'épaule · fracture humérus · sports de lancer. Douleur lancinante diffuse. <strong>Faiblesse en ABD +++++.</strong> Atrophie petit rond + deltoïde.</div></div>
+<div class="test-detail-item"><div class="label">Nerf thoracique long</div><div class="value" style="font-size:13px;">Souvent asymptomatique. Wall push-up test (décollement scapulaire en serratus). Pronostic favorable mais récupération longue. Douleur liée aux compensations ?</div></div>
+<div class="test-detail-item"><div class="label">Autres compressions nerveuses MS</div><div class="value" style="font-size:13px;">Nerf radial (branche PIN) : arcade de Fröhse (partie proximale muscle supinateur). Nerf ulnaire : gouttière épitrochléo-olécranienne (cubital tunnel). Nerf médian : ligament de Struthers (structure fibreuse entre humérus et épitrochlée) — rare.</div></div>
+<div class="test-detail-item"><div class="label">Myélopathie — Signes centraux à rechercher</div><div class="value" style="font-size:13px;">Hoffman · Babinski · ROT vifs + polycinétiques diffus extensifs (VPDE) · Trömner · Supinateur inversé · perte de force. Peut être dégénérative, traumatique, inflammatoire ou cancéreuse.</div></div>
+<div class="test-detail-item"><div class="label">Tumeur de Pancoast-Tobias (apex pulmonaire)</div><div class="value" style="font-size:13px;">Tumeur envahissant : plexus brachial inférieur (C8–T1) · chaîne sympathique · côte 1. Signes cliniques clés : douleur épaule/scapula persistante · irradiation face médiale du bras · paresthésies 4e–5e doigts · faiblesse intrinsèques de la main · douleur nocturne · amaigrissement. Syndrome de Claude Bernard-Horner associé : <strong>ptosis + myosis + anhidrose</strong> → réorientation immédiate.</div></div>
+</div>
+</div>
+</div>
+<!-- D — DÉGÉNÉRATIF ÉPAULE -->
+<div class="test-card" id="fc-ep-deg">
+<div class="test-card-header" onclick="toggleTest('fc-ep-deg')">
+<div class="test-card-name">D — Dégénératif <small>Omarthrose GH · Arthrose AC · Capsulite · RE passive &gt; RE active</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">Diagnostic clinique global</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Omarthrose (GH) — Critères</div><div class="value" style="font-size:13px;">Douleur profonde · raideur progressive · craquements · limitation globale en actif ET passif (RE &gt;&gt; élévation + ABD &gt;&gt; puis RI). RE passive &gt; RE active est caractéristique. Douleur mécanique + raideur courte + perte de mobilité progressive.</div></div>
+<div class="test-detail-item"><div class="label">Arthrose AC — Caractéristiques</div><div class="value" style="font-size:13px;">Douleur précise localisée à l'AC (vs douleur profonde GH). Douleur à la palpation AC + Cross-body test + ADD horizontale forcée. Craquements reproductibles.</div></div>
+<div class="test-detail-item"><div class="label">Réalité scientifique des tests orthopédiques d'épaule</div><div class="value" style="font-size:13px;">La majorité des tests : sensibilité variable · spécificité modérée · faible valeur prédictive isolée. Très peu de tests dépassent une spécificité &gt; 0,80 de façon reproductible. <strong>Un test isolé ne pose pas un diagnostic fiable.</strong> Ce qui vaut vraiment : les 3 tests positifs du conflit sous-acromial (+ tests d'instabilité GH).</div></div>
+</div>
+</div>
+</div>
+<!-- I — IATROGÈNE ÉPAULE -->
+<div class="test-card" id="fc-ep-iatro">
+<div class="test-card-header" onclick="toggleTest('fc-ep-iatro')">
+<div class="test-card-name">I — Iatrogène <small>Capsulite post-immobilisation · Statines · Fluoroquinolones · Aromatase inhibitors</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">Médicaments et contexte chirurgical</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Capsulite secondaire post-immobilisation</div><div class="value" style="font-size:13px;">Perte globale active ET passive · après immobilisation prolongée ou rééducation trop intense · phase inflammatoire + phase de raideur · douleur progressive · très fréquent après fracture ou chirurgie. Terrain psy ++.</div></div>
+<div class="test-detail-item"><div class="label">Endocrino et capsulite : y penser</div><div class="value" style="font-size:13px;"><strong>Capsulite sans cause apparente = penser endocrino +</strong> : Diabète = capsulite · Thyroïde = raideur + tendinopathie · Hyperparathyroïdie = calcification · Cushing = fragilité tendineuse.</div></div>
+<div class="test-detail-item"><div class="label">Médicaments à risque tendineux</div><div class="value" style="font-size:13px;">Fluoroquinolones (ciprofloxacine, lévofloxacine) : tendinopathies + rupture tendineuse · pendant traitement ET plusieurs semaines après arrêt. Statines : myalgies · crampes · faiblesse musculaire. Aromatase inhibitors (traitement cancer du sein) : arthralgie + raideur + tendinopathie.</div></div>
+</div>
+</div>
+</div>
+<!-- C — CANCÉROLOGIQUE ÉPAULE -->
+<div class="test-card" id="fc-ep-cancer">
+<div class="test-card-header" onclick="toggleTest('fc-ep-cancer')">
+<div class="test-card-name">C — Cancérologique <small>Pancoast-Tobias · Métastases osseuses · Tumeurs primitives</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Red flag absolu → réorientation immédiate</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Anamnèse cancérologique épaule</div><div class="value" style="font-size:13px;">Première fois ? · Amaigrissement inexpliqué, asthénie, sueurs nocturnes (signes B) ? · ATCD cancer (prostate, rein, poumons → métastases osseuses) ? · Douleur progressive nocturne indépendante du mouvement ? · Gonflement persistant sans trauma ? · Consommation alcool/tabac ? · Exposition solaire exagérée ?</div></div>
+<div class="test-detail-item"><div class="label">Tumeur de Pancoast-Tobias — À ne pas manquer</div><div class="value" style="font-size:13px;">Tumeur de l'apex pulmonaire envahissant le plexus brachial inférieur C8–T1. Douleur épaule/scapula persistante · irradiation face médiale bras · paresthésies 4e–5e doigts · faiblesse intrinsèques de la main · douleur nocturne. Syndrome de Claude Bernard-Horner : <strong>ptosis + myosis + anhidrose</strong> = réorientation immédiate oncologie.</div></div>
+</div>
+</div>
+</div>
+<!-- A — AUTO-IMMUN ÉPAULE -->
+<div class="test-card" id="fc-ep-auto">
+<div class="test-card-header" onclick="toggleTest('fc-ep-auto')">
+<div class="test-card-name">A — Auto-immun <small>PR · PPR · SPA · Vascularite</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">PPR +++</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Signes généraux à questionner</div><div class="value" style="font-size:13px;">Fatigue anormale · fièvre légère récurrente · sueurs nocturnes · perte de poids · alternance diarrhée/constipation (Crohn/RCH) · inflammation oculaire (uvéite). Bilatéralité · atteintes multiples · raideur matinale &gt; 30 min · amélioration par AINS · ATCD fam auto-immuns.</div></div>
+<div class="test-detail-item"><div class="label">PPR — Urgence : artérite à cellules géantes</div><div class="value" style="font-size:13px;">Profil : ≥ 50 ans · installation subaiguë · douleur bilatérale épaules + hanches · raideur matinale majeure · faiblesse fonctionnelle sans déficit neuro · fatigue intense. Urgence absolue si associé à : céphalées · claudication de la mâchoire · troubles visuels → artérite à cellules géantes → risque de cécité → corticoïdes IV en urgence.</div></div>
+<div class="test-detail-item"><div class="label">Signes qui doivent alerter</div><div class="value" style="font-size:13px;">Gonflement persistant &gt; 6 semaines · raideur matinale longue · atteinte d'autres articulations (mains, poignets, pieds) · nodules rhumatoïdes · fatigue écrasante · symétrie globale du tableau.</div></div>
+</div>
+</div>
+</div>
+<!-- T — TRAUMATIQUE ÉPAULE -->
+<div class="test-card" id="fc-ep-trauma">
+<div class="test-card-header" onclick="toggleTest('fc-ep-trauma')">
+<div class="test-card-name">T — Traumatique <small>Luxation GH · Fracture · Coiffe · Biceps · AC · Bankart/SLAP</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Examen par structure — méthodique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Articulation gléno-humérale (GH)</div><div class="value" style="font-size:13px;"><strong>Luxation :</strong> antérieure (RE ++) · postérieure (rare : convulsion, électrocution) · impotence immédiate · risque atteinte nerf axillaire. <strong>Instabilité/Bankart :</strong> subluxation · lésion labrale · appréhension ABD + RE · sensation de déboîtement. <strong>Fracture :</strong> tête humérale/tubercule majeur · douleur osseuse localisée · hématome rapide. <strong>Rupture traumatique coiffe :</strong> perte active brutale · passive conservée = clé du raisonnement.</div></div>
+<div class="test-detail-item"><div class="label">Tests d'appréhension — Le plus utile cliniquement</div><div class="value" style="font-size:13px;">Reproduction de la <strong>peur</strong> (pas seulement douleur) + sensation imminente de luxation. Sensibilité élevée pour instabilité antérieure traumatique. Si douleur seule sans appréhension → interprétation prudente. Associer avec Test de relocation (Jobe) : diminution appréhension quand on stabilise la tête humérale → augmente la spécificité. + Tests nerf axillaire.</div></div>
+<div class="test-detail-item"><div class="label">Tests labraux (Bankart / SLAP) — Réalité clinique</div><div class="value" style="font-size:13px;">Peu fiables en aigu traumatique : O'Brien · Crank · Biceps Load. Sensibilité et spécificité variables. Douleur post-traumatique = faux positifs fréquents. En pratique : <strong>mécanisme + appréhension + instabilité &gt; tests labraux.</strong></div></div>
+<div class="test-detail-item"><div class="label">Drop Arm Test — Rupture traumatique de coiffe</div><div class="value" style="font-size:13px;">Incapacité à maintenir l'abduction = arc de douleur + arc de faiblesse. Spécificité élevée · sensibilité faible. Très utile si positif. Testing moteur : ABD + RE. Faiblesse franche post-trauma + passive conservée = clé du raisonnement → suspicion rupture complète.</div></div>
+<div class="test-detail-item"><div class="label">Lésion musculaire épaule — Triangle d'Or</div><div class="value" style="font-size:13px;">Muscles : supra-épineux · infra-épineux · subscapulaire · deltoïde · grand pectoral · long biceps. Mécanisme : contraction excentrique brutale · soulèvement lourd bras tendu · choc direct · décélération brutale (overhead). <strong>Triangle d'Or : contraction résistée douloureuse + étirement passif douloureux + palpation ciblée</strong> (défect + hématome). Passive conservée → distingue de la rupture complète.</div></div>
+<div class="test-detail-item"><div class="label">Rupture du tendon du long biceps brachial</div><div class="value" style="font-size:13px;">Rupture proximale (chef long) chez &gt; 50 ans souvent sur tendon dégénératif. SC : douleur brutale antérieure épaule · sensation de claquage · ecchymose possible · <strong>déformation en "Popeye"</strong> (descente du ventre musculaire) · diminution force flexion/supination (modérée). Tests : inspection comparée (Popeye sign) · palpation gouttière bicipitale (vide/douleur) · test supination résistée · Speed test.</div></div>
+<div class="test-detail-item"><div class="label">Classification BAMIC lésions musculaires</div><div class="value" style="font-size:13px;">Grade 0 (symptômes sans anomalie IRM) à Grade 4 (rupture complète). Sous-catégories : a (myofasciale) · b (musculo-tendineuse) · c (intratendineuse). Prédit le temps de retour au sport.</div></div>
+<div class="test-detail-item"><div class="label">Articulation acromio-claviculaire (AC)</div><div class="value" style="font-size:13px;"><strong>Luxation/Disjonction AC :</strong> choc direct sur moignon d'épaule · signe de la touche de piano · classification Rockwood I–VI. <strong>Entorse ligamentaire :</strong> douleur localisée AC · Cross-body test + · mobilité GH conservée. <strong>Fracture distale clavicule :</strong> douleur palpatoire osseuse · déformation possible.</div></div>
+<div class="test-detail-item"><div class="label">Articulation sterno-claviculaire (SC)</div><div class="value" style="font-size:13px;"><strong>Luxation antérieure :</strong> tuméfaction visible · douleur locale. <strong>Luxation postérieure (rare mais grave) :</strong> compression médiastinale possible · dyspnée · dysphagie → urgence médicale. <strong>Entorse SC :</strong> douleur localisée · mobilité douloureuse clavicule.</div></div>
+<div class="test-detail-item"><div class="label">PEACE &amp; LOVE</div><div class="value" style="font-size:13px;"><strong>PEACE (phase aiguë) :</strong> Protection · Élévation · Avoid anti-inflammatory modalities · Compression · Éducation. <strong>LOVE (phase subaiguë-chronique) :</strong> Load (reprise progressive) · Optimisme · Vascularisation · Exercise (renforcement).</div></div>
+</div>
+</div>
+</div>
+<!-- E — ENVIRONNEMENT ÉPAULE -->
+<div class="test-card" id="fc-ep-env">
+<div class="test-card-header" onclick="toggleTest('fc-ep-env')">
+<div class="test-card-name">E — Environnement <small>RCRSP/SAPS · Coiffe · Bourse · Biceps · Cluster de Park · Capsulite idiopathique</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Surcharge mécanique — continuum clinique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">RCRSP / SAPS — Le continuum clinique actuel</div><div class="value" style="font-size:13px;">Subacromial Pain Syndrome (SAPS) / Rotator Cuff Related Shoulder Pain (RCRSP) = même continuum. Ce n'est pas ce contact osseux qui crée la pathologie → <strong>problème de charge, d'adaptation et d'organisation du tissu</strong> (tendinopathie, bourse, LBB souvent atteints simultanément). Lewis JS, 2016, British Journal of Sports Medicine. Manifestations : douleur latérale d'épaule · douleur à l'élévation · arc douloureux · douleur nocturne.</div></div>
+<div class="test-detail-item"><div class="label">Étape 1 — Identifier un RCRSP (Cluster de Park)</div><div class="value" style="font-size:13px;">3 tests positifs → probabilité élevée de RCRSP : <strong>Hawkins-Kennedy</strong> + <strong>Neer</strong> + <strong>Arc douloureux</strong>. Ces tests ne diagnostiquent pas une structure précise : on parle de problème fonctionnel de la coiffe et de l'espace sous-acromial. Sensibles mais peu spécifiques (but = coincer les tendons / bourse entre 2 espaces osseux).</div></div>
+<div class="test-detail-item"><div class="label">Étape 2 — Tester les structures possiblement impliquées</div><div class="value" style="font-size:13px;"><strong>Tendinopathie coiffe :</strong> P (palpation) · E (étirement) · C (contraction contrariée). Aujourd'hui : douleur localisée précise palpatoire + reproduite à la répétition du mouvement. <strong>Bourse sous-acromiale :</strong> douleur diffuse sur le moignon d'épaule · aggravée par ABD/overhead. <strong>Long biceps :</strong> Speed test + Yergason (gouttière bicipitale).</div></div>
+<div class="test-detail-item"><div class="label">Tests spécifiques par tendon de la coiffe</div><div class="value" style="font-size:13px;"><strong>Supra-épineux :</strong> Jobe/Empty can (ABD 90°, RI, résistance vers le bas) · Drop arm test (spécificité élevée si rupture complète). <strong>Infra-épineux :</strong> External rotation lag sign (coude 90°, RE maximale → retour RI = positif) · Test de Patte (RE contre résistance). <strong>Petit rond :</strong> Hornblower sign (ABD 90° coude fléchi, RE demandée → incapacité très spécifique rupture postérieure). <strong>Subscapulaire :</strong> Lift-off test (main dans le dos, décoller contre résistance) · Belly-press (coude doit rester en avant · coude part en arrière = positif) · Gerber · lag en rotation médiale.</div></div>
+<div class="test-detail-item"><div class="label">Tests tendon long biceps brachial</div><div class="value" style="font-size:13px;"><strong>Speed test :</strong> épaule en flexion ≈ 90° · coude en extension · avant-bras supination · résistance à la flexion → douleur gouttière bicipitale ± faiblesse. Penser aussi SLAP +. <strong>Yergason :</strong> coude 90° · avant-bras pronation · patient supine + RE contre résistance → douleur gouttière bicipitale ou ressaut du tendon.</div></div>
+<div class="test-detail-item"><div class="label">Diagnostics différentiels RCRSP — À ne pas manquer</div><div class="value" style="font-size:13px;">Capsulite rétractile (raideur active + passive) · Pathologie labrale SLAP/instabilité (O'Brien, Crank) · Arthrose AC (douleur postéro-supérieure, Cross-body) · Origine cervicale (routine neurologique).</div></div>
+<div class="test-detail-item"><div class="label">Gestion du stress mécanique</div><div class="value" style="font-size:13px;">Ce qui crée la tendinopathie : pics de charge · augmentation trop rapide du volume · surcharge répétée sans récupération · déficit de stabilité scapulaire. Tendinopathie = problème de charge et d'adaptation du tissu (pas frottement, pas inflammation aiguë). Traitement : exercices progressifs (isométriques → excentriques → pliométrie). Le repos n'aide PAS.</div></div>
+</div>
+</div>
+</div>
+<!-- RED FLAGS ÉPAULE -->
+<div class="card" style="margin-top:18px;">
+<div class="card-header"><div class="card-icon coral">🚨</div><div class="card-title">Red flags associés à l'épaule</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Red flag</th><th>Orientation</th></tr></thead>
+<tbody>
+<tr><td>Douleur nocturne non mécanique progressive</td><td>Cancer / infectieux / inflammatoire</td></tr>
+<tr><td>Douleur progresssive sans notion de surcharge ou traumatisme</td><td>Cancer / infection / inflammatoire</td></tr>
+<tr><td>Douleur disproportionnée à l'examen</td><td>Cancer · fracture · infection</td></tr>
+<tr><td>Fièvre + chaleur + incapacité à bouger</td><td>Arthrite septique → urgence hospitalière</td></tr>
+<tr><td>Signes inflammatoires ou vasculaires anormaux</td><td>Bilan infectieux / vasculaire urgent</td></tr>
+<tr><td>Incapacité fonctionnelle sévère non proportionnelle</td><td>Fracture · rupture massive · urgence</td></tr>
+<tr><td>Signes neurologiques sévères (atrophie, ROT abolis, Babinski)</td><td>Radiculopathie sévère / myélopathie / Pancoast</td></tr>
+<tr><td>Ptosis + myosis + anhidrose (Claude Bernard-Horner)</td><td>Tumeur de Pancoast-Tobias → oncologie urgente</td></tr>
+<tr><td>Douleur constrictive thoracique + irradiation bras G + dyspnée</td><td>Infarctus du myocarde → urgences médicales</td></tr>
+<tr><td>Douleur brutale déchirante + asymétrie tensionnelle</td><td>Dissection aortique → urgences médicales</td></tr>
+<tr><td>ATCD cancer + douleur épaule nocturne progressive</td><td>Métastases osseuses · récidive</td></tr>
+<tr><td>Céphalées + claudication mâchoire + troubles visuels (&gt; 50 ans)</td><td>Artérite à cellules géantes (PPR) → corticoïdes IV urgents</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote"><cite>Source : H. Bouësnard D.O — Formation et pratique clinique P2, IEOQ 2025-2026 · Raisonnement clinique face à une douleur localisée à l'épaule</cite></div>
+</section>
+<section class="section" id="fc-coude" style="display:none;">
+<div class="section-title">Raisonnement clinique — Douleur au coude</div>
+<div class="section-sub">Méthode VENDICATE · H. Bouësnard D.O · Formation et pratique clinique P2 — IEOQ 2025-2026</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon teal">🧩</div><div class="card-title">Méthode VENDICATE — Vue d'ensemble coude</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:8%">Lettre</th><th style="width:18%">Catégorie</th><th>Questions clés — Anamnèse</th><th style="width:30%">Pathologies évoquées au coude</th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--coral-500);">V</strong></td><td>Vasculaire</td><td>Douleur à l'effort uniquement ? Arrêt au repos ? Sensation de froid, changement couleur du membre ? Facteurs de risque vasculaire (tabac, diabète, HTA) ?</td><td>Ischémie aiguë MS · Syndrome du défilé thoracobrachial (forme vasculaire)</td></tr>
+<tr><td><strong style="color:var(--coral-500);">E</strong></td><td>Infection / Inflammation</td><td>Fièvre, frissons, fatigue ? Présence de ganglions ? ATCD infectieux récent ou plaie ? Douleur inflammatoire (raideur matinale &gt; 30 min, nocturne) ?</td><td>Arthrite septique · Bursite olécranienne septique · Polyarthrite rhumatoïde</td></tr>
+<tr><td><strong style="color:var(--coral-500);">N</strong></td><td>Neurologique</td><td>Irradiations, paresthésies, engourdissements ? Faiblesse musculaire associée ? Douleur modifiée par positions cervicales ? Diabète, alcool, carence B12 ?</td><td>Radiculopathie C4–C6 · Syndrome canalaire (nerf ulnaire, radial, médian) · Myélopathie</td></tr>
+<tr><td><strong style="color:var(--coral-500);">D</strong></td><td>Dégénératif</td><td>Douleur mécanique à l'effort ? Raideur matinale &lt; 30 min ? Craquements reproductibles ? Diminution progressive des amplitudes ? Âge + surcharge ?</td><td>Arthrose du coude (HU/HR) · Ostéophytes (bloc en extension)</td></tr>
+<tr><td><strong style="color:var(--coral-500);">I</strong></td><td>Iatrogène</td><td>Corticoïdes au long cours ? Post-infiltrations ? Chirurgie, arthroscopie, prothèse ? Immobilisation, attelle, plâtre ? Médicament récent (statine, aromatase inhibitor) ?</td><td>Neuropathie post-chirurgie · Tendinopathie iatrogène</td></tr>
+<tr><td><strong style="color:var(--coral-500);">C</strong></td><td>Cancérologique</td><td>Première fois ? Amaigrissement inexpliqué, asthénie, sueurs nocturnes ? ATCD cancer (prostate, rein, poumons) ? Douleur nocturne progressive indépendante du mouvement ?</td><td>Tumeur osseuse · Métastases humérus distal</td></tr>
+<tr><td><strong style="color:var(--coral-500);">A</strong></td><td>Auto-immun</td><td>Douleur inflammatoire chronique progressive ? Atteintes articulaires multiples par poussées/rémissions ? Raideur matinale &gt; 30 min ? Améliorée aux AINS ? ATCD auto-immuns familiaux ?</td><td>Lupus (SLE) · Polyarthrite rhumatoïde · Bursite olécranienne inflammatoire</td></tr>
+<tr><td><strong style="color:var(--coral-500);">T</strong></td><td>Traumatique</td><td>Chute, choc, faux mouvement ? Douleur brutale ou progressive post-effort ? Instabilité, sensation de lâchage ? Hématome ou gonflement ? ATCD traumatiques ?</td><td>Luxation · Fracture tête radiale · Rupture biceps distal · Atteinte ligamentaire (LCU)</td></tr>
+<tr><td><strong style="color:var(--coral-500);">E</strong></td><td>Environnement</td><td>Modification récente de l'activité physique ? Mauvaise gestion du stress mécanique ? Contraintes posturales ou professionnelles ? Sport de raquette, golf, gestes pro répétitifs ?</td><td>Épicondylite latérale (tennis elbow) · Épitrochléite (golf elbow) · Bursite olécranienne · Tendinopathie biceps distal</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- V — VASCULAIRE -->
+<div class="test-card" id="fc-co-vasc">
+<div class="test-card-header" onclick="toggleTest('fc-co-vasc')">
+<div class="test-card-name">V — Vasculaire <small>Ischémie aiguë du membre supérieur · Défilé thoracobrachial</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">🚨 Urgence vasculaire possible</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Anamnèse clé</div><div class="value" style="font-size:13px;">Douleur à l'effort uniquement → arrêt au repos ? (claudication intermittente) · Douleur au repos type crampe, lourdeur ou nocturne ? · Sensation de froid, changement de couleur du membre ? · Facteurs de risque vasculaire (tabac, diabète, HTA). <em>Diagnostic différentiel : claudication radiculaire, thrombose veineuse ou rhumatologique.</em></div></div>
+<div class="test-detail-item"><div class="label">Tests à réaliser</div><div class="value" style="font-size:13px;">Prise de pouls carotidienne et radiale · Temps de recoloration cutanée (TRC) · Prise de tension bilatérale (différence entre les deux bras).</div></div>
+<div class="test-detail-item"><div class="label">Ischémie aiguë du membre supérieur — Les 6 P</div><div class="value" style="font-size:13px;"><strong>Pain</strong> : douleur brutale, sévère · <strong>Pallor</strong> : pâleur du membre · <strong>Pulselessness</strong> : pouls radial absent · <strong>Poikilothermia</strong> : bras/mains froids · <strong>Paresthesia</strong> : engourdissement · <strong>Paralysis</strong> : déficit moteur (tardif, très grave). Tester immédiatement : pouls ulnaire et radial (comparatif) · TRC · température cutanée · sensibilité + force · douleur au repos.</div></div>
+<div class="test-detail-item"><div class="label">Défilé thoracobrachial — Forme vasculaire</div><div class="value" style="font-size:13px;">Clinique : douleur épaule + bras · lourdeur · paresthésies · modification de coloration. Tests cliniques : Test d'Adson · Roos · Wright. ⚠️ <strong>Ces tests ont une faible valeur diagnostique isolée.</strong> Compression de l'artère subclavière par la clavicule, le muscle subclavius ou la 1re côte.</div></div>
+</div>
+</div>
+</div>
+<!-- E — INFECTION & INFLAMMATION -->
+<div class="test-card" id="fc-co-infect">
+<div class="test-card-header" onclick="toggleTest('fc-co-infect')">
+<div class="test-card-name">E — Infection &amp; Inflammation <small>Arthrite septique · Bursite olécranienne · Polyarthrite rhumatoïde</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">🚨 Urgence si septique — ne jamais manipuler</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Anamnèse infectieuse</div><div class="value" style="font-size:13px;">Fièvre, frissons, fatigue inhabituelle ? · Présence de ganglions ? · ATCD infectieux récent ou plaie ? · Douleur inflammatoire : raideur matinale prolongée · soulagée par l'effort · recrudescence nocturne · présente au repos. <em>Objectif : exclure une infection ou une arthrite septique.</em></div></div>
+<div class="test-detail-item"><div class="label">Tests cliniques</div><div class="value" style="font-size:13px;">Prise de température · Palpation des aires ganglionnaires axillaire et cervicales · Inspection : bursite/hygroma de l'olécrane, tuméfaction globale, flessum, déformation osseuse · Palpation anatomique : épanchement aux interlignes, subluxation du nerf ulnaire en flexion · Mobilisations actives et passives : F° 150° / E° 0–5° ; pronosupination coude fléchi à 90° (90°) ; recurvatum en extension.</div></div>
+<div class="test-detail-item"><div class="label">Arthrite septique du coude</div><div class="value" style="font-size:13px;"><strong>SC :</strong> douleur intense continue · impotence fonctionnelle majeure · fièvre (absente possible chez le sujet âgé ou immunodéprimé) · coude chaud et tuméfié · douleur à toute mobilisation surtout passive. <strong>Examens :</strong> CRP/VS élevées · hyperleucocytose · ponction articulaire (gold standard) · IRM si doute. <strong>FDR :</strong> diabète · plaie/ulcère · immunodépression · chirurgie ou injection récente · toxicomanie IV. <span style="color:var(--coral-500);font-weight:600;">Red flag absolu : apparition aiguë + chaleur + incapacité à bouger → urgence hospitalière, ne jamais manipuler.</span></div></div>
+<div class="test-detail-item"><div class="label">Polyarthrite rhumatoïde (PR)</div><div class="value" style="font-size:13px;"><strong>Profil type :</strong> femme 30–60 ans · douleur bilatérale · raideur matinale &gt; 30–60 min · atteinte polyarticulaire associée · évolution progressive · nodules rhumatoïdes sous-cutanés.</div></div>
+<div class="test-detail-item"><div class="label">Bursite olécranienne inflammatoire</div><div class="value" style="font-size:13px;"><strong>Causes :</strong> goutte · polyarthrite rhumatoïde · infection. <strong>Clinique :</strong> tuméfaction postérieure du coude · douleur à la pression · chaleur locale. <strong>Point clé :</strong> grosse boule + coude qui bouge = penser bursite. Mobilité articulaire conservée (≠ arthrite). Si rougeur + chaleur + fièvre → septique → drainage urgent.</div></div>
+<div class="test-detail-item"><div class="label">Douleur mécanique vs inflammatoire</div><div class="value" style="font-size:13px;"><strong>Mécanique :</strong> dérouillage &lt; 30 min · douleur à l'effort · calmée au repos. <strong>Inflammatoire :</strong> dérouillage &gt; 30 min · réveil 2e partie de nuit · améliorée par activité modérée · recrudescence nocturne · soulagée par AINS · possible fièvre · autres articulations atteintes.</div></div>
+</div>
+</div>
+</div>
+<!-- N — NEUROLOGIQUE -->
+<div class="test-card" id="fc-co-neuro">
+<div class="test-card-header" onclick="toggleTest('fc-co-neuro')">
+<div class="test-card-name">N — Neurologique <small>Radiculopathie C4–C6 · Syndromes canalaires · Myélopathie</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Distinguer atteinte locale vs référée</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Anamnèse neurologique</div><div class="value" style="font-size:13px;">Douleur projetée depuis le rachis cervical ? · Irradiations, paresthésies, engourdissements ? · Faiblesse musculaire associée ? · Douleur modifiée par les positions cervicales ? · Diabète, consommation d'alcool, carence en Vit B12, médicament neurotoxique ? · ATCD de chimiothérapie ou atteinte nerveuse ?</div></div>
+<div class="test-detail-item"><div class="label">Tests neurologiques à réaliser</div><div class="value" style="font-size:13px;">1. Observation : comportement mal adaptatif en hyperflexion ou hyperextension cervicale · amyotrophie musculaire. 2. Palpation nerveuse (transversalement par rapport aux fibres). 3. Testing musculaire · testing sensibilité (petites et grosses fibres) · ROT · mécanosensibilité et tests de provocation (ULNT) · signes centraux (Babinski, Hoffmann, Trömer, supinateur inversé).</div></div>
+<div class="test-detail-item"><div class="label">Syndromes canalaires au coude</div><div class="value" style="font-size:13px;"><strong>Nerf radial (branche PIN) :</strong> Arcade de Fröhse — partie proximale du muscle supinateur. <strong>Nerf ulnaire :</strong> gouttière épitrochlée-olécranienne (cubital tunnel). <strong>Nerf médian :</strong> Ligament de Struthers (structure fibreuse entre humérus et épitrochlée) — site rare.</div></div>
+<div class="test-detail-item"><div class="label">Syndrome du canal cubital — Nerf ulnaire</div><div class="value" style="font-size:13px;">Compression nerf ulnaire dans la gouttière épitrochléo-olécranienne. Clinique : paresthésies annulaire + auriculaire · douleur face médiale du coude · faiblesse possible de la pince (interosseux) · signe de Froment. Tests : Tinel au coude · test de flexion du coude soutenu.</div></div>
+<div class="test-detail-item"><div class="label">Atteinte radiculaire C4/C6+</div><div class="value" style="font-size:13px;"><strong>Causes :</strong> hernie cervicale, canal étroit, arthrose, fibrose, kyste, cancer viscéral pleural. <strong>Clinique :</strong> trouble moteur et sensitif selon territoire distribué · amyotrophie localisée possible · abolition des ROT · douleur modifiée par position du rachis · signes centraux possibles.</div></div>
+<div class="test-detail-item"><div class="label">Myélopathie — Signes centraux à rechercher</div><div class="value" style="font-size:13px;">Hoffmann · Babinski · ROT vifs ou pendulaires · Supinateur inversé · Trömer · Perte de force. Orienter vers imagerie rachidienne urgente.</div></div>
+</div>
+</div>
+</div>
+<!-- D — DÉGÉNÉRATIF -->
+<div class="test-card" id="fc-co-degen">
+<div class="test-card-header" onclick="toggleTest('fc-co-degen')">
+<div class="test-card-name">D — Dégénératif <small>Arthrose du coude · Ostéophytes</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Limitation en extension souvent précoce</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Anamnèse dégénérative</div><div class="value" style="font-size:13px;">Douleur mécanique à l'effort ? · Raideur matinale &lt; 30 minutes ? · Craquements reproductibles ? · Diminution progressive des amplitudes ? · Âge et surcharge articulaire ? <em>Objectif : orienter vers une arthrose ou une atteinte dégénérative progressive.</em></div></div>
+<div class="test-detail-item"><div class="label">Tests et signes évocateurs</div><div class="value" style="font-size:13px;">Douleur mécanique + raideur courte + <strong>perte de mobilité progressive en extension (E°)</strong>. Les ostéophytes se développent souvent au niveau olécranien · dans la fosse olécranienne · autour du processus coronoïde → ces excroissances osseuses bloquent mécaniquement l'extension complète.</div></div>
+<div class="test-detail-item"><div class="label">Arthrose du coude — Tableau clinique</div><div class="value" style="font-size:13px;">Douleur profonde · raideur progressive · craquement · amplitude globale limitée. <strong>Extension :</strong> limitation précoce ++ · <strong>Puis flexion :</strong> limitation progressive · <strong>Pronosupination :</strong> intacte généralement.</div></div>
+</div>
+</div>
+</div>
+<!-- I — IATROGÈNE -->
+<div class="test-card" id="fc-co-iatro">
+<div class="test-card-header" onclick="toggleTest('fc-co-iatro')">
+<div class="test-card-name">I — Intoxication / Iatrogène <small>Corticoïdes · Chirurgie · Neuropathie post-opératoire</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">Antécédents médicaux à investiguer</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Anamnèse iatrogène</div><div class="value" style="font-size:13px;">Prise de corticoïdes au long cours ? · Post-infiltrations ? · Chirurgie, arthroscopie, prothèse, complications ? · Immobilisation, attelle, plâtre ? · Médication récente inhabituelle ou changement récent ? · Médicamentation systémique (statine, aromatase inhibitor…).</div></div>
+<div class="test-detail-item"><div class="label">Neuropathie post-chirurgie</div><div class="value" style="font-size:13px;"><strong>SC :</strong> paresthésies persistantes · douleur neuropathique (brûlure, décharges) · déficit moteur · amyotrophie progressive. Symptômes apparaissant souvent dans les jours ou semaines suivant la chirurgie. <br/><strong>Nerfs fréquemment touchés :</strong> Ulnaire (chirurgie du coude, fracture distale humérus) · Médian (chirurgie canal carpien, fracture radius distal) · Radial (chirurgie humérus ou coude).</div></div>
+</div>
+</div>
+</div>
+<!-- C — CANCÉROLOGIQUE -->
+<div class="test-card" id="fc-co-cancer">
+<div class="test-card-header" onclick="toggleTest('fc-co-cancer')">
+<div class="test-card-name">C — Cancérologique <small>Tumeur osseuse · Métastases humérus</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Éliminer en priorité si red flags présents</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Anamnèse oncologique</div><div class="value" style="font-size:13px;">Première fois ? · Amaigrissement inexpliqué, asthénie, sueurs nocturnes ? · ATCD de cancer (prostate, rein, poumons → métastases osseuses) · Douleur progressive, nocturne, indépendante du mouvement, non soulagée au repos ? · Gonflement persistant sans notion traumatique · Consommation d'alcool ou tabac ? Expositions solaires exagérées ? <em>Objectif : éliminer une atteinte osseuse ou métastatique.</em></div></div>
+<div class="test-detail-item"><div class="label">Examen clinique — Tumeur osseuse</div><div class="value" style="font-size:13px;"><strong>Inspection :</strong> tuméfaction · déformation osseuse · circulation veineuse anormale · amyotrophie. <strong>Palpation :</strong> douleur vive, localisée et profonde. <strong>Compression longitudinale / Fulcrum test :</strong> placer l'avant-bras sous l'humérus (point d'appui), appliquer une pression vers le bas sur l'humérus distal, déplacer progressivement le point d'appui de proximal → distal.</div></div>
+<div class="test-detail-item"><div class="label">Localisation et fréquence</div><div class="value" style="font-size:13px;">Humérus proximal : très fréquent · Humérus diaphysaire : fréquent · Humérus distal / coude : plus rare.</div></div>
+</div>
+</div>
+</div>
+<!-- A — AUTO-IMMUN -->
+<div class="test-card" id="fc-co-auto">
+<div class="test-card-header" onclick="toggleTest('fc-co-auto')">
+<div class="test-card-name">A — Auto-immun <small>Lupus · PR · Bursite olécranienne inflammatoire</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Signes généraux systématiques à rechercher</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Anamnèse auto-immune</div><div class="value" style="font-size:13px;">Douleur inflammatoire chronique progressive · douleur au repos / nocturne, profonde, difficile à localiser · atteintes articulaires multiples par poussées/rémissions · raideur matinale prolongée &gt; 30 min · améliorée avec les AINS · ATCD personnels ou familiaux auto-immuns ? SA ++. <em>Objectif : identifier une PR ou une pathologie systémique.</em></div></div>
+<div class="test-detail-item"><div class="label">Signes généraux à investiguer systématiquement</div><div class="value" style="font-size:13px;">Fatigue anormale · fièvre légère récurrente · sueurs nocturnes · perte de poids involontaire · alternance diarrhée/constipation (Crohn/RCH) · inflammation oculaire (uvéite).</div></div>
+<div class="test-detail-item"><div class="label">Lupus (SLE) — Atteinte articulaire au coude</div><div class="value" style="font-size:13px;">Fréquente chez les patients atteints de lupus (≈ 80–90 %). Arthralgies ou arthrites inflammatoires · atteinte souvent symétrique · douleurs articulaires migratrices · généralement non destructrice. Articulations les plus touchées : mains, poignets, coudes et genoux. <strong>Signes associés :</strong> éruption malaire (« ailes de papillon ») · fatigue importante · photosensibilité · ulcérations buccales · atteinte rénale possible.</div></div>
+</div>
+</div>
+</div>
+<!-- T — TRAUMATIQUE -->
+<div class="test-card" id="fc-co-trauma">
+<div class="test-card-header" onclick="toggleTest('fc-co-trauma')">
+<div class="test-card-name">T — Traumatique <small>Luxation · Fracture · Lésion musculaire · Entorse ligamentaire</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Examen structuré post-trauma obligatoire</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Anamnèse traumatique</div><div class="value" style="font-size:13px;">Chute, choc, faux mouvement ? · Douleur brutale ou progressive post-effort ? · Instabilité ou sensation de lâchage ? · Hématome ou gonflement ? · ATCD traumatiques : entorses à répétition, fracture, luxation. <em>Objectif : orienter vers une rupture ligamentaire, musculaire ou osseuse.</em></div></div>
+<div class="test-detail-item"><div class="label">Luxation du coude — Olécrâne</div><div class="value" style="font-size:13px;"><strong>Mécanisme :</strong> chute sur main en extension (FOOSH). <strong>SC :</strong> déformation visible · douleur intense · impotence fonctionnelle ++. <strong>Tests :</strong> inspection · palpation des repères osseux · testing nerf ulnaire/radial/médian. Réorientation urgente.</div></div>
+<div class="test-detail-item"><div class="label">Luxation de la tête radiale</div><div class="value" style="font-size:13px;"><strong>Adulte :</strong> chute sur main en extension ou traumatisme avec rotation de l'avant-bras. Peut être associée à une fracture de l'ulna (lésion de Monteggia). <strong>Enfant :</strong> traction brusque sur l'avant-bras = nursemaid elbow (pulled elbow). <strong>SC :</strong> douleur latérale · incapacité pronosupination · coude maintenu en légère flexion · douleur à la palpation de la tête radiale.</div></div>
+<div class="test-detail-item"><div class="label">Fracture de la tête radiale</div><div class="value" style="font-size:13px;">Très fréquente après chute. <strong>SC :</strong> douleur latérale du coude · douleur en pronation/supination · épanchement articulaire. <strong>Tests :</strong> compression axiale du radius · mobilisation prono-supination douloureuse → RX d'emblée.</div></div>
+<div class="test-detail-item"><div class="label">Lésion musculaire — Triangle d'Or</div><div class="value" style="font-size:13px;"><strong>3 tests :</strong> Contraction résistée douloureuse + Étirement passif douloureux + Palpation ciblée (défect + hématome). Si les 3 positifs → suspicion très forte (pas une confirmation). Mobilité passive conservée → distingue de la rupture tendineuse complète.</div></div>
+<div class="test-detail-item"><div class="label">Rupture du tendon distal du biceps brachial</div><div class="value" style="font-size:13px;"><strong>Mécanisme :</strong> contraction excentrique brutale. <strong>SC :</strong> douleur antérieure · faiblesse supination · parfois déformation (ventre musculaire remonte). <strong>Test clé : Hook Test</strong> — coude fléchi à 90° en supination complète, l'examinateur crochète le bord latéral du tendon bicipital avec l'index. Tendon intact = peut insérer 1 cm sous. Rupture complète = pas de structure cordée palpable. → Urgence chirurgicale relative si rupture complète.</div></div>
+<div class="test-detail-item"><div class="label">Atteinte ligamentaire</div><div class="value" style="font-size:13px;"><strong>Ligament le plus souvent atteint :</strong> ligament collatéral ulnaire (fréquent chez les sportifs de lancer). <strong>Tests :</strong> Valgus stress test · Moving valgus test (arc douloureux 70–120°) · Varus stress test (LCL).</div></div>
+<div class="test-detail-item"><div class="label">Après un traumatisme du coude — Systématique</div><div class="value" style="font-size:13px;">1. Exclure la fracture (RX si suspicion) · 2. Vérifier l'atteinte nerveuse (ulnaire, radial, médian) · 3. Tester la stabilité ligamentaire · 4. Tests du biceps brachial. <strong>Traitement aigu : PEACE &amp; LOVE</strong> (Protection · Élévation · Anti-inflammatoires à éviter · Compression · Éducation | Load · Optimisme · Vascularisation · Exercices).</div></div>
+</div>
+</div>
+</div>
+<!-- E — ENVIRONNEMENT COUDE -->
+<div class="test-card" id="fc-co-env">
+<div class="test-card-header" onclick="toggleTest('fc-co-env')">
+<div class="test-card-name">E — Environnement <small>Tennis elbow · Golf elbow · Gestion du stress mécanique</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Surcharge + contexte professionnel/sportif</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Anamnèse environnementale</div><div class="value" style="font-size:13px;">Modification récente de l'activité physique ? · Mauvaise gestion du stress mécanique ? · Contraintes posturales ou professionnelles ? <em>Objectif : replacer la douleur dans son contexte global de charge et de terrain.</em></div></div>
+<div class="test-detail-item"><div class="label">Épicondylite latérale — Tennis elbow</div><div class="value" style="font-size:13px;"><strong>Douleur latérale à la préhension.</strong> Tendinopathie insertionnelle des extenseurs du poignet (ECRB ++). <strong>Tests :</strong> Cozen test (extension poignet résistée) · Mill test (étirement passif extenseurs) · palpation épicondyle latéral douloureuse. Aggravée par extension-supination du poignet.</div></div>
+<div class="test-detail-item"><div class="label">Épitrochléite — Golf elbow</div><div class="value" style="font-size:13px;"><strong>Douleur médiale en flexion-pronation du poignet.</strong> Tendinopathie insertionnelle des fléchisseurs/pronateurs. <strong>Test :</strong> flexion poignet contre résistance · palpation épicondyle médial. ⚠️ Syndrome du nerf ulnaire associé fréquent (paresthésies 4e–5e doigts).</div></div>
+<div class="test-detail-item"><div class="label">Principaux signes fonctionnels selon localisation</div><div class="value" style="font-size:13px;"><strong>Douleur latérale à la préhension :</strong> Épicondylite latérale (tennis elbow). <strong>Douleur médiale en flexion-pronation :</strong> Épitrochléite (golf elbow), nerf ulnaire, syndrome loges fléchisseurs. <strong>Douleur antérieure :</strong> Syndrome pronateurs (majorée flexion-pronation). <strong>Douleur postérieure en hyperextension :</strong> Syndrome valgus extension forcée (ostéophyte, inflammation, fracture de fatigue, chondromalacie). <strong>Instabilité :</strong> Lésion ligamentaire. <strong>Engourdissement sur trajet nerveux :</strong> Syndrome neurologique compressif · NCB · Syndrome du défilé.</div></div>
+<div class="test-detail-item"><div class="label">Gestion du stress mécanique</div><div class="value" style="font-size:13px;">Ce qui crée la tendinopathie : pics de charge · augmentation trop rapide du volume d'entraînement · surcharge répétée sans récupération · déficit de stabilité. Le contact d'un tendon avec une structure osseuse <strong>n'est pas en lui-même</strong> la cause de la pathologie → c'est la gestion de la charge qui est déterminante. Zone d'adaptation : entre stress minimum pour créer des adaptations et capacité maximale d'adaptation.</div></div>
+</div>
+</div>
+</div>
+<!-- RED FLAGS COUDE -->
+<div class="card" style="margin-top:20px;">
+<div class="card-header"><div class="card-icon coral">🚨</div><div class="card-title">Red flags associés au coude</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:55%">Red flag</th><th>Orientation</th></tr></thead>
+<tbody>
+<tr><td>Douleur nocturne non mécanique progressive</td><td>Cancer / infectieux / inflammatoire → imagerie</td></tr>
+<tr><td>Douleur progressive sans notion de surcharge ou traumatisme</td><td>Pathologie systémique ou néoplasique</td></tr>
+<tr><td>Douleur disproportionnée à l'examen</td><td>Considérer cause centrale ou viscérale</td></tr>
+<tr><td>Signes inflammatoires ou vasculaires anormaux</td><td>Arthrite, ischémie → triage urgence</td></tr>
+<tr><td>Traumatisme sévère + déformation visible</td><td>Fracture / luxation → RX d'emblée</td></tr>
+<tr><td>Incapacité fonctionnelle majeure immédiate</td><td>Fracture / luxation → réorientation urgente</td></tr>
+<tr><td>Fièvre + chaleur + coude impossible à bouger</td><td>Arthrite septique → urgence hospitalière, ne jamais manipuler</td></tr>
+<tr><td>Signes neurologiques sévères (déficit moteur, paralysie)</td><td>Évaluation neurologique urgente · IRM si myélopathie suspectée</td></tr>
+<tr><td>ATCD de cancer avec altération de l'état général (AEG)</td><td>Métastases osseuses → imagerie (scintigraphie/IRM)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote" style="margin-top:16px;"><cite>Source : H. Bouësnard D.O — Formation et pratique clinique P2, IEOQ 2025-2026 · Raisonnement clinique face à une douleur localisée au coude · Méthode VENDICATE</cite></div>
+</section>
+<section class="section" id="fc-genou" style="display:none;">
+<div class="section-title">Raisonnement clinique — Douleur au genou</div>
+<div class="section-sub">Méthode VENDICATE · H. Bouësnard D.O · Formation et pratique clinique P2 — 2025-2026</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">🧩</div><div class="card-title">Méthode VENDICATE — Vue d'ensemble genou</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:8%">Lettre</th><th style="width:20%">Catégorie</th><th>Questions clés à poser</th><th style="width:25%">Pathologies évoquées genou</th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--teal-600);">V</strong></td><td>Vasculaire</td><td>Claudication intermittente ? Douleur à l'effort uniquement / arrêt au repos ? Froid, pâleur ? FDR CV (tabac, diabète, HTA) ?</td><td>AOMI · TVP · Ischémie aiguë · Syndrome artère poplitée piégée</td></tr>
+<tr><td><strong style="color:var(--teal-600);">E</strong></td><td>Épidémiologique (Infection)</td><td>Fièvre, frissons ? Plaie ou ATCD infectieux récent ? Rougeur + chaleur + incapacité à bouger ? Prothèse de genou ?</td><td>Arthrite septique · Bursite septique</td></tr>
+<tr><td><strong style="color:var(--teal-600);">N</strong></td><td>Neurologique</td><td>Irradiations lombaires ? Paresthésies, engourdissements ? Faiblesse musculaire ? Douleur modifiée par position lombaire ?</td><td>Radiculopathie L3–S1 · Nerf fibulaire (col fibula) · Fémoral/sciatique</td></tr>
+<tr><td><strong style="color:var(--teal-600);">D</strong></td><td>Dégénératif</td><td>Douleur mécanique à l'effort ? Raideur matinale &lt; 30 min ? Craquements reproductibles ? Âge + surcharge articulaire ?</td><td>Gonarthrose · Arthrose fémoro-patellaire</td></tr>
+<tr><td><strong style="color:var(--teal-600);">I</strong></td><td>Iatrogène</td><td>Corticoïdes au long cours ? Post-infiltrations ? Chirurgie du genou ? Attelle/plâtre ? Statines, fluoroquinolones ?</td><td>Tendinopathie iatrogène · Raideur post-opératoire</td></tr>
+<tr><td><strong style="color:var(--teal-600);">C</strong></td><td>Cancérologique</td><td>Amaigrissement inexpliqué ? ATCD cancer ? Douleur progressive nocturne indépendante du mouvement ? Gonflement sans trauma ?</td><td>Ostéosarcome · Chondrosarcome · Métastases fémur distal/tibia</td></tr>
+<tr><td><strong style="color:var(--teal-600);">A</strong></td><td>Auto-immun</td><td>Raideur matinale &gt; 30 min ? Amélioration par AINS ? Autres articulations ? Fatigue, uvéite, psoriasis ?</td><td>PR · SPA · Arthrite psoriasique · Rhumatisme microcristallin</td></tr>
+<tr><td><strong style="color:var(--teal-600);">T</strong></td><td>Traumatique</td><td>Chute, choc, faux mouvement ? Instabilité ? Hématome ? ATCD traumatique ?</td><td>LCA/LCP · Ménisques · Ligaments collatéraux · Fracture · Lésion musculaire</td></tr>
+<tr><td><strong style="color:var(--teal-600);">E</strong></td><td>Environnement</td><td>Modification récente AP ? Mauvaise gestion du stress mécanique ? Contraintes posturales ?</td><td>SFP/PFPS · Tendinopathies · Bursites · ITBS · Syndrome Hoffa</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-card" id="fc-g-vasc">
+<div class="test-card-header" onclick="toggleTest('fc-g-vasc')">
+<div class="test-card-name">V — Vasculaire <small>Ischémie aiguë · TVP · Artère poplitée piégée</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Red flags urgents</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Examen clinique vasculaire</div><div class="value" style="font-size:13px;">Pouls poplité (DD genou fléchi · si trop évident → penser anévrisme) · pouls pédieux + tibial postérieur. TRC : normal &lt; 2s jeune adulte / &lt; 3-4s &gt; 65 ans. IPS = PA cheville/PA bras : normal 0,9–1,3 / &lt; 0,9 AOMI / &lt; 0,5 ischémie sévère. Recherche œdème : signe du godet · circumférence 10–15 cm sous TTA.</div></div>
+<div class="test-detail-item"><div class="label">Ischémie aiguë MI — Les 6 P (urgence)</div><div class="value" style="font-size:13px;"><strong>Pain</strong> · <strong>Pallor</strong> · <strong>Pulselessness</strong> · <strong>Poikilothermia</strong> · <strong>Paresthesia</strong> · <strong>Paralysis</strong>. Réorientation urgente si absent pouls + froid + pâleur + sensitivo-moteur. Installation &lt; 6h. <strong>Toute douleur aiguë genou = triage vasculaire obligatoire.</strong></div></div>
+<div class="test-detail-item"><div class="label">TVP poplitée — Red flags</div><div class="value" style="font-size:13px;">Œdème unilatéral soudain · chaleur locale · circumférence &gt; 3 cm côté sain · douleur mollet + creux poplité. FDR : immobilisation, chirurgie, grossesse, OAC. → Score de Wells si doute. DD : kyste de Baker rompu.</div></div>
+<div class="test-detail-item"><div class="label">Syndrome artère poplitée piégée</div><div class="value" style="font-size:13px;">Jeunes sportifs &lt; 40 ans. Claudication à l'effort, jamais au repos · froid + paresthésies possibles. EC : pouls ↓/absent en dorsiflexion/plantiflexion forcée. Examens : Écho-Doppler dynamique / angio-TDM.</div></div>
+<div class="test-detail-item"><div class="label">Prise de tension artérielle — Conditions</div><div class="value" style="font-size:13px;">Patient assis calme ≥ 5 min · bras nu · pas stimulants 30 min avant · brassard adapté (largeur ≈ 40% circumférence). Seuils : HTA &gt; 140/90 · Hypotension PAS &lt; 90 ou chute &gt; 30 mmHg (orthostatisme). Toute asymétrie, valeur extrême ou chute brutale doit alerter.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-g-infect">
+<div class="test-card-header" onclick="toggleTest('fc-g-infect')">
+<div class="test-card-name">E — Infection &amp; Inflammation <small>Arthrite septique · Épanchement · Douleur inflammatoire</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Urgence hospitalière si septique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Arthrite septique genou — SC et conduite</div><div class="value" style="font-size:13px;">Douleur intense non mécanique · gonflement rapide + chaleur · amplitude extrêmement limitée · fièvre (pas obligatoire) · frissons. FDR : infiltration récente · plaie/morsure · prothèse · immunosuppression · arthrite inflammatoire pré-existante. Red flag absolu : apparition aiguë + chaleur + incapacité à bouger → urgence hospitalière. Ne jamais manipuler. Examens : NFS, CRP, VS, hémocultures si fièvre, analyse du liquide.</div></div>
+<div class="test-detail-item"><div class="label">Douleur mécanique vs inflammatoire</div><div class="value" style="font-size:13px;"><strong>Mécanique :</strong> dérouillage &lt; 15 min · douleur effort · calmée au repos · pas AEG ni fièvre. <strong>Inflammatoire :</strong> dérouillage &gt; 30 min · réveil 2e partie de nuit · améliorée par activité modérée · recrudescence nocturne · possible fièvre · autres articulations.</div></div>
+<div class="test-detail-item"><div class="label">Signe du glaçon (épanchement important FT)</div><div class="value" style="font-size:13px;">DD, quadriceps relâché. Main céphalique : pression sur culs de sac sus et sous-patellaires en faisant converger les 2 mains. Index main caudale appuie sur la patella. Positif = sensation de remontée de la rotule comme un glaçon dans un liquide.</div></div>
+<div class="test-detail-item"><div class="label">Test du flot (épanchement mineur)</div><div class="value" style="font-size:13px;">Main sus-patellaire repousse l'épanchement vers le bas. Main caudale palpe la fluctuation. Positif = doigts de la main caudale repoussés.</div></div>
+<div class="test-detail-item"><div class="label">Kyste de Baker</div><div class="value" style="font-size:13px;">À rechercher quasi-systématiquement car expression d'une souffrance du genou. Position DV. Positif = masse visible genou tendu qui disparaît genou fléchi. Si rompu = DD thrombophlébite.</div></div>
+<div class="test-detail-item"><div class="label">Examen clinique genou rhumatologique</div><div class="value" style="font-size:13px;">1. Inspection : amyotrophie quadricipitale (15 cm au-dessus rotule) · attitude vicieuse (genu varum/valgus/flessum) · boiterie. 2. Palpation : épanchement · douleur provoquée patellaire, condylienne, méniscale. 3. Mobilisation : F°/E°/ADD/ABD/RI/RE de genou. Toujours examiner la hanche devant une douleur de genou (coxopathie irradiante).</div></div>
+<div class="test-detail-item"><div class="label">SINOVIAM — Raisonnement arthrite(s)</div><div class="value" style="font-size:13px;">Systémique · Inflammatoire · Néoplasique · Horton/PPR · Vascularite · Infection · Arthrose · Microcristalline. SA ++ : photosensibilité · Raynaud · urticaire · aphtose · troubles oculaires · dermatologique.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-g-neuro">
+<div class="test-card-header" onclick="toggleTest('fc-g-neuro')">
+<div class="test-card-name">N — Neurologique <small>Radiculopathie · Nerf fibulaire · Fémoral/Sciatique</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Routine neuro obligatoire</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Examen clinique nerveux au genou</div><div class="value" style="font-size:13px;">1. Observation : comportement maladaptatif lombaire · amyotrophie. 2. Palpation nerveuse : nerf sciatique à l'arrière du genou · nerf fémoral au trigone fémoral. 3. Tests : testing musculaire · sensibilité petites/grosses fibres · ROT · mécanosensibilité (Slump, Lasègue) · signes centraux (Babinski). Cf. cours routine neurologique MI.</div></div>
+<div class="test-detail-item"><div class="label">Nerf fibulaire — zone de vulnérabilité (col fibula)</div><div class="value" style="font-size:13px;">Passe en superficiel autour du col de la fibula (exposé, peu protégé). Branches : fibulaire profond + superficiel. Fonction : dorsiflexion, éversion, sensibilité dos du pied. Clinique : douleur/paresthésies latérales jambe + dos du pied · faiblesse dorsiflexion (steppage). Étiologies : coup direct col fibula · genou fléchi prolongé · plâtre serré. <strong>Faiblesse en dorsiflexion = red flag → évaluation neurologique complète.</strong></div></div>
+<div class="test-detail-item"><div class="label">Toujours examiner la hanche</div><div class="value" style="font-size:13px;">La douleur de genou peut être l'irradiation d'une coxopathie. Dissocier l'examen FT (comportements interne/externe) de l'articulation FP et des structures périarticulaires.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-g-deg">
+<div class="test-card-header" onclick="toggleTest('fc-g-deg')">
+<div class="test-card-name">D — Dégénératif <small>Gonarthrose — 5 critères cliniques</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">Diagnostic clinique global</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">5 critères diagnostiques — Arthrose genou</div><div class="value" style="font-size:13px;">1. Âge + douleur mécanique + raideur courte (&lt; 30 min). 2. Gonflement léger, non inflammatoire. 3. Douleur interligne à la palpation. 4. Grincements / crépitements. 5. Mobilité diminuée en fin d'amplitude. → Aucun test ortho spécifique.</div></div>
+<div class="test-detail-item"><div class="label">Tests positifs mais NON FIABLES pour l'arthrose</div><div class="value" style="font-size:13px;">Compression rotulienne · frottement patellaire · grind tests · McMurray · Thessaly → trop de faux positifs. L'arthrose se diagnostique sur le profil clinique global, pas sur un test isolé.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-g-cancer">
+<div class="test-card-header" onclick="toggleTest('fc-g-cancer')">
+<div class="test-card-name">C — Cancérologique <small>Fulcrum test · Ostéosarcome · Métastases fémur distal</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Red flag absolu → réorientation immédiate</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Fulcrum test — Le test le plus utile</div><div class="value" style="font-size:13px;">Bras de levier sous le fémur distal · force de compression → douleur profonde, vive. Très évocateur si : douleur progressive + nocturne + pas de trauma proportionnel + rougeur sans fièvre ni trauma + douleur disproportionnée à la force. → Suspicion : métastase fémur distal/tibia proximal · ostéosarcome · chondrosarcome · tumeurs bénignes. → Réorientation immédiate.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-g-trauma">
+<div class="test-card-header" onclick="toggleTest('fc-g-trauma')">
+<div class="test-card-name">T — Traumatique <small>Ottawa · LCA/LCP · Ménisques · Collatéraux · Muscles · Luxation rotule</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Examen par structure — méthodique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Étape 1 — Critères d'Ottawa genou</div><div class="value" style="font-size:13px;">Se ≈ 98–100% · Sp ≈ 49%. Ottawa négatif = fracture très improbable. Ottawa positif ≠ fracture certaine. Fractures : rotule · plateau tibial · fémur distal · tête fibulaire. Si positif → immobiliser + décharge + imagerie (RX). Piège : fracture plateau tibial peut donner Ottawa négatif si patient marche encore — douleur à la mise en charge disproportionnée + épanchement progressif.</div></div>
+<div class="test-detail-item"><div class="label">Étape 2 — Épanchement (avant les tests ligamentaires)</div><div class="value" style="font-size:13px;">Tester les ligaments seulement si : fracture exclue + douleur compatible + pas d'hémarthrose massive empêchant l'examen. L'épanchement révèle une atteinte sous-jacente de toutes les structures. Son volume et persistance sont proportionnels à l'intensité de l'atteinte.</div></div>
+<div class="test-detail-item"><div class="label">LCA — Ordre de priorité des tests</div><div class="value" style="font-size:13px;"><strong>Lachman +++</strong> (test de référence · meilleure sensibilité en aigu) → <strong>Pivot Shift</strong> (spécificité élevée · difficile en aigu) → <strong>Tiroir antérieur</strong> (sensibilité ↓ en aigu). Faux négatif tiroir : lésion méniscale en anse de seau bloque la translation. Faux positif tiroir : rupture LCP → tibia en position postérieure spontanée.</div></div>
+<div class="test-detail-item"><div class="label">LCP — Tests</div><div class="value" style="font-size:13px;">Godfrey + Tiroir postérieur.</div></div>
+<div class="test-detail-item"><div class="label">Ménisques — Tests à privilégier</div><div class="value" style="font-size:13px;">≥ 3 tests concordants nécessaires. 1. <strong>Blocage vrai</strong> (argument le plus fort — spécificité élevée, sensibilité faible). 2. <strong>Palpation interligne</strong> (jamais seul — sensibilité correcte, spécificité faible). 3. <strong>Thessaly 20°</strong> (test fonctionnel de référence — meilleure valeur clinique que McMurray · patient doit pouvoir charger). Attention : fonctionnement par triade (LCA + ménisque interne + LCT).</div></div>
+<div class="test-detail-item"><div class="label">Ligaments collatéraux</div><div class="value" style="font-size:13px;">LCT = plus souvent lésé · LCF = souvent associé au PLC. Stress valgus à 30° → isole LCT · stress varus à 30° → isole LCF. À 0° : laxité = atteinte globale (capsule, LCA/LCP). Grades : douleur sans laxité (I) · laxité + fin de course ferme (II) · laxité + fin de course molle (III). <strong>Laxité à 0° = red flag → lésions associées obligatoires.</strong></div></div>
+<div class="test-detail-item"><div class="label">Lésion musculaire — Triangle d'Or</div><div class="value" style="font-size:13px;">Muscles : ischio-jambiers distaux · quadriceps · gastrocnémien médial · poplité. <strong>Contraction résistée douloureuse + Étirement passif douloureux + Palpation ciblée</strong> (défect + hématome). Si 3/3 positifs → suspicion très forte (pas confirmation).</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-g-env">
+<div class="test-card-header" onclick="toggleTest('fc-g-env')">
+<div class="test-card-name">E — Environnement <small>PFPS · Tendinopathies · Bursites · ITBS · Hoffa</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Surcharge mécanique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">PFPS — Diagnostic d'exclusion</div><div class="value" style="font-size:13px;">Douleur antérieure/péri-patellaire · sensation de pseudo-blocage · aggravée par escaliers (descente ++), position assise prolongée (movie sign), accroupissements. Peu/pas de gonflement. Tests lig. et méniscaux négatifs. Il n'existe PAS de test diagnostique du PFPS. Clarke/Zohlen/compression patellaire = faible validité. Utile : reproduction de la douleur dans des tâches fonctionnelles (squat, step-down, montée/descente escaliers). Exclure : arthrose · instabilité patellaire · lésion méniscale · pathologie inflammatoire.</div></div>
+<div class="test-detail-item"><div class="label">Tendinopathies du genou</div><div class="value" style="font-size:13px;">Problème de charge, d'adaptation et d'organisation du tissu tendineux (pas frottement, pas inflammation aiguë). Tendons : patellaire · quadricipital · TFL (Noble, Renne, Ober) · patte d'oie · biceps fémoral · gastrocnémien médial. Test : douleur localisée précise + reproduite à la répétition. Traitement : exercices progressifs (isométriques → excentriques → pliométrie). Le repos n'aide PAS.</div></div>
+<div class="test-detail-item"><div class="label">Bursites — Diagnostic topographique uniquement</div><div class="value" style="font-size:13px;">Pré-patellaire · infra-patellaire · patte d'oie. Il n'existe PAS de test clinique spécifique fiable. Diagnostic : localisation très superficielle + gonflement visible/fluctuant + douleur vive à la pression directe locale + amplitudes conservées + tests résistés souvent négatifs. Attention bursite septique si rougeur + chaleur + fièvre.</div></div>
+<div class="test-detail-item"><div class="label">ITBS et syndrome Hoffa</div><div class="value" style="font-size:13px;">ITBS : douleur latérale progressive à l'effort, pas un vrai conflit démontré. Tests Noble et Renne reproduisent la douleur mais ne diagnostiquent pas. Hoffa : douleur ant. sous-rotulienne, douleur extension terminale, sensation de pincement. Pas de test spécifique fiable. Diagnostic d'exclusion.</div></div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-top:18px;">
+<div class="card-header"><div class="card-icon coral">🚨</div><div class="card-title">Red flags associés au genou</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Red flag</th><th>Orientation</th></tr></thead>
+<tbody>
+<tr><td>Douleur nocturne non mécanique progressive</td><td>Cancer / inflammatoire systémique / infection</td></tr>
+<tr><td>Gonflement persistant inexpliqué</td><td>Arthrite septique · TVP · cancer</td></tr>
+<tr><td>Fièvre + chaleur + incapacité à bouger</td><td>Arthrite septique → urgence hospitalière</td></tr>
+<tr><td>Blocage vrai du genou</td><td>Lésion méniscale déplacée (anse de seau)</td></tr>
+<tr><td>Laxité à 0° aux tests collatéraux</td><td>Lésion complexe → imagerie urgente</td></tr>
+<tr><td>Signes ischémiques (6P)</td><td>Ischémie aiguë → réorientation vasculaire urgente</td></tr>
+<tr><td>Faiblesse dorsiflexion</td><td>Atteinte nerf fibulaire → évaluation neurologique complète</td></tr>
+<tr><td>Douleur disproportionnée à l'examen</td><td>Fracture plateau tibial · cancer · infection</td></tr>
+<tr><td>Fièvre + fatigue + amaigrissement</td><td>Atteinte systémique (cancer / infection / SPA)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote"><cite>Source : H. Bouësnard D.O — Formation et pratique clinique P2, IEOQ 2025-2026 · Raisonnement clinique face à une douleur localisée aux genoux</cite></div>
+</section>
+<section class="section" id="fc-hanche" style="display:none;">
+<div class="section-title">Raisonnement clinique — Douleur à la hanche</div>
+<div class="section-sub">Méthode VENDICATE · H. Bouësnard D.O · Formation et pratique clinique P2 — 2025-2026</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">🧩</div><div class="card-title">Méthode VENDICATE — Vue d'ensemble hanche</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:8%">Lettre</th><th style="width:20%">Catégorie</th><th>Questions clés</th><th style="width:28%">Pathologies évoquées hanche</th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--teal-600);">V</strong></td><td>Vasculaire</td><td>Claudication intermittente ? Douleur à l'effort/repos ? Froid, pâleur ? FDR CV ? Dysfonction érectile ?</td><td>AOMI · Ischémie aiguë artère fémorale</td></tr>
+<tr><td><strong style="color:var(--teal-600);">E</strong></td><td>Infection / Inflammation</td><td>Fièvre, frissons ? Plaie ? Douleur inflammatoire ? Raideur matinale prolongée ? Réveil nocturne ?</td><td>Coxite infectieuse · Arthrite rhumatismale · SPA</td></tr>
+<tr><td><strong style="color:var(--teal-600);">N</strong></td><td>Neurologique</td><td>Irradiations lombaires ? Paresthésies permanentes jambe ? Perte de force ? Position rachis modifie la douleur ?</td><td>Méralgie paresthésique · Nerf obturateur · Pudendal · Syndrome piriforme · Fémoral/Sciatique</td></tr>
+<tr><td><strong style="color:var(--teal-600);">D</strong></td><td>Dégénératif</td><td>Douleur inguinale mécanique ? Raideur courte ? RI diminuée ? Âge + surcharge ?</td><td>Coxarthrose · FAI (conflit fémoro-acétabulaire)</td></tr>
+<tr><td><strong style="color:var(--teal-600);">I</strong></td><td>Iatrogène</td><td>Corticoïdes ? Statines ? Fluoroquinolones ? Alcool (nécrose aseptique) ?</td><td>Ostéonécrose aseptique · Tendinopathie iatrogène</td></tr>
+<tr><td><strong style="color:var(--teal-600);">C</strong></td><td>Cancérologique</td><td>ATCD cancer (sein, prostate, poumons, thyroïde, rein) ? Douleur nocturne progressive ? Méléna ? Nycturie ?</td><td>Métastases fémorales · Tumeurs primitives</td></tr>
+<tr><td><strong style="color:var(--teal-600);">A</strong></td><td>Auto-immun</td><td>Douleur inflammatoire chronique ? Raideur matinale &gt; 30 min ? SI atteintes ? Uvéite, psoriasis, Crohn ?</td><td>SPA · PR · Arthrite psoriasique</td></tr>
+<tr><td><strong style="color:var(--teal-600);">T</strong></td><td>Traumatique</td><td>Chute sur les fesses ? Fracture ? Instabilité ? Pubalgie post-effort ?</td><td>Fracture col fémoral · Lésion labrale · Pubalgie traumatique · Lésion musculaire</td></tr>
+<tr><td><strong style="color:var(--teal-600);">E</strong></td><td>Environnement</td><td>Modification récente AP ? Contraintes posturales ? Sédentarité ?</td><td>FAI · Tendinopathies (moyen fessier, TFL, psoas, ADD)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-card" id="fc-h-vasc">
+<div class="test-card-header" onclick="toggleTest('fc-h-vasc')">
+<div class="test-card-name">V — Vasculaire <small>Ischémie aiguë artère fémorale · AOMI · IPS</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Urgence vasculaire</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Repère anatomique pouls fémoral</div><div class="value" style="font-size:13px;">Au milieu de la ligne entre le pubis et l'EIAS. Jamais avec le pouce. Position DD recommandée. Mesure FC : 30 secondes × 2. Toujours comparer bilatéralement.</div></div>
+<div class="test-detail-item"><div class="label">Ischémie aiguë — Les 6 P + conduite à tenir</div><div class="value" style="font-size:13px;">Pain · Pallor · Pulselessness · Poikilothermia · Paresthesia · Paralysis. Signes imposant réorientation urgente : absence de pouls · jambe froide + pâleur · déficit sensitif/moteur · douleur disproportionnée · installation rapide (&lt; 6h). <strong>Toute douleur aiguë cuisse/hanche = triage vasculaire obligatoire.</strong></div></div>
+<div class="test-detail-item"><div class="label">AOMI — IPS</div><div class="value" style="font-size:13px;">IPS = PA cheville / PA bras. Normal : 0,9–1,3 · &lt; 0,9 AOMI · &lt; 0,5 ischémie sévère. Patient allongé repos 5–10 min. Toujours comparer bilatéralement. Ne pas mesurer après l'effort.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-h-infect">
+<div class="test-card-header" onclick="toggleTest('fc-h-infect')">
+<div class="test-card-name">E — Infection &amp; Inflammation <small>Coxite · Ganglions · SINOVIAM</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Urgence si septique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Palpation ganglionnaire</div><div class="value" style="font-size:13px;">Gonflé + douloureux + souple + mobile → infection/inflammation. Volumineux + ferme/dur + adhérent → processus néoplasique.</div></div>
+<div class="test-detail-item"><div class="label">Interprétation altérations de mobilité</div><div class="value" style="font-size:13px;"><strong>Passive ET active diminuées</strong> → pathologie articulaire ou rétractation tendineuse (cartilage, épanchement, capsulite). <strong>Active et passive normales</strong> → pathologie extra-articulaire (tendinopathie, enthésopathie, pathologie osseuse). <strong>Active diminuée + passive normale</strong> → déficit moteur (neuro ou rupture tendineuse/luxation/fracture). <strong>Amplitudes augmentées</strong> → laxité acquise ou constitutionnelle.</div></div>
+<div class="test-detail-item"><div class="label">Tests orthopédiques hanche inflammatoire</div><div class="value" style="font-size:13px;">Pattern capsulaire inflammatoire : RI ↓↓↓ · Flexion + ABD ↓ · douleur profonde non mécanique. FABER douloureux et limité. Scour douloureux. Inspection : amyotrophie · flessum + RE · boiterie d'esquive. Plus fiables que n'importe quel test ortho : raideur matinale &gt; 30 min · amélioration à l'activité · douleur au repos + nocturne · bilatéralité · autres articulations sensibles · terrain.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-h-neuro">
+<div class="test-card-header" onclick="toggleTest('fc-h-neuro')">
+<div class="test-card-name">N — Neurologique <small>Méralgie paresthésique · Obturateur · Pudendal · Piriforme</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Pseudo syndromes canalaires</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Méralgie paresthésique — Nerf cutané latéral (L2–L3)</div><div class="value" style="font-size:13px;">Pathologie nerveuse la plus fréquente autour de la hanche. Compression sous le ligament inguinal (EIAS). FDR : ceinture/jean serré · obésité · posture prolongée en extension hanche · grossesse. Symptômes : brûlures purement sensitives face antéro-latérale cuisse (pas de déficit moteur). Test : palpation EIAS + percussion → reproduction.</div></div>
+<div class="test-detail-item"><div class="label">Nerf obturateur (L2–L4)</div><div class="value" style="font-size:13px;">Causes : hernie obturatrice · tumeur · endométriose · trauma pelvien · chirurgie. Symptômes : douleur aiguë inguinale + face médiale cuisse · faiblesse adduction. DD : syndrome queue de cheval.</div></div>
+<div class="test-detail-item"><div class="label">Nerf pudendal (S2–S4) — Piégeage d'Alcock</div><div class="value" style="font-size:13px;">Critères de Nantes. Brûlures périnéales · douleur assise · trouble érecteur. Critère majeur : <strong>pas de douleur nocturne</strong>. Causes : cycliste · chirurgie pelvienne · accouchement · chute bassin · endométriose.</div></div>
+<div class="test-detail-item"><div class="label">Syndrome du piriforme — Ce que ce n'est PAS</div><div class="value" style="font-size:13px;">Pas un problème contractile · pas un spasme · pas une douleur myofasciale. <strong>Un muscle seul ne peut pas comprimer un nerf de manière significative et durable.</strong> Les neuropathies du bassin sont liées à : traumatisme direct · tumeur · kyste · chirurgie pelvienne · endométriose · lésion structurelle extrinsèque.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-h-deg">
+<div class="test-card-header" onclick="toggleTest('fc-h-deg')">
+<div class="test-card-name">D — Dégénératif <small>Coxarthrose · Signe Drehmann · FAI · Tests fiables vs non fiables</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">Test #1 = RI passive</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Test #1 — Rotation interne passive (RI)</div><div class="value" style="font-size:13px;">Diminution nette de l'IR passive · reproduction douleur inguinale · end-feel dur, osseux. Toujours positif dès les premiers stades (mais pas spécifique arthrose). RI diminuée = signe d'atteinte intra-articulaire, pas nécessairement arthrose.</div></div>
+<div class="test-detail-item"><div class="label">Signe de Drehmann</div><div class="value" style="font-size:13px;">Rotation externe automatique et incontrôlable lors de la tentative de flexion passive. Évocateur de coxarthrose avancée + épiphysiolyse (SCFE). Pas de valeurs validées. Peu sensible → négatif n'exclut rien.</div></div>
+<div class="test-detail-item"><div class="label">Tests NON FIABLES pour l'arthrose</div><div class="value" style="font-size:13px;">FADIR (trop de FP) · FABER (non discriminant) · Scour (positif dans tout l'intra-articulaire) · Fitzgerald (labrum) · Cluster de Sutlive (FAI).</div></div>
+<div class="test-detail-item"><div class="label">FAI — Cluster de Sutlive</div><div class="value" style="font-size:13px;">Flexion + RI + Scour + FABER + FADRI. CAM (excès os col fémoral) · PINCER (sur-couverture acétabulaire) · Mixte 80%. Apparaissent à l'adolescence chez sportifs. Deviendront symptomatiques à l'âge adulte.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-h-iatro">
+<div class="test-card-header" onclick="toggleTest('fc-h-iatro')">
+<div class="test-card-name">I — Iatrogène <small>Fluoroquinolones · Statines · Corticoïdes</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">Médicaments à connaître</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Fluoroquinolones</div><div class="value" style="font-size:13px;">Tendinites · rupture tendineuse (bilatéral possible, Achille ++) · douleurs musculaires. Pendant traitement ET plusieurs semaines après arrêt. Vérifier dans le VIDAL.</div></div>
+<div class="test-detail-item"><div class="label">Statines</div><div class="value" style="font-size:13px;">Myalgies · crampes · faiblesse musculaire · rhabdomyolyse (rare). Cause fréquente de douleurs MSK perçues comme d'origine mécanique.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-h-cancer">
+<div class="test-card-header" onclick="toggleTest('fc-h-cancer')">
+<div class="test-card-name">C — Cancérologique <small>Cancers à métastases osseuses · Fulcrum test fémoral</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Red flag absolu</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Cancers à métastases osseuses</div><div class="value" style="font-size:13px;">Sein · Prostate · Poumons · Os (primitif) · Thyroïde · Rein. Sites préférentiels : ganglions · poumons · foie · os · cerveau.</div></div>
+<div class="test-detail-item"><div class="label">Fulcrum test fémoral</div><div class="value" style="font-size:13px;">Bras de levier sous le fémur proximal · force de compression → douleur profonde vive. Très évocateur si : progressif + nocturne + pas de trauma proportionnel + douleur disproportionnée. → Métastase fémorale · tumeur primitive · fracture de stress à risque élevé. → Réorientation immédiate.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-h-auto">
+<div class="test-card-header" onclick="toggleTest('fc-h-auto')">
+<div class="test-card-name">A — Auto-immun <small>SPA · Enthésites · Tests SI · Signes généraux</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">SPA +++</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Signes généraux à questionner systématiquement</div><div class="value" style="font-size:13px;">Fatigue anormale · fièvre légère récurrente · sueurs nocturnes · perte de poids · diarrhée/constipation alternée (Crohn/RCH) · inflammation oculaire (uvéite). → Très évocateur d'une spondylarthrite.</div></div>
+<div class="test-detail-item"><div class="label">Examen clinique — Suspicion SPA</div><div class="value" style="font-size:13px;">Limitation globale pattern capsulaire inflammatoire. SI souvent impliquées → tests SI (Gaenslen, distraction, compression, thrust). Enthésite possible (Achille) · pubalgie inflammatoire · tendinopathie atypique bilatérale. Terrain : ATCD fam psoriasis/Crohn/SPA · âge jeune.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-h-trauma">
+<div class="test-card-header" onclick="toggleTest('fc-h-trauma')">
+<div class="test-card-name">T — Traumatique <small>Fracture col fémoral · Luxation · Labrum · Pubalgie · Muscle</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Examen osseux systématique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Fracture extrémité supérieure du fémur</div><div class="value" style="font-size:13px;">Terrain ostéoporotique ++ · chute de sa hauteur. SC : douleur aiguë inguinale/fessière · incapacité mise en charge · rotation externe MI · raccourcissement apparent · douleur percussion/compression fémur. Conduite : immobiliser · abstention des tests mobilisant la hanche · référer imagerie (RX). Complications : nécrose avasculaire · pseudarthrose · embolie graisseuse.</div></div>
+<div class="test-detail-item"><div class="label">Tests micro-instabilité de hanche</div><div class="value" style="font-size:13px;">Patient DD hanche + genou en extension · stabiliser le bassin · RI/RE passive hanche · observer amplitude/fin de course/appréhension · option traction longitudinale "échappement". Positif : RE excessive · end-feel mou · instabilité/"échappement" · appréhension · douleur ant. non mécanique.</div></div>
+<div class="test-detail-item"><div class="label">Pubalgie post-traumatique — Squeeze test</div><div class="value" style="font-size:13px;">DD hanches fléchies · serrer genoux contre résistance du thérapeute. Positif si : douleur racine cuisse + douleur pubienne/symphyse + douleur irradiant dans adducteur. Très sensible pour pubalgies traumatiques des adducteurs.</div></div>
+<div class="test-detail-item"><div class="label">Lésion labrale et musculaire</div><div class="value" style="font-size:13px;">Labrale : FADIR · Fitzgerald · Scour → beaucoup FP, contexte traumatique obligatoire. Meilleur diagnostic : arthroscanner. Musculaire (ilio-psoas, ischio-jambiers prox., adducteurs) : Triangle d'Or (contraction résistée + étirement passif + palpation défect).</div></div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-top:18px;">
+<div class="card-header"><div class="card-icon coral">🚨</div><div class="card-title">Red flags associés à la hanche</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Red flag</th><th>Orientation</th></tr></thead>
+<tbody>
+<tr><td>Douleur nocturne, progressive, non mécanique</td><td>Cancer / infectieux / inflammatoire</td></tr>
+<tr><td>Fièvre + fatigue + perte de poids</td><td>Cancer / infection systémique</td></tr>
+<tr><td>Déformation osseuse palpable + douleur percussion fémur</td><td>Fracture / métastase → imagerie urgente</td></tr>
+<tr><td>ATCD cancer (même anciens) + douleur hanche</td><td>Métastases osseuses · récidive</td></tr>
+<tr><td>Rotation externe MI + raccourcissement</td><td>Fracture col fémoral → réorientation urgente</td></tr>
+<tr><td>Faiblesse non proportionnelle</td><td>Neurologique / fracture / myopathie</td></tr>
+<tr><td>Atteinte neurologique inexpliquée</td><td>Compression nerveuse / myélopathie</td></tr>
+<tr><td>Âge &gt; 50 ans + douleur nocturne progressive</td><td>Cancer / métastase à exclure</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote"><cite>Source : H. Bouësnard D.O — Formation et pratique clinique P2, IEOQ 2025-2026 · Raisonnement clinique face à une douleur localisée à la hanche</cite></div>
+</section>
+<section class="section" id="fc-pied" style="display:none;">
+<div class="section-title">Raisonnement clinique — Douleur au pied &amp; à la cheville</div>
+<div class="section-sub">Méthode VENDICATE · H. Bouësnard D.O · Formation et pratique clinique P2 — 2025-2026</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">🧩</div><div class="card-title">Méthode VENDICATE — Vue d'ensemble pied &amp; cheville</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:8%">Lettre</th><th style="width:18%">Catégorie</th><th>Questions clés</th><th style="width:28%">Pathologies évoquées</th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--teal-600);">V</strong></td><td>Vasculaire</td><td>Claudication ? Douleur repos ? Froid, pâleur, pouls pédieux ? FDR CV ? Œdème unilatéral soudain ?</td><td>AOMI · Ischémie aiguë · TVP · Pied diabétique</td></tr>
+<tr><td><strong style="color:var(--teal-600);">E</strong></td><td>Infection / Inflammation</td><td>Fièvre ? Plaie/ulcère ? Douleur inflammatoire ? Pied rouge chaud déformé (diabète) ?</td><td>Arthrite septique cheville · Ostéomyélite · Goutte · SPA · Charcot</td></tr>
+<tr><td><strong style="color:var(--teal-600);">N</strong></td><td>Neurologique</td><td>Irradiations lombaires ? Paresthésies, brûlures ? Perte sensibilité "en chaussette" ?</td><td>Morton · Tunnel tarsien · Fibulaire post-entorse · Neuropathie diabétique · L5/S1</td></tr>
+<tr><td><strong style="color:var(--teal-600);">D</strong></td><td>Dégénératif</td><td>Douleur mécanique effort ? Raideur courte ? Craquements ? Déformation (hallux rigidus) ?</td><td>Arthrose tibio-talienne · Hallux rigidus (1er MTP)</td></tr>
+<tr><td><strong style="color:var(--teal-600);">I</strong></td><td>Iatrogène</td><td>Fluoroquinolones ? Corticoïdes ? Post-infiltrations ? Chirurgie ? Plâtre ?</td><td>Tendinopathie Achille iatrogène · Rupture tendineuse</td></tr>
+<tr><td><strong style="color:var(--teal-600);">C</strong></td><td>Cancérologique</td><td>ATCD cancer ? Douleur nocturne progressive ? Gonflement sans trauma ?</td><td>Métastases osseuses · Tumeurs primitives</td></tr>
+<tr><td><strong style="color:var(--teal-600);">A</strong></td><td>Auto-immun</td><td>Raideur matinale &gt; 30 min ? AINS améliorent ? Dactylite (orteil en saucisse) ?</td><td>PR · SPA (enthésite Achille, fasciite) · Goutte (podagre)</td></tr>
+<tr><td><strong style="color:var(--teal-600);">T</strong></td><td>Traumatique</td><td>Faux mouvement, chute ? Instabilité ? Hématome ? ATCD entorses à répétition ?</td><td>Entorse ATFL · Fracture de stress · Lésion Achille · Lésion musculaire</td></tr>
+<tr><td><strong style="color:var(--teal-600);">E</strong></td><td>Environnement</td><td>Modification AP/course ? Changement chaussures ? Erreur d'entraînement ? RED-S ?</td><td>Tendinopathie Achille · Fasciite plantaire · Bursites · Fractures de stress</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-card" id="fc-p-vasc">
+<div class="test-card-header" onclick="toggleTest('fc-p-vasc')">
+<div class="test-card-name">V — Vasculaire <small>Pouls pédieux · ITB · AOMI · TVP</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Red flags urgents</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Prise du pouls pédieux</div><div class="value" style="font-size:13px;">Face dorsale du pied · latéral au tendon extenseur hallucis longus · pied relâché · 2–3 doigts (jamais le pouce) · pression légère progressive. FC : 15 sec × 4. Important : absent chez 5–10% des sujets sains → comparer bilatéralement.</div></div>
+<div class="test-detail-item"><div class="label">ITB — Index Tibio-Brachial</div><div class="value" style="font-size:13px;">PA systolique cheville ÷ PA systolique bras (plus haute). Normal : 1,0–1,4 · Limite 0,9–1,0 · AOMI légère 0,7–0,9 · Modérée 0,4–0,7 · Ischémie sévère &lt; 0,4 · Artères calcifiées (diabète) &gt; 1,4. Pièges : ne pas mesurer après effort · toujours comparer bilatéralement.</div></div>
+<div class="test-detail-item"><div class="label">AOMI — Signes cliniques pied</div><div class="value" style="font-size:13px;">Pied froid · peau fine/brillante · dépilation · pouls ↓/absents · remplissage capillaire lent. Urgence vasculaire : douleur permanente · ulcère artériel/nécrose · pied pâle et froid.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-p-infect">
+<div class="test-card-header" onclick="toggleTest('fc-p-infect')">
+<div class="test-card-name">E — Infection &amp; Inflammation <small>Arthrite septique · Ostéomyélite · Goutte · SPA · Pied rhumatismal</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Urgence hospitalière si septique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Arthrite septique de cheville</div><div class="value" style="font-size:13px;">Douleur intense non mécanique · gonflement rapide + chaleur · amplitude extrêmement limitée. FDR spécifiques : diabète · plaie/ulcère · immunodépression · injection récente · toxicomanie IV. Red flag absolu → urgence hospitalière. Ne jamais manipuler.</div></div>
+<div class="test-detail-item"><div class="label">Ostéomyélite</div><div class="value" style="font-size:13px;">Douleur profonde · plaie chronique · cicatrisation lente · terrain diabétique fréquent · douleur pas toujours intense (surtout si neuropathie associée).</div></div>
+<div class="test-detail-item"><div class="label">SPA — Clinique pied</div><div class="value" style="font-size:13px;">Enthésite Achille · fasciite plantaire inflammatoire · talalgie inflammatoire · dactylite (orteil en saucisse) · souvent asymétrique.</div></div>
+<div class="test-detail-item"><div class="label">Goutte (podagre)</div><div class="value" style="font-size:13px;">Début brutal · douleur extrême · rougeur + chaleur · 1er MTP classique · peut mimer une infection → ne pas manquer les deux diagnostics différentiels.</div></div>
+<div class="test-detail-item"><div class="label">Examen clinique spécifique pied</div><div class="value" style="font-size:13px;">Inspection : tuméfaction, signes inflammatoires, ecchymose · varus physiologique calcanéum à la marche (DV patient). Palpation : chaque relief osseux, tendons, ligaments · tuméfaction saillante insertion Achille ++ · interlignes Chopart et Lisfranc + mobilisation en rotation maintenant calca. Mobilisation TT : F° (60°)/E° (30°) · éversion (20°)/inversion (20°). Squeeze test des MTP.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-p-neuro">
+<div class="test-card-header" onclick="toggleTest('fc-p-neuro')">
+<div class="test-card-name">N — Neurologique <small>Morton · Tunnel tarsien · Fibulaire · Neuropathie diabétique · L5/S1</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Pseudo syndromes canalaires</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Névrome de Morton</div><div class="value" style="font-size:13px;">Neuropathie de compression chronique (pas un vrai névrome). Le plus souvent entre M3–M4 (3e espace inter-métatarsien). Clinique : douleur avant-pied · sensation de caillou · décharges électriques dans les orteils · paresthésies interdigitales · aggravée chaussures serrées · améliorée pieds nus. Examen : palpation espace inter-métatarsien (reproduction) · compression avant-pied/Mulder (click + douleur irradiée, non spécifique).</div></div>
+<div class="test-detail-item"><div class="label">Tunnel tarsien — Syndrome nerf tibial</div><div class="value" style="font-size:13px;">Existe réellement mais surdiagnostiqué. Sensitif : brûlures plantaires · décharges électriques · paresthésies voûte/orteils · possible nocturne. Aggravé station debout/marche prolongée · soulagé repos/décharge. Tests cliniques : Tinel rétro-malléolaire médial (peut reproduire, pas spécifique) · dorsiflexion-éversion (majore symptômes, validation limitée). Exclure d'abord : fasciite plantaire · neuropathie diabétique · radiculopathie S1 · Morton · SPA.</div></div>
+<div class="test-detail-item"><div class="label">Atteinte nerf fibulaire post-entorse</div><div class="value" style="font-size:13px;">Complication rare mais réelle. Sensitif : paresthésies dos du pied · dysesthésies face latérale jambe · hypoesthésie hallux–2e orteil. Moteur (si atteinte haute) : faiblesse releveurs + steppage. Quand y penser : douleur latérale persistante atypique · brûlures/décharges · troubles sensitifs dorsal pied · faiblesse dorsiflexion. Red flags → ENMG + avis spécialisé.</div></div>
+<div class="test-detail-item"><div class="label">Neuropathie diabétique</div><div class="value" style="font-size:13px;">Neuropathie distale symétrique. Clinique : brûlures · fourmillements · engourdissements · douleurs nocturnes · perte sensibilité "en chaussette". Examen cutané : peau sèche · hyperkératose · ulcères indolores. Red flags : plaie plantaire indolore · perte complète sensibilité · déformation + hyper-appuis. Pied de Charcot (diabète + pied rouge chaud déformé) → urgence spécialisée.</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-p-trauma">
+<div class="test-card-header" onclick="toggleTest('fc-p-trauma')">
+<div class="test-card-name">T — Traumatique <small>Ottawa · Entorse ATFL · Achille (Thompson/Matles) · Fractures stress · PEACE &amp; LOVE</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Examen ligamentaire + tendineux systématique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Critères d'Ottawa cheville</div><div class="value" style="font-size:13px;">Se ≈ 98–100% · Sp faible (~30–50%). Très bon pour EXCLURE · pas fait pour confirmer. Limites : pas pour douleurs chroniques · pas si suspicion infectieuse/tumorale · prudence &lt; 18 ans. Si positif → immobiliser + décharge + imagerie (RX).</div></div>
+<div class="test-detail-item"><div class="label">Fracture de stress — À ne pas manquer</div><div class="value" style="font-size:13px;">Localisations fréquentes coureur : métatarsiens (surtout 2–3) · calcanéum · naviculaire (haut risque) · talus. FDR majeurs : augmentation charge rapide · changement surface/chaussage · RED-S · aménorrhée · ATCD fracture stress. Clinique : douleur progressive mécanique · point douloureux osseux très localisé · douleur impact/saut. Ottawa peut être négatif → imagerie si suspicion clinique.</div></div>
+<div class="test-detail-item"><div class="label">Entorse latérale (ATFL++) — Grades</div><div class="value" style="font-size:13px;">Mécanisme : inversion + flexion plantaire. Grade 1 = bénigne · Grade 2 = moyenne · Grade 3 = grave. EC : tiroir antérieur de cheville · talar tilt test. Routine ortho cheville : anamnèse · inspection · testing TT/Chopart/Lisfranc · testing tendineux (fibulaires, tibiaux, Achille) · équilibre proprioceptif (appui monopodal).</div></div>
+<div class="test-detail-item"><div class="label">Lésion tendon Achille — Triade clinique + 3 tests</div><div class="value" style="font-size:13px;">Triade : sensation de claquement + douleur brutale postérieure + déficit propulsion. <strong>1. Thompson :</strong> compression mollet DV → normal = FP · rupture = absence/↓ forte. <strong>2. Matles :</strong> genou 90° DV → normal = pied en légère FP · rupture = pied tombe vers neutre/dorsiflexion. <strong>3. Palpation :</strong> creux/défaut tendineux. Si 3/3 positifs → sensibilité 100%. 2/3 positifs ou 1 positif + faiblesse FP → diagnostic confirmé (AAOS 2009).</div></div>
+<div class="test-detail-item"><div class="label">PEACE &amp; LOVE</div><div class="value" style="font-size:13px;"><strong>PEACE (phase aiguë) :</strong> Protection · Élévation · Avoid anti-inflammatory modalities · Compression · Éducation. <strong>LOVE (phase subaiguë-chronique) :</strong> Load (reprise progressive) · Optimisme · Vascularisation (cardio douleur tolérée) · Exercise (renforcement progressif).</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="fc-p-env">
+<div class="test-card-header" onclick="toggleTest('fc-p-env')">
+<div class="test-card-name">E — Environnement <small>Tendinopathies · Fasciite plantaire · Bursite · RED-S · Analyse course</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Surcharge mécanique — coureur</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Fluoroquinolones — Iatrogénie tendineuse</div><div class="value" style="font-size:13px;">Classe la plus clairement associée aux lésions tendineuses. Tendinopathie · rupture tendineuse (bilatéral possible, Achille ++). Pendant traitement ET plusieurs semaines après arrêt.</div></div>
+<div class="test-detail-item"><div class="label">Analyse de la course — Points noirs</div><div class="value" style="font-size:13px;">Cadence (optimale ≈ 170-180 pas/min) · bruit des pas (attaque talon bruyante = charges élevées) · pied nu (référence mais transition progressive). Facteurs : modification programme · changement chaussures · type chaussure (maximaliste vs minimaliste) · fréquence · intensité · technique · sommeil/fatigue/stress.</div></div>
+<div class="test-detail-item"><div class="label">RED-S / Disponibilité énergétique basse</div><div class="value" style="font-size:13px;">Disponibilité énergétique insuffisante pour métabolisme de base + fonctions hormonales + réparation tissulaire + performance. Conséquences pied/cheville : fractures de stress · retard cicatrisation tendineuse · fasciopathies chroniques. Signes d'alerte : fatigue chronique · baisse performance · blessures à répétition · aménorrhée/cycles irréguliers · IMC bas. Populations : endurance · trail · danse.</div></div>
+<div class="test-detail-item"><div class="label">Tendinopathies pied/cheville</div><div class="value" style="font-size:13px;">Achille · tibial postérieur · fibulaires (long et court) · extenseurs du pied · fléchisseurs · fasciite plantaire. Problème de charge, d'adaptation et d'organisation du tissu tendineux (pas frottement, pas inflammation aiguë). Test : douleur localisée précise + reproduite à la répétition. Traitement : exercices progressifs (isométriques → excentriques → pliométrie). Le repos n'aide PAS.</div></div>
+<div class="test-detail-item"><div class="label">Fasciite plantaire (fasciopathie)</div><div class="value" style="font-size:13px;">Dégénérative (micro-lésions + désorganisation collagène). Clinique : douleur premiers pas le matin · insertion calcanéenne médiale · charge prolongée. Traitement : load management + renforcement pied + mollet + étirements + orthèses si surcharge. DD : fracture stress calcanéum · compression nerf Baxter · talalgie inflammatoire SPA.</div></div>
+<div class="test-detail-item"><div class="label">Bursite plantaire</div><div class="value" style="font-size:13px;">Sous têtes métatarsiennes · intermétatarsienne · talon. FDR : chaussures étroites · hyperpression avant-pied · déformations. Examen : squeeze métatarsien (si irradiation orteils/paresthésies → penser Morton plutôt). Phase aiguë : décharge locale + adaptation chaussage.</div></div>
+<div class="test-detail-item"><div class="label">Hallux rigidus — 1er MTP</div><div class="value" style="font-size:13px;">Arthrose la plus fréquente au pied. SC : douleur dorsale hallux · perte extension hallux ++ · douleur propulsion · bosse dorsale (ostéophyte) · raideur globale tardive. DD : goutte · fracture de fatigue · rhumatisme inflammatoire.</div></div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-top:18px;margin-bottom:18px;">
+<div class="card-header"><div class="card-icon amber">⚠️</div><div class="card-title">Pièges diagnostiques fréquents — Pied &amp; Cheville</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Piège</th><th>Ce qu'il faut savoir</th></tr></thead>
+<tbody>
+<tr><td>Fasciopathie plantaire ≠ toute douleur du talon</td><td>Penser aussi : fracture de stress calcanéum · compression nerf Baxter · bursite calcanéenne · SPA enthésitique</td></tr>
+<tr><td>Morton surestimé</td><td>Avant-pied douloureux ≠ Morton par défaut. Penser : bursite intermétatarsienne · plaque plantaire · fracture de stress métatarsienne</td></tr>
+<tr><td>Tendinopathie traitée alors que fracture de stress</td><td>Douleur localisée osseuse → imagerie (RX, IRM ou scintigraphie)</td></tr>
+<tr><td>Entorse "banale" qui cache autre chose</td><td>Fracture base M5 · lésion ostéochondrale talus · atteinte nerf fibulaire · instabilité chronique cheville</td></tr>
+<tr><td>Tunnel tarsien surdiagnostiqué</td><td>Beaucoup de douleurs plantaires ≠ tunnel tarsien. Souvent fasciopathie, SPA, neuropathie diffuse</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon coral">🚨</div><div class="card-title">Red flags associés au pied &amp; cheville</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Red flag</th><th>Orientation</th></tr></thead>
+<tbody>
+<tr><td>Douleur nocturne non mécanique progressive</td><td>Cancer / infectieux / inflammatoire</td></tr>
+<tr><td>Gonflement persistant inexpliqué</td><td>Arthrite septique · TVP · cancer</td></tr>
+<tr><td>Rougeur + chaleur + fièvre</td><td>Arthrite septique → urgence hospitalière</td></tr>
+<tr><td>Œdème unilatéral important soudain</td><td>TVP → Score de Wells</td></tr>
+<tr><td>Déficit moteur brutal (impossibilité FP/FD)</td><td>Rupture complète tendineuse · atteinte nerf fibulaire</td></tr>
+<tr><td>Perte sensibilité territoire nerveux net</td><td>Neuropathie nerveuse → ENMG</td></tr>
+<tr><td>Diabète + pied rouge chaud déformé</td><td>Pied de Charcot → urgence spécialisée</td></tr>
+<tr><td>Plaie plantaire indolore</td><td>Neuropathie diabétique → référence spécialisée</td></tr>
+<tr><td>ATCD cancer + douleur pied progressive</td><td>Métastase · infection atypique</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote"><cite>Source : H. Bouësnard D.O — Formation et pratique clinique P2, IEOQ 2025-2026 · Raisonnement clinique face à une douleur localisée au pied et à la cheville</cite></div>
+</section>
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["fc-epaule", "fc-coude", "fc-genou", "fc-hanche", "fc-pied"];
+  var SUB_LABELS_LOCAL = {"fc-epaule": "🦴 Épaule", "fc-coude": "🦾 Coude", "fc-genou": "🦵 Genou", "fc-hanche": "🦴 Hanche", "fc-pied": "🦶 Pied & Cheville"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    if (initial) applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 2 · Neurologie</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(2);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🧠</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 2e Année</h1>
+      <p>Neurologie — IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="index.html">← Catégories</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><strong>Neurologie</strong> <span id="crumbSub">› 📖 Terminologie</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="neuro-terminologie" onclick="showSub('neuro-terminologie')">📖 Terminologie</button><button type="button" class="nav-tab" data-sub="neuro-triage" onclick="showSub('neuro-triage')">🚦 Triage clinique</button><button type="button" class="nav-tab" data-sub="neuro-routine-ms" onclick="showSub('neuro-routine-ms')">💪 Routine MS</button><button type="button" class="nav-tab" data-sub="neuro-routine-mi" onclick="showSub('neuro-routine-mi')">🦵 Routine MI</button><button type="button" class="nav-tab" data-sub="neuro-anatomie-ms" onclick="showSub('neuro-anatomie-ms')">🔵 Anatomie Plexus Brachial</button><button type="button" class="nav-tab" data-sub="neuro-anatomie-mi" onclick="showSub('neuro-anatomie-mi')">🟢 Anatomie Plexus Lombaire/Sacral</button><button type="button" class="nav-tab" data-sub="neuro-raisonnement" onclick="showSub('neuro-raisonnement')">🧩 Raisonnement clinique</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="neuro-terminologie" style="display:block;">
+<div class="section-title">Terminologie — Douleurs irradiantes &amp; Neurologie clinique</div>
+<div class="section-sub">Définitions clés, mécanismes neurophysiopathologiques — Schmid, Bogduk, IASP · IEOQ Formation et pratique clinique</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">Définitions fondamentales</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:30%">Terme</th><th>Définition</th></tr></thead>
+<tbody>
+<tr><td><strong>Radiculopathie</strong></td><td>Atteinte d'une racine nerveuse — perte de fonction (déficit myotomique + dermatomique + ROT correspondant). Avec ou sans douleur.</td></tr>
+<tr><td><strong>Douleur radiculaire</strong></td><td>Douleur nerveuse causée par des potentiels d'action émanant de la racine ou du ganglion dorsal. Distribution dynatomale (jamais parfaite). Vive, fulgurante, lancinante. Gain de fonction = paresthésies.</td></tr>
+<tr><td><strong>Radiculopathie douloureuse</strong></td><td>Coexistence de douleur radiculaire + perte de fonction. Les deux peuvent varier indépendamment en intensité.</td></tr>
+<tr><td><strong>Neuropathie</strong></td><td>Perte de fonction d'un nerf périphérique. Avec ou sans douleur. Lésion ou dysfonction du SNP.</td></tr>
+<tr><td><strong>Mécanosensibilité</strong></td><td>Réponse douloureuse lors de la mise en tension mécanique du système nerveux (SLR, ULNT, Slump). Ne signifie <em>pas</em> automatiquement neuropathie.</td></tr>
+<tr><td><strong>Douleur référée somatique</strong></td><td>Douleur perçue à distance de la source. Pas d'élément neurologique associé (pas de paresthésies, pas de bande étroite, pas de déficit).</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon navy">⚡</div><div class="card-title">Sémiologie sensorielle — IASP</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:32%">Terme</th><th>Définition IASP</th></tr></thead>
+<tbody>
+<tr><td><strong>Hyperalgésie</strong></td><td>Réponse augmentée (ou exagérée) à un stimulus douloureux. Test : roulette de Wartenberg.</td></tr>
+<tr><td><strong>Allodynie</strong></td><td>Douleur résultant d'un stimulus qui ne provoque habituellement pas de douleur. Test : coton ou neurofilament.</td></tr>
+<tr><td><strong>Hyperesthésie</strong></td><td>Sensibilité augmentée à tout type de stimulation, excluant les sens spéciaux.</td></tr>
+<tr><td><strong>Hypoesthésie</strong></td><td>Diminution de la sensibilité à la stimulation, à l'exclusion des sens particuliers.</td></tr>
+<tr><td><strong>Anesthésie</strong></td><td>Perte complète de toute sensibilité dans une région donnée.</td></tr>
+<tr><td><strong>Dysesthésies</strong></td><td>Sensations anormales et désagréables (brûlures, picotements, décharges électriques, engourdissements). Non spécifiques.</td></tr>
+<tr><td><strong>Paresthésies</strong></td><td>Sensation anormale non douloureuse, spontanée ou provoquée (fourmillements). Gain de fonction.</td></tr>
+<tr><td><strong>Analgesie</strong></td><td>Absence de douleur en réponse à une stimulation qui devrait normalement être douloureuse.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon amber">📉</div><div class="card-title">Perte de fonction — Grosses fibres (Aα/Aβ)</div></div>
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:12px;font-size:13px;">La perte de fonction = atteinte des grosses fibres. Spécifique aux neuropathies (lésion ou dysfonction du SNP).</div>
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Manifestations</div><div class="value" style="font-size:13px;">Déficit moteur (myotome) · Hypo/aréflexie segmentaire · Hypoesthésie / anesthésie · +/- Paresthésies (non spécifiques)</div></div>
+<div class="test-detail-item"><div class="label">Tests associés</div><div class="value" style="font-size:13px;">Évaluation des réflexes · Testing musculaire (Break test) · Sensibilité au tact fin · Vibration (diapason) · Proprioception</div></div>
+<div class="test-detail-item"><div class="label">Outils</div><div class="value" style="font-size:13px;">Pinceau · Neurofilament · Diapason Rydel-Seiffer · Marteau à réflexes · Dynamomètre</div></div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon coral">📈</div><div class="card-title">Gain de fonction — Petites fibres (C/Aδ)</div></div>
+<div class="card-body">
+<div class="info-box amber" style="margin-bottom:12px;font-size:13px;">Le gain de fonction N'indique PAS une neuropathie. Il reflète une hypersensibilisation. Peut exister sans neuropathie (ischémie transitoire, syndrome myofascial).</div>
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Manifestations</div><div class="value" style="font-size:13px;">Douleur · Hyperalgie · Allodynie · Dysesthésies · Paresthésies · Mécanosensibilité · Wind-up (sommation temporelle)</div></div>
+<div class="test-detail-item"><div class="label">Tests associés</div><div class="value" style="font-size:13px;">Tests de provocation · Palpation des structures nerveuses · Nociception (roulette Wartenberg) · Sensibilité thermique (Tip-therm)</div></div>
+<div class="test-detail-item"><div class="label">Outils</div><div class="value" style="font-size:13px;">Roulette de Wartenberg · Tip-therm · Pièce de monnaie froide + liège · Neuropen</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon teal">🎯</div><div class="card-title">Phénotypage de la douleur — 3 mécanismes (IASP 2020)</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:20%">Mécanisme</th><th style="width:35%">Définition</th><th style="width:25%">Clinique caractéristique</th><th style="width:20%">Exemples</th></tr></thead>
+<tbody>
+<tr>
+<td><strong style="color:var(--teal-600);">Nociceptif</strong></td>
+<td>Douleur issue d'une atteinte réelle ou menace au niveau d'un tissu non neural.</td>
+<td>Localisé, récent. Relation cohérente trauma + sommation temporelle. Hyperalgésie + allodynie thermique.</td>
+<td>Entorse, fracture, lumbago</td>
+</tr>
+<tr>
+<td><strong style="color:var(--navy-600);">Neuropathique</strong></td>
+<td>Douleur issue d'une lésion ou d'une maladie affectant le système somato-sensoriel.</td>
+<td>Dysesthésies (brûlure, décharge électrique, froid douloureux) · Paresthésies · Allodynie · Hyperalgésie. Fond continu + paroxysmes spontanés.</td>
+<td>Sciatique, neuropathie diabétique, zona</td>
+</tr>
+<tr>
+<td><strong style="color:var(--amber-500);">Nociplastique</strong></td>
+<td>Douleur résultant d'une altération de la nociception sans lésion tissulaire claire ni lésion du SNP. <em>N'est pas un diagnostic — mécanisme explicatif.</em></td>
+<td>Durée ≥ 3 mois · Distribution diffuse · Allodynie mécanique statique/dynamique · Allodynie thermique · Comorbidités (sommeil, fatigue, cognition).</td>
+<td>Fibromyalgie, hypersensibilisation persistante</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon navy">📊</div><div class="card-title">Douleur référée somatique vs Douleur radiculaire</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Critère</th><th>Douleur référée somatique</th><th>Douleur radiculaire</th></tr></thead>
+<tbody>
+<tr><td><strong>Caractéristiques</strong></td><td>Profonde, sourde, rongeante, gênante, perçante, pinçante</td><td>Piquante, lancinante, choquante, électrique</td></tr>
+<tr><td><strong>Distribution</strong></td><td>Zone étendue, limites difficiles à définir, centre identifiable</td><td>Se déplace le long du membre en bande de 2–3 pouces de largeur max</td></tr>
+<tr><td><strong>Symptômes associés</strong></td><td>Hyperalgésies secondaires, troubles trophiques locaux</td><td>Paresthésies, perte de fonction</td></tr>
+<tr><td><strong>Éléments neurologiques</strong></td><td><strong>Aucun</strong> (pas de paresthésies, pas de déficit)</td><td>Présents (gain ou perte de fonction)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon teal">📚</div><div class="card-title">Questionnaires d'aide au diagnostic neuropathique</div></div>
+<div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">DN4 (Questionnaire 4 questions)</div><div class="value" style="font-size:13px;">4 questions patient + examen clinique. Score ≥ 4/10 = forte suspicion de douleur neuropathique. Validé en français. Interrogatoire : brûlure, froid douloureux, décharges électriques, fourmillements, picotements, engourdissement, démangeaisons. Examen : hypoesthésie au tact, à la piqûre, augmentation de la douleur au frottement.</div></div>
+<div class="test-detail-item"><div class="label">LANSS (Leeds)</div><div class="value" style="font-size:13px;">Score ≥ 12 → sensibilisation neuropathique. Paresthésies, changements du SNA, douleur paroxystique, brûlure, allodynie, hyper/hypoalgésie au piqué.</div></div>
+<div class="test-detail-item"><div class="label">PainDETECT / IDPAIN</div><div class="value" style="font-size:13px;">Questionnaires auto-administrés complémentaires. Ne remplacent pas le raisonnement clinique (Gudala et al. 2017).</div></div>
+</div>
+<div class="info-box coral" style="margin-top:12px;font-size:13px;"><strong>Rappel :</strong> Ces questionnaires ne remplacent pas le raisonnement clinique mais sont d'une grande aide pour orienter le phénotypage.</div>
+</div>
+</div>
+<div class="footnote"><cite>Sources : Schmid AB et al. (PAIN 2023) — Recommendations NeuPSIG · Bogduk N. (Pain 2009) — Definitions back, referred and radicular pain · IASP Terminology 2020 · Gudala et al. 2017</cite></div>
+</section>
+<section class="section" id="neuro-triage" style="display:none;">
+<div class="section-title">Triage clinique — Red flags, Drapeaux orange &amp; Neuro-inflammation</div>
+<div class="section-sub">Pathologies sérieuses, réorientations, facteurs de risque — Finucane JOSPT 2020 · IEOQ Formation et pratique clinique</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon coral">🚨</div><div class="card-title">Red flags — Lombalgie avec douleur irradiante</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:22%">Pathologie évoquée</th><th>Signes et symptômes évocateurs</th></tr></thead>
+<tbody>
+<tr><td><strong>Syndrome queue de cheval</strong></td><td>Troubles sphinctériens uro-anaux · Déficit sensitif lombo-ano-périnéal (en selle) · Diminution de la réponse sexuelle · Douleur neuropathique MI bilatérale évolutive</td></tr>
+<tr><td><strong>Fracture vertébrale</strong></td><td>Lombalgie aiguë traumatique sur terrain ostéoporotique · Douleur aggravée en charge et nocturne · Cluster de Roman et Henschke</td></tr>
+<tr><td><strong>Discite / Spondylodiscite</strong></td><td>Lombalgie sévère progressive aggravée par la charge · Fièvre (inconstante) · Raideur majeure permanente · Altération état général · Drogue IV · Corticothérapie / immunosuppresseurs</td></tr>
+<tr><td><strong>Tumeur lombaire</strong></td><td>Douleur multi-segmentaire non mécanique aggravée la nuit · Perte de poids inexpliquée (5–10% en 3–6 mois) · Signes neurologiques centraux · ATCD cancer (ostéophile)</td></tr>
+<tr><td><strong>Anévrisme aorte abdominale</strong></td><td>Douleur lombaire/abdominale intense aggravée à l'effort · Masse abdominale pulsatile &gt; 5 cm · Souffle artériel épigastrique · Syncope, essoufflement, vertiges · FDR cardio-vasculaires</td></tr>
+<tr><td><strong>Atteinte neurologique centrale</strong></td><td>Babinski positif (seul = red flag) · ≥ 3 ROT anormaux · Clonus inépuisable · Déficit moteur ≤ 3/5 ou multiétagé (≥ 2 niveaux)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon amber">⚠️</div><div class="card-title">Réorientations différées — Pathologies vasculaires et inflammatoires</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:25%">Pathologie</th><th>Cluster clinique</th></tr></thead>
+<tbody>
+<tr><td><strong>AOMI / MAP</strong></td><td>Claudication vasculaire UL ou BL (crampes, brûlures à l'effort) · Signes d'ischémie cutanéo-trophiques · FDR CV · Faiblesse des pouls distaux</td></tr>
+<tr><td><strong>Sténose spinale</strong></td><td>Lombalgie + irradiation UL ou BL + symptômes distaux · Claudication médullaire · Déficit neurologique périphérique distal · Cluster de Cook</td></tr>
+<tr><td><strong>Spondylarthropathie inflammatoire</strong></td><td>Lombalgie/fessalgie inflammatoire · Aggravation nocturne, amélioration par AINS · Signes de connectivite · Critères d'Amor ou New-York modifiés</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon amber">🟠</div><div class="card-title">Drapeaux orange — Santé mentale</div></div>
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:12px;font-size:13px;">Indicateurs cliniques équivalents aux red flags en santé mentale. Témoignent d'un niveau de détresse psychologique excessif ou en évolution.</div>
+<div class="tech-step"><div class="label">Troubles psychiatriques</div>Dépression clinique (PHQ2, HAD) · Troubles anxieux généralisés (HAD) · PTSD (SSDRH) · Troubles majeurs de la personnalité · Toxicomanies et addictions</div>
+<div class="tech-step"><div class="label">Facteurs psychologiques</div>Catastrophisme · Kinésiophobie · Cognitions maladaptatives · Ruminations anxio-dépressives · Hypervigilance · Évitement · Perte d'efficacité personnelle · Isolement social · Attentes faibles · Distorsions cognitives</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon coral">⚡</div><div class="card-title">Facteurs de risque — Neuropathie périphérique</div></div>
+<div class="card-body">
+<div class="tech-step"><div class="label">Principaux FDR</div>Diabète (polyneuropathie diabétique) · Alcool (neurotoxique) · Maladies cardio-vasculaires · Carence vitamine B12 (végétariens, végétaliens, personnes âgées)</div>
+<div class="tech-step"><div class="label">FDR spécifiques</div>ATCD d'atteinte nerveuse (cellules gliales résiduelles au site lésionnel) · Grossesse (risque canal carpien accru) · Intoxication médicamenteuse · Maladie auto-immune · Trouble thyroïdien</div>
+<div class="tech-step"><div class="label">Chimiothérapie</div>Vincristine, vinblastine → bloquent le transport axonal → mécanosensibilité accrue. Neuropathies induites (CIPN) fréquentes et invalidantes.</div>
+<div class="info-box amber" style="margin-top:8px;font-size:13px;"><strong>Attention :</strong> Association de FDR = multiplication des risques. Les ATCD d'atteinte nerveuse augmentent le risque de nouvelles douleurs neuropathiques (cellules gliales persistantes au site lésionnel).</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon navy">🔬</div><div class="card-title">Neuro-inflammation — Mécanismes physiopathologiques</div></div>
+<div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Rôle des cytokines</div><div class="value" style="font-size:13px;">En conditions normales, production simultanée de cytokines pro- et anti-inflammatoires. Une libération prolongée de cytokines pro-inflammatoires induit une réponse pathologique → douleur chronique. L'inflammation prolongée crée des sites hypersensibles générateurs de décharges ectopiques.</div></div>
+<div class="test-detail-item"><div class="label">Bourgeonnement axonal</div><div class="value" style="font-size:13px;">Les fibres nerveuses endommagées tentent de se régénérer. Dans un contexte inflammatoire excessif, ce bourgeonnement peut être désorganisé → hypersensibilisation → douleurs neuropathiques persistantes.</div></div>
+<div class="test-detail-item"><div class="label">Récepteurs impliqués</div><div class="value" style="font-size:13px;">Récepteurs ASIC2/DRASIC (sensibles aux ions H+ / acidose) s'accumulent lors de l'interruption du transport axoplasmique. Récepteurs TRP sensibles à l'environnement inflammatoire. McLachlan 1993 : lésions nerveuses → prolifération noradrénergique dans les ganglions des racines dorsales.</div></div>
+<div class="test-detail-item"><div class="label">Conséquences centrales</div><div class="value" style="font-size:13px;">Les cellules gliales (microglies et astrocytes) restent au site de la lésion. Lors d'une nouvelle agression, elles déclenchent une inflammation accrue → ATCD d'atteinte nerveuse = risque augmenté de nouvelles douleurs neuropathiques.</div></div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon teal">🔍</div><div class="card-title">Algorithme de suspicion de douleur neuropathique — Schmid et al. (PAIN 2023)</div></div>
+<div class="card-body">
+<div class="tech-step"><div class="label">Critère 1 — Anamnèse et présentation clinique</div>Les antécédents médicaux et la présentation clinique suggèrent une lésion ou une maladie neurologique pertinente. Symptômes évocateurs (paresthésies et/ou dysesthésies) + comportement des symptômes (imprévisibilité avec ou sans douleur de fond).</div>
+<div class="tech-step"><div class="label">Critère 2 — Distribution neuroanatomique</div>Distribution de la douleur plausible sur le plan neuroanatomique, en considérant la variation des dermatomes et la propagation extraterritoriale.</div>
+<div class="tech-step"><div class="label">Critère 3 — Examen neurologique standard</div>La douleur est associée à des signes sensoriels (typiquement une perte sensorielle et possible gain sensoriel) dans la même distribution neuroanatomique plausible.</div>
+<div class="info-box teal" style="margin-top:8px;font-size:13px;">Critères 1+2+3 → <strong>Forte suspicion de douleur neuropathique</strong>. Critère 1 seul sans 2 ni 3 → <strong>Mécanosensibilité et/ou douleur somatique référée</strong>.</div>
+</div>
+</div>
+<div class="footnote"><cite>Sources : Finucane LM. (JOSPT 2020) — Red flags · Schmid AB et al. (PAIN 2023) — NeuPSIG · McLachlan et al. 1993 · Ji et al. modèles animaux · Maselli F et al. (Disability &amp; Rehabilitation) — Red Flags TLP</cite></div>
+</section>
+<section class="section" id="neuro-routine-ms" style="display:none;">
+<div class="section-title">Routine neurologique — Membre supérieur (C4–T1)</div>
+<div class="section-sub">Examen standardisé en 5 étapes · Bender, Dove &amp; Schmid (JOSPT 2023) · IEOQ Formation pratique clinique</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">Séquence universelle — 5 étapes (MS et MI)</div></div>
+<div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">1 — Motoneurones supérieurs</div><div class="value" style="font-size:13px;">Rechercher des signes centraux. Si positif → red flag. MS : Hoffmann, Tromner, supinateur inversé. MI : Babinski, Oppenheim, clonus.</div></div>
+<div class="test-detail-item"><div class="label">2 — Réflexes ostéo-tendineux (ROT)</div><div class="value" style="font-size:13px;">Comparer gauche/droite systématiquement. Aboli = SNP. Exacerbé = SNC. L'abolition asymétrique a plus de valeur diagnostique que l'abolition symétrique.</div></div>
+<div class="test-detail-item"><div class="label">3 — Myotomes</div><div class="value" style="font-size:13px;">Testing musculaire segmentaire avec échelle MRC (0–5/5). Tester en position neutre ET en position cervicale/lombaire provocatrice pour détecter ischémie transitoire (phénomène on/off).</div></div>
+<div class="test-detail-item"><div class="label">4 — Dermatomes / Dynatomes</div><div class="value" style="font-size:13px;">Grosses fibres d'abord (tact fin, vibration), puis petites fibres (nociception, thermique). Approche circonférentielle puis en étoile pour cartographier. Toujours yeux fermés, comparer côtés.</div></div>
+<div class="test-detail-item"><div class="label">5 — Tests de provocation neurodynamiques</div><div class="value" style="font-size:13px;">Palpation des nerfs (nerf sain = non douloureux). Tests ULNT. Test positif = reproduction des symptômes + modification lors de la différenciation structurelle.</div></div>
+</div>
+<div class="info-box coral" style="margin-top:12px;font-size:13px;"><strong>Bender, Dove &amp; Schmid 2023 :</strong> « Lorsqu'ils sont utilisés isolément, la performance diagnostique de la plupart des tests est faible à modérée. L'interprétation doit s'effectuer dans le cadre d'un raisonnement clinique solide. »</div>
+</div>
+</div>
+<!-- MOTONEURONES SUPÉRIEURS MS -->
+<div class="test-card" id="tc-mnsr-ms">
+<div class="test-card-header" onclick="toggleTest('tc-mnsr-ms')">
+<div class="test-card-name">Étape 1 — Motoneurones supérieurs (MS) <small>Hoffmann · Tromner · Supinateur inversé</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Red flag si positif</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Signe de Hoffmann</div><div class="value" style="font-size:13px;">Flexion involontaire des phalanges distales du pouce et de l'index en réponse au brusque relâchement de la flexion forcée du 3e ou 4e doigt. Positif = lésion voies pyramidales.</div></div>
+<div class="test-detail-item"><div class="label">Signe de Tromner</div><div class="value" style="font-size:13px;">Similaire à Hoffmann mais le doigt est dévié vers le haut. Même interprétation.</div></div>
+<div class="test-detail-item"><div class="label">Réflexe supinateur inversé</div><div class="value" style="font-size:13px;">Percussion légère du muscle brachioradial → normalement flexion du poignet + légère supination. Réaction inversée (pronation du poignet ou flexion involontaire des doigts) = lésion des voies pyramidales. Signe de myélopathie cervicale.</div></div>
+<div class="test-detail-item"><div class="label">Interprétation</div><div class="value" style="font-size:13px;"><strong>Red flags si :</strong> Signe de Babinski positif (seul) · ≥ 3 ROT anormaux · Clonus inépuisable · Association de plusieurs signes centraux. Myélopathie = signes corticospinaux + atteinte bilatérale/quadrilatérale + signes MNS.</div></div>
+</div>
+</div>
+</div>
+<!-- ROT MS -->
+<div class="test-card" id="tc-rot-ms">
+<div class="test-card-header" onclick="toggleTest('tc-rot-ms')">
+<div class="test-card-name">Étape 2 — Réflexes ostéo-tendineux — MS <small>C5 à C8–T1</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Grosses fibres</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="table-wrap">
+<table class="grille-eval-table">
+<thead><tr><th>Réflexe</th><th>Niveau</th><th>Technique et position</th><th>Interprétation</th></tr></thead>
+<tbody>
+<tr><td><strong>Bicipital</strong></td><td><strong style="color:var(--teal-600);">C5–C6</strong></td><td>Avant-bras en légère flexion. Frapper le tendon du biceps au pli du coude. Position : avant-bras semi-fléchi, bord radial tourné vers le haut.</td><td>Aboli = atteinte C5–C6. Exacerbé = SNC.</td></tr>
+<tr><td><strong>Brachioradial (stylo-radial)</strong></td><td><strong style="color:var(--teal-600);">C5–C6</strong></td><td>Avant-bras semi-fléchi, bord radial vers le haut. Frapper le radius au-dessus du styloïde. Réponse normale = supination + flexion biceps.</td><td>Supinateur inversé = signe pyramidal si réponse est pronation/flexion des doigts.</td></tr>
+<tr><td><strong>Tricipital</strong></td><td><strong style="color:var(--teal-600);">C6–C7</strong></td><td>Bras en abduction, avant-bras pendant. Frapper le tendon du triceps au-dessus de l'olécrâne.</td><td>Aboli = atteinte C7.</td></tr>
+<tr><td><strong>Cubito-pronateur (fléchisseurs des doigts)</strong></td><td><strong style="color:var(--teal-600);">C8–T1</strong></td><td>Styloïde du cubitus. Réponse normale = pronation du poignet.</td><td>Aboli = atteinte C8–T1.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="info-box amber" style="font-size:13px;">Sans obligation de tester directement dans le tendon. L'abolition asymétrique a plus de valeur diagnostique que l'abolition symétrique. Distinguer abolition du ROT d'un déficit de motricité.</div>
+</div>
+</div>
+<!-- MYOTOMES MS -->
+<div class="test-card" id="tc-myotomes-ms">
+<div class="test-card-header" onclick="toggleTest('tc-myotomes-ms')">
+<div class="test-card-name">Étape 3 — Myotomes membres supérieurs <small>Break test + position provocatrice</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Échelle MRC 0–5/5</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="table-wrap">
+<table class="grille-eval-table">
+<thead><tr><th>Muscle</th><th>Test</th><th>Racine</th><th>Nerf tronculaire</th></tr></thead>
+<tbody>
+<tr><td>Trapèze</td><td>Élévation épaule</td><td><strong style="color:var(--teal-600);">C4</strong></td><td>XI (spinal accessoire)</td></tr>
+<tr><td>Deltoïde / Supra-épineux</td><td>ABD épaule 0–90°</td><td><strong style="color:var(--teal-600);">C5–C6</strong></td><td>N. axillaire / N. supra-scapulaire</td></tr>
+<tr><td>Biceps brachial</td><td>Flexion coude</td><td><strong style="color:var(--teal-600);">C5–C6</strong></td><td>N. musculo-cutané</td></tr>
+<tr><td>Extenseurs radiaux du poignet</td><td>Extension poignet</td><td><strong style="color:var(--teal-600);">C6–C7</strong></td><td>N. radial</td></tr>
+<tr><td>Triceps brachial</td><td>Extension coude</td><td><strong style="color:var(--teal-600);">C7–C8</strong></td><td>N. radial</td></tr>
+<tr><td>Extenseurs communs des doigts / EUC</td><td>ABD + extension pouce</td><td><strong style="color:var(--teal-600);">C7–C8</strong></td><td>N. radial</td></tr>
+<tr><td>Fléchisseurs du carpe</td><td>Flexion poignet</td><td><strong style="color:var(--teal-600);">C6–C7–C8</strong></td><td>N. médian / N. ulnaire</td></tr>
+<tr><td>Fléchisseurs du pouce, opposant</td><td>Flexion IPD II–III</td><td><strong style="color:var(--teal-600);">C8–T1</strong></td><td>N. médian</td></tr>
+<tr><td>ADD pouce / interosseux</td><td>ADD pouce / écartement doigts</td><td><strong style="color:var(--teal-600);">C8–T1</strong></td><td>N. ulnaire</td></tr>
+</tbody>
+</table>
+</div>
+<div class="info-box teal" style="font-size:13px;margin-top:8px;"><strong>Point clé :</strong> Position neutre = 22,3 kg force de préhension. Position extension cervicale = 8,3 kg. Si déficit "on/off" selon la position rachidienne → ischémie transitoire du nerf. Tester la fatigabilité avec des exercices répétés.</div>
+</div>
+</div>
+<!-- DERMATOMES MS -->
+<div class="test-card" id="tc-derma-ms">
+<div class="test-card-header" onclick="toggleTest('tc-derma-ms')">
+<div class="test-card-name">Étape 4 — Dermatomes membres supérieurs <small>Approche circonférentielle + en étoile</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Grosses fibres → Petites fibres</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="table-wrap">
+<table class="grille-eval-table">
+<thead><tr><th>Racine</th><th>Territoire sensitif</th><th>Zone test prioritaire</th><th>Outil</th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--teal-600);">C5</strong></td><td>Moignon épaule (face externe)</td><td>Face externe deltoïde</td><td>Pinceau / neurofilament</td></tr>
+<tr><td><strong style="color:var(--teal-600);">C6</strong></td><td>Face ant. bras + avant-bras radial, pouce et index</td><td>Pulpe du pouce</td><td>Pinceau / neurofilament</td></tr>
+<tr><td><strong style="color:var(--teal-600);">C7</strong></td><td>Face post. bras + avant-bras, 3 doigts médians</td><td>Pulpe du majeur</td><td>Pinceau / neurofilament</td></tr>
+<tr><td><strong style="color:var(--teal-600);">C8</strong></td><td>Face interne avant-bras, 4e et 5e doigts</td><td>Pulpe du 5e doigt</td><td>Pinceau / neurofilament</td></tr>
+<tr><td><strong style="color:var(--teal-600);">T1</strong></td><td>Face interne bras (épicondyle médial)</td><td>Face interne coude</td><td>Pinceau / neurofilament</td></tr>
+</tbody>
+</table>
+</div>
+<div class="tech-note"><div class="label">Règles pratiques</div>Toujours circulaire · Yeux fermés · Ne pas faire bilatéralement · Coupler avec flexion/extension cervicale · Comparer à une zone proximale non atteinte si suspicion bilatérale · Grosses fibres en premier (tact fin, vibration), puis petites fibres si RAS ou suspicion NPD (nociception Wartenberg → froid Tip-therm)</div>
+</div>
+</div>
+<!-- ULNT MS -->
+<div class="test-card" id="tc-ulnt-ms">
+<div class="test-card-header" onclick="toggleTest('tc-ulnt-ms')">
+<div class="test-card-name">Étape 5 — Tests neurodynamiques MS (ULNT) <small>Nerf médian · radial · ulnaire</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Mécanosensibilité</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="table-wrap">
+<table class="grille-eval-table">
+<thead><tr><th style="width:15%">Test</th><th style="width:15%">Nerf cible</th><th style="width:55%">Séquence de mouvements</th><th style="width:15%">Différenciation structurelle</th></tr></thead>
+<tbody>
+<tr><td><strong>ULNT 1</strong></td><td>Nerf médian</td><td>ABD épaule 90° → Rotation lat. GH → Supination avant-bras → Extension poignet + doigts → Extension coude</td><td>Inclinaison cervicale homo/controlatérale</td></tr>
+<tr><td><strong>ULNT 2a</strong></td><td>Nerf médian (variante)</td><td>Dépression scapulaire + ABD limitée + Rotation lat. + Extension poignet + doigts</td><td>Dépression/élévation scapulaire</td></tr>
+<tr><td><strong>ULNT 2b</strong></td><td>Nerf radial</td><td>Dépression scapulaire + ABD + Rotation médiale + Pronation + Flexion poignet + doigts</td><td>Inclinaison cervicale</td></tr>
+<tr><td><strong>ULNT 3</strong></td><td>Nerf ulnaire</td><td>ABD + Rotation lat. + Supination + Flexion coude + Extension poignet</td><td>Inclinaison cervicale</td></tr>
+</tbody>
+</table>
+</div>
+<div class="info-box teal" style="font-size:13px;margin-top:8px;"><strong>Test positif :</strong> Reproduction des symptômes habituels du patient + modification lors de la différenciation structurelle cervicale. La limitation d'amplitude seule comme critère de positivité diminue la précision du test. La sensation de raideur est liée à un réflexe de protection musculaire (Coppieters 2003) — pas à une dysfonction de compliance nerveuse.</div>
+</div>
+</div>
+<div class="card" style="margin-top:20px;">
+<div class="card-header"><div class="card-icon navy">📊</div><div class="card-title">Fiche synthèse — Racines C5 à C8 (MS)</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Racine</th><th>Tracé douloureux (déficit sensitif)</th><th>Déficit moteur</th><th>Réflexe diminué ou aboli</th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--teal-600);">C5</strong></td><td>Moignon épaule (face externe)</td><td>Deltoïde (ABD bras)</td><td>Bicipital</td></tr>
+<tr><td><strong style="color:var(--teal-600);">C6</strong></td><td>Face ant. bras · Face ext. avant-bras · Pouce</td><td>Biceps brachial (flexion coude) · Brachial (flexion coude + ext. poignet)</td><td>Bicipital · Stylo-radial</td></tr>
+<tr><td><strong style="color:var(--teal-600);">C7</strong></td><td>Face post. bras + avant-bras · Trois doigts médians (surtout le majeur)</td><td>Triceps brachial (extension coude) + Extenseurs poignet + doigts</td><td>Tricipital</td></tr>
+<tr><td><strong style="color:var(--teal-600);">C8</strong></td><td>Face interne bras + avant-bras · 4e et 5e doigts</td><td>Fléchisseurs doigts + muscles intrinsèques de la main (interosseux)</td><td>Cubito-pronateur</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote"><cite>Sources : Bender C, Dove L, Schmid AB. (JOSPT 2023) — Bedside Neurological Examination · Schmid AB, Fundaun J, Tampin B. (PR9 2020) — Entrapment neuropathies · Coppieters MW et al. 2003–2008 — Neurodynamics</cite></div>
+</section>
+<section class="section" id="neuro-routine-mi" style="display:none;">
+<div class="section-title">Routine neurologique — Membre inférieur (L2–S2)</div>
+<div class="section-sub">Examen standardisé en 5 étapes · Observation marche + Slump/Lasègue/Léri · IEOQ Formation et pratique clinique</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon teal">👣</div><div class="card-title">Observation préliminaire — La marche (avant même de toucher le patient)</div></div>
+<div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Observation globale</div><div class="value" style="font-size:13px;">Synchronisation du balancement des bras · Qualité des appuis au sol · Fluidité du demi-tour · Évaluation de la musculature globale et de l'équilibre. L'examen commence quand le patient se lève de la salle d'attente.</div></div>
+<div class="test-detail-item"><div class="label">Marche sur pointe des pieds</div><div class="value" style="font-size:13px;">Évalue la force des loges postérieures → <strong>S1</strong>. Triceps sural. Si asymétrie → quantifier.</div></div>
+<div class="test-detail-item"><div class="label">Marche sur talons</div><div class="value" style="font-size:13px;">Évalue la force des loges antérieures → <strong>L4–L5</strong>. Tibial antérieur. Si asymétrie → quantifier.</div></div>
+<div class="test-detail-item"><div class="label">Relevé de table unilatéral</div><div class="value" style="font-size:13px;">Test fonctionnel <strong>S1</strong> (triceps sural). Comparer gauche/droite en nombre de répétitions. Permet de détecter la fatigabilité.</div></div>
+</div>
+</div>
+</div>
+<!-- MOTONEURONES MI -->
+<div class="test-card" id="tc-mnsr-mi">
+<div class="test-card-header" onclick="toggleTest('tc-mnsr-mi')">
+<div class="test-card-name">Étape 1 — Motoneurones supérieurs (MI) <small>Babinski · Oppenheim · Clonus</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Red flag si positif</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Signe de Babinski</div><div class="value" style="font-size:13px;">Stimuler le bord latéral de la plante du pied avec un abaisse-langue ou le manche d'un marteau. Stimulus nociceptif, pas trop médial (éviter réflexe archaïque de préhension). Réponse normale = flexion du gros orteil. Réponse anormale (positive) = extension du gros orteil + écartement des autres orteils ± flexion genou et hanche. Indique une désinhibition médullaire (lésion du 1er motoneurone). Seul = red flag.</div></div>
+<div class="test-detail-item"><div class="label">Signe d'Oppenheim</div><div class="value" style="font-size:13px;">Pression descendante le long de la crête tibiale → même réponse que Babinski. Variante utile si le pied est hypersensible.</div></div>
+<div class="test-detail-item"><div class="label">Clonus du pied</div><div class="value" style="font-size:13px;">Imprimer un vif mouvement de dorsiflexion rapide et passive de la cheville. Contractions musculaires rythmiques et rapides persistantes = positif. Clonus inépuisable = trouble du 1er motoneurone = red flag.</div></div>
+<div class="test-detail-item"><div class="label">Signe de Lhermitte</div><div class="value" style="font-size:13px;">Patient assis, jambes tendues. Flexion passive de la tête. Positif si douleur vive ou sensation électrique irradiant dans les 4 membres → myélopathie ou sclérose en plaques. Flexion cervicale = atteinte médullaire intrinsèque. Extension cervicale (Reverse Lhermitte) = atteinte extrinsèque (ostéophyte, compression discale).</div></div>
+</div>
+</div>
+</div>
+<!-- ROT MI -->
+<div class="test-card" id="tc-rot-mi">
+<div class="test-card-header" onclick="toggleTest('tc-rot-mi')">
+<div class="test-card-name">Étape 2 — Réflexes ostéo-tendineux — MI <small>L2–L4 · L5–S1</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Grosses fibres</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="table-wrap">
+<table class="grille-eval-table">
+<thead><tr><th>Réflexe</th><th>Niveau</th><th>Technique et position</th><th>Remarques</th></tr></thead>
+<tbody>
+<tr><td><strong>Rotulien (patellaire)</strong></td><td><strong style="color:var(--teal-600);">(L2)–L3–L4</strong></td><td>Assis jambes pendantes OU décubitus genou semi-fléchi. Frapper tendon rotulien. Position au lit : genou semi-fléchi, jambes pendantes croisées.</td><td>Aboli = atteinte L3–L4. Très variable interindividuellement.</td></tr>
+<tr><td><strong>Achilléen</strong></td><td><strong style="color:var(--teal-600);">L5–S1–(S2)</strong></td><td>Facilité en position genou. Pied en légère dorsiflexion. Frapper tendon d'Achille. Ou en décubitus dorsal en position genou genouillère.</td><td>Entre 61–70 ans : ~30% ont un réflexe achilléen aboli normalement. Abolition asymétrique = valeur diagnostique. Abolition symétrique = valeur faible.</td></tr>
+<tr><td><strong>Médio-pubien</strong></td><td><strong style="color:var(--teal-600);">D10–L3</strong></td><td>Symphyse pubienne → légère flexion + adduction des cuisses. Réponse symétrique des deux côtés.</td><td>Utile pour niveaux thoraciques bas.</td></tr>
+<tr><td><strong>Calcanéen (pédieux)</strong></td><td><strong style="color:var(--teal-600);">L5</strong></td><td>Pied pendant, talon frappé → extension orteils.</td><td>Moins constant que l'achilléen.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="info-box amber" style="font-size:13px;margin-top:8px;">Red flags ROT : ≥ 3 ROT anormaux = red flag. Babinski positif seul = red flag. Distinguer abolition du ROT d'un déficit de motricité.</div>
+</div>
+</div>
+<!-- MYOTOMES MI -->
+<div class="test-card" id="tc-myotomes-mi">
+<div class="test-card-header" onclick="toggleTest('tc-myotomes-mi')">
+<div class="test-card-name">Étape 3 — Myotomes membres inférieurs <small>Break test + tests fonctionnels en charge</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Échelle MRC 0–5/5</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="table-wrap">
+<table class="grille-eval-table">
+<thead><tr><th>Muscle</th><th>Test fonctionnel</th><th>Racine</th><th>Nerf tronculaire</th></tr></thead>
+<tbody>
+<tr><td>Psoas-iliaque</td><td>Flexion contrariée de hanche</td><td><strong style="color:var(--teal-600);">L2–L3</strong></td><td>N. fémoral</td></tr>
+<tr><td>Adducteurs (long, court, grand)</td><td>ADD de hanche contrariée</td><td><strong style="color:var(--teal-600);">L2–L3–L4</strong></td><td>N. obturateur</td></tr>
+<tr><td>Quadriceps</td><td>Extension de genou contrariée · Marche sur talons</td><td><strong style="color:var(--teal-600);">L2–L3–L4</strong></td><td>N. fémoral</td></tr>
+<tr><td>Moyen fessier</td><td>ABD de hanche contrariée</td><td><strong style="color:var(--teal-600);">L5</strong></td><td>N. glutéal supérieur</td></tr>
+<tr><td>Tibial antérieur</td><td>Flexion dorsale de cheville · Marche sur talons</td><td><strong style="color:var(--teal-600);">L4–L5</strong></td><td>N. fibulaire commun</td></tr>
+<tr><td>Long extenseur hallux + orteils</td><td>Extension hallux contrariée</td><td><strong style="color:var(--teal-600);">L5–S1</strong></td><td>N. fibulaire commun</td></tr>
+<tr><td>Ischio-jambiers / Biceps fémoral</td><td>Flexion contrariée du genou</td><td><strong style="color:var(--teal-600);">L5–S1</strong></td><td>N. sciatique</td></tr>
+<tr><td>Grand fessier</td><td>Extension de hanche contrariée</td><td><strong style="color:var(--teal-600);">L5–S1–S2</strong></td><td>N. glutéal inférieur</td></tr>
+<tr><td>Triceps sural (gastrocnémien + soléaire)</td><td>Flexion plantaire cheville · Relevé de table unilatéral</td><td><strong style="color:var(--teal-600);">L5–S1–S2</strong></td><td>N. tibial</td></tr>
+</tbody>
+</table>
+</div>
+<div class="info-box teal" style="font-size:13px;margin-top:8px;"><strong>Note :</strong> Les correspondances myotome/nerf tronculaire ne sont pas superposables. Un déficit peut être tronculaire même si la carte radiculaire semble cohérente. Nécessité d'un bon examen clinique précis pour discriminer.</div>
+</div>
+</div>
+<!-- DERMATOMES MI -->
+<div class="test-card" id="tc-derma-mi">
+<div class="test-card-header" onclick="toggleTest('tc-derma-mi')">
+<div class="test-card-name">Étape 4 — Dermatomes / Dynatomes membres inférieurs <small>Ne pas se limiter aux cartes classiques</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Dynatomes ≠ Dermatomes</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="table-wrap">
+<table class="grille-eval-table">
+<thead><tr><th>Racine</th><th>Territoire sensitif principal</th><th>Zone test prioritaire</th><th>Nerf tronculaire associé</th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--teal-600);">L2–L3</strong></td><td>Face ant. et int. de la cuisse</td><td>Tiers moyen face ant. cuisse</td><td>N. fémoral / obturateur</td></tr>
+<tr><td><strong style="color:var(--teal-600);">L4</strong></td><td>Face ant. cuisse, genou, face int. jambe</td><td>Face int. genou + malléole médiale</td><td>N. saphène (br. fémoral)</td></tr>
+<tr><td><strong style="color:var(--teal-600);">L5</strong></td><td>Face post. cuisse, ext. jambe, dos du pied, gros orteil</td><td>1er espace interdigital dorsal</td><td>N. fibulaire superficiel + profond</td></tr>
+<tr><td><strong style="color:var(--teal-600);">S1</strong></td><td>Face post. cuisse + jambe, plante du pied, 5e orteil</td><td>Bord latéral du pied + 5e orteil</td><td>N. sural / tibial</td></tr>
+<tr><td><strong style="color:var(--teal-600);">S2</strong></td><td>Face post. cuisse et jambe, talon</td><td>Face post. jambe proximale</td><td>N. cutané post. cuisse</td></tr>
+</tbody>
+</table>
+</div>
+<div class="tech-note"><div class="label">Furman &amp; Johnson 2019 (The Spine Journal) — Dynatomes vs Dermatomes</div>87/125 injections épidurales transforaminales ont provoqué des douleurs référées ne suivant pas toujours les dermatomes attendus. Zones les plus fréquemment douloureuses tous niveaux confondus (L3 à S1) : fesse, face post. cuisse, face post. mollet. Un dynatome = carte de douleur provoquée lors d'une stimulation radiculaire → ce n'est pas une carte sensitive ni un territoire cutané. Raisonner par dynatome, pas seulement par dermatome.</div>
+<div class="tech-note"><div class="label">Règles pratiques</div>Toujours circulaire · Yeux fermés · Demander l'autorisation avant de passer entre les jambes · Coupler flexion/extension lombaire · Ne pas faire bilatéralement · Grosses fibres d'abord (pinceau, diapason) → petites fibres si RAS ou suspicion NPD (roulette Wartenberg, Tip-therm)</div>
+</div>
+</div>
+<!-- TESTS PROVOCATION MI -->
+<div class="test-card" id="tc-prov-mi">
+<div class="test-card-header" onclick="toggleTest('tc-prov-mi')">
+<div class="test-card-name">Étape 5 — Tests de provocation neurodynamiques MI <small>Slump · Lasègue · Léri · Palpation nerveuse</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Mécanosensibilité</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="table-wrap">
+<table class="grille-eval-table">
+<thead><tr><th style="width:15%">Test</th><th style="width:15%">Nerf cible</th><th style="width:45%">Séquence</th><th style="width:25%">Points clés</th></tr></thead>
+<tbody>
+<tr><td><strong>Slump</strong></td><td>Sciatique (L4–S1)</td><td>Assis : flexion colonne + ADD hanche + extension genou + flexion cervicale. Ajouter éversion (tibial) ou inversion (fibulaire).</td><td>Plus sensible que Lasègue (en charge). Différenciation structurelle = inclinaison cervicale. Préférer pour la pratique courante.</td></tr>
+<tr><td><strong>Lasègue (SLR)</strong></td><td>Sciatique (L4–S1)</td><td>Décubitus dorsal : flexion + ADD hanche + extension genou. Ajouter flexion dorsale cheville. Lasègue croisé = SLR côté sain reproduit douleur côté sympto.</td><td>Haute sensibilité HD L4–L5–S1. Test négatif n'exclut pas atteinte sévère (hypoexcitabilité axonale si nerf très lésé). Lasègue croisé = haute spécificité.</td></tr>
+<tr><td><strong>Léri (PKB)</strong></td><td>Fémoral (L2–L4)</td><td>Latérocubitus controlatéral : extension + ABD hanche + flexion genou. Ajouter flexion ou extension lombaire.</td><td>Cible nerf fémoral. Cruralgie. Toujours ajouter une composante rachidienne pour la différenciation structurelle.</td></tr>
+<tr><td><strong>Palpation nerveuse</strong></td><td>Tous</td><td>N. sciatique au creux poplité · N. fibulaire commun à la tête fibulaire · N. tibial en rétro-malléolaire · N. saphène face interne genou</td><td>Un nerf sain n'est pas douloureux à la palpation. Kuslich : racine comprimée = beaucoup plus sensible au toucher que racine voisine saine.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="info-box teal" style="font-size:13px;margin-top:8px;"><strong>Rappel fondamental :</strong> La mécanosensibilité n'est pas spécifique de la neuropathie. Elle est un marqueur d'hypersensibilisation. Une ischémie transitoire, un syndrome myofascial ou un nerf sain irrité mécaniquement peuvent tous donner une mécanosensibilité. Test positif isolé = aucun intérêt diagnostique pour neuropathie/douleur neuropathique.</div>
+</div>
+</div>
+<div class="card" style="margin-top:20px;">
+<div class="card-header"><div class="card-icon navy">📊</div><div class="card-title">Fiche synthèse — Racines L3 à S1 (MI)</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Racine</th><th>Tracé douloureux (sensitif)</th><th>Déficit moteur</th><th>Réflexe diminué ou aboli</th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--teal-600);">L3</strong></td><td>Fesse · Face ant. cuisse · Face int. genou</td><td>Quadriceps fémoral (extension genou) + Tibial antérieur (flexion dorsale pied)</td><td>Rotulien</td></tr>
+<tr><td><strong style="color:var(--teal-600);">L4</strong></td><td>Fesse · Face ant. cuisse · Face antéro-interne jambe</td><td>Quadriceps fémoral (extension genou) + Tibial antérieur (flexion dorsale pied)</td><td>Rotulien</td></tr>
+<tr><td><strong style="color:var(--teal-600);">L5</strong></td><td>Fesse · Face post. cuisse · Face ext. jambe · Dos du pied · Gros orteil</td><td>Extenseurs orteils + Péroniers latéraux + partiellement tibial antérieur</td><td>(Pédieux L5)</td></tr>
+<tr><td><strong style="color:var(--teal-600);">S1</strong></td><td>Fesse · Face post. cuisse + jambe · Talon · Plante · 5e orteil</td><td>Triceps sural (flexion plantaire — marche sur la pointe des pieds difficile ou impossible)</td><td>Achilléen</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote"><cite>Sources : Bender C, Dove L, Schmid AB. (JOSPT 2023) · Furman MB, Johnson SC. (Spine Journal 2019) — Dynatomes · Nee RJ, Coppieters MW, Boyd BS. (Musculoskelet Sci Pract 2022) — SLR reliability · Schmid AB, Tampin B. (Lumbar Spine Textbook) — Mechanosensitivity</cite></div>
+</section>
+<section class="section" id="neuro-anatomie-ms" style="display:none;">
+<div class="section-title">Anatomie — Plexus brachial &amp; Nerfs du membre supérieur</div>
+<div class="section-sub">Trajets, territoires moteurs et sensitifs à retenir pour l'examen · Thomas Gautier D.O. · IEOQ Année 1</div>
+<!-- GALERIE IMAGES RÉELLES — NEUROLOGIE MS -->
+<div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-bottom:24px;padding:16px;background:#f7f9fc;border-radius:10px;border:1px solid var(--border);">
+<div style="text-align:center;">Image<br/>non disponible<br/><small>Wikimedia</small>';this.parentNode.insertBefore(p,this);""&gt;
+      <div style="font-size:11.5px;font-weight:600;color:var(--navy-700);margin-top:6px;">Plexus brachial (Gray808)</div>
+</div>
+<div style="text-align:center;">Image<br/>non disponible<br/><small>Wikimedia</small>';this.parentNode.insertBefore(p,this);""&gt;
+      <div style="font-size:11.5px;font-weight:600;color:var(--navy-700);margin-top:6px;">Nerfs cutanés du bras (Gray817)</div>
+</div>
+<div style="text-align:center;">Image<br/>non disponible<br/><small>Wikimedia</small>';this.parentNode.insertBefore(p,this);""&gt;
+      <div style="font-size:11.5px;font-weight:600;color:var(--navy-700);margin-top:6px;">Nerfs de la main (Gray816)</div>
+</div>
+<div style="text-align:center;width:100%;">
+<div style="font-size:10px;color:var(--gray-400);">Wikimedia Commons · Gray's Anatomy · Domaine public</div>
+</div>
+</div>
+<!-- ══ PLEXUS BRACHIAL — SCHÉMA AÉRÉ ══ -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon navy">🔵</div><div class="card-title">Constitution du plexus brachial — Schéma complet</div></div>
+<div class="card-body" style="padding:24px 20px;">
+<svg style="width:100%;display:block;overflow:visible;font-family:'Segoe UI',Arial,sans-serif;" viewbox="0 0 960 560" xmlns="http://www.w3.org/2000/svg">
+<!-- ── Fond colonnes ── -->
+<rect fill="#f7f9fc" height="560" rx="12" width="960" x="0" y="0"></rect>
+<rect fill="#edf0f4" height="460" opacity="0.6" rx="8" width="105" x="10" y="50"></rect>
+<rect fill="#dceaf9" height="460" opacity="0.5" rx="8" width="130" x="130" y="50"></rect>
+<rect fill="#d4f5ee" height="460" opacity="0.4" rx="8" width="130" x="280" y="50"></rect>
+<rect fill="#d4f5ee" height="460" opacity="0.4" rx="8" width="130" x="430" y="50"></rect>
+<rect fill="#fff8e1" height="460" opacity="0.5" rx="8" width="370" x="580" y="50"></rect>
+<!-- ── En-têtes colonnes ── -->
+<text fill="#404449" font-size="13" font-weight="700" text-anchor="middle" x="62" y="38">RACINES</text>
+<text fill="#1c3861" font-size="13" font-weight="700" text-anchor="middle" x="195" y="38">TRONCS</text>
+<text fill="#155c50" font-size="13" font-weight="700" text-anchor="middle" x="345" y="38">DIVISIONS</text>
+<text fill="#155c50" font-size="13" font-weight="700" text-anchor="middle" x="495" y="38">FAISCEAUX</text>
+<text fill="#4a2e00" font-size="13" font-weight="700" text-anchor="middle" x="765" y="38">NERFS TERMINAUX</text>
+<!-- ════════ RACINES (cercles + labels) ════════ -->
+<!-- C5 -->
+<circle cx="62" cy="115" fill="#dceaf9" r="22" stroke="#4d82cc" stroke-width="2"></circle>
+<text fill="#1c3861" font-size="13" font-weight="700" text-anchor="middle" x="62" y="120">C5</text>
+<!-- C6 -->
+<circle cx="62" cy="195" fill="#dceaf9" r="22" stroke="#4d82cc" stroke-width="2"></circle>
+<text fill="#1c3861" font-size="13" font-weight="700" text-anchor="middle" x="62" y="200">C6</text>
+<!-- C7 -->
+<circle cx="62" cy="285" fill="#dceaf9" r="22" stroke="#7aa8e0" stroke-width="2"></circle>
+<text fill="#1c3861" font-size="13" font-weight="700" text-anchor="middle" x="62" y="290">C7</text>
+<!-- C8 -->
+<circle cx="62" cy="375" fill="#dceaf9" r="22" stroke="#274d86" stroke-width="2"></circle>
+<text fill="#1c3861" font-size="13" font-weight="700" text-anchor="middle" x="62" y="380">C8</text>
+<!-- T1 -->
+<circle cx="62" cy="455" fill="#dceaf9" r="22" stroke="#274d86" stroke-width="2"></circle>
+<text fill="#1c3861" font-size="13" font-weight="700" text-anchor="middle" x="62" y="460">T1</text>
+<!-- ════════ TRONCS ════════ -->
+<!-- Tronc supérieur : C5+C6 → -->
+<line stroke="#4d82cc" stroke-width="2.5" x1="84" x2="130" y1="115" y2="145"></line>
+<line stroke="#4d82cc" stroke-width="2.5" x1="84" x2="130" y1="195" y2="155"></line>
+<rect fill="#b3cfee" height="36" rx="8" stroke="#4d82cc" stroke-width="2" width="130" x="130" y="133"></rect>
+<text fill="#1c3861" font-size="12" font-weight="700" text-anchor="middle" x="195" y="148">TRONC SUPÉRIEUR</text>
+<text fill="#1c3861" font-size="10.5" text-anchor="middle" x="195" y="162">C5 + C6</text>
+<!-- Tronc moyen : C7 seul -->
+<line stroke="#7aa8e0" stroke-width="2.5" x1="84" x2="130" y1="285" y2="285"></line>
+<rect fill="#dceaf9" height="36" rx="8" stroke="#7aa8e0" stroke-width="2" width="130" x="130" y="267"></rect>
+<text fill="#1c3861" font-size="12" font-weight="700" text-anchor="middle" x="195" y="282">TRONC MOYEN</text>
+<text fill="#1c3861" font-size="10.5" text-anchor="middle" x="195" y="296">C7</text>
+<!-- Tronc inférieur : C8+T1 -->
+<line stroke="#274d86" stroke-width="2.5" x1="84" x2="130" y1="375" y2="405"></line>
+<line stroke="#274d86" stroke-width="2.5" x1="84" x2="130" y1="455" y2="415"></line>
+<rect fill="#b3cfee" height="36" rx="8" stroke="#274d86" stroke-width="2" width="130" x="130" y="393"></rect>
+<text fill="#1c3861" font-size="12" font-weight="700" text-anchor="middle" x="195" y="408">TRONC INFÉRIEUR</text>
+<text fill="#1c3861" font-size="10.5" text-anchor="middle" x="195" y="422">C8 + T1</text>
+<!-- ════════ DIVISIONS (Ant = plein, Post = tirets) ════════ -->
+<!-- Sup → div ant → F.Lat -->
+<line stroke="#4d82cc" stroke-width="2" x1="260" x2="295" y1="151" y2="175"></line>
+<!-- Sup → div post → F.Post -->
+<line stroke="#4d82cc" stroke-dasharray="6,3" stroke-width="2" x1="260" x2="295" y1="151" y2="305"></line>
+<!-- Moy → div ant → F.Lat -->
+<line stroke="#7aa8e0" stroke-width="2" x1="260" x2="295" y1="285" y2="195"></line>
+<!-- Moy → div post → F.Post -->
+<line stroke="#7aa8e0" stroke-dasharray="6,3" stroke-width="2" x1="260" x2="295" y1="285" y2="320"></line>
+<!-- Inf → div ant → F.Med -->
+<line stroke="#274d86" stroke-width="2" x1="260" x2="295" y1="411" y2="435"></line>
+<!-- Inf → div post → F.Post -->
+<line stroke="#274d86" stroke-dasharray="6,3" stroke-width="2" x1="260" x2="295" y1="411" y2="335"></line>
+<!-- Légende divisions -->
+<line stroke="#555" stroke-width="2" x1="282" x2="310" y1="70" y2="70"></line>
+<text fill="#404449" font-size="11" x="316" y="74">Division antérieure</text>
+<line stroke="#555" stroke-dasharray="5,3" stroke-width="2" x1="282" x2="310" y1="86" y2="86"></line>
+<text fill="#404449" font-size="11" x="316" y="90">Division postérieure</text>
+<!-- ════════ FAISCEAUX ════════ -->
+<!-- Faisceau LATÉRAL : div ant Sup + div ant Moy -->
+<line stroke="#4d82cc" stroke-width="2" x1="295" x2="430" y1="175" y2="195"></line>
+<line stroke="#7aa8e0" stroke-width="2" x1="295" x2="430" y1="195" y2="200"></line>
+<rect fill="#9fe8d8" height="38" rx="8" stroke="#1a7a6a" stroke-width="2.5" width="130" x="430" y="181"></rect>
+<text fill="#0a2e2a" font-size="12" font-weight="700" text-anchor="middle" x="495" y="197">FAISCEAU</text>
+<text fill="#0a2e2a" font-size="12" font-weight="700" text-anchor="middle" x="495" y="211">LATÉRAL</text>
+<!-- Faisceau POSTÉRIEUR : div post Sup + Moy + Inf -->
+<line stroke="#4d82cc" stroke-width="2" x1="295" x2="430" y1="305" y2="305"></line>
+<line stroke="#7aa8e0" stroke-width="2" x1="295" x2="430" y1="320" y2="315"></line>
+<line stroke="#274d86" stroke-width="2" x1="295" x2="430" y1="335" y2="325"></line>
+<rect fill="#9fe8d8" height="38" rx="8" stroke="#1a7a6a" stroke-width="2.5" width="130" x="430" y="295"></rect>
+<text fill="#0a2e2a" font-size="12" font-weight="700" text-anchor="middle" x="495" y="311">FAISCEAU</text>
+<text fill="#0a2e2a" font-size="12" font-weight="700" text-anchor="middle" x="495" y="325">POSTÉRIEUR</text>
+<!-- Faisceau MÉDIAL : div ant Inf -->
+<line stroke="#274d86" stroke-width="2" x1="295" x2="430" y1="435" y2="420"></line>
+<rect fill="#9fe8d8" height="38" rx="8" stroke="#1a7a6a" stroke-width="2.5" width="130" x="430" y="406"></rect>
+<text fill="#0a2e2a" font-size="12" font-weight="700" text-anchor="middle" x="495" y="422">FAISCEAU</text>
+<text fill="#0a2e2a" font-size="12" font-weight="700" text-anchor="middle" x="495" y="436">MÉDIAL</text>
+<!-- ════════ NERFS TERMINAUX ════════ -->
+<!-- Faisceau LATÉRAL → N. musculo-cutané + racine lat. Médian -->
+<line stroke="#20997f" stroke-width="2" x1="560" x2="590" y1="200" y2="175"></line>
+<line stroke="#d4840e" stroke-width="2" x1="560" x2="590" y1="200" y2="220"></line>
+<!-- Faisceau POSTÉRIEUR → N. axillaire + N. radial -->
+<line stroke="#20997f" stroke-width="2" x1="560" x2="590" y1="314" y2="295"></line>
+<line stroke="#d4840e" stroke-width="2.5" x1="560" x2="590" y1="314" y2="345"></line>
+<!-- Faisceau MÉDIAL → N. ulnaire + racine méd Médian + cutanés -->
+<line stroke="#c94535" stroke-width="2.5" x1="560" x2="590" y1="425" y2="400"></line>
+<line stroke="#d4840e" stroke-width="2" x1="560" x2="590" y1="425" y2="430"></line>
+<line stroke="#7aa8e0" stroke-width="1.5" x1="560" x2="590" y1="425" y2="460"></line>
+<line stroke="#7aa8e0" stroke-width="1.5" x1="560" x2="590" y1="425" y2="490"></line>
+<!-- Nerf musculo-cutané -->
+<rect fill="#edfaf6" height="28" rx="7" stroke="#2bbf9e" stroke-width="1.5" width="350" x="590" y="162"></rect>
+<text fill="#0a2e2a" font-size="12" font-weight="600" text-anchor="middle" x="765" y="180">N. musculo-cutané (C5–C6) — Flexion + supination avant-bras</text>
+<!-- N. médian (racines lat + méd) -->
+<rect fill="#fff8e1" height="28" rx="7" stroke="#d4840e" stroke-width="2" width="350" x="590" y="207"></rect>
+<text fill="#4a2e00" font-size="12" font-weight="700" text-anchor="middle" x="765" y="225">N. MÉDIAN (C5–T1) — Canal carpien · Main de singe</text>
+<!-- N. axillaire -->
+<rect fill="#edfaf6" height="28" rx="7" stroke="#2bbf9e" stroke-width="1.5" width="350" x="590" y="282"></rect>
+<text fill="#0a2e2a" font-size="12" font-weight="600" text-anchor="middle" x="765" y="300">N. axillaire (C5–C6) — ABD bras · deltoïde</text>
+<!-- N. radial -->
+<rect fill="#fff8e1" height="28" rx="7" stroke="#d4840e" stroke-width="2" width="350" x="590" y="332"></rect>
+<text fill="#4a2e00" font-size="12" font-weight="700" text-anchor="middle" x="765" y="350">N. RADIAL (C5–T1) — Extension MS · Main tombante</text>
+<!-- N. ulnaire -->
+<rect fill="#fdecea" height="28" rx="7" stroke="#c94535" stroke-width="2" width="350" x="590" y="387"></rect>
+<text fill="#5a1a13" font-size="12" font-weight="700" text-anchor="middle" x="765" y="405">N. ULNAIRE (C8–T1) — Griffe cubitale · Mouvements doigts</text>
+<!-- Racine méd. Médian -->
+<rect fill="#fdecea" height="26" rx="6" stroke="#c94535" stroke-width="1" width="350" x="590" y="417"></rect>
+<text fill="#5a1a13" font-size="11" text-anchor="middle" x="765" y="433">Racine médiale du N. médian</text>
+<!-- Cutané méd av-bras -->
+<rect fill="#edf0f4" height="26" rx="6" stroke="#b8bec7" stroke-width="1" width="350" x="590" y="448"></rect>
+<text fill="#404449" font-size="11" text-anchor="middle" x="765" y="464">N. cutané médial de l'avant-bras (C8–T1)</text>
+<!-- Cutané méd bras -->
+<rect fill="#edf0f4" height="26" rx="6" stroke="#b8bec7" stroke-width="1" width="350" x="590" y="477"></rect>
+<text fill="#404449" font-size="11" text-anchor="middle" x="765" y="493">N. cutané médial du bras (C8–T1)</text>
+<!-- ════════ BANDE MÉMO BAS ════════ -->
+<rect fill="#1c3861" height="28" opacity="0.9" rx="7" width="940" x="10" y="525"></rect>
+<text fill="#fff" font-size="12" font-weight="600" text-anchor="middle" x="480" y="543">
+          🧠  LAT = Musculo-cutané + Racine lat. Médian  ·  POST = Axillaire + Radial  ·  MED = Ulnaire + Racine méd. Médian + Cutanés bras/avant-bras
+        </text>
+</svg>
+</div>
+</div>
+<!-- ══ NERFS TERMINAUX — TABLEAU ══ -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">Nerfs terminaux MS — Résumé moteur, sensitif &amp; paralysie</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Nerf</th><th>Racines</th><th>Faisceau</th><th>Moteur principal</th><th>Sensitif clé</th><th>Paralysie — signe caractéristique</th></tr></thead>
+<tbody>
+<tr>
+<td><strong style="color:var(--teal-600);">Musculo-cutané</strong></td>
+<td>C5–C6</td><td>Latéral</td>
+<td>Flexion coude · Supination avant-bras (biceps, brachial, coraco-brachial)</td>
+<td>Face antéro-latérale avant-bras</td>
+<td>Perte flexion coude + supination</td>
+</tr>
+<tr>
+<td><strong style="color:var(--amber-500);">Médian</strong></td>
+<td>C5–T1</td><td>Lat. + Méd.</td>
+<td><strong>LOAF</strong> : Lombricaux 1&amp;2 · Opposant · Abducteur court · Fléchisseur court pouce · Pronation</td>
+<td>Pulpe pouce + index + majeur (palmaire)</td>
+<td><strong>Main de singe</strong> — atrophie éminence thénar</td>
+</tr>
+<tr>
+<td><strong style="color:var(--coral-500);">Ulnaire</strong></td>
+<td>C8–T1</td><td>Médial</td>
+<td>Interosseux · Lombricaux 3&amp;4 · Hypothénar · Adducteur pouce</td>
+<td>Doigt V entier + bord médial main</td>
+<td><strong>Griffe cubitale</strong> IV–V · Signe du gril (interosseux)</td>
+</tr>
+<tr>
+<td><strong style="color:var(--amber-500);">Radial</strong></td>
+<td>C5–T1</td><td>Postérieur</td>
+<td>Extension coude + poignet + doigts (triceps, extenseurs) · Supination</td>
+<td>Face dorsale lat. main (zone réduite)</td>
+<td><strong>Main tombante</strong> (wrist drop) — extension poignet impossible</td>
+</tr>
+<tr>
+<td><strong style="color:var(--teal-600);">Axillaire</strong></td>
+<td>C5–C6</td><td>Postérieur</td>
+<td>Abduction bras 0–90° (deltoïde · petit rond)</td>
+<td>Face externe épaule</td>
+<td>Amyotrophie deltoïde · ABD impossible · Luxation épaule</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- ══ TRAJET NERF MÉDIAN — SCHÉMA AÉRÉ ══ -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon amber">🖊️</div><div class="card-title">Trajet du nerf médian — 5 points clés (à retenir pour l'examen)</div></div>
+<div class="card-body" style="padding:24px 20px;">
+<svg style="width:100%;display:block;overflow:visible;font-family:'Segoe UI',Arial,sans-serif;" viewbox="0 0 960 480" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f7f9fc" height="480" rx="12" width="960"></rect>
+<!-- Silhouette bras + avant-bras schématique -->
+<!-- Bras -->
+<rect fill="#ffe8cc" height="220" opacity="0.5" rx="35" stroke="#d4840e" stroke-width="1.5" width="70" x="90" y="30"></rect>
+<text fill="#4a2e00" font-size="11" opacity="0.7" text-anchor="middle" x="125" y="150">BRS</text>
+<!-- Coude -->
+<ellipse cx="125" cy="258" fill="#ffd9a8" opacity="0.5" rx="38" ry="22" stroke="#d4840e" stroke-width="1.5"></ellipse>
+<text fill="#4a2e00" font-size="10" opacity="0.7" text-anchor="middle" x="125" y="263">coude</text>
+<!-- Avant-bras -->
+<rect fill="#ffe8cc" height="145" opacity="0.5" rx="30" stroke="#d4840e" stroke-width="1.5" width="62" x="95" y="278"></rect>
+<text fill="#4a2e00" font-size="11" opacity="0.7" text-anchor="middle" x="126" y="358">AVB</text>
+<!-- Poignet / main -->
+<rect fill="#ffd9a8" height="46" opacity="0.5" rx="10" stroke="#d4840e" stroke-width="1.5" width="52" x="100" y="426"></rect>
+<text fill="#4a2e00" font-size="10" opacity="0.7" text-anchor="middle" x="126" y="454">canal carpien</text>
+<!-- Trajet nerf médian — ligne principale -->
+<path d="M 126 55 C 125 100 126 150 124 200 C 123 228 122 250 121 275
+                 C 120 310 120 345 119 385 C 118 405 118 425 118 448" fill="none" stroke="#d4840e" stroke-linecap="round" stroke-width="4"></path>
+<!-- ① Creux axillaire -->
+<circle cx="126" cy="55" fill="#d4840e" r="12" stroke="#fff" stroke-width="2"></circle>
+<text fill="white" font-size="11" font-weight="700" text-anchor="middle" x="126" y="59">①</text>
+<rect fill="white" height="46" rx="8" stroke="#d4840e" stroke-width="1.5" width="360" x="155" y="33"></rect>
+<text fill="#4a2e00" font-size="13" font-weight="700" x="175" y="51">Creux axillaire — naissance</text>
+<text fill="#5a5f66" font-size="11.5" x="175" y="68">Deux racines (lat. + méd.) forment un V en avant de l'artère axillaire</text>
+<!-- ② Mi-bras -->
+<circle cx="124" cy="155" fill="#d4840e" r="12" stroke="#fff" stroke-width="2"></circle>
+<text fill="white" font-size="11" font-weight="700" text-anchor="middle" x="124" y="159">②</text>
+<rect fill="white" height="46" rx="8" stroke="#d4840e" stroke-width="1.5" width="400" x="155" y="133"></rect>
+<text fill="#4a2e00" font-size="13" font-weight="700" x="175" y="151">Bras — croise l'artère brachiale en X</text>
+<text fill="#5a5f66" font-size="11.5" x="175" y="168">Passe du bord latéral au bord médial de l'artère brachiale</text>
+<!-- ③ Sillon bicipital -->
+<circle cx="122" cy="248" fill="#d4840e" r="12" stroke="#fff" stroke-width="2"></circle>
+<text fill="white" font-size="11" font-weight="700" text-anchor="middle" x="122" y="252">③</text>
+<rect fill="white" height="46" rx="8" stroke="#d4840e" stroke-width="1.5" width="400" x="155" y="228"></rect>
+<text fill="#4a2e00" font-size="13" font-weight="700" x="175" y="246">Sillon bicipital médial</text>
+<text fill="#5a5f66" font-size="11.5" x="175" y="263">Repère pour l'anesthésie du nerf médian · Artère brachiale en latéral</text>
+<!-- ④ Avant-bras -->
+<circle cx="120" cy="340" fill="#d4840e" r="12" stroke="#fff" stroke-width="2"></circle>
+<text fill="white" font-size="11" font-weight="700" text-anchor="middle" x="120" y="344">④</text>
+<rect fill="white" height="46" rx="8" stroke="#d4840e" stroke-width="1.5" width="460" x="155" y="320"></rect>
+<text fill="#4a2e00" font-size="13" font-weight="700" x="175" y="338">Avant-bras — entre les deux chefs du rond pronateur</text>
+<text fill="#5a5f66" font-size="11.5" x="175" y="355">Puis sous m. fléchisseur superficiel des doigts · Donne le n. interosseux antérieur</text>
+<!-- ⑤ Canal carpien -->
+<circle cx="118" cy="448" fill="#c94535" r="12" stroke="#fff" stroke-width="2"></circle>
+<text fill="white" font-size="11" font-weight="700" text-anchor="middle" x="118" y="452">⑤</text>
+<rect fill="#fdecea" height="46" rx="8" stroke="#c94535" stroke-width="2" width="490" x="155" y="426"></rect>
+<text fill="#5a1a13" font-size="13" font-weight="700" x="175" y="444">⚡ Canal carpien — zone de compression !</text>
+<text fill="#5a1a13" font-size="11.5" x="175" y="461">Tinel (percussion → fourmillements) · Phalen (flexion 60 s) · SCC = compression ici</text>
+<!-- Bloc LOAF -->
+<rect fill="#fff8e1" height="165" rx="10" stroke="#d4840e" stroke-width="2" width="300" x="640" y="33"></rect>
+<text fill="#4a2e00" font-size="14" font-weight="700" text-anchor="middle" x="790" y="55">Mnémo LOAF</text>
+<text fill="#777d85" font-size="11" text-anchor="middle" x="790" y="73">Muscles thénariens innervés par le médian</text>
+<text fill="#4a2e00" font-size="13" x="660" y="100">L  —  Lombricaux 1 et 2</text>
+<text fill="#4a2e00" font-size="13" x="660" y="120">O  —  Opposant du pouce</text>
+<text fill="#4a2e00" font-size="13" x="660" y="140">A  —  Abducteur court du pouce</text>
+<text fill="#4a2e00" font-size="13" x="660" y="160">F  —  Fléchisseur court du pouce</text>
+<text fill="#c94535" font-size="11" font-style="italic" text-anchor="middle" x="790" y="186">→ Atrophie = « main de singe »</text>
+<!-- Bloc territoire sensitif -->
+<rect fill="#edfaf6" height="150" rx="10" stroke="#2bbf9e" stroke-width="2" width="300" x="640" y="215"></rect>
+<text fill="#0a2e2a" font-size="14" font-weight="700" text-anchor="middle" x="790" y="237">Territoire sensitif</text>
+<text fill="#0a2e2a" font-size="12.5" x="660" y="262">Palmaire : I · II · III + ½ lat. IV</text>
+<text fill="#0a2e2a" font-size="12.5" x="660" y="283">Dorsal : P2–P3 de I · II · III + ½ lat. IV</text>
+<text fill="#0a2e2a" font-size="12.5" x="660" y="304">Paume latérale + éminence thénar</text>
+<text fill="#1a7a6a" font-size="11" font-style="italic" text-anchor="middle" x="790" y="352">Hypoesthésie pouce + index = SCC</text>
+<!-- Bloc paralysie -->
+<rect fill="#fdecea" height="89" rx="10" stroke="#c94535" stroke-width="2" width="300" x="640" y="383"></rect>
+<text fill="#5a1a13" font-size="14" font-weight="700" text-anchor="middle" x="790" y="405">Paralysie globale</text>
+<text fill="#5a1a13" font-size="12" x="660" y="427">Main de singe (atrophie thénar)</text>
+<text fill="#5a1a13" font-size="12" x="660" y="447">Pince pouce–index impossible</text>
+<text fill="#5a1a13" font-size="12" x="660" y="464">Pronation impossible</text>
+</svg>
+</div>
+</div>
+<!-- ══ TERRITOIRES SENSITIFS MS ══ -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon coral">🗺️</div><div class="card-title">Territoires sensitifs tronculaires — Vue palmaire et dorsale</div></div>
+<div class="card-body" style="padding:24px 20px;">
+<svg style="width:100%;display:block;overflow:visible;font-family:'Segoe UI',Arial,sans-serif;" viewbox="0 0 960 420" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f7f9fc" height="420" rx="12" width="960"></rect>
+<!-- ── VUE PALMAIRE (gauche) ── -->
+<text fill="#1a1c1e" font-size="15" font-weight="700" text-anchor="middle" x="220" y="30">Vue palmaire</text>
+<!-- Paume -->
+<ellipse cx="220" cy="260" fill="#f4f7fb" rx="88" ry="110" stroke="#b8bec7" stroke-width="2"></ellipse>
+<!-- Pouce -->
+<ellipse cx="130" cy="195" fill="#f4f7fb" rx="26" ry="55" stroke="#b8bec7" stroke-width="1.5" transform="rotate(-22 130 195)"></ellipse>
+<!-- Index -->
+<rect fill="#f4f7fb" height="120" rx="14" stroke="#b8bec7" stroke-width="1.5" width="28" x="157" y="85"></rect>
+<!-- Majeur -->
+<rect fill="#f4f7fb" height="138" rx="14" stroke="#b8bec7" stroke-width="1.5" width="28" x="191" y="68"></rect>
+<!-- Annulaire -->
+<rect fill="#f4f7fb" height="128" rx="14" stroke="#b8bec7" stroke-width="1.5" width="28" x="225" y="75"></rect>
+<!-- Auriculaire -->
+<rect fill="#f4f7fb" height="92" rx="13" stroke="#b8bec7" stroke-width="1.5" width="26" x="258" y="110"></rect>
+<!-- Couleur MÉDIAN : pouce + index + majeur + ½annulaire -->
+<ellipse cx="130" cy="195" fill="rgba(212,132,14,0.55)" rx="24" ry="52" stroke="#d4840e" stroke-width="1.5" transform="rotate(-22 130 195)"></ellipse>
+<rect fill="rgba(212,132,14,0.55)" height="120" rx="14" stroke="#d4840e" stroke-width="1.5" width="28" x="157" y="85"></rect>
+<rect fill="rgba(212,132,14,0.55)" height="138" rx="14" stroke="#d4840e" stroke-width="1.5" width="28" x="191" y="68"></rect>
+<rect fill="rgba(212,132,14,0.55)" height="128" rx="7" width="14" x="225" y="75"></rect>
+<!-- Médian paume lat -->
+<ellipse cx="185" cy="255" fill="rgba(212,132,14,0.20)" rx="62" ry="88" stroke="#d4840e" stroke-dasharray="5,3" stroke-width="1"></ellipse>
+<!-- Couleur ULNAIRE : annulaire ½ + auriculaire -->
+<rect fill="rgba(39,77,134,0.55)" height="128" rx="7" width="14" x="239" y="75"></rect>
+<rect fill="rgba(39,77,134,0.55)" height="92" rx="13" stroke="#274d86" stroke-width="1.5" width="26" x="258" y="110"></rect>
+<!-- Ulnaire paume méd -->
+<ellipse cx="258" cy="270" fill="rgba(39,77,134,0.22)" rx="52" ry="85" stroke="#274d86" stroke-dasharray="5,3" stroke-width="1"></ellipse>
+<!-- Couleur RADIAL thénar minime -->
+<ellipse cx="152" cy="305" fill="rgba(32,153,127,0.45)" rx="22" ry="30" stroke="#20997f" stroke-width="1.5"></ellipse>
+<!-- Labels doigts -->
+<text fill="#777d85" font-size="9" text-anchor="middle" x="130" y="252">I</text>
+<text fill="#777d85" font-size="9" text-anchor="middle" x="171" y="78">II</text>
+<text fill="#777d85" font-size="9" text-anchor="middle" x="205" y="62">III</text>
+<text fill="#777d85" font-size="9" text-anchor="middle" x="239" y="68">IV</text>
+<text fill="#777d85" font-size="9" text-anchor="middle" x="271" y="104">V</text>
+<!-- ── VUE DORSALE (droite) ── -->
+<text fill="#1a1c1e" font-size="15" font-weight="700" text-anchor="middle" x="700" y="30">Vue dorsale</text>
+<!-- Paume dos -->
+<ellipse cx="700" cy="260" fill="#f4f7fb" rx="88" ry="110" stroke="#b8bec7" stroke-width="2"></ellipse>
+<ellipse cx="610" cy="195" fill="#f4f7fb" rx="26" ry="55" stroke="#b8bec7" stroke-width="1.5" transform="rotate(22 610 195)"></ellipse>
+<rect fill="#f4f7fb" height="120" rx="14" stroke="#b8bec7" stroke-width="1.5" width="28" x="635" y="85"></rect>
+<rect fill="#f4f7fb" height="138" rx="14" stroke="#b8bec7" stroke-width="1.5" width="28" x="669" y="68"></rect>
+<rect fill="#f4f7fb" height="128" rx="14" stroke="#b8bec7" stroke-width="1.5" width="28" x="703" y="75"></rect>
+<rect fill="#f4f7fb" height="92" rx="13" stroke="#b8bec7" stroke-width="1.5" width="26" x="736" y="110"></rect>
+<!-- RADIAL dorsal lat : pouce + index P1 + ½ majeur P1 -->
+<ellipse cx="610" cy="195" fill="rgba(32,153,127,0.55)" rx="24" ry="52" stroke="#20997f" stroke-width="1.5" transform="rotate(22 610 195)"></ellipse>
+<rect fill="rgba(32,153,127,0.55)" height="65" rx="14" stroke="#20997f" stroke-width="1.5" width="28" x="635" y="85"></rect>
+<rect fill="rgba(32,153,127,0.45)" height="52" rx="14" stroke="#20997f" stroke-width="1.5" width="28" x="669" y="68"></rect>
+<!-- Radial dos paume lat -->
+<ellipse cx="655" cy="260" fill="rgba(32,153,127,0.15)" rx="58" ry="88" stroke="#20997f" stroke-dasharray="5,3" stroke-width="1"></ellipse>
+<!-- MÉDIAN dorsal P2–P3 de II III ½IV -->
+<rect fill="rgba(212,132,14,0.55)" height="62" rx="8" stroke="#d4840e" stroke-width="1.5" width="28" x="635" y="143"></rect>
+<rect fill="rgba(212,132,14,0.55)" height="93" rx="8" stroke="#d4840e" stroke-width="1.5" width="28" x="669" y="113"></rect>
+<rect fill="rgba(212,132,14,0.45)" height="128" rx="7" width="14" x="703" y="75"></rect>
+<!-- ULNAIRE dorsal méd : V + ½IV -->
+<rect fill="rgba(39,77,134,0.55)" height="128" rx="7" width="14" x="717" y="75"></rect>
+<rect fill="rgba(39,77,134,0.55)" height="92" rx="13" stroke="#274d86" stroke-width="1.5" width="26" x="736" y="110"></rect>
+<ellipse cx="740" cy="268" fill="rgba(39,77,134,0.20)" rx="45" ry="82" stroke="#274d86" stroke-dasharray="5,3" stroke-width="1"></ellipse>
+<!-- Labels doigts dos -->
+<text fill="#777d85" font-size="9" text-anchor="middle" x="610" y="252">I</text>
+<text fill="#777d85" font-size="9" text-anchor="middle" x="649" y="78">II</text>
+<text fill="#777d85" font-size="9" text-anchor="middle" x="683" y="62">III</text>
+<text fill="#777d85" font-size="9" text-anchor="middle" x="717" y="68">IV</text>
+<text fill="#777d85" font-size="9" text-anchor="middle" x="749" y="104">V</text>
+<!-- ── LÉGENDE CENTRALE ── -->
+<rect fill="white" height="180" rx="10" stroke="#d8dde4" stroke-width="1.5" width="235" x="350" y="55"></rect>
+<text fill="#1a1c1e" font-size="13" font-weight="700" text-anchor="middle" x="467" y="78">Légende</text>
+<rect fill="rgba(212,132,14,0.6)" height="18" rx="4" stroke="#d4840e" stroke-width="1.5" width="18" x="370" y="92"></rect>
+<text fill="#4a2e00" font-size="12" font-weight="600" x="396" y="106">Nerf Médian</text>
+<text fill="#5a5f66" font-size="11" x="396" y="120">I · II · III · ½ IV palmaire</text>
+<rect fill="rgba(39,77,134,0.6)" height="18" rx="4" stroke="#274d86" stroke-width="1.5" width="18" x="370" y="132"></rect>
+<text fill="#1c3861" font-size="12" font-weight="600" x="396" y="146">Nerf Ulnaire</text>
+<text fill="#5a5f66" font-size="11" x="396" y="160">V · ½ IV · bord médial</text>
+<rect fill="rgba(32,153,127,0.6)" height="18" rx="4" stroke="#20997f" stroke-width="1.5" width="18" x="370" y="172"></rect>
+<text fill="#0a2e2a" font-size="12" font-weight="600" x="396" y="186">Nerf Radial</text>
+<text fill="#5a5f66" font-size="11" x="396" y="200">Dos + éminence thénar</text>
+<rect fill="#1c3861" height="90" opacity="0.88" rx="10" width="235" x="350" y="250"></rect>
+<text fill="white" font-size="12" font-weight="600" text-anchor="middle" x="467" y="272">À retenir</text>
+<text fill="#9fe8d8" font-size="11.5" text-anchor="middle" x="467" y="292">Médian = doigts « utiles » (I–II–III)</text>
+<text fill="#9fe8d8" font-size="11.5" text-anchor="middle" x="467" y="310">Ulnaire = bord médial</text>
+<text fill="#9fe8d8" font-size="11.5" text-anchor="middle" x="467" y="328">Radial = dos de la main</text>
+<!-- Note bas -->
+<rect fill="#dceaf9" height="26" rx="6" stroke="#4d82cc" stroke-width="1" width="940" x="10" y="385"></rect>
+<text fill="#1c3861" font-size="11.5" text-anchor="middle" x="480" y="402">
+          Note : sur la face dorsale, le médian n'innerve que P2–P3 des doigts II–III–½IV. Le reste (P1 + face dorsale IV–V) = radial ou ulnaire.
+        </text>
+</svg>
+</div>
+</div>
+<!-- ══ TABLEAU PARALYSIES ══ -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon coral">⚠️</div><div class="card-title">Paralysies tronculaires — Signes clés à reconnaître à l'examen</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Nerf</th><th>Signe caractéristique</th><th>Déficit moteur</th><th>Hypoesthésie nette</th><th>Causes fréquentes</th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--amber-500);">Médian</strong></td><td>« Main de singe »</td><td>Opposition + abduction pouce · Pince impossible</td><td>Pulpe pouce + index</td><td>Syndrome canal carpien · plaie poignet</td></tr>
+<tr><td><strong style="color:var(--coral-500);">Ulnaire</strong></td><td>« Griffe cubitale » IV–V · Signe du gril</td><td>Interosseux + lombricaux 3&amp;4</td><td>Doigt V · bord médial main</td><td>Fracture épicondyle médial · sillon ulnaire</td></tr>
+<tr><td><strong style="color:var(--teal-600);">Radial</strong></td><td>« Main tombante » (wrist drop)</td><td>Extension poignet + doigts impossible</td><td>Dorso-lat. main (réduite)</td><td>Fracture humérus · compression sillon radial (sommeil)</td></tr>
+<tr><td><strong style="color:var(--teal-600);">Axillaire</strong></td><td>Amyotrophie deltoïde visible</td><td>ABD bras impossible</td><td>Face externe épaule</td><td>Luxation épaule · fracture col chirurgical</td></tr>
+<tr><td><strong style="color:var(--teal-600);">Musculo-cutané</strong></td><td>Perte flexion coude</td><td>Flexion coude + supination</td><td>Face ant.-lat. avant-bras</td><td>Rare isolé</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote"><cite>Sources : Thomas Gautier D.O. — Neurologie membre supérieur, IEOQ Année 1 · Kamina P. — Anatomie clinique (Maloine)</cite></div>
+</section>
+<section class="section" id="neuro-anatomie-mi" style="display:none;">
+<div class="section-title">Anatomie — Plexus lombaire, sacral &amp; Nerfs du membre inférieur</div>
+<div class="section-sub">Trajets, territoires moteurs et sensitifs à retenir pour l'examen · Thomas Gautier D.O. · IEOQ Année 1</div>
+<!-- GALERIE IMAGES RÉELLES — NEUROLOGIE MI -->
+<div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-bottom:24px;padding:16px;background:#f7f9fc;border-radius:10px;border:1px solid var(--border);">
+<div style="text-align:center;">Image<br/>non disponible<br/><small>Wikimedia</small>';this.parentNode.insertBefore(p,this);""&gt;
+      <div style="font-size:11.5px;font-weight:600;color:var(--navy-700);margin-top:6px;">Plexus lombaire (Gray823)</div>
+</div>
+<div style="text-align:center;">Image<br/>non disponible<br/><small>Wikimedia</small>';this.parentNode.insertBefore(p,this);""&gt;
+      <div style="font-size:11.5px;font-weight:600;color:var(--navy-700);margin-top:6px;">Plexus sacral (Gray826)</div>
+</div>
+<div style="text-align:center;">Image<br/>non disponible<br/><small>Wikimedia</small>';this.parentNode.insertBefore(p,this);""&gt;
+      <div style="font-size:11.5px;font-weight:600;color:var(--navy-700);margin-top:6px;">Nerfs MI — vue ant. (Gray836)</div>
+</div>
+<div style="text-align:center;">Image<br/>non disponible<br/><small>Wikimedia</small>';this.parentNode.insertBefore(p,this);""&gt;
+      <div style="font-size:11.5px;font-weight:600;color:var(--navy-700);margin-top:6px;">Nerfs MI — vue post. (Gray837)</div>
+</div>
+<div style="text-align:center;width:100%;">
+<div style="font-size:10px;color:var(--gray-400);">Wikimedia Commons · Gray's Anatomy · Domaine public</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon navy">🔢</div><div class="card-title">Plexus lombaire — Constitution &amp; Branches</div></div>
+<div class="card-body" style="padding:24px 20px;">
+<svg style="width:100%;display:block;overflow:visible;font-family:'Segoe UI',Arial,sans-serif;" viewbox="0 0 960 480" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f7f9fc" height="480" rx="12" width="960"></rect>
+<!-- Colonnes fond -->
+<rect fill="#edf0f4" height="380" opacity="0.6" rx="8" width="115" x="10" y="50"></rect>
+<rect fill="#dceaf9" height="380" opacity="0.45" rx="8" width="190" x="145" y="50"></rect>
+<rect fill="#fff8e1" height="380" opacity="0.5" rx="8" width="590" x="355" y="50"></rect>
+<!-- En-têtes -->
+<text fill="#404449" font-size="13" font-weight="700" text-anchor="middle" x="67" y="38">RACINES</text>
+<text fill="#1c3861" font-size="13" font-weight="700" text-anchor="middle" x="240" y="38">PLEXUS</text>
+<text fill="#4a2e00" font-size="13" font-weight="700" text-anchor="middle" x="640" y="38">NERFS — Territoire &amp; Muscles</text>
+<!-- Racines — cercles -->
+<circle cx="67" cy="100" fill="#dceaf9" r="26" stroke="#c94535" stroke-width="2.5"></circle>
+<text fill="#c94535" font-size="14" font-weight="700" text-anchor="middle" x="67" y="105">L1</text>
+<circle cx="67" cy="185" fill="#dceaf9" r="26" stroke="#d4840e" stroke-width="2.5"></circle>
+<text fill="#d4840e" font-size="14" font-weight="700" text-anchor="middle" x="67" y="190">L2</text>
+<circle cx="67" cy="270" fill="#dceaf9" r="26" stroke="#274d86" stroke-width="2.5"></circle>
+<text fill="#274d86" font-size="14" font-weight="700" text-anchor="middle" x="67" y="275">L3</text>
+<circle cx="67" cy="355" fill="#dceaf9" r="26" stroke="#1a7a6a" stroke-width="2.5"></circle>
+<text fill="#1a7a6a" font-size="14" font-weight="700" text-anchor="middle" x="67" y="360">L4</text>
+<circle cx="67" cy="430" fill="#b3cfee" r="22" stroke="#4d82cc" stroke-dasharray="5,3" stroke-width="2"></circle>
+<text fill="#4d82cc" font-size="13" font-weight="700" text-anchor="middle" x="67" y="435">L5*</text>
+<text fill="#4d82cc" font-size="9" text-anchor="middle" x="67" y="458">→ plexus sacral</text>
+<!-- ── BRANCHES L1 ── -->
+<line stroke="#c94535" stroke-width="2.5" x1="93" x2="145" y1="93" y2="88"></line>
+<rect fill="#fdecea" height="28" rx="7" stroke="#c94535" stroke-width="2" width="185" x="145" y="75"></rect>
+<text fill="#5a1a13" font-size="12" font-weight="700" text-anchor="middle" x="237" y="93">Ilio-hypogastrique</text>
+<line stroke="#c94535" stroke-width="1.5" x1="330" x2="360" y1="89" y2="89"></line>
+<text fill="#5a1a13" font-size="11.5" x="368" y="93">Paroi abdominale · peau région glutéale sup.</text>
+<line stroke="#c94535" stroke-width="2.5" x1="93" x2="145" y1="107" y2="118"></line>
+<rect fill="#fdecea" height="28" rx="7" stroke="#c94535" stroke-width="2" width="185" x="145" y="106"></rect>
+<text fill="#5a1a13" font-size="12" font-weight="700" text-anchor="middle" x="237" y="124">Ilio-inguinal</text>
+<line stroke="#c94535" stroke-width="1.5" x1="330" x2="360" y1="120" y2="120"></line>
+<text fill="#5a1a13" font-size="11.5" x="368" y="124">Scrotum / grandes lèvres · région supéro-méd. cuisse</text>
+<!-- ── BRANCHES L1+L2 ── -->
+<line stroke="#d4840e" stroke-width="2" x1="93" x2="145" y1="100" y2="152"></line>
+<line stroke="#d4840e" stroke-width="2" x1="93" x2="145" y1="185" y2="158"></line>
+<rect fill="#fff8e1" height="28" rx="7" stroke="#d4840e" stroke-width="2" width="185" x="145" y="140"></rect>
+<text fill="#4a2e00" font-size="12" font-weight="700" text-anchor="middle" x="237" y="158">Génito-fémoral</text>
+<line stroke="#d4840e" stroke-width="1.5" x1="330" x2="360" y1="154" y2="154"></line>
+<text fill="#4a2e00" font-size="11.5" x="368" y="158">Crémaster · scrotum/lèvres · peau triangle fémoral</text>
+<!-- ── BRANCHES L2+L3 ── -->
+<line stroke="#20997f" stroke-width="2" x1="93" x2="145" y1="185" y2="194"></line>
+<line stroke="#20997f" stroke-width="2" x1="93" x2="145" y1="270" y2="200"></line>
+<rect fill="#d4f5ee" height="28" rx="7" stroke="#20997f" stroke-width="2" width="185" x="145" y="182"></rect>
+<text fill="#0a2e2a" font-size="12" font-weight="700" text-anchor="middle" x="237" y="200">Cutané lat. de la cuisse</text>
+<line stroke="#20997f" stroke-width="1.5" x1="330" x2="360" y1="196" y2="196"></line>
+<text fill="#0a2e2a" font-size="11.5" x="368" y="200">Face antéro-latérale cuisse jusqu'au genou</text>
+<!-- ── FÉMORAL L2+L3+L4 ── -->
+<line stroke="#274d86" stroke-width="3" x1="93" x2="145" y1="185" y2="260"></line>
+<line stroke="#274d86" stroke-width="3" x1="93" x2="145" y1="270" y2="268"></line>
+<line stroke="#274d86" stroke-width="3" x1="93" x2="145" y1="355" y2="276"></line>
+<rect fill="#b3cfee" height="40" rx="8" stroke="#274d86" stroke-width="2.5" width="185" x="145" y="245"></rect>
+<text fill="#1c3861" font-size="13" font-weight="700" text-anchor="middle" x="237" y="261">N. FÉMORAL</text>
+<text fill="#1c3861" font-size="11" text-anchor="middle" x="237" y="278">L2 – L3 – L4</text>
+<line stroke="#274d86" stroke-width="1.5" x1="330" x2="360" y1="265" y2="250"></line>
+<line stroke="#274d86" stroke-width="1.5" x1="330" x2="360" y1="265" y2="272"></line>
+<line stroke="#274d86" stroke-width="1.5" x1="330" x2="360" y1="265" y2="295"></line>
+<text fill="#1c3861" font-size="11.5" x="368" y="254">Quadriceps · Sartorius · Iliaque · Pectiné</text>
+<text fill="#1c3861" font-size="11.5" x="368" y="276">N. saphène → face int. jambe + cheville</text>
+<text fill="#1c3861" font-size="11.5" x="368" y="298">Réflexe rotulien (L3–L4)</text>
+<!-- ── OBTURATEUR L2+L3+L4 ── -->
+<line stroke="#1a7a6a" stroke-width="3" x1="93" x2="145" y1="185" y2="340"></line>
+<line stroke="#1a7a6a" stroke-width="3" x1="93" x2="145" y1="270" y2="348"></line>
+<line stroke="#1a7a6a" stroke-width="3" x1="93" x2="145" y1="355" y2="356"></line>
+<rect fill="#9fe8d8" height="40" rx="8" stroke="#1a7a6a" stroke-width="2.5" width="185" x="145" y="326"></rect>
+<text fill="#0a2e2a" font-size="13" font-weight="700" text-anchor="middle" x="237" y="342">N. OBTURATEUR</text>
+<text fill="#0a2e2a" font-size="11" text-anchor="middle" x="237" y="359">L2 – L3 – L4</text>
+<line stroke="#1a7a6a" stroke-width="1.5" x1="330" x2="360" y1="346" y2="335"></line>
+<line stroke="#1a7a6a" stroke-width="1.5" x1="330" x2="360" y1="346" y2="358"></line>
+<text fill="#0a2e2a" font-size="11.5" x="368" y="339">Long + court + grand adducteurs · Gracile</text>
+<text fill="#0a2e2a" font-size="11.5" x="368" y="361">Adduction + rotation lat. cuisse · Face méd. cuisse</text>
+<!-- ── TRONC LOMBO-SACRAL ── -->
+<line stroke="#4d82cc" stroke-dasharray="7,3" stroke-width="2.5" x1="93" x2="145" y1="355" y2="420"></line>
+<line stroke="#4d82cc" stroke-dasharray="7,3" stroke-width="2.5" x1="93" x2="145" y1="430" y2="426"></line>
+<rect fill="#dceaf9" height="32" rx="7" stroke="#4d82cc" stroke-dasharray="6,3" stroke-width="2" width="185" x="145" y="408"></rect>
+<text fill="#4d82cc" font-size="12" font-weight="600" text-anchor="middle" x="237" y="428">Tronc lombo-sacral (L4–L5)</text>
+<line stroke="#4d82cc" stroke-dasharray="5,3" stroke-width="1.5" x1="330" x2="360" y1="424" y2="424"></line>
+<text fill="#4d82cc" font-size="11.5" font-style="italic" x="368" y="428">Rejoint le plexus sacral (S1–S3) → N. sciatique</text>
+<!-- ── BANDE MÉMO ── -->
+<rect fill="#1c3861" height="22" opacity="0.88" rx="6" width="940" x="10" y="452"></rect>
+<text fill="white" font-size="11.5" font-weight="600" text-anchor="middle" x="480" y="467">
+          L1 → ilio-hypogastrique + ilio-inguinal  ·  L1+L2 → génito-fémoral  ·  L2+L3 → cutané lat.  ·  L2–L4 → fémoral + obturateur  ·  L4–L5 → tronc lombo-sacral
+        </text>
+</svg>
+</div>
+</div>
+<!-- ══ PLEXUS SACRAL — SCHÉMA AÉRÉ ══ -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon coral">🔺</div><div class="card-title">Plexus sacral — N. sciatique &amp; ses branches</div></div>
+<div class="card-body" style="padding:24px 20px;">
+<svg style="width:100%;display:block;overflow:visible;font-family:'Segoe UI',Arial,sans-serif;" viewbox="0 0 960 430" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f7f9fc" height="430" rx="12" width="960"></rect>
+<!-- Colonnes -->
+<rect fill="#edf0f4" height="340" opacity="0.6" rx="8" width="115" x="10" y="50"></rect>
+<rect fill="#fdecea" height="340" opacity="0.3" rx="8" width="165" x="145" y="50"></rect>
+<rect fill="#fff8e1" height="340" opacity="0.4" rx="8" width="620" x="330" y="50"></rect>
+<text fill="#404449" font-size="13" font-weight="700" text-anchor="middle" x="67" y="38">RACINES</text>
+<text fill="#c94535" font-size="13" font-weight="700" text-anchor="middle" x="227" y="38">N. SCIATIQUE</text>
+<text fill="#4a2e00" font-size="13" font-weight="700" text-anchor="middle" x="640" y="38">BRANCHES TERMINALES &amp; COLLATÉRALES</text>
+<!-- Racines -->
+<circle cx="67" cy="100" fill="#dceaf9" r="24" stroke="#4d82cc" stroke-dasharray="5,3" stroke-width="2"></circle>
+<text fill="#4d82cc" font-size="13" font-weight="700" text-anchor="middle" x="67" y="105">L4</text>
+<text fill="#4d82cc" font-size="9" text-anchor="middle" x="67" y="120">partiel</text>
+<circle cx="67" cy="175" fill="#dceaf9" r="24" stroke="#4d82cc" stroke-dasharray="5,3" stroke-width="2"></circle>
+<text fill="#4d82cc" font-size="13" font-weight="700" text-anchor="middle" x="67" y="180">L5</text>
+<circle cx="67" cy="250" fill="#dceaf9" r="24" stroke="#c94535" stroke-width="2.5"></circle>
+<text fill="#c94535" font-size="13" font-weight="700" text-anchor="middle" x="67" y="255">S1</text>
+<circle cx="67" cy="320" fill="#dceaf9" r="24" stroke="#c94535" stroke-width="2.5"></circle>
+<text fill="#c94535" font-size="13" font-weight="700" text-anchor="middle" x="67" y="325">S2</text>
+<circle cx="67" cy="385" fill="#dceaf9" r="22" stroke="#c94535" stroke-width="2"></circle>
+<text fill="#c94535" font-size="13" font-weight="700" text-anchor="middle" x="67" y="390">S3</text>
+<!-- Convergence vers N. sciatique -->
+<line stroke="#4d82cc" stroke-dasharray="6,3" stroke-width="2.5" x1="91" x2="145" y1="100" y2="218"></line>
+<line stroke="#4d82cc" stroke-dasharray="6,3" stroke-width="2.5" x1="91" x2="145" y1="175" y2="222"></line>
+<line stroke="#c94535" stroke-width="3" x1="91" x2="145" y1="250" y2="230"></line>
+<line stroke="#c94535" stroke-width="3" x1="91" x2="145" y1="320" y2="238"></line>
+<line stroke="#c94535" stroke-width="2.5" x1="91" x2="145" y1="385" y2="246"></line>
+<!-- N. sciatique box -->
+<rect fill="#fdecea" height="60" rx="10" stroke="#c94535" stroke-width="3" width="165" x="145" y="198"></rect>
+<text fill="#c94535" font-size="14" font-weight="700" text-anchor="middle" x="227" y="220">N. SCIATIQUE</text>
+<text fill="#5a1a13" font-size="11" text-anchor="middle" x="227" y="238">L4 – S3</text>
+<text fill="#5a1a13" font-size="10.5" font-style="italic" text-anchor="middle" x="227" y="253">Plus gros nerf du corps</text>
+<!-- Bifurcation -->
+<line stroke="#274d86" stroke-width="2.5" x1="310" x2="340" y1="228" y2="175"></line>
+<line stroke="#1a7a6a" stroke-width="2.5" x1="310" x2="340" y1="228" y2="290"></line>
+<!-- N. TIBIAL -->
+<rect fill="#b3cfee" height="44" rx="9" stroke="#274d86" stroke-width="2.5" width="200" x="340" y="153"></rect>
+<text fill="#1c3861" font-size="13" font-weight="700" text-anchor="middle" x="440" y="171">N. TIBIAL (L4–S3)</text>
+<text fill="#1c3861" font-size="11" text-anchor="middle" x="440" y="188">Branche médiale fosse poplitée</text>
+<!-- Branches tibial -->
+<line stroke="#274d86" stroke-width="1.5" x1="540" x2="575" y1="175" y2="155"></line>
+<line stroke="#274d86" stroke-width="1.5" x1="540" x2="575" y1="175" y2="175"></line>
+<line stroke="#274d86" stroke-width="1.5" x1="540" x2="575" y1="175" y2="196"></line>
+<text fill="#1c3861" font-size="11.5" x="582" y="159">Loge postérieure jambe (triceps sural ++)</text>
+<text fill="#1c3861" font-size="11.5" x="582" y="179">N. plantaire médial + N. plantaire latéral</text>
+<text fill="#1c3861" font-size="11.5" x="582" y="199">Réflexe achilléen (S1) · Marche pointe pieds</text>
+<!-- N. FIBULAIRE COMMUN -->
+<rect fill="#9fe8d8" height="44" rx="9" stroke="#1a7a6a" stroke-width="2.5" width="200" x="340" y="268"></rect>
+<text fill="#0a2e2a" font-size="13" font-weight="700" text-anchor="middle" x="440" y="286">N. FIBULAIRE (L4–S2)</text>
+<text fill="#0a2e2a" font-size="11" text-anchor="middle" x="440" y="303">Branche lat. · Col fibula ⚠️</text>
+<!-- Branches fibulaire -->
+<line stroke="#1a7a6a" stroke-width="1.5" x1="540" x2="575" y1="290" y2="270"></line>
+<line stroke="#1a7a6a" stroke-width="1.5" x1="540" x2="575" y1="290" y2="290"></line>
+<line stroke="#1a7a6a" stroke-width="1.5" x1="540" x2="575" y1="290" y2="310"></line>
+<text fill="#0a2e2a" font-size="11.5" x="582" y="274">Fibulaire superficiel → péroniers (éversion)</text>
+<text fill="#0a2e2a" font-size="11.5" x="582" y="294">Fibulaire profond → tibial ant. (dorsiflexion)</text>
+<text fill="#0a2e2a" font-size="11.5" x="582" y="313">Lésion col fibula → pied tombant (steppage)</text>
+<!-- BRANCHES COLLATÉRALES du plexus sacral -->
+<rect fill="#d4f5ee" height="40" rx="8" stroke="#20997f" stroke-width="1.5" width="610" x="330" y="342"></rect>
+<text fill="#0a2e2a" font-size="12" font-weight="600" text-anchor="middle" x="635" y="358">Branches collatérales :</text>
+<text fill="#0a2e2a" font-size="11.5" text-anchor="middle" x="635" y="375">N. glutéal SUP (L4–S1) → moyen + petit fessier + TFL · N. glutéal INF (L5–S2) → grand fessier · N. cutané post. cuisse (S1–S3)</text>
+<!-- Injection IM warning -->
+<rect fill="#fdecea" height="24" rx="7" stroke="#c94535" stroke-width="1.5" width="940" x="10" y="400"></rect>
+<text fill="#5a1a13" font-size="12" font-weight="600" text-anchor="middle" x="480" y="416">
+          ⚠️  Injection IM : toujours dans le quadrant SUPÉRO-LATÉRAL de la fesse pour éviter le nerf sciatique
+        </text>
+</svg>
+</div>
+</div>
+<!-- ══ TABLEAU NERFS MI ══ -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">Nerfs terminaux MI — Ce qu'il faut retenir</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Nerf</th><th>Racines</th><th>Trajet clé</th><th>Moteur</th><th>Sensitif</th><th>Paralysie / Test</th></tr></thead>
+<tbody>
+<tr>
+<td><strong style="color:var(--navy-600);">Fémoral</strong></td><td>L2–L4</td>
+<td>Entre iliaque + psoas → lacune musculaire → triangle fémoral</td>
+<td>Quadriceps (ext. genou) · Flexion cuisse · Sartorius</td>
+<td>Face ant. cuisse + face int. jambe (saphène)</td>
+<td>Réflexe rotulien aboli · Impossible d'étendre genou · Léri (PKB) = cruralgie</td>
+</tr>
+<tr>
+<td><strong style="color:var(--teal-600);">Obturateur</strong></td><td>L2–L4</td>
+<td>Bord méd. psoas → foramen obturé → br. ant. + post.</td>
+<td>Adducteurs · Obturateur ext.</td>
+<td>Face médiale cuisse (tiers inf.)</td>
+<td>Difficile croiser les jambes · Howship-Romberg = hernie obturatrice</td>
+</tr>
+<tr>
+<td><strong style="color:var(--coral-500);">Sciatique</strong></td><td>L4–S3</td>
+<td>Foramen infra-piriforme → fesse → cuisse post. → fosse poplitée</td>
+<td>Ischio-jambiers · Via tibial + fibulaire</td>
+<td>Face postéro-lat. jambe + ensemble pied</td>
+<td>Lasègue (SLR) · Points de Valleix · Abolition achilléen + cutané plantaire</td>
+</tr>
+<tr>
+<td><strong style="color:var(--teal-600);">Tibial</strong></td><td>L4–S3</td>
+<td>Fosse poplitée → région post. jambe → sillon malléolaire médial</td>
+<td>Loge post. jambe · Plante pied</td>
+<td>Plante + face plantaire orteils + talon</td>
+<td>Marche sur pointe impossible · Hypoesthésie plantaire</td>
+</tr>
+<tr>
+<td><strong style="color:var(--teal-600);">Fibulaire commun</strong></td><td>L4–S2</td>
+<td>Bord lat. fosse poplitée → col fibula ⚠️</td>
+<td>Loge ant. (tibial ant.) + loge lat. (péroniers)</td>
+<td>Face ant.-lat. jambe inf. + dos pied</td>
+<td>Steppage (pied tombant) · Marche talons impossible · Fracture fibula</td>
+</tr>
+<tr>
+<td><strong style="color:var(--navy-600);">Glutéaux</strong></td><td>L4–S2</td>
+<td>Sup. : supra-piriforme · Inf. : infra-piriforme</td>
+<td>Sup. : moyen+petit fessier+TFL · Inf. : grand fessier</td>
+<td>—</td>
+<td>Sup. : signe de Trendelenburg · Inf. : extension hanche impossible</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- ══ TRAJET SCIATIQUE — SCHÉMA AÉRÉ ══ -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon coral">📍</div><div class="card-title">Trajet du nerf sciatique — Points de Valleix &amp; tests neurodynamiques</div></div>
+<div class="card-body" style="padding:24px 20px;">
+<svg style="width:100%;display:block;overflow:visible;font-family:'Segoe UI',Arial,sans-serif;" viewbox="0 0 960 530" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f7f9fc" height="530" rx="12" width="960"></rect>
+<!-- Silhouette membre inf vue postérieure -->
+<!-- Fesse -->
+<ellipse cx="160" cy="75" fill="#ffd9a8" opacity="0.5" rx="68" ry="50" stroke="#d4840e" stroke-width="1.5"></ellipse>
+<text fill="#4a2e00" font-size="11" opacity="0.8" text-anchor="middle" x="160" y="79">Fesse</text>
+<!-- Cuisse -->
+<rect fill="#ffd9a8" height="175" opacity="0.5" rx="42" stroke="#d4840e" stroke-width="1.5" width="85" x="118" y="118"></rect>
+<text fill="#4a2e00" font-size="11" opacity="0.8" text-anchor="middle" x="160" y="215">Cuisse post.</text>
+<!-- Genou / fosse poplitée -->
+<ellipse cx="160" cy="308" fill="#ffe8cc" opacity="0.5" rx="48" ry="25" stroke="#d4840e" stroke-width="1.5"></ellipse>
+<text fill="#4a2e00" font-size="10" opacity="0.8" text-anchor="middle" x="160" y="313">Fosse poplitée</text>
+<!-- Jambe -->
+<rect fill="#ffd9a8" height="145" opacity="0.5" rx="36" stroke="#d4840e" stroke-width="1.5" width="76" x="122" y="330"></rect>
+<text fill="#4a2e00" font-size="11" opacity="0.8" text-anchor="middle" x="160" y="410">Jambe</text>
+<!-- Cheville -->
+<ellipse cx="160" cy="488" fill="#ffe8cc" opacity="0.5" rx="40" ry="20" stroke="#d4840e" stroke-width="1"></ellipse>
+<text fill="#4a2e00" font-size="10" opacity="0.7" text-anchor="middle" x="160" y="493">cheville</text>
+<!-- Trajet nerf sciatique -->
+<path d="M 160 45 C 159 65 158 90 156 118 C 154 155 153 190 152 228
+                 C 151 258 150 285 150 308 C 149 330 148 365 147 400" fill="none" stroke="#c94535" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- Bifurcation fosse poplitée -->
+<path d="M 149 308 C 148 318 140 330 118 345" fill="none" stroke="#274d86" stroke-linecap="round" stroke-width="3"></path>
+<path d="M 149 308 C 150 318 158 332 178 350" fill="none" stroke="#1a7a6a" stroke-linecap="round" stroke-width="3"></path>
+<!-- ① Origine – zone injections IM -->
+<circle cx="160" cy="45" fill="#c94535" r="14" stroke="white" stroke-width="2.5"></circle>
+<text fill="white" font-size="12" font-weight="700" text-anchor="middle" x="160" y="50">①</text>
+<rect fill="white" height="56" rx="9" stroke="#c94535" stroke-width="2" width="440" x="192" y="18"></rect>
+<text fill="#5a1a13" font-size="13" font-weight="700" x="212" y="37">Origine du nerf sciatique</text>
+<text fill="#5a5f66" font-size="11.5" x="212" y="55">Tiers supérieur de la ligne EIPS → tubérosité ischiatique</text>
+<rect fill="#fdecea" height="48" rx="7" stroke="#c94535" stroke-width="1.5" width="300" x="645" y="22"></rect>
+<text fill="#c94535" font-size="11.5" font-weight="700" text-anchor="middle" x="795" y="38">⚠️ Injection IM</text>
+<text fill="#5a1a13" font-size="11" text-anchor="middle" x="795" y="58">→ Quadrant supéro-latéral fesse !</text>
+<!-- ② Foramen infra-piriforme -->
+<circle cx="156" cy="120" fill="#c94535" r="14" stroke="white" stroke-width="2.5"></circle>
+<text fill="white" font-size="12" font-weight="700" text-anchor="middle" x="156" y="125">②</text>
+<rect fill="white" height="56" rx="9" stroke="#c94535" stroke-width="2" width="440" x="192" y="95"></rect>
+<text fill="#5a1a13" font-size="13" font-weight="700" x="212" y="114">Foramen infra-piriforme</text>
+<text fill="#5a5f66" font-size="11.5" x="212" y="132">Entre m. piriforme (en haut) et m. jumeau supérieur (en bas)</text>
+<!-- ③ Mi-cuisse -->
+<circle cx="153" cy="215" fill="#c94535" r="14" stroke="white" stroke-width="2.5"></circle>
+<text fill="white" font-size="12" font-weight="700" text-anchor="middle" x="153" y="220">③</text>
+<rect fill="white" height="56" rx="9" stroke="#c94535" stroke-width="2" width="440" x="192" y="190"></rect>
+<text fill="#5a1a13" font-size="13" font-weight="700" x="212" y="209">Mi-cuisse postérieure — axe médian</text>
+<text fill="#5a5f66" font-size="11.5" x="212" y="227">Points de Valleix : pression douloureuse sur le trajet du nerf</text>
+<!-- ④ Fosse poplitée — bifurcation -->
+<circle cx="150" cy="308" fill="#c94535" r="14" stroke="white" stroke-width="2.5"></circle>
+<text fill="white" font-size="12" font-weight="700" text-anchor="middle" x="150" y="313">④</text>
+<rect fill="white" height="56" rx="9" stroke="#c94535" stroke-width="2" width="440" x="192" y="284"></rect>
+<text fill="#5a1a13" font-size="13" font-weight="700" x="212" y="303">Fosse poplitée — bifurcation terminale</text>
+<text fill="#5a5f66" font-size="11.5" x="212" y="320">→ N. tibial (médial) + N. fibulaire commun (latéral)</text>
+<!-- ⑤ Col de la fibula -->
+<circle cx="178" cy="360" fill="#274d86" r="14" stroke="white" stroke-width="2.5"></circle>
+<text fill="white" font-size="12" font-weight="700" text-anchor="middle" x="178" y="365">⑤</text>
+<rect fill="#dceaf9" height="56" rx="9" stroke="#274d86" stroke-width="2" width="500" x="192" y="340"></rect>
+<text fill="#1c3861" font-size="13" font-weight="700" x="212" y="358">Col de la fibula — zone vulnérable du n. fibulaire commun !</text>
+<text fill="#5a5f66" font-size="11.5" x="212" y="376">Fracture / plâtre serré → pied tombant (steppage) + hypoesthésie dos pied</text>
+<!-- Blocs tests -->
+<rect fill="#fdecea" height="155" rx="10" stroke="#c94535" stroke-width="2" width="245" x="700" y="95"></rect>
+<text fill="#5a1a13" font-size="13" font-weight="700" text-anchor="middle" x="822" y="118">Test de Lasègue (SLR)</text>
+<text fill="#5a1a13" font-size="11.5" x="715" y="138">DD · flexion hanche + extension genou</text>
+<text fill="#5a1a13" font-size="11.5" x="715" y="155">+ flexion dorsale cheville (↑ tension)</text>
+<text fill="#5a1a13" font-size="11.5" x="715" y="172">Positif &lt; 60–70° = douleur sciatique</text>
+<text fill="#c94535" font-size="11" font-weight="700" x="715" y="190">Lasègue croisé = haute spécificité</text>
+<text fill="#5a5f66" font-size="10.5" font-style="italic" x="715" y="206">côté sain → reproduit douleur côté sympto.</text>
+<text fill="#5a5f66" font-size="11" x="715" y="240">Slump = version en charge (plus sensible)</text>
+<rect fill="#dceaf9" height="130" rx="10" stroke="#274d86" stroke-width="2" width="245" x="700" y="290"></rect>
+<text fill="#1c3861" font-size="13" font-weight="700" text-anchor="middle" x="822" y="312">Test de Léri / PKB</text>
+<text fill="#1c3861" font-size="11.5" x="715" y="333">N. fémoral — cruralgie (L2–L4)</text>
+<text fill="#1c3861" font-size="11.5" x="715" y="351">Latérocubitus controlatéral</text>
+<text fill="#1c3861" font-size="11.5" x="715" y="369">Extension + ABD hanche + flexion genou</text>
+<text fill="#274d86" font-size="11" font-weight="700" x="715" y="387">Positif = douleur face ant. cuisse</text>
+<text fill="#5a5f66" font-size="10.5" font-style="italic" x="715" y="405">+ différenciation structurelle lombaire</text>
+<!-- Résumé dermatomes bas -->
+<rect fill="#1c3861" height="26" opacity="0.88" rx="7" width="940" x="10" y="497"></rect>
+<text fill="white" font-size="12" font-weight="600" text-anchor="middle" x="480" y="514">
+          L4 = face int. jambe + malléole méd.  ·  L5 = dos pied + gros orteil + 1er espace interdigital  ·  S1 = bord ext. pied + talon + 5e orteil
+        </text>
+</svg>
+</div>
+</div>
+<!-- ══ PIED TERRITOIRES SENSITIFS ══ -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon navy">🗺️</div><div class="card-title">Territoires sensitifs du pied — Vue plantaire &amp; dorsale</div></div>
+<div class="card-body" style="padding:24px 20px;">
+<svg style="width:100%;display:block;overflow:visible;font-family:'Segoe UI',Arial,sans-serif;" viewbox="0 0 960 340" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#f7f9fc" height="340" rx="12" width="960"></rect>
+<!-- ── PIED PLANTAIRE (gauche) ── -->
+<text fill="#1a1c1e" font-size="15" font-weight="700" text-anchor="middle" x="210" y="30">Vue plantaire</text>
+<!-- Silhouette -->
+<ellipse cx="175" cy="185" fill="#f4f7fb" rx="75" ry="108" stroke="#b8bec7" stroke-width="2"></ellipse>
+<ellipse cx="175" cy="95" fill="#f4f7fb" rx="58" ry="48" stroke="#b8bec7" stroke-width="2"></ellipse>
+<ellipse cx="116" cy="68" fill="#f4f7fb" rx="22" ry="30" stroke="#b8bec7" stroke-width="2" transform="rotate(-20 116 68)"></ellipse>
+<!-- Orteils -->
+<ellipse cx="122" cy="55" fill="#f4f7fb" rx="12" ry="18" stroke="#b8bec7" stroke-width="1.5" transform="rotate(-20 122 55)"></ellipse>
+<ellipse cx="147" cy="45" fill="#f4f7fb" rx="11" ry="18" stroke="#b8bec7" stroke-width="1.5"></ellipse>
+<ellipse cx="172" cy="44" fill="#f4f7fb" rx="11" ry="18" stroke="#b8bec7" stroke-width="1.5"></ellipse>
+<ellipse cx="197" cy="47" fill="#f4f7fb" rx="11" ry="18" stroke="#b8bec7" stroke-width="1.5"></ellipse>
+<ellipse cx="220" cy="56" fill="#f4f7fb" rx="10" ry="15" stroke="#b8bec7" stroke-width="1.5" transform="rotate(15 220 56)"></ellipse>
+<!-- MÉDIAN plantaire = orange vif : I–IV face plant. -->
+<ellipse cx="150" cy="130" fill="rgba(212,132,14,0.45)" rx="50" ry="80" stroke="#d4840e" stroke-width="2"></ellipse>
+<ellipse cx="122" cy="55" fill="rgba(212,132,14,0.55)" rx="12" ry="18" stroke="#d4840e" stroke-width="1.5" transform="rotate(-20 122 55)"></ellipse>
+<ellipse cx="147" cy="45" fill="rgba(212,132,14,0.55)" rx="11" ry="18" stroke="#d4840e" stroke-width="1.5"></ellipse>
+<ellipse cx="172" cy="44" fill="rgba(212,132,14,0.55)" rx="11" ry="18" stroke="#d4840e" stroke-width="1.5"></ellipse>
+<ellipse cx="197" cy="47" fill="rgba(212,132,14,0.40)" rx="9" ry="18" stroke="#d4840e" stroke-width="1"></ellipse>
+<!-- LATÉRAL plantaire = bleu : V + lat. -->
+<ellipse cx="210" cy="175" fill="rgba(39,77,134,0.40)" rx="48" ry="90" stroke="#274d86" stroke-width="2"></ellipse>
+<ellipse cx="220" cy="56" fill="rgba(39,77,134,0.50)" rx="10" ry="15" stroke="#274d86" stroke-width="1.5" transform="rotate(15 220 56)"></ellipse>
+<!-- Labels -->
+<text fill="white" font-size="9" font-weight="700" text-anchor="middle" x="122" y="50">I</text>
+<text fill="white" font-size="9" font-weight="700" text-anchor="middle" x="147" y="42">II</text>
+<text fill="white" font-size="9" font-weight="700" text-anchor="middle" x="172" y="41">III</text>
+<text fill="white" font-size="9" font-weight="700" text-anchor="middle" x="197" y="44">IV</text>
+<text fill="white" font-size="9" font-weight="700" text-anchor="middle" x="220" y="52">V</text>
+<!-- ── PIED DORSAL (droite) ── -->
+<text fill="#1a1c1e" font-size="15" font-weight="700" text-anchor="middle" x="690" y="30">Vue dorsale</text>
+<!-- Silhouette -->
+<ellipse cx="655" cy="185" fill="#f4f7fb" rx="75" ry="108" stroke="#b8bec7" stroke-width="2"></ellipse>
+<ellipse cx="655" cy="95" fill="#f4f7fb" rx="58" ry="48" stroke="#b8bec7" stroke-width="2"></ellipse>
+<ellipse cx="596" cy="68" fill="#f4f7fb" rx="22" ry="30" stroke="#b8bec7" stroke-width="2" transform="rotate(20 596 68)"></ellipse>
+<ellipse cx="602" cy="55" fill="#f4f7fb" rx="12" ry="18" stroke="#b8bec7" stroke-width="1.5" transform="rotate(20 602 55)"></ellipse>
+<ellipse cx="627" cy="45" fill="#f4f7fb" rx="11" ry="18" stroke="#b8bec7" stroke-width="1.5"></ellipse>
+<ellipse cx="652" cy="44" fill="#f4f7fb" rx="11" ry="18" stroke="#b8bec7" stroke-width="1.5"></ellipse>
+<ellipse cx="677" cy="47" fill="#f4f7fb" rx="11" ry="18" stroke="#b8bec7" stroke-width="1.5"></ellipse>
+<ellipse cx="700" cy="56" fill="#f4f7fb" rx="10" ry="15" stroke="#b8bec7" stroke-width="1.5" transform="rotate(-15 700 56)"></ellipse>
+<!-- FIBULAIRE SUPERFICIEL = vert : majorité dos pied -->
+<ellipse cx="655" cy="150" fill="rgba(32,153,127,0.35)" rx="73" ry="105" stroke="#20997f" stroke-width="2"></ellipse>
+<ellipse cx="627" cy="45" fill="rgba(32,153,127,0.45)" rx="11" ry="18" stroke="#20997f" stroke-width="1.5"></ellipse>
+<ellipse cx="652" cy="44" fill="rgba(32,153,127,0.45)" rx="11" ry="18" stroke="#20997f" stroke-width="1.5"></ellipse>
+<ellipse cx="677" cy="47" fill="rgba(32,153,127,0.45)" rx="11" ry="18" stroke="#20997f" stroke-width="1.5"></ellipse>
+<ellipse cx="700" cy="56" fill="rgba(32,153,127,0.45)" rx="10" ry="15" stroke="#20997f" stroke-width="1.5" transform="rotate(-15 700 56)"></ellipse>
+<!-- FIBULAIRE PROFOND = vert foncé : 1er espace interdigital -->
+<ellipse cx="638" cy="46" fill="rgba(15,64,57,0.65)" rx="16" ry="22" stroke="#0f4039" stroke-width="2"></ellipse>
+<text fill="white" font-size="8" text-anchor="middle" x="638" y="50">1er espace</text>
+<!-- SAPHÈNE = orange zone méd. -->
+<ellipse cx="597" cy="155" fill="rgba(212,132,14,0.40)" rx="26" ry="60" stroke="#d4840e" stroke-width="1.5"></ellipse>
+<!-- SURAL bord lat. -->
+<ellipse cx="714" cy="180" fill="rgba(201,69,53,0.35)" rx="22" ry="55" stroke="#c94535" stroke-width="1.5"></ellipse>
+<!-- Pouce dorsal = saphène/rad -->
+<ellipse cx="602" cy="55" fill="rgba(212,132,14,0.40)" rx="12" ry="18" stroke="#d4840e" stroke-width="1.5" transform="rotate(20 602 55)"></ellipse>
+<!-- Labels -->
+<text fill="white" font-size="9" font-weight="700" text-anchor="middle" x="602" y="50">I</text>
+<text fill="white" font-size="9" font-weight="700" text-anchor="middle" x="627" y="42">II</text>
+<text fill="white" font-size="9" font-weight="700" text-anchor="middle" x="652" y="41">III</text>
+<text fill="white" font-size="9" font-weight="700" text-anchor="middle" x="677" y="44">IV</text>
+<text fill="white" font-size="9" font-weight="700" text-anchor="middle" x="700" y="52">V</text>
+<!-- ── LÉGENDE CENTRALE ── -->
+<rect fill="white" height="230" rx="10" stroke="#d8dde4" stroke-width="1.5" width="210" x="360" y="50"></rect>
+<text fill="#1a1c1e" font-size="14" font-weight="700" text-anchor="middle" x="465" y="73">Légende</text>
+<rect fill="rgba(212,132,14,0.6)" height="18" rx="4" stroke="#d4840e" stroke-width="1.5" width="18" x="378" y="90"></rect>
+<text fill="#4a2e00" font-size="12" font-weight="600" x="404" y="103">N. Plantaire médial</text>
+<text fill="#5a5f66" font-size="11" x="404" y="117">(tibial) — I à IV plante</text>
+<rect fill="rgba(39,77,134,0.55)" height="18" rx="4" stroke="#274d86" stroke-width="1.5" width="18" x="378" y="130"></rect>
+<text fill="#1c3861" font-size="12" font-weight="600" x="404" y="143">N. Plantaire latéral</text>
+<text fill="#5a5f66" font-size="11" x="404" y="157">(tibial) — bord lat. + V</text>
+<rect fill="rgba(32,153,127,0.55)" height="18" rx="4" stroke="#20997f" stroke-width="1.5" width="18" x="378" y="170"></rect>
+<text fill="#0a2e2a" font-size="12" font-weight="600" x="404" y="183">N. Fibulaire superficiel</text>
+<text fill="#5a5f66" font-size="11" x="404" y="197">majorité dos du pied</text>
+<rect fill="rgba(15,64,57,0.65)" height="18" rx="4" stroke="#0f4039" stroke-width="1.5" width="18" x="378" y="210"></rect>
+<text fill="#0a2e2a" font-size="12" font-weight="600" x="404" y="223">N. Fibulaire profond</text>
+<text fill="#5a5f66" font-size="11" x="404" y="237">1er espace interdigital</text>
+<rect fill="rgba(212,132,14,0.45)" height="18" rx="4" stroke="#d4840e" stroke-width="1" width="18" x="378" y="250"></rect>
+<text fill="#4a2e00" font-size="12" font-weight="600" x="404" y="263">N. Saphène</text>
+<text fill="#5a5f66" font-size="11" x="404" y="277">bord médial pied</text>
+<!-- Note bas -->
+<rect fill="#1c3861" height="26" opacity="0.88" rx="7" width="940" x="10" y="305"></rect>
+<text fill="white" font-size="12" font-weight="600" text-anchor="middle" x="480" y="322">
+          Résumé jambe : N. saphène = face int. · N. fibulaire sup. = face ant.-lat. + dos pied · N. sural = face post.-lat. + bord ext. · N. tibial = plante + face post. inf.
+        </text>
+</svg>
+</div>
+</div>
+<!-- ══ SYNTHÈSE RADICULAIRE MI ══ -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon amber">📊</div><div class="card-title">Synthèse radiculaire MI — Ce qui tombe à l'examen</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Racine</th><th>Muscle clé (myotome)</th><th>Réflexe</th><th>Sensitif (zone prioritaire)</th><th>Nerf tronculaire</th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--teal-600);">L2–L3</strong></td><td>Psoas-iliaque · Adducteurs · Quadriceps (partiel)</td><td>—</td><td>Face ant. + int. cuisse</td><td>N. fémoral + N. obturateur</td></tr>
+<tr><td><strong style="color:var(--teal-600);">L4</strong></td><td>Quadriceps · Tibial antérieur</td><td>Rotulien ⬇️ ou aboli</td><td>Face int. jambe + malléole méd.</td><td>N. fémoral (n. saphène)</td></tr>
+<tr><td><strong style="color:var(--teal-600);">L5</strong></td><td>Moyen fessier · Extenseur hallux · Tibial ant. (partiel)</td><td>Pédieux (inconstant)</td><td>1er espace interdigital · Dos pied · Gros orteil</td><td>N. fibulaire profond + N. glutéal sup.</td></tr>
+<tr><td><strong style="color:var(--teal-600);">S1</strong></td><td>Triceps sural · Grand fessier · Ischio-jambiers</td><td>Achilléen ⬇️ ou aboli</td><td>Bord lat. pied + 5e orteil · Talon · Plante</td><td>N. tibial + N. sural + N. glutéal inf.</td></tr>
+<tr><td><strong style="color:var(--teal-600);">S2</strong></td><td>Ischio-jambiers · Muscles intrinsèques pied</td><td>—</td><td>Face post. cuisse + jambe prox.</td><td>N. sciatique (tibial) + N. cutané post. cuisse</td></tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin:14px;font-size:13px;line-height:1.7;">
+<strong>Points clés hernies discales :</strong><br/>
+        • Hernie <strong>L4–L5</strong> → atteinte <strong>L5</strong> → déficit extension hallux · marche sur talons difficile · réflexe achilléen souvent conservé<br/>
+        • Hernie <strong>L5–S1</strong> → atteinte <strong>S1</strong> → marche sur pointe impossible · abolition réflexe achilléen · douleur bord ext. pied<br/>
+        • Hernie <strong>L3–L4</strong> → atteinte <strong>L4</strong> → abolition réflexe rotulien · cruralgie (face ant. cuisse) · Léri positif<br/>
+        • N. fibulaire au <strong>col fibula</strong> → pied tombant (steppage) · marche sur talons impossible · hypoesthésie dos pied
+      </div>
+</div>
+</div>
+<div class="footnote"><cite>Sources : Thomas Gautier D.O. — Neurologie membre inférieur, IEOQ Année 1 · Kamina P. — Anatomie clinique (Maloine) · Bender C, Dove L, Schmid AB. (JOSPT 2023)</cite></div>
+</section>
+<section class="section" id="neuro-raisonnement" style="display:none;">
+<div class="section-title">Raisonnement clinique — Douleurs irradiantes</div>
+<div class="section-sub">Triage, interprétation du bilan neuro, options thérapeutiques — Thoomes, Schafer, Murray &amp; Jesson · IEOQ Formation et pratique clinique</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon teal">🧩</div><div class="card-title">Chronologie de l'évaluation clinique</div></div>
+<div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">1 — Anamnèse</div><div class="value" style="font-size:13px;">Caractéristiques de la douleur · DN4 · Détection red flags · Yellow flags · ATCD douleur neuropathique · Signes de neuropathie (perte de fonction) · Facteurs de risque</div></div>
+<div class="test-detail-item"><div class="label">2 — Observation</div><div class="value" style="font-size:13px;">Posture antalgique · Adaptative vs maladaptative · Inspection amyotrophie · Observation de la marche dès l'entrée</div></div>
+<div class="test-detail-item"><div class="label">3 — Mobilités actives</div><div class="value" style="font-size:13px;">Amplitudes · Reproduction des symptômes · Contrôle moteur · Phénomène on/off selon la position</div></div>
+<div class="test-detail-item"><div class="label">4 — Examen neuro standard</div><div class="value" style="font-size:13px;">Motoneurones supérieurs · Modalités sensori-motrices · Perte de fonction · Gain de fonction · Séquence en 5 étapes</div></div>
+<div class="test-detail-item"><div class="label">5 — Tests de provocation</div><div class="value" style="font-size:13px;">Palpation neurale · Slump/Lasègue/Léri/ULNT · Différenciation structurelle</div></div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon navy">🔍</div><div class="card-title">Interprétation du bilan neurologique — Questions clés</div></div>
+<div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Ischémie transitoire ?</div><div class="value" style="font-size:13px;">Phénomène on/off en fonction de la position rachidienne. Déficit qui apparaît ou disparaît selon la posture. Tester en position neutre ET en position provocatrice.</div></div>
+<div class="test-detail-item"><div class="label">Combien de racines atteintes ?</div><div class="value" style="font-size:13px;">Mono-radiculaire vs poly-radiculaire. Distribution unilatérale / bilatérale / quadrilatérale. Bilatéral ou quadrilatéral = red flag → myélopathie ou polyneuropathie.</div></div>
+<div class="test-detail-item"><div class="label">Quelles fibres atteintes ?</div><div class="value" style="font-size:13px;">Grosses fibres (myélinisées) = déficit moteur, réflexes, sensibilité fine, vibration. Petites fibres (C/Aδ) = nociception, thermique, SNA. Atteinte petites fibres = déficit de perfusion chronique → récupération lente.</div></div>
+<div class="test-detail-item"><div class="label">Évolution et temporalité ?</div><div class="value" style="font-size:13px;">Red flags : évolution négative · temporalité courte · atteinte des grosses fibres sensitives évolutive · signes centraux. Règle des 4P : Douleur (Pain) incontrôlable · Déficit Progressif · Déficit Prononcé · Pluriradiculaire.</div></div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon amber">📐</div><div class="card-title">Développement du raisonnement clinique — 4 questions</div></div>
+<div class="card-body">
+<div class="tech-step"><div class="label">1 — Gain et/ou perte de fonction ?</div>Gain = hyperexcitabilité, hypersensibilisation (mécanosensibilité, hyperalgésie, allodynie). Perte = atteinte des grosses fibres (déficit moteur, hyporéflexie, hypoesthésie). Les deux peuvent coexister.</div>
+<div class="tech-step"><div class="label">2 — Quels mécanismes impliqués ?</div>Nociceptif (tissu non neural) · Neuropathique (lésion du SNS) · Mécanosensibilité (nervi nervorum) · Nociplastique (altération de la nociception sans lésion). Association fréquente (présentation mixte).</div>
+<div class="tech-step"><div class="label">3 — Phénotypage de la douleur ?</div>DN4 ≥ 4/10 → forte suspicion neuropathique. LANSS ≥ 12 → sensibilisation neuropathique. Cluster Schmid pour classification. Aide à adapter le traitement (opioïdes si perte de fonction, prégabaline si hyperalgésie mécanique, oxcarbazépine si hyperalgésie thermique).</div>
+<div class="tech-step"><div class="label">4 — Mixité clinique ?</div>Co-existence fréquente des présentations. Douleur irradiante MS/MI : sans douleur irradiante + sans perte de fonction (nociceptive/mixte/nociplastique) · avec douleur irradiante + sans perte de fonction (mécanosensibilité, douleur référée somatique) · avec perte de fonction (radiculopathie, neuropathie, ischémie transitoire).</div>
+</div>
+</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon teal">🏋️</div><div class="card-title">Options thérapeutiques — Exercice</div></div>
+<div class="card-body">
+<div class="tech-step"><div class="label">Faire repousser le nerf (trouble de fonction)</div>Exercice cardiovasculaire intensif (RPE 6–8 Borg) · Musculation · Rééducation active haute intensité. Stimule la croissance axonale, la plasticité neuronale, l'analgésie induite par l'exercice. Peut provoquer des douleurs temporaires (effet « Aïe-Aïe-Aïe »). <strong>PAS de renforcement du dos isolé.</strong></div>
+<div class="tech-step"><div class="label">Faire respirer le nerf (décompression)</div>Postures de décharge (flexion ou extension selon le nerf) · Techniques d'ouverture (mobilisations, étirements, yoga, respiration). Objectif : réduire les contraintes mécaniques et améliorer la perfusion locale.</div>
+<div class="tech-step"><div class="label">Faire pomper le nerf (drainage)</div>Neuroglissement (nerve gliding) : deux articulations bougent en opposition pour contrebalancer la tension. Mobilisation de l'interface (muscles, articulations, fascias). Objectif : circulation des fluides autour et dans le nerf. Indications : douleurs neuropathiques chroniques, adhérences post-traumatiques, syndromes canalaires.</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon navy">🤲</div><div class="card-title">Options thérapeutiques — Thérapie manuelle</div></div>
+<div class="card-body">
+<div class="tech-step"><div class="label">Techniques neurodynamiques (NICE 2017)</div>Mobilisation neuronale = outil efficace pour améliorer à court terme la douleur, la fonction et le handicap associés à la lombalgie irradiante. Effets à court terme uniquement (Peacock 2023). Effets : hypoalgésie par inhibition descendante · réduction de l'œdème intraneural · élévation de la tolérance aux contraintes du nerf.</div>
+<div class="tech-step"><div class="label">Manipulations articulaires</div>Contre-indications relatives : &gt; 50 ans · épisodes répétés sciatique alternée · HD sévère documentée IRM · symptômes bilatéraux · longue durée (&gt; 5 ans). Rapport risque/bénéfice à évaluer. Au stade chronique = associer thérapie manipulative + exercices + conseils posturaux (Thoomes 2022).</div>
+<div class="tech-step"><div class="label">Éducation thérapeutique</div>Écoute empathique · Transmission d'information consentie · Réassurance cognitive · Attentes optimistes et réalistes · Graduation des activités · Encouragement AP · Gestion des stratégies maladaptatives.</div>
+<div class="info-box teal" style="margin-top:8px;font-size:13px;">Murray &amp; Jesson : « Il n'existe pas de solution miracle. Les patients recherchent des explications claires et précises. Être dans la bonne catégorie diagnostique est la priorité. »</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon coral">🚑</div><div class="card-title">Règle des 4P — Critères d'urgence / imagerie</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:25%">Catégorie</th><th>Critères → Décision</th></tr></thead>
+<tbody>
+<tr><td><strong>Urgence</strong></td><td>Red flags catégorie 1 (sang crachats, perte de connaissance, déficit neurologique progressif non expliqué, engourdissement péri-anal, dysfonction urinaire/intestinale, douleur sévère non mécanique, masse abdominale pulsatile) · Symptômes évocateurs syndrome queue de cheval · Déficit neurologique multiétagé (&gt; 2 étages) et/ou FM &lt; 3/5 → Réorientation immédiate. Ne pas commencer de traitement.</td></tr>
+<tr><td><strong>Règle des 4P</strong></td><td>Douleur (Pain) incontrôlable · Déficit neurologique Progressif et aggravation · Déficit neurologique Prononcé · Pluriradiculaire → Réorientation urgente. Investigations supplémentaires.</td></tr>
+<tr><td><strong>Imagerie (IRM)</strong></td><td>Douleur radiculaire hyperalgique &gt; S6 (ou plus tôt si invalidité importante) + Déficit neurologique significatif et progressif → Imagerie pour adapter le traitement. IRM seule ne constitue pas un gold standard — doit être corrélée à l'examen clinique.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon teal">💡</div><div class="card-title">Les 6 recommandations de Bender, Dove &amp; Schmid — Améliorer l'examen neurologique</div></div>
+<div class="card-body">
+<div class="tech-step"><div class="label">1 — Repenser l'évaluation des dermatomes</div>Tester la sensibilité avec un schéma circonférentiel (bras/jambes) et affiner les zones détectées par une approche en étoile. Ne pas se limiter aux cartes standards.</div>
+<div class="tech-step"><div class="label">2 — Tester toutes les fibres nerveuses</div>Compléter l'évaluation des grosses fibres (tact fin, réflexes) par des tests des petites fibres (nociception, chaud/froid), particulièrement si suspicion de NPD.</div>
+<div class="tech-step"><div class="label">3 — Tenir compte des pièges de la comparaison controlatérale</div>En cas d'atteintes bilatérales, s'appuyer sur des zones proximales non affectées pour l'interprétation comparative.</div>
+<div class="tech-step"><div class="label">4 — Prendre en compte la fatigabilité des myotomes</div>Tester muscles et myotomes en utilisant des exercices répétés pour détecter des déficits moins évidents (notamment pertinent pour S1 avec le relevé de table unilatéral).</div>
+<div class="tech-step"><div class="label">5 — Interpréter les réflexes avec recul</div>Utiliser les résultats dans un cadre global, car les réflexes manquent de spécificité pris isolément. L'abolition symétrique a peu de valeur — l'asymétrie est discriminante.</div>
+<div class="tech-step"><div class="label">6 — Quantifier les résultats pour le suivi</div>Cartographier les déficits sensitifs · Utiliser des outils simples (monofilaments, dynamomètre, Rydel-Seiffer) · Suivre l'évolution dans le temps · Bilan en charge = défi bonus (corrélations pathoanatomiques uniquement détectables en position fonctionnelle).</div>
+</div>
+</div>
+<div class="footnote"><cite>Sources : Thoomes EJ. (Disability and Rehabilitation 2022) — Conservative management lumbar radiculopathy · Schafer A et al. 2009 — Classification lombalgies irradiantes · Bender C, Dove L, Schmid AB. (JOSPT 2023) · Konstantinou K et al. (Spine Journal 2018) — ATLAS cohort · Murray L &amp; Jesson T — Understanding Sciatica · NICE Guidelines 2017 — Low back pain and sciatica</cite></div>
+</section>
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["neuro-terminologie", "neuro-triage", "neuro-routine-ms", "neuro-routine-mi", "neuro-anatomie-ms", "neuro-anatomie-mi", "neuro-raisonnement"];
+  var SUB_LABELS_LOCAL = {"neuro-terminologie": "📖 Terminologie", "neuro-triage": "🚦 Triage clinique", "neuro-routine-ms": "💪 Routine MS", "neuro-routine-mi": "🦵 Routine MI", "neuro-anatomie-ms": "🔵 Anatomie Plexus Brachial", "neuro-anatomie-mi": "🟢 Anatomie Plexus Lombaire/Sacral", "neuro-raisonnement": "🧩 Raisonnement clinique"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    if (initial) applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>
