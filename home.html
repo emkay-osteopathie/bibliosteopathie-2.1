@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bibliothèque Ostéopathique — IEOQ</title>
+<script src="auth-config.js"></script>
+<script>osteoRequireLogin();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f4ec;
+    --surface: #ffffff;
+    --surface-2: #efe9db;
+    --text: #221f1a;
+    --text-dim: #4a4238;
+    --text-muted: #857a67;
+    --accent: #2f6f63;
+    --accent-dark: #1d3f38;
+    --accent-soft: rgba(47,111,99,0.1);
+    --accent-soft-border: rgba(47,111,99,0.22);
+    --copper: #c07a3f;
+    --copper-soft: rgba(192,122,63,0.12);
+    --copper-soft-border: rgba(192,122,63,0.25);
+    --sage2: #4f9c8c;
+    --sage2-soft: rgba(79,156,140,0.12);
+    --coral: #b6503c;
+    --coral-soft: rgba(182,80,60,0.12);
+    --border: #e2d9c8;
+    --radius: 18px;
+    --shadow: 0 10px 34px rgba(40,30,20,0.09);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 15% -10%, rgba(47,111,99,0.08) 0%, transparent 55%),
+      radial-gradient(ellipse 60% 45% at 90% 100%, rgba(192,122,63,0.07) 0%, transparent 55%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    position: relative;
+    z-index: 10;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .site-header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo-mark {
+    width: 38px;
+    height: 38px;
+    background: var(--accent);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-shrink: 0;
+    box-shadow: 0 6px 18px rgba(47,111,99,0.25);
+  }
+  .logo-mark svg { width: 20px; height: 20px; }
+
+  .site-name {
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--text);
+  }
+
+  .site-sub {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .session-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .session-pill {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--accent-dark);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-soft-border);
+    padding: 6px 14px;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+
+  .logout-link {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 6px 14px;
+    border-radius: 100px;
+    background: var(--surface);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: all .2s;
+  }
+
+  .logout-link:hover {
+    color: var(--text);
+    border-color: var(--text-muted);
+  }
+
+  /* ── MAIN CONTENT ── */
+  main {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+    gap: 3.5rem;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    text-align: center;
+    max-width: 600px;
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-dark);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-soft-border);
+    padding: 0.3rem 0.85rem;
+    border-radius: 100px;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 {
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: clamp(2.2rem, 5.5vw, 3.4rem);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .hero p {
+    font-size: 1rem;
+    color: var(--text-dim);
+    line-height: 1.65;
+    font-weight: 400;
+    max-width: 460px;
+    margin: 0 auto;
+  }
+
+  /* ── CARDS ── */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  .year-card {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2.5rem 2rem;
+    text-decoration: none;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+  }
+
+  .year-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 44px rgba(40,30,20,0.14);
+  }
+
+  .year-card.an1:hover { border-color: var(--accent); }
+  .year-card.an2:hover { border-color: var(--copper); }
+  .year-card.an3:hover { border-color: var(--sage2); }
+  .year-card.an4:hover { border-color: var(--coral); }
+
+  .card-badge {
+    position: relative;
+    z-index: 1;
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .an1 .card-badge { background: var(--accent-soft); border: 1px solid var(--accent-soft-border); }
+  .an2 .card-badge { background: var(--copper-soft); border: 1px solid var(--copper-soft-border); }
+  .an3 .card-badge { background: var(--sage2-soft); border: 1px solid rgba(79,156,140,0.28); }
+  .an4 .card-badge { background: var(--coral-soft); border: 1px solid rgba(182,80,60,0.28); }
+
+  .card-badge svg { width: 24px; height: 24px; }
+
+  .an1 .card-badge svg { color: var(--accent); }
+  .an2 .card-badge svg { color: var(--copper); }
+  .an3 .card-badge svg { color: var(--sage2); }
+  .an4 .card-badge svg { color: var(--coral); }
+
+  .card-body { position: relative; z-index: 1; flex: 1; }
+
+  .card-year-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+
+  .an1 .card-year-label { color: var(--accent); }
+  .an2 .card-year-label { color: var(--copper); }
+  .an3 .card-year-label { color: var(--sage2); }
+  .an4 .card-year-label { color: var(--coral); }
+
+  .card-title {
+    font-family: 'Newsreader', serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-desc {
+    font-size: 0.875rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  .card-arrow {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: gap 0.2s ease;
+  }
+
+  .an1 .card-arrow { color: var(--accent); }
+  .an2 .card-arrow { color: var(--copper); }
+  .an3 .card-arrow { color: var(--sage2); }
+  .an4 .card-arrow { color: var(--coral); }
+
+  .year-card:hover .card-arrow { gap: 0.85rem; }
+
+  .card-arrow svg { width: 16px; height: 16px; transition: transform 0.2s ease; }
+
+  .year-card:hover .card-arrow svg { transform: translateX(3px); }
+
+  /* ── LOCKED STATE ── */
+  .year-card.locked { cursor: not-allowed; opacity: 0.5; filter: grayscale(0.5); }
+  .year-card.locked:hover { transform: none; box-shadow: var(--shadow); }
+  .year-card.locked .card-arrow { color: var(--text-muted) !important; }
+  .year-card.locked:hover .card-arrow { gap: 0.5rem; }
+  .year-card.locked:hover .card-arrow svg { transform: none; }
+
+  /* ── FOOTER ── */
+  footer {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+  }
+
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { color: var(--accent-dark); }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-eyebrow { animation: fadeUp 0.5s ease both; animation-delay: 0.1s; }
+  .hero h1      { animation: fadeUp 0.5s ease both; animation-delay: 0.2s; }
+  .hero p       { animation: fadeUp 0.5s ease both; animation-delay: 0.3s; }
+  .year-card.an1 { animation: fadeUp 0.5s ease both; animation-delay: 0.4s; }
+  .year-card.an2 { animation: fadeUp 0.5s ease both; animation-delay: 0.5s; }
+  .year-card.an3 { animation: fadeUp 0.5s ease both; animation-delay: 0.6s; }
+  .year-card.an4 { animation: fadeUp 0.5s ease both; animation-delay: 0.7s; }
+
+  @media (max-width: 600px) {
+    .site-header { padding: 1.25rem 1.25rem; flex-wrap: wrap; }
+    main { padding: 3rem 1rem; gap: 2.5rem; }
+    .year-card { padding: 2rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="site-header-left">
+    <div class="logo-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4c1.5 0 2.5 1 2.5 2.5S7.5 9 6 9s-2.5-1-2.5-2.5S4.5 4 6 4z"/><path d="M18 20c1.5 0 2.5-1 2.5-2.5S19.5 15 18 15s-2.5 1-2.5 2.5.5 2.5 2.5 2.5z"/><path d="M7.5 8l9 8"/></svg>
+    </div>
+    <div>
+      <div class="site-name">Bibliothèque Ostéopathique</div>
+      <div class="site-sub">IEOQ · L'équipe de l'IEOQ</div>
+    </div>
+  </div>
+  <div class="session-info">
+    <span class="session-pill" id="sessionPill"></span>
+    <button class="logout-link" onclick="osteoLogout()">Se déconnecter</button>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow">Sélection du contenu</div>
+    <h1>Quel contenu veux-tu <em>consulter</em> ?</h1>
+    <p>Ton accès inclut le contenu de ton année et de toutes les années précédentes.</p>
+  </div>
+
+  <!-- CARDS -->
+  <div class="cards-grid" id="cardsGrid">
+
+    <!-- ANNÉE 1 -->
+    <a class="year-card an1" data-year="1" href="an1/index.html">
+      <div class="card-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/>
+          <path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <div class="card-year-label">Programme</div>
+        <div class="card-title">1ère Année</div>
+        <p class="card-desc">Fondements de l'ostéopathie, anatomie de base, introduction aux techniques structurelles et fasciales.</p>
+      </div>
+      <div class="card-arrow">
+        <span class="card-arrow-text">Accéder</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </div>
+    </a>
+
+    <!-- ANNÉE 2 -->
+    <a class="year-card an2" data-year="2" href="an2.html">
+      <div class="card-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <div class="card-year-label">Programme</div>
+        <div class="card-title">2e Année</div>
+        <p class="card-desc">Approfondissement clinique, techniques avancées, biomécanique ostéopathique et applications thérapeutiques.</p>
+      </div>
+      <div class="card-arrow">
+        <span class="card-arrow-text">Accéder</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </div>
+    </a>
+
+    <!-- ANNÉE 3 -->
+    <a class="year-card an3" data-year="3" href="an3.html">
+      <div class="card-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2v20M2 12h20"/>
+          <circle cx="12" cy="12" r="9"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <div class="card-year-label">Programme</div>
+        <div class="card-title">3e Année</div>
+        <p class="card-desc">Contenu à venir.</p>
+      </div>
+      <div class="card-arrow">
+        <span class="card-arrow-text">Accéder</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </div>
+    </a>
+
+    <!-- ANNÉE 4 -->
+    <a class="year-card an4" data-year="4" href="an4.html">
+      <div class="card-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16v16H4z"/>
+          <path d="M4 10h16M10 4v16"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <div class="card-year-label">Programme</div>
+        <div class="card-title">4e Année</div>
+        <p class="card-desc">Contenu à venir.</p>
+      </div>
+      <div class="card-arrow">
+        <span class="card-arrow-text">Accéder</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </div>
+    </a>
+
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2026 IEOQ · L'équipe de l'IEOQ &mdash;
+  <a href="mailto:contact@ieoq.ca">contact@ieoq.ca</a>
+</footer>
+
+<script>
+  const session = osteoGetSession();
+
+  if (session) {
+    document.getElementById('sessionPill').textContent =
+      'Connecté · ' + (session.label || ('Année ' + session.year));
+  }
+
+  const myYear = session ? session.year : 0;
+
+  document.querySelectorAll('.year-card').forEach(function (card) {
+    const requiredYear = parseInt(card.dataset.year, 10);
+    if (requiredYear > myYear) {
+      card.classList.add('locked');
+      card.removeAttribute('href');
+      card.querySelector('.card-arrow-text').textContent = 'Verrouillé';
+      const desc = card.querySelector('.card-desc');
+      desc.textContent = 'Réservé aux élèves de ' + requiredYear + 'e année et plus.';
+      card.addEventListener('click', function (e) { e.preventDefault(); });
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 3</title>
+<script src="auth-config.js"></script>
+<script>osteoGuardPage(3);</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;1,400&family=Newsreader:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f7f4ec;
+    --surface: #ffffff;
+    --accent: #2f6f63;
+    --accent-dark: #1d3f38;
+    --text: #221f1a;
+    --text-dim: #4a4238;
+    --border: #e2d9c8;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+  }
+  .logo-icon {
+    width: 52px; height: 52px;
+    border-radius: 14px;
+    background: var(--accent);
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 24px;
+    box-shadow: 0 8px 24px rgba(47,111,99,0.28);
+  }
+  .logo-icon svg { width: 26px; height: 26px; }
+  h1 {
+    font-family: 'Newsreader', serif;
+    font-size: clamp(28px, 4.5vw, 42px);
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  h1 em { font-style: italic; color: var(--accent); }
+  p {
+    max-width: 440px;
+    color: var(--text-dim);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+  a.back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-dark);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 10px 22px;
+    border-radius: 30px;
+    transition: all .2s;
+  }
+  a.back:hover { border-color: var(--accent); box-shadow: 0 4px 14px rgba(47,111,99,0.15); }
+</style>
+</head>
+<body>
+
+<!-- Bouton de déconnexion flottant (styles inline pour ne pas entrer en conflit avec le CSS de la page) -->
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:99999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+  <div class="logo-icon">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4c1.5 0 2.5 1 2.5 2.5S7.5 9 6 9s-2.5-1-2.5-2.5S4.5 4 6 4z"/><path d="M18 20c1.5 0 2.5-1 2.5-2.5S19.5 15 18 15s-2.5 1-2.5 2.5.5 2.5 2.5 2.5z"/><path d="M7.5 8l9 8"/></svg>
+  </div>
+  <h1>Contenu <em>à venir</em></h1>
+  <p>La bibliothèque de l'Année 3 est en préparation. Elle sera ajoutée ici dès que le contenu de cours sera prêt.</p>
+  <a class="back" href="index.html">← Retour à l'accueil</a>
+</body>
+</html>
