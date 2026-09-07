@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 1 · Poignet</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(1);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">✋</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 1ère Année</h1>
+      <p>Poignet — IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="index.html">← Catégories</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><strong>Poignet</strong> <span id="crumbSub">› 📖 Biomécanique</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="poignet" onclick="showSub('poignet')">📖 Biomécanique</button><button type="button" class="nav-tab" data-sub="arthro-poignet" onclick="showSub('arthro-poignet')">🦴 Arthrologie poignet</button><button type="button" class="nav-tab" data-sub="tests-poignet" onclick="showSub('tests-poignet')">🩺 Tests orthopédiques</button><button type="button" class="nav-tab" data-sub="tech-poignet" onclick="showSub('tech-poignet')">🔧 Techniques structurelles</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="poignet" style="display:block;">
+<div class="section-title">Biomécanique du poignet</div>
+<div class="section-sub">Complexe articulaire de 8 os — cinématique des rangées carpales — Pascal César, IEOQ 2024</div>
+<!-- Présentation générale -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">🦴</div>
+<div class="card-title">Anatomie fonctionnelle — 8 os, 2 rangées, 2 articulations principales</div>
+</div>
+<div class="card-body">
+<div class="grid-3" style="margin-bottom:16px;">
+<div style="padding:14px;background:var(--teal-50);border-radius:8px;border:1px solid var(--teal-200);">
+<div style="font-size:12px;font-weight:600;color:var(--teal-700);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;">Rangée supérieure (R1)</div>
+<div style="display:flex;flex-wrap:wrap;gap:5px;">
+<span class="tag tag-teal">Scaphoïde</span>
+<span class="tag tag-teal">Lunatum</span>
+<span class="tag tag-teal">Triquetrum</span>
+<span class="tag tag-gray">Pisiforme</span>
+</div>
+<div style="font-size:12px;color:var(--teal-700);margin-top:8px;">Os <strong>mobiles</strong> — s'adaptent en permanence aux 2 surfaces articulaires</div>
+</div>
+<div style="padding:14px;background:var(--navy-100);border-radius:8px;border:1px solid var(--navy-200);">
+<div style="font-size:12px;font-weight:600;color:var(--navy-700);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;">Rangée inférieure (R2)</div>
+<div style="display:flex;flex-wrap:wrap;gap:5px;">
+<span class="tag tag-navy">Trapèze</span>
+<span class="tag tag-navy">Trapézoïde</span>
+<span class="tag tag-navy">Capitatum</span>
+<span class="tag tag-navy">Hamatum</span>
+</div>
+<div style="font-size:12px;color:var(--navy-700);margin-top:8px;"><strong>Bloc osseux rigide</strong> — base stable pour les doigts</div>
+</div>
+<div style="padding:14px;background:var(--amber-100);border-radius:8px;border:1px solid #f0c865;">
+<div style="font-size:12px;font-weight:600;color:var(--amber-500);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px;">3 degrés de liberté</div>
+<ul style="font-size:12.5px;color:var(--text2);list-style:none;padding:0;display:flex;flex-direction:column;gap:4px;">
+<li>→ <strong>Flexion / Extension</strong> (RC + MC)</li>
+<li>→ <strong>Abduction / Adduction</strong> (RC + MC)</li>
+<li>→ <strong>Prono-supination</strong> (RU sup. + inf.)</li>
+</ul>
+</div>
+</div>
+<div class="info-box teal">
+<strong>Concept fondamental :</strong> Le carpe est un ensemble osseux à <em>géométrie variable</em>. Les mouvements des os sont déterminés par leurs formes, l'orientation de leurs surfaces articulaires, la direction des ligaments et les actions musculaires. La disposition relative des os dépend d'un <strong>équilibre dynamique</strong> (Kapandji).
+        </div>
+<div class="info-box navy" style="background:var(--navy-100);border-color:var(--navy-400);color:var(--navy-900);margin-top:10px;">
+<strong>Position fonctionnelle stable (statique) :</strong> Prono-supination intermédiaire + légère extension + légère inclinaison ulnaire → secteur d'équilibre des tendons péri-articulaires.
+        </div>
+</div>
+</div>
+<!-- Os clés description -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">🔑</div>
+<div class="card-title">Description fonctionnelle des os clés du carpe</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead>
+<tr>
+<th>Os</th>
+<th>Rangée</th>
+<th>Caractéristique morphologique</th>
+<th>Rôle fonctionnel clé</th>
+<th>Particularité clinique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Scaphoïde<small>Os naviculaire</small></div></td>
+<td><span class="tag tag-teal">R1</span></td>
+<td>Grand axe oblique en bas/dehors/avant. Forme en coque de bateau. Pénètre fortement R2 (lié à trapèze, trapézoïde, capitatum)</td>
+<td><strong>Coordinateur des mouvements</strong> — à cheval sur R1 et R2 → coordonne et transmet tous les mouvements du poignet. Tubercule = berge latérale canal carpien.</td>
+<td><span class="tag tag-coral">Prédisposé aux fractures de sa partie moyenne (zone avasculaire)</span></td>
+</tr>
+<tr>
+<td><div class="muscle-name">Lunatum<small>Os semi-lunaire</small></div></td>
+<td><span class="tag tag-teal">R1</span></td>
+<td>Convexité sagittale moins accentuée que le scaphoïde. Pas de liaison ligamentaire directe avec le capitatum</td>
+<td><strong>Ménisque osseux</strong> — bouge comme un battant de cloche dans les mouvements sagittaux. Grande mobilité. Freiné par ligaments radio-carpiens ant./post.</td>
+<td><span class="tag tag-coral">Luxation la plus fréquente du carpe (lunatum isolé). Lig. scapho-lunaire +++</span></td>
+</tr>
+<tr>
+<td><div class="muscle-name">Triquetrum</div></td>
+<td><span class="tag tag-teal">R1</span></td>
+<td>Le plus médial. En contact avec le disque articulaire (pas avec l'ulna direct), seulement en fin d'adduction</td>
+<td>Supporte le pisiforme (sésamoïde dans la chaîne fléchisseur ulnaire du carpe – abducteur V)</td>
+<td><span class="tag tag-gray">Lig. luno-triquétral traumatisé +++</span></td>
+</tr>
+<tr>
+<td><div class="muscle-name">Capitatum<small>Os grand os</small></div></td>
+<td><span class="tag tag-navy">R2</span></td>
+<td>Central et volumineux — morphologiquement comparé à un bouchon de champagne. Tête sphéroïde pénétrant R1</td>
+<td><strong>Axe de la main et pivot de vissage/dévissage.</strong> Point d'ancrage ligamentaire central — solidement articulé avec le 3e métacarpien. Colonne centrale de stabilité.</td>
+<td><span class="tag tag-gray">Articulé avec le 3e MTC — axe de référence</span></td>
+</tr>
+<tr>
+<td><div class="muscle-name">Hamatum<small>Os crochu</small></div></td>
+<td><span class="tag tag-navy">R2</span></td>
+<td>Uncus (hamulus) projeté antérieurement. Interligne avec triquetrum oblique en avant/bas/dedans</td>
+<td>Limite inféro-médiale du canal carpien</td>
+<td><span class="tag tag-coral">Fracture de l'hamulus (sports de raquette)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Cinématique par mouvement -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">🔄</div>
+<div class="card-title">Cinématique des 4 mouvements — répartition RC / MC et mouvements mineurs couplés</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="rom-table">
+<tr>
+<th>Mouvement</th>
+<th>Amplitude totale</th>
+<th>Radio-carpienne (RC)</th>
+<th>Médio-carpienne (MC)</th>
+<th>Mouvements mineurs couplés R1</th>
+<th>Mouvements mineurs couplés R2</th>
+<th>Effet carpe</th>
+</tr>
+<tr>
+<td><strong>Flexion</strong></td>
+<td><span class="rom-val">75°</span></td>
+<td><span class="rom-val">50°</span> (prédominant)</td>
+<td><span class="rom-val">25°</span></td>
+<td>Pronation + abduction (radiale)</td>
+<td>Supination + adduction</td>
+<td>Creusement de la paume → vissage → <strong>↑ stabilité</strong>. Canal carpien se ferme.</td>
+</tr>
+<tr>
+<td><strong>Extension</strong></td>
+<td><span class="rom-val">75°</span></td>
+<td><span class="rom-val">25°</span></td>
+<td><span class="rom-val">50°</span> (prédominant)</td>
+<td>Supination + adduction (ulnaire)</td>
+<td>Pronation + abduction</td>
+<td>Écartement berges canal carpien → tunnel s'aplatit. Butée rangée sup. contre bord post. radius.</td>
+</tr>
+<tr>
+<td><strong>Abduction</strong> (incl. radiale)</td>
+<td><span class="rom-val">15°</span></td>
+<td><span class="rom-val">10°</span> (prédominant)</td>
+<td><span class="rom-val">5°</span></td>
+<td>Pronation + flexion</td>
+<td>Supination + extension</td>
+<td>Vissage des 2 rangées. Fonctionnellement liée à l'extension. Butée tubercule scaphoïde / styloïde radiale.</td>
+</tr>
+<tr>
+<td><strong>Adduction</strong> (incl. ulnaire)</td>
+<td><span class="rom-val">45°</span></td>
+<td><span class="rom-val">30°</span> (prédominant)</td>
+<td><span class="rom-val">15°</span></td>
+<td>Supination + extension</td>
+<td>Pronation + flexion</td>
+<td>Dévissage des 2 rangées. Annulation micro-mvts prono-sup. et fl/ext.</td>
+</tr>
+</table>
+<div class="info-box teal" style="margin:12px 16px 10px;">
+<strong>Loi d'annulation (P. César) :</strong> Dans chaque mouvement principal, les mouvements mineurs des deux rangées sont <em>contraires et s'annulent</em>, ce qui efface l'effet de prono-supination et d'abduction-adduction parasitaires → mouvement principal pur.
+        </div>
+<div class="info-box amber" style="margin:0 16px 16px;">
+<strong>Effet ténodèse :</strong> La flexion du poignet → extension automatique des doigts (et vice-versa). Le secteur utile de flexion fonctionnelle est d'environ 20° (au-delà : impossible de préparer/lâcher la prise par effet ténodèse). La dissociation scaphoïde/lunatum est contrôlée par les ligaments radio-scapho-lunaires.
+        </div>
+</div>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>Cette asymétrie flexion/extension (RC&gt;MC en flexion, MC&gt;RC en extension) est liée aux rayons de courbure différents des surfaces articulaires : le scaphoïde, avec son plus petit rayon, bascule plus rapidement. (P. César, 2024 ; Kapandji)</cite>
+</div>
+</div>
+<!-- Médio-carpienne vissage + muscles -->
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header">
+<div class="card-icon navy">⚙️</div>
+<div class="card-title">Articulation médio-carpienne — mécanique de vissage</div>
+</div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:12px;">
+            L'articulation MC est de type <strong>emboîtement réciproque</strong> (Dufour) — portion de pas de vis schématiquement entre les deux rangées. Partie externe = arthrodie, partie interne = condylarthrose. Anatomie = arthrodie + condyl. / Fonction = condylarthrose.
+          </p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12.5px;margin-bottom:12px;">
+<div style="padding:8px;background:var(--teal-50);border-radius:6px;border:1px solid var(--teal-200);">
+<strong style="color:var(--teal-700);">Colonne externe</strong><br/>Scaphoïde / Trapèze-trapézoïde<br/><em>Plan oblique → vissage</em>
+</div>
+<div style="padding:8px;background:var(--navy-100);border-radius:6px;border:1px solid var(--navy-200);">
+<strong style="color:var(--navy-700);">Colonne interne</strong><br/>Triquetrum / Hamatum<br/><em>Plan oblique inverse → dévissage</em>
+</div>
+<div style="padding:8px;background:var(--amber-100);border-radius:6px;border:1px solid #f0c865;grid-column:span 2;">
+<strong style="color:var(--amber-500);">Capitatum = axe de vissage-dévissage</strong><br/>Pivot central pour tous les mouvements frontaux et sagittaux du poignet
+            </div>
+</div>
+<div class="info-box coral" style="font-size:12.5px;">
+<strong>Flexion :</strong> Creusement du carpe → effet de serrage + vissage des 2 rangées → ↑↑ stabilité.<br/>
+<strong>Extension :</strong> Aplatissement → écartement berges → ↓ stabilité relative.
+          </div>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon teal">💪</div>
+<div class="card-title">Muscles moteurs par mouvement</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="muscle-table" style="font-size:12.5px;">
+<tr style="background:var(--navy-900);color:rgba(255,255,255,0.85);">
+<td style="padding:7px 10px;font-weight:600;">Mouvement</td>
+<td style="padding:7px 10px;font-weight:600;">Muscles moteurs principaux</td>
+</tr>
+<tr style="background:var(--teal-50);">
+<td><span class="tag tag-teal">Flexion</span></td>
+<td>Fléchisseur radial du carpe · Fléchisseur ulnaire du carpe · Long palmaire · Fl. superficiel et profond des doigts · Long fléchisseur du pouce</td>
+</tr>
+<tr>
+<td><span class="tag tag-navy">Extension</span></td>
+<td>Long et court extenseurs radiaux du carpe · Extenseurs des doigts (ext. propres du 2, du 5 · courts et longs ext. du 1)</td>
+</tr>
+<tr style="background:var(--teal-50);">
+<td><span class="tag tag-teal">Abduction</span></td>
+<td>Fléchisseur radial du carpe · Long extenseur radial du carpe · Muscles latéraux du 1 (long abd., longs et courts ext., lg fl. du 1)</td>
+</tr>
+<tr>
+<td><span class="tag tag-amber">Adduction</span></td>
+<td>Fléchisseur ulnaire du carpe · Extenseur ulnaire du carpe · Participation adducteur du V</td>
+</tr>
+</table>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>Note : Le fléchisseur radial du carpe est à la fois fléchisseur ET abducteur — muscle bivectoriel. L'extenseur ulnaire du carpe est extenseur ET adducteur.</cite>
+</div>
+</div>
+</div>
+</div>
+<!-- Ligaments + CFCT -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">🔗</div>
+<div class="card-title">Système ligamentaire — Stabilité passive</div>
+</div>
+<div class="card-body">
+<div class="grid-2">
+<div>
+<h3 class="sub">Ligaments extrinsèques (radius/ulna → carpe)</h3>
+<ul style="font-size:13px;color:var(--text2);list-style:none;padding:0;display:flex;flex-direction:column;gap:7px;">
+<li style="padding:8px 10px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--teal-400);">
+<strong>Ligament radio-carpien palmaire (ant.)</strong> — Frein à l'extension + inclinaison ulnaire. Freins antéro-postérieurs du lunatum.
+              </li>
+<li style="padding:8px 10px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--navy-400);">
+<strong>Ligament radio-carpien dorsal (post.)</strong> — Frein à la flexion + inclinaison radiale.
+              </li>
+<li style="padding:8px 10px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--amber-500);">
+<strong>Faisceau moyen : Ligament supinateur</strong> — Radio-carpien ant. → Triquetrum. Frein à la pronation.
+              </li>
+<li style="padding:8px 10px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--coral-500);">
+<strong>Faisceau moyen post. : Ligament pronateur</strong> — Radio-carpien post. → Triquetrum. Frein à la supination.
+              </li>
+<li style="padding:8px 10px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-600);">
+<strong>Ligament frondiforme de Kuhlman</strong> — Ensemble des 2 faisceaux (ant + post) → maintien de la partie ulnaire du carpe + transmission des forces carpe/avant-bras.
+              </li>
+</ul>
+</div>
+<div>
+<h3 class="sub">Ligaments intrinsèques (os du carpe entre eux)</h3>
+<ul style="font-size:13px;color:var(--text2);list-style:none;padding:0;display:flex;flex-direction:column;gap:7px;">
+<li style="padding:8px 10px;background:var(--coral-100);border-radius:6px;border-left:3px solid var(--coral-500);">
+<strong>Ligament scapho-lunaire +++</strong> — Lient R1. Stabilité rotatoire. Ligament le plus traumatisé avec le luno-triquétral.
+              </li>
+<li style="padding:8px 10px;background:var(--coral-100);border-radius:6px;border-left:3px solid var(--coral-500);">
+<strong>Ligament luno-triquétral +++</strong> — Lient R1. Rupture → instabilité ulnaire du carpe (VISI).
+              </li>
+<li style="padding:8px 10px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--teal-400);">
+<strong>Ligament radié du carpe</strong> — Rayonne du tubercule du capitatum vers os adjacents (sauf lunatum). Vue palmaire.
+              </li>
+<li style="padding:8px 10px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">
+<strong>Absence lunatum/capitatum</strong> — Remplacée par fibres scapho-triquétrales ant. et post. → explique la grande mobilité du lunatum.
+              </li>
+</ul>
+<div class="info-box teal" style="margin-top:12px;font-size:12.5px;">
+<strong>CFCT — Complexe fibrocartilagineux triangulaire :</strong> Ligament triangulaire (faisceaux ant. + post.) + ligament collatéral ulnaire triangulaire + muscle extenseur ulnaire. Constitue à la fois un <em>moyen d'union</em> et une <em>surface articulaire</em> avec le lunatum et le triquetrum. Surface inférieure encroûtée de cartilage. <strong>Structure centrale de la RU distale.</strong>
+</div>
+</div>
+</div>
+<div class="divider"></div>
+<h3 class="sub">Stabilité active</h3>
+<div class="info-box navy" style="background:var(--navy-100);border-color:var(--navy-400);color:var(--navy-900);">
+          Les tendons qui <strong>encagent le poignet</strong> (via rétinaculums des extenseurs et des fléchisseurs) sont un facteur majeur de stabilité dynamique. Par leurs contractions, ils augmentent la stabilité des deux rangées du carpe. Rôle supplémentaire du <strong>carré pronateur</strong> et du rétinaculum des extenseurs dans la stabilisation de la tête ulnaire en pronation.
+        </div>
+</div>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>Sources : Pascal César — Biomécanique poignet IEOQ 2024 ; Kapandji IA T.1 (7e éd.) ; Dufour M. — Anatomie de l'appareil locomoteur ; Kuhlman JN (ligament frondiforme) ; Cooney WP et al. (1981) stabilité du carpe</cite>
+</div>
+</div>
+<!-- Particularités anatomiques + canal carpien -->
+<div class="grid-2">
+<div class="card">
+<div class="card-header">
+<div class="card-icon amber">📐</div>
+<div class="card-title">Particularités anatomiques de l'extrémité distale</div>
+</div>
+<div class="card-body">
+<ul style="font-size:13.5px;color:var(--text2);list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;">
+<li style="padding:10px;background:var(--teal-50);border-radius:8px;border:1px solid var(--teal-200);">
+<strong style="color:var(--teal-700);">Plan oblique transversal : ~20°</strong><br/>
+              Styloïde radiale descend plus bas que la styloïde ulnaire → asymétrie d'amplitude abduction/adduction (abd 15° / add 45°).
+            </li>
+<li style="padding:10px;background:var(--navy-100);border-radius:8px;border:1px solid var(--navy-200);">
+<strong style="color:var(--navy-700);">Plan oblique antéro-postérieur : ~10°</strong><br/>
+              Marge postérieure du radius descend plus bas que sa marge antérieure → butée de fin d'extension sur le bord dorsal du radius.
+            </li>
+<li style="padding:10px;background:var(--amber-100);border-radius:8px;border:1px solid #f0c865;">
+<strong style="color:var(--amber-500);">Inclinaison médiale : 22–24°</strong><br/>
+<strong>Inclinaison ventrale : 10–12°</strong><br/>
+<strong>Index radio-ulnaire : –3 à +2 mm</strong>
+</li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon coral">⚕️</div>
+<div class="card-title">Canal carpien — limites et clinique</div>
+</div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:12px;">
+            Le canal carpien est délimité par les os du carpe et le rétinaculum des fléchisseurs. Ses berges sont formées par :
+          </p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12.5px;margin-bottom:12px;">
+<div style="padding:8px;background:var(--teal-50);border-radius:6px;border:1px solid var(--teal-200);">
+<strong style="color:var(--teal-700);">Berge latérale</strong><br/>Tubercule du scaphoïde + crête du trapèze
+            </div>
+<div style="padding:8px;background:var(--navy-100);border-radius:6px;border:1px solid var(--navy-200);">
+<strong style="color:var(--navy-700);">Berge médiale</strong><br/>Pisiforme + hamulus de l'hamatum
+            </div>
+</div>
+<div class="info-box teal" style="font-size:12.5px;">
+<strong>Biomécanique du canal :</strong><br/>
+            En <strong>flexion</strong> : creusement de la paume → canal se ferme (↑ pression sur le nerf médian).<br/>
+            En <strong>extension</strong> : aplatissement → canal s'ouvre → berges s'écartent.
+          </div>
+<div class="info-box coral" style="margin-top:8px;font-size:12.5px;">
+<strong>Syndrome du canal carpien :</strong> Compression du nerf médian sous le rétinaculum → symptômes majorés en flexion soutenue ou extension forcée. Déficit sensitif face palmaire radiale (3,5 premiers doigts) + muscle thénar.
+          </div>
+</div>
+</div>
+</div>
+<!-- ═══════════════════════════════════════════════════
+         BLOC ARTICULATIONS DÉTAILLÉES
+    ════════════════════════════════════════════════════ -->
+<div class="test-section-title" style="margin-top:28px;">🔗 Articulations du complexe poignet — Types, mouvements &amp; ligaments</div>
+<!-- 1. RADIO-ULNAIRE DISTALE -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header">
+<div class="card-icon teal">1</div>
+<div class="card-title">Articulation Radio-Ulnaire Distale (RUD)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:20%">Paramètre</th><th>Détail</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Type articulaire</strong></td>
+<td><strong>Trochoïde</strong> (pivot) — 1 degré de liberté. La tête ulnaire pivote dans l'incisure ulnaire du radius (sigmoïde). Le radius tourne autour de l'ulna fixe.</td>
+</tr>
+<tr>
+<td><strong>Surfaces articulaires</strong></td>
+<td>Tête ulnaire (convexe, cylindrique) ↔ Incisure ulnaire du radius (concave, en arc ~60°). La surface de contact est incomplète → nécessite le CFCT pour compléter le cadre articulaire.</td>
+</tr>
+<tr>
+<td><strong>Mouvements</strong></td>
+<td>
+<span class="tag tag-teal">Pronation : 85–90°</span>
+<span class="tag tag-navy">Supination : 85–90°</span>
+<span class="tag tag-gray">Total prono-sup : ~180°</span><br/>
+<small style="color:var(--text2);">La pronation se fait en avant-bras fléchi à 90° (position neutre = pouce vers le haut). Les deux articulations RU — proximale et distale — fonctionnent obligatoirement en couple (articulation composée).</small>
+</td>
+</tr>
+<tr>
+<td><strong>Ligaments</strong></td>
+<td>
+<ul style="margin:0;padding-left:16px;font-size:12.5px;display:flex;flex-direction:column;gap:4px;">
+<li><strong>Ligament radio-ulnaire palmaire (antérieur)</strong> — tendu en supination, frein principal à la supination forcée.</li>
+<li><strong>Ligament radio-ulnaire dorsal (postérieur)</strong> — tendu en pronation, frein principal à la pronation forcée.</li>
+<li><strong>CFCT — Complexe Fibrocartilagineux Triangulaire</strong> — Principale structure de stabilisation de la RUD. Comprend :
+                    <ul style="margin:4px 0 0 14px;">
+<li>Disque articulaire proprement dit (fibrocartilage entre tête ulnaire et rangée carpale)</li>
+<li>Ligament triangulaire (faisceau ant. + post.) — s'insère sur le bord ulnaire du radius et sur la base styloïde ulnaire</li>
+<li>Ligament collatéral ulnaire</li>
+<li>Tendon extenseur ulnaire du carpe (dans sa gaine)</li>
+<li>Ménisque homologue (tissu adipeux + synovial en ulnaire)</li>
+</ul>
+</li>
+<li><strong>Membrane interosseuse</strong> — transmet les forces entre radius et ulna (70% des forces axiales passent par le radius, 20% par l'ulna, 10% par le CFCT).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Stabilité</strong></td>
+<td>La stabilité de la RUD dépend principalement du CFCT (90% de la stabilité passive). En pronation, la tête ulnaire est visible et palpable dorsalement. L'index radio-ulnaire (–3 à +2 mm) conditionne la répartition des charges au poignet.</td>
+</tr>
+<tr>
+<td><strong>Clinique</strong></td>
+<td>
+<span class="tag tag-coral">CFCT +++</span> Lésion fréquente (chute en hyperpronation ou traumatisme axial). Test de la Fovea Sign (Se 95%). Claquement ulnaire, douleur à la charge en rotation.<br/>
+<span class="tag tag-amber">Subluxation tête ulnaire</span> — Instabilité dorsale (pronation) ou palmaire (supination) de la RUD selon le faisceau du CFCT lésé.
+              </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 2. RADIO-CARPIENNE -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header">
+<div class="card-icon navy">2</div>
+<div class="card-title">Articulation Radio-Carpienne (RC)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:20%">Paramètre</th><th>Détail</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Type articulaire</strong></td>
+<td><strong>Condylarthrose</strong> — 2 degrés de liberté (flexion/extension + abduction/adduction). Ellipsoïde bicondylaire. Pas de rotation axiale propre.</td>
+</tr>
+<tr>
+<td><strong>Surfaces articulaires</strong></td>
+<td>
+<strong>Côté proximal (concave) :</strong> Glène antébrachiale = face inférieure du radius (2/3 lat.) + face inférieure du CFCT (1/3 méd.) + fibrocartilage inter-fossette.<br/>
+<strong>Côté distal (convexe) :</strong> Tête condylaire du carpe = face supérieure du scaphoïde (fossette radiale) + face supérieure du lunatum (fossette médiale) + face supérieure du triquetrum (contre le CFCT).
+              </td>
+</tr>
+<tr>
+<td><strong>Mouvements</strong></td>
+<td>
+<span class="tag tag-teal">Flexion : 50° (prédominant RC)</span>
+<span class="tag tag-navy">Extension : 25°</span>
+<span class="tag tag-teal">Abduction (radiale) : 10°</span>
+<span class="tag tag-navy">Adduction (ulnaire) : 30°</span><br/>
+<small style="color:var(--text2);">La RC est prédominante en flexion et en adduction. L'asymétrie abd/add (10° vs 30°) est liée à la descente plus basse de la styloïde radiale.</small>
+</td>
+</tr>
+<tr>
+<td><strong>Ligaments extrinsèques</strong></td>
+<td>
+<ul style="margin:0;padding-left:16px;font-size:12.5px;display:flex;flex-direction:column;gap:5px;">
+<li><strong>Lig. radio-carpien palmaire (ant.)</strong> — Du bord antérieur radius → scaphoïde, lunatum, capitatum. Principal frein à l'extension et à l'inclinaison ulnaire. Faisceaux : radio-scapho-capitatum (RSC), radio-luno-triquétral (RLT).</li>
+<li><strong>Lig. radio-carpien dorsal (post.)</strong> — Du bord post. radius → triquetrum (en écharpe). Frein à la flexion et à l'inclinaison radiale.</li>
+<li><strong>Lig. collatéral radial</strong> — Styloïde radiale → face latérale scaphoïde + trapèze. Frein à l'adduction ulnaire.</li>
+<li><strong>Lig. collatéral ulnaire</strong> — Styloïde ulnaire → pisiforme + triquetrum. Frein à l'abduction radiale.</li>
+<li><strong>Lig. ulno-carpien palmaire</strong> — Tête ulnaire + CFCT → lunatum + triquetrum. Complète la stabilité côté ulnaire.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Ligaments intrinsèques RC</strong></td>
+<td>
+<ul style="margin:0;padding-left:16px;font-size:12.5px;display:flex;flex-direction:column;gap:5px;">
+<li><strong>Lig. scapho-lunaire +++</strong> — Portion palmaire + dorsale + proximale. La portion dorsale est la plus résistante mécaniquement. Rupture → dissociation SL → instabilité DISI (lunatum bascule en extension).</li>
+<li><strong>Lig. luno-triquétral +++</strong> — Moins résistant que le SL. Rupture → instabilité VISI (lunatum bascule en flexion).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Clinique</strong></td>
+<td>
+<span class="tag tag-coral">Entorse RC</span> — Ligaments extrinsèques palmaires (RSC, RLT) les plus sollicités en chute sur poignet en extension.<br/>
+<span class="tag tag-coral">Fracture radius distal</span> — Pouteau-Colles = fracture métaphysaire radius distal en extension (mécanisme de protection).<br/>
+<span class="tag tag-amber">DISI / VISI</span> — Instabilités carpiennes liées aux ruptures ligamentaires intra-carpales.
+              </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 3. MÉDIO-CARPIENNE déjà couverte — rappel bref -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header">
+<div class="card-icon teal">3</div>
+<div class="card-title">Articulation Médio-Carpienne (MC) — Rappel &amp; ligaments spécifiques</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:20%">Paramètre</th><th>Détail</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Type articulaire</strong></td>
+<td><strong>Emboîtement réciproque</strong> (Dufour) — en S en vue frontale. Portion externe (scaphoïde–trapèze–trapézoïde) = arthrodie. Portion interne (tri.–ham. + lun./sca.–cap.) = condylarthrose. Fonctionnellement : condylarthrose à 2 degrés de liberté.</td>
+</tr>
+<tr>
+<td><strong>Surfaces articulaires</strong></td>
+<td>
+<strong>Colonne externe :</strong> Scaphoïde (convexe distale) ↔ Trapèze + trapézoïde (concaves).<br/>
+<strong>Colonne centrale :</strong> Scaphoïde + lunatum (concaves distales) ↔ Tête capitatum (convexe sphéroïde).<br/>
+<strong>Colonne interne :</strong> Triquetrum (concave en spirale) ↔ Hamatum (convexe oblique).
+              </td>
+</tr>
+<tr>
+<td><strong>Mouvements</strong></td>
+<td>
+<span class="tag tag-navy">Flexion : 25°</span>
+<span class="tag tag-teal">Extension : 50° (prédominant MC)</span>
+<span class="tag tag-navy">Abduction : 5°</span>
+<span class="tag tag-teal">Adduction : 15°</span>
+</td>
+</tr>
+<tr>
+<td><strong>Ligaments MC</strong></td>
+<td>
+<ul style="margin:0;padding-left:16px;font-size:12.5px;display:flex;flex-direction:column;gap:5px;">
+<li><strong>Lig. arqué palmaire (V ligament)</strong> — Deux faisceaux convergent sur le capitatum : faisceau radio-capitatum (lat.) + faisceau triquetro-capitatum (méd.). Forme un V dont la pointe est le capitatum. Frein principal à la flexion MC.</li>
+<li><strong>Lig. intercarpaux palmaires et dorsaux</strong> — Relient les os de R1 entre eux et de R2 entre eux (court, interosseux), et les deux rangées entre elles.</li>
+<li><strong>Lig. deltooïde palmairedistale</strong> — Triquetrum → scaphoïde (en V), sécurise la liaison R1-R2 en inclinaison ulnaire.</li>
+<li><strong>Lig. intercarpaux dorsaux</strong> — Trochoïde triquetrum–hamatum + intercarpaux courts R2. Résistants en extension.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 4. CARPO-MÉTACARPIENNES -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header">
+<div class="card-icon amber">4</div>
+<div class="card-title">Articulations Carpo-Métacarpiennes (CMC)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:20%">CMC</th><th>Type</th><th>Mouvements</th><th>Ligaments</th><th>Clinique</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>CMC 1 — Pouce</strong></td>
+<td><strong>Sellaire (en selle)</strong> — 2 degrés de liberté + rotation longitudinale passive. Surfaces en selle convexo-concave perpendiculaires.</td>
+<td>
+<span class="tag tag-teal">Flexion/Extension</span>
+<span class="tag tag-navy">Abduction/Adduction</span>
+<span class="tag tag-amber">Opposition (mvt combiné)</span><br/>
+<small>Flexion : 15° · Extension : 20° · Abd : 50° · Add : 0° (retour neutre). Opposition = abd + flexion + rotation médiale progressive.</small>
+</td>
+<td>
+<strong>Lig. antérieur oblique long +++</strong> (bec de l'os trapèze → bec ulnaire 1er MTC) — frein principal à la subluxation latérale.<br/>
+                Lig. antérieur oblique court · Lig. postérieur oblique · Lig. interméta 1-2 · Capsule renforcée.
+              </td>
+<td><span class="tag tag-coral">Rhizarthrose +++</span> (arthrose CMC1) — Subluxation latérale du 1er MTC. Pinch test douloureux. Signe de la boîte de tiroir.</td>
+</tr>
+<tr>
+<td><strong>CMC 2 et 3</strong></td>
+<td><strong>Arthrodie</strong> (plane) — quasi-immobile. Bloc rigide avec R2.</td>
+<td>Micro-mouvements de glissement &lt; 1–2°. Presque nulle physiologiquement. Stabilité +++.</td>
+<td>Ligaments carpo-métacarpiens palmaires + dorsaux + interosseux. CMC3 = articulation la plus solide (capitatum–MTC3 = axe central).</td>
+<td>Fractures à la base du 2e et 3e MTC. Luxation rare mais grave (crush injury).</td>
+</tr>
+<tr>
+<td><strong>CMC 4 et 5</strong></td>
+<td><strong>Arthrodie</strong> (plane) — légèrement plus mobile que CMC 2-3.</td>
+<td>~10–15° de flexion/extension (CMC5). Permet le creusement de la paume lors de la préhension. CMC5 = pivot de la prise ulnaire.</td>
+<td>Ligaments carpo-métacarpiens + lig. interméta 4-5 (hamatum). Plus laxe que CMC 2-3.</td>
+<td><span class="tag tag-coral">Fracture Bennett (CMC1)</span> — arrachement antéro-médial base 1er MTC. <span class="tag tag-coral">Fracture Rolando</span> — comminutive base 1er MTC.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 5. MCP -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header">
+<div class="card-icon teal">5</div>
+<div class="card-title">Articulations Métacarpo-Phalangiennes (MCP) — Doigts 2 à 5</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:20%">Paramètre</th><th>Détail</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Type articulaire</strong></td>
+<td><strong>Condylarthrose</strong> (ellipsoïde) — 2 degrés de liberté principaux. La tête du MTC (convexe) s'articule avec la base de P1 (concave peu profonde). Asymétrie de courbure (rayon de la tête varie selon la zone).</td>
+</tr>
+<tr>
+<td><strong>Particularité morphologique</strong></td>
+<td>La tête du MTC est <strong>plus large en palmaire</strong> qu'en dorsal → la MCP est plus stable en flexion qu'en extension. En extension, la capsule est détendue = « position de danger » (immobilisation à éviter). En flexion 70–90° = position de stabilité ligamentaire maximale.</td>
+</tr>
+<tr>
+<td><strong>Mouvements</strong></td>
+<td>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;">
+<span class="tag tag-teal">Flexion : 90° (pouvant aller à 100–110° avec hyper-flex)</span>
+<span class="tag tag-navy">Extension : 0° (hyperext. passive jusqu'à 30–45° surtout index)</span>
+<span class="tag tag-teal">Abduction : 20–30° (doigts écartés)</span>
+<span class="tag tag-navy">Adduction : retour à 0°</span>
+</div>
+<small style="color:var(--text2);">L'abduction/adduction n'est possible qu'en extension (ligaments collatéraux lâches). En flexion, les ligaments collatéraux sont tendus → abduction impossible → doigts « verrouillés » en flexion.</small>
+</td>
+</tr>
+<tr>
+<td><strong>Ligaments</strong></td>
+<td>
+<ul style="margin:0;padding-left:16px;font-size:12.5px;display:flex;flex-direction:column;gap:5px;">
+<li><strong>Lig. collatéraux (latéraux) +++</strong> — 2 faisceaux :
+                    <ul style="margin:4px 0 0 14px;">
+<li><em>Faisceau principal (cordiforme)</em> — tête MTC → base P1. Tendu en flexion, détendu en extension.</li>
+<li><em>Faisceau accessoire (glénoïdien)</em> — tête MTC → plaque palmaire. Tendu quelle que soit la position.</li>
+</ul>
+</li>
+<li><strong>Plaque palmaire (fibrocartilage glénoïdien)</strong> — sur la face palmaire de la base de P1. Épaisse, résistante. Prévient l'hyperextension. S'insère fermement en distal (P1) et laxement en proximal (MTC). Contient les poulies A1 des tendons fléchisseurs.</li>
+<li><strong>Lig. transverse profond du métacarpe</strong> — Relie les plaques palmaires des MCP 2 à 5 entre elles (sauf pouce). Solidarise les têtes des MTC. Empêche l'écartement excessif.</li>
+<li><strong>Capsule articulaire</strong> — Lâche en extension (permettant l'hyperextension passive), tendue en flexion.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Position de rétraction</strong></td>
+<td><span class="tag tag-coral">Position de danger (immobilisation) : extension + abduction</span> → ligaments collatéraux se raccourcissent → rigidité définitive. <br/><span class="tag tag-teal">Position de fonction (immobilisation) : MCP 70–90° de flexion</span> → ligaments collatéraux maintenus en tension → prévention du raccourcissement.</td>
+</tr>
+<tr>
+<td><strong>Clinique</strong></td>
+<td>
+<span class="tag tag-coral">Entorse collatérale</span> — Mécanisme : déviation latérale en extension. Index et auriculaire les plus touchés.<br/>
+<span class="tag tag-coral">Doigt de Gamekeeper / Skier's thumb</span> — Rupture lig. collatéral ulnaire MCP1 en hyperabduction. Instabilité de la pince pouce-index.<br/>
+<span class="tag tag-amber">Rhizoarthrose doigt à ressaut</span> — Nodule tendineux bloquant sous la poulie A1.
+              </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 6. MCP POUCE -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header">
+<div class="card-icon navy">6</div>
+<div class="card-title">Articulation MCP du Pouce (MCP1)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:20%">Paramètre</th><th>Détail</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Type articulaire</strong></td>
+<td><strong>Condylarthrose</strong> tendant vers la <strong>ginglyme</strong> (charnière) — 1 degré de liberté principal (flexion/extension), discret abduction/adduction. Moins mobile que les MCP 2–5.</td>
+</tr>
+<tr>
+<td><strong>Mouvements</strong></td>
+<td>
+<span class="tag tag-teal">Flexion : 50–80° (variable interindividuellement)</span>
+<span class="tag tag-navy">Extension : 0° (hyperext. jusqu'à 20° chez certains)</span>
+<span class="tag tag-gray">Abd/Add : minimes (10–15°)</span>
+</td>
+</tr>
+<tr>
+<td><strong>Ligaments</strong></td>
+<td>
+<ul style="margin:0;padding-left:16px;font-size:12.5px;display:flex;flex-direction:column;gap:4px;">
+<li><strong>Lig. collatéral ulnaire +++</strong> — Le plus sollicité (pouce = côté ulnaire = pince avec index). Frein à l'hyperabduction. Rupture = Skier's thumb.</li>
+<li><strong>Lig. collatéral radial</strong> — Frein à l'hyperadduction.</li>
+<li><strong>Plaque palmaire</strong> — Contient 2 os sésamoïdes (latéral et médial) dans son épaisseur = surfaces de glissement pour les tendons du thénar.</li>
+<li><strong>Appareil extenseur (capuchon)</strong> — Court extenseur + long extenseur du pouce + interosseux convergent sur la base P1 et P2.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Clinique</strong></td>
+<td><span class="tag tag-coral">Skier's thumb +++</span> — Rupture lig. collatéral ulnaire MCP1. Test en stress ulnaire MCP1 fléchie à 30°. Lésion de Stener (interposition aponévrose adducteur) → chirurgie si complète.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 7. IP PROXIMALE (IPP) -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header">
+<div class="card-icon teal">7</div>
+<div class="card-title">Articulations Inter-Phalangiennes Proximales (IPP)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:20%">Paramètre</th><th>Détail</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Type articulaire</strong></td>
+<td><strong>Ginglyme</strong> (charnière) — 1 seul degré de liberté : flexion/extension. Très stable grâce aux surfaces articulaires bicondyliennes et aux ligaments collatéraux. Tête de P1 (double condyle convexe) ↔ base de P2 (double cavité concave + crête médiane).</td>
+</tr>
+<tr>
+<td><strong>Mouvements</strong></td>
+<td>
+<span class="tag tag-teal">Flexion : 100–110°</span>
+<span class="tag tag-navy">Extension : 0° (hyperext. jusqu'à 10° chez hyperlaxes)</span>
+<span class="tag tag-gray">Pas d'abduction/adduction</span>
+</td>
+</tr>
+<tr>
+<td><strong>Ligaments</strong></td>
+<td>
+<ul style="margin:0;padding-left:16px;font-size:12.5px;display:flex;flex-direction:column;gap:5px;">
+<li><strong>Ligaments collatéraux +++</strong> (radial et ulnaire) — Tendus dans toutes les positions (contrairement aux MCP). S'insèrent de la tête de P1 vers la base de P2 et la plaque palmaire. Stabilisateurs latéraux permanents.</li>
+<li><strong>Plaque palmaire +++</strong> — Fibrocartilage épais sur la face palmaire de la base de P2. Insertion ferme en distal (P2), lâche en proximal (P1 → repli membraneux = check-rein). Prévient l'hyperextension. Contient la poulie A3.</li>
+<li><strong>Appareil extenseur central</strong> — Bandelette centrale du tendon extenseur s'insère sur la base de P2 (face dorsale). Entouré par les bandelettes latérales issues des interosseux et lombricaux.</li>
+<li><strong>Ligament rétinaculaire oblique de Landsmeer</strong> — De la gaine fibreuse de P1 → bandelette latérale de l'appareil extenseur de P2. Coordonne la flexion IPP avec la flexion IDP et l'extension IPP avec l'extension IDP.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Clinique</strong></td>
+<td>
+<span class="tag tag-coral">Entorse IPP +++</span> — La plus fréquente des entorses des doigts. Mécanisme en valgus/varus ou hyperextension. Rupture plaque palmaire (hyperextension) ou lig. collatéral (déviation latérale).<br/>
+<span class="tag tag-coral">Doigt en boutonnière</span> — Rupture bandelette centrale extenseur → IPP en flexion forcée + IDP en hyperextension (subluxation palmaire bandelettes latérales).<br/>
+<span class="tag tag-amber">Arthrose IPP (Nodules de Bouchard)</span> — Ostéoarthrose, déformation nodale.<br/>
+<span class="tag tag-amber">Luxation IPP</span> — Dorsale (la plus fréquente) = hyperextension + traction axiale. Réduction en traction axiale + flexion.
+              </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 8. IP DISTALE (IDP) -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header">
+<div class="card-icon navy">8</div>
+<div class="card-title">Articulations Inter-Phalangiennes Distales (IDP)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:20%">Paramètre</th><th>Détail</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Type articulaire</strong></td>
+<td><strong>Ginglyme</strong> (charnière) — 1 degré de liberté. Identique à l'IPP mais plus petite et moins mobile. Tête de P2 (bicondylaire) ↔ base de P3 (bicavité).</td>
+</tr>
+<tr>
+<td><strong>Mouvements</strong></td>
+<td>
+<span class="tag tag-teal">Flexion : 70–80°</span>
+<span class="tag tag-navy">Extension : 0° (hyperext. passive : 20–30° possible)</span>
+</td>
+</tr>
+<tr>
+<td><strong>Ligaments</strong></td>
+<td>
+<ul style="margin:0;padding-left:16px;font-size:12.5px;display:flex;flex-direction:column;gap:4px;">
+<li><strong>Ligaments collatéraux</strong> (radial et ulnaire) — Moins puissants qu'à l'IPP. Même structure : tendus dans toutes les positions.</li>
+<li><strong>Plaque palmaire</strong> — Plus fine qu'à l'IPP. Prévient l'hyperextension. Insertion sur base P3.</li>
+<li><strong>Tendon extenseur commun</strong> — S'insère sur la base de P3 (face dorsale) par les bandelettes terminales de l'appareil extenseur (convergence bandelettes lat. + portion terminale extenseur).</li>
+<li><strong>Tendon fléchisseur profond des doigts</strong> — S'insère sur la face palmaire de la base de P3 (seul tendon à atteindre P3). Contenu dans la gaine digitale sous les poulies A4–A5.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td><strong>Clinique</strong></td>
+<td>
+<span class="tag tag-coral">Doigt en maillet (Mallet finger) +++</span> — Rupture/arrachement du tendon extenseur terminal sur la base de P3. IDP en flexion permanente irréductible. Mécanisme : flexion forcée IDP en extension active (balle sur la pulpe). Traitement : attelle en hyperextension IDP 6–8 semaines.<br/>
+<span class="tag tag-coral">Jersey finger</span> — Arrachement tendon fléchisseur profond sur base P3. IDP ne peut plus fléchir activement. Mécanisme : traction sur doigt fléchi (football américain, rugby).<br/>
+<span class="tag tag-amber">Arthrose IDP (Nodules de Heberden)</span> — Déformation nodale + déviation latérale.
+              </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 9. IP POUCE -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header">
+<div class="card-icon amber">9</div>
+<div class="card-title">Articulation Inter-Phalangienne du Pouce (IP1)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:20%">Paramètre</th><th>Détail</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Type articulaire</strong></td>
+<td><strong>Ginglyme</strong> (charnière) — 1 degré de liberté. Identique en principe aux IDP mais interposée entre P1 et P2 du pouce (qui n'a que 2 phalanges).</td>
+</tr>
+<tr>
+<td><strong>Mouvements</strong></td>
+<td>
+<span class="tag tag-teal">Flexion : 70–80°</span>
+<span class="tag tag-navy">Extension : 0° (hyperext. jusqu'à 20–30° très fréquente)</span>
+</td>
+</tr>
+<tr>
+<td><strong>Ligaments</strong></td>
+<td>
+                Lig. collatéraux (radial + ulnaire) · Plaque palmaire · Insertion terminale du long extenseur du pouce (face dorsale P2) · Insertion terminale du long fléchisseur du pouce (face palmaire P2).
+              </td>
+</tr>
+<tr>
+<td><strong>Clinique</strong></td>
+<td><span class="tag tag-amber">Doigt en maillet du pouce</span> — Avulsion tendon extenseur sur base P2 du pouce. Plus rare que les autres doigts.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- TABLEAU RÉCAPITULATIF -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header">
+<div class="card-icon navy">📊</div>
+<div class="card-title">Tableau synthèse — Toutes les articulations du complexe poignet-main</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead>
+<tr>
+<th>Articulation</th>
+<th>Type</th>
+<th>DDL</th>
+<th>Amplitude principale</th>
+<th>Ligament clé</th>
+<th>Pathologie fréquente</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><strong>RUD</strong></td><td>Trochoïde (pivot)</td><td>1</td><td>Prono-sup 85–90°</td><td>CFCT</td><td>Lésion CFCT, subluxation tête ulnaire</td></tr>
+<tr><td><strong>RC</strong></td><td>Condylarthrose</td><td>2</td><td>Flex 50° / Ext 25° / Add 30°</td><td>RC palmaire (RSC, RLT)</td><td>Entorse RC, Pouteau-Colles, instabilité SL</td></tr>
+<tr><td><strong>Médio-carpienne</strong></td><td>Emboîtement réciproque</td><td>2</td><td>Flex 25° / Ext 50°</td><td>Lig. arqué (V palmaire)</td><td>Claquement médio-carpien, instabilité VISI/DISI</td></tr>
+<tr><td><strong>CMC 1</strong></td><td>Sellaire</td><td>2 + rot. passive</td><td>Abd 50° / Opp.</td><td>Lig. ant. oblique long</td><td>Rhizarthrose, Bennett, Rolando</td></tr>
+<tr><td><strong>CMC 2–3</strong></td><td>Arthrodie (plane)</td><td>0 (micro)</td><td>Quasi nulle</td><td>Intercarpaux + dorsaux</td><td>Fracture base MTC</td></tr>
+<tr><td><strong>CMC 4–5</strong></td><td>Arthrodie (plane)</td><td>1 (minime)</td><td>Flex 10–15° (CMC5)</td><td>Lig. interméta 4-5</td><td>Fracture base MTC 5 (Bennett ulnaire)</td></tr>
+<tr><td><strong>MCP 2–5</strong></td><td>Condylarthrose</td><td>2</td><td>Flex 90° / Abd 20–30° (en ext.)</td><td>Collatéraux + plaque palmaire</td><td>Entorse collatérale, doigt à ressaut</td></tr>
+<tr><td><strong>MCP 1</strong></td><td>Condylarthrose → ginglyme</td><td>1 (+ minime 2e)</td><td>Flex 50–80°</td><td>Lig. collatéral ulnaire</td><td>Skier's thumb, Stener</td></tr>
+<tr><td><strong>IPP</strong></td><td>Ginglyme (charnière)</td><td>1</td><td>Flex 100–110°</td><td>Collatéraux + plaque palmaire</td><td>Entorse IPP, boutonnière, Bouchard</td></tr>
+<tr><td><strong>IDP</strong></td><td>Ginglyme (charnière)</td><td>1</td><td>Flex 70–80°</td><td>Collatéraux + plaque palmaire</td><td>Mallet finger, Jersey finger, Heberden</td></tr>
+<tr><td><strong>IP1 (pouce)</strong></td><td>Ginglyme (charnière)</td><td>1</td><td>Flex 70–80°</td><td>Collatéraux</td><td>Mallet pouce</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote">
+<cite>Sources : Kapandji IA — Physiologie articulaire T.1 (7e éd.) · Dufour M. — Anatomie de l'appareil locomoteur · Tubiana R. — Traité de chirurgie de la main · Cooney WP et al. (1981) Stability of the wrist · Garcia-Elias M. — Carpal instability · P. César IEOQ 2024</cite>
+</div>
+</section>
+<section class="section" id="arthro-poignet" style="display:none;">
+<div class="section-title">Arthrologie — Articulations du poignet</div>
+<div class="section-sub">Thomas Gautier D.O. · IEOQ Année 1 — Radio-ulnaire inférieure (RUI) et Radio-carpienne (RC)</div>
+<!-- Introduction -->
+<div class="info-box teal" style="margin-bottom:20px;">
+<strong>Deux articulations associées :</strong> La jonction du poignet associe l'articulation radio-ulnaire inférieure (RUI) et la radio-carpienne (RC). La radio-carpienne est ainsi nommée car la jonction est le fait du radius et non de l'ulna. L'articulation médio-carpienne est fonctionnellement liée au poignet.
+    </div>
+<!-- Éléments en présence -->
+<div class="test-section-title">🦴 Éléments en présence</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon teal">🦴</div>
+<div class="card-title">Surfaces articulaires</div>
+</div>
+<div class="card-body">
+<table class="muscle-table">
+<thead>
+<tr><th>Structure</th><th>Surface</th><th>Type</th><th>Caractéristiques</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Radius<small>Incisure ulnaire</small></div></td>
+<td>Pour la RUI</td>
+<td><span class="tag tag-amber">Trochoïde NC/NC</span></td>
+<td>Face médiale de l'extrémité inf. Quadrangulaire à grand axe antéro-post. Concave selon cet axe, plane verticalement. Regarde en dedans.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Radius<small>Glène radiale</small></div></td>
+<td>Pour la RC</td>
+<td><span class="tag tag-navy">Ellipsoïde</span></td>
+<td>Face inférieure de l'extrémité inf. Triangulaire à base médiale. Concave en tous sens. 1 crête sagittale en son milieu. Bord post. descend plus bas que l'ant. Regarde en bas (et légèrement en dd. et en avt.).</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Ulna<small>Pourtour de la tête</small></div></td>
+<td>Pour la RUI</td>
+<td><span class="tag tag-amber">Trochoïde NC/NC</span></td>
+<td>Partie antéro-latérale du pourtour. Quadrangulaire à grand axe antéro-post. Convexe selon le grand axe. Aspect en « diadème ». Regarde en dehors et en avant.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Ulna<small>Face inf. de la tête</small></div></td>
+<td>Pour la RUI (inf.)</td>
+<td><span class="tag tag-gray">Plane</span></td>
+<td>Croissant à concavité postéro-médiale. Plane. Regarde en bas. Répond au disque articulaire du poignet.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Disque articulaire</div></td>
+<td>RUI et RC</td>
+<td><span class="tag tag-teal">Plane (RUI) / Ellipsoïde (RC)</span></td>
+<td>Fibro-cartilage triangulaire à base latérale, lentille biconcave. Tendu entre radius et ulna. Complète la glène antébrachiale. Forme 2 surfaces articulaires. Parfois perforé (communication RUI-RC).</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Carpe<small>Condyle carpien</small></div></td>
+<td>Pour la RC</td>
+<td><span class="tag tag-navy">Ellipsoïde</span></td>
+<td>Assemblage de 3 os : scaphoïde + lunatum + triquetrum (pisiforme exclu). Étroit ant.-post., étendu transversalement. Convexe en tous sens. Regarde en haut (légèrement en arr. et en dehors).</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Moyens d'unions -->
+<div class="test-section-title">🔗 Moyens d'unions</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon navy">🔗</div>
+<div class="card-title">Capsule et synoviale</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub">Au niveau RUI</h3>
+<div style="padding:10px 14px;background:var(--teal-50);border-radius:8px;font-size:13px;">Capsule et synoviale s'insèrent au pourtour des surfaces cartilagineuses, disque articulaire compris. <strong>Capsule lâche.</strong></div>
+</div>
+<div>
+<h3 class="sub">Au niveau RC</h3>
+<div style="padding:10px 14px;background:var(--navy-100);border-radius:8px;font-size:13px;">Insertions aux bords ant. et post. de l'extrémité inf. du radius + disque articulaire + pourtour du condyle carpien (exclut le pisiforme). <strong>Capsule épaisse et résistante en avant, plus faible en arrière.</strong></div>
+</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon teal">📋</div>
+<div class="card-title">Ligaments</div>
+</div>
+<div class="card-body">
+<h3 class="sub">Ligaments collatéraux (2)</h3>
+<div class="grid-2" style="gap:12px;margin-bottom:14px;">
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<strong style="color:var(--teal-700);">LCR du poignet</strong>
+<div style="padding:6px 10px;background:var(--gray-50);border-radius:5px;"><strong>Origine :</strong> Extrémité inf. du radius (apex styloïde)</div>
+<div style="padding:6px 10px;background:var(--gray-50);border-radius:5px;"><strong>Trajet :</strong> 2 faisceaux — ant. (oblique en bas et en avant) / post. (vertical). Fond de la tabatière anatomique.</div>
+<div style="padding:6px 10px;background:var(--gray-50);border-radius:5px;"><strong>Terminaison :</strong> Tubercule du scaphoïde (face ant. et face lat.)</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<strong style="color:var(--navy-700);">LCU du poignet</strong>
+<div style="padding:6px 10px;background:var(--gray-50);border-radius:5px;"><strong>Origine :</strong> Extrémité inf. de l'ulna (apex styloïde)</div>
+<div style="padding:6px 10px;background:var(--gray-50);border-radius:5px;"><strong>Trajet :</strong> 2 faisceaux — ant. (oblique en bas et en avant) / post. (vertical)</div>
+<div style="padding:6px 10px;background:var(--gray-50);border-radius:5px;"><strong>Terminaison :</strong> Faisceau ant. → pisiforme (pôle sup.) ; Faisceau post. → triquetrum (tubercule médial face post.)</div>
+</div>
+</div>
+<h3 class="sub">Ligaments antérieurs et postérieurs</h3>
+<div style="display:flex;flex-direction:column;gap:6px;margin-bottom:12px;font-size:13px;">
+<div class="info-box teal">
+<strong>Ligaments antérieurs (nettement plus forts) :</strong><br/>
+            Radio-carpien ant. (origine : face ant. extrémité inf. du radius, entre styloïde et tubercule lunarien) et Ulno-carpien ant. (origine : bord ant. du disque articulaire). Chacun en 3 faisceaux en éventail vers le carpe.
+          </div>
+<div class="info-box amber">
+<strong>Ligaments postérieurs (plus faibles) :</strong><br/>
+            Radio-carpien post. (solide, origine : face post. extrémité inf. du radius, 3 faisceaux). L'ulno-carpien post. est quasi inexistant (quelques fibres verticales seulement).
+          </div>
+</div>
+<h3 class="sub">Ligament RUI</h3>
+<div style="padding:10px 14px;background:var(--gray-50);border-radius:7px;font-size:13px;">En dehors du disque articulaire (maintien essentiel), 2 petits ligaments renforcent la capsule : un ant. et un post. — utiles car articulation non congruente ET non concordante.</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon amber">🔩</div>
+<div class="card-title">Éléments stabilisateurs</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:7px;font-size:13.5px;">
+<div style="padding:9px 12px;background:var(--teal-50);border-radius:7px;border-left:2px solid var(--teal-400);">
+<strong>Capsule RUI :</strong> renforcée par le corps charnu du carré pronateur (muscle proche).
+          </div>
+<div style="padding:9px 12px;background:var(--navy-100);border-radius:7px;border-left:2px solid var(--navy-400);">
+<strong>Reste du poignet :</strong> stabilisé par la résultante coaptatrice de tous les tendons périarticulaires, différemment tendus selon le placement articulaire.
+          </div>
+</div>
+</div>
+</div>
+<!-- Intérêts ostéopathiques -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon amber">⚕️</div>
+<div class="card-title">Intérêts ostéopathiques</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> Rétrécissement entre avant-bras et main. Repérage des 2 styloïdes (ulnaire plus haut et plus postérieur). Interligne facilement accessible et mobilisable finement — important pour traiter les raideurs articulaires.
+          </div>
+<div class="info-box amber">
+<strong>Mécanique — carpe :</strong> Le carpe est au contact du radius et non de l'ulna (c'est au radius que les contraintes sont essentiellement transmises). Contact médial = disque articulaire seulement en inclinaison ulnaire. Liberté osseuse de la partie médiale compensée par la <strong>fronde ligamentaire</strong> (fibres radio-triquetrales ant. et post.).
+          </div>
+<div class="info-box teal">
+<strong>RUI :</strong> Non congruente et non concordante (à l'inverse de la RUS) → autorise de petits mouvements de glissements sagittaux.
+          </div>
+<div class="info-box coral">
+<strong>Pathologie traumatique :</strong> Poignet souvent victime des chutes sur la main → entorses ligamentaires et fractures. La plus courante : fracture de Pouteau-Colles (modifie les rapports osseux du poignet). Surmenage des tendons périarticulaires → usure et déstabilisation (cercle vicieux d'aggravation).
+          </div>
+</div>
+</div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre supérieur, Année 1, IEOQ · Chapitre 3 : Articulations du poignet · Usage privé</cite></div>
+<!-- ══ CHAPITRE 4 — ARTICULATIONS CARPIENNES ══ -->
+<div class="test-section-title" style="margin-top:28px;">⬛ Chapitre 4 — Articulations carpiennes (interligne médio-carpien)</div>
+<div class="info-box teal" style="margin-bottom:16px;">
+      Le carpe est un ensemble polyarticulé. Chacun des 8 os s'articule avec ses voisins et, sauf pour le pisiforme, soit avec la glène antébrachiale (radio-carpienne), soit avec les bases métacarpiennes (carpo-métacarpiennes). L'interligne carpien le plus important est le <strong>médio-carpien</strong>, qui sépare le carpe transversalement — fonctionnellement rattaché au poignet.
+    </div>
+<!-- 1. Éléments en présence -->
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">1ère rangée carpienne</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Os</th><th>Position</th><th>Caractéristiques</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Scaphoïde</td><td>De dehors en dedans — 1er</td><td>Descend assez bas, chevauchant ainsi la 2e rangée</td></tr>
+<tr><td class="muscle-name">Lunatum</td><td>2e</td><td>Dans l'axe du 3e rayon de la main</td></tr>
+<tr><td class="muscle-name">Triquetrum</td><td>3e</td><td>N'est pas en contact avec l'ulna mais avec le <strong>disque articulaire</strong> (seulement en position d'inclinaison ulnaire)</td></tr>
+<tr><td class="muscle-name">Pisiforme</td><td>Os sésamoïde de la R1</td><td>N'est articulaire qu'avec le triquetrum — non en contact avec la 2e rangée</td></tr>
+</tbody>
+</table>
+<div class="info-box amber" style="margin-top:12px;font-size:12.5px;">
+          L'ensemble scaphoïde–lunatum–triquetrum forme un <strong>interligne brisé en 3 parties</strong> : une latérale (pénétrant la 2e rangée, légèrement convexe en bas) ; une moyenne (pénétrant la 1re rangée, convexe en haut) ; une partie médiale (grossièrement oblique en dedans et en bas).
+        </div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon navy">🦴</div><div class="card-title">2e rangée carpienne</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Os</th><th>Position</th><th>Caractéristiques</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Trapèze</td><td>De dehors en dedans — 1er</td><td>Orienté en bas, en dehors et en avant</td></tr>
+<tr><td class="muscle-name">Trapézoïde</td><td>2e</td><td>Assez réduit en face antérieure car coincé entre ses voisins</td></tr>
+<tr><td class="muscle-name">Capitatum</td><td>3e</td><td>Sa tête déborde les autres os de la 2e rangée et s'engage sous le lunatum</td></tr>
+<tr><td class="muscle-name">Hamatum</td><td>4e</td><td>Face supérieure en pente douce vers le dedans</td></tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin-top:10px;font-size:12.5px;">
+          Les deux rangées sont <strong>interpénétrées</strong> et animées de minimes mouvements tridimensionnels au cours des mobilités du poignet.
+        </div>
+</div>
+</div>
+<!-- 2. Moyens d'unions -->
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon amber">🔗</div><div class="card-title">Moyens d'unions — Capsule, ligaments &amp; éléments stabilisateurs</div></div>
+<div class="card-body">
+<h3 class="sub" style="margin-top:0;">Capsule et synoviale</h3>
+<div style="display:flex;flex-direction:column;gap:7px;margin-bottom:14px;font-size:13.5px;">
+<div style="padding:8px 12px;background:var(--teal-50);border-radius:7px;border-left:2px solid var(--teal-400);">
+            La capsule médio-carpienne s'insère autour des cartilages des surfaces des os précités. Elle englobe également les interlignes voisins qui lui sont perpendiculaires. Elle est tapissée d'une synoviale.
+          </div>
+<div style="padding:8px 12px;background:var(--navy-100);border-radius:7px;border-left:2px solid var(--navy-400);">
+            La capsule est <strong>nettement plus épaisse et résistante en avant qu'en arrière</strong> — renforcée par les ligaments antérieurs.
+          </div>
+</div>
+<h3 class="sub">Ligaments d'os à os</h3>
+<div class="info-box teal" style="margin-bottom:10px;font-size:12.5px;">
+          Ces ligaments sont des traits d'union renforçant la capsule essentiellement en avant. Ils sont tendus d'os à os, <strong>exception faite de la jonction lunatum–capitatum</strong>. En effet, le lunatum est un os très mobile dans les mouvements sagittaux — assez libre par rapport au capitatum. Pour pallier le risque de luxation, il existe un <strong>ligament scapho-triquétral antérieur</strong> (et un autre postérieur) qui passe en pont par-dessus le lunatum, lui servant de barrière.
+        </div>
+<h3 class="sub">Ligament radié du carpe</h3>
+<table class="rom-table" style="margin-bottom:12px;">
+<thead><tr><th>Paramètre</th><th>Détail</th></tr></thead>
+<tbody>
+<tr><td><strong>Origine</strong></td><td>Face antérieure du <strong>capitatum</strong> — autour du tubercule</td></tr>
+<tr><td><strong>Trajet</strong></td><td>Rayonné, en étoile</td></tr>
+<tr><td><strong>Terminaison</strong></td><td>Face antérieure de tous les os voisins (métacarpiens compris, mais <strong>excepté le lunatum</strong>)</td></tr>
+</tbody>
+</table>
+<h3 class="sub">Ligaments interosseux</h3>
+<div style="display:flex;flex-direction:column;gap:6px;margin-bottom:12px;font-size:13px;">
+<div style="padding:8px 10px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-400);">
+<strong>Ligament scapho-lunatum interosseux :</strong> S'insère dans l'espace interosseux des 2 os, à la partie antéro-supérieure du croissant articulaire.
+          </div>
+<div style="padding:8px 10px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-400);">
+<strong>Ligament radio-scapho-lunatum :</strong> Renfort postérieur reliant le radius (partie moyenne du bord inférieur de sa face postérieure) au scaphoïde et au lunatum (à leur jonction postérieure).
+          </div>
+</div>
+<h3 class="sub">Ligaments postérieurs</h3>
+<div style="padding:8px 10px;background:var(--gray-50);border-radius:6px;font-size:13px;margin-bottom:12px;">
+          Réduits à un <strong>ligament médio-carpien postérieur en éventail</strong>, oblique en dehors et en bas. Ses fibres supérieures représentent le faisceau scapho-triquétral postérieur.
+        </div>
+<h3 class="sub">Ligament à distance — Rétinaculum des muscles fléchisseurs (RMF)</h3>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:13px;">
+<div style="padding:8px 10px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">
+            Fort épaississement du fascia inséré de part et d'autre du canal carpien.<br/>
+<strong>En dehors :</strong> tubercule du scaphoïde + crête du trapèze<br/>
+<strong>En dedans :</strong> pisiforme + uncus de l'hamatum<br/>
+            Formé de fibres <strong>transversales</strong> + fibres verticales issues du long palmaire (expansions vers le fascia palmaire moyen).
+          </div>
+<div style="padding:8px 10px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-400);">
+<strong>Éléments stabilisateurs :</strong> À l'entrecroisement des fibres du RMF s'ajoute le renfort des insertions des muscles thénariens et hypothénariens, et l'action des muscles long palmaire, fléchisseur ulnaire du carpe et abducteur du 5e doigt. De façon plus globale, <em>tous les tendons glissant sur le carpe assurent un rôle mécanique de stabilisation</em>.
+          </div>
+</div>
+</div>
+</div>
+<!-- 3. Intérêts ostéopathiques -->
+<div class="card" style="margin-bottom:28px;">
+<div class="card-header"><div class="card-icon coral">⚕️</div><div class="card-title">Intérêts ostéopathiques — Articulations carpiennes</div></div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> Le carpe n'est palpable qu'en face postérieure, ou antérieurement de part et d'autre du canal carpien. Les palpations osseuses les plus remarquables sont le tubercule du scaphoïde, la crête du trapèze, le pisiforme, parfois le processus inféro-médial de la face postérieure du capitatum.
+          </div>
+<div class="info-box amber">
+<strong>Mécanique et pathologique :</strong> L'articulation médio-carpienne est mécaniquement indissociable de la radio-carpienne. Elle y ajoute un jeu différencié qui amorce la complexité du jeu des doigts. Les pathologies sont essentiellement rhumatismales (arthroses, syndrome du canal carpien) et traumatiques (entorses, fractures du scaphoïde, luxations du lunatum).
+          </div>
+</div>
+</div>
+</div>
+<!-- ══ CHAPITRE 5 — ARTICULATIONS CARPO-MÉTACARPIENNES ══ -->
+<div class="test-section-title" style="margin-top:28px;">⬛ Chapitre 5 — Articulations carpo-métacarpiennes</div>
+<div class="info-box teal" style="margin-bottom:16px;">
+      La jonction carpométacarpienne est <strong>singulière</strong> en ce qui concerne le pouce (trapézo-métacarpienne) et forme un ensemble irrégulier pour les autres. Ce sont les 4 os de la seconde rangée du carpe et les 5 bases métacarpiennes. Leur interligne a une forme irrégulière, réalisant un emboîtement réciproque — le pouce ayant une situation particulière justifiant une cavité articulaire propre.
+    </div>
+<!-- Éléments en présence -->
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">Surfaces articulaires — Côté carpien &amp; métacarpien</div></div>
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub" style="margin-top:0;">Côté carpien</h3>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:13px;">
+<div style="padding:8px 10px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-400);">
+<strong>Sur le trapèze :</strong> 1re surface à interligne concave frontalement, convexe sagittalement → répondant à M1 (articulation en selle). 2e surface médiale réduite répondant à M2.
+              </div>
+<div style="padding:8px 10px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-400);">
+<strong>Sur le trapézoïde :</strong> Surface en dièdre (en V à pointe inférieure) → répond à M2 (base fourchue).
+              </div>
+<div style="padding:8px 10px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">
+<strong>Sur le capitatum :</strong> Triple surface — petite latérale (M2) + large moyenne (M3) + petite médiale (M4).
+              </div>
+<div style="padding:8px 10px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--gray-400);">
+<strong>Sur l'hamatum :</strong> Double surface — latérale (M4) + médiale oblique (M5).
+              </div>
+</div>
+</div>
+<div>
+<h3 class="sub" style="margin-top:0;">Côté métacarpien</h3>
+<table class="muscle-table" style="font-size:12.5px;">
+<thead><tr><th>Méta.</th><th>Facettes</th></tr></thead>
+<tbody>
+<tr><td><strong>M1 (pouce)</strong></td><td>1 facette en selle pour le trapèze</td></tr>
+<tr><td><strong>M2</strong></td><td>4 facettes planes : petite lat. (trapèze) + large sup. en fourche (trapézoïde) + supéro-méd. (capitatum) + médiale (base M3)</td></tr>
+<tr><td><strong>M3</strong></td><td>3 facettes planes : moyenne (capitatum) + de chaque côté pour bases M2 et M4</td></tr>
+<tr><td><strong>M4</strong></td><td>4 facettes planes : petite lat. (capitatum) + large sup. (hamatum) + de chaque côté pour bases M3 et M5</td></tr>
+<tr><td><strong>M5</strong></td><td>2 facettes planes : latérale (base M4) + supérieure (hamatum)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- Moyens d'unions -->
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon navy">🔗</div><div class="card-title">Moyens d'unions — Capsules, synoviales &amp; ligaments</div></div>
+<div class="card-body">
+<h3 class="sub" style="margin-top:0;">Capsule et synoviale</h3>
+<div style="display:flex;flex-direction:column;gap:6px;margin-bottom:14px;font-size:13px;">
+<div style="padding:8px 10px;background:var(--teal-50);border-radius:6px;">
+            L'interligne carpo-métacarpien est divisé en <strong>2 capsules et 2 (ou 3) synoviales</strong> — une <strong>latérale</strong> (trapézo-métacarpienne, particulièrement lâche) et une <strong>médiale</strong> plus serrée pour M2 à M5 (parfois subdivisée en 2 cavités : M2–M3 / M4–M5).
+          </div>
+</div>
+<h3 class="sub">Ligaments et éléments stabilisateurs</h3>
+<p style="font-size:13.5px;margin-bottom:10px;">Plus importants en palmaire qu'en dorsal, ils renforcent chacun des interlignes composant cette zone.</p>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:13px;">
+<div style="padding:8px 10px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-400);">
+<strong>Capsule latérale (trapézo-métacarpienne) :</strong>
+<ul style="margin:4px 0 0 14px;">
+<li>Ligament oblique postéro-médial (le plus important) + petit faisceau postéro-latéral</li>
+<li>Ligament oblique antérieur (antéro-médial) + petit faisceau antéro-latéral</li>
+<li>Gros renfort latéral = tendon du <strong>long abducteur du pouce</strong> (se termine en partie sur la capsule et les 2 berges articulaires)</li>
+</ul>
+</div>
+<div style="padding:8px 10px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-400);">
+<strong>Capsule moyenne (M2–M5) :</strong> Renforcée par quelques fibres ligamentaires à chaque interligne + tendon du fléchisseur radial du carpe (sur M2, expansion sur M3) + postérieurement par les tendons des long et court extenseurs radiaux du carpe.
+          </div>
+<div style="padding:8px 10px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">
+<strong>Capsule médiale (M4–M5) :</strong> Renforcée par expansions fibrosées du fléchisseur ulnaire du carpe (ligaments pisi-uncus, pisi-M4, pisi-M5) + postérieurement par le tendon de l'extenseur ulnaire du carpe.
+          </div>
+</div>
+</div>
+</div>
+<!-- Intérêts ostéopathiques -->
+<div class="card" style="margin-bottom:28px;">
+<div class="card-header"><div class="card-icon coral">⚕️</div><div class="card-title">Intérêts ostéopathiques — Carpo-métacarpiennes</div></div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> L'interligne carpo-métacarpien est palpable uniquement en face dorsale, compte tenu des épaisses masses musculo-tendineuses antérieures. L'articulation trapézo-métacarpienne est plus facilement isolable du fait de sa séparation et de sa mobilité.
+          </div>
+<div class="info-box amber">
+<strong>Trapézo-métacarpienne (selle de « cheval scoliotique » selon Kuzynski/Kapandji) :</strong> Du fait de l'aspect curviligne en dedans de son axe antéro-postérieur, la <strong>flexion de M1 s'accompagne automatiquement d'une pronation</strong> de la colonne du pouce, favorable à l'opposition. Dans les chocs violents transmis par la colonne du pouce, la base de M1 s'impacte contre le trapèze → <strong>fracture de Bennett</strong> (fracture du boxeur).
+          </div>
+</div>
+</div>
+</div>
+<!-- ══ CHAPITRE 6 — ARTICULATIONS MÉTACARPO-PHALANGIENNES ══ -->
+<div class="test-section-title" style="margin-top:28px;">⬛ Chapitre 6 — Articulations métacarpo-phalangiennes (MCP)</div>
+<div class="info-box teal" style="margin-bottom:16px;">
+      Elles sont <strong>semblables à chaque doigt</strong>, avec une particularité pour le pouce. Éléments en présence : extrémité inférieure du métacarpien + base de la 1re phalange + fibro-cartilage attenant.
+    </div>
+<!-- Éléments en présence -->
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">Surfaces articulaires</div></div>
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub" style="margin-top:0;">Côté métacarpien — Tête</h3>
+<div style="font-size:13.5px;color:var(--text2);">
+              La tête métacarpienne est <strong>convexe en tous sens</strong>, aplatie transversalement, <strong>plus étendue et plus large en palmaire qu'en dorsal</strong>. Elle regarde en bas, en avant — encroûtée de cartilage hyalin. Formant une articulation <strong>ellipsoïde</strong> avec la glène de P1.
+            </div>
+</div>
+<div>
+<h3 class="sub" style="margin-top:0;">Côté phalangien — Glène de P1</h3>
+<div style="font-size:13.5px;color:var(--text2);">
+              Légèrement <strong>concave en tous sens</strong>, complétée par le fibro-cartilage glénoïdien (inséré à son bord palmaire, triangulaire à la coupe). La surface est orientée en haut et légèrement en arrière du fait du fibro-cartilage — encroûtée de cartilage hyalin.
+            </div>
+</div>
+</div>
+<div class="info-box amber" style="margin-top:12px;">
+<strong>Particularité du pouce :</strong> Le fibro-cartilage inclut <strong>2 sésamoïdes</strong> — un latéral et un médial. Chacun reçoit les mêmes insertions que le côté correspondant de la base de P1 : latéral = court abducteur + court fléchisseur du I ; médial = adducteur du I + 1er interosseux.
+        </div>
+</div>
+</div>
+<!-- Moyens d'unions -->
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon navy">🔗</div><div class="card-title">Moyens d'unions</div></div>
+<div class="card-body">
+<h3 class="sub" style="margin-top:0;">Capsule et synoviale</h3>
+<div style="font-size:13.5px;color:var(--text2);margin-bottom:12px;">
+          Capsule <strong>lâche sagittalement et frontalement</strong>. Elle forme un cul-de-sac dorsal en extension, mais en flexion reste plus ou moins tendue par le fibro-cartilage qui subit une pliure à sa base.
+        </div>
+<h3 class="sub">Fibro-cartilage glénoïdien</h3>
+<div style="padding:8px 12px;background:var(--teal-50);border-radius:7px;font-size:13.5px;margin-bottom:12px;">
+          À la fois <strong>surface articulaire</strong> (encroûté de cartilage) et <strong>moyen d'union</strong> (adhérent à la capsule). Inséré au bord palmaire de la base phalangienne, triangulaire à la coupe. Présente une rainure (zone charnière) lors du rabattement en flexion. Pour le pouce : inclut les 2 sésamoïdes.
+        </div>
+<h3 class="sub">Ligaments collatéraux</h3>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:13px;margin-bottom:12px;">
+<div style="padding:8px 10px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-400);">
+            Origine : <strong>tubercules situés de part et d'autre de la tête métacarpienne</strong> (plus près de la face dorsale). Chaque ligament s'étend en éventail avec un faisceau phalangien et un faisceau pour le fibro-cartilage.
+          </div>
+<div style="padding:8px 10px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">
+<strong>Détendus en extension, tendus en flexion.</strong> Les ligaments latéraux sont plus forts pour les 4 doigts longs — le médial plus fort pour le pouce (en raison des pressions engendrées par les mouvements d'opposition).
+          </div>
+</div>
+<h3 class="sub">Nœud fibreux de Zancolli — Éléments stabilisateurs</h3>
+<div style="padding:8px 12px;background:var(--teal-50);border-radius:7px;font-size:13px;">
+          Ensemble complexe d'éléments fibreux et musculaires formant un véritable <strong>nœud fibreux</strong> comprenant :
+          <ul style="margin:6px 0 0 14px;">
+<li>Le fibrocartilage glénoïdien</li>
+<li>La capsule, sa synoviale et les ligaments collatéraux</li>
+<li>Le ligament métacarpien transverse profond</li>
+<li>Les bandelettes sagittales des tendons extenseurs</li>
+<li>La 1re coulisse des fléchisseurs (A1)</li>
+<li>Le tendon phalangien des interosseux et le passage des lombricaux</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Intérêts ostéopathiques MCP -->
+<div class="card" style="margin-bottom:28px;">
+<div class="card-header"><div class="card-icon coral">⚕️</div><div class="card-title">Intérêts ostéopathiques — Métacarpo-phalangiennes</div></div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> Les MCP sont surtout visibles en face dorsale grâce à la saillie des têtes métacarpiennes. En palmaire, au contraire, on peut être abusé par le pli de flexion, qui se situe <strong>distalement à 1 cm de l'interligne</strong>.
+          </div>
+<div class="info-box coral">
+<strong>Mécanique et pathologique :</strong> Zone extrêmement sollicitée fonctionnellement, stabilisée par le fort nœud fibreux de Zancolli. Lorsque celui-ci est détruit (notamment dans les pathologies rhumatismales), il s'ensuit un déséquilibre, puis une subluxation, voire une luxation complète.
+          </div>
+</div>
+</div>
+</div>
+<!-- ══ CHAPITRE 7 — ARTICULATIONS INTERPHALANGIENNES PROXIMALES ET DISTALES ══ -->
+<div class="test-section-title" style="margin-top:28px;">⬛ Chapitre 7 — Articulations interphalangiennes proximales (IPP) et distales (IPD)</div>
+<div class="info-box teal" style="margin-bottom:16px;">
+      Les IPP et IPD sont <strong>semblables</strong>, les secondes étant plus petites que les premières — identiques à chaque doigt. N'ayant que 2 phalanges, le pouce n'offre qu'une seule interphalangienne (IP). On décrit ici l'IPP (l'IPD et l'IP du pouce lui sont semblables). Éléments en présence (3 par IPP) : extrémité inférieure de P1 + base de P2 avec son fibro-cartilage attenant.
+    </div>
+<!-- Éléments en présence -->
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">Surfaces articulaires — Type ginglyme</div></div>
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub" style="margin-top:0;">Côté P1 — Tête</h3>
+<div style="font-size:13.5px;color:var(--text2);">
+              Tête de chaque 1re phalange. Forme une articulation <strong>ginglyme</strong> (trochlée) avec la base de P2. La tête a une <strong>forme de poulie pleine</strong> à grand axe transversal, avec une gorge sagittale et 2 joues convexes en tous sens. La surface s'étend davantage en palmaire qu'en dorsal. Elle regarde en bas, en avant — encroûtée de cartilage hyalin.
+            </div>
+</div>
+<div>
+<h3 class="sub" style="margin-top:0;">Côté P2 — Base</h3>
+<div style="font-size:13.5px;color:var(--text2);">
+              Face supérieure des bases. Chacune représente une <strong>poulie creuse</strong>, avec une crête sagittale et 2 joues concaves en tous sens. La surface est complétée par le fibro-cartilage palmaire (ou glénoïdien) inséré à son bord palmaire. Orientée en haut et légèrement en arrière du fait du fibro-cartilage — encroûtée de cartilage hyalin.
+            </div>
+</div>
+</div>
+<div class="info-box amber" style="margin-top:12px;font-size:12.5px;">
+<strong>Rappel géométrique :</strong> Côté P1 = poulie pleine (convexe) ↔ Côté P2 = poulie creuse (concave) — système d'emboîtement précis garantissant un seul degré de liberté (flexion/extension).
+        </div>
+</div>
+</div>
+<!-- Moyens d'unions -->
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon navy">🔗</div><div class="card-title">Moyens d'unions</div></div>
+<div class="card-body">
+<h3 class="sub" style="margin-top:0;">Capsule et synoviale</h3>
+<div style="padding:8px 12px;background:var(--teal-50);border-radius:7px;font-size:13.5px;margin-bottom:12px;">
+          Capsule <strong>lâche sagittalement et tendue sur les côtés</strong>. Elle forme le même type de culs-de-sac que les MCP, en plus réduit.
+        </div>
+<h3 class="sub">Ligaments collatéraux</h3>
+<div style="padding:8px 12px;background:var(--navy-100);border-radius:7px;font-size:13.5px;margin-bottom:12px;">
+          Ligaments collatéraux médial et latéral. Origine : <strong>tubercules situés de part et d'autre de la tête</strong> de P1. Le ligament s'étend en éventail, en 2 faisceaux — comme pour les MCP, mais <strong>ceux-ci sont tendus quelle que soit la position</strong> (différence capitale avec les MCP).
+        </div>
+<h3 class="sub">Éléments stabilisateurs de l'IPP</h3>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:13px;">
+<div style="padding:8px 10px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-400);">
+<strong>Insertions tendineuses proches :</strong> Tendons extenseur et fléchisseurs (notamment le chiasma du FSD avec la coulisse A3).
+          </div>
+<div style="padding:8px 10px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-400);">
+<strong>Ligament rétinaculaire (Landsmeer) :</strong> 2 faisceaux — transverse et oblique. Coordonne la flexion IPP avec la flexion IDP et l'extension IPP avec l'extension IDP (mécanisme clé pour comprendre le doigt en boutonnière et le doigt en col de cygne).
+          </div>
+</div>
+</div>
+</div>
+<!-- Tableau comparatif IPP / IPD -->
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon amber">📊</div><div class="card-title">Tableau comparatif — IPP vs IPD vs IP du pouce</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Critère</th><th>IPP</th><th>IPD</th><th>IP du pouce</th></tr></thead>
+<tbody>
+<tr><td><strong>Type articulaire</strong></td><td>Ginglyme (trochlée)</td><td>Ginglyme (trochlée)</td><td>Ginglyme (trochlée)</td></tr>
+<tr><td><strong>Os</strong></td><td>P1 → P2</td><td>P2 → P3</td><td>P1 → P2 du pouce</td></tr>
+<tr><td><strong>Flexion</strong></td><td>100–110°</td><td>70–80°</td><td>70–80°</td></tr>
+<tr><td><strong>Extension</strong></td><td>0° (hyperext. légère)</td><td>0° (hyperext. passive ±20°)</td><td>0° (hyperext. fréquente)</td></tr>
+<tr><td><strong>Ligaments collatéraux</strong></td><td>Tendus en TOUTES positions</td><td>Tendus en TOUTES positions</td><td>Tendus en TOUTES positions</td></tr>
+<tr><td><strong>Éléments stabilisateurs clés</strong></td><td>Chiasma FSD + Lig. Landsmeer + coulisse A3</td><td>Tendon terminal extenseur + FPD</td><td>Lig. collatéraux + LFP</td></tr>
+<tr><td><strong>Pathologies fréquentes</strong></td><td>Entorse +++, boutonnière, luxation dorsale</td><td>Mallet finger, Jersey finger, Heberden</td><td>Mallet pouce, hyperextension</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Intérêts ostéopathiques IPP/IPD -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon coral">⚕️</div><div class="card-title">Intérêts ostéopathiques — IPP et IPD</div></div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Stabilité accrue des ligaments :</strong> La tension permanente des ligaments collatéraux (quelle que soit la position) distingue les IP des MCP, où les ligaments collatéraux sont détendus en extension. Cela confère aux IP une grande stabilité en latéralité dans tous les secteurs d'amplitude.
+          </div>
+<div class="info-box amber">
+<strong>Ligament de Landsmeer (rétinaculaire) :</strong> Sa double insertion sur la gaine de P1 et sur la bandelette latérale de l'appareil extenseur crée un couplage mécanique entre IPP et IDP. Une rigidité en flexion de l'IPP → l'IDP reste en hyperextension (doigt en boutonnière). Une rigidité en extension de l'IPP → l'IDP en flexion forcée (doigt en col de cygne).
+          </div>
+<div class="info-box coral">
+<strong>Clinique traumatique :</strong> L'IPP est la plus fréquemment entorsée. La plaque palmaire (prévient l'hyperextension) + les ligaments collatéraux sont les structures lésées. Une luxation IPD dorsale = mécanisme de flexion forcée (avulsion du tendon extenseur = mallet finger).
+          </div>
+</div>
+</div>
+</div>
+<!-- Carte À retenir -->
+<div style="border-left:4px solid var(--teal-400);background:var(--teal-50);border-radius:0 10px 10px 0;padding:18px 20px;margin-bottom:24px;">
+<div style="font-size:14px;font-weight:700;color:var(--teal-700);margin-bottom:10px;">⭐ À retenir absolument — Arthrologie distale du membre supérieur</div>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;">
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Carpe médio-carpien :</strong> capsule plus épaisse en avant — ligament scapho-triquétral passe EN PONT par-dessus le lunatum (car pas de ligament luno-capitatum direct)</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Trapézo-métacarpienne :</strong> articulation en selle + axe curviligne → la flexion de M1 entraîne automatiquement la pronation → opposition du pouce</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Fracture de Bennett :</strong> choc axial sur colonne du pouce → impaction base M1/trapèze</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>MCP :</strong> ligaments collatéraux DÉTENDUS en extension, TENDUS en flexion → position de danger = extension (immobilisation à éviter) ; nœud de Zancolli = stabilisateur global</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>IP :</strong> ligaments collatéraux TOUJOURS tendus (toutes positions) ; ligament de Landsmeer couple IPP et IDP → comprendre boutonnière et col de cygne</li>
+</ul>
+<div style="background:#fff3cd;border-left:3px solid var(--amber-500);border-radius:0 6px 6px 0;padding:10px 14px;margin-top:12px;font-size:13px;color:#4a2e00;">
+<strong>🧠 Mnémotechnique :</strong> MCP = <strong>M</strong>obile en extension (lig. détendus) → main « à plat » = position de danger | IP = <strong>I</strong>mmuables (lig. toujours tendus) → stabilité maximale dans tous les secteurs
+      </div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre supérieur, Année 1, IEOQ · Chapitres 4 à 7 (Articulations carpiennes, carpo-métacarpiennes, MCP, IP) · Usage privé</cite></div>
+</section>
+<section class="section" id="tests-poignet" style="display:none;">
+<div class="section-title">Tests Orthopédiques — Poignet</div>
+<div class="section-sub">CFCT, ligaments carpiens, tendon De Quervain &amp; canal carpien — P. César 1ère année IEOQ 2023</div>
+<!-- TESTS ARTICULAIRES — CFCT -->
+<div class="test-section-title">🔵 Tests articulaires — CFCT (Complexe Fibro-Cartilagineux Triangulaire)</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header">
+<div class="card-icon navy">🦴</div>
+<div class="card-title">Le CFCT (TFCC) — Anatomie &amp; contexte clinique</div>
+</div>
+<div class="card-body">
+<div class="test-detail-grid" style="margin-bottom:10px;">
+<div class="test-detail-item">
+<div class="label">Structures comprises</div>
+<div class="value" style="font-size:12.5px;">Disque fibro-cartilagineux central · Ligaments radio-ulnaires palmaire et dorsal · Ligament collatéral ulnaire · Ligaments ulno-lunaire et ulno-pyramidal · Gaine ECU</div>
+</div>
+<div class="test-detail-item">
+<div class="label">Fonctions biomécaniques</div>
+<div class="value" style="font-size:12.5px;">Stabilité de l'articulation radio-cubitale distale · Transmission de la charge axiale du carpe au cubitus · Stabilité carpienne côté cubital</div>
+</div>
+</div>
+<div class="test-detail-grid">
+<div class="test-detail-item">
+<div class="label">Populations à risque</div>
+<div class="value" style="font-size:12.5px;">Gymnastes · Plongeurs · Golfeurs · Sports de raquette · Basketball</div>
+</div>
+<div class="test-detail-item">
+<div class="label">Mécanisme traumatique typique</div>
+<div class="value" style="font-size:12.5px;">Dorsiflexion + déviation cubitale sous charge · Torsion · Syndrome d'impaction ulnaire (ulna plus long que le radius)</div>
+</div>
+</div>
+<div class="info-box teal" style="margin-top:10px;font-size:13px;"><strong>Principale cause de douleurs ulnaires du poignet.</strong> La partie centrale est peu vascularisée → cicatrisation difficile. Reconnaissance précoce critique : le potentiel de guérison diminue rapidement après 6 semaines.</div>
+</div>
+</div>
+<div class="test-grid-2">
+<div class="test-card" id="tp-fovea">
+<div class="test-card-header" onclick="toggleTest('tp-fovea')">
+<div class="test-card-name">Fovea Sign <small>Palpation directe du CFCT</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">CFCT</span><span class="tag tag-teal">Haute sensibilité</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Coude à 90°, doigts vers le plafond (prise de sang)</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 95,2% · Sp: 86,5%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique — Zone de palpation</div>Le thérapeute appuie avec son pouce sur la zone molle située entre : la styloïde ulnaire · le FCU · la face dorsale de la tête ulnaire · et le pisiforme. Pression progressive et maintenue.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur déclenchée côté ulnaire du poignet → lésion du CFCT ou du ligament triangulaire. Test de référence clinique pour les douleurs ulnaires du poignet.</div>
+<div style="margin-top:8px;">
+<div class="test-sensitivity"><span style="min-width:80px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill high" style="width:95%"></div></div><span>95,2%</span></div>
+<div class="test-sensitivity"><span style="min-width:80px;">Spécificité</span><div class="bar-wrap"><div class="bar-fill high" style="width:87%"></div></div><span>86,5%</span></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="tp-press">
+<div class="test-card-header" onclick="toggleTest('tp-press')">
+<div class="test-card-name">Press Test <small>Charge axiale CFCT</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">CFCT</span><span class="tag tag-coral">Se: 100%</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Assis sur une chaise avec accoudoirs</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Sensibilité : 100%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>On demande au patient d'essayer de se lever de sa chaise en s'appuyant sur ses mains posées sur les accoudoirs. Charge axiale maximale transmise à travers le carpe vers l'ulna.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur reproduite en région cubitale du poignet → lésion du CFCT. Sensibilité de 100% mais spécificité non établie. Utilisé comme test de dépistage complémentaire au Fovea Sign.</div>
+<div class="test-sensitivity"><span style="min-width:80px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill high" style="width:100%"></div></div><span>100%</span></div>
+</div>
+</div>
+</div>
+<!-- TEST SCAPHO-LUNAIRE -->
+<div class="test-section-title">🟡 Test ligamentaire — Ligament Scapho-Lunaire</div>
+<div class="test-card" id="tp-watson">
+<div class="test-card-header" onclick="toggleTest('tp-watson')">
+<div class="test-card-name">Test de Watson <small>Scaphoid Shift Test — Instabilité Scapho-Lunaire</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">Lig. Scapho-Lunaire</span><span class="tag tag-amber">Instabilité carpienne</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Ligament scapho-lunaire · Instabilité et subluxations scapho-lunaires</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 69% · Sp: 66% · RV+: 2.03 · RV-: 0.47 (Manuel J.)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient et thérapeute face à face en position "bras de fer". Poignet en inclinaison ulnaire. Le pouce du thérapeute exerce une pression sur la face palmaire du scaphoïde (index contrôle la face dorsale). L'autre main amène le poignet en inclinaison radiale. Observer si le scaphoïde peut "pousser" contre la pression du pouce lors du mouvement.</div>
+<div class="test-positive"><div class="label">Test positif — 3 critères</div>
+          1. Douleur reproduite en regard de la face dorsale du poignet.<br/>
+          2. La pression du thérapeute maintient le scaphoïde en position postérieure pendant l'inclinaison radiale (luxation bloquée).<br/>
+          3. Ressaut ressenti au relâchement de la pression → repositionnement brusque du scaphoïde en flexion = instabilité scapho-lunaire.
+        </div>
+<div class="info-box coral" style="font-size:13px;margin-top:8px;"><strong>Urgence clinique :</strong> La rupture complète du ligament scapho-lunaire non traitée entraîne progressivement une arthrose de l'ensemble du poignet (SLAC wrist). Potentiel de guérison diminue rapidement après 6 semaines. Mécanisme typique : chute sur poignet en dorsiflexion + inclinaison radiale.</div>
+</div>
+</div>
+<!-- TEST LUNO-TRIQUÉTRAL -->
+<div class="test-section-title">⚪ Test ligamentaire — Ligament Luno-Triquétral</div>
+<div class="test-card" id="tp-ballotement">
+<div class="test-card-header" onclick="toggleTest('tp-ballotement')">
+<div class="test-card-name">Test du Ballottement <small>Luno-Triquetral Shear Test</small></div>
+<div class="test-card-tags"><span class="tag tag-gray">Lig. Luno-Triquétral</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Ligament luno-triquétral</div></div>
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Main en pronation, clinicien stabilise le lunatum</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Cisaillement dorso-palmaire du complexe triquetrum-pisiforme avec stabilisation du lunatum, main en pronation. Le clinicien stabilise le lunatum d'une main et mobilise le triquetrum-pisiforme en cisaillement dorsal/palmaire de l'autre.</div>
+<div class="test-positive"><div class="label">Test positif</div>Crépitations, douleur et/ou hypermobilité lors du cisaillement → atteinte du ligament luno-triquétral. Test complémentaire à la palpation directe de l'interligne luno-triquétrale.</div>
+</div>
+</div>
+<!-- TESTS TENDINEUX -->
+<div class="test-section-title">🟠 Tests tendineux — Maladie de De Quervain</div>
+<div class="test-card" id="tp-finkelstein">
+<div class="test-card-header" onclick="toggleTest('tp-finkelstein')">
+<div class="test-card-name">Test de Finkelstein (Eichhoff) <small>Tendinopathie De Quervain</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">De Quervain</span><span class="tag tag-amber">Long abd. + Court ext. pouce</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Tendinopathie du long abducteur et court extenseur du pouce (1er compartiment dorsal)</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 89% · Sp: 14% · RV+: 1.03 · RV-: 0.79 (Goubeau et al.)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient allongé ou assis, poignet en position neutre de prono/supination. Patient fléchit son pouce dans la paume (poing serré autour du pouce). Le thérapeute amène ensuite le poignet en inclinaison ulnaire (adduction) de façon progressive.</div>
+<div class="test-positive"><div class="label">Test positif</div>L'inclinaison ulnaire reproduit la douleur du patient en regard de la styloïde radiale (1er compartiment dorsal) → tendinopathie de De Quervain.</div>
+<div class="info-box amber" style="font-size:13px;margin-top:8px;"><strong>Note historique :</strong> Le test a été décrit par Eichhoff en premier. La littérature l'attribue par erreur à Finkelstein, qui présentait en réalité ce test sans fermeture du poing. Spécificité très basse (14%) : douleur possible chez sujets sains. La corrélation clinique et l'anamnèse sont essentielles.</div>
+<div style="margin-top:8px;">
+<div class="test-sensitivity"><span style="min-width:80px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill high" style="width:89%"></div></div><span>89%</span></div>
+<div class="test-sensitivity"><span style="min-width:80px;">Spécificité</span><div class="bar-wrap"><div class="bar-fill low" style="width:14%"></div></div><span>14%</span></div>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=U8cPjPeZgFw" rel="noopener" target="_blank">Finkelstein EN</a>
+</div>
+</div>
+</div>
+<!-- TESTS NEUROLOGIQUES -->
+<div class="test-section-title">🟣 Tests neurologiques — Syndrome du canal carpien (SCC)</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header">
+<div class="card-icon navy">🧠</div>
+<div class="card-title">Syndrome du canal carpien — Règle de prédiction clinique (Wainner 2005)</div>
+</div>
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:12px;font-size:13px;"><strong>Trouble de compression nerveuse le plus courant du membre supérieur</strong> (prévalence : 3% femmes, 2% hommes). La combinaison de 5 critères (RCP de Wainner) offre une meilleure précision diagnostique que les tests isolés.</div>
+<div class="test-detail-grid">
+<div class="test-detail-item" style="grid-column:1/-1;">
+<div class="label">5 Critères du cluster de Wainner et al. (2005)</div>
+<div class="value" style="font-size:13px;">
+              1. Signe de Flick positif (soulagement en serrant la main)<br/>
+              2. Ratio du poignet &gt; 0,67 (épaisseur antéro-post. / médio-latérale)<br/>
+              3. Score SSS (Symptom Severity Scale) &gt; 1,9<br/>
+              4. Diminution de la sensibilité à l'éminence thénar supérieure (vs base)<br/>
+              5. Âge &gt; 45 ans
+            </div>
+</div>
+</div>
+<div class="test-detail-grid" style="margin-top:8px;">
+<div class="test-detail-item"><div class="label">RV+ (4/5 critères positifs)</div><div class="value">4,6</div></div>
+<div class="test-detail-item"><div class="label">RV+ (5/5 critères positifs)</div><div class="value">18,3</div></div>
+<div class="test-detail-item"><div class="label">RV- (&lt;2/5 critères)</div><div class="value">0,14</div></div>
+<div class="test-detail-item"><div class="label">Note importante</div><div class="value" style="font-size:12.5px;">Tests Phalen, Tinel et force court abd. pollicis exclus du cluster (validité insuffisante selon Wainner)</div></div>
+</div>
+</div>
+</div>
+<div class="test-card" id="tp-phalen">
+<div class="test-card-header" onclick="toggleTest('tp-phalen')">
+<div class="test-card-name">Test de Phalen <small>Flexion maintenue du poignet — Canal carpien</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Canal carpien</span><span class="tag tag-navy">Nerf médian</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Mains adossées (faces dorsales ensemble), poignets en flexion forcée, 1 minute</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 68% · Sp: 73% · RV+: 2.52 · RV-: 0.44 (MacDermid et al.)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient assis ou debout. Les deux faces dorsales des mains adossées l'une à l'autre, coudes fléchis abaissés pour maintenir les poignets en flexion complète. Maintien 60 secondes. Le nerf médian est comprimé dans le canal carpien.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur reproduite OU paresthésies dans le territoire du nerf médian : face antérieure des 3 premiers doigts (pouce, index, majeur) et face externe de l'annulaire → syndrome du canal carpien.</div>
+<div style="margin-top:8px;">
+<div class="test-sensitivity"><span style="min-width:80px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill mid" style="width:68%"></div></div><span>68%</span></div>
+<div class="test-sensitivity"><span style="min-width:80px;">Spécificité</span><div class="bar-wrap"><div class="bar-fill mid" style="width:73%"></div></div><span>73%</span></div>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=rQJNrkq7tIs" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+</div>
+</div>
+<div class="test-card" id="tp-phalen-inv">
+<div class="test-card-header" onclick="toggleTest('tp-phalen-inv')">
+<div class="test-card-name">Test de Phalen Inversé <small>Extension maintenue — Canal carpien</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Canal carpien</span><span class="tag tag-gray">Haute spécificité</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Mains jointes en "prière", poignets en extension complète non forcée, 1 minute</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 55% · Sp: 96% · RV+: 13.75 · RV-: 0.47 (Mondelli et al.)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient en position de "prière" : paumes jointes, coudes fléchis et levés pour maintenir les poignets en extension complète (non forcée). Épaules relâchées. Maintien 60 secondes. Mécanisme inverse : compression antérieure du canal.</div>
+<div class="test-positive"><div class="label">Test positif</div>Paresthésies ou douleur reproduite dans le territoire du nerf médian → SCC. Spécificité très élevée (96%) : test particulièrement utile pour CONFIRMER le diagnostic (RV+ = 13.75).</div>
+<div style="margin-top:8px;">
+<div class="test-sensitivity"><span style="min-width:80px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill mid" style="width:55%"></div></div><span>55%</span></div>
+<div class="test-sensitivity"><span style="min-width:80px;">Spécificité</span><div class="bar-wrap"><div class="bar-fill high" style="width:96%"></div></div><span>96%</span></div>
+</div>
+<div class="info-box teal" style="font-size:13px;margin-top:8px;"><strong>Stratégie combinée :</strong> Phalen (Se ↑) pour dépister + Phalen inversé (Sp ↑) pour confirmer. Si les deux positifs → forte présomption de SCC.</div>
+</div>
+</div>
+<!-- TABLEAU RÉCAPITULATIF -->
+<div class="card" style="margin-top:24px;">
+<div class="card-header">
+<div class="card-icon teal">📋</div>
+<div class="card-title">Récapitulatif — Tests du poignet par structure</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Structure / Pathologie</th><th>Test(s)</th><th>Stats clés</th></tr></thead>
+<tbody>
+<tr><td><strong>CFCT (côté ulnaire)</strong></td><td>Fovea Sign + Press Test</td><td>Fovea: Se 95,2% Sp 86,5% · Press: Se 100%</td></tr>
+<tr><td><strong>Ligament scapho-lunaire</strong></td><td>Test de Watson (Scaphoid Shift)</td><td>Se: 69% · Sp: 66% · Chute choc en DFIR</td></tr>
+<tr><td><strong>Ligament luno-triquétral</strong></td><td>Test du Ballottement</td><td>Crépitations + douleur + hypermobilité</td></tr>
+<tr><td><strong>De Quervain (1er compartiment)</strong></td><td>Test de Finkelstein (Eichhoff)</td><td>Se: 89% · Sp: 14% → corréler avec clinique</td></tr>
+<tr><td><strong>Canal carpien (nerf médian)</strong></td><td>Phalen + Phalen inversé + Cluster Wainner</td><td>Phalen Inv.: Sp 96% · RV+: 13.75 si positif</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote">
+<cite>Sources : P. César, Cours 1ère année IEOQ 2023 · Nakamura R et al. (2001) Fovea sign TFCC · MacDermid JC et al. (2004) Phalen test · Mondelli M et al. (2001) Phalen inversé · Manuel J. (2010) Watson test · Goubeau A et al. Finkelstein test · Wainner RS et al. (2005) Arch Phys Med Rehab — Clinical prediction rule CTS</cite>
+</div>
+</section>
+<section class="section" id="tech-poignet" style="display:none;">
+<div class="section-title">Techniques Structurelles — Poignet &amp; Main</div>
+<div class="section-sub">Tests &amp; normalisations ostéopathiques · « Les mains de Marie » — P. César 1ère année IEOQ 2021 · Usage privé</div>
+<div class="info-box teal" style="margin-bottom:20px;font-size:13px;">
+<strong>Technique Snap Shot :</strong> Principe commun aux os du carpe. L'opérateur recherche la meilleure voie de passage vers la barrière restrictive, puis applique un thrust en « coup de fouet » de bas en haut. L'énergie cinétique transmise par le mouvement normalise la dysfonction.
+    </div>
+<div class="test-section-title">🔵 1 — Articulations du Poignet</div>
+<div class="tech-card" id="tech-po-ru">
+<div class="tech-card-header" onclick="toggleTest('tech-po-ru')">
+<div class="test-card-name">Tests &amp; Mobilisations Articulaires — RUI, Radio-Carpienne, Médio-Carpienne</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">1 — Radio-Ulnaire Inférieure (RUI)</div>Un segment fixe le radius (ou l'ulna), l'autre segment mobilise l'ulna (ou le radius) en translation antérieure et postérieure. Appréciation qualitative du jeu articulaire et de la symétrie.</div>
+<div class="tech-step"><div class="label">2 — Articulation Radio-Carpienne</div>Main fixe le radius en prise bimanuelle. Main mobile saisit le carpe proximal et effectue des glissements antéro-postérieurs, latéro-latéraux et des tractions axiales. Recherche des barrières restrictives dans chaque plan.</div>
+<div class="tech-step"><div class="label">3 — Articulation Médio-Carpienne</div>Main proximale fixe le rang proximal du carpe. Main distale saisit le rang distal et mobilise en glissements antéro-postérieurs. Test de la qualité du mouvement des deux rangées du carpe l'une sur l'autre.</div>
+</div>
+</div>
+<div class="test-section-title">🟡 2 — Os du Carpe — Techniques Globales</div>
+<div class="tech-card" id="tech-po-carpe-glob">
+<div class="tech-card-header" onclick="toggleTest('tech-po-carpe-glob')">
+<div class="test-card-name">Décoaptation Globale &amp; Équilibration des Os du Carpe</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">4 — Technique de Décoaptation Globale du Carpe</div>Prise bimanuelle entrelacée sur le carpe (doigts d'une main entre les doigts de l'autre). Traction axiale progressive dans l'axe du poignet jusqu'à la barrière de décoaptation. Thrust doux ou maintien progressif. Variante : traction en légère extension du poignet.</div>
+<div class="tech-step"><div class="label">5 — Technique d'Équilibration Globale du Carpe</div>La contraction alternée des tendons extenseurs et fléchisseurs associée à la compression du carpe rééquilibre les différents os du carpe.<br/><strong>1er temps :</strong> Circumduction du poignet sous compression axiale maintenue par l'opérateur.<br/><strong>2ème temps :</strong> Fermeture et ouverture alternées de la main du patient, tout en maintenant la compression sur le carpe par l'opérateur.</div>
+</div>
+</div>
+<div class="test-section-title">🟠 3 — Os du Carpe — Techniques Spécifiques (Snap Shot)</div>
+<div class="tech-card" id="tech-po-lunatum">
+<div class="tech-card-header" onclick="toggleTest('tech-po-lunatum')">
+<div class="test-card-name">Test &amp; Normalisation du Lunatum <small>Antériorité / Postériorité</small></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Test Lunatum — Antériorité</div>Pulpes des deux pouces en regard de la face postérieure du lunatum. Les deux index en flexion en regard de la face antérieure du lunatum. Pression alternée ant/post pour apprécier la mobilité et détecter une restriction.</div>
+<div class="tech-step"><div class="label">Test Lunatum — Postériorité</div>Pulpes des pouces en regard de la face antérieure du lunatum. Index en flexion face postérieure du lunatum.</div>
+<div class="tech-step"><div class="label">B — Technique Snap Shot (Face Dorsale — Postériorité)</div>Même position que pour le test (postériorité). L'opérateur recherche la barrière restrictive. Thrust en « coup de fouet » de bas en haut. L'énergie cinétique transmise par le mouvement sur le lunatum normalise la dysfonction.</div>
+<div class="tech-step"><div class="label">Technique Snap Shot (Face Palmaire — Antériorité)</div>Même principe, applicateur sur la face palmaire (antérieure) du lunatum. <strong>Note clinique :</strong> Le lunatum en dysfonction d'antériorité peut être impliqué dans le syndrome du canal carpien.</div>
+</div>
+</div>
+<div class="tech-card" id="tech-po-triq">
+<div class="tech-card-header" onclick="toggleTest('tech-po-triq')">
+<div class="test-card-name">Test &amp; Normalisation du Triquetrum <small>Antériorité / Postériorité par rapport à l'Ulna</small></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Test Triquetrum</div>Pouce main gauche sur la face dorsale du triquetrum (test). Pouce et index main droite fixent la tête de l'ulna, les trois autres doigts stabilisent l'ulna (point fixe). Test de la mobilité du triquetrum en antériorité et postériorité par rapport à l'ulna.</div>
+<div class="tech-step"><div class="label">B — Normalisation — Dysfonction Postérieure (Snap Shot)</div>L'opérateur se positionne sur le triquetrum, cherche la meilleure voie de passage jusqu'à la barrière restrictive et applique le thrust en snap shot. Il faut parfois rechercher une légère inclinaison ulnaire pour détendre les ligaments collatéraux ulnaires.</div>
+<div class="tech-note"><div class="label">Dysfonction antérieure du triquetrum</div>Même modalités que pour la dysfonction postérieure, mais applicateur sur la face antérieure du triquetrum.</div>
+</div>
+</div>
+<div class="tech-card" id="tech-po-cap-ham">
+<div class="tech-card-header" onclick="toggleTest('tech-po-cap-ham')">
+<div class="test-card-name">Test &amp; Normalisation — Capitatum &amp; Hamatum</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">8 — Test Capitatum Antérieur / Postérieur</div>Prise bimanuelle : une main stabilise les os adjacents, l'autre teste le capitatum en antériorité (poussée dorsale) et postériorité (poussée palmaire). Normalisation par snap shot dans la direction restrictive.</div>
+<div class="tech-step"><div class="label">9 — Test Hamatum</div>Main droite de l'opérateur : index sur la face palmaire de l'hamalus (crochet de l'hamatum), pouce face dorsale de l'hamatum (test), autres doigts stabilisent l'ulna. Main gauche : pouce et index en flexion saisissent en pince la base des 4ème et 5ème métacarpiens (point fixe). L'ostéopathe teste l'antériorité ou la postériorité de l'hamatum.</div>
+<div class="tech-step"><div class="label">9B — Normalisation Hamatum (Snap Shot)</div>Même modalités. Recherche des paramètres de voie de passage vers la barrière restrictive. Parfois nécessaire de faire une inclinaison radiale dans la mise en place et dans le geste correctif.</div>
+</div>
+</div>
+<div class="test-section-title">🟢 4 — Colonne du Pouce</div>
+<div class="tech-card" id="tech-po-pouce">
+<div class="tech-card-header" onclick="toggleTest('tech-po-pouce')">
+<div class="test-card-name">Scaphoïde, Trapèze, 1er Méta &amp; Trapézo-Métacarpienne</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">1 — Scaphoïde Ant./Post. par rapport au Trapèze</div>Main droite : index sur le tubercule du trapèze, pouce en projection sur la face dorsale du trapèze (point fixe). Main gauche : prise en pince du scaphoïde (test et correction). Les autres doigts stabilisent le radius entre l'éminence hypothénar et les trois autres doigts.</div>
+<div class="tech-step"><div class="label">2 — Trapèze Ant./Post. par rapport au 1er Méta</div>Main droite : saisit en pince (pouce + index) la base du 1er métacarpien (point fixe). Main gauche : saisit en pince le trapèze (test). Normalisation par snap shot dans la direction restrictive.</div>
+<div class="tech-step"><div class="label">3 — Base de M1 par rapport au Trapèze</div>Main gauche : pince pouce-index sur face palmaire et dorsale du trapèze (point fixe). Main droite : saisit la base de M1 entre pouce et index en flexion (test).</div>
+<div class="tech-step"><div class="label">3B — Normalisation Dysfonction Postérieure Base M1</div>Patient debout ou assis, bras pendant hors de la table. Pouce main droite sur la base de M1 face antérieure, autres doigts stabilisent le pouce du patient. Appui du pouce droit renforcé par le bord ulnaire de la main gauche. Thrust de bas en haut en abduction de M1 sur la barrière restrictive.</div>
+<div class="tech-step"><div class="label">E — Normalisation Trapézo-Métacarpienne du 1 en Opposition</div>Technique avec prise en couple. Pulpe du pouce sur la base de M1 face antérieure. L'autre main amène par l'éminence thénar le pouce vers l'opposition autour de la base de M1.</div>
+</div>
+</div>
+<div class="test-section-title">🔴 5 — Rétinaculum &amp; Articulations Digitales</div>
+<div class="tech-card" id="tech-po-retin">
+<div class="tech-card-header" onclick="toggleTest('tech-po-retin')">
+<div class="test-card-name">Rétinaculum des Fléchisseurs, MCP &amp; Interphalangiennes</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">11 — Technique d'Ouverture du Rétinaculum des Fléchisseurs</div>Expansion transversale du rétinaculum (ligament annulaire du carpe). Prises bilatérales sur les bords du carpe (pisiforme côté ulnaire, os trapèze côté radial). Traction latérale progressive pour élargir le canal carpien. <strong>Important dans le syndrome du canal carpien.</strong></div>
+<div class="tech-step"><div class="label">12 — MCP : Test &amp; Normalisation</div>L'ostéopathe explore les possibilités de : glissement latéral (en DH ou DD), glissement antéro-postérieur, ouverture externe et interne, rotations de P1 sur le métacarpien. Thrust doux dans la direction restrictive.</div>
+<div class="tech-step"><div class="label">12 — Interphalangiennes : Test &amp; Normalisation</div>L'opérateur explore les possibilités de : glissement latéral, glissement antéro-postérieur, ouverture interne et externe.</div>
+<div class="tech-note"><div class="label">Attention particulière — MCP du 1</div>La MCP du 1er doigt (pouce) est parfois siège de laxité ou de dysfonction (entorse du pouce du skieur / entorse du ligament collatéral ulnaire). Toujours comparer bilatéralement et évaluer la stabilité ligamentaire.</div>
+</div>
+</div>
+<div class="footnote"><cite>Source : P. César, Techniques structurelles poignet 1ère année IEOQ 2021 · Usage privé — Résumé à compléter avec notes de cours</cite></div>
+</section>
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["poignet", "arthro-poignet", "tests-poignet", "tech-poignet"];
+  var SUB_LABELS_LOCAL = {"poignet": "📖 Biomécanique", "arthro-poignet": "🦴 Arthrologie poignet", "tests-poignet": "🩺 Tests orthopédiques", "tech-poignet": "🔧 Techniques structurelles"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>

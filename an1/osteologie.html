@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 1 · Ostéologie</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(1);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🦴</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 1ère Année</h1>
+      <p>Ostéologie — IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="index.html">← Catégories</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><strong>Ostéologie</strong> <span id="crumbSub">› 🦴 MS · Clavicule (Ch.1)</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="osteo-clavicule" onclick="showSub('osteo-clavicule')">🦴 MS · Clavicule (Ch.1)</button><button type="button" class="nav-tab" data-sub="osteo-scapula" onclick="showSub('osteo-scapula')">🦴 MS · Scapula (Ch.2)</button><button type="button" class="nav-tab" data-sub="osteo-humerus" onclick="showSub('osteo-humerus')">🦴 MS · Humérus (Ch.3)</button><button type="button" class="nav-tab" data-sub="osteo-ulna-radius" onclick="showSub('osteo-ulna-radius')">🦴 MS · Ulna & Radius (Ch.4)</button><button type="button" class="nav-tab" data-sub="osteo-main" onclick="showSub('osteo-main')">🦴 MS · Os de la main (Ch.5)</button><button type="button" class="nav-tab" data-sub="osteo-coxal" onclick="showSub('osteo-coxal')">🦴 MI · Os coxal (Ch.1)</button><button type="button" class="nav-tab" data-sub="osteo-femur" onclick="showSub('osteo-femur')">🦴 MI · Fémur (Ch.2)</button><button type="button" class="nav-tab" data-sub="osteo-patella" onclick="showSub('osteo-patella')">🦴 MI · Patella (Ch.3)</button><button type="button" class="nav-tab" data-sub="osteo-tibia" onclick="showSub('osteo-tibia')">🦴 MI · Tibia (Ch.4)</button><button type="button" class="nav-tab" data-sub="osteo-fibula" onclick="showSub('osteo-fibula')">🦴 MI · Fibula (Ch.5)</button><button type="button" class="nav-tab" data-sub="osteo-tarse" onclick="showSub('osteo-tarse')">🦴 MI · Tarse (Ch.6)</button><button type="button" class="nav-tab" data-sub="osteo-avantpied" onclick="showSub('osteo-avantpied')">🦴 MI · Avant-pied (Ch.7)</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="osteo-clavicule" style="display:block;">
+<div class="section-title">Ostéologie — Clavicule</div>
+<div class="section-sub">Chapitre 1 · Ostéologie membre supérieur — Thomas Gautier D.O. · IEOQ Année 1 · TA2</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+    Os long, pair et asymétrique. Situé à la partie antéro-supérieure du thorax. Forme le relief antérieur de la ceinture scapulaire. Fait le lien entre le cou, le thorax et le membre supérieur. Forme : <strong>S italique</strong> — concave en avant dans son 1/3 latéral, convexe en avant dans son 1/3 médial.
+  </div>
+<div class="test-section-title">🔵 Orientation en position anatomique</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:7px;font-size:13.5px;">
+<div style="padding:7px 11px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-500);">Extrémité <strong>aplatie</strong> → en dehors (latérale = acromiale)</div>
+<div style="padding:7px 11px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-500);">Extrémité <strong>renflée/volumineuse</strong> → en dedans (médiale = sternale)</div>
+<div style="padding:7px 11px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">S'articule en dehors avec le <strong>processus acromial</strong> et en dedans avec le <strong>manubrium sternal</strong></div>
+<div style="padding:7px 11px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--gray-400);">Description : 2 faces (sup./inf.) · 2 bords (ant./post.) · 2 extrémités (lat./méd.)</div>
+</div>
+</div>
+</div>
+<div class="test-section-title">🟡 Faces</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Face</th><th>Région</th><th>Insertions / Description</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Face supérieure</td><td>1/3 latéral<br/><small>Large</small></td><td>Muscle <strong>Deltoïde</strong> · Muscle <strong>Trapèze</strong></td></tr>
+<tr><td class="muscle-name">Face supérieure</td><td>1/3 moyen<br/><small>Rétréci</small></td><td>Libre de toute insertion</td></tr>
+<tr><td class="muscle-name">Face supérieure</td><td>1/3 médial</td><td>Muscle <strong>Sterno-Cléido-Mastoïdien (SCM)</strong></td></tr>
+<tr><td class="muscle-name">Face inférieure</td><td>1/4 latéral<br/><small>Large</small></td><td><strong>Tubercule conoïde</strong> → Lig. <strong>conoïde</strong> + Lig. <strong>trapézoïde</strong></td></tr>
+<tr><td class="muscle-name">Face inférieure</td><td>2/4 moyens</td><td><strong>Sillon subclavius</strong> → Muscle <strong>Subclavier</strong></td></tr>
+<tr><td class="muscle-name">Face inférieure</td><td>1/4 médial</td><td>Lig. <strong>costo-claviculaire</strong> · Muscle <strong>Sterno-Thyroïdien</strong></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">📐 Bords</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Bord</th><th>Région</th><th>Insertions</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Bord antérieur</td><td>1/3 latéral</td><td>Tubercule deltoïdien · Muscle <strong>Deltoïde</strong></td></tr>
+<tr><td class="muscle-name">Bord antérieur</td><td>2/3 médiaux</td><td>Muscle <strong>Grand Pectoral</strong> et son aponévrose</td></tr>
+<tr><td class="muscle-name">Bord postérieur</td><td>1/3 latéral</td><td>Muscle <strong>Trapèze</strong></td></tr>
+<tr><td class="muscle-name">Bord postérieur</td><td>2/3 médiaux</td><td>Fascia cervical moyen</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🔗 Extrémités</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">Extrémité latérale (acromiale)</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);">Porte la <strong>facette articulaire</strong> répondant au <strong>processus acromial</strong> → articulation acromio-claviculaire (AC). Surface plane, petite, ovalaire.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon navy">🦴</div><div class="card-title">Extrémité médiale (sternale)</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:8px;">Volumineuse, triangulaire à base inférieure. Répond à l'encoche manubrium + 1er cartilage costal. Surface articulaire en <strong>selle (toroïde)</strong> → articulation sterno-claviculaire (SC).</p>
+<ul style="list-style:none;padding:0;font-size:12.5px;display:flex;flex-direction:column;gap:4px;">
+<li style="padding:4px 8px;background:var(--teal-50);border-radius:4px;border-left:2px solid var(--teal-400);">Pourtour : lig. sterno-claviculaires (ant., post., sup.) + lig. interclaviculaire</li>
+<li style="padding:4px 8px;background:var(--navy-100);border-radius:4px;border-left:2px solid var(--navy-400);">Face médiale : 2 segments articulaires (vertical/manubrium + horizontal/1er cartilage costal)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="test-section-title">🏥 Incidences pratiques</div>
+<div class="info-box amber" style="margin-bottom:12px;">
+<strong>Traumatismes :</strong> Os sous-cutané, exposé aux chocs directs et indirects (chute sur moignon d'épaule). La courbure en S italique permet de mieux supporter les contraintes en compression axiale qu'un os rectiligne. La liaison costo-claviculaire forme une <strong>pince costo-claviculaire</strong> susceptible de comprimer le paquet vasculaire subclavier.
+  </div>
+<div class="info-box teal" style="margin-bottom:20px;">
+<strong>Sur le plan palpatoire :</strong> La clavicule est un os facilement palpable dans sa totalité. Ses interlignes articulaires (SC et AC) sont aisément décelables. Les insertions musculaires sont repérables et palpables en quasi-totalité.
+  </div>
+<div style="background:var(--teal-50);border-left:4px solid var(--teal-400);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:8px;">
+<div style="font-weight:700;color:var(--teal-800);margin-bottom:10px;font-size:14px;">📌 À retenir absolument — Clavicule</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--teal-900);">
+<li>• Os long, pair, asymétrique · Forme en <strong>S italique</strong> (concave avant latéral, convexe avant médial)</li>
+<li>• Extrémité <strong>aplatie</strong> = latérale (acromiale) · Extrémité <strong>renflée</strong> = médiale (sternale)</li>
+<li>• Face inférieure : sillon subclavius (muscle subclavier) + tubercule conoïde (lig. conoïde + trapézoïde) + lig. costo-claviculaire</li>
+<li>• Extrémité médiale : surface articulaire en <strong>selle (toroïde)</strong> — 2 segments articulaires</li>
+<li>• Pince costo-claviculaire → risque de compression vasculaire subclavière</li>
+</ul>
+<div style="background:var(--amber-100);border-radius:6px;padding:8px 12px;margin-top:10px;font-size:12.5px;color:#4a2e00;">
+<strong>Mnémotechnique :</strong> <em>« Latéral = APLATI comme l'acromion · Médial = RENFLE comme le sternum »</em>
+</div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Ostéologie du membre supérieur Ch.1, IEOQ Année 1 · Kamina P. — Anatomie clinique, Maloine</cite></div>
+</section>
+<section class="section" id="osteo-scapula" style="display:none;">
+<div class="section-title">Ostéologie — Scapula</div>
+<div class="section-sub">Chapitre 2 · Ostéologie membre supérieur — Thomas Gautier D.O. · IEOQ Année 1 · TA2</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+    Os plat, pair, non symétrique. Forme la partie <strong>postérieure et la plus mobile</strong> de la ceinture scapulaire. Amarrée par des muscles à la paroi thoracique postérieure. S'articule avec l'humérus, la clavicule et avec le thorax. Forme : corps aplati triangulaire à sommet inférieur très aigu + 2 processus (épine et coracoïde). Description : 2 faces · 3 bords · 3 angles.
+  </div>
+<div class="test-section-title">🔵 Orientation en position anatomique</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:7px;font-size:13.5px;">
+<div style="padding:7px 11px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-500);">Angle portant la <strong>cavité glénoïde</strong> → en <strong>dehors</strong> (angle supéro-latéral)</div>
+<div style="padding:7px 11px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-500);">Épine de la scapula + acromion → en <strong>arrière et en haut</strong> (face postérieure)</div>
+<div style="padding:7px 11px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">Processus coracoïde → en <strong>avant</strong></div>
+<div style="padding:7px 11px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--gray-400);">Face <strong>concave</strong> (fosse subscapulaire) → en avant (face costale)</div>
+</div>
+</div>
+</div>
+<div class="test-section-title">🟡 Les deux faces</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon teal">🫁</div><div class="card-title">Face costale (antérieure)</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:8px;"><strong>Fosse subscapulaire</strong> — creusée de crêtes obliques :</p>
+<ul style="list-style:none;padding:0;font-size:13px;display:flex;flex-direction:column;gap:5px;">
+<li style="padding:5px 9px;background:var(--teal-50);border-radius:5px;border-left:2px solid var(--teal-400);">Partie centrale (1/4 sup + 3/4 inf) → insertion <strong>Subscapulaire</strong></li>
+<li style="padding:5px 9px;background:var(--navy-100);border-radius:5px;border-left:2px solid var(--navy-400);">Pilier de la scapula (bord lat., épais) → insertion subscapulaire</li>
+<li style="padding:5px 9px;background:var(--gray-50);border-radius:5px;border-left:2px solid var(--gray-400);">Bande osseuse médiale → insertion <strong>Dentelé antérieur</strong></li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon navy">🔙</div><div class="card-title">Face postérieure — divisée par l'épine</div></div>
+<div class="card-body">
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13px;">
+<li style="padding:6px 10px;background:var(--teal-50);border-radius:5px;border-left:2px solid var(--teal-400);"><strong>Au-dessus de l'épine</strong> → Fosse supra-épineuse → <strong>Supra-épineux</strong></li>
+<li style="padding:6px 10px;background:var(--navy-100);border-radius:5px;border-left:2px solid var(--navy-400);"><strong>En-dessous de l'épine</strong> → Fosse infra-épineuse → <strong>Infra-épineux</strong> + <strong>Petit Rond</strong> + <strong>Grand Rond</strong></li>
+</ul>
+<div class="info-box teal" style="margin-top:10px;font-size:12.5px;">
+<strong>Épine de la scapula :</strong> Lame osseuse épaisse, perpendiculaire à la face post. Bord post. en 3 portions (médiale · intermédiaire avec tubercule trapézien · latérale avec Trapèze + Deltoïde). Se prolonge en <strong>processus acromial</strong>.
+        </div>
+</div>
+</div>
+</div>
+<div class="test-section-title">📐 Les trois bords</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Bord</th><th>Description</th><th>Insertions</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Bord supérieur</td><td>Mince, court. Présente l'<strong>incisure scapulaire</strong> (entre coracoïde et corps) — passage du N. supra-scapulaire</td><td>Omo-Hyoïdien · Fascia cervical moyen</td></tr>
+<tr><td class="muscle-name">Bord médial<small>(spinal/vertébral)</small></td><td>Le plus long. Bord vertical</td><td>¼ sup. : <strong>Élévateur de la scapula</strong> · ¾ inf. : <strong>Petit</strong> et <strong>Grand Rhomboïde</strong></td></tr>
+<tr><td class="muscle-name">Bord latéral<small>(axillaire)</small></td><td>Épais, robuste, oblique. Pilier de la scapula</td><td>Tendon longue portion <strong>Triceps brachial</strong> · Fascia axillaire profond</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🔺 Les trois angles</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Angle</th><th>Localisation</th><th>Éléments remarquables</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Angle supéro-médial</td><td>Jonction bords médial et supérieur</td><td>Insertion : <strong>Élévateur de la scapula</strong></td></tr>
+<tr><td class="muscle-name">Angle inférieur</td><td>Jonction bords médial et latéral — arrondi, palpable</td><td>Face post. : insertion inconstante du <strong>Grand Dorsal</strong> · Repère → <strong>T7-T8</strong></td></tr>
+<tr><td class="muscle-name">Angle supéro-latéral<small>(tête de la scapula)</small></td><td>Jonction bords latéral et supérieur — le plus exposé</td><td>Porte la <strong>glène</strong> + le <strong>processus coracoïde</strong>. Col scapulaire = rétrécissement de passage</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">⭕ La glène &amp; le processus coracoïde</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon teal">⭕</div><div class="card-title">La glène (cavité glénoïde)</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:8px;">Surface articulaire ovalaire, type <strong>sphéroïde</strong>, non congruente et non concordante. Grand axe oblique en haut et en avant. Très peu creusée (tubercule glénoïdien central).</p>
+<ul style="list-style:none;padding:0;font-size:12.5px;display:flex;flex-direction:column;gap:4px;">
+<li style="padding:4px 8px;background:var(--teal-50);border-radius:4px;">Tubercule <strong>supra-glénoïdien</strong> → tendon long biceps</li>
+<li style="padding:4px 8px;background:var(--navy-100);border-radius:4px;">Tubercule <strong>infra-glénoïdien</strong> → muscle long triceps</li>
+<li style="padding:4px 8px;background:var(--gray-50);border-radius:4px;">Limbus (bord) → labrum glénoïdal fibrocartilagineux</li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon navy">🪝</div><div class="card-title">Processus coracoïde</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:8px;">Deux segments (vertical + horizontal) + sommet :</p>
+<ul style="list-style:none;padding:0;font-size:12.5px;display:flex;flex-direction:column;gap:4px;">
+<li style="padding:4px 8px;background:var(--teal-50);border-radius:4px;">Sommet (apex) → court biceps + coraco-brachial (tendon commun)</li>
+<li style="padding:4px 8px;background:var(--navy-100);border-radius:4px;">Face supérieure (segment horiz.) → <strong>Petit pectoral</strong></li>
+<li style="padding:4px 8px;background:var(--amber-100);border-radius:4px;">Bord médial → lig. coraco-claviculaire médial (conoïde + trapézoïde)</li>
+<li style="padding:4px 8px;background:var(--gray-50);border-radius:4px;">Bord latéral → lig. coraco-acromial + lig. coraco-huméral</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="background:var(--teal-50);border-left:4px solid var(--teal-400);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:8px;">
+<div style="font-weight:700;color:var(--teal-800);margin-bottom:10px;font-size:14px;">📌 À retenir absolument — Scapula</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--teal-900);">
+<li>• Os plat, triangulaire : <strong>2 faces</strong> (costale + post.) · <strong>3 bords</strong> (sup., médial, lat.) · <strong>3 angles</strong> (SM, inf., SL)</li>
+<li>• Face post. divisée par l'épine → fosse <strong>supra-épineuse</strong> (supra-épineux) + fosse <strong>infra-épineuse</strong> (infra-épineux, petit rond)</li>
+<li>• Angle inférieur = repère <strong>T7-T8</strong> · Épine scapulaire = repère <strong>T3</strong></li>
+<li>• Incisure scapulaire → passage N. <strong>supra-scapulaire</strong> (sous le lig. transverse supérieur)</li>
+<li>• Processus coracoïde : insertions de court biceps + coraco-brachial (apex) + petit pectoral (face sup.)</li>
+<li>• Glène : type sphéroïde, non congruente, non concordante → stabilité assurée par la coiffe + labrum</li>
+</ul>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Ostéologie du membre supérieur Ch.2, IEOQ Année 1 · Kamina P. — Anatomie clinique, Maloine</cite></div>
+</section>
+<section class="section" id="osteo-humerus" style="display:none;">
+<div class="section-title">Ostéologie — Humérus</div>
+<div class="section-sub">Chapitre 3 · Ostéologie membre supérieur — Thomas Gautier D.O. · IEOQ Année 1 · TA2</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+    Os long, pair et non symétrique. Forme le squelette du bras. S'articule en haut avec la scapula (SH), en bas avec l'ulna et le radius (coude). Orientation : en haut la plus grosse extrémité, en dedans la tête, en avant le sillon intertuberculaire. Divisé grossièrement en 2 : moitié supérieure (épaule) + moitié inférieure (coude).
+  </div>
+<div class="test-section-title">🔵 Extrémité proximale (supérieure)</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Structure</th><th>Description</th><th>Insertions / Rôles</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Tête humérale</td><td>1/3 de sphère · cartilage hyalin · orientée en haut/dedans/arrière. Axe ~130–135° par rapport à la diaphyse. <strong>Rétroversion</strong> : ~20–30° en arrière du plan frontal</td><td>S'articule avec la glène de la scapula (art. SH)</td></tr>
+<tr><td class="muscle-name">Col anatomique</td><td>Rétrécissement entre la tête et les tubercules — sillon peu marqué</td><td>Insertion capsule + labrum glénoïdal</td></tr>
+<tr><td class="muscle-name">Col chirurgical</td><td>Région sous les tubercules — zone de fragilité +++</td><td>Lieu de prédilection des fractures (mécanisme indirect)</td></tr>
+<tr><td class="muscle-name">Tubercule majeur<small>(grand)</small></td><td>Saillie latérale — 3 facettes</td><td>Sup. : <strong>Supra-épineux</strong> · Postéro-sup. : <strong>Infra-épineux</strong> · Post. : <strong>Petit rond</strong></td></tr>
+<tr><td class="muscle-name">Tubercule mineur<small>(petit)</small></td><td>Saillie antérieure — 1 facette</td><td><strong>Subscapulaire</strong></td></tr>
+<tr><td class="muscle-name">Sillon intertuberculaire<small>(gouttière bicipitale)</small></td><td>Entre les 2 tubercules — livre passage au tendon du long biceps dans sa gaine synoviale</td><td>Lèvre médiale : <strong>Grand pectoral</strong> · Fond : <strong>Grand dorsal</strong> · Lèvre lat. : <strong>Grand rond</strong></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🟡 Corps (diaphyse)</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Face / Bord</th><th>Description &amp; Insertions clés</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Face latérale</td><td>1/4 sup. lisse (bourse subdeltoïdienne) · 1/4 moyen sup. : <strong>tubérosité deltoïdienne</strong> (Deltoïde) · 1/2 inf. : <strong>Brachial</strong> + Brachio-radial + LERC</td></tr>
+<tr><td class="muscle-name">Face médiale</td><td>1/4 sup. : sillon bicipital (long biceps) · 1/2 inf. : Brachial + Coraco-brachial + Grand pectoral (lèvre méd. gouttière)</td></tr>
+<tr><td class="muscle-name">Face postérieure</td><td>Gouttière du N. radial (N. radial + A. profonde du bras) — oblique en bas et en dehors — <strong>zone de risque en fracture diaphysaire</strong> · Vaste médial + vaste latéral du Triceps</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🔴 Extrémité distale (palette humérale)</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Structure</th><th>Description</th><th>Insertions / Articulations</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Trochlée</td><td>Partie médiale du seg. articulaire. Poulie pleine à grand axe transversal. Gorge légèrement spiroïdale. Secteur ~330°. Joue médiale + large + descend + bas</td><td>S'articule avec l'incisure trochléaire de l'ulna (ginglyme)</td></tr>
+<tr><td class="muscle-name">Capitulum</td><td>Partie latérale du seg. articulaire. Demi-sphère aplatie. Secteur ~180°. Regarde en bas et en avant</td><td>S'articule avec la fovéa de la tête radiale (sphéroïde)</td></tr>
+<tr><td class="muscle-name">Zone capitulo-trochléaire</td><td>Étroite bande séparant trochlée et capitulum — forme de tronc de cône</td><td>Répond au biseau de la tête radiale — participe au ginglyme</td></tr>
+<tr><td class="muscle-name">Épicondyle médial</td><td>Saillant sous la peau · Aplati ant./post. · Sillon N. ulnaire (face post.)</td><td>Face ant. sup. : <strong>Rond pronateur</strong> · Puis : LCU, FSD, FRC, LP, FUC (ép. méd. flexo-pronateurs)</td></tr>
+<tr><td class="muscle-name">Épicondyle latéral</td><td>Moins saillant que le médial</td><td>Face ant. + apex : Supinateur (chef sup.) · ED · EV · EUC · CERC · LCR (ép. lat. extenso-supinateurs)</td></tr>
+<tr><td class="muscle-name">Fosse coronoïdienne</td><td>Face antérieure — dépression au-dessus de la trochlée</td><td>Reçoit le processus coronoïde en flexion — capsule tout autour</td></tr>
+<tr><td class="muscle-name">Fosse olécrânienne</td><td>Face postérieure — plus profonde que la coronoïdienne</td><td>Reçoit l'olécrane en extension — capsule tout autour</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="info-box amber" style="margin-bottom:20px;">
+<strong>Points cliniques clés :</strong> Fracture du col chirurgical (chute sur épaule) → risque N. axillaire (C5-C6). Fracture diaphysaire spirale (coup de fouet) → risque N. radial dans la gouttière. Triangle olécrâno-épicondylien : 3 saillies alignées en extension, triangulaires en flexion (repère clinique clé).
+  </div>
+<div style="background:var(--teal-50);border-left:4px solid var(--teal-400);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:8px;">
+<div style="font-weight:700;color:var(--teal-800);margin-bottom:10px;font-size:14px;">📌 À retenir absolument — Humérus</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--teal-900);">
+<li>• Tête en haut/dedans/arrière · sillon intertuberculaire en avant (repère d'orientation)</li>
+<li>• Tubercule <strong>majeur</strong> (lat.) : supra-épineux (sup.) + infra-épineux (post.-sup.) + petit rond (post.)</li>
+<li>• Tubercule <strong>mineur</strong> (ant.) : subscapulaire — seul rotateur médial de la coiffe</li>
+<li>• <strong>Col chirurgical</strong> = site de fracture le plus fréquent (sous les tubercules)</li>
+<li>• Gouttière du <strong>N. radial</strong> (face post. corps) → risque en fracture diaphysaire</li>
+<li>• Distalement : Trochlée (ulna, ginglyme) + Capitulum (radius, sphéroïde) + 2 épicondyles</li>
+</ul>
+<div style="background:var(--amber-100);border-radius:6px;padding:8px 12px;margin-top:10px;font-size:12.5px;color:#4a2e00;">
+<strong>Coiffe sur tubercule majeur (ordre ant.→post.) :</strong> <em>« Supra · Infra · Petit rond »</em>
+</div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Ostéologie du membre supérieur Ch.3, IEOQ Année 1 · Kamina P. — Anatomie clinique, Maloine</cite></div>
+</section>
+<section class="section" id="osteo-ulna-radius" style="display:none;">
+<div class="section-title">Ostéologie — Ulna &amp; Radius</div>
+<div class="section-sub">Chapitre 4 · Ostéologie membre supérieur — Thomas Gautier D.O. · IEOQ Année 1 · TA2</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+    Deux os longs, pairs, non symétriques formant le squelette de l'avant-bras. <strong>Ulna</strong> : médial — reste globalement fixe en prono-supination. <strong>Radius</strong> : latéral — pivote autour de l'ulna lors de la prono-supination. Articulés ensemble (radio-ulnaires prox. et dist.) + membrana interosseuse.
+  </div>
+<div class="test-section-title">🔵 L'Ulna</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Structure</th><th>Description</th><th>Insertions / Rôles</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Incisure trochléaire<small>(grande cavité sigmoïde)</small></td><td>Excavation en forme de crochet à la partie supérieure. S'emboîte sur la trochlée. Congruente. Crête verticale divise la surface en 2 versants</td><td>S'articule avec la trochlée humérale (ginglyme huméro-ulnaire)</td></tr>
+<tr><td class="muscle-name">Olécrane</td><td>Volume cuboïde (6 faces) — partie postéro-supérieure de l'ulna. <strong>Face sup.</strong> : 3 champs (ant./capsule · moy./bourse · post./tendon tricipital). <strong>Face ant.</strong> : surface articulaire verticale. <strong>Face post.</strong> : sous-cutanée, libre. Bec olécranien → se loge dans la fosse olécrânienne en extension</td><td>Face post. → <strong>Triceps brachial</strong> (tendon) · Face lat. → <strong>Anconé</strong> + capsule + LCR · Face méd. → FPD + capsule + LCU</td></tr>
+<tr><td class="muscle-name">Processus coronoïde</td><td>Saillie antérieure triangulaire — base de l'incisure trochléaire — se loge dans la fosse coronoïdienne en flexion</td><td>Insertion LCU + FSD · Tubérosité ulnaire : <strong>Brachial</strong></td></tr>
+<tr><td class="muscle-name">Incisure radiale<small>(petite cavité sigmoïde)</small></td><td>Facette articulaire latérale — répond à la circonférence de la tête radiale (trochoïde)</td><td>S'articule avec la tête du radius (art. radio-ulnaire prox.)</td></tr>
+<tr><td class="muscle-name">Corps ulnaire</td><td>Prismatique triangulaire. 3 faces : ant., post., méd. 3 bords : ant., post., interosseux (méd.)</td><td>Nombreuses insertions musculaires (FPD, FUC, EUC, etc.) + membrane interosseuse (bord interosseux)</td></tr>
+<tr><td class="muscle-name">Épiphyse distale<small>(tête + col)</small></td><td>Col cylindrique + tête débordant en dehors/avant. Partie antéro-latérale : surface articulaire trochoïde → incisure ulnaire du radius. Processus styloïde ulnaire en postéro-médial</td><td>Fibrocartilage triangulaire (disque articulaire) sépare la tête ulnaire du carpe</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🟡 Le Radius</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Structure</th><th>Description</th><th>Insertions / Rôles</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Tête radiale</td><td>Cylindrique à la partie supérieure. <strong>Fovéa</strong> (face sup., concave) s'articule avec le capitulum. Circonférence articulaire s'articule avec l'incisure radiale de l'ulna (trochoïde)</td><td>Ligament annulaire du radius maintient la tête → art. radio-ulnaire prox.</td></tr>
+<tr><td class="muscle-name">Col du radius</td><td>Rétrécissement sous la tête — zone de fracture (chute sur main)</td><td>—</td></tr>
+<tr><td class="muscle-name">Tubérosité radiale<small>(bicipitale)</small></td><td>Saillie médiale sous le col</td><td>Insertion <strong>Biceps brachial</strong> (chef court + long)</td></tr>
+<tr><td class="muscle-name">Corps radial</td><td>Prismatique triangulaire. 3 faces : ant., post., lat. 3 bords : ant., post., interosseux (méd.). En bas, s'élargit et aplati</td><td>Nombreuses insertions : Rond pronateur (face lat.) · FCS (face ant.) · FLP · FPD · Supinateur (face ant./lat.) · Membrane interosseuse (bord interosseux)</td></tr>
+<tr><td class="muscle-name">Épiphyse distale</td><td>S'élargit beaucoup. Face inférieure : <strong>surface articulaire carpique</strong> — répond au scaphoïde (facette lat.) et au lunatum (facette méd.) — surface principale pour l'art. radio-carpienne</td><td>Processus styloïde radial (lateral, palpable) · Incisure ulnaire (face méd. → art. radio-ulnaire dist.) · Sillons dorsaux (tendons extenseurs)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="info-box amber" style="margin-bottom:20px;">
+<strong>Pronation/Supination :</strong> L'ulna reste fixe (pivot). Le radius bascule autour de lui : en pronation, il croise l'ulna ; en supination, ils sont parallèles. La membrane interosseuse transmet les contraintes de compression du radius vers l'ulna.
+  </div>
+<div style="background:var(--teal-50);border-left:4px solid var(--teal-400);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:8px;">
+<div style="font-weight:700;color:var(--teal-800);margin-bottom:10px;font-size:14px;">📌 À retenir absolument — Ulna &amp; Radius</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--teal-900);">
+<li>• Ulna : <strong>médial</strong>, fixe en prono-sup. Grosse extrémité supérieure (olécrane + coronoïde + incisure trochléaire)</li>
+<li>• Radius : <strong>latéral</strong>, mobile (pivote). Grosse extrémité <strong>inférieure</strong> (surface carpique)</li>
+<li>• Olécrane → Triceps brachial (extension) · Tubérosité radiale → Biceps brachial (flexion + supination)</li>
+<li>• Fracture de Colles (radius distal) : chute sur main en extension → déplacement post. du fragment distal</li>
+<li>• Fracture de Monteggia (ulna) associe souvent luxation de la tête radiale</li>
+</ul>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Ostéologie du membre supérieur Ch.4, IEOQ Année 1 · Kamina P. — Anatomie clinique, Maloine</cite></div>
+</section>
+<section class="section" id="osteo-main" style="display:none;">
+<div class="section-title">Ostéologie — Os de la main</div>
+<div class="section-sub">Chapitre 5 · Ostéologie membre supérieur — Thomas Gautier D.O. · IEOQ Année 1 · TA2</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+<strong>Trois mains</strong> (Kénési) : Main <strong>carpienne</strong> (rotule, manette de jeu) · Main <strong>métacarpienne</strong> (large et plane, raquette) · Main <strong>phalangienne</strong> (5 rayons tentaculaires, pieuvre). 27 os au total : 8 os du carpe + 5 métacarpes + 14 phalanges.
+  </div>
+<div class="test-section-title">🔵 Le carpe — 2 rangées de 4 os</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Os</th><th>Rangée</th><th>Caractéristiques essentielles</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Scaphoïde</td><td>Proximale — latéral</td><td>Os le plus large de la rangée prox. Tubercule antérieur (palpable). <strong>Vascularisation précaire distale</strong> → pseudarthrose si fracture. S'articule avec le radius (surface concave)</td></tr>
+<tr><td class="muscle-name">Lunatum<small>(semi-lunaire)</small></td><td>Proximale — intermédiaire</td><td>Forme croissant (semi-lunaire). S'articule avec le radius + fibrocartilage (face sup.). <strong>Luxation fréquente</strong> en hyperextension</td></tr>
+<tr><td class="muscle-name">Triquétrum<small>(pyramidal)</small></td><td>Proximale — médial</td><td>Pyramidal. S'articule avec le fibrocartilage (face sup.) + pisiforme (face ant.)</td></tr>
+<tr><td class="muscle-name">Pisiforme</td><td>Proximale — antérieur au triquétrum</td><td>Sésamoïde au sein du tendon du <strong>FUC</strong>. Seul os carpien accessible à la palpation directe côté ulnaire ant.</td></tr>
+<tr><td class="muscle-name">Trapèze</td><td>Distale — latéral</td><td>Tubercule antérieur (latéral du canal carpien). Surface distale en <strong>selle (CMC1 du pouce)</strong>. Articulé en haut avec scaphoïde</td></tr>
+<tr><td class="muscle-name">Trapézoïde</td><td>Distale — 2e rayon</td><td>Petit, en coin entre trapèze et capitatum. Articulé avec scaphoïde (sup.) + M2 (inf.)</td></tr>
+<tr><td class="muscle-name">Capitatum<small>(grand os)</small></td><td>Distale — central</td><td>Le plus grand des os du carpe. Tête + col + corps (bouchon de champagne). Centre de la 2e rangée. Articulé avec lunatum + M3</td></tr>
+<tr><td class="muscle-name">Hamatum<small>(os crochu)</small></td><td>Distale — médial</td><td>Processus hamulaire (crochet antérieur palpable) — délimite le canal de Guyon (N. ulnaire). Articulé M4 + M5</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🟡 Métacarpes &amp; Phalanges</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon teal">📐</div><div class="card-title">Les 5 métacarpes</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:8px;">Os longs, divergents, articulés en proximal avec le carpe (sauf M1 en selle). Chaque métacarpe : <strong>base</strong> (art. avec carpe + bases adjacentes) + <strong>corps</strong> (insertions interosseux) + <strong>tête</strong> (art. MCP — ellipsoïde, convexe, 2 condyles).</p>
+<ul style="list-style:none;padding:0;font-size:12.5px;display:flex;flex-direction:column;gap:4px;">
+<li style="padding:4px 8px;background:var(--teal-50);border-radius:4px;"><strong>M1 (pouce)</strong> : trapu, court, base en selle (CMC1)</li>
+<li style="padding:4px 8px;background:var(--navy-100);border-radius:4px;"><strong>M2</strong> : le plus long · base s'articule avec trapèze + trapézoïde + capitatum</li>
+<li style="padding:4px 8px;background:var(--gray-50);border-radius:4px;">M3 : base présente le processus styloïde (palpable face dorsale)</li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon navy">🦴</div><div class="card-title">Les phalanges — 14 au total</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:8px;">3 phalanges par doigt (P1, P2, P3) sauf pouce (P1 + P2). Chaque phalange : <strong>base</strong> (art. MCP ou IPP) + <strong>corps</strong> + <strong>tête</strong> (trochléenne pour P1 et P2, rugueuse pour P3).</p>
+<ul style="list-style:none;padding:0;font-size:12.5px;display:flex;flex-direction:column;gap:4px;">
+<li style="padding:4px 8px;background:var(--teal-50);border-radius:4px;"><strong>P3 (distale)</strong> : tubérosité unguale en distal — support de l'ongle</li>
+<li style="padding:4px 8px;background:var(--navy-100);border-radius:4px;">Articulations IFP et IFD : ginglymes (1 ddl : flexion/extension)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="info-box amber" style="margin-bottom:20px;">
+<strong>Canal carpien :</strong> Formé par le rétinaculum des fléchisseurs (ligament annulaire antérieur) + gouttière carpienne (scaphoïde + trapèze latéralement · pisiforme + hamatum médialement). Contenu : tendon FLP + 4 tendons FSD + 4 tendons FPD + <strong>N. médian</strong>. Compression → <strong>syndrome du canal carpien</strong>.
+  </div>
+<div style="background:var(--teal-50);border-left:4px solid var(--teal-400);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:8px;">
+<div style="font-weight:700;color:var(--teal-800);margin-bottom:10px;font-size:14px;">📌 À retenir absolument — Os de la main</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--teal-900);">
+<li>• Rangée proximale (lat.→méd.) : <strong>Scaphoïde · Lunatum · Triquétrum · Pisiforme</strong></li>
+<li>• Rangée distale (lat.→méd.) : <strong>Trapèze · Trapézoïde · Capitatum · Hamatum</strong></li>
+<li>• Fracture du <strong>scaphoïde</strong> → risque de nécrose avasculaire (vascularisation rétrograde)</li>
+<li>• <strong>Pisiforme</strong> = sésamoïde dans le tendon FUC</li>
+<li>• Canal carpien : N. médian + 9 tendons fléchisseurs · Hamatum + pisiforme (paroi médiale) · Scaphoïde + Trapèze (paroi latérale)</li>
+</ul>
+<div style="background:var(--amber-100);border-radius:6px;padding:8px 12px;margin-top:10px;font-size:12.5px;color:#4a2e00;">
+<strong>Mnémotechnique rangée prox. puis dist. :</strong> <em>« Slu · Tri · Pisi / Trapèze · Troïde · Capi · Hama »</em>
+</div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Ostéologie du membre supérieur Ch.5, IEOQ Année 1 · Kamina P. — Anatomie clinique, Maloine</cite></div>
+</section>
+<section class="section" id="osteo-coxal" style="display:none;">
+<div class="section-title">Ostéologie — Os coxal</div>
+<div class="section-sub">Chapitre 1 · Ostéologie membre inférieur — Thomas Gautier D.O. · IEOQ Année 1 · TA2</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+    Os plat, pair, non symétrique. Forme, avec son homologue et le sacrum, la <strong>ceinture pelvienne</strong>. Résulte de la soudure de 3 os : <strong>ilium</strong> (iliaque) + <strong>ischium</strong> + <strong>pubis</strong> — soudure au niveau de l'<strong>acétabulum</strong>. Description : 2 faces (externe/interne) · 3 bords · 3 angles + 2 orifices (acétabulum + foramen obturé).
+  </div>
+<div class="test-section-title">🔵 Face externe</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Zone</th><th>Description</th><th>Insertions clés</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Fosse iliaque externe<small>(glutéale)</small></td><td>Partie supérieure de la face externe. 3 lignes glutéales (ant., post., inf.) délimitent 3 zones</td><td>Moyen fessier (entre lig. ant. et post.) · Petit fessier (entre lig. ant. et inf.) · Grand fessier (en arrière lig. post.)</td></tr>
+<tr><td class="muscle-name">Acétabulum<small>(cotyle)</small></td><td>Grande cavité articulaire hémisphérique — s'articule avec la tête fémorale. Fond non articulaire : fosse acétabulaire. Incisure acétabulaire en bas (lig. transverse). Surface semi-lunaire (croissant) encroûtée de cartilage hyalin</td><td>Labrum acétabulaire sur le limbus (rebord) · Lig. rond (fosse acétabulaire) · Capsule + lig. ilio-fémoral, pubo-fémoral, ischio-fémoral (autour)</td></tr>
+<tr><td class="muscle-name">Branche ischio-pubienne</td><td>Encadre le foramen obturé → obturateur externe</td><td>Obturateur externe</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🟡 Face interne (endopelvienne)</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Zone</th><th>Description</th><th>Insertions clés</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Fosse iliaque interne</td><td>2/3 ant. de la partie sup. — concave en tous sens, lisse</td><td><strong>Iliaque</strong></td></tr>
+<tr><td class="muscle-name">Surface auriculaire</td><td>1/3 post. partie sup. — en L renversé. Cartilage hyalin. S'articule avec le sacrum (art. sacro-iliaque)</td><td>Ligaments sacro-iliaques antérieurs (pourtour)</td></tr>
+<tr><td class="muscle-name">Tubérosité iliaque</td><td>Postéro-supérieure — saillante et rugueuse</td><td>Lig. interosseux sacro-iliaque · Lig. sacro-iliaques postérieurs · Lig. ilio-lombaires</td></tr>
+<tr><td class="muscle-name">Pourtour foramen obturé</td><td>Face interne du foramen</td><td>Obturateur interne (face pelvienne)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">📐 Bord antérieur — Repères palpatoires clés</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:6px;font-size:13px;">
+<div style="padding:7px 11px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-500);"><strong>EIAS</strong> (épine iliaque antéro-supérieure) → TFL + Sartorius + Lig. inguinal</div>
+<div style="padding:7px 11px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-500);"><strong>EIAI</strong> (épine iliaque antéro-inférieure) → Chef direct Droit fémoral + Lig. ilio-fémoral</div>
+<div style="padding:7px 11px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">Éminence ilio-pubienne → Arcade ilio-pectinée</div>
+<div style="padding:7px 11px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--gray-400);">Épine du pubis → Lig. inguinal + sillon inguinal</div>
+</div>
+</div>
+</div>
+<div class="test-section-title">🔺 Bord postérieur, crête iliaque &amp; ischion</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon teal">📐</div><div class="card-title">Bord postérieur &amp; crête iliaque</div></div>
+<div class="card-body">
+<ul style="list-style:none;padding:0;font-size:13px;display:flex;flex-direction:column;gap:5px;">
+<li style="padding:5px 9px;background:var(--teal-50);border-radius:5px;"><strong>EIPS</strong> (épine iliaque postéro-supérieure) — repère S2, palpable sous la peau</li>
+<li style="padding:5px 9px;background:var(--navy-100);border-radius:5px;"><strong>EIPI</strong> + grande incisure ischiatique → N. ischiatique + N. glutéal supérieur</li>
+<li style="padding:5px 9px;background:var(--amber-100);border-radius:5px;"><strong>Crête iliaque</strong> : de l'EIAS à l'EIPS — lèvre externe (TFL + Grand fessier) + lèvre interne (Iliaque) + lèvre intermédiaire (M. abd. croisés)</li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon navy">💺</div><div class="card-title">Ischion</div></div>
+<div class="card-body">
+<ul style="list-style:none;padding:0;font-size:13px;display:flex;flex-direction:column;gap:5px;">
+<li style="padding:5px 9px;background:var(--teal-50);border-radius:5px;"><strong>Tubérosité ischiatique</strong> — point d'appui en position assise · insertions ischio-jambiers (IJ) + Grand adducteur</li>
+<li style="padding:5px 9px;background:var(--navy-100);border-radius:5px;">Épine ischiatique → lig. sacro-épineux + insertion Jumeau supérieur</li>
+<li style="padding:5px 9px;background:var(--gray-50);border-radius:5px;">Petite incisure ischiatique → N. honteux interne</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="background:var(--teal-50);border-left:4px solid var(--teal-400);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:8px;">
+<div style="font-weight:700;color:var(--teal-800);margin-bottom:10px;font-size:14px;">📌 À retenir absolument — Os coxal</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--teal-900);">
+<li>• 3 os soudés au niveau de l'acétabulum : <strong>Ilium</strong> (sup.) + <strong>Ischium</strong> (postéro-inf.) + <strong>Pubis</strong> (antéro-inf.)</li>
+<li>• <strong>EIAS</strong> (TFL + Sartorius + Lig. inguinal) · <strong>EIAI</strong> (Chef direct Droit fémoral + Lig. ilio-fémoral)</li>
+<li>• <strong>EIPS</strong> = repère <strong>S2</strong> · Tubérosité ischiatique = insertions ischio-jambiers + Grand adducteur</li>
+<li>• Acétabulum : surface semi-lunaire articulaire + fosse acétabulaire (lig. rond)</li>
+<li>• Grande incisure ischiatique → N. ischiatique · Petite incisure → N. honteux</li>
+</ul>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Ostéologie du membre inférieur Ch.1, IEOQ Année 1 · Kamina P. — Anatomie clinique, Maloine</cite></div>
+</section>
+<section class="section" id="osteo-femur" style="display:none;">
+<div class="section-title">Ostéologie — Fémur</div>
+<div class="section-sub">Chapitre 2 · Ostéologie membre inférieur — Thomas Gautier D.O. · IEOQ Année 1 · TA2</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+    Os long, pair, non symétrique. <strong>Plus long et plus solide</strong> os du corps humain. S'articule en haut avec l'acétabulum (coxo-fémorale), en bas avec le tibia et la patella (genou). Orientation : en haut la tête sphérique + col, en bas les condyles, en avant la trochlée et en dehors le grand trochanter.
+  </div>
+<div class="test-section-title">🔵 Extrémité supérieure</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Structure</th><th>Description</th><th>Insertions / Angles</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Tête fémorale</td><td>2/3 de sphère — encroûtée de cartilage hyalin. Légère dépression centrale : <strong>fovéa capitis</strong></td><td>Fovéa capitis → <strong>Ligament rond</strong> (lig. de la tête fémorale)</td></tr>
+<tr><td class="muscle-name">Col fémoral</td><td>Angle cervico-diaphysaire ~125–130° (coxa valga &gt;135° / vara &lt;120°). Antéversion ~10–15°. Face ant. délimitée par lig. intertrochantérique (ant.) + crête intertrochan. (post.)</td><td>Face ant. : capsule + lig. ilio-fémoral · Bord sup./inf. du col : capsule</td></tr>
+<tr><td class="muscle-name">Grand trochanter</td><td>Volumineuse tubérosité latérale (forme cubique). 5 faces à décrire</td><td>Face sup. : <strong>Piriforme</strong> · Face lat. : <strong>Moyen fessier</strong> + VL · Face ant. : <strong>Petit fessier</strong> · Face méd. : fosse trochantérique (<strong>Obturateur externe</strong>) + Obturateur interne + Jumeaux · Face post. : <strong>Carré fémoral</strong></td></tr>
+<tr><td class="muscle-name">Petit trochanter</td><td>Saillie conique inféro-médiale — dans la concavité de l'angle cervico-diaphysaire</td><td><strong>Ilio-psoas</strong> (tendon) · Bord ant. : lig. pubo-fémoral</td></tr>
+<tr><td class="muscle-name">Ligne intertrochantérique</td><td>Ant. : entre grand et petit trochanter → insertion capsule + lig. ilio-fémoral</td><td>Capsule coxo-fémorale</td></tr>
+<tr><td class="muscle-name">Crête intertrochantérique</td><td>Post. : saillante, entre les 2 trochanters · Tubercule du carré (crête)</td><td>Capsule (lèvre sup.) · <strong>Carré fémoral</strong> (tubercule)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🟡 Corps — Faces &amp; Ligne âpre</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Structure</th><th>Insertions</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Face antérieure</td><td>Lisse en haut (bourse subquadricipitale) · <strong>Droit fémoral</strong> (corp. charnu) + <strong>Vaste intermédiaire</strong> + <strong>Vaste médial et latéral</strong> (face lat./méd.)</td></tr>
+<tr><td class="muscle-name">Face latérale</td><td>Tubérosité deltoïdienne (Deltoïde fémoral = G. fessier + fascia lata)</td></tr>
+<tr><td class="muscle-name">Face médiale</td><td>Lisse — fémoral vide de muscles</td></tr>
+<tr><td class="muscle-name"><strong>Ligne âpre</strong><small>(bord post.)</small></td><td>Crête saillante longitudinale — bifurque en haut et en bas. Labium lat. : VL + biceps + courte tête / Labium méd. : VM + adducteurs. En haut : trifurcation (ligne spirale → petit troch., ligne pectinofémorale, crête glutéale → G. fessier)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🔴 Extrémité inférieure — Condyles</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Structure</th><th>Description</th><th>Rôles</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Surface patellaire<small>(trochlée)</small></td><td>Face inféro-antérieure. Gorge verticale + 2 joues (lat. + large + saillante). Répond à la patella — type ginglyme</td><td>Glissement de la patella en flex./ext. Joue latérale empêche la luxation latérale patellaire</td></tr>
+<tr><td class="muscle-name">Condyle latéral</td><td>Plus court antéro-post. Légèrement saillant en arr. Épicondyle lat. (saillie lat.) — insertions ligamentaires</td><td>Surface tibiale lat. (ménisque lat.) · Épicondyle lat. : LCF + Poplité (tendons) + Biceps</td></tr>
+<tr><td class="muscle-name">Condyle médial</td><td>Plus long antéro-post. Descend plus bas. Épicondyle méd. (saillie méd.) — tubérosité adducteurs (grand adducteur)</td><td>Surface tibiale méd. (ménisque méd.) · Épicondyle méd. : LCT + Gracile + ST · Tubercule adducteur : Grand adducteur</td></tr>
+<tr><td class="muscle-name">Fosse intercondylaire</td><td>Profonde gouttière postérieure entre les 2 condyles</td><td>LCA (condyle lat., face méd.) · LCP (condyle méd., face lat.) · Capsule</td></tr>
+<tr><td class="muscle-name">Surface poplitée</td><td>Triangle postérieur lisse entre bifurcation de la ligne âpre</td><td>Libre — répond au muscle poplité</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="background:var(--teal-50);border-left:4px solid var(--teal-400);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:8px;">
+<div style="font-weight:700;color:var(--teal-800);margin-bottom:10px;font-size:14px;">📌 À retenir absolument — Fémur</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--teal-900);">
+<li>• Grand trochanter : Piriforme (sup.) · Moyen fessier (lat.) · Petit fessier (ant.) · Obturateur ext. (fosse troch.) · Carré fémoral (post.)</li>
+<li>• Petit trochanter → <strong>Ilio-psoas</strong></li>
+<li>• Angle cervicodiaphysaire ~125° · Antéversion ~15° · Coxa valga &gt;135° / vara &lt;120°</li>
+<li>• Fosse intercondylaire : LCA sur condyle <strong>latéral</strong> · LCP sur condyle <strong>médial</strong></li>
+<li>• Condyle <strong>médial</strong> descend plus bas (genou en valgus physiologique de 3°)</li>
+</ul>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Ostéologie du membre inférieur Ch.2, IEOQ Année 1 · Kamina P. — Anatomie clinique, Maloine</cite></div>
+</section>
+<section class="section" id="osteo-patella" style="display:none;">
+<div class="section-title">Ostéologie — Patella</div>
+<div class="section-sub">Chapitre 3 · Ostéologie membre inférieur — Thomas Gautier D.O. · IEOQ Année 1 · TA2</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+    Os plat, apparenté à un <strong>sésamoïde</strong>, pair et non symétrique. Forme le squelette antérieur du genou. Articulée avec le fémur, mais solidaire du tibia par le <strong>tendon patellaire</strong>. Prise dans les insertions du quadriceps. Orientation : apex en bas · face articulaire en arrière · joue la plus large en dehors.
+  </div>
+<div class="test-section-title">🔵 Description de l'os</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon teal">🫁</div><div class="card-title">Face antérieure</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);">Triangulaire. <strong>En haut</strong> : débordement du tendon quadricipital (fibres du Droit fémoral). <strong>Partie moyenne</strong> : stries verticales (fibres superficielles du Droit fémoral). <strong>En bas</strong> : débordement du tendon patellaire.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon navy">🔙</div><div class="card-title">Face postérieure</div></div>
+<div class="card-body">
+<ul style="list-style:none;padding:0;font-size:13px;display:flex;flex-direction:column;gap:5px;">
+<li style="padding:5px 9px;background:var(--teal-50);border-radius:5px;"><strong>2/3 supérieurs</strong> : surface articulaire (trochlée fémorale — ginglyme). Crête verticale mousse → 2 joues (lat. plus large + plus concave · méd. plus courte + convexe)</li>
+<li style="padding:5px 9px;background:var(--navy-100);border-radius:5px;"><strong>1/3 inférieur</strong> : non articulaire, en retrait</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="test-section-title">🔗 Bords, Base &amp; Apex</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Structure</th><th>Description</th><th>Insertions</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Bords médial &amp; latéral</td><td>Épais et convexes</td><td>D'arrière en avant : capsule · Rétinaculum patellaire + lig. ménisco-patellaire · Vaste homolatéral (fibres directes). Insertions bord méd. descendent plus bas</td></tr>
+<tr><td class="muscle-name">Apex (sommet inf.)</td><td>Arrondi, extra-articulaire</td><td><strong>Ligament patellaire</strong> (= tendon patellaire)</td></tr>
+<tr><td class="muscle-name">Base (bord supérieur)</td><td>Mince et large, oblique en avant et en bas</td><td>D'arrière en avant : capsule · <strong>Vaste intermédiaire</strong> · Vaste médial + latéral · <strong>Droit fémoral</strong> (tout en avant)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🏥 Incidences pratiques</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">Rôle mécanique</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);">Bras de levier pour l'<strong>appareil extenseur</strong> du genou — augmente le bras de levier du quadriceps d'environ 30–50%. Surface anti-friction (cartilage) remplaçant avantageusement une simple bourse synoviale. Rôle de protection du cartilage articulaire fémoral.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon amber">⚠️</div><div class="card-title">Pathologies</div></div>
+<div class="card-body">
+<ul style="list-style:none;padding:0;font-size:13px;display:flex;flex-direction:column;gap:5px;">
+<li style="padding:5px 9px;background:var(--amber-100);border-radius:5px;border-left:2px solid var(--amber-500);">Fracture : choc direct (tableau de bord) ou contraction violente</li>
+<li style="padding:5px 9px;background:var(--coral-100);border-radius:5px;border-left:2px solid var(--coral-500);">Luxation patellaire → vers le <strong>dehors</strong> (joue lat. fémorale moins haute)</li>
+<li style="padding:5px 9px;background:var(--navy-100);border-radius:5px;border-left:2px solid var(--navy-400);">Syndrome fémoro-patellaire : désaxation · hyperpression cartilagineuse</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="background:var(--teal-50);border-left:4px solid var(--teal-400);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:8px;">
+<div style="font-weight:700;color:var(--teal-800);margin-bottom:10px;font-size:14px;">📌 À retenir absolument — Patella</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--teal-900);">
+<li>• Sésamoïde dans le tendon du Quadriceps · Orientation : apex en bas · joue large en dehors</li>
+<li>• Face post. : 2/3 sup. articulaires (trochlée fémorale) · Joue <strong>latérale</strong> plus large + concave que la médiale</li>
+<li>• Base → Quadriceps (4 chefs) · Apex → <strong>Ligament patellaire</strong></li>
+<li>• Bords : capsule + rétinaculum + vastes (méd./lat.) → stabilisateurs de la patella</li>
+<li>• Luxation → toujours en <strong>dehors</strong> (joue lat. fémorale plus haute → retient normalement)</li>
+</ul>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Ostéologie du membre inférieur Ch.3, IEOQ Année 1 · Kamina P. — Anatomie clinique, Maloine</cite></div>
+</section>
+<section class="section" id="osteo-tibia" style="display:none;">
+<div class="section-title">Ostéologie — Tibia</div>
+<div class="section-sub">Chapitre 4 · Ostéologie membre inférieur — Thomas Gautier D.O. · IEOQ Année 1 · TA2</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+    Os long, pair et non symétrique. Forme le squelette <strong>médial</strong> du segment jambier. Articulé en haut avec le fémur (interposition partielle des ménisques), en bas avec le talus, et aux deux niveaux avec la fibula. Orientation : en haut la plus grosse extrémité · en arrière la partie déjetée · en bas la malléole médiale.
+  </div>
+<div class="test-section-title">🔵 Extrémité supérieure</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Structure</th><th>Description</th><th>Insertions / Rôles</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Condyles tibiaux<small>(lat. &amp; méd.)</small></td><td>2 plateaux articulaires. Condyle méd. : plus grand, ovale. Condyle lat. : plus circulaire, plus concave. Surfaces encroûtées de cartilage hyalin avec ménisques interposés</td><td>Ménisques s'attachent par leurs cornes aux aires inter-condylaires</td></tr>
+<tr><td class="muscle-name">Éminence intercondylaire</td><td>Saillante entre les 2 surfaces — 2 tubercules (méd. + lat.)</td><td>LCA (aire inter-cond. antérieure) · LCP (aire inter-cond. postérieure)</td></tr>
+<tr><td class="muscle-name">Tubérosité tibiale</td><td>Saillie antérieure sur le corps — palpable sous le genou</td><td><strong>Ligament patellaire</strong> (tendon terminal du Quadriceps) · Maladie d'Osgood-Schlatter chez l'adolescent</td></tr>
+<tr><td class="muscle-name">Facette fibulaire supérieure</td><td>Face postéro-latérale du condyle lat. — plane</td><td>S'articule avec la tête fibulaire (art. tibio-fibulaire sup. — plane)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🟡 Corps tibial</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Face / Bord</th><th>Description &amp; Insertions clés</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Face médiale</td><td>Sous-cutanée, lisse, convexe. Patte d'oie (distal) : <strong>Sartorius</strong> + <strong>Gracile</strong> + <strong>Semi-tendineux</strong></td></tr>
+<tr><td class="muscle-name">Face latérale</td><td>Insertions <strong>Tibial antérieur</strong> (2/3 sup.) + Long extenseur des orteils + Long extenseur de l'hallux (proximal)</td></tr>
+<tr><td class="muscle-name">Face postérieure</td><td><strong>Ligne du soléaire</strong> (oblique de lat. en méd.) → Soléaire (au-dessus) · Tibial postérieur + FPD + FLH (en bas)</td></tr>
+<tr><td class="muscle-name">Bord antérieur<small>(crête tibiale)</small></td><td>Saillant, sous-cutané, palpable sur toute la longueur</td><td>—</td></tr>
+<tr><td class="muscle-name">Bord interosseux<small>(latéral)</small></td><td>Donne insertion à la <strong>membrane interosseuse</strong></td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🔴 Extrémité inférieure — Pilon tibial</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Structure</th><th>Description</th><th>Rôles</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Face inférieure<small>(pilon tibial)</small></td><td>Surface articulaire quadrangulaire, concave ant./post., légèrement convexe transv. Crête sagittale mousse divise en 2 versants. Secteur ~70°. Regarde en bas légèrement en avant</td><td>S'articule avec la trochlée du talus (art. talo-crurale)</td></tr>
+<tr><td class="muscle-name">Malléole médiale</td><td>Aplatie méd./lat. Face lat. (surface en virgule) → talus. Apex bifide. Bord post. : sillon tibial post. Bord ant. épais</td><td>LLI de la cheville (lig. deltoïde) + Tendon Tibial postérieur (sillon post.)</td></tr>
+<tr><td class="muscle-name">Incisure fibulaire</td><td>Face latérale — surface non cartilagineuse (syndesmose)</td><td>S'articule avec la malléole lat. (syndesmose tibio-fibulaire inf.)</td></tr>
+<tr><td class="muscle-name">Face postérieure<small>(extrémité inf.)</small></td><td>3 sillons parallèles obliques → 3 tendons profonds post.</td><td>De méd. en lat. : <strong>Tibial post.</strong> + <strong>Long fléchisseur orteils</strong> + <strong>Long fléchisseur hallux</strong></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="background:var(--teal-50);border-left:4px solid var(--teal-400);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:8px;">
+<div style="font-weight:700;color:var(--teal-800);margin-bottom:10px;font-size:14px;">📌 À retenir absolument — Tibia</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--teal-900);">
+<li>• Os médial de la jambe — porte ~85% des contraintes de transmission du poids</li>
+<li>• Tubérosité tibiale → <strong>Ligament patellaire</strong> (Osgood-Schlatter chez l'ado)</li>
+<li>• Patte d'oie (face méd.) : <strong>Sartorius + Gracile + Semi-tendineux</strong></li>
+<li>• Ligne du soléaire (face post.) → Soléaire (au-dessus)</li>
+<li>• Malléole médiale → LLI (deltoïde) en 4 faisceaux · sillon post. → Tibial postérieur</li>
+<li>• Face inf. pilon : crête sagittale divise surface articulaire talo-crurale</li>
+</ul>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Ostéologie du membre inférieur Ch.4, IEOQ Année 1 · Kamina P. — Anatomie clinique, Maloine</cite></div>
+</section>
+<section class="section" id="osteo-fibula" style="display:none;">
+<div class="section-title">Ostéologie — Fibula</div>
+<div class="section-sub">Chapitre 5 · Ostéologie membre inférieur — Thomas Gautier D.O. · IEOQ Année 1 · TA2</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+    Os long, pair et non symétrique. Forme la partie <strong>latérale</strong> du squelette jambier. Articulé en haut et en bas avec le tibia + avec le talus. Très fin — ne transmet qu'une petite partie des contraintes. Orientation : en bas la pointe (malléole lat.) · en dedans la facette articulaire · en arrière la petite fosse visible.
+  </div>
+<div class="test-section-title">🔵 Corps (diaphyse)</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Face</th><th>Insertions principales</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Face latérale</td><td>Moitié sup. : <strong>Long fibulaire</strong> (divisé en 2 par le N. fibulaire superficiel) · Moitié inf. : <strong>Court fibulaire</strong></td></tr>
+<tr><td class="muscle-name">Face médiale<small>(très étroite)</small></td><td>¼ sup. : Long extenseur des orteils (LEO) · ¼ moy.-sup. : LEO + Long extenseur hallux (LEH) · ¼ moy.-inf. : LEO · ¼ inf. : 3e fibulaire (inconstant)</td></tr>
+<tr><td class="muscle-name">Face postérieure</td><td>Crête verticale divise en 2 champs : méd. → <strong>Tibial postérieur</strong> (2/3 sup.) · lat. → <strong>Long fléchisseur hallux</strong> (milieu) + Soléaire (¼ sup.)</td></tr>
+<tr><td class="muscle-name">Bord interosseux<small>(médial)</small></td><td>Membrane interosseuse tibio-fibulaire · Bifurque en bas pour encadrer le champ fibulaire (syndesmose)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🟡 Extrémité supérieure &amp; Inférieure</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon teal">🔺</div><div class="card-title">Extrémité supérieure (tête fibulaire)</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:8px;">Facette articulaire plate (s'articule avec le tibia — art. tibio-fibulaire sup.). Tête fibulaire palpable sous le genou.</p>
+<ul style="list-style:none;padding:0;font-size:12.5px;display:flex;flex-direction:column;gap:4px;">
+<li style="padding:4px 8px;background:var(--teal-50);border-radius:4px;"><strong>LCF</strong> (lig. collatéral fibulaire du genou) → face lat. tête</li>
+<li style="padding:4px 8px;background:var(--navy-100);border-radius:4px;"><strong>Biceps fémoral</strong> → apex de la tête (stylïde)</li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon navy">🔻</div><div class="card-title">Extrémité inférieure (malléole latérale)</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:8px;">La partie mobile de la <strong>pince malléolaire</strong>. Aplatie méd./lat. Descend plus bas que la malléole médiale (env. 1 cm).</p>
+<ul style="list-style:none;padding:0;font-size:12.5px;display:flex;flex-direction:column;gap:4px;">
+<li style="padding:4px 8px;background:var(--teal-50);border-radius:4px;">Face méd. : facette articulaire → talus (art. talo-crurale)</li>
+<li style="padding:4px 8px;background:var(--navy-100);border-radius:4px;">Face post. : fosse malléolaire + sillon (tendons fibulaires)</li>
+<li style="padding:4px 8px;background:var(--amber-100);border-radius:4px;">LLE : LTFA + LCF + LTFP (insertions malléole lat.)</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="info-box amber" style="margin-bottom:20px;">
+<strong>Pince malléolaire :</strong> La fibula est la partie mobile de la pince tibio-fibulaire. La syndesmose tibio-fibulaire inférieure est une structure très importante stabilisant la pince lors des contraintes en torsion. Son atteinte (fracture de Maisonneuve, Danis-Weber C) impose souvent une stabilisation chirurgicale.
+  </div>
+<div style="background:var(--teal-50);border-left:4px solid var(--teal-400);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:8px;">
+<div style="font-weight:700;color:var(--teal-800);margin-bottom:10px;font-size:14px;">📌 À retenir absolument — Fibula</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--teal-900);">
+<li>• Os latéral grêle — support musculaire mais <strong>peu porteur</strong> (~15% des contraintes)</li>
+<li>• Tête fibulaire : LCF (genou) + Biceps fémoral · Palpable en distal de l'interligne genou</li>
+<li>• Face lat. corps : Long fibulaire (sup.) + Court fibulaire (inf.)</li>
+<li>• Malléole latérale : descend plus bas que la méd. · Partie mobile de la pince malléolaire</li>
+<li>• LLE s'insère sur la malléole latérale : LTFA (ant.) + LCF (lat.) + LTFP (post.)</li>
+</ul>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Ostéologie du membre inférieur Ch.5, IEOQ Année 1 · Kamina P. — Anatomie clinique, Maloine</cite></div>
+</section>
+<section class="section" id="osteo-tarse" style="display:none;">
+<div class="section-title">Ostéologie — Tarse</div>
+<div class="section-sub">Chapitre 6 · Ostéologie membre inférieur — Thomas Gautier D.O. · IEOQ Année 1 · TA2</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+<strong>7 os tarsiens</strong> répartis en 2 rangées : proximale (<strong>talus + calcanéum</strong>) et distale (<strong>naviculaire + cuboïde + 3 cunéiformes</strong>). Forme la partie postérieure et moyenne de la voûte plantaire. Construction compacte : chaque os est en contact avec plusieurs voisins.
+  </div>
+<div class="test-section-title">🔵 Talus (astragale)</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Face</th><th>Description</th><th>Rôles</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Face supérieure<small>(trochlée talaire)</small></td><td>Surface articulaire convexe ant./post., légèrement concave transv. Plus large en avant qu'en arrière. Répondant à la face inf. du tibia + malléoles</td><td>Art. talo-crurale (mortaise tibio-fibulaire + trochlée) — ginglyme</td></tr>
+<tr><td class="muscle-name">Face médiale</td><td>Surface en virgule (comma) → répond à la malléole méd. du tibia. Lig. deltoïde</td><td>Art. talo-crurale méd.</td></tr>
+<tr><td class="muscle-name">Face latérale</td><td>Surface triangulaire → malléole lat. fibulaire. En arr : empreinte LTFP</td><td>Art. talo-crurale lat. · LLE</td></tr>
+<tr><td class="muscle-name">Face inférieure</td><td>3 facettes articulaires (ant., moy., post.) pour le calcanéum. Séparées par le <strong>sinus du tarse</strong> (et son canal) — important repère clinique</td><td>Art. subtalaire (talocalcanéenne)</td></tr>
+<tr><td class="muscle-name">Face antérieure</td><td>Surface convexe → naviculaire</td><td>Art. talo-naviculaire (partie méd. de la transverse du tarse)</td></tr>
+<tr><td class="muscle-name">Face postérieure</td><td>Tubercule post. divisé par sillon du FLH (tendon). Processus post. lat. + méd.</td><td>LTFP · Os trigone (si persistance du processus post. lat.)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🟡 Calcanéum</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Face</th><th>Description &amp; Insertions clés</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Face supérieure</td><td>3 facettes pour le talus (post. → grande et convexe · moy. sur sustentaculum tali · ant. plane). <strong>Sinus du tarse</strong> sépare facettes post. et méd.-ant.</td></tr>
+<tr><td class="muscle-name">Face inférieure</td><td>Rugueuse. <strong>Tubérosité calcanéenne</strong> (bord post.) → Triceps sural (tendon calcanéen / d'Achille). Tubercules ant. : court fléchisseur orteils, abducteur hallux, abducteur petit orteil</td></tr>
+<tr><td class="muscle-name">Face latérale</td><td>Trochlée fibulaire (tubercule entre 2 sillons) : sillon sup. → Court fibulaire · sillon inf. → Long fibulaire · Empreinte LTFA + LCF cheville</td></tr>
+<tr><td class="muscle-name">Face médiale</td><td><strong>Sustentaculum tali</strong> (console osseuse soutenant le talus) : face sup. → facette talaire méd. · face inf. → sillon FLO · bord ant. → lig. calcanéo-naviculaire plantaire (spring ligament)</td></tr>
+<tr><td class="muscle-name">Face antérieure</td><td>Surface articulaire en selle → cuboïde (art. calcanéo-cuboïdienne)</td></tr>
+<tr><td class="muscle-name">Face postérieure</td><td>Insertion du <strong>tendon calcanéen (Achille)</strong> · Entre surface d'Achille et surface articulaire : bourse préachilléenne</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🟢 Naviculaire, Cuboïde &amp; Cunéiformes</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Os</th><th>Caractéristiques essentielles</th><th>Insertions clés</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Naviculaire<small>(scaphoïde du pied)</small></td><td>Placé entre talus (post.) et 3 cunéiformes (ant.). Présente le <strong>tubercule naviculaire</strong> sur sa face méd. — palpable</td><td>Tubercule : <strong>Tibial postérieur</strong> (insertion principale)</td></tr>
+<tr><td class="muscle-name">Cuboïde</td><td>Face inf. : <strong>gorge du long fibulaire</strong> (sillon oblique, transformé en canal par le rétinaculum). Face post. : calcanéum · Face ant. : M4-M5</td><td>Long fibulaire (passage dans sillon inf.) · Court fibulaire (face lat. base M5)</td></tr>
+<tr><td class="muscle-name">Cunéiforme médial<small>(1er)</small></td><td>Plus grand des 3. Répond à M1 et naviculaire. Insertion Tibial ant. (face méd. et plantaire) + Long fibulaire (face plantaire)</td><td>Tibial antérieur · Long fibulaire</td></tr>
+<tr><td class="muscle-name">Cunéiforme intermédiaire<small>(2e)</small></td><td>Plus petit. Encastré entre les 2 autres. Répond à M2</td><td>—</td></tr>
+<tr><td class="muscle-name">Cunéiforme latéral<small>(3e)</small></td><td>Répond à M3 et cuboïde</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div style="background:var(--teal-50);border-left:4px solid var(--teal-400);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:8px;">
+<div style="font-weight:700;color:var(--teal-800);margin-bottom:10px;font-size:14px;">📌 À retenir absolument — Tarse</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--teal-900);">
+<li>• Rangée prox. : <strong>Talus</strong> (dessus) + <strong>Calcanéum</strong> (dessous/arrière) · Rangée dist. : Naviculaire · Cuboïde · 3 Cunéiformes</li>
+<li>• <strong>Sinus du tarse</strong> : entre facettes talaires post. et méd./ant. — repère clinique palpable</li>
+<li>• <strong>Sustentaculum tali</strong> (face méd. calcanéum) : soutient le talus · sillon FLO · bord ant. = spring ligament</li>
+<li>• Trochlée fibulaire (face lat. calcanéum) : court fibulaire (sup.) + long fibulaire (inf.)</li>
+<li>• Tubercule naviculaire → <strong>Tibial postérieur</strong> (insertion principale)</li>
+<li>• Tendon calcanéen (Achille) → face post. calcanéum (tubérosité calcanéenne)</li>
+</ul>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Ostéologie du membre inférieur Ch.6, IEOQ Année 1 · Kamina P. — Anatomie clinique, Maloine</cite></div>
+</section>
+<section class="section" id="osteo-avantpied" style="display:none;">
+<div class="section-title">Ostéologie — Avant-pied</div>
+<div class="section-sub">Chapitre 7 · Ostéologie membre inférieur — Thomas Gautier D.O. · IEOQ Année 1 · TA2</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+    L'avant-pied est composé de la <strong>grille des 5 métatarsiens</strong> prolongés chacun par les phalanges de l'orteil correspondant (3 phalanges, 2 seulement pour l'hallux). Forme la partie antérieure de la voûte plantaire. 5 rayons quasi-parallèles (l'hallux n'est pas opposable comme le pouce).
+  </div>
+<div class="test-section-title">🔵 Les métatarsiens — Type général</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Partie</th><th>Description</th><th>Rôles / Insertions</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Corps</td><td>Grêle, triangulaire à la coupe. Légère torsion axiale (s'accentue de M2 vers M5). Face dorsale lisse (tendons extenseurs). Faces latérales → interosseux</td><td>Interosseux dorsaux (2 faisceaux par M) + Interosseux plantaires</td></tr>
+<tr><td class="muscle-name">Base</td><td>Volumineuse, prismatique triangulaire. Face post. : surface articulaire → tarse. Faces lat. : surfaces inter-métatarsiennes (sauf M1)</td><td>Insertions des muscles intrinsèques du pied + tendons extrinsèques</td></tr>
+<tr><td class="muscle-name">Tête</td><td>Surface articulaire ellipsoïde convexe → base P1 (type ellipsoïde). Plus étendue en plantaire qu'en dorsal. Tubercules lat. → ligaments collatéraux</td><td>Ligaments collatéraux MCP · Fibrocartilage plantaire</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🟡 Caractéristiques de chaque métatarsien</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead><tr><th>Os</th><th>Particularités</th><th>Insertions notables</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">M1<small>(1er métatarsien)</small></td><td>Trapu, massif, court. Corps sagittalement triangulaire. Face méd. sous-cutanée. Base réniforme → 1er cunéiforme (en selle = CMC1 du pied, mais pas équivalente CMC du pouce). Tête : crête sagittale plantaire + 2 sillons sésamoïdiens</td><td>Base inf. : <strong>Long fibulaire</strong> · Base méd. : <strong>Tibial antérieur</strong> · Sésamoïdes : FHB (court fléch. hallux)</td></tr>
+<tr><td class="muscle-name">M2<small>(2e métatarsien)</small></td><td>Le plus long. Base s'articule avec 3 os : Trapézoïde (méd.) + Cunéiforme méd. et int. (env.) → base enclavée → transmission des forces +++</td><td>Long extenseur + court extenseur de l'hallux (1er IOD méd.)</td></tr>
+<tr><td class="muscle-name">M3</td><td>Base articulée avec cunéiforme lat.</td><td>—</td></tr>
+<tr><td class="muscle-name">M4</td><td>Base articulée avec cuboïde (lat.) + cunéiforme lat. (méd.)</td><td>—</td></tr>
+<tr><td class="muscle-name">M5<small>(5e métatarsien)</small></td><td>Processus styloïde à sa base (tubérosité → palpable face lat.) — site de fracture fréquent (arrachement ou fracture de Jones)</td><td>Tubérosité M5 : <strong>Court fibulaire</strong> · Face méd. base M5 : <strong>Long fibulaire</strong> (débordement)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🟢 Les phalanges du pied</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header"><div class="card-icon teal">📐</div><div class="card-title">Phalange type</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:8px;">Chaque phalange : <strong>base</strong> (articulaire MCP ou IFP) + <strong>corps</strong> + <strong>tête</strong> (P1 et P2 trochléennes → IFP et IFD) ou tubérosité unguale (P3).</p>
+<div class="info-box teal" style="font-size:12.5px;">Hallux : 2 phalanges seulement (P1 + P2 distale). Orteils 2-5 : 3 phalanges (P1 + P2 + P3). P3 porte la tubérosité unguale.</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header"><div class="card-icon navy">🏥</div><div class="card-title">Points cliniques avant-pied</div></div>
+<div class="card-body">
+<ul style="list-style:none;padding:0;font-size:13px;display:flex;flex-direction:column;gap:5px;">
+<li style="padding:5px 9px;background:var(--coral-100);border-radius:5px;border-left:2px solid var(--coral-500);">Fracture styloïde M5 : arrachement (inversion + contraction Court fibulaire) ou fracture de Jones (métaphyse-diaphyse)</li>
+<li style="padding:5px 9px;background:var(--amber-100);border-radius:5px;border-left:2px solid var(--amber-500);">Hallux valgus : déviation latérale P1 + varus M1 + exostose méd. tête M1</li>
+<li style="padding:5px 9px;background:var(--navy-100);border-radius:5px;border-left:2px solid var(--navy-400);">Fractures métatarsiennes de fatigue : M2 et M3 les plus fréquentes (marche)</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="background:var(--teal-50);border-left:4px solid var(--teal-400);border-radius:0 10px 10px 0;padding:16px 18px;margin-bottom:8px;">
+<div style="font-weight:700;color:var(--teal-800);margin-bottom:10px;font-size:14px;">📌 À retenir absolument — Avant-pied</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--teal-900);">
+<li>• 5 métatarsiens + 14 phalanges (2 pour l'hallux, 3 pour chaque autre orteil)</li>
+<li>• <strong>M1</strong> : trapu, sésamoïdes (FHB) · Base : Long fibulaire + Tibial antérieur</li>
+<li>• <strong>M2</strong> : le plus long, base enclavée dans 3 os tarsiens → transmission des forces</li>
+<li>• <strong>M5</strong> : processus styloïde → Court fibulaire · Fracture de Jones = jonction méta-diaphysaire</li>
+<li>• Axe anatomique du pied = <strong>2e rayon</strong> (comme l'axe main = 3e rayon)</li>
+</ul>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Ostéologie du membre inférieur Ch.7, IEOQ Année 1 · Kamina P. — Anatomie clinique, Maloine</cite></div>
+</section>
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["osteo-clavicule", "osteo-scapula", "osteo-humerus", "osteo-ulna-radius", "osteo-main", "osteo-coxal", "osteo-femur", "osteo-patella", "osteo-tibia", "osteo-fibula", "osteo-tarse", "osteo-avantpied"];
+  var SUB_LABELS_LOCAL = {"osteo-clavicule": "🦴 MS · Clavicule (Ch.1)", "osteo-scapula": "🦴 MS · Scapula (Ch.2)", "osteo-humerus": "🦴 MS · Humérus (Ch.3)", "osteo-ulna-radius": "🦴 MS · Ulna & Radius (Ch.4)", "osteo-main": "🦴 MS · Os de la main (Ch.5)", "osteo-coxal": "🦴 MI · Os coxal (Ch.1)", "osteo-femur": "🦴 MI · Fémur (Ch.2)", "osteo-patella": "🦴 MI · Patella (Ch.3)", "osteo-tibia": "🦴 MI · Tibia (Ch.4)", "osteo-fibula": "🦴 MI · Fibula (Ch.5)", "osteo-tarse": "🦴 MI · Tarse (Ch.6)", "osteo-avantpied": "🦴 MI · Avant-pied (Ch.7)"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>

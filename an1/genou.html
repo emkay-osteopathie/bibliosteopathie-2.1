@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 1 · Genou</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(1);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🦵</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 1ère Année</h1>
+      <p>Genou — IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="index.html">← Catégories</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><strong>Genou</strong> <span id="crumbSub">› 📖 Biomécanique</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="biomec-genou" onclick="showSub('biomec-genou')">📖 Biomécanique</button><button type="button" class="nav-tab" data-sub="arthro-genou" onclick="showSub('arthro-genou')">🦴 Arthrologie genou</button><button type="button" class="nav-tab" data-sub="tests-genou" onclick="showSub('tests-genou')">🩺 Tests orthopédiques</button><button type="button" class="nav-tab" data-sub="tech-genou" onclick="showSub('tech-genou')">🔧 Techniques structurelles</button><a class="nav-tab tab-link" href="transversal.html#ott-genou-anchor">🏥 Critères d'Ottawa <span class="ext-icon">↗</span></a>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="biomec-genou" style="display:block;">
+<div class="section-title">Biomécanique du Genou</div>
+<div class="section-sub">Cours 1ère année — P. César, IEOQ 2024 · Anatomie, cinématique, structures ligamentaires &amp; méniscales</div>
+<!-- ── 1. Rappels anatomiques ── -->
+<div class="test-section-title">🔬 1 — Rappels anatomiques</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<p style="margin-bottom:10px;">Le complexe du genou est l'articulation intermédiaire du membre inférieur, composé de <strong>3 os</strong> et <strong>2 articulations</strong> :</p>
+<div class="grid-2" style="gap:12px;margin-bottom:14px;">
+<div class="info-box teal">
+<strong>Articulation fémoro-tibiale</strong> (bi-condylienne)<br/>
+            Condyles fémoraux ↔ Glénes tibiales (interne et externe)<br/>
+<span style="font-size:12px;color:var(--gray-500);">Même enceinte capsulo-synoviale que l'art. fémoro-patellaire</span>
+</div>
+<div class="info-box teal">
+<strong>Articulation fémoro-patellaire</strong><br/>
+            Facettes médiale et latérale de la patella ↔ Trochlée fémorale<br/>
+<span style="font-size:12px;color:var(--gray-500);">Même enceinte capsulo-synoviale que l'art. fémoro-tibiale</span>
+</div>
+</div>
+<div class="info-box amber">
+<strong>Articulation tibio-fibulaire supérieure</strong> (syndesmose) — entre tibia et fibula.<br/>
+          Communication capsulaire avec la fémoro-tibiale dans ~10 % des cas.
+        </div>
+<div class="divider"></div>
+<h3 class="sub">Degrés de liberté</h3>
+<table class="rom-table" style="margin-top:8px;">
+<thead><tr><th>Degré</th><th>Mouvement</th><th>Condition</th></tr></thead>
+<tbody>
+<tr><td><strong>1er (principal)</strong></td><td>Flexion / Extension</td><td>Toujours disponible</td></tr>
+<tr><td><strong>2e (secondaire)</strong></td><td>Rotation axiale</td><td>Genou en flexion uniquement</td></tr>
+<tr><td><strong>Mineurs</strong></td><td>Mouvements en latéralité</td><td>Genou déverouillé à 30°</td></tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin-top:12px;">
+<strong>Deux impératifs contradictoires :</strong><br/>
+<strong>Mobilité</strong> — bonne amplitude (plan sagittal, orientation du pied au terrain)<br/>
+<strong>Stabilité</strong> — dispersion des forces gravitationnelles (verrouillage) pour protéger les tissus mous
+        </div>
+</div>
+</div>
+<!-- ── 2. Caractéristiques articulaires ── -->
+<div class="test-section-title">📐 2 — Caractéristiques articulaires &amp; axes</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<h3 class="sub">Axes articulaires</h3>
+<table class="rom-table">
+<thead><tr><th>Axe</th><th>Orientation</th><th>Mouvement</th></tr></thead>
+<tbody>
+<tr><td><strong>Transversal (1er DDL)</strong></td><td>Aux travers des condyles fémoraux</td><td>Flexion / Extension</td></tr>
+<tr><td><strong>Longitudinal (2e DDL)</strong></td><td>Axe de la jambe</td><td>Rotations (genou fléchi)</td></tr>
+</tbody>
+</table>
+<h3 class="sub" style="margin-top:14px;">Mouvements mineurs (genou en légère flexion)</h3>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Translation antéro-postérieure</strong> 5 à 10 mm</div>
+<div class="synergy-item"><strong>Translation médio-latérale</strong> 1 à 2 mm</div>
+<div class="synergy-item"><strong>Compression / Distraction</strong></div>
+</div>
+<div class="divider"></div>
+<h3 class="sub">Axe mécanique du membre inférieur</h3>
+<p style="font-size:13.5px;">Passe par la <strong>tête fémorale → centre du genou → centre de la cheville</strong>. L'axe longitudinal de la diaphyse fémorale diverge de 6° par rapport à l'axe mécanique.</p>
+<div class="info-box amber" style="margin-top:10px;">
+<strong>Valgus physiologique :</strong> Angle obtus ouvert entre le fût fémoral et l'axe jambier = <strong>170 à 175°</strong>.<br/>
+          • <strong>Genu varum</strong> : angle &gt; 175° → surcharge compartiment fémoro-tibial <em>interne</em><br/>
+          • <strong>Genu valgum</strong> : angle &lt; 170° → surcharge compartiment fémoro-tibial <em>externe</em><br/>
+          Conséquence à long terme : usure prématurée et arthrose.
+        </div>
+<div class="divider"></div>
+<h3 class="sub">Torsions osseuses</h3>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Fémur</strong> Torsion axiale en rotation interne de <strong>30°</strong> (antéversion du col)</div>
+<div class="synergy-item"><strong>Tibia</strong> Torsion de <strong>25°</strong> en rotation externe</div>
+</div>
+</div>
+</div>
+<!-- ── 3. Mouvements ── -->
+<div class="test-section-title">🔄 3 — Mouvements</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="grid-2" style="gap:12px;margin-bottom:14px;">
+<div class="info-box teal"><strong>Position de référence</strong><br/>Zéro anatomique : debout, genou en extension</div>
+<div class="info-box teal"><strong>Position fonctionnelle (repos)</strong><br/>Genou déverouillé à <strong>30° de flexion</strong> + rotation latérale</div>
+</div>
+<h3 class="sub">Plan sagittal — Flexion / Extension</h3>
+<table class="rom-table">
+<thead><tr><th>Mouvement</th><th>Amplitude</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Flexion passive</td><td><span class="rom-val">150°</span></td><td>Plus importante si hanche fléchie (muscles biarticulaires détendus)</td></tr>
+<tr><td>Flexion active</td><td><span class="rom-val">120–140°</span></td><td>Toujours couplée à une rotation automatique</td></tr>
+<tr><td>Hyperextension</td><td><span class="rom-val">0–10°</span></td><td>Essentiellement passif</td></tr>
+</tbody>
+</table>
+<h3 class="sub" style="margin-top:14px;">Plan frontal — Rotations axiales</h3>
+<table class="rom-table">
+<thead><tr><th>Rotation</th><th>Amplitude</th></tr></thead>
+<tbody>
+<tr><td>Rotation médiale</td><td><span class="rom-val">30°</span></td></tr>
+<tr><td>Rotation latérale</td><td><span class="rom-val">40°</span></td></tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin-top:10px;">
+<strong>Matsumoto et coll. (2000) — Rotation totale selon le degré de flexion :</strong><br/>
+          À 0° = 8° · À 30° = 32° (position de repos) · À 90° = 25°
+        </div>
+<div class="divider"></div>
+<h3 class="sub">Rotation axiale automatique (involontaire)</h3>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Extension</strong> couplée à une <strong>rotation latérale</strong> automatique</div>
+<div class="synergy-item"><strong>Flexion</strong> couplée à une <strong>rotation médiale</strong> automatique</div>
+</div>
+<p style="font-size:13px;margin-top:8px;color:var(--text2);">Lieu principal : fin d'extension et début de flexion. Due à la différence de roulement entre condyle interne (jusqu'à 15°) et condyle externe (jusqu'à 20°).</p>
+</div>
+</div>
+<!-- ── 4–5. Surfaces articulaires ── -->
+<div class="test-section-title">🦴 4–5 — Surfaces articulaires &amp; cinématique condylaire</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<h3 class="sub">Condyles fémoraux</h3>
+<table class="muscle-table">
+<thead><tr><th>Condyle</th><th>Particularités</th><th>Surface articulaire</th></tr></thead>
+<tbody>
+<tr>
+<td class="muscle-name">Médial (interne)</td>
+<td>Plus étroit transversalement · Plus bas que le latéral · Grand diamètre AP</td>
+<td>Arc circulaire décroissant : portion antérieure → extension · portion postérieure → flexion</td>
+</tr>
+<tr>
+<td class="muscle-name">Latéral (externe)</td>
+<td>Plus large transversalement · Instable sur la glène convexe ("dos d'âne")</td>
+<td>Arc circulaire décroissant plus marqué · Petite portion antérieure (extension) · Grande portion postérieure (flexion)</td>
+</tr>
+</tbody>
+</table>
+<h3 class="sub" style="margin-top:14px;">Glènes (plateaux) tibiales</h3>
+<table class="muscle-table">
+<thead><tr><th>Glène</th><th>Forme</th><th>Stabilité</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Médiale</td><td>Concave dans les deux sens</td><td>Condyle médial relativement stable</td></tr>
+<tr><td class="muscle-name">Latérale</td><td>Convexe sagittalement, concave transversalement</td><td>Condyle latéral instable — dépend du LCA</td></tr>
+</tbody>
+</table>
+<div class="info-box amber" style="margin-top:10px;">La concordance des surfaces est <strong>améliorée grâce aux ménisques</strong> (rayons de courbure des condyles ≠ des glènes).
+        </div>
+<div class="divider"></div>
+<h3 class="sub">Roulement + glissement condylaire</h3>
+<div class="info-box teal">
+          Le condyle se déplace comme <em>une roue qui roule et glisse simultanément</em>. En flexion extrême, le glissement domine ; au début de flexion, le roulement domine.
+        </div>
+<table class="rom-table" style="margin-top:10px;">
+<thead><tr><th>Chaîne</th><th>Mouvement</th><th>Roulement</th><th>Glissement</th><th>Rotation auto.</th></tr></thead>
+<tbody>
+<tr><td rowspan="2"><strong>Fermée</strong><br/><small>tibia fixe, fémur libre</small></td><td>Flexion</td><td>Condyles → postérieur</td><td>Condyles → antérieur</td><td>Médiale</td></tr>
+<tr><td>Extension</td><td>Condyles → antérieur</td><td>Condyles → postérieur</td><td>Latérale</td></tr>
+<tr><td rowspan="2"><strong>Ouverte</strong><br/><small>fémur fixe, tibia libre</small></td><td>Flexion</td><td>Tibia → postérieur</td><td>Tibia → antérieur</td><td>Médiale</td></tr>
+<tr><td>Extension</td><td>Tibia → antérieur</td><td>Tibia → antérieur</td><td>Latérale</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- ── 6–7. Capsule & bourses ── -->
+<div class="test-section-title">🏺 6–7 — Capsule articulaire &amp; bourses séreuses</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<h3 class="sub">Capsule articulaire</h3>
+<table class="muscle-table">
+<thead><tr><th>Face</th><th>Caractéristiques</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Antérieure</td><td>Cul-de-sac subquadricipital avec rétinacula médial et latéral · Se confond avec vaste interne/externe · Muscle fémoral prévient le pincement en extension</td></tr>
+<tr><td class="muscle-name">Latérale</td><td>Descend sur le tendon du poplité (insertion <strong>intra-capsulaire</strong>) · Séparée du LCF par structures adipeuses et neuro-vasculaires</td></tr>
+<tr><td class="muscle-name">Médiale</td><td>S'épaissit entre condyle et ménisque → partie profonde du LCT</td></tr>
+<tr><td class="muscle-name">Postérieure</td><td>Plus épaisse → <strong>coques condyliennes</strong> · Renforcée par le ligament poplité oblique (semi-membraneux)</td></tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin-top:10px;">
+<strong>Membrane synoviale :</strong> Tapisse l'intérieur de la capsule. Rend les ligaments croisés extra-synoviaux. Des replis forment les <strong>plicas</strong>. Position de capacité maximale = <strong>demi-flexion</strong> (position instinctive en épanchement).
+        </div>
+<div class="divider"></div>
+<h3 class="sub">Bourses séreuses</h3>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>4 bourses antérieures</strong><br/>Supra-, pré- et infra-patellaires</div>
+<div class="synergy-item"><strong>Bourses postérieures</strong><br/>Kyste de Baker (semi-membraneux + gastrocnémien) : associé dans 70–84 % à déchirures méniscales médiales</div>
+</div>
+</div>
+</div>
+<!-- ── 8. Ménisques ── -->
+<div class="test-section-title">⭕ 8 — Les ménisques</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:12px;">
+<strong>Rôles :</strong> Stabilité · Lubrification articulaire · Proprioception · Transfert de charge · Absorption des chocs
+        </div>
+<p style="font-size:13.5px;margin-bottom:10px;"><strong>Structure :</strong> Fibro-cartilage · Plus épais en périphérie qu'au centre · 72 % d'eau · 90 % de collagènes · Forme de croissant (corne antérieure + corne postérieure) · Face supérieure concave.</p>
+<table class="muscle-table">
+<thead><tr><th>Ménisque</th><th>Forme</th><th>Fixations principales</th><th>Particularités</th></tr></thead>
+<tbody>
+<tr>
+<td class="muscle-name">Médial (C)<br/><small>Mémo : "OE IC" — C interne</small></td>
+<td>Forme en C</td>
+<td>Corne ant. → surface préspinale (freins méniscaux ant.)<br/>Corne post. → surface rétrospinale (freins méniscaux post., PAPI)</td>
+<td>Adhérent à la capsule · Solidarisé au LCT par ses fibres profondes · Ligt ménisco-patellaire (transverse) · Ligt ménisco-membraneux (semi-membraneux)</td>
+</tr>
+<tr>
+<td class="muscle-name">Latéral (O)<br/><small>Mémo : "OE IC" — O externe</small></td>
+<td>Forme en O · Couvre 75 % de la surface</td>
+<td>Corne ant. → en avant du tubercule externe<br/>Corne post. → en arrière du tubercule externe (PAPE)</td>
+<td>Séparé du LCF par le tendon du poplité (ligt ménisco-poplité) · Ligt ménisco-fémoral sur LCP</td>
+</tr>
+</tbody>
+</table>
+<div class="divider"></div>
+<h3 class="sub">Déplacements méniscaux — Flexion/Extension</h3>
+<table class="rom-table">
+<thead><tr><th>Mouvement</th><th>Ménisques</th><th>Facteur passif</th><th>Facteur actif</th></tr></thead>
+<tbody>
+<tr><td>Extension</td><td>Poussés en <strong>antérieur</strong></td><td>Poussée condylaire</td><td>Rétinaculums patellaires · Ligt ménisco-fémoral (corne post. latéral)</td></tr>
+<tr><td>Flexion</td><td>Poussés en <strong>postérieur</strong></td><td>Poussée condylaire (externe &gt; interne)</td><td>Semi-membraneux (ménisque médial) · Poplité (ménisque latéral) · Fibres LCA (corne ant. médial)</td></tr>
+</tbody>
+</table>
+<h3 class="sub" style="margin-top:14px;">Déplacements méniscaux — Rotation axiale</h3>
+<table class="rom-table">
+<thead><tr><th>Rotation tibiale</th><th>Ménisque externe</th><th>Ménisque médial</th></tr></thead>
+<tbody>
+<tr><td><strong>Externe (latérale)</strong></td><td>Déplacement en avant</td><td>Déplacement en arrière</td></tr>
+<tr><td><strong>Interne (médiale)</strong></td><td>Déplacement en arrière</td><td>Déplacement en avant</td></tr>
+</tbody>
+</table>
+<div class="info-box coral" style="margin-top:10px;">
+          La plupart des lésions méniscales surviennent lorsque les ménisques <strong>ne suivent pas</strong> le mouvement des condyles → ruptures transversales, désinsertions, fissurations.
+        </div>
+</div>
+</div>
+<!-- ── 9. Patella ── -->
+<div class="test-section-title">🔵 9 — La patella</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<p style="font-size:13.5px;margin-bottom:10px;">Os sésamoïde triangulaire, articulaire avec les facettes médiale et latérale des condyles fémoraux. Glisse dans le sillon de la trochlée fémorale (plan sagittal).</p>
+<table class="rom-table" style="margin-bottom:12px;">
+<thead><tr><th>Position du genou</th><th>Contact patella / trochlée</th></tr></thead>
+<tbody>
+<tr><td>Extension complète</td><td>Pas de contact (patella au-dessus et latérale)</td></tr>
+<tr><td>10–20° de flexion</td><td>Contact partie inférieure</td></tr>
+<tr><td>30–60°</td><td>Contact partie centrale</td></tr>
+<tr><td>60–90°</td><td>Contact tiers supérieur</td></tr>
+<tr><td>&gt; 90°</td><td>Contact de l'<em>odd facet</em></td></tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin-bottom:10px;">
+<strong>Rôles de la patella :</strong> Augmente l'efficacité du quadriceps de <strong>50 %</strong> (bras de levier) · Agit comme une poulie excentrique · Distribue les charges compressives · Protège la face antérieure du genou.
+        </div>
+<div class="info-box amber">
+<strong>Force compressive max :</strong> 60–90° de flexion. En fin d'extension : force compressive nulle, voire inverse → la patella tend à être chassée en dehors (angle Q).<br/>
+<strong>Luxation récidivante :</strong> Aggravée par genu valgum augmenté, déficience du vaste interne, malformation de la joue externe condylaire.
+        </div>
+<h3 class="sub" style="margin-top:12px;">Stabilisation de la patella</h3>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Rétinaculum latéral</strong><br/>Ligt fémoro-patellaire latéral + capsule + fibres vaste externe</div>
+<div class="synergy-item"><strong>Rétinaculum médial</strong><br/>Ligt fémoro-patellaire médial + capsule + ligt ménisco-patellaire + fibres vaste interne</div>
+<div class="synergy-item"><strong>Tendon quadricipital</strong></div>
+<div class="synergy-item"><strong>Tendon patellaire</strong></div>
+</div>
+</div>
+</div>
+<!-- ── 10. Stabilité transversale ── -->
+<div class="test-section-title">↔️ 10 — Stabilité transversale (frontale)</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:12px;">Ligaments collatéraux <strong>tendus en extension, détendu en flexion +++</strong></div>
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub">Stabilité médiale</h3>
+<div class="path-card">
+<h4>Ligament collatéral tibial (LCT)</h4>
+<ul>
+<li>Origine : épicondyle médial du fémur (tubercule adducteur)</li>
+<li>Insertion : surface médio-post. du tibia (en arrière de la patte d'oie)</li>
+<li>Direction : bas et avant · Environ 8 cm · Très large</li>
+<li>Fibres profondes attachées au ménisque médial</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Éléments actifs médials</h4>
+<ul>
+<li>Muscles de la <strong>patte d'oie</strong> : sartorius, semi-tendineux, gracile</li>
+<li>Vaste interne (fibres directes et croisées)</li>
+</ul>
+</div>
+</div>
+<div>
+<h3 class="sub">Stabilité latérale</h3>
+<div class="path-card">
+<h4>Ligament collatéral fibulaire (LCF)</h4>
+<ul>
+<li>Origine : épicondyle fémoral · Insertion : tête de la fibula (post. et inf.)</li>
+<li>Rond comme un crayon · Oblique en bas et arrière</li>
+<li>Efficacité max entre <strong>0 et 30°</strong> · Relâché en flexion</li>
+<li><strong>N'est PAS attaché au ménisque latéral</strong> (séparé par le tendon du poplité = PAPE)</li>
+<li>Lésions isolées rares, souvent associées au point d'angle postéro-latéral</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Tractus ilio-tibial (activo-passif)</h4>
+<ul>
+<li>Formé du fascia de : tenseur fascia lata + moyen fessier + grand fessier</li>
+<li>Insertion : tubercule de Gerdy</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ── 11. Stabilité antéro-postérieure ── -->
+<div class="test-section-title">↕️ 11 — Stabilité antéro-postérieure &amp; verrouillage</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="info-box amber" style="margin-bottom:12px;">
+<strong>En hyperextension :</strong> les éléments capsulo-ligamentaires postérieurs limitent l'extension → station debout sans quadriceps = <strong>verrouillage du genou</strong>.<br/>
+<strong>En rectitude / légère flexion :</strong> poids du corps en arrière de l'axe → le quadriceps doit se contracter pour maintenir la station debout.
+        </div>
+<div class="grid-2" style="gap:14px;">
+<div class="path-card">
+<h4>Éléments passifs postérieurs</h4>
+<ul>
+<li>Capsule postérieure + coques condyliennes</li>
+<li><strong>Ligt poplité arqué</strong> (en Y, côté latéral) — branche lat. → fabella, branche méd. → arcade du poplité</li>
+<li><strong>Ligt poplité oblique</strong> (Winslow) — faisceau récurrent du semi-membraneux → coque condylienne externe</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Éléments actifs postérieurs</h4>
+<ul>
+<li>Muscles de la patte d'oie</li>
+<li>Biceps fémoral</li>
+<li>Tractus ilio-tibial</li>
+<li>Muscles jumeaux</li>
+<li>Quadriceps</li>
+</ul>
+</div>
+</div>
+<div class="info-box teal" style="margin-top:10px;">En extension, se tendent simultanément : LCT, LCF, LCP et LCA (dans l'hyperextension).</div>
+</div>
+</div>
+<!-- ── 12. Ligaments croisés ── -->
+<div class="test-section-title">✂️ 12 — Ligaments croisés</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub">LCA — Ligament Croisé Antérieur</h3>
+<div class="path-card">
+<h4>Anatomie</h4>
+<ul>
+<li><strong>Origine :</strong> aire intercondylaire antérieure du tibia (en arrière de la corne ant. du ménisque médial)</li>
+<li><strong>Trajet :</strong> haut, arrière, dehors</li>
+<li><strong>Insertion :</strong> face postéro-médiale du condyle fémoral latéral</li>
+<li>Intra-capsulaire, extra-synovial</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Faisceaux</h4>
+<ul>
+<li><strong>Faisceau antéro-médial :</strong> plus tendu en flexion</li>
+<li><strong>Faisceau postéro-latéral :</strong> plus tendu en extension</li>
+<li><strong>Fibres intermédiaires :</strong> portion tendue pendant toute l'amplitude</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Fonctions</h4>
+<ul>
+<li><strong>Principale :</strong> limite la translation antérieure du tibia (max à 30° de flexion)</li>
+<li>Limite le valgus</li>
+<li>Limite la rotation interne du tibia sous le fémur</li>
+<li>Limite la rotation interne (avec le LCP, genou en extension)</li>
+</ul>
+</div>
+</div>
+<div>
+<h3 class="sub">LCP — Ligament Croisé Postérieur</h3>
+<div class="path-card">
+<h4>Faisceaux</h4>
+<ul>
+<li><strong>Bande antéro-latérale :</strong> plus tendue en flexion</li>
+<li><strong>Bande postéro-médiale :</strong> plus tendue en extension (et flexion extrême)</li>
+<li><strong>Ligt ménisco-fémoral :</strong> s'attache à la corne post. du ménisque latéral (ligaments de Wrisberg et Humphrey)</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Fonctions</h4>
+<ul>
+<li><strong>Principale :</strong> limite la translation postérieure du tibia</li>
+<li>Limite la rotation interne (avec le LCA)</li>
+<li>Freine l'avancée du condyle interne (flexion → extension) — couplé au LCF</li>
+<li>Contrainte max à <strong>90° de flexion</strong></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="info-box teal" style="margin-top:10px;">
+<strong>Rotation automatique latérale (vis-à-vis) :</strong> LCA freine l'avancée du condyle externe (fl→ext) couplé au LCT sur le condyle interne. LCP freine l'avancée du condyle interne, couplé au LCF qui freine le condyle externe → les deux ligaments s'enroulent l'un sur l'autre en rotation interne.
+        </div>
+</div>
+</div>
+<!-- ── 13. Tibio-fibulaire proximale ── -->
+<div class="test-section-title">🔩 13 — Articulation tibio-fibulaire proximale</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<p style="font-size:13.5px;margin-bottom:10px;"><strong>Type :</strong> Articulation plane.</p>
+<div class="grid-2" style="gap:12px;margin-bottom:12px;">
+<div class="info-box teal">
+<strong>Surface tibiale :</strong> Sur la surface postéro-inféro-latérale du condyle tibial latéral · Facette petite, plane, circulaire · Regarde en arrière, bas et dehors.
+          </div>
+<div class="info-box teal">
+<strong>Surface fibulaire :</strong> Extrémité proximale élargie · Processus styloïde élancé vers le haut · Surface plane et circulaire · Orientée en dedans, avant et en haut.
+          </div>
+</div>
+<div class="synergy-grid" style="margin-bottom:12px;">
+<div class="synergy-item"><strong>Fonctions</strong><br/>Dissiper les forces en torsion à la cheville · Dissiper le fluage du tibia en latéral · Absorber les charges de traction</div>
+<div class="synergy-item"><strong>Renforts capsulaires</strong><br/>Ligt antérieur tibio-fibulaire supérieur · Ligt postérieur tibio-fibulaire supérieur · Membrane interosseuse · LCF · Ligt poplité arqué · Biceps fémoral</div>
+</div>
+<h3 class="sub">Biomécanique couplée</h3>
+<table class="rom-table">
+<thead><tr><th>Mouvement</th><th>Déplacement tête fibulaire</th><th>Mécanisme</th></tr></thead>
+<tbody>
+<tr><td>Flexion genou</td><td>→ <strong>Postérieur</strong></td><td>Traction du biceps fémoral (LCF détendu)</td></tr>
+<tr><td>Extension genou</td><td>→ <strong>Antérieur</strong></td><td>Tension du LCF en extension</td></tr>
+<tr><td>Flexion dorsale cheville</td><td>Translation antéro-latérale + supérieure</td><td>—</td></tr>
+<tr><td>Flexion plantaire cheville</td><td>Translation postéro-médiale + inférieure</td><td>—</td></tr>
+</tbody>
+</table>
+<div class="info-box amber" style="margin-top:10px;">
+          Il existe une controverse concernant la rotation de la fibula lors des mouvements de flexion/extension de cheville, en raison des variations anatomiques des surfaces articulaires.
+        </div>
+</div>
+</div>
+<div class="footnote">
+<cite>Source : Biomécanique du Genou — Cours 1ère année, P. César, IEOQ 2024 · Kapandji IA (T.2) · Matsumoto et coll. (2000) · Rupp (2002)</cite>
+</div>
+</section>
+<section class="section" id="arthro-genou" style="display:none;">
+<div class="section-title">Arthrologie — Articulation du genou</div>
+<div class="section-sub">Thomas Gautier D.O. · IEOQ Année 1 — Fémoro-patellaire, fémoro-tibiale, ménisques &amp; système ligamentaire</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+      Le genou est composé de <strong>2 articulations au sein d'une même poche articulaire</strong> : la fémoro-patellaire et la fémoro-tibiale. Elles sont indissociables anatomiquement et fonctionnellement. L'articulation tibio-fibulaire supérieure, bien que située à la région du genou, est fonctionnellement liée à la cheville (un blocage retentit sur la cheville, non sur le genou).
+    </div>
+<!-- ÉLÉMENTS EN PRÉSENCE -->
+<div class="test-section-title">🦴 1 — Éléments en présence (4)</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">Surfaces articulaires — Fémur</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Surface</th><th>Situation</th><th>Répond à</th><th>Type</th><th>Forme / Caractéristiques</th><th>Regarde</th></tr></thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Trochlée fémorale<small>(surface patellaire)</small></div></td>
+<td>Face ant. extrémité inf. du fémur</td>
+<td>Face post. de la patella</td>
+<td><span class="tag tag-teal">Ginglyme</span></td>
+<td>Poulie pleine transversale — 1 gorge sagittale + 2 joues. Joue latérale = plus haute, plus large, plus saillante.</td>
+<td>En avant</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Condyles fémoraux<small>(×2)</small></div></td>
+<td>Faces inf. et post. des condyles</td>
+<td>Ménisque + condyle tibial correspondants</td>
+<td><span class="tag tag-teal">Bicondylaire</span></td>
+<td>Portion de tore à grand axe antéro-post. Condyle médial : oblique en avt et en dh., plus étroit et plus long. Condyle latéral : sagittal, plus large et moins long.</td>
+<td>En bas et en arrière</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon navy">🦴</div><div class="card-title">Surfaces articulaires — Tibia, Patella &amp; Ménisques</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Structure</th><th>Situation</th><th>Répond à</th><th>Type</th><th>Forme / Caractéristiques</th><th>Regarde</th></tr></thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Condyles tibiaux<small>(×2 surfaces)</small></div></td>
+<td>Face sup. des 2 condyles tibiaux (plateau tibial)</td>
+<td>Ménisque correspondant (périphérie) ; condyle fémoral correspondant (reste)</td>
+<td><span class="tag tag-teal">Bicondylaire</span></td>
+<td>Ovalaire, relevée bord axial. Médiale : oblique en avt/dh., concave en tous sens, plus étroite et plus longue. Latérale : sagittale, convexe sagittalement et plane/légèrement concave transversalement, plus large et moins longue.</td>
+<td>En haut</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Patella</div></td>
+<td>Face postérieure de la patella</td>
+<td>Trochlée fémorale</td>
+<td><span class="tag tag-teal">Ginglyme</span></td>
+<td>Grossièrement quadrangulaire, concave verticalement. Séparée en 2 joues par une crête verticale. Joue latérale : plus large, légèrement concave de dh. en dh. Joue médiale : plus étroite, légèrement convexe.</td>
+<td>En arrière</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Ménisques<small>(fibro-cartilages ×2)</small></div></td>
+<td>Bords périphériques des condyles tibiaux</td>
+<td>Condyle fémoral correspondant (face sup.) ; condyle tibial (face inf.)</td>
+<td>—</td>
+<td>En croissant, triangulaires à la coupe. Face périphérique adhérente à la capsule. Face axiale encroûtée de cartilage hyalin. <strong>Médial (C) :</strong> plus étroit et plus long. <strong>Latéral (O) :</strong> plus large et moins long.</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin-top:12px;">
+<strong>Attaches méniscales :</strong> Au tibia (freins des cornes), à la patella (lig. ménisco-patellaires), au fémur (lig. ménisco-fémoral post.), entre eux (lig. jugal ou interméniscal ant.), à la capsule (face périphérique) et aux muscles proches (poplité + biceps pour le latéral ; semimembraneux pour le médial).
+        </div>
+</div>
+</div>
+<!-- MOYENS D'UNIONS -->
+<div class="test-section-title">🔗 2 — Moyens d'unions (6 types)</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon teal">🛡️</div><div class="card-title">Capsule — Caractéristiques</div></div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:7px;font-size:13.5px;">
+<div style="padding:8px 12px;background:var(--teal-50);border-radius:7px;border-left:2px solid var(--teal-400);">Indépendante de celle de l'articulation tibio-fibulaire supérieure.</div>
+<div style="padding:8px 12px;background:var(--teal-50);border-radius:7px;border-left:2px solid var(--teal-400);"><strong>Lâche sagittalement</strong>, tendue sur les côtés.</div>
+<div style="padding:8px 12px;background:var(--navy-100);border-radius:7px;border-left:2px solid var(--navy-400);">Important <strong>cul-de-sac sous-quadricipital</strong> en rectitude. Fibres musculaires tenseurs des culs-de-sac : muscle articulaire du genou en avant, poplité + biceps en arrière/dehors, semimembraneux en dedans.</div>
+<div style="padding:8px 12px;background:var(--amber-100);border-radius:7px;border-left:2px solid var(--amber-500);">Renforcée en postérieur par les <strong>coques condyliennes</strong> (fibres tendineuses du gastrocnémien). La coque latérale renferme la fabella (sésamoïde inconstant) et laisse passer le tendon du poplité (TOF). La coque médiale peut communiquer avec la bourse du semimembraneux. L'espace entre les 2 coques laisse passer le LCP.</div>
+<div style="padding:8px 12px;background:var(--teal-50);border-radius:7px;border-left:2px solid var(--teal-400);">Petit repli supra-méniscal latéral = <strong>rampe capsulaire</strong>.</div>
+</div>
+<p style="font-size:13px;color:var(--text2);margin-top:10px;"><strong>Insertions :</strong> Sur le fémur : au contact de la surface patellaire (sauf bord sup.), bords latéraux des condyles (lèvre sup. du sillon condylaire), englobe la fosse intercondylaire. Sur la patella : au pourtour du cartilage, laissant libre l'apex. Sur le tibia : au pourtour des condyles + ligne antérieure et postérieure. Sur les ménisques : face périphérique.</p>
+</div>
+</div>
+<!-- LIGAMENTS -->
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon navy">📋</div><div class="card-title">Système collatéral — LCT &amp; LCF</div></div>
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub">LCT — Ligament collatéral tibial</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Origine :</strong> Épicondyle fémoral médial (partie postéro-inférieure)</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Trajet :</strong> En bas, en avt, légèrement en dh. — long (8 à 12 cm), épiphyso-diaphysaire. <strong>2 plans :</strong> superficiel (fémoro-tibial) + profond (3 types de fibres : fémoro-méniscales, tibio-méniscales, tibio-tibiales)</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Terminaison :</strong> Tibia — face médiale du corps, au ¼ sup., en arrière de la patte d'oie</div>
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;border-left:2px solid var(--teal-400);"><strong>Rôle :</strong> Ligament de l'entorse. Placé au sommet du valgus, très étendu et confondu avec la capsule en son milieu.</div>
+</div>
+</div>
+<div>
+<h3 class="sub">LCF — Ligament collatéral fibulaire</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Origine :</strong> Épicondyle fémoral latéral (partie postéro-inférieure)</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Trajet :</strong> Oblique en bas, en arr., légèrement en dh.</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Terminaison :</strong> Tête de la fibula — versant postéro-latéral dans la concavité du biceps</div>
+<div style="padding:7px 10px;background:var(--amber-100);border-radius:6px;border-left:2px solid var(--amber-500);">Partagé avec l'articulation tibio-fibulaire supérieure. Rapports variables avec le biceps selon flexion/extension.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon coral">⚙️</div><div class="card-title">Système de pivot central — LCA &amp; LCP</div></div>
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub">LCA — Ligament croisé antérieur</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Origine :</strong> Tibia — aire intercondylaire antérieure, contre le frein du ménisque médial</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Trajet :</strong> Oblique en ht, en arr., en dh. (~4 cm) — torsadé en 2 fascicules : antéro-médial et postéro-latéral. Moins bien vascularisé que le LCP.</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Terminaison :</strong> Condyle latéral du fémur — partie postéro-supérieure de la face médiale (ou axiale)</div>
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;border-left:2px solid var(--teal-400);">Situé en plein centre de l'articulation, il reste <strong>extra-articulaire</strong> (isolé par un repli synovial propre). Forme des croisés dans les plans sagittal et frontal.</div>
+</div>
+</div>
+<div>
+<h3 class="sub">LCP — Ligament croisé postérieur</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Origine :</strong> Tibia — aire intercondylaire postérieure, débordant à la face postérieure de l'os</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Trajet :</strong> Oblique en ht, en avt, en dd. (~3 cm) — torsadé en 2 faisceaux : antéro-médial et postéro-latéral. Bien vascularisé.</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Terminaison :</strong> Condyle médial du fémur — partie antéro-supérieure de la face latérale (ou axiale)</div>
+<div style="padding:7px 10px;background:var(--amber-100);border-radius:6px;border-left:2px solid var(--amber-500);">Le ligament ménisco-fémoral (de la corne post. du ménisque latéral vers la fosse intercondylaire) est rattaché au LCP.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon amber">📐</div><div class="card-title">Système sagittal — Ligaments patellaire, poplités &amp; rétinaculums</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Ligament</th><th>Origine</th><th>Trajet</th><th>Terminaison</th><th>Remarque</th></tr></thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Ligament patellaire</div></td>
+<td>Apex patellaire</td>
+<td>Oblique en bas et en dehors</td>
+<td>Tubérosité tibiale</td>
+<td>Indissociable du tendon patellaire — forme la partie profonde et mono-articulaire</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Lig. poplité oblique</div></td>
+<td>Bord latéral du tendon du semimembraneux</td>
+<td>En ht et en dh., en éventail</td>
+<td>Coque condylienne latérale + fabella</td>
+<td>À la fois ligament et terminaison récurrente du semimembraneux</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Lig. poplité arqué</div></td>
+<td>Apex fibulaire</td>
+<td>En éventail (faisceau sup. vertical, inf. s'incurve en dd./bas, moyen intermédiaire)</td>
+<td>Coque condylienne + fabella (sup.) ; tibia sillon poplité (inf.)</td>
+<td>Ligament de Kaplan : peu différencié, parfois assimilé au faisceau vertical</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Rétinaculums patellaires (×2)</div></td>
+<td>Épicondyle fémoral (partie tout à postérieure)</td>
+<td>En avant, en éventail</td>
+<td>Bord de la patella du même côté</td>
+<td>Médial = seul important en taille et en fonction ; latéral quasi inexistant</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon navy">🔗</div><div class="card-title">Ligaments à distance &amp; éléments stabilisateurs</div></div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:7px;font-size:13.5px;">
+<div style="padding:8px 12px;background:var(--teal-50);border-radius:7px;border-left:2px solid var(--teal-400);">
+<strong>Fascia lata / Tractus ilio-tibial :</strong> Du tubercule glutéal et crête iliaque → tubercule infra-condylaire du tibia. Hauban latéral passif plaqué contre le grand trochanter → poussée coaptatrice.
+          </div>
+<div style="padding:8px 12px;background:var(--navy-100);border-radius:7px;border-left:2px solid var(--navy-400);">
+<strong>Muscles stabilisateurs clés :</strong> Poplité (trajet intime dans la capsule latérale) · Semimembraneux (triple tendon stabilisateur) · Ailerons patellaires (fibres obliques du vaste médial = VMO → contrôle déplacement latéral de la patella) · Patte d'oie (3 tendons) · Gastrocnémien (renforce coques condyliennes) · Tendon patellaire (renforce le lig. du même nom).
+          </div>
+</div>
+</div>
+</div>
+<!-- INTÉRÊTS OSTÉOPATHIQUES -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon coral">⚕️</div><div class="card-title">Intérêts ostéopathiques</div></div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> Le genou est une grosse articulation sous-cutanée, ce qui en souligne l'importance palpatoire — accentuée en cas d'atrophie musculaire et de cul-de-sac capsulaire gonflé (hydarthrose).
+          </div>
+<div class="info-box amber">
+<strong>Mécanique et pathologique :</strong> Articulation portante intermédiaire entre le tronc et le sol (Dolto : « un valet soumis à 2 maîtres »). Tout problème sus- ou sous-jacent retentit sur le genou. Son valgus physiologique répond à l'exigence de transfert économique du centre de gravité. La patella = bouclier osseux antérieur (résistance + bras de levier pour le quadriceps). La mécanique du genou est faite pour travailler en flexion-rotation : le verrouillage en extension « nie le genou ». Portance + déviations orthopédiques → arthrose. Importance des glissements → retentissement des adhérences des parties molles.
+          </div>
+</div>
+</div>
+</div>
+<!-- À RETENIR -->
+<div style="border-left:4px solid var(--teal-400);background:var(--teal-50);border-radius:0 10px 10px 0;padding:18px 20px;margin-bottom:24px;">
+<div style="font-size:14px;font-weight:700;color:var(--teal-700);margin-bottom:10px;">⭐ À retenir absolument — Arthrologie du genou</div>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;">
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Trochlée :</strong> joue latérale = plus haute, large, saillante → empêche la déhanchée latérale de la patella</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Ménisque médial (C) :</strong> plus étroit et plus long ; <strong>ménisque latéral (O) :</strong> plus large et moins long</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>LCA :</strong> tibial → fémoral latéral (antéro-médial → postéro-latéral) · extra-articulaire (repli synovial propre)</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>LCP :</strong> tibial post. → fémoral médial · mieux vascularisé que le LCA · lig. ménisco-fémoral lui est rattaché</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Capsule :</strong> lâche sagittalement (culs-de-sac), tendue sur les côtés · coques condyliennes postérieures renforcées par le gastrocnémien</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Rétinaculum patellaire médial :</strong> seul fonctionnellement important · VMO = contrôle du déplacement latéral de la patella</li>
+</ul>
+<div style="background:#fff3cd;border-left:3px solid var(--amber-500);border-radius:0 6px 6px 0;padding:10px 14px;margin-top:12px;font-size:13px;color:#4a2e00;">
+<strong>🧠 Mnémotechnique :</strong> « <strong>C</strong>oude = <strong>L</strong>CA–<strong>L</strong>CF · <strong>G</strong>enou = <strong>L</strong>CT–<strong>L</strong>CF » · LCA = A comme Antérieur tibial → part en AVANT de l'aire intercondylaire · LCP = C comme Croisé Postérieur tibial → part en ARRIÈRE
+      </div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre inférieur, Chapitre 2 — Articulation du genou, Année 1, IEOQ · Usage privé</cite></div>
+</section>
+<section class="section" id="tests-genou" style="display:none;">
+<div class="section-title">Tests Orthopédiques — Genou</div>
+<div class="section-sub">Grille d'évaluation clinique — IEOQ · Cours STR-1502 – Technique structurelle I · Total sur 20 points</div>
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header">
+<div class="card-icon amber">📊</div>
+<div class="card-title">Grille d'évaluation — Pointage /20</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Section</th><th>Éléments</th><th>Points</th></tr></thead>
+<tbody>
+<tr><td><strong>A — Communication, attitude, efficacité</strong></td><td>Aptitude à mener l'examen · Communication non verbale · Respect du temps</td><td><span class="pts-badge">3 pts</span></td></tr>
+<tr><td><strong>B — Observation générale</strong></td><td>Symétrie, cicatrices, érythème, œdème, atrophie/flessum</td><td><span class="pts-badge">1 pt</span></td></tr>
+<tr><td><strong>C — Palpation</strong></td><td>Épiphyse distale fémur · Patella · Tibia · Épiphyse proximale fibula</td><td><span class="pts-badge">1 pt</span></td></tr>
+<tr><td><strong>D.a — Tests méniscaux</strong></td><td>Thessaly · Oudart · Appley · Mac Murray</td><td><span class="pts-badge">4 pts</span></td></tr>
+<tr><td><strong>D.b — Ligaments collatéraux</strong></td><td>Varus · Valgus</td><td><span class="pts-badge">2 pts</span></td></tr>
+<tr><td><strong>D.c — Ligaments croisés</strong></td><td>Lachman · Tiroir Ant/Post · Ressaut rotatoire · Müller</td><td><span class="pts-badge">4 pts</span></td></tr>
+<tr><td><strong>D.d — Autres tests</strong></td><td>Interligne · Glaçon · Périmètre cuisse/Rabot · Smilie · Noble</td><td><span class="pts-badge">5 pts</span></td></tr>
+<tr style="background:var(--teal-50);"><td colspan="2"><strong>TOTAL</strong></td><td><span class="pts-badge" style="background:var(--teal-600);color:#fff;">20 pts</span></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🔵 Tests orthopédiques des ménisques</div>
+<div class="test-card" id="tk-thessaly">
+<div class="test-card-header" onclick="toggleTest('tk-thessaly')">
+<div class="test-card-name">Test de Thessaly <small>Test de mise en charge méniscale</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Ménisques</span><span class="tag tag-teal">En charge</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Debout sur un pied, genou fléchi à 20°</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 89% · Sp: 97% (Karachalios 2005)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient sur la jambe à tester, genou fléchi à 20°. Le clinicien tient les mains pour l'équilibre. 3 rotations internes et externes du genou en appui monopodal.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur à l'interligne articulaire médial ou latéral + sensation de blocage lors des rotations en charge → lésion méniscale.</div>
+<div class="test-sensitivity"><span style="min-width:80px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill high" style="width:89%"></div></div><span>89%</span></div>
+<div class="test-sensitivity"><span style="min-width:80px;">Spécificité</span><div class="bar-wrap"><div class="bar-fill high" style="width:97%"></div></div><span>97%</span></div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=ebraZ4jM36A" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+</div>
+</div>
+<div class="test-grid-2">
+<div class="test-card" id="tk-oudart">
+<div class="test-card-header" onclick="toggleTest('tk-oudart')">
+<div class="test-card-name">Cri méniscal de Oudart</div>
+<div class="test-card-tags"><span class="tag tag-navy">Ménisques</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">Technique</div>Patient en décubitus dorsal. Palpation directe de l'interligne articulaire médiale et latérale. Pression progressive sur la corne antérieure puis postérieure pendant la flexion/extension passive.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur reproductible et vive à la palpation de l'interligne pendant le mouvement passif → lésion du ménisque correspondant.</div>
+</div>
+</div>
+<div class="test-card" id="tk-appley">
+<div class="test-card-header" onclick="toggleTest('tk-appley')">
+<div class="test-card-name">Test d'Appley / Grinding Test</div>
+<div class="test-card-tags"><span class="tag tag-navy">Ménisques</span><span class="tag tag-gray">Différentiel</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Décubitus ventral, genou fléchi 90°</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 61% · Sp: 70%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique double — Clé diagnostique</div>
+<strong>Distraction :</strong> Traction axiale + rotations → douleur = atteinte ligamentaire.<br/>
+<strong>Compression (Grinding) :</strong> Pression axiale + rotations → douleur = atteinte méniscale.
+          </div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur à la compression avec rotation → ménisque. Douleur à la distraction → ligaments capsulaires.</div>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=9obt2afxRPo" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+</div>
+</div>
+<div class="test-card" id="tk-mcmurray">
+<div class="test-card-header" onclick="toggleTest('tk-mcmurray')">
+<div class="test-card-name">Test de McMurray</div>
+<div class="test-card-tags"><span class="tag tag-navy">Ménisques</span><span class="tag tag-amber">Cornes postérieures</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Décubitus dorsal, hanche et genou fléchis au maximum</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 53% · Sp: 59%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>
+<strong>Ménisque médial :</strong> RE du pied + valgus + extension progressive.<br/>
+<strong>Ménisque latéral :</strong> RI du pied + varus + extension progressive.
+        </div>
+<div class="test-positive"><div class="label">Test positif</div>Claquement palpable/audible + douleur reproduite à l'interligne lors de l'extension → déchirure de la corne postérieure du ménisque correspondant.</div>
+<div class="info-box amber" style="font-size:13px;margin-top:8px;"><strong>Note :</strong> Test le plus spécifique pour les lésions des cornes postérieures.</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=lwDFPAyGGgI" rel="noopener" target="_blank">Physiotutors EN</a>
+<a class="video-btn fr" href="https://www.youtube.com/watch?v=BhPS5jAUIOg" rel="noopener" target="_blank">Examen FR</a>
+</div>
+</div>
+</div>
+<div class="test-section-title">🟡 Tests ligamentaires collatéraux</div>
+<div class="test-grid-2">
+<div class="test-card" id="tk-valgus">
+<div class="test-card-header" onclick="toggleTest('tk-valgus')">
+<div class="test-card-name">Test en Valgus <small>LCT</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">LCT</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Positions à tester</div><div class="value">0° extension ET 20–30° flexion</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 86% · Sp: 96%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Main stabilisatrice sur la face latérale du genou, main mobilisatrice sur la face médiale de la cheville. Stress en valgus appliqué progressivement en extension complète, puis à 30° de flexion.</div>
+<div class="test-positive"><div class="label">Interprétation</div>Laxité à 30° seulement → atteinte isolée du LCT. Laxité à 0° ET 30° → atteinte LCT + structures postérieures.</div>
+</div>
+</div>
+<div class="test-card" id="tk-varus">
+<div class="test-card-header" onclick="toggleTest('tk-varus')">
+<div class="test-card-name">Test en Varus <small>LCF</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">LCF</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Positions à tester</div><div class="value">0° extension ET 20–30° flexion</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 25% · Sp: 98%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Même principe que le valgus mais stress en varus (ouverture latérale). Tester en extension et à 20–30° flexion.</div>
+<div class="test-positive"><div class="label">Interprétation</div>Laxité à 30° → LCF isolé. Laxité à 0° → LCF + structures postéro-latérales (coin postéro-latéral, poplité).</div>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=GSFbttpxCuQ" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=GSFbttpxCuQ" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+</div>
+</div>
+<div class="test-section-title">🔴 Tests ligamentaires — Ligaments croisés</div>
+<div class="test-card" id="tk-lachman">
+<div class="test-card-header" onclick="toggleTest('tk-lachman')">
+<div class="test-card-name">Test de Lachman <small>Gold standard LCA</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">LCA</span><span class="tag tag-teal">Gold Standard</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Décubitus dorsal, genou fléchi 20–30°</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 87% · Sp: 93% (Benjaminse 2006)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Main proximale stabilise le fémur. Main distale saisit le tibia proximal. Translation antérieure du tibia appliquée doucement mais ferme. Genou à 20–30° de flexion.</div>
+<div class="test-positive"><div class="label">Test positif</div>Translation antérieure excessive (&gt;3–5 mm vs côté sain) ET/OU absence d'arrêt ferme (end-feel mou) → rupture du LCA. Grade : I (1–5mm) · II (5–10mm) · III (&gt;10mm).</div>
+<div class="test-sensitivity"><span style="min-width:80px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill high" style="width:87%"></div></div><span>87%</span></div>
+<div class="test-sensitivity"><span style="min-width:80px;">Spécificité</span><div class="bar-wrap"><div class="bar-fill high" style="width:93%"></div></div><span>93%</span></div>
+<div class="info-box teal" style="font-size:13px;margin-top:8px;"><strong>Avantage :</strong> Supérieur au tiroir antérieur (moins de spasme musculaire à 20–30° qu'à 90°). Test de référence en phase aiguë.</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=6tManL57SLQ" rel="noopener" target="_blank">Physiotutors EN</a>
+<a class="video-btn fr" href="https://www.youtube.com/watch?v=qAstgcNXetA" rel="noopener" target="_blank">Test Lachman FR</a>
+</div>
+</div>
+</div>
+<div class="test-grid-2">
+<div class="test-card" id="tk-tiroir">
+<div class="test-card-header" onclick="toggleTest('tk-tiroir')">
+<div class="test-card-name">Test du Tiroir Ant./Post.</div>
+<div class="test-card-tags"><span class="tag tag-coral">LCA</span><span class="tag tag-navy">LCP</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Décubitus dorsal, hanche 45°, genou 90°, pied fixé</div></div>
+<div class="test-detail-item"><div class="label">Stats (LCA)</div><div class="value">Se: 62% · Sp: 88%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>
+<strong>Tiroir antérieur :</strong> Poussée antérieure du tibia → LCA.<br/>
+<strong>Tiroir postérieur :</strong> Poussée postérieure → LCP.<br/>
+            Vérifier la position de repos (sag sign = LCP lésé).
+          </div>
+<div class="test-positive"><div class="label">Test positif</div>Translation antérieure &gt;6mm (LCA) ou postérieure &gt;5mm (LCP) vs côté sain. Moins sensible que Lachman en phase aiguë (spasme IJ à 90°).</div>
+</div>
+</div>
+<div class="test-card" id="tk-ressaut">
+<div class="test-card-header" onclick="toggleTest('tk-ressaut')">
+<div class="test-card-name">Test du Ressaut Rotatoire <small>Pivot Shift</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">LCA</span><span class="tag tag-gray">Instabilité</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Stats (conscient)</div><div class="value">Se: 28% · Sp: 98%</div></div>
+<div class="test-detail-item"><div class="label">Stats (AG)</div><div class="value">Se augmente à 98%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Genou en extension complète. Valgus + RI tibia + flexion progressive. À ~20–30° de flexion, le plateau tibial latéral (subluxé en avant) se réduit brutalement.</div>
+<div class="test-positive"><div class="label">Test positif</div>Ressaut (clunk) à 20–30° de flexion → instabilité rotatoire antéro-latérale = rupture LCA. Très spécifique mais souvent négatif chez le patient conscient (guarding).</div>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=qqy5IfkEvfw" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+</div>
+</div>
+<div class="test-card" id="tk-muller">
+<div class="test-card-header" onclick="toggleTest('tk-muller')">
+<div class="test-card-name">Test de Müller <small>Stabilité postéro-latérale</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">LCP</span><span class="tag tag-gray">CPL</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">Technique</div>Patient en décubitus dorsal. Genou fléchi à 90°, pied en RE. Clinicien applique une force postérieure sur le tibia proximal tout en maintenant la RE du pied.</div>
+<div class="test-positive"><div class="label">Test positif</div>Translation postérieure et/ou rotation externe excessive du plateau tibial latéral → atteinte du coin postéro-latéral (LCF, poplité, ligament poplité arqué) ± LCP. Indispensable dans le bilan des instabilités complexes.</div>
+</div>
+</div>
+<div class="test-section-title">⚪ Autres tests cliniques du genou</div>
+<div class="test-grid-2">
+<div class="test-card" id="tk-glaçon">
+<div class="test-card-header" onclick="toggleTest('tk-glaçon')">
+<div class="test-card-name">Test du Glaçon <small>Choc rotulien</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Épanchement</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">Technique</div>Genou en extension, quadriceps relâché. Main proximale vide le cul-de-sac sous-quadricipital vers le bas. Main distale exerce une pression brusque sur la patella vers le fémur.</div>
+<div class="test-positive"><div class="label">Test positif</div>Sensation de rebond de la patella contre le fémur (choc) → épanchement articulaire confirmé. Épanchement minime → préférer le signe du flot.</div>
+</div>
+</div>
+<div class="test-card" id="tk-interligne">
+<div class="test-card-header" onclick="toggleTest('tk-interligne')">
+<div class="test-card-name">Palpation de l'interligne articulaire</div>
+<div class="test-card-tags"><span class="tag tag-gray">Ménisques</span><span class="tag tag-gray">Capsule</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">Technique</div>Genou fléchi à 90°, pied à plat. Palpation directe et progressive de l'interligne médiale et latérale. Comparaison bilatérale systématique.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur reproductible et localisée à l'interligne → atteinte méniscale, lésion capsulaire, ou pathologie ligamentaire collatérale selon la localisation précise.</div>
+</div>
+</div>
+</div>
+<div class="test-grid-2">
+<div class="test-card" id="tk-smilie">
+<div class="test-card-header" onclick="toggleTest('tk-smilie')">
+<div class="test-card-name">Test d'appréhension de Smilie <small>Patella</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">Fémoro-patellaire</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">Technique</div>Genou en légère flexion (10–20°). Le clinicien pousse latéralement la patella avec les pouces progressivement. Observer la réaction du patient.</div>
+<div class="test-positive"><div class="label">Test positif</div>Appréhension (contraction défensive du quadriceps) et/ou douleur → instabilité fémoro-patellaire, antécédent de luxation ou subluxation récurrente de rotule.</div>
+</div>
+</div>
+<div class="test-card" id="tk-noble">
+<div class="test-card-header" onclick="toggleTest('tk-noble')">
+<div class="test-card-name">Test de Noble <small>Syndrome BIT</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">BIT</span><span class="tag tag-navy">Genou coureur</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Point cible</div><div class="value">2 cm au-dessus de l'épicondyle latéral du fémur</div></div>
+<div class="test-detail-item"><div class="label">Angle critique</div><div class="value">30° de flexion</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient en décubitus dorsal, genou à 90°. Pression directe maintenue 2 cm au-dessus de l'épicondyle fémoral latéral pendant qu'on étend lentement jusqu'à 30° de flexion.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur vive à ~30° de flexion → syndrome de friction de la bandelette ilio-tibiale (IT Band Syndrome / Genou du coureur). C'est à 30° que la BIT frictionne l'épicondyle latéral.</div>
+</div>
+</div>
+</div>
+<div class="test-card" id="tk-rabot">
+<div class="test-card-header" onclick="toggleTest('tk-rabot')">
+<div class="test-card-name">Périmètre de cuisse / Test du Rabot</div>
+<div class="test-card-tags"><span class="tag tag-gray">Amyotrophie</span><span class="tag tag-gray">Fémoro-patellaire</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Périmètre cuisse</div><div class="value">Mesure bilatérale à 15 cm au-dessus de la patella. Différence &gt;1 cm = amyotrophie significative du quadriceps.</div></div>
+<div class="test-detail-item"><div class="label">Test du Rabot</div><div class="value">Mobilisation passive de la patella dans les 4 plans. Crépitations ou douleur = lésion du cartilage fémoro-patellaire.</div></div>
+</div>
+<div class="test-positive"><div class="label">Valeur clinique combinée (1 point si les 2)</div>Amyotrophie + Rabot positif = atteinte fémoro-patellaire avec retentissement fonctionnel → chondromalacie rotulienne, arthrose fémoro-patellaire.</div>
+</div>
+</div>
+<div class="footnote">
+<cite>Sources : Karachalios T et al. (2005) JBJS — Thessaly · Benjaminse A et al. (2006) Meta-analysis ACL · Scholten RJ et al. (2001) McMurray · Malanga GA et al. (2003) Valgus/varus · Cours STR-1502 Technique structurelle I, IEOQ</cite>
+</div>
+</section>
+<section class="section" id="tech-genou" style="display:none;">
+<div class="section-title">Techniques structurelles — Genou</div>
+<div class="section-sub">Résumé de cours 1ère année — P. César, IEOQ · À compléter avec les notes prises en cours de pratique</div>
+<!-- ── 1. Mobilisation générale ── -->
+<div class="test-section-title">🔵 Mobilisations générales</div>
+<div class="tech-card" id="tg-mob-gen">
+<div class="tech-card-header" onclick="toggleTest('tg-mob-gen')">
+<span style="font-size:18px;">🔄</span>
+<div class="tech-card-name">1 — Mobilisation générale du genou</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step">
+<div class="label">Objectif</div>
+          Restaurer la mobilité globale du genou en flexion/extension par une mobilisation passive rythmique fémoro-tibiale.
+        </div>
+<div class="tech-variant">
+<div class="label">Variante</div>
+          Technique réalisée en position différente selon l'amplitude disponible et la tolérance du patient.
+        </div>
+<div class="tech-note">
+<div class="label">Vidéos de référence</div>
+<a href="https://youtu.be/MNq9ZpsfRvc" style="color:var(--navy-600);" target="_blank">▶ Mobilisation générale (technique principale)</a><br/>
+<a href="https://youtu.be/NOTjiP0oK8k" style="color:var(--navy-600);" target="_blank">▶ Variante</a>
+</div>
+</div>
+</div>
+<!-- ── 2–3. Dysfonction d'extension ── -->
+<div class="test-section-title">🟠 Dysfonctions d'extension (restriction en flexion)</div>
+<div class="info-box amber" style="margin-bottom:14px;">
+<strong>Principe :</strong> Au test, il existe une restriction en flexion consécutive à un tibia (extrémité proximale) en <strong>antériorité</strong> ou un fémur (extrémité distale) en <strong>postériorité</strong>.
+    </div>
+<div class="tech-card" id="tg-ant-tibia">
+<div class="tech-card-header" onclick="toggleTest('tg-ant-tibia')">
+<span style="font-size:18px;">🦴</span>
+<div class="tech-card-name">2 — Normalisation dysfonction antériorité de l'extrémité proximale du tibia / fémur</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step">
+<div class="label">Indication</div>
+          Perte de flexion avec déficit en translation dorsale du tibia.
+        </div>
+<div class="tech-step">
+<div class="label">Mécanisme</div>
+          La dysfonction en antériorité du tibia proximal restreint la translation postérieure nécessaire à la flexion complète. La correction cible ce glissement.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tg-decoaptation">
+<div class="tech-card-header" onclick="toggleTest('tg-decoaptation')">
+<span style="font-size:18px;">↕️</span>
+<div class="tech-card-name">3 — Technique de décoaptation et/ou normalisation dysfonction d'extension</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step">
+<div class="label">Mécanisme</div>
+          La mise en tension de la capsule articulaire antérieure par la <strong>traction + flexion</strong> permet de gagner vers l'amplitude de flexion du genou.
+        </div>
+<div class="tech-step">
+<div class="label">Effet</div>
+          Décoaptation articulaire par traction axiale combinée à une mise en flexion progressive, libérant les contraintes capsulaires antérieures.
+        </div>
+</div>
+</div>
+<!-- ── 4. Dysfonction en flexion ── -->
+<div class="test-section-title">🟢 Dysfonctions de flexion (restriction en extension)</div>
+<div class="info-box teal" style="margin-bottom:14px;">
+<strong>Principe :</strong> Au test, il existe une restriction en extension consécutive à un fémur (extrémité distale) en <strong>antériorité</strong> ou un tibia (extrémité proximale) en <strong>postériorité</strong>.
+    </div>
+<div class="tech-card" id="tg-fem-ant">
+<div class="tech-card-header" onclick="toggleTest('tg-fem-ant')">
+<span style="font-size:18px;">🦴</span>
+<div class="tech-card-name">4-1 — Normalisation extrémité distale du fémur en antériorité / tibia</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step">
+<div class="label">Indication</div>
+          Déficit en extension avec déficit en translation dorsale du fémur distal.
+        </div>
+<div class="tech-step">
+<div class="label">Direction de correction</div>
+          Poussée antéro-postérieure sur l'extrémité distale du fémur associée à une mobilisation vers l'extension du genou.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tg-tibia-post">
+<div class="tech-card-header" onclick="toggleTest('tg-tibia-post')">
+<span style="font-size:18px;">🦴</span>
+<div class="tech-card-name">4-2 — Normalisation extrémité proximale du tibia en postériorité / fémur</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step">
+<div class="label">Indication</div>
+          Déficit en extension avec déficit en translation antérieure du tibia proximal.
+        </div>
+<div class="tech-step">
+<div class="label">Direction de correction</div>
+          Thrust en translation antérieure sur l'extrémité proximale du tibia, thérapeute du côté opposé à la dysfonction, genou fléchi par le thorax de l'opérateur.
+        </div>
+</div>
+</div>
+<!-- ── 5–6. Varus / Valgus ── -->
+<div class="test-section-title">🔷 Dysfonctions frontales — Varus / Valgus</div>
+<div class="tech-card" id="tg-varus">
+<div class="tech-card-header" onclick="toggleTest('tg-varus')">
+<span style="font-size:18px;">◀▶</span>
+<div class="tech-card-name">5 — Normalisation dysfonction en varus / Ouverture du compartiment médial</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step">
+<div class="label">Objectif</div>
+          Ouvrir le compartiment médial en appliquant une contrainte en valgus contrôlée sur l'interligne médiale.
+        </div>
+<div class="tech-step">
+<div class="label">Contacts</div>
+          Deux mains exercent des forces opposées : une poussée en valgus sur le tibia proximal et une contre-prise sur le fémur distal, créant un couple d'ouverture médiale.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tg-valgus">
+<div class="tech-card-header" onclick="toggleTest('tg-valgus')">
+<span style="font-size:18px;">◀▶</span>
+<div class="tech-card-name">6 — Normalisation dysfonction en valgus / Ouverture du compartiment latéral</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step">
+<div class="label">Objectif</div>
+          Ouvrir le compartiment latéral par une contrainte en varus contrôlée sur l'interligne latérale.
+        </div>
+<div class="tech-step">
+<div class="label">Point clé</div>
+<strong>NB :</strong> Noter la position des bras <strong>perpendiculaires à l'axe jambier</strong> pour optimiser la direction de force.
+        </div>
+<div class="tech-note">
+<div class="label">Vidéo de référence</div>
+<a href="https://youtu.be/4EWOXP0UGr8" style="color:var(--navy-600);" target="_blank">▶ Technique d'ouverture du compartiment latéral</a>
+</div>
+</div>
+</div>
+<!-- ── 7–8. Translations ── -->
+<div class="test-section-title">⬅️ Dysfonctions de translation tibiale</div>
+<div class="tech-card" id="tg-trans-med">
+<div class="tech-card-header" onclick="toggleTest('tg-trans-med')">
+<span style="font-size:18px;">↔️</span>
+<div class="tech-card-name">7 — Test et normalisation tibia en translation médiale</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step">
+<div class="label">Contacts manuels</div>
+          Main caudale : face <strong>latérale</strong> de l'extrémité proximale du tibia.<br/>
+          Main céphalique : face <strong>médiale</strong> du fémur.
+        </div>
+<div class="tech-step">
+<div class="label">Direction du thrust</div>
+          Poussée en translation médiale sur le tibia proximal avec contre-appui médial sur le fémur → couple de forces vers la médialité.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tg-trans-lat">
+<div class="tech-card-header" onclick="toggleTest('tg-trans-lat')">
+<span style="font-size:18px;">↔️</span>
+<div class="tech-card-name">8 — Test et normalisation tibia en translation latérale</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step">
+<div class="label">Contacts manuels</div>
+          Main caudale : face <strong>médiale</strong> de l'extrémité proximale du tibia.<br/>
+          Main céphalique : face latérale du fémur.
+        </div>
+<div class="tech-step">
+<div class="label">Direction du thrust</div>
+          Poussée en translation latérale sur le tibia proximal avec contre-appui latéral sur le fémur → couple de forces vers la latéralité.
+        </div>
+</div>
+</div>
+<!-- ── 9–10. Rotations HVBA ── -->
+<div class="test-section-title">🔁 Dysfonctions de rotation tibiale (HVBA)</div>
+<div class="tech-card" id="tg-rot-lat">
+<div class="tech-card-header" onclick="toggleTest('tg-rot-lat')">
+<span style="font-size:18px;">🔧</span>
+<div class="tech-card-name">9 — Normalisation dysfonction en rotation latérale du tibia / fémur <small>HVBA</small></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Thérapeute côté <strong>homolatéral</strong> à la dysfonction</div>
+<div class="tech-position-chip"><span class="chip-icon">🦵</span>Genou fléchi par appui thoracique</div>
+</div>
+<div class="tech-step">
+<div class="label">Mécanisme du thrust</div>
+          Action combinée : mise en <strong>flexion</strong> du genou par l'appui du thorax de l'opérateur + action simultanée en <strong>rotation médiale</strong> par les mains supérieure et inférieure.
+        </div>
+<div class="tech-note">
+<div class="label">Rappel classification</div>
+          Haute Vélocité Basse Amplitude (HVBA) — Articulation fémorotibiale — Extrémité proximale du tibia en rotation latérale.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tg-rot-med">
+<div class="tech-card-header" onclick="toggleTest('tg-rot-med')">
+<span style="font-size:18px;">🔧</span>
+<div class="tech-card-name">10 — Normalisation dysfonction en rotation médiale du tibia / fémur <small>HVBA</small></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Thérapeute côté <strong>opposé</strong> à la dysfonction</div>
+<div class="tech-position-chip"><span class="chip-icon">🦵</span>Genou fléchi par appui thoracique</div>
+</div>
+<div class="tech-step">
+<div class="label">Mécanisme du thrust</div>
+          Action combinée : <strong>flexion</strong> du genou par le thorax de l'opérateur + mise en <strong>rotation latérale</strong> par les mains supérieure et inférieure.
+        </div>
+<div class="tech-note">
+<div class="label">Rappel classification</div>
+          HVBA — Articulation fémorotibiale — Extrémité proximale du tibia en rotation médiale.
+        </div>
+</div>
+</div>
+<!-- ── 11–12. Tête fibulaire ── -->
+<div class="test-section-title">🦷 Tête fibulaire</div>
+<div class="tech-card" id="tg-fib-post">
+<div class="tech-card-header" onclick="toggleTest('tg-fib-post')">
+<span style="font-size:18px;">📍</span>
+<div class="tech-card-name">11 — Normalisation dysfonction postérieure de la tête fibulaire</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step">
+<div class="label">Technique principale</div>
+          Poussée directe en antériorité sur la face postérieure de la tête fibulaire, genou fléchi, patient en décubitus.
+        </div>
+<div class="tech-variant">
+<div class="label">Variante (décubitus controlatéral)</div>
+          Sujet en décubitus controlatéral, membre inférieur en flexion, face médiale de la jambe sur la table. Opérateur en fente avant côté à normaliser, regardant vers la tête du sujet.<br/><br/>
+          Après avoir récliné les tissus : talon de la main céphalique sur la <strong>face antérieure</strong> de l'articulation fibulaire proximale ; talon de la main distale sur la <strong>face postérieure</strong> de la malléole latérale distale.<br/><br/>
+          Thrust en couple : postériorité de l'articulation fibulaire proximale + antériorité de l'articulation fibulaire distale.
+        </div>
+<div class="tech-note">
+<div class="label">Vidéos de référence</div>
+<a href="https://youtu.be/jlNJPVDHDrU" style="color:var(--navy-600);" target="_blank">▶ Technique principale</a><br/>
+<a href="https://youtu.be/CQumFioWelM" style="color:var(--navy-600);" target="_blank">▶ Technique variante</a>
+</div>
+</div>
+</div>
+<div class="tech-card" id="tg-fib-ant">
+<div class="tech-card-header" onclick="toggleTest('tg-fib-ant')">
+<span style="font-size:18px;">📍</span>
+<div class="tech-card-name">12 — Normalisation dysfonction antérieure de la tête fibulaire</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step">
+<div class="label">Technique</div>
+          Poussée directe en postériorité sur la face antérieure de la tête fibulaire. Genou en flexion pour relâcher le biceps fémoral et faciliter l'accès à la tête fibulaire.
+        </div>
+<div class="tech-note">
+<div class="label">Vidéo de référence</div>
+<a href="https://youtu.be/H21IEGJsoz4" style="color:var(--navy-600);" target="_blank">▶ Normalisation tête fibulaire antérieure</a>
+</div>
+</div>
+</div>
+<!-- ── 13–14. Ménisques ── -->
+<div class="test-section-title">🔴 Techniques méniscales</div>
+<div class="info-box coral" style="margin-bottom:14px;">
+<strong>⚠️ Précaution importante :</strong> Ces techniques ne seront pas réalisées si le sujet est trop douloureux. Elles sont utiles dans de <em>petits blocages</em> et ne permettent qu'une <strong>libération temporaire</strong> du genou si la lésion méniscale est plus sévère.
+    </div>
+<div class="tech-card" id="tg-menisque-int">
+<div class="tech-card-header" onclick="toggleTest('tg-menisque-int')">
+<span style="font-size:18px;">🔴</span>
+<div class="tech-card-name">13 — Normalisation blocage du ménisque interne</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🔴</span>Départ : flexion + valgus + rotation latérale</div>
+<div class="tech-position-chip"><span class="chip-icon">✅</span>Arrivée : extension + rotation médiale</div>
+</div>
+<div class="tech-step">
+<div class="label">Technique</div>
+          Depuis la position de départ (flexion, valgus, rotation latérale), amener le genou en extension + rotation médiale de manière contrôlée. <strong>Maintenir l'extension quelques secondes.</strong>
+</div>
+<div class="tech-note">
+<div class="label">Vidéo de référence</div>
+<a href="https://youtu.be/fL9BYN3N0Fk" style="color:var(--navy-600);" target="_blank">▶ Technique ménisque interne</a>
+</div>
+</div>
+</div>
+<div class="tech-card" id="tg-menisque-ext">
+<div class="tech-card-header" onclick="toggleTest('tg-menisque-ext')">
+<span style="font-size:18px;">🔵</span>
+<div class="tech-card-name">14 — Normalisation dysfonction du ménisque externe</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🔵</span>Départ : flexion + varus + rotation médiale</div>
+<div class="tech-position-chip"><span class="chip-icon">✅</span>Arrivée : extension + rotation latérale</div>
+</div>
+<div class="tech-step">
+<div class="label">Technique</div>
+          Depuis la position de départ (flexion, varus, rotation médiale), amener le genou en extension + rotation latérale de manière contrôlée. <strong>Maintenir quelques secondes l'extension.</strong>
+</div>
+<div class="tech-note">
+<div class="label">Vidéo de référence</div>
+<a href="https://youtu.be/MnpggAoQRSY" style="color:var(--navy-600);" target="_blank">▶ Technique ménisque externe</a>
+</div>
+</div>
+</div>
+<div class="footnote">
+<cite>Source : Techniques structurelles Genou — Résumé de cours 1ère année, P. César, IEOQ. À compléter avec les notes prises en cours de pratique.</cite>
+</div>
+</section>
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["biomec-genou", "arthro-genou", "tests-genou", "tech-genou"];
+  var SUB_LABELS_LOCAL = {"biomec-genou": "📖 Biomécanique", "arthro-genou": "🦴 Arthrologie genou", "tests-genou": "🩺 Tests orthopédiques", "tech-genou": "🔧 Techniques structurelles"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>

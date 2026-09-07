@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 1 · Épaule</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(1);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🦴</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 1ère Année</h1>
+      <p>Épaule — IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="index.html">← Catégories</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><strong>Épaule</strong> <span id="crumbSub">› 📖 Biomécanique (P.1)</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="epaule1" onclick="showSub('epaule1')">📖 Biomécanique (P.1)</button><button type="button" class="nav-tab" data-sub="epaule-rythme" onclick="showSub('epaule-rythme')">🔄 Rythme scapulo-huméral</button><button type="button" class="nav-tab" data-sub="coiffe" onclick="showSub('coiffe')">💪 Coiffe des rotateurs</button><button type="button" class="nav-tab" data-sub="arthro-ceinture" onclick="showSub('arthro-ceinture')">🦴 Arthrologie ceinture</button><button type="button" class="nav-tab" data-sub="tests-epaule" onclick="showSub('tests-epaule')">🩺 Tests orthopédiques</button><button type="button" class="nav-tab" data-sub="tech-epaule" onclick="showSub('tech-epaule')">🔧 Techniques structurelles</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="epaule1" style="display:block;">
+<div class="section-title">Biomécanique de l'épaule — Partie 1</div>
+<div class="section-sub">Ceinture scapulaire, articulations, gléno-humérale, ligaments — P. César, IEOQ 1ère année</div>
+<!-- Position anatomique + ROM globale -->
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header">
+<div class="card-icon teal">📐</div>
+<div class="card-title">Position anatomique de la ceinture scapulaire</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:8px;font-size:13px;margin-bottom:12px;">
+<div style="padding:9px 12px;background:var(--teal-50);border-radius:7px;border:1px solid var(--teal-200);display:flex;justify-content:space-between;align-items:center;">
+<span><strong>Clavicule</strong> — angle par rapport au plan frontal</span>
+<span class="rom-val">20° en arrière</span>
+</div>
+<div style="padding:9px 12px;background:var(--navy-100);border-radius:7px;border:1px solid var(--navy-200);display:flex;justify-content:space-between;align-items:center;">
+<span><strong>Scapula</strong> — angle par rapport au plan frontal</span>
+<span class="rom-val">35° en avant</span>
+</div>
+<div style="padding:9px 12px;background:var(--amber-100);border-radius:7px;border:1px solid #f0c865;display:flex;justify-content:space-between;align-items:center;">
+<span><strong>GH — rétroversion</strong> par rapport à l'axe médio-latéral coude</span>
+<span class="rom-val">30°</span>
+</div>
+<div style="padding:9px 12px;background:var(--teal-50);border-radius:7px;border:1px solid var(--teal-200);display:flex;justify-content:space-between;align-items:center;">
+<span><strong>Tête humérale</strong> — angle col/diaphyse</span>
+<span class="rom-val">135°</span>
+</div>
+<div style="padding:9px 12px;background:var(--navy-100);border-radius:7px;border:1px solid var(--navy-200);display:flex;justify-content:space-between;align-items:center;">
+<span><strong>Tête humérale</strong> — angle de torsion / axe coude</span>
+<span class="rom-val">20–30°</span>
+</div>
+<div style="padding:9px 12px;background:var(--amber-100);border-radius:7px;border:1px solid #f0c865;display:flex;justify-content:space-between;align-items:center;">
+<span><strong>Col anatomique</strong> / horizontale</span>
+<span class="rom-val">45°</span>
+</div>
+</div>
+<div class="info-box teal" style="font-size:12.5px;">
+<strong>Orientation de la tête humérale :</strong> Regarde en haut, en arrière et en dedans. Deux exigences antagonistes : grande mobilité + grande stabilité → d'où son instabilité relative et la surcharge des muscles stabilisateurs.
+          </div>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon navy">📊</div>
+<div class="card-title">ROM globale de l'épaule (complexe complet)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="rom-table">
+<tr><th>Mouvement</th><th>Amplitude (°)</th><th>Notes</th></tr>
+<tr><td>Flexion (antépulsion)</td><td><span class="rom-val">180°</span></td><td>GH + ST + SCC + AC + rachis</td></tr>
+<tr><td>Extension (rétropulsion)</td><td><span class="rom-val">50°</span></td><td>GH principalement</td></tr>
+<tr><td>Abduction frontale</td><td><span class="rom-val">180°</span></td><td>GH 90° + ST + rachis (avec rotation ext. automatique à 90°)</td></tr>
+<tr><td>Adduction horizontale</td><td><span class="rom-val">45°</span></td><td>Avec antépulsion</td></tr>
+<tr><td>Abduction horizontale</td><td><span class="rom-val">40°</span></td><td>Plan horizontal coude fléchi</td></tr>
+<tr><td>Rotation interne (RI)</td><td><span class="rom-val">95°</span></td><td>Coude fléchi 90°</td></tr>
+<tr><td>Rotation externe (RE)</td><td><span class="rom-val">40–70°</span></td><td>Coude fléchi 90°</td></tr>
+<tr><td>Circumduction</td><td colspan="2" style="text-align:center;font-style:italic;">Association des 3 axes — cône de circumduction (axe = position de fonction)</td></tr>
+</table>
+<div class="info-box teal" style="margin:12px 16px;">
+<strong>Position de fonction de l'épaule :</strong> Abduction 45° + antéposition 45° = abduction dans le plan de la scapula. C'est là que les surfaces articulaires coïncident le mieux.
+          </div>
+</div>
+</div>
+</div>
+<!-- Clavicule SCC + AC -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">🔩</div>
+<div class="card-title">La clavicule — SCC et AC : articulations, moyens d'union, mouvements</div>
+</div>
+<div class="card-body">
+<div class="grid-2">
+<div>
+<h3 class="sub" style="margin-top:0;">Articulation Sterno-Costo-Claviculaire (SCC)</h3>
+<div class="info-box navy" style="background:var(--navy-100);border-color:var(--navy-400);color:var(--navy-900);margin-bottom:10px;font-size:12.5px;">
+<strong>Type :</strong> En selle (toroïde) à grand axe perpendiculaire — concave haut/bas, convexe dedans/dehors. Présence d'un <strong>disque fibrocartilagineux</strong>.
+            </div>
+<table class="rom-table" style="font-size:12.5px;margin-bottom:8px;">
+<tr><th>Mouvement SCC</th><th>Amplitude</th><th>Facteurs limitants</th></tr>
+<tr><td>Élévation / abaissement</td><td><span class="rom-val">30–40°</span></td><td>Élév. ← Ligt costo-clav. + sub-clavier / Abais. ← Ligt SC sup. + interclaviculaire + 1ère côte</td></tr>
+<tr><td>Antépulsion / rétropulsion</td><td><span class="rom-val">35°</span></td><td>Antépuls. ← Ligt SC ant. + SC post. (butée) + costo-clav. / Rétropuls. ← SC post. + SC ant. (butée)</td></tr>
+<tr><td>Rotation ant/post (axe long.)</td><td><span class="rom-val">40–50°</span></td><td>Rotation passive liée aux mouvements de la scapula</td></tr>
+</table>
+<div style="font-size:12.5px;color:var(--text2);">Ligaments : costo-claviculaire · interclaviculaire · SC sup./ant./post. · tendon sub-clavier</div>
+</div>
+<div>
+<h3 class="sub" style="margin-top:0;">Articulation Acromio-Claviculaire (AC)</h3>
+<div class="info-box teal" style="margin-bottom:10px;font-size:12.5px;">
+<strong>Type :</strong> Plane / arthrodie synoviale. Disque articulaire présent chez 1/3 des individus. Orientation surface articulaire : bas et dedans (50%), verticale (20%), incongruente (20%).
+            </div>
+<table class="rom-table" style="font-size:12.5px;margin-bottom:8px;">
+<tr><th>Mouvement AC</th><th>Amplitude</th><th>Facteurs limitants</th></tr>
+<tr><td>Avancée / recul (baillement ant./post.)</td><td><span class="rom-val">30–40°</span></td><td>Recul ← Ligt trapézoïde + AC ant. / Avancée ← Ligt conoïde + AC post.</td></tr>
+<tr><td>Élévation / abaissement</td><td><span class="rom-val">30°</span></td><td>Élév. ← Ligt AC inf. + ligts coraco-claviculaires / Abais. ← Ligt AC sup. + contact coracoïde</td></tr>
+<tr><td>Rotation (axe longitudinal)</td><td><span class="rom-val">60°</span></td><td>Rot. ant. ← Ligt conoïde + capsule / Rot. post. ← Ligt trapézoïde + capsule</td></tr>
+</table>
+<div style="font-size:12.5px;color:var(--text2);">Ligaments coraco-claviculaires : <strong>conoïde</strong> (plan frontal ↗ haut/dedans/arrière) + <strong>trapézoïde</strong> (⊥ au conoïde, ↗ haut/dehors/légèrement avant). Ligt AC : sup./inf./ant./post. (2 plans : profond capsulaire + superficiel)</div>
+</div>
+</div>
+<div class="divider"></div>
+<h3 class="sub">Déplacements claviculaires selon les mouvements d'épaule</h3>
+<div style="overflow-x:auto;overflow-y:visible;">
+<table class="rom-table" style="font-size:12.5px;min-width:600px;">
+<tr>
+<th>Mouvement épaule</th>
+<th>Élévation clav.</th>
+<th>Abaiss. clav.</th>
+<th>Avancée clav.</th>
+<th>Recul clav.</th>
+<th>Rot. ant.</th>
+<th>Rot. post.</th>
+</tr>
+<tr><td>Antépulsion</td><td>✓</td><td></td><td>✓</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Rétropulsion</td><td></td><td>✓</td><td></td><td>✓</td><td>✓</td><td></td></tr>
+<tr><td>Abduction</td><td>✓</td><td></td><td></td><td>✓</td><td></td><td>✓</td></tr>
+<tr><td>Adduction</td><td></td><td>✓</td><td>✓</td><td></td><td>✓</td><td></td></tr>
+<tr><td>Rotation latérale</td><td></td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td></tr>
+<tr><td>Rotation médiale</td><td>✓</td><td></td><td>✓</td><td></td><td>✓</td><td></td></tr>
+</table>
+</div>
+</div>
+</div>
+<!-- Scapula + muscles ceinture -->
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header">
+<div class="card-icon navy">🔄</div>
+<div class="card-title">La scapula — articulation scapulo-thoracique</div>
+</div>
+<div class="card-body">
+<div class="info-box amber" style="margin-bottom:12px;font-size:12.5px;">
+<strong>Syssarcose (fausse articulation) :</strong> Pas de cartilage articulaire, capsule, ligaments propres ni contact osseux direct. Deux espaces : omo-serratique + serrato-scapulaire. Muscles intercalés : dentelé antérieur + sous-scapulaire. Tissu cellulo-graisseux → glissement facilité.<br/>
+            Avantages : pas d'arthrose, entorse, luxation — Inconvénient : risque de surmenage musculaire.
+          </div>
+<h3 class="sub">Mouvements de la scapula</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;font-size:12.5px;">
+<div style="padding:7px;background:var(--teal-50);border-radius:5px;"><strong>Élévation / Abaissement</strong><br/>Vertical, dans le plan frontal</div>
+<div style="padding:7px;background:var(--navy-100);border-radius:5px;"><strong>Frontalisation / Sagittalisation</strong><br/>Adduction/abduction (→ thorax)</div>
+<div style="padding:7px;background:var(--amber-100);border-radius:5px;"><strong>Sonnette latérale</strong><br/>Rotation → glène vers le haut (abduction bras)</div>
+<div style="padding:7px;background:var(--gray-50);border-radius:5px;"><strong>Sonnette médiale</strong><br/>Rotation → glène vers le bas</div>
+<div style="padding:7px;background:var(--coral-100);border-radius:5px;grid-column:span 2;"><strong>Tilt (bascule) antérieur / postérieur</strong><br/>Rotation de la scapula autour de l'axe frontal</div>
+</div>
+<div class="divider"></div>
+<h3 class="sub">Mouvements scapulaires couplés aux mouvements du bras</h3>
+<div style="font-size:12.5px;color:var(--text2);display:flex;flex-direction:column;gap:5px;">
+<div style="padding:5px 8px;background:var(--gray-50);border-radius:4px;"><strong>Plan de la scapula (30°/frontal) :</strong> Pré-fixation en sonnette médiale → puis sonnette latérale + tilt post. + élévation</div>
+<div style="padding:5px 8px;background:var(--gray-50);border-radius:4px;"><strong>Antépulsion bras (sagittal) :</strong> Pré-pos. abduction + sonnette lat. → sonnette lat. + tilt post. + élévation</div>
+<div style="padding:5px 8px;background:var(--gray-50);border-radius:4px;"><strong>Rétropulsion bras :</strong> Sonnette médiale + tilt ant. + élévation</div>
+<div style="padding:5px 8px;background:var(--gray-50);border-radius:4px;"><strong>Abduction (frontal) :</strong> Pré-pos. adduction + sonnette méd. → sonnette lat. + tilt post. + élévation</div>
+<div style="padding:5px 8px;background:var(--gray-50);border-radius:4px;"><strong>Rot. lat. bras :</strong> Adduction + sonnette méd. + tilt post. + légère abaissement</div>
+<div style="padding:5px 8px;background:var(--gray-50);border-radius:4px;"><strong>Rot. méd. bras :</strong> Abduction + sonnette lat. + tilt ant. + légère élévation</div>
+</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon teal">💪</div>
+<div class="card-title">Muscles moteurs de la ceinture scapulaire</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="muscle-table" style="font-size:12.5px;">
+<tr style="background:var(--navy-900);color:rgba(255,255,255,0.85);">
+<td style="padding:7px 10px;font-weight:600;">Muscle (point fixe rachis)</td>
+<td style="padding:7px 10px;font-weight:600;">Actions principales sur la scapula</td>
+</tr>
+<tr>
+<td><strong>Trapèze</strong></td>
+<td>F*sup : élévation moignon épaule · F*moy : adduction scapula + plaque / thorax + bascule post. · F*inf : sonnette médiale + abaissement</td>
+</tr>
+<tr>
+<td><strong>Rhomboïde</strong></td>
+<td>Élévation + adduction + sonnette médiale (bascule 30°) → abaisseur de l'épaule · Plaque la scapula contre le thorax</td>
+</tr>
+<tr>
+<td><strong>Élévateur de la scapula</strong></td>
+<td>Élévation + légère adduction + sonnette médiale</td>
+</tr>
+<tr>
+<td><strong>Dentelé antérieur</strong></td>
+<td>Plaque + fixe la scapula / thorax (synergie trapèze moy.) · Abduction + sonnette latérale (point fixe thoracique)</td>
+</tr>
+<tr>
+<td><strong>Petit pectoral</strong></td>
+<td>Plaque scapula / gril costal (abducteur) · Antépulseur · Abaissement scapula · Sonnette médiale</td>
+</tr>
+<tr>
+<td><strong>Sub-clavier</strong></td>
+<td>Abaissement clavicule + moignon épaule · Coaptation de la SCC · Stabilisation rotatoire</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<!-- GH -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">⚙️</div>
+<div class="card-title">Articulation gléno-humérale (GH) — Structure détaillée</div>
+</div>
+<div class="card-body">
+<div class="grid-2">
+<div>
+<h3 class="sub" style="margin-top:0;">Tête humérale</h3>
+<ul style="font-size:13px;color:var(--text2);list-style:none;padding:0;display:flex;flex-direction:column;gap:5px;margin-bottom:12px;">
+<li style="padding:5px 8px;background:var(--teal-50);border-radius:5px;">2/5 de sphère — seulement <strong>1/3 en contact</strong> avec la cavité glénoïde</li>
+<li style="padding:5px 8px;background:var(--teal-50);border-radius:5px;">Angle col/diaphyse : <strong>135°</strong></li>
+<li style="padding:5px 8px;background:var(--teal-50);border-radius:5px;">Torsion par rapport à l'axe coude : <strong>20–30°</strong></li>
+<li style="padding:5px 8px;background:var(--teal-50);border-radius:5px;">Col anatomique / horizontale : <strong>45°</strong></li>
+</ul>
+<h3 class="sub">Cavité glénoïde</h3>
+<p style="font-size:13px;color:var(--text2);">Orientée en dehors, en avant, légèrement en haut. Concave dans les deux sens de façon irrégulière. Insertion du bourrelet glénoïdien sur son rebord.</p>
+<div class="info-box teal" style="margin-top:8px;font-size:12.5px;">
+<strong>Labrum glénoïdien (bourrelet) :</strong> Ménisque fibrocartilagineux complet, triangulaire à la coupe. S'insère sur le pourtour glénoïdien + face profonde de la capsule. Approfondit légèrement la cavité. <strong>↑ stabilité de ~20%.</strong> Parfois lésé par les contraintes répétées.
+            </div>
+</div>
+<div>
+<h3 class="sub" style="margin-top:0;">Capsule articulaire</h3>
+<div class="info-box navy" style="background:var(--navy-100);border-color:var(--navy-400);color:var(--navy-900);margin-bottom:10px;font-size:12.5px;">
+<strong>Gagey :</strong> «Les ligaments de l'articulation GH ne sont pas des ligaments individualisés. Il existe une vaste nappe fibreuse, à la fois capsulaire et ligamentaire, insérée sur l'ensemble du pourtour glénoïdien sauf au niveau de l'intervalle des rotateurs et sur l'humérus.»
+            </div>
+<p style="font-size:13px;color:var(--text2);margin-bottom:10px;">Capsule lâche en bas avec replis lorsque le bras pend. Riche en <strong>éléments proprioceptifs</strong> → adaptation des contractions de la coiffe pour le centrage correct. Mauvaise proprioception → pathologies fréquentes de l'épaule.</p>
+<h3 class="sub">Bourses séreuses péri-articulaires</h3>
+<ul style="font-size:12.5px;color:var(--text2);list-style:none;padding:0;display:flex;flex-direction:column;gap:5px;">
+<li style="padding:5px 8px;background:var(--gray-50);border-radius:4px;">→ <strong>Bourse sub-acromiale</strong> + bourse sub-deltoïdienne (entre deltoïde et supra-épineux)</li>
+<li style="padding:5px 8px;background:var(--gray-50);border-radius:4px;">→ <strong>Bourse sub-coracoïdienne</strong></li>
+<li style="padding:5px 8px;background:var(--gray-50);border-radius:4px;">→ <strong>Bourse sub-scapulaire</strong></li>
+</ul>
+<div class="info-box teal" style="margin-top:8px;font-size:12.5px;">Fonction : faciliter le glissement des tendons. Sécrètent du liquide synovial. En conflit : inflammation → bursite.</div>
+</div>
+</div>
+<div class="divider"></div>
+<h3 class="sub">Ligaments de l'articulation GH</h3>
+<div class="grid-2">
+<div>
+<div style="font-size:13px;color:var(--text2);margin-bottom:8px;"><strong>A — Ligaments capsulaires intrinsèques : Ligament gléno-huméral (3 faisceaux)</strong></div>
+<table class="rom-table" style="font-size:12.5px;">
+<tr><th>Faisceau GH</th><th>Tension en...</th><th>Rôle spécifique</th></tr>
+<tr><td>Inférieur</td><td>Abduction + RE</td><td>Forme un hamac en abduction qui supporte la tête (Gagey)</td></tr>
+<tr><td>Moyen</td><td>Abduction</td><td>Stabilisation antérieure</td></tr>
+<tr><td>Supérieur</td><td>Rotation latérale</td><td>Stabilisation supérieure</td></tr>
+</table>
+<div class="info-box coral" style="margin-top:8px;font-size:12.5px;">
+<strong>2 foramens :</strong> Entre faisceau sup/moy = <strong>foramen ovale de Weitbrecht</strong>. Entre faisceau inf/moy = <strong>foramen de Rouvière</strong> (orifice sous-coracoïdien) → zone de faiblesse → luxations antéro-internes. La synoviale peut communiquer avec la bourse sous-coracoïdienne par ces foramens.
+            </div>
+</div>
+<div>
+<div style="font-size:13px;color:var(--text2);margin-bottom:8px;"><strong>B — Ligaments passifs extracapsulaires extrinsèques</strong></div>
+<div style="display:flex;flex-direction:column;gap:7px;font-size:12.5px;">
+<div style="padding:8px 10px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-500);">
+<strong>Ligament coraco-huméral</strong> — 2 faisceaux (tubercule majeur + mineur). Tensions : antépulsion (faisceau tub. maj.) et rétropulsion (faisceau tub. min.). Frein à la rotation. S'oppose au glissement inférieur. <strong>Suspend le bras</strong> à la scapula (aidé par supra-épineux + deltoïde).
+              </div>
+<div style="padding:8px 10px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-500);">
+<strong>Ligament acromio-coracoïdien</strong> — Large nappe reliant acromion au processus coracoïde. Forme un <strong>plafond légèrement déformable</strong> au-dessus de la tête de l'humérus. Clef de voûte de la voûte acromio-coracoïdienne.
+              </div>
+<div style="padding:8px 10px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">
+<strong>Ligament transverse (huméral transverse)</strong> — Maintient le tendon du biceps dans la coulisse bicipitale. Prolongement distal de la capsule entre les 2 faisceaux du ligt coraco-huméral.
+              </div>
+</div>
+<div class="info-box teal" style="margin-top:8px;font-size:12.5px;">
+<strong>Verrou fibreux antéro-supérieur :</strong> Ligt coraco-huméral + Ligt gléno-huméral → ensemble épais résistant jouant un rôle capital dans la stabilité de l'épaule.
+            </div>
+</div>
+</div>
+</div>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>Sources : P. César — Biomécanique épaule 1ère partie, IEOQ 1ère année · Gagey O. (capsule et ligaments GH) · Kapandji IA T.1 (7e éd.) · Dufour M., Pillu M. — Biomécanique fonctionnelle, Masson</cite>
+</div>
+</div>
+</section>
+<section class="section" id="epaule-rythme" style="display:none;">
+<div class="section-title">Rythme scapulo-huméral rachidien</div>
+<div class="section-sub">Analyse cinématique de l'élévation du membre supérieur — selon Kapandji &amp; P. César (IEOQ)</div>
+<!-- Phase overview -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">📊</div>
+<div>
+</div>
+</div>
+<div class="card-body">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;">
+<div style="text-align:center;padding:14px;background:var(--teal-50);border-radius:8px;border:1px solid var(--teal-200)">
+<div style="font-size:28px;font-weight:800;color:var(--teal-700)">0–150°</div>
+<div style="font-size:12px;color:var(--gray-500);margin-top:4px;">Ceinture scapulaire + humérus</div>
+</div>
+<div style="text-align:center;padding:14px;background:var(--navy-100);border-radius:8px;border:1px solid var(--navy-200)">
+<div style="font-size:28px;font-weight:800;color:var(--navy-700)">150–180°</div>
+<div style="font-size:12px;color:var(--gray-500);margin-top:4px;">Principalement le tronc</div>
+</div>
+<div style="text-align:center;padding:14px;background:var(--amber-100);border-radius:8px;border:1px solid #f0c865">
+<div style="font-size:28px;font-weight:800;color:var(--amber-500)">2:1</div>
+<div style="font-size:12px;color:var(--gray-500);margin-top:4px;">Ratio GH/ST (Inman, 1944)</div>
+</div>
+</div>
+<div class="info-box teal">
+<strong>Loi de Kapandji :</strong> Pour chaque 15° d'élévation totale, l'articulation gléno-humérale contribue 10° et la scapulo-thoracique 5°. Ce ratio moyen de 2:1 varie selon les phases.
+        </div>
+</div>
+</div>
+<!-- Phase timeline -->
+<div class="grid-2" style="gap:20px;align-items:start">
+<div>
+<h3 class="sub">Phases articulaires détaillées</h3>
+<div class="phase-timeline">
+<!-- Phase A: 0-45° -->
+<div class="phase-block" id="ph1">
+<div class="phase-header" onclick="togglePhase('ph1')">
+<div class="phase-range">0–45°</div>
+<div>
+<div class="phase-label">Initiation — humérus dominant</div>
+<div class="phase-sub">GH + SD principalement</div>
+</div>
+<div class="phase-toggle">▼</div>
+</div>
+<div class="phase-content">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;">
+<strong>Plan articulaire :</strong> GH et sous-deltoïdienne (SD) mobilisées. La tête humérale roule vers le haut tout en glissant légèrement vers le bas (couple force deltoïde / supra-épineux).
+              </p>
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;">
+<strong>Scapula :</strong> Maintenue en adduction relative. Mouvement de rotation latérale débutant, portant l'angle inférieur en dehors.
+              </p>
+<div class="info-box teal" style="margin-top:10px;">
+<strong>Ratio de déplacement :</strong> Humérus ≈ 38° / Scapula ≈ 7° (variable selon les auteurs)
+              </div>
+<div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;">
+<span class="tag tag-teal">GH</span>
+<span class="tag tag-teal">SD</span>
+<span class="tag tag-navy">Trapèze inf. &amp; moy. (fixateur)</span>
+<span class="tag tag-gray">Grand dentelé antérieur</span>
+</div>
+</div>
+</div>
+<!-- Phase B: 45-90° -->
+<div class="phase-block" id="ph2">
+<div class="phase-header" onclick="togglePhase('ph2')">
+<div class="phase-range">45–90°</div>
+<div>
+<div class="phase-label">Mise en charge scapulaire</div>
+<div class="phase-sub">GH + ST + AC + SCC</div>
+</div>
+<div class="phase-toggle">▼</div>
+</div>
+<div class="phase-content">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;">
+<strong>Plan articulaire :</strong> Entrée en jeu progressif de ST, AC, SCC. Humérus ≈ 65° / Scapula ≈ 25° sur la totalité du secteur 0–90°.
+              </p>
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;">
+<strong>À 90° :</strong> La nappe tendineuse sous-deltoïdienne s'engage sous la voûte, le trochiter bute contre elle → rotation externe automatique (paradoxe de Codman) dégageant le trochiter en arrière.
+              </p>
+<p style="font-size:13.5px;color:var(--text2);">
+<strong>Clavicule :</strong> L'extrémité sternale s'abaisse (oblique en bas et dehors). Mise en tension du ligament costo-claviculaire → début de rotation claviculaire postérieure.
+              </p>
+<div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;">
+<span class="tag tag-teal">Trapèze sup. (effecteur)</span>
+<span class="tag tag-teal">Dentelé ant. (effecteur)</span>
+<span class="tag tag-navy">Deltoïde moy. (effecteur)</span>
+<span class="tag tag-gray">Supra-épineux (ajusteur)</span>
+</div>
+</div>
+</div>
+<!-- Phase C: 90-120° -->
+<div class="phase-block" id="ph3">
+<div class="phase-header" onclick="togglePhase('ph3')">
+<div class="phase-range">90–120°</div>
+<div>
+<div class="phase-label">Prédominance scapulaire</div>
+<div class="phase-sub">ST, AC, SCC &gt; GH</div>
+</div>
+<div class="phase-toggle">▼</div>
+</div>
+<div class="phase-content">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;">
+                Rotation latérale scapulaire poursuivie. La glène oblique vers le haut. Abduction humérale continue. Clavicule : rotation postérieure liée à l'infériorisation de la SCC.
+              </p>
+<p style="font-size:13.5px;color:var(--text2);">
+                L'extrémité acromiale recule légèrement sur l'acromion (arthrodie) avec abaissement, entraînant tension des ligaments conoïde et trapézoïde.
+              </p>
+<div class="info-box amber" style="margin-top:10px;">
+<strong>À 120° :</strong> Le trochiter bute à nouveau contre la voûte — le mouvement gléno-huméral s'arrête.
+              </div>
+</div>
+</div>
+<!-- Phase D: 120-150° -->
+<div class="phase-block" id="ph4">
+<div class="phase-header" onclick="togglePhase('ph4')">
+<div class="phase-range">120–150°</div>
+<div>
+<div class="phase-label">Fin de la rotation scapulaire</div>
+<div class="phase-sub">Plus de mouvement GH</div>
+</div>
+<div class="phase-toggle">▼</div>
+</div>
+<div class="phase-content">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;">
+                Plus de mouvement gléno-huméral. Majoration de la rotation latérale scapulaire tendant à verticaliser l'épine. Rotation postérieure claviculaire poursuivie jusqu'à arrêt du mouvement ST ≈ 150°.
+              </p>
+<div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;">
+<span class="tag tag-teal">Trapèze sup. (sonnette latérale)</span>
+<span class="tag tag-navy">Deltoïde moy. (fixateur fin)</span>
+<span class="tag tag-gray">Dentelé ant. faisceau sup.</span>
+<span class="tag tag-gray">Supra-épineux (ajusteur)</span>
+</div>
+</div>
+</div>
+<!-- Phase E: 150-180° -->
+<div class="phase-block" id="ph5">
+<div class="phase-header" onclick="togglePhase('ph5')">
+<div class="phase-range">150–180°</div>
+<div>
+<div class="phase-label">Contribution rachidienne</div>
+<div class="phase-sub">Inclinaison dorso-lombaire + cervicale</div>
+</div>
+<div class="phase-toggle">▼</div>
+</div>
+<div class="phase-content">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;">
+                Les 30 derniers degrés sont permis par le rachis : <strong>inclinaison dorso-lombaire contro-latérale</strong> + <strong>inclinaison cervicale homolatérale</strong>.
+              </p>
+<p style="font-size:13.5px;color:var(--text2);">
+<strong>Abduction bilatérale :</strong> Rachis dorso-lombaire en extension + rachis cervical en flexion.
+              </p>
+<div class="info-box teal" style="margin-top:10px;">
+<strong>Implication clinique :</strong> Une cyphose dorsale ou un enroulement des épaules réduisent significativement la mobilité GH en limitant la contribution rachidienne.
+              </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right column: Paradoxe Codman + données enrichies -->
+<div>
+<h3 class="sub">Paradoxe de Codman — Mac Connaill</h3>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-body">
+<div class="info-box navy" style="background:var(--navy-100);border-color:var(--navy-400);color:var(--navy-900);">
+<strong>Définition :</strong> Suite à une abduction frontale 180° puis une extension 180° depuis la verticale, le membre se retrouve en rotation interne de 180° sans qu'aucune rotation volontaire n'ait été réalisée.
+            </div>
+<div style="margin-top:14px;">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;"><strong>Explication (Mac Connaill) :</strong></p>
+<ul style="font-size:13.5px;color:var(--text2);list-style:none;padding:0;">
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--gray-100)"><span style="position:absolute;left:0;color:var(--teal-500);">→</span> L'épaule (3 ddl) est traitée comme un cardan (2 ddl) dans cette manœuvre</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--gray-100)"><span style="position:absolute;left:0;color:var(--teal-500);">→</span> <strong>Rotation conjointe</strong> : rotation involontaire sur le 3e axe dans les articulations à 2 ddl</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:0;color:var(--teal-500);">→</span> <strong>Rotation adjointe</strong> : 3e ddl de l'épaule permettant des cycles ergonomiques (natation)</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 class="sub">Données cinématiques validées (littérature)</h3>
+<div class="card">
+<div class="card-body" style="padding:0;overflow:hidden">
+<table class="rom-table" style="font-size:13px;">
+<tr>
+<th>Secteur</th>
+<th>GH (°)</th>
+<th>ST (°)</th>
+<th>Total (°)</th>
+</tr>
+<tr>
+<td>0 → 90°</td>
+<td><span class="rom-val">65</span></td>
+<td><span class="rom-val">25</span></td>
+<td>90</td>
+</tr>
+<tr>
+<td>90 → 150°</td>
+<td><span class="rom-val">~30</span></td>
+<td><span class="rom-val">~30</span></td>
+<td>60</td>
+</tr>
+<tr>
+<td>Total 0→150°</td>
+<td><span class="rom-val">~95</span></td>
+<td><span class="rom-val">~55</span></td>
+<td>150</td>
+</tr>
+<tr>
+<td>Contribution ST totale</td>
+<td colspan="2" style="text-align:center;font-style:italic;">60° sur 180° (~33%)</td>
+<td>—</td>
+</tr>
+</table>
+</div>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>Sources : Inman VT et al. (1944), Ludewig PM (2009), SFMCP — Kapandji IA, Physiologie articulaire T.1 (7e éd.)</cite>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="coiffe" style="display:none;">
+<div class="section-title">La coiffe des rotateurs</div>
+<div class="section-sub">Anatomie, biomécanique fonctionnelle et physiopathologie</div>
+<!-- Muscles de la coiffe -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">🦴</div>
+<div class="card-title">Les 4 muscles de la coiffe + longue portion du biceps</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead>
+<tr>
+<th>Muscle</th>
+<th>Origine</th>
+<th>Insertion</th>
+<th>Innervation</th>
+<th>Rôle principal</th>
+<th>Rôle d'ajusteur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Supra-épineux<small>Supraspinatus</small></div></td>
+<td>Fosse supra-épineuse (scapula)</td>
+<td>Tubercule majeur (portion sup.)</td>
+<td><span class="tag tag-teal">N. supra-scapulaire</span></td>
+<td>Abduction épaule (initiateur)</td>
+<td>Glissement inférieur tête humérale en abduction</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Infra-épineux<small>Infraspinatus</small></div></td>
+<td>Fosse infra-épineuse (scapula)</td>
+<td>Tubercule majeur (portion moy.)</td>
+<td><span class="tag tag-teal">N. supra-scapulaire</span></td>
+<td>Rotation externe épaule</td>
+<td>Glissement antérieur tête en rotation latérale</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Petit rond<small>Teres minor</small></div></td>
+<td>Bord latéral scapula</td>
+<td>Tubercule majeur (portion inf.)</td>
+<td><span class="tag tag-navy">N. axillaire</span></td>
+<td>Rotation externe (avec infra-ép.)</td>
+<td>Glissement antéro-inférieur en antépulsion</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Sub-scapulaire<small>Subscapularis</small></div></td>
+<td>Fosse sous-scapulaire (face ant.)</td>
+<td>Tubercule mineur (humérus)</td>
+<td><span class="tag tag-teal">N. supra-scapulaire</span></td>
+<td>Rotation médiale (interne)</td>
+<td>Glissement postérieur tête en rotation médiale</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Lg. portion biceps<small>Biceps brachii — chef long</small></div></td>
+<td>Tubercule supra-glénoïdien</td>
+<td>Tubérosité radiale (via TDA)</td>
+<td><span class="tag tag-navy">N. musculo-cutané</span></td>
+<td>Flexion coude / supination</td>
+<td>Glissement postéro-inférieur en rétropulsion</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="footnote" style="padding:10px 16px;">
+<cite>Note : Le sub-scapulaire est innervé par le nerf subscapulaire (C5-C6), non le nerf supra-scapulaire — correction apportée par rapport aux cours d'usage.</cite>
+</div>
+</div>
+<!-- Biomécanique + synergie -->
+<div class="grid-2">
+<div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon navy">⚙️</div>
+<div class="card-title">Rôle biomécanique central : centrage de la tête humérale</div>
+</div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:12px;">
+              La voûte acromio-coracoïdienne dispose d'un espace sous-acromial moyen de <strong>10 mm</strong>. L'ascension de la tête humérale réduit cet espace → conflit potentiel.
+            </p>
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:12px;">
+              La coiffe agit comme un <strong>manchon musculaire profond</strong> autour de l'articulation GH. Ses muscles sont avant tout des <em>ajusteurs</em> de position de tête, permettant le glissement compensateur lors de chaque mouvement.
+            </p>
+<div class="info-box teal">
+<strong>Concept de poulie :</strong> La tête humérale se comporte comme une poulie. Chaque tendon de la coiffe assure un recentrage dynamique par glissement dans la direction opposée à la force principale appliquée.
+            </div>
+<div style="margin-top:14px;">
+<div class="progress-row">
+<div class="progress-label"><span>Force abduction (deltoïde)</span><span>↑ supérieur</span></div>
+<div class="progress-bar"><div class="progress-fill" style="width:75%;background:var(--teal-500)"></div></div>
+</div>
+<div class="progress-row">
+<div class="progress-label"><span>Contre-force centrage (supra-ép.)</span><span>↓ inférieur</span></div>
+<div class="progress-bar"><div class="progress-fill" style="width:60%;background:var(--navy-500)"></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon teal">🔗</div>
+<div class="card-title">Paires synergiques coiffe — couche superficielle</div>
+</div>
+<div class="card-body">
+<div class="synergy-grid">
+<div class="synergy-item">
+<strong>Supra-épineux + Deltoïde moyen</strong>
+                Abduction (effecteur + ajusteur)
+              </div>
+<div class="synergy-item">
+<strong>Infra-épineux + Deltoïde post.</strong>
+                Rotation latérale
+              </div>
+<div class="synergy-item">
+<strong>Sub-scapulaire + Gd pectoral / Gd dorsal / Gd rond</strong>
+                Rotateurs médiaux
+              </div>
+<div class="synergy-item">
+<strong>Petit rond + Deltoïde ant. / Coracobrachial / Biceps</strong>
+                Antépulseurs
+              </div>
+</div>
+<div class="info-box amber" style="margin-top:14px;">
+<strong>Couche motrice superficielle :</strong> Deltoïde ant./post., grand pectoral (faisceau clav.), grand rond, grand dorsal. Ces effecteurs sont "guidés" par la coiffe profonde.
+            </div>
+<div class="info-box coral" style="margin-top:10px;">
+<strong>Rôle du long biceps :</strong> La portion intra-capsulaire est fréquemment pathologique dans les atteintes de coiffe. Dépistage systématique recommandé (O'Brien, Yergason).
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="arthro-ceinture" style="display:none;">
+<div class="section-title">Arthrologie — Ceinture du membre supérieur</div>
+<div class="section-sub">Thomas Gautier D.O. · IEOQ Année 1 — Articulations sterno-claviculaire, acromio-claviculaire, scapulo-humérale et sous-deltoïdienne</div>
+<!-- Introduction -->
+<div class="info-box teal" style="margin-bottom:20px;">
+<strong>Complexe articulaire de l'épaule :</strong> Les articulations de la ceinture du membre supérieur sont au nombre de deux (sterno-claviculaire et acromio-claviculaire) mais le complexe fonctionnel comprend 5 articulations : sterno-costo-claviculaire, acromio-claviculaire, omo-sérato-thoracique, scapulo-humérale et sous-deltoïdienne.
+    </div>
+<!-- 1. Sterno-costo-claviculaire -->
+<div class="test-section-title">1 — Articulation sterno-costo-claviculaire</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon teal">🦴</div>
+<div class="card-title">Éléments en présence (4)</div>
+</div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:12px;">Seul point de contact osseux de la ceinture scapulaire avec le thorax. Articulation en selle avec 3 degrés de liberté grâce au disque.</p>
+<div style="display:flex;flex-direction:column;gap:8px;">
+<div style="padding:10px 14px;background:var(--teal-50);border-radius:8px;border-left:3px solid var(--teal-400);">
+<strong style="color:var(--teal-700);">La Clavicule</strong><br/>
+<span style="font-size:13px;color:var(--text2);">Surface subdivisée en 2 versants — versant principal à la face médiale de l'extrémité médiale ; versant secondaire à la face inférieure. Triangulaire à base inférieure.</span>
+</div>
+<div style="padding:10px 14px;background:var(--navy-100);border-radius:8px;border-left:3px solid var(--navy-400);">
+<strong style="color:var(--navy-700);">Le Sternum (incisure claviculaire)</strong><br/>
+<span style="font-size:13px;color:var(--text2);">Incisure à la partie latérale du bord supérieur du manubrium. Concave verticalement et convexe sagittalement → articulation en selle. Encroûtée de cartilage hyalin.</span>
+</div>
+<div style="padding:10px 14px;background:var(--amber-100);border-radius:8px;border-left:3px solid var(--amber-500);">
+<strong style="color:var(--amber-500);">Le 1er cartilage costal</strong><br/>
+<span style="font-size:13px;color:var(--text2);">Très court, relie la 1ère côte au manubrium sternal. Sa face supérieure est intégrée à l'articulation en raison du débordement inférieur de la surface claviculaire.</span>
+</div>
+<div style="padding:10px 14px;background:var(--gray-50);border-radius:8px;border-left:3px solid var(--gray-400);">
+<strong style="color:var(--gray-700);">Le Disque articulaire (ménisque)</strong><br/>
+<span style="font-size:13px;color:var(--text2);">Disque circulaire inséré périphériquement sur la capsule et la partie supérieure de la clavicule. Divise le compartiment articulaire en deux.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon navy">🔗</div>
+<div class="card-title">Moyens d'unions (6)</div>
+</div>
+<div class="card-body">
+<table class="muscle-table">
+<thead>
+<tr><th>Élément</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><div class="muscle-name">Capsule</div></td><td>S'insère au pourtour des surfaces cartilagineuses (clavicule, manubrium, 1er cartilage costal). Constituée de fibres manubrio-claviculaires et costo-claviculaires. Lâche → autorise glissements et pivotements.</td></tr>
+<tr><td><div class="muscle-name">Disque / ménisque</div></td><td>À la fois moyen d'union (fibro-) et surface articulaire (-cartilage).</td></tr>
+<tr><td><div class="muscle-name">Synoviale</div></td><td>Lâche — tapisse la face profonde de la capsule.</td></tr>
+<tr><td><div class="muscle-name">Ligaments (proches)</div></td><td>Ant. et post. de la surface ; Ligament supérieur (épaississement capsulaire) ; Ligament interclaviculaire ou jugal (au-dessus).</td></tr>
+<tr><td><div class="muscle-name">Lig. costo-claviculaire (distance)</div></td><td>S'insère sur la base solide de la côte — garantit la partie inférieure de l'articulation avec un bras de levier majoré.</td></tr>
+<tr><td><div class="muscle-name">Éléments stabilisateurs</div></td><td>Muscle subclavier (renfort actif du lig. costo-claviculaire). Sterno-cléido-mastoïdien (avant), sterno-hyoïdien (arrière), grand pectoral (avant/bas) franchissent l'interligne.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header">
+<div class="card-icon amber">⚕️</div>
+<div class="card-title">Intérêts ostéopathiques</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> L'extrémité claviculaire déborde le plan sternal en avant et en haut — visible et facilement palpable. La mobilité du moignon de l'épaule met en évidence la saillie de cette extrémité.
+          </div>
+<div class="info-box amber">
+<strong>Mécanique et pathologique :</strong> L'interposition discale donne 3 degrés de liberté (rotation axiale en plus des 2 classiques de l'articulation en selle). Fonctionne comme un cardan. Moins sujette aux luxations que l'acromio-claviculaire. En cas de luxation, le ménisque suit le déplacement claviculaire.
+          </div>
+</div>
+</div>
+</div>
+<!-- 2. Acromio-claviculaire -->
+<div class="test-section-title">2 — Articulation acromio-claviculaire</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon teal">🦴</div>
+<div class="card-title">Éléments en présence (2)</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:8px;">
+<div style="padding:10px 14px;background:var(--teal-50);border-radius:8px;border-left:3px solid var(--teal-400);">
+<strong style="color:var(--teal-700);">La Clavicule</strong><br/>
+<span style="font-size:13px;color:var(--text2);">Facette de l'extrémité latérale, taillée en biseau aux dépens de la face inférieure. Plan oblique en bas et en dedans. Surface plane, ovalaire, à grand axe antéropostérieur. Encroûtée de cartilage hyalin.</span>
+</div>
+<div style="padding:10px 14px;background:var(--navy-100);border-radius:8px;border-left:3px solid var(--navy-400);">
+<strong style="color:var(--navy-700);">La Scapula</strong><br/>
+<span style="font-size:13px;color:var(--text2);">Inversement conformée à la surface claviculaire.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon navy">🔗</div>
+<div class="card-title">Moyens d'unions</div>
+</div>
+<div class="card-body">
+<table class="muscle-table">
+<thead>
+<tr><th>Élément</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><div class="muscle-name">Capsule</div></td><td>Fibres acromio-claviculaires. Relativement lâche → autorise les petits mouvements de bâillement-glissement lors des mobilités scapulo-thoraciques.</td></tr>
+<tr><td><div class="muscle-name">Synoviale</div></td><td>Tapisse la face profonde de la capsule. Inclut parfois un ménisque souvent incomplet.</td></tr>
+<tr><td><div class="muscle-name">Ligaments capsulaires</div></td><td>Petits épaississements capsulaires (ant., post., sup., inf.). Le ligament supérieur est le plus important, lié aux fibres trapézo-deltoïdiennes (chape fonctionnelle).</td></tr>
+<tr><td><div class="muscle-name">Ligs. coraco-claviculaires (distance)</div></td><td>Les plus importants pour la stabilité : lig. trapézoïde (le plus latéral), lig. conoïde, lig. coraco-claviculaire médial.</td></tr>
+<tr><td><div class="muscle-name">Éléments stabilisateurs</div></td><td>Trapèze supérieur (arrière) et deltoïde (avant) — leurs insertions unissent les berges de l'interligne.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header">
+<div class="card-icon amber">⚕️</div>
+<div class="card-title">Intérêts ostéopathiques</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> Très superficielle — l'interligne est facile à repérer. La berge claviculaire surplombe le méplat manubrial.
+          </div>
+<div class="info-box coral">
+<strong>Mécanique et pathologique :</strong> Très instable sur le plan osseux. Exposée aux chocs indirects (chutes sur le moignon de l'épaule) → risque de disjonction acromio-claviculaire pouvant nécessiter réfection du plan ligamentaire ou pose d'une broche.
+          </div>
+</div>
+</div>
+</div>
+<!-- 3. Omo-sérato-thoracique -->
+<div class="test-section-title">3 — Articulation omo-sérato-thoracique (syssarcose)</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon teal">🦴</div>
+<div class="card-title">Éléments en présence (3) — Syssarcose</div>
+</div>
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:12px;">
+<strong>Syssarcose</strong> (du grec <em>sun</em> = jonction, <em>sarcos</em> = chair) : articulation à chair interposée. Pas de surface articulaire mais deux plans de glissement séparés par un muscle.
+        </div>
+<div style="display:flex;flex-direction:column;gap:8px;">
+<div style="padding:10px 14px;background:var(--teal-50);border-radius:8px;border-left:3px solid var(--teal-400);">
+<strong style="color:var(--teal-700);">La Scapula</strong><br/>
+<span style="font-size:13px;color:var(--text2);">Face antérieure revêtue de l'insertion musculaire du subscapulaire → forme un « matelas » souple.</span>
+</div>
+<div style="padding:10px 14px;background:var(--navy-100);border-radius:8px;border-left:3px solid var(--navy-400);">
+<strong style="color:var(--navy-700);">La Cage thoracique</strong><br/>
+<span style="font-size:13px;color:var(--text2);">Arc postérieur des côtes 1 à 7 et nappe musculaire des intercostaux.</span>
+</div>
+<div style="padding:10px 14px;background:var(--amber-100);border-radius:8px;border-left:3px solid var(--amber-500);">
+<strong style="color:var(--amber-500);">Le Muscle dentelé antérieur</strong><br/>
+<span style="font-size:13px;color:var(--text2);">Glisse entre scapula et cage thoracique. Délimite 2 espaces : espace postérieur scapulo-serratique et espace antérieur sérato-thoracique. Nappés d'un tissu graisseux facilitant les déplacements.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon navy">🔗</div>
+<div class="card-title">Moyens d'unions — Muscles périscapulaires</div>
+</div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;">Moyens d'union exclusivement musculaires :</p>
+<div style="display:flex;flex-wrap:wrap;gap:6px;">
+<span class="tag tag-teal">Dentelé antérieur</span>
+<span class="tag tag-navy">Rhomboïde (2 faisceaux)</span>
+<span class="tag tag-teal">Élévateur de la scapula</span>
+<span class="tag tag-navy">Trapèze (complet)</span>
+<span class="tag tag-teal">Petit pectoral</span>
+<span class="tag tag-gray">Grand dorsal (accessoire)</span>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header">
+<div class="card-icon amber">⚕️</div>
+<div class="card-title">Intérêts ostéopathiques</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> Visualiser le bord médial de la scapula, son angle inférieur et l'épine prolongée de l'acromion. La palpation des muscles périscapulaires nécessite de détendre le trapèze (plan superficiel).
+          </div>
+<div class="info-box teal">
+<strong>Mécanique et pathologique :</strong> Sans cartilage → jamais d'arthrose. Sans capsule → jamais de luxation. Sans ligaments → jamais d'entorse. Entité particulièrement robuste. En contrepartie, les muscles sont en permanence sollicités → fatigue, contractures et douleurs fréquentes.
+          </div>
+</div>
+</div>
+</div>
+<!-- 4. Scapulo-humérale -->
+<div class="test-section-title">4 — Articulation scapulo-humérale</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon teal">🦴</div>
+<div class="card-title">Éléments en présence (3)</div>
+</div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:12px;">Articulation à synoviale de type <strong>sphéroïde</strong>, non congruente et non concordante. Fait partie du complexe thoraco-scapulo-brachial (TSB).</p>
+<div style="display:flex;flex-direction:column;gap:8px;">
+<div style="padding:10px 14px;background:var(--teal-50);border-radius:8px;border-left:3px solid var(--teal-400);">
+<strong style="color:var(--teal-700);">La Scapula — Glène</strong><br/>
+<span style="font-size:13px;color:var(--text2);">Ovalaire, à grand axe oblique en haut et en avant. Très légèrement concave en tous sens. Regarde en dehors, en avant et très faiblement en haut. Encroûtée de cartilage hyalin.</span>
+</div>
+<div style="padding:10px 14px;background:var(--navy-100);border-radius:8px;border-left:3px solid var(--navy-400);">
+<strong style="color:var(--navy-700);">L'Humérus — Tête</strong><br/>
+<span style="font-size:13px;color:var(--text2);">Représente 1/3 de sphère pleine, 5–6 cm de diamètre. Regarde en dedans et en haut (130°) et en arrière (35–40°). Encroûtée de cartilage hyalin.</span>
+</div>
+<div style="padding:10px 14px;background:var(--amber-100);border-radius:8px;border-left:3px solid var(--amber-500);">
+<strong style="color:var(--amber-500);">Le Labrum</strong><br/>
+<span style="font-size:13px;color:var(--text2);">Fibro-cartilage en anneau prismatique triangulaire (triangulaire à la coupe). Face axiale : cartilage hyalin. Face périphérique : adhère à la capsule. Face osseuse : s'insère sur le limbus glénoïdal.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon navy">🔗</div>
+<div class="card-title">Moyens d'unions (6 types)</div>
+</div>
+<div class="card-body">
+<table class="muscle-table">
+<thead>
+<tr><th>Élément</th><th>Caractéristiques</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Capsule</div></td>
+<td>Lâche — accepte décoaptations jusqu'à 2 cm. Fibres parallèles scapulo-humérales → tension progressive en mouvements tridimensionnels. Position de serrage max : extension + abduction + rotation latérale (armé handball). Deux points faibles antérieurs (sup. et inf.).</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Synoviale</div></td>
+<td>Communique parfois avec la bourse du subscapulaire. Se réfléchit en gaine pour le tendon du long biceps (jusqu'à la sortie du sillon bicipital).</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Labrum</div></td>
+<td>Surface articulaire et moyen d'union — prolonge souplement le limbus glénoïdal.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Lig. coraco-huméral</div></td>
+<td>Origine : coracoïde. Deux faisceaux (sup. → tubercule majeur, inf. → tubercule mineur). Entre les 2 faisceaux : passage intracapsulaire du long biceps.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Lig. gléno-huméral</div></td>
+<td>3 faisceaux en double Z (sup., moyen, inf.) zébrant verticalement l'interligne antérieur — protection de la découverture antérieure de la tête.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Lig. coraco-acromial (distance)</div></td>
+<td>Ligament scapulo-scapulaire formant la partie moyenne de la voûte coraco-acromiale surplombant la tête humérale.</td>
+</tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin-top:12px;">
+<strong>Éléments stabilisateurs (coiffe) :</strong> Long biceps (intracapsulaire, extra-articulaire) · Subscapulaire (renforce LGH moyen) · Supra-épineux (renforce lig. coraco-huméral sup.) · Toute la coiffe · Long triceps (scapula + labrum).
+        </div>
+</div>
+</div>
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header">
+<div class="card-icon amber">⚕️</div>
+<div class="card-title">Intérêts ostéopathiques</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> Interligne recouvert par la coiffe et la masse deltoïdienne. Cartilage de la tête palpable inférieurement en abduction prononcée (prudence — éléments vasculo-nerveux proches). Amyotrophie du galbe deltoïdien permet de mieux palper les tubercules huméraux.
+          </div>
+<div class="info-box amber">
+<strong>Mécanique et pathologique :</strong> Discordance entre glène et tête (surfaces ni congruentes ni concordantes). Contention passive (ligaments) + active (coiffe) → néo-acétabulum semi-rigide avec la voûte coraco-acromiale. Pathologies traumatiques et dégénérescence rhumatismale fréquentes compte tenu des exigences fonctionnelles.
+          </div>
+</div>
+</div>
+</div>
+<!-- 5. Sous-deltoïdienne -->
+<div class="test-section-title">5 — Articulation sous-deltoïdienne (fausse articulation)</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">💡</div>
+<div class="card-title">Caractéristiques</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:8px;">
+<div style="padding:10px 14px;background:var(--teal-50);border-radius:8px;">
+<strong>Relation anatomique :</strong> Entre la face inférieure du deltoïde et la face supérieure du tendon du supra-épineux.
+          </div>
+<div style="padding:10px 14px;background:var(--navy-100);border-radius:8px;">
+<strong>Bourse séreuse :</strong> N'est pas utilisée en position de repos anatomique (PRA) — rôle de protection du tendon lors des mouvements d'abduction du bras.
+          </div>
+</div>
+</div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre supérieur, Année 1, IEOQ · Chapitres 1 à 5 (Ceinture du membre supérieur) · Usage privé</cite></div>
+</section>
+<section class="section" id="tests-epaule" style="display:none;">
+<div class="section-title">Tests Orthopédiques — Épaule</div>
+<div class="section-sub">Grille d'évaluation clinique — IEOQ · P. César 1ère année ostéo 2019 · Références Hegedus EJ 2012, Dessaur &amp; Magarey 2008</div>
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header">
+<div class="card-icon teal">📋</div>
+<div class="card-title">Grille d'évaluation clinique — Structure de l'examen</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Catégorie</th><th>Éléments évalués</th><th>Critères de qualité</th></tr></thead>
+<tbody>
+<tr><td><strong>Observation générale</strong></td><td>Symétrie, cicatrices, lésions cutanées, érythème, œdème, atrophie musculaire</td><td>Comparaison bilatérale systématique</td></tr>
+<tr><td><strong>Palpation — Articulaire</strong></td><td>Sterno-claviculaire · Acromio-claviculaire · Gléno-humérale</td><td>Identification anatomique · Texture des tissus · Réaction du patient · Comparaison côté sain</td></tr>
+<tr><td><strong>Tests de conflit sous-acromial</strong></td><td>Hawkins/Kennedy · Arc douloureux · Yocum/Neer</td><td>Technique adéquate selon protocole</td></tr>
+<tr><td><strong>Tests du supra-épineux</strong></td><td>Empty Can Test · Full Can Test</td><td>Résistance appliquée progressivement · Position neutre respectée</td></tr>
+<tr><td><strong>Tests infra-épineux &amp; petit rond</strong></td><td>Test de Patte · Lateral Lag Sign · Signe du Clairon</td><td>Différenciation infra/petit rond respectée</td></tr>
+<tr><td><strong>Tests du long biceps</strong></td><td>Palpation coulisse bicipitale · Palm Up/Speed Test · Yergason</td><td>Coulisse palpée activement et passivement</td></tr>
+<tr><td><strong>Tests du sub-scapulaire</strong></td><td>Belly Press Test · Lift-Off Test (Gerber) · Bear Hug Test</td><td>Plan de scapula respecté</td></tr>
+<tr><td><strong>Tests du labrum</strong></td><td>Test de O'Brien · Test de Crank</td><td>Compression axiale appliquée correctement</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="test-section-title">🔴 Tests de conflit sous-acromial</div>
+<div class="test-card" id="tc-hawkins">
+<div class="test-card-header" onclick="toggleTest('tc-hawkins')">
+<div class="test-card-name">Test de Hawkins-Kennedy <small>Conflit sous-acromial</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Conflit</span><span class="tag tag-teal">Supra-épineux</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position du patient</div><div class="value">Assis ou debout</div></div>
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Tendon supra-épineux · Bourse sous-acromiale</div></div>
+<div class="test-detail-item"><div class="label">Sensibilité</div><div class="value">~79% (Hegedus 2012)</div></div>
+<div class="test-detail-item"><div class="label">Spécificité</div><div class="value">~59%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Épaule fléchie à 90°, coude fléchi à 90°. Le clinicien effectue une rotation interne forcée de l'épaule. La main tient l'avant-bras et pousse vers le bas (rotation interne).</div>
+<div class="test-positive"><div class="label">Test positif</div>Reproduction de la douleur dans la région sous-acromiale et/ou antérieure de l'épaule lors de la rotation interne forcée → conflit de la coiffe sous la voûte coraco-acromiale.</div>
+<div class="test-detail-full"><div class="label">Mécanisme physiopathologique</div>La rotation interne pince le tendon du supra-épineux (et parfois du biceps) contre le ligament coraco-acromial et la face antéro-inférieure de l'acromion → compression mécanique reproductible.</div>
+<div style="margin-top:8px;">
+<div class="test-sensitivity"><span style="min-width:80px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill high" style="width:79%"></div></div><span>79%</span></div>
+<div class="test-sensitivity"><span style="min-width:80px;">Spécificité</span><div class="bar-wrap"><div class="bar-fill mid" style="width:59%"></div></div><span>59%</span></div>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=X9YiuvQJVJc" rel="noopener" target="_blank">Physiotutors EN</a>
+<a class="video-btn fr" href="https://www.youtube.com/watch?v=jz3jFgtHcM0" rel="noopener" target="_blank">Examen FR</a>
+</div>
+</div>
+</div>
+<div class="test-card" id="tc-arc">
+<div class="test-card-header" onclick="toggleTest('tc-arc')">
+<div class="test-card-name">Test de l'arc douloureux <small>Painful Arc Sign</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Conflit</span><span class="tag tag-amber">Abduction active</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Supra-épineux · Bourse sous-acromiale</div></div>
+<div class="test-detail-item"><div class="label">Arc douloureux typique</div><div class="value">60° – 120° d'abduction</div></div>
+<div class="test-detail-item"><div class="label">Sensibilité</div><div class="value">~74%</div></div>
+<div class="test-detail-item"><div class="label">Spécificité</div><div class="value">~81%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient debout. Abduction active du bras dans le plan frontal ou scapulaire de 0° à 180°. Observer et demander où la douleur survient et disparaît.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur reproductible entre 60° et 120° d'abduction qui disparaît au-delà de 120°. Si la douleur est présente à partir de 120° → penser atteinte acromio-claviculaire.</div>
+<div class="info-box amber" style="margin-top:8px;font-size:13px;"><strong>Note clinique :</strong> Deux arcs douloureux distincts : 60–120° → conflit sous-acromial ; 160–180° → atteinte acromio-claviculaire.</div>
+</div>
+</div>
+<div class="test-card" id="tc-neer">
+<div class="test-card-header" onclick="toggleTest('tc-neer')">
+<div class="test-card-name">Test de Neer / Yocum <small>Impingement Sign</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Conflit</span><span class="tag tag-teal">Neer 1983</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Test de Neer</div><div class="value">Élévation passive en rotation interne, scapula stabilisée</div></div>
+<div class="test-detail-item"><div class="label">Test de Yocum</div><div class="value">Main ipsilatérale sur épaule controlatérale, élévation active du coude</div></div>
+<div class="test-detail-item"><div class="label">Sensibilité (Neer)</div><div class="value">~72%</div></div>
+<div class="test-detail-item"><div class="label">Spécificité (Neer)</div><div class="value">~60%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique — Neer</div>Clinicien derrière le patient. Stabilise la scapula d'une main (pression sur l'acromion). De l'autre main, élève passivement le membre en rotation interne et légère flexion jusqu'à la douleur ou la butée.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur antéro-supérieure reproduite lors de l'élévation → compression du supra-épineux contre le bord antérieur de l'acromion.</div>
+<div class="info-box teal" style="margin-top:8px;font-size:13px;"><strong>Test de Neer infiltration :</strong> Injection de lidocaïne dans la bourse sous-acromiale → disparition de la douleur confirme le diagnostic de conflit.</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=bXA8cblZUok" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+</div>
+</div>
+<div class="test-section-title">🟡 Tests du supra-épineux</div>
+<div class="test-grid-2">
+<div class="test-card" id="tc-emptycan">
+<div class="test-card-header" onclick="toggleTest('tc-emptycan')">
+<div class="test-card-name">Empty Can Test <small>Jobe Test</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">Supra-épineux</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Abduction 90°, RI maximale (pouce vers le bas), plan scapulaire 30°</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 69% · Sp: 66%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Résistance appliquée vers le bas sur le poignet. Patient maintient la position contre la résistance progressive.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur et/ou faiblesse = atteinte supra-épineux (tendinopathie ou rupture partielle/totale).</div>
+</div>
+</div>
+<div class="test-card" id="tc-fullcan">
+<div class="test-card-header" onclick="toggleTest('tc-fullcan')">
+<div class="test-card-name">Full Can Test <small>RE légère</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">Supra-épineux</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Abduction 90°, RE légère (pouce vers le haut), plan scapulaire 30°</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 66% · Sp: 64%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Avantage vs Empty Can</div>Moins douloureux à réaliser. Préféré quand la RI est trop douloureuse pour isoler la faiblesse musculaire.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur et/ou faiblesse → même interprétation que l'Empty Can. Les deux tests sont souvent réalisés en combinaison.</div>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=5BjDQ-jcBek" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=NuBOHdm20cc" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+</div>
+</div>
+<div class="test-section-title">🟢 Tests infra-épineux et petit rond</div>
+<div class="test-card" id="tc-patte">
+<div class="test-card-header" onclick="toggleTest('tc-patte')">
+<div class="test-card-name">Test de Patte <small>Lag Sign en rotation externe</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Infra-épineux</span><span class="tag tag-navy">Petit rond</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Épaule en abduction 90°, coude fléchi 90°, RE maximale passive</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 88% · Sp: 98% (rupture massive)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Clinicien amène le bras en RE maximale passive puis lâche doucement le poignet en maintenant le coude. Demande au patient de tenir la position.</div>
+<div class="test-positive"><div class="label">Test positif — Lag Sign</div>Le bras retombe en RI = rupture complète ou massive de l'infra-épineux ± petit rond. Plus le lag est important (angle de chute), plus la lésion est étendue.</div>
+<div class="video-links">
+<a class="video-btn fr" href="https://www.youtube.com/watch?v=JccyyfdvdS4" rel="noopener" target="_blank">Test de Patte FR</a>
+</div>
+</div>
+</div>
+<div class="test-grid-2">
+<div class="test-card" id="tc-lagsign">
+<div class="test-card-header" onclick="toggleTest('tc-lagsign')">
+<div class="test-card-name">Lateral Lag Sign <small>Signe du portillon</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Infra-épineux</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">Technique</div>Bras en légère abduction (20°), coude à 90°. Clinicien amène en RE passive maximale puis lâche le poignet. Retour en RI = infra-épineux déficient.</div>
+<div class="test-positive"><div class="label">Test positif</div>Variante du test de Patte testant le secteur inférieur de la coiffe postérieure.</div>
+</div>
+</div>
+<div class="test-card" id="tc-clairon">
+<div class="test-card-header" onclick="toggleTest('tc-clairon')">
+<div class="test-card-name">Signe du Clairon <small>Horn Blower's Sign</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Petit rond</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">Technique &amp; interprétation</div>Épaule en abduction 90°, coude fléchi 90°. Demander une RE active contre résistance. Si le patient doit élever le coude au-dessus de l'épaule pour effectuer la RE = signe positif = atteinte du petit rond (rupture massive).</div>
+<div class="test-positive"><div class="label">Test positif</div>Compensation en surélévation du coude (comme souffler dans un clairon) → petit rond non fonctionnel. Très spécifique des ruptures massives postérieures.</div>
+</div>
+</div>
+</div>
+<div class="test-section-title">🔵 Tests du long biceps</div>
+<div class="test-grid-2">
+<div class="test-card" id="tc-speed">
+<div class="test-card-header" onclick="toggleTest('tc-speed')">
+<div class="test-card-name">Palm Up Test / Speed Test</div>
+<div class="test-card-tags"><span class="tag tag-navy">Long biceps</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Coude en extension, avant-bras en supination, flexion épaule 60–90°</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 54% · Sp: 81%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Résistance vers le bas appliquée sur l'avant-bras pendant que le patient maintient la flexion d'épaule contre résistance, coude en extension.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur à la coulisse bicipitale → tendinopathie ou lésion du tendon du long biceps (SLAP possible).</div>
+</div>
+</div>
+<div class="test-card" id="tc-yergason">
+<div class="test-card-header" onclick="toggleTest('tc-yergason')">
+<div class="test-card-name">Test de Yergason</div>
+<div class="test-card-tags"><span class="tag tag-navy">Long biceps</span><span class="tag tag-gray">Stabilité coulisse</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Coude fléchi 90°, avant-bras en pronation, bras au corps</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 43% · Sp: 79%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient effectue une supination active contre la résistance du clinicien, tout en fléchissant le coude. Le clinicien stabilise le coude contre le tronc du patient.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur à la coulisse bicipitale ET/OU subluxation palpable du tendon hors de la coulisse → atteinte du ligament transverse ou tendinopathie du long biceps.</div>
+</div>
+</div>
+</div>
+<div class="test-section-title">🟠 Tests du sub-scapulaire</div>
+<div class="test-card" id="tc-liftoff">
+<div class="test-card-header" onclick="toggleTest('tc-liftoff')">
+<div class="test-card-name">Lift-Off Test (Gerber)</div>
+<div class="test-card-tags"><span class="tag tag-amber">Sub-scapulaire</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Main dans le dos au niveau lombaire, paume vers l'extérieur</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 62% · Sp: 100% (rupture complète)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient place la main derrière le dos (en RI maximale). On lui demande de décoller la main du dos contre résistance. Si incapable de décoller : lag signe = clinicien décolle la main et la lâche.</div>
+<div class="test-positive"><div class="label">Test positif</div>Incapacité à maintenir la main décollée du dos = rupture complète du sub-scapulaire. Très haute spécificité.</div>
+<div class="info-box amber" style="font-size:13px;margin-top:8px;"><strong>Limite clinique :</strong> Douleur ou restriction en RI peut empêcher la mise en position → recourir au Belly Press Test.</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=QubFD2rFlaA" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+</div>
+</div>
+<div class="test-grid-2">
+<div class="test-card" id="tc-belly">
+<div class="test-card-header" onclick="toggleTest('tc-belly')">
+<div class="test-card-name">Belly Press Test</div>
+<div class="test-card-tags"><span class="tag tag-amber">Sub-scapulaire</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">Technique</div>Main à plat sur l'abdomen, coude en avant du plan frontal. Patient presse l'abdomen en gardant le poignet neutre. Si le poignet fléchit (compensation par le grand pectoral) = signe positif.</div>
+<div class="test-positive"><div class="label">Test positif</div>Flexion compensatoire du poignet ou impossibilité de maintenir la pression = sub-scapulaire déficient. Alternative au Lift-Off quand RI douloureuse ou limitée.</div>
+</div>
+</div>
+<div class="test-card" id="tc-bearhug">
+<div class="test-card-header" onclick="toggleTest('tc-bearhug')">
+<div class="test-card-name">Bear Hug Test</div>
+<div class="test-card-tags"><span class="tag tag-amber">Sub-scapulaire supérieur</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">Technique</div>Main ipsilatérale sur l'épaule controlatérale, doigts étendus, coude en avant. Clinicien tente d'arracher la main. Patient résiste en RI.</div>
+<div class="test-positive"><div class="label">Test positif</div>Faiblesse ou douleur = atteinte de la portion supérieure du sub-scapulaire (fibres supérieures, touchées en premier dans les déchirures partielles).</div>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=QubFD2rFlaA" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+</div>
+</div>
+<div class="test-section-title">🟣 Tests du labrum glénoïdal</div>
+<div class="test-grid-2">
+<div class="test-card" id="tc-obrien">
+<div class="test-card-header" onclick="toggleTest('tc-obrien')">
+<div class="test-card-name">Test de O'Brien <small>Active Compression Test</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">SLAP</span><span class="tag tag-teal">AC</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Flexion 90°, ADD horizontale 15°, RI maximale (pouce vers le bas)</div></div>
+<div class="test-detail-item"><div class="label">Stats (SLAP)</div><div class="value">Se: 63% · Sp: 73%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique double</div>
+<strong>Étape 1 :</strong> Bras en RI, résistance vers le bas → noter si douleur.<br/>
+<strong>Étape 2 :</strong> Bras en RE (pouce vers le haut), même résistance → douleur diminuée ou absente ?
+          </div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur profonde en RI qui diminue en RE → SLAP lésion. Douleur au sommet de l'épaule dans les deux positions → atteinte acromio-claviculaire.</div>
+</div>
+</div>
+<div class="test-card" id="tc-crank">
+<div class="test-card-header" onclick="toggleTest('tc-crank')">
+<div class="test-card-name">Test de Crank <small>Labrum antérieur/postérieur</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Labrum</span><span class="tag tag-navy">SLAP</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Épaule à 160° d'élévation, plan scapulaire</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 91% · Sp: 93% (Liu 1996)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Compression axiale sur l'humérus + rotation interne et externe successives. En décubitus latéral ou assis.</div>
+<div class="test-positive"><div class="label">Test positif</div>Claquement, ressaut ou douleur profonde reproduite → lésion du labrum glénoïdal (antérieur ou postérieur). Peut s'accompagner d'une sensation de blocage.</div>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=jz3jFgtHcM0" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+</div>
+</div>
+<div class="footnote">
+<cite>Sources : Hegedus EJ et al. (2012) Br J Sports Med · Dessaur WA &amp; Magarey ME (2008) · P. César, Cours 1ère année ostéo IEOQ 2019</cite>
+</div>
+</section>
+<section class="section" id="tech-epaule" style="display:none;">
+<div class="section-title">Techniques Structurelles — Épaule (Partie 1)</div>
+<div class="section-sub">Tests ostéopathiques &amp; normalisations articulaires — P. César, IEOQ 1ère année 2021 · À compléter avec notes de pratique</div>
+<div class="info-box teal" style="margin-bottom:20px;font-size:13px;">
+<strong>Principe commun :</strong> La position des mains est identique pour le test et la correction. Pour chaque articulation : (1) Test de la barrière restrictive, (2) Mise en congruence articulaire, (3) Accumulation de tension à la barrière, (4) Impulsions répétées ou thrust balistique dans la direction corrective.
+    </div>
+<!-- ═══ SECTION 1 : ACROMIO-CLAVICULAIRE ═══ -->
+<div class="test-section-title">🔵 1 — Tests Articulation Acromio-Claviculaire (AC)</div>
+<div class="tech-card" id="tech-ac-test-assis">
+<div class="tech-card-header" onclick="toggleTest('tech-ac-test-assis')">
+<div class="test-card-name">1-1 — Test AC Antérieur / Postérieur <small>Assis &amp; Décubitus dorsal</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Test ostéopathique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🪑</span>A — Assis</div>
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>B — Décubitus dorsal</div>
+</div>
+<div class="tech-step"><div class="label">A — Test Assis (Antérieur/Postérieur)</div>
+          Praticien derrière le patient. Main 1 (crâniale) : contrôle l'extrémité latérale de la clavicule (index + majeur sur l'interligne AC). Main 2 (caudale) : saisit le membre supérieur et imprime des mouvements passifs antérieurs puis postérieurs de la clavicule sur l'acromion. Comparer la qualité, l'amplitude et la barrière des deux côtés.
+        </div>
+<div class="tech-step"><div class="label">B — Test et mobilisation Antérieur/Postérieur en Décubitus</div>
+          Patient en décubitus dorsal. Même principe de test avec prises bimanuelle — permet un meilleur contrôle du mouvement et de la pression appliquée sur l'interligne AC.
+        </div>
+</div>
+</div>
+<!-- ═══ SECTION 2 : STERNO-CLAVICULAIRE ═══ -->
+<div class="test-section-title">🟡 2 — Tests Articulation Sterno-Claviculaire (SC)</div>
+<div class="tech-card" id="tech-sc-sup-inf">
+<div class="tech-card-header" onclick="toggleTest('tech-sc-sup-inf')">
+<div class="test-card-name">1-2A — Test SC Supérieur / Inférieur <small>Assis + variante</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Test ostéopathique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🪑</span>Assis</div>
+</div>
+<div class="tech-step"><div class="label">Test SC Supérieur/Inférieur — Assis</div>
+          Praticien derrière le patient. Main 1 (craniale) : index et majeur en prise sur l'extrémité médiale de la clavicule. Main 2 : saisit le membre supérieur ipsilatéral. Le praticien lève le bras (glissement inférieur de la clavicule sur le sternum) puis abaisse (glissement supérieur). Appréciation de la qualité et symétrie du mouvement.
+        </div>
+<div class="tech-step"><div class="label">Variante</div>
+          Praticien debout face au patient. Prises bilatérales sur les deux extrémités médiales des clavicules. Appréciation comparative des glissements supérieur/inférieur des deux côtés simultanément.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tech-sc-ant-post">
+<div class="tech-card-header" onclick="toggleTest('tech-sc-ant-post')">
+<div class="test-card-name">1-2B — Test SC Antérieur / Postérieur <small>Assis</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Test ostéopathique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🪑</span>Assis</div>
+</div>
+<div class="tech-step"><div class="label">Test SC Antérieur/Postérieur — Assis</div>
+          Praticien derrière le patient, légèrement décalé du côté à tester. Main craniale fixe la ceinture scapulaire. Main caudale contacte directement l'extrémité médiale de la clavicule. Impulsions douces vers l'antérieur puis vers le postérieur. Comparer la qualité et la liberté du mouvement des deux côtés.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tech-sc-inf-sup-dd">
+<div class="tech-card-header" onclick="toggleTest('tech-sc-inf-sup-dd')">
+<div class="test-card-name">1-2C — Mobilisation &amp; Test SC Inférieur / Supérieur <small>Décubitus dorsal</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Mobilisation</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>Décubitus dorsal</div>
+</div>
+<div class="tech-step"><div class="label">Mobilisation/Test SC Inférieur/Supérieur — DD</div>
+          Patient en décubitus dorsal. Contact direct sur l'extrémité médiale de la clavicule. Mobilisations rythmiques dans l'axe céphalocaudal. Permet d'évaluer et traiter les restrictions de glissement inférieur (lors de l'élévation du bras) et supérieur.
+        </div>
+</div>
+</div>
+<!-- ═══ SECTION 3 : ROTATION DE LA CLAVICULE ═══ -->
+<div class="test-section-title">🟠 3 — Tests Rotation de la Clavicule</div>
+<div class="tech-card" id="tech-clav-rot-test">
+<div class="tech-card-header" onclick="toggleTest('tech-clav-rot-test')">
+<div class="test-card-name">1-3 — Test Clavicule en Rotation Antérieure / Postérieure</div>
+<div class="test-card-tags"><span class="tag tag-teal">Test ostéopathique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">A — Test Rotation Postérieure (par rotation latérale du bras)</div>
+          La clavicule effectue une rotation postérieure physiologique lors de la rotation latérale (externe) du bras. Praticien en palpation sur la clavicule. Amener passivement le bras en rotation externe. Apprécier la qualité et l'amplitude de la rotation postérieure claviculaire. Une restriction = dysfonction en rotation antérieure de la clavicule.
+        </div>
+<div class="tech-step"><div class="label">B — Test Rotation Antérieure (par rotation médiale du bras)</div>
+          La clavicule effectue une rotation antérieure lors de la rotation médiale (interne) du bras. Même principe de palpation claviculaire. Amener passivement le bras en rotation médiale. Apprécier la qualité de la rotation antérieure claviculaire. Une restriction = dysfonction en rotation postérieure de la clavicule.
+        </div>
+</div>
+</div>
+<!-- ═══ SECTION 4 : NORMALISATIONS ACROMIO-CLAVICULAIRE ═══ -->
+<div class="test-section-title">🔵 4 — Normalisations Dysfonction Acromio-Claviculaire</div>
+<div class="tech-card" id="tech-ac-ant-norm">
+<div class="tech-card-header" onclick="toggleTest('tech-ac-ant-norm')">
+<div class="test-card-name">2A — Normalisation AC en Dysfonction d'Antériorité <small>Assis &amp; Décubitus dorsal</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Normalisation</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🪑</span>Assis (technique principale)</div>
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>Décubitus dorsal (variante)</div>
+</div>
+<div class="tech-step"><div class="label">Prises de mains — Assis</div>
+          Appui <strong>antérieur</strong> maintenu sur la partie latérale de la clavicule par l'index et le majeur du thérapeute. Pouce sur l'épine de l'omoplate (fixation de la scapula).
+        </div>
+<div class="tech-step"><div class="label">Mise en tension</div>
+          Abduction du bras + légère rétropulsion de l'épaule pour obtenir une congruence articulaire optimale.
+        </div>
+<div class="tech-step"><div class="label">Normalisation — Mouvement balistique</div>
+          Mouvement balistique d'arrière en avant en demi-cercle en passant <strong>« au-dessus de l'épaule »</strong>. Le mouvement se finit en antépulsion + légère rotation médiale.
+        </div>
+<div class="tech-note"><div class="label">Point clé</div>
+          Maintenir impérativement le contact claviculaire antérieur (index + majeur) pendant toute la technique afin d'empêcher tout déplacement antérieur de la clavicule lors du mouvement balistique.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tech-ac-post-norm">
+<div class="tech-card-header" onclick="toggleTest('tech-ac-post-norm')">
+<div class="test-card-name">2B — Normalisation AC en Dysfonction de Postériorité <small>Assis &amp; Décubitus dorsal</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Normalisation</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🪑</span>Assis (technique principale)</div>
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>Décubitus dorsal (variante)</div>
+</div>
+<div class="tech-step"><div class="label">Prises de mains — Assis</div>
+          Main médiale <strong>« applicatrice »</strong> : éminence hypothénar en appui sur la partie <strong>antéro-latérale</strong> de la clavicule. Main <strong>« fixe »</strong> latérale : accroche l'épine de la scapula et la fixe vers le caudal.
+        </div>
+<div class="tech-step"><div class="label">Variante décubitus dorsal</div>
+          Pouce de l'ostéopathe en appui sur l'extrémité postérieure et latérale de la clavicule. Le reste des doigts sur la partie antérieure de la clavicule.
+        </div>
+<div class="tech-step"><div class="label">Mise en tension</div>
+          Antépulsion du bras pour trouver la congruence articulaire, puis mise en tension par abduction du bras.
+        </div>
+<div class="tech-step"><div class="label">Normalisation — Mouvement balistique</div>
+          Mouvement balistique d'arrière en avant <strong>« en passant par le bas »</strong>. Le mouvement se termine en flexion + adduction + légère rotation médiale.
+        </div>
+</div>
+</div>
+<!-- ═══ SECTION 5 : NORMALISATIONS STERNO-CLAVICULAIRE ═══ -->
+<div class="test-section-title">🟡 5 — Normalisations Articulation Sterno-Claviculaire</div>
+<div class="tech-card" id="tech-sc-decoap">
+<div class="tech-card-header" onclick="toggleTest('tech-sc-decoap')">
+<div class="test-card-name">3A — Décoaptation Sterno-Claviculaire <small>Bilatérale &amp; Unilatérale en DD</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Décoaptation</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>Décubitus dorsal</div>
+</div>
+<div class="tech-step"><div class="label">Bilatérale en DD</div>
+          Praticien en position céphalique. Prises bilatérales sur les deux extrémités médiales des clavicules. Traction simultanée dans l'axe de chaque clavicule pour décoapater les deux articulations sterno-claviculaires.
+        </div>
+<div class="tech-step"><div class="label">Unilatérale en DD — Prises</div>
+          Main médiale : face dorsale de la main en appui sur la table, <strong>pouce en appui sur le bord postéro-latéral de la clavicule</strong>, index et majeur en appui sur la scapula.<br/>
+          Main latérale : saisit l'extrémité distale du bras et effectue un mouvement de petite circumduction <strong>dans le sens des aiguilles d'une montre</strong>.
+        </div>
+<div class="tech-note"><div class="label">⚠️ Attention</div>
+          L'appui avec le pouce peut être douloureux — prévenir le patient et doser la pression.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tech-sc-dl">
+<div class="tech-card-header" onclick="toggleTest('tech-sc-dl')">
+<div class="test-card-name">3B — Technique de Mobilisation SC en Décubitus Latéral</div>
+<div class="test-card-tags"><span class="tag tag-navy">Mobilisation</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>Décubitus latéral (côté à traiter vers le haut)</div>
+</div>
+<div class="tech-step"><div class="label">Technique</div>
+          Patient en décubitus latéral, côté à traiter vers le haut. L'ostéopathe contacte postérieurement l'extrémité médiale de la clavicule. Mobilisations glissées rythmiques dans les directions restrictives (antérieur/postérieur et supérieur/inférieur). Permet d'exploiter le poids du bras comme levier naturel.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tech-sc-ant-norm">
+<div class="tech-card-header" onclick="toggleTest('tech-sc-ant-norm')">
+<div class="test-card-name">3C — Normalisation SC en Dysfonction d'Antériorité <small>DD avec membre supérieur</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Normalisation</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>Décubitus dorsal</div>
+</div>
+<div class="tech-step"><div class="label">Technique principale DD</div>
+          Éminence thénar main droite au contact de l'extrémité antérieure de la clavicule — appui maintenu afin de <strong>pousser la clavicule vers l'arrière (1)</strong>.<br/>
+          Main gauche effectue la normalisation par une <strong>traction en légère abduction (2 et 3)</strong>.<br/>
+          Le praticien effectue une <strong>rotation du tronc (6)</strong> pour transmettre l'énergie cinétique dans la direction corrective.
+        </div>
+<div class="tech-step"><div class="label">Variante 1 (DD)</div>
+          Patient en décubitus dorsal. Praticien du côté ipsilatéral. Même principe de contre-appui sur l'extrémité antérieure de la clavicule + traction en abduction. Séquence de mouvements en 4-5 temps progressifs.
+        </div>
+<div class="tech-step"><div class="label">Variante 2 (DD)</div>
+          Praticien en position céphalique décalée. Permet un angle de correction différent selon la morphologie du patient ou la direction de dysfonction.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tech-sc-sup-norm">
+<div class="tech-card-header" onclick="toggleTest('tech-sc-sup-norm')">
+<div class="test-card-name">3D — Normalisation SC en Dysfonction de Supériorité <small>Décubitus dorsal</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Normalisation</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>Décubitus dorsal</div>
+</div>
+<div class="tech-step"><div class="label">Technique DD</div>
+          Contact sur la face supérieure de l'extrémité médiale de la clavicule. Traction douce vers le caudal en accompagnant la phase expiratoire du patient. Impulsions répétées douces pour retrouver le glissement inférieur de l'articulation SC.
+        </div>
+</div>
+</div>
+<!-- ═══ SECTION 6 : NORMALISATIONS ROTATION CLAVICULE ═══ -->
+<div class="test-section-title">🟠 6 — Normalisations Dysfonction Rotation Claviculaire</div>
+<div class="tech-card" id="tech-clav-rot-ant">
+<div class="tech-card-header" onclick="toggleTest('tech-clav-rot-ant')">
+<div class="test-card-name">4A — Normalisation Dysfonction Rotation Antérieure de la Clavicule <small>TEM — DD</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">TEM / LVMR</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>Décubitus dorsal</div>
+<div class="tech-position-chip"><span class="chip-icon">🧍</span>Praticien debout en fente avant (direction tête du patient)</div>
+</div>
+<div class="tech-step"><div class="label">Positionnement praticien</div>
+          Debout en fente avant en direction de la tête du sujet. Le bras du patient repose sur la cuisse de l'ostéopathe.
+        </div>
+<div class="tech-step"><div class="label">Prises de mains</div>
+          Main droite en palpation sur la clavicule entre le pouce et les pulpes des autres doigts.<br/>
+          Main gauche empaume le poignet et amène le membre supérieur en <strong>rotation externe jusqu'à la barrière motrice</strong>.
+        </div>
+<div class="tech-step"><div class="label">Technique TEM — 3 répétitions</div>
+          L'ostéopathe demande au patient une contraction <strong>en rotation médiale</strong> (poussée contre la main du praticien) pendant <strong>6 secondes</strong> isométriques.<br/>
+          Au relâchement, l'opérateur gagne vers une <strong>nouvelle barrière motrice</strong>.<br/>
+          Répéter <strong>3 fois</strong> ou jusqu'à récupération complète.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tech-clav-rot-post">
+<div class="tech-card-header" onclick="toggleTest('tech-clav-rot-post')">
+<div class="test-card-name">4B — Normalisation Dysfonction Rotation Postérieure de la Clavicule <small>TEM — DD</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">TEM / LVMR</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>Décubitus dorsal</div>
+</div>
+<div class="tech-step"><div class="label">Technique TEM</div>
+          Même modalité que 4A mais le membre est amené en <strong>rétropulsion + rotation médiale</strong> jusqu'à la barrière motrice.<br/>
+          L'ostéopathe demande au patient une contraction <strong>en antépulsion</strong> (poussée de la main vers le plafond pendant 6 secondes).<br/>
+          Au relâchement, gain vers une nouvelle barrière motrice. Renouveler la technique.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tech-sutherland">
+<div class="tech-card-header" onclick="toggleTest('tech-sutherland')">
+<div class="test-card-name">4C — Correction Globale Type Sutherland <small>Assis — technique douce biarticulaire</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Correction globale</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🪑</span>Sujet assis — Opérateur assis face au sujet, plus bas, légèrement décalé côté à traiter</div>
+</div>
+<div class="tech-step"><div class="label">Prises de mains</div>
+          Pouce de la main <strong>latérale</strong> : sous l'extrémité latérale de la clavicule du sujet, les autres doigts allongés sur l'articulation acromio-claviculaire.<br/>
+          Pouce de la main <strong>médiale</strong> : sous l'extrémité médiale de la clavicule, index s'approchant de la face interne.
+        </div>
+<div class="tech-step"><div class="label">Position du patient</div>
+          Demander au sujet de placer sa main du côté impliqué sur l'épaule correspondante de l'opérateur, <strong>en passant en dehors du bras de ce dernier</strong>.
+        </div>
+<div class="tech-step"><div class="label">Séquence d'action — 5 étapes</div>
+<strong>1.</strong> Le sujet penche sa tête en avant jusqu'à ce que l'opérateur sente le poids sur ses pouces.<br/>
+<strong>2.</strong> L'opérateur fait une poussée <strong>postéro-supérieure</strong> sur la clavicule et maintient cette poussée pendant toute la technique.<br/>
+<strong>3.</strong> L'opérateur recule son épaule externe → tension dans les ligaments AC.<br/>
+<strong>4.</strong> Le sujet recule l'épaule opposée à la dysfonction → décoaptation + tension des ligaments SC.<br/>
+<strong>5.</strong> L'<strong>inspiration forcée</strong> du sujet normalise les tensions ligamentaires et capsulaires.
+        </div>
+<div class="tech-note"><div class="label">Caractéristiques</div>
+          Technique très douce nécessitant une bonne sensibilité proprioceptive. Agit simultanément sur l'articulation AC et l'articulation SC.
+        </div>
+</div>
+</div>
+<!-- ═══ SECTION 7 : SCAPULO-THORACIQUE ═══ -->
+<div class="test-section-title">🟢 7 — Technique Scapulo-Thoracique</div>
+<div class="tech-card" id="tech-scap-thor2">
+<div class="tech-card-header" onclick="toggleTest('tech-scap-thor2')">
+<div class="test-card-name">5 — Mobilisation / Test Scapulo-Thoracique <small>Décubitus latéral</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Mobilisation &amp; Test</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>Décubitus latéral (côté à tester vers le haut)</div>
+</div>
+<div class="tech-step"><div class="label">Technique de mobilisation/test</div>
+          Patient en décubitus latéral. L'ostéopathe positionne ses mains de façon à saisir la scapula. Mobilisation de la scapula dans tous ses plans de liberté : élévation/abaissement, protraction/rétraction, basculement antérieur/postérieur.<br/>
+          Appréciation comparative de la qualité et de l'amplitude des mouvements scapulaires. Recherche de zones de restriction musculaire sous-scapulaire et de rigidité de l'interface thoracique.
+        </div>
+</div>
+</div>
+<!-- ═══ SECTION 8 : SCAPULO-HUMÉRALE ═══ -->
+<div class="test-section-title">🔴 8 — Techniques de la Scapulo-Humérale (Gléno-Humérale)</div>
+<div class="tech-card" id="tech-gh-mob">
+<div class="tech-card-header" onclick="toggleTest('tech-gh-mob')">
+<div class="test-card-name">6A — Mobilisation / Test Scapulo-Huméral Global</div>
+<div class="test-card-tags"><span class="tag tag-teal">Mobilisation &amp; Test</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Test GH global</div>
+          Évaluation des amplitudes actives et passives de la GH dans les plans de flexion, extension, abduction, rotations. Évaluation qualitative du end-feel (fin de course). Recherche d'asymétries et de restrictions.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tech-gh-seg">
+<div class="tech-card-header" onclick="toggleTest('tech-gh-seg')">
+<div class="test-card-name">6B — Tests GH Segmentaires <small>Glissements Ant/Post &amp; Glissement Inférieur</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Test ostéopathique</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">1 — Glissement antérieur et postérieur</div>
+          Stabilisation de la scapula d'une main. L'autre main mobilise la tête humérale vers l'antérieur puis vers le postérieur dans la glène. Appréciation de la qualité, de l'amplitude et de la résistance dans chaque direction.
+        </div>
+<div class="tech-step"><div class="label">2 — Glissement inférieur</div>
+          Traction axiale vers le bas dans l'axe du bras (bras en légère abduction). Évalue l'espace sous-acromial, la laxité inférieure et la décoaptation GH. Restriction = dysfonction de supériorité (cause fréquente d'arc douloureux).
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tech-gh-decoap">
+<div class="tech-card-header" onclick="toggleTest('tech-gh-decoap')">
+<div class="test-card-name">6C — Décoaptation Scapulo-Humérale</div>
+<div class="test-card-tags"><span class="tag tag-navy">Décoaptation</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Décoaptation GH</div>
+          Traction axiale dans l'axe du membre supérieur, coude légèrement fléchi. Peut se réaliser en décubitus ou en assis. Utilisée comme technique thérapeutique et comme préparation aux normalisations directionnelles.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tech-gh-ant">
+<div class="tech-card-header" onclick="toggleTest('tech-gh-ant')">
+<div class="test-card-name">6D — Normalisation GH en Dysfonction d'Antériorité</div>
+<div class="test-card-tags"><span class="tag tag-coral">Normalisation</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique — DD ou Assis</div>
+          La tête humérale est bloquée en antériorité (restriction au glissement postérieur). Stabilisation de la scapula. Impulsion postérieure directe sur la face antérieure de la tête humérale, associée à une légère rotation externe. Impulsions répétées ou thrust selon la tolérance du patient.
+        </div>
+</div>
+</div>
+<div class="tech-card" id="tech-gh-sup">
+<div class="tech-card-header" onclick="toggleTest('tech-gh-sup')">
+<div class="test-card-name">6E — Normalisation GH en Dysfonction de Supériorité <small>3 secteurs d'abduction</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Normalisation</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Principe</div>
+          La tête humérale est en position haute (manque de glissement inférieur). La normalisation s'adapte au secteur d'abduction où la restriction est présente.
+        </div>
+<div class="tech-step"><div class="label">Décubitus dorsal — 0 à 45°</div>
+          Traction vers le bas dans l'axe du corps. Prises sur l'extrémité distale du membre supérieur.
+        </div>
+<div class="tech-step"><div class="label">Décubitus dorsal — 45° à 120°</div>
+          Traction vers le bas dans l'axe du bras en abduction partielle. Changement de prise selon l'angle.
+        </div>
+<div class="tech-step"><div class="label">Assis — 120° à 150°</div>
+          Patient assis. Traction dans l'axe du membre en élévation maximale. Accumulation de tension à la barrière + thrust ou impulsions répétées.
+        </div>
+<div class="tech-note"><div class="label">Rappel biomécanique</div>
+          Lors de l'abduction GH, la tête humérale effectue un glissement inférieur compensatoire pour éviter le conflit sous-acromial. Une restriction de ce glissement = arc douloureux et conflit sous-acromial fonctionnel.
+        </div>
+</div>
+</div>
+<div class="footnote"><cite>Source : P. César — Cours structurel périphérique Épaule 1ère année, IEOQ 2021 (Partie 1) · À compléter avec les notes prises pendant la pratique · Usage privé</cite></div>
+</section>
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["epaule1", "epaule-rythme", "coiffe", "arthro-ceinture", "tests-epaule", "tech-epaule"];
+  var SUB_LABELS_LOCAL = {"epaule1": "📖 Biomécanique (P.1)", "epaule-rythme": "🔄 Rythme scapulo-huméral", "coiffe": "💪 Coiffe des rotateurs", "arthro-ceinture": "🦴 Arthrologie ceinture", "tests-epaule": "🩺 Tests orthopédiques", "tech-epaule": "🔧 Techniques structurelles"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 1 · Cheville</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(1);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🦶</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 1ère Année</h1>
+      <p>Cheville — IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="index.html">← Catégories</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><strong>Cheville</strong> <span id="crumbSub">› 📖 Biomécanique</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="biomec-cheville" onclick="showSub('biomec-cheville')">📖 Biomécanique</button><button type="button" class="nav-tab" data-sub="arthro-talocheville" onclick="showSub('arthro-talocheville')">🦴 Arthrologie talo-crurale</button><button type="button" class="nav-tab" data-sub="arthro-tibfib" onclick="showSub('arthro-tibfib')">🦴 Arthrologie tibio-fibulaires</button><button type="button" class="nav-tab" data-sub="arthro-subtal" onclick="showSub('arthro-subtal')">🦴 Arthrologie subtalaire</button><button type="button" class="nav-tab" data-sub="arthro-tt-medial" onclick="showSub('arthro-tt-medial')">🦴 TT médiale (Ch.6)</button><button type="button" class="nav-tab" data-sub="arthro-tt-lateral" onclick="showSub('arthro-tt-lateral')">🦴 TT latérale (Ch.7)</button><button type="button" class="nav-tab" data-sub="arthro-tarso-meta" onclick="showSub('arthro-tarso-meta')">🦴 Tarso-métatarsienne (Ch.8)</button><button type="button" class="nav-tab" data-sub="arthro-mp-pied" onclick="showSub('arthro-mp-pied')">🦴 Métatarso-phalangiennes (Ch.9)</button><button type="button" class="nav-tab" data-sub="arthro-ip-pied" onclick="showSub('arthro-ip-pied')">🦴 Interphalangiennes pied (Ch.10)</button><button type="button" class="nav-tab" data-sub="tests-cheville" onclick="showSub('tests-cheville')">🩺 Tests orthopédiques</button><a class="nav-tab tab-link" href="transversal.html#ott-cheville-anchor">🏥 Critères d'Ottawa <span class="ext-icon">↗</span></a><button type="button" class="nav-tab" data-sub="tech-osteo-cheville" onclick="showSub('tech-osteo-cheville')">🖐️ Techniques ostéopathiques</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="biomec-cheville" style="display:block;">
+<div class="section-title">Biomécanique de la Cheville &amp; du Pied</div>
+<div class="section-sub">Cours 1ère année — P. César, IEOQ 2021 · Anatomie fonctionnelle, cinématique, articulations &amp; arches plantaires</div>
+<!-- ── 1. Introduction ── -->
+<div class="test-section-title">🔬 1 — Introduction</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<p style="margin-bottom:10px;">Le pied présente <strong>deux fonctions principales</strong> :</p>
+<div class="grid-2" style="gap:12px;margin-bottom:14px;">
+<div class="info-box teal">
+<strong>Interface mobile</strong><br/>
+            S'adapte aux variations du terrain lors de la locomotion.
+          </div>
+<div class="info-box teal">
+<strong>Levier rigide</strong><br/>
+            Assure la propulsion lors de la locomotion.
+          </div>
+</div>
+<div class="info-box amber">
+          Ces deux fonctions ont chacune leur spécificité temporelle : quand le pied passe plus de temps à s'adapter au terrain, il ne peut en passer autant comme levier-moteur, et vice-versa.
+        </div>
+<div class="divider"></div>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>28 os</strong> formant 25 articulations</div>
+<div class="synergy-item"><strong>~40 %</strong> de la population présente des problèmes de cheville ou de pied</div>
+<div class="synergy-item"><strong>Articulation tri-axiale</strong> — les 3 principaux axes de mouvement convergent dans le talus</div>
+</div>
+<div class="divider"></div>
+<h3 class="sub">3 segments fonctionnels</h3>
+<table class="rom-table">
+<thead><tr><th>Segment</th><th>Os</th></tr></thead>
+<tbody>
+<tr><td><strong>Arrière-pied</strong></td><td>Talus &amp; Calcanéus</td></tr>
+<tr><td><strong>Moyen-pied</strong></td><td>Naviculaire, Cuboïde &amp; 3 Cunéiformes</td></tr>
+<tr><td><strong>Avant-pied</strong></td><td>Métatarse &amp; Phalanges</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- ── 2. Mouvements & axes ── -->
+<div class="test-section-title">📐 2 — Mouvements &amp; axes de référence</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:14px;">
+<strong>Position de référence (position 0) :</strong> segment jambier à 90° par rapport au plan du sol.
+        </div>
+<table class="rom-table">
+<thead><tr><th>Mouvement</th><th>Axe</th><th>Amplitudes</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Flexion dorsale / Flexion plantaire</strong></td>
+<td>Axe bimalléolaire — oblique en bas, arrière et dehors</td>
+<td>FD : 10–30° · FP : 40–65°</td>
+</tr>
+<tr>
+<td><strong>Adduction / Abduction</strong></td>
+<td>Axe vertical passant par le milieu du segment jambier</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Supination / Pronation</strong></td>
+<td>Axe antéro-postérieur passant par le 2e méta et l'arrière-pied</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<div class="divider"></div>
+<h3 class="sub">Mouvements combinés</h3>
+<div class="grid-2" style="gap:12px;margin-top:8px;">
+<div class="info-box coral">
+<strong>Inversion</strong> = Flexion plantaire + Adduction + Supination<br/>
+<span style="font-size:12px;margin-top:4px;display:block;">Suivant l'axe de Henke — orienté de dehors en dedans et de bas en haut</span>
+</div>
+<div class="info-box teal">
+<strong>Éversion</strong> = Flexion dorsale + Abduction + Pronation<br/>
+<span style="font-size:12px;margin-top:4px;display:block;">Suivant l'axe de Henke — orienté de dehors en dedans et de bas en haut</span>
+</div>
+</div>
+<div class="divider"></div>
+<h3 class="sub">Muscles selon les mouvements</h3>
+<table class="muscle-table">
+<thead><tr><th>Mouvement</th><th>Muscles principaux</th></tr></thead>
+<tbody>
+<tr>
+<td class="muscle-name">Flexion dorsale + adduction-supination</td>
+<td>Tibial antérieur, Extenseur de l'hallux</td>
+</tr>
+<tr>
+<td class="muscle-name">Flexion dorsale + abduction-pronation</td>
+<td>Extenseurs des orteils</td>
+</tr>
+<tr>
+<td class="muscle-name">Flexion plantaire + adduction-supination</td>
+<td>Tibial postérieur, Fléchisseur de l'hallux, Fléchisseur commun des orteils, Triceps sural</td>
+</tr>
+<tr>
+<td class="muscle-name">Flexion plantaire + abduction-pronation</td>
+<td>Long fibulaire, Court fibulaire</td>
+</tr>
+<tr>
+<td class="muscle-name">Éversion (Flexion + Pronation + Abduction)</td>
+<td>3e fibulaire, Court fibulaire, Long fibulaire, Extenseur commun des orteils</td>
+</tr>
+<tr>
+<td class="muscle-name">Inversion (Extension + Supination + Adduction)</td>
+<td>Triceps sural, Tibial postérieur, Long fléchisseur propre hallux, Long fléchisseur commun des orteils</td>
+</tr>
+</tbody>
+</table>
+<div class="info-box amber" style="margin-top:12px;">
+<strong>Déséquilibre musculaire — Cadran d'Ombredane :</strong> Prédominance des extenseurs et des muscles inverseurs → risque d'entorse en varus + PBVE (Pied Bot Varus Équin)
+        </div>
+<div class="divider"></div>
+<h3 class="sub">Marche normale — amplitudes minimales requises</h3>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>10°</strong> de flexion dorsale</div>
+<div class="synergy-item"><strong>20°</strong> de flexion plantaire (genou en extension complète)</div>
+</div>
+</div>
+</div>
+<!-- ── 3. Articulations ── -->
+<div class="test-section-title">🦴 3 — Les différentes articulations</div>
+<!-- 3.1 Tibio-fibulaire proximale -->
+<div class="card" style="margin-bottom:14px;">
+<div class="card-body">
+<h3 class="sub">3.1 — Articulation tibio-fibulaire proximale</h3>
+<div class="grid-2" style="gap:12px;margin:10px 0;">
+<div class="info-box teal"><strong>Os :</strong> Tibia &amp; Fibula<br/><strong>Type :</strong> Synoviale ordinaire, parfois syndesmose</div>
+<div class="info-box teal"><strong>Cavité :</strong> Communique souvent avec la bourse poplitée (elle-même en communication avec le genou)</div>
+</div>
+<h4 style="font-weight:600;margin-bottom:6px;">Ligaments</h4>
+<div class="synergy-grid">
+<div class="synergy-item">Membrane interosseuse</div>
+<div class="synergy-item">Lig. tibio-fibulaire proximal antérieur (antéro-supérieur)</div>
+<div class="synergy-item">Lig. tibio-fibulaire proximal postérieur (postéro-supérieur)</div>
+</div>
+<div class="info-box amber" style="margin-top:10px;">
+<strong>Mobilité :</strong><br/>
+          • En <strong>flexion dorsale</strong> de cheville : la facette supérieure de la fibula va vers le haut, s'ouvre en bas et en arrière (rotation interne).<br/>
+          • En <strong>flexion plantaire</strong> : le mouvement est inverse.
+        </div>
+</div>
+</div>
+<!-- 3.2 Tibio-fibulaire distale -->
+<div class="card" style="margin-bottom:14px;">
+<div class="card-body">
+<h3 class="sub">3.2 — Articulation tibio-fibulaire distale (Syndesmose)</h3>
+<div class="grid-2" style="gap:12px;margin:10px 0;">
+<div class="info-box teal"><strong>Type :</strong> Syndesmose fibreuse — tibia et fibula non en contact direct (tissu fibro-adipeux interposé)</div>
+<div class="info-box teal"><strong>Rôle :</strong> Maintient les deux malléoles ensemble → cavité articulaire pour le talus. Intégrité cruciale pour la stabilité de cheville.</div>
+</div>
+<h4 style="font-weight:600;margin-bottom:6px;">Ligaments</h4>
+<div class="synergy-grid">
+<div class="synergy-item">Membrane interosseuse</div>
+<div class="synergy-item">Lig. tibio-fibulaire distal antérieur</div>
+<div class="synergy-item">Lig. tibio-fibulaire distal postérieur</div>
+</div>
+<div class="info-box amber" style="margin-top:10px;">
+<strong>Mobilité en dorsiflexion :</strong> Le péroné réalise une <strong>ascension</strong>, une <strong>rotation interne</strong> et un <strong>écartement de la pince</strong> pour accueillir la partie large du talus (trochlée plus large en avant qu'en arrière).
+        </div>
+</div>
+</div>
+<!-- 3.3 Talo-crurale -->
+<div class="card" style="margin-bottom:14px;">
+<div class="card-body">
+<h3 class="sub">3.3 — Articulation talo-crurale (Cheville)</h3>
+<div class="grid-2" style="gap:12px;margin:10px 0;">
+<div class="info-box teal">
+<strong>Os :</strong> Tibia, Fibula &amp; Talus<br/>
+<strong>Type :</strong> Ginglyme (diarthrose uni-axiale) — 1 degré de liberté (FD / FP)
+          </div>
+<div class="info-box teal">
+<strong>Géométrie variable :</strong> Trochlée du talus plus large en avant qu'en arrière → instabilité relative en flexion plantaire (ex. descente d'escaliers).
+          </div>
+</div>
+<div class="info-box amber" style="margin-bottom:10px;">
+<strong>Axe bimalléolaire :</strong> Oblique en bas, arrière et dehors — tourné d'environ 20° dans le plan transversal → en FD la cheville effectue une abduction et une éversion ; en FP une adduction et une inversion négligeable.
+        </div>
+<h4 style="font-weight:600;margin:10px 0 6px;">Ligaments latéraux — Face latérale (LLE)</h4>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>LTFA</strong> — Ligament talo-fibulaire antérieur (faisceau antérieur)</div>
+<div class="synergy-item"><strong>LTFP</strong> — Ligament talo-fibulaire postérieur (faisceau postérieur)</div>
+<div class="synergy-item"><strong>LCF</strong> — Ligament calcanéo-fibulaire (faisceau moyen)</div>
+</div>
+<h4 style="font-weight:600;margin:10px 0 6px;">Ligaments médiaux — Face médiale (LLI / Deltoïde)</h4>
+<div class="synergy-grid">
+<div class="synergy-item">Faisceau tibio-calcanéen</div>
+<div class="synergy-item">Faisceau tibio-naviculaire</div>
+<div class="synergy-item">Faisceau tibio-talaire antérieur</div>
+<div class="synergy-item">Faisceau tibio-talaire postérieur</div>
+<div class="synergy-item">Ligament calcanéo-naviculaire plantaire</div>
+</div>
+<div class="divider"></div>
+<h4 style="font-weight:600;margin-bottom:8px;">Arthrocinématique</h4>
+<table class="rom-table">
+<thead><tr><th>Mouvement ostéocinématique</th><th>Glissement articulaire (talus)</th></tr></thead>
+<tbody>
+<tr><td>Flexion dorsale</td><td>Glissement postérieur du talus &amp; de la fibula</td></tr>
+<tr><td>Flexion plantaire</td><td>Glissement antérieur du talus &amp; de la fibula</td></tr>
+</tbody>
+</table>
+<div class="divider"></div>
+<h4 style="font-weight:600;margin-bottom:8px;">Stabilité dans le plan antéro-postérieur</h4>
+<div class="grid-2" style="gap:12px;">
+<div class="info-box teal">
+<strong>Facteurs limitants la flexion dorsale :</strong><br/>
+            • Butée du col du talus sur la marge antérieure du tibia<br/>
+            • Tension de la partie postérieure de la capsule / faisceaux postérieurs des lig. collatéraux<br/>
+            • Résistance tonique du triceps sural
+          </div>
+<div class="info-box teal">
+<strong>Facteurs limitants la flexion plantaire :</strong><br/>
+            • Butée des tubercules postérieurs du talus contre la berge postérieure du tibia<br/>
+            • Tension de la partie antérieure de la capsule / faisceaux antérieurs des lig. collatéraux<br/>
+            • Résistance tonique des muscles extenseurs (dorsiflexeurs)
+          </div>
+</div>
+<div class="divider"></div>
+<h4 style="font-weight:600;margin-bottom:8px;">Stabilité dans le plan frontal</h4>
+<div class="info-box amber">
+          Assurée par : (1) encastrement du talus dans la pince bimalléolaire (intégrité des malléoles + lig. tibio-fibulaires inférieurs) ; (2) ligaments collatéraux latéraux interne et externe (limitent le roulis).
+        </div>
+<table class="rom-table" style="margin-top:10px;">
+<thead><tr><th>Mécanisme forcé</th><th>Lésion potentielle</th></tr></thead>
+<tbody>
+<tr><td>Abduction forcée (modérée)</td><td>Rupture des lig. tibio-fibulaires inférieurs + diastasis inter-tibio-fibulaire → instabilité du talus</td></tr>
+<tr><td>Abduction forcée (extrême)</td><td>Rupture du LLI + diastasis — <em>entorse grave</em> ; ou fracture bimalléolaire = <strong>fracture de Dupuytren</strong></td></tr>
+<tr><td>Adduction / Inversion forcée</td><td>Entorse du LLE bénigne (distension) ou grave (rupture) ; si poursuivi → fracture bimalléolaire</td></tr>
+<tr><td>Rupture du LTFA</td><td>Tiroir antérieur du talus — le talus s'échappe vers l'avant</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 3.4 Sub-talaire -->
+<div class="card" style="margin-bottom:14px;">
+<div class="card-body">
+<h3 class="sub">3.4 — Articulation sub-talaire (Talo-calcanéenne)</h3>
+<div class="grid-2" style="gap:12px;margin:10px 0;">
+<div class="info-box teal">
+<strong>Type :</strong> Arthrodies (ovoïdes modifiés — agissent comme articulations en selle modifiées)<br/>
+<strong>Surfaces :</strong><br/>
+            • Post. : face post. du talus (concave) ↔ grande surface du calcanéus (convexe)<br/>
+            • Ant. : tête du talus (convexe) ↔ surface ant. du calcanéus (concave, souvent bipartite)
+          </div>
+<div class="info-box teal">
+<strong>Le talus :</strong> Os singulier, répartiteur du poids — aucune insertion musculaire (« os encagé »). Renvoie les contraintes dans 3 directions : arrière (talon), avant-dedans (arche interne via art. talo-naviculaire), avant-dehors (arche externe via art. talo-calcanéenne ant.)
+          </div>
+</div>
+<h4 style="font-weight:600;margin-bottom:6px;">Ligaments</h4>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Lig. interosseux talo-calcanéen</strong> — 2 nappes dans le sinus du tarse (faisceaux antérieur et postérieur), dans l'axe jambier → travail en torsion/élongation</div>
+<div class="synergy-item">Lig. talo-calcanéen postérieur, latéral et médian</div>
+</div>
+<div class="divider"></div>
+<h4 style="font-weight:600;margin-bottom:8px;">Axe de Henke</h4>
+<div class="info-box amber">
+          Pénètre par la partie supéro-interne du col du talus, passe par le sinus du tarse et sort par la tubérosité postéro-externe du calcanéus.<br/>
+<strong>Orientation :</strong> 42° par rapport à l'horizontal · 16° vers le médial par rapport au plan vertical.<br/>
+          → Permet les mouvements d'inversion et d'éversion : le calcanéum <strong>tangue</strong> (plonge et se relève), <strong>roule</strong> (s'incline sur un bord) et <strong>vire</strong> (adduction/abduction).
+        </div>
+<div class="divider"></div>
+<h4 style="font-weight:600;margin-bottom:8px;">Mobilité sous-talienne lors de l'inversion</h4>
+<div class="synergy-grid">
+<div class="synergy-item">Avance et pivote médialement sous le talus</div>
+<div class="synergy-item">Glisse en dedans et pivote en sens anti-horaire</div>
+<div class="synergy-item">Avance et plonge sous le talus</div>
+</div>
+<div class="divider"></div>
+<h4 style="font-weight:600;margin-bottom:8px;">Arthrocinématique (chaîne ouverte)</h4>
+<table class="rom-table">
+<thead><tr><th>Mouvement</th><th>Facette antérieure du calcanéus</th><th>Facette postérieure du calcanéus</th></tr></thead>
+<tbody>
+<tr><td><strong>Pronation</strong></td><td>Glissement latéral</td><td>Glissement médial</td></tr>
+<tr><td><strong>Supination</strong></td><td>Glissement médial</td><td>Glissement latéral</td></tr>
+</tbody>
+</table>
+<div class="divider"></div>
+<h4 style="font-weight:600;margin-bottom:8px;">Ostéocinématique de l'arrière-pied</h4>
+<div class="grid-2" style="gap:12px;">
+<div class="info-box teal">
+<strong>Valgus calcanéen :</strong> Déviation de l'axe talonnier en bas et en dehors par rapport à l'axe jambier → favorise l'effondrement de l'arche interne → <em>pied plat</em>
+</div>
+<div class="info-box coral">
+<strong>Varus calcanéen :</strong> Déviation de l'axe talonnier en bas et en dedans par rapport à l'axe jambier → favorise un appui externe, augmente la voûte médiale → <em>pied creux</em>
+</div>
+</div>
+</div>
+</div>
+<!-- 3.5 Médio-tarsienne de Chopart -->
+<div class="card" style="margin-bottom:14px;">
+<div class="card-body">
+<h3 class="sub">3.5 — Articulation médio-tarsienne de Chopart</h3>
+<div class="info-box teal" style="margin-bottom:12px;">
+          Unité fonctionnelle composée de l'articulation <strong>talo-naviculaire</strong> (médial) + <strong>calcanéo-cuboïdienne</strong> (latéral) + les <strong>3 cunéiformes</strong>. Liées par le <strong>ligament bifurqué du tarse</strong> (calcanéo-naviculaire latéral + calcanéo-cuboïdien médial).
+        </div>
+<div class="synergy-grid" style="margin-bottom:12px;">
+<div class="synergy-item">Les cunéiformes forment la seule véritable voûte du pied</div>
+<div class="synergy-item">2e cunéiforme = <strong>clé de voûte</strong> · 1er et 3e cunéiformes = pierres d'assise</div>
+<div class="synergy-item">Contribuent à une action de ressort avec le naviculaire</div>
+</div>
+<h4 style="font-weight:600;margin-bottom:8px;">Mouvements dans l'articulation médio-tarsienne</h4>
+<table class="rom-table">
+<thead><tr><th>Mouvement</th><th>Moteur principal</th><th>Os en mouvement</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Inversion</strong></td>
+<td>Tibial postérieur → naviculaire → cuboïde → calcanéus</td>
+<td>Naviculaire + cuboïde + calcanéus : adduction, supination (élévation naviculaire, abaissement cuboïde), extension (++ cuboïde)</td>
+</tr>
+<tr>
+<td><strong>Éversion</strong></td>
+<td>Court fibulaire latéral (base 5e méta) → cuboïde → naviculaire → calcanéus</td>
+<td>Cuboïde + naviculaire + calcanéus : abduction, pronation</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- 3.6 Tarso-métatarsienne de Lisfranc -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<h3 class="sub">3.6 — Articulation tarso-métatarsienne de Lisfranc</h3>
+<div class="info-box teal" style="margin-bottom:12px;">
+          L'interligne de Lisfranc n'est pas transversale mais <strong>oblique vers le bas, dehors et arrière</strong> — ce qui, avec l'axe de Henke, contribue à l'inversion/éversion.
+        </div>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>2e métatarsien</strong> — encastré dans la mortaise entre les cunéiformes → le moins mobile</div>
+<div class="synergy-item"><strong>1er méta :</strong> flexion avec abduction (augmente l'arche antérieure)</div>
+<div class="synergy-item"><strong>5e méta :</strong> flexion avec adduction (augmente l'arche antérieure)</div>
+</div>
+</div>
+</div>
+<!-- ── 4. Arches du pied ── -->
+<div class="test-section-title">🏹 4 — Les arches du pied &amp; voûte plantaire</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:14px;">
+          La <strong>voûte plantaire</strong> est un ensemble architectural réunissant les éléments ostéo-articulaires, ligamentaires et musculaires du pied. Grâce à ses courbures et son élasticité, elle s'adapte aux inégalités du terrain et transmet le poids dans les meilleures conditions mécaniques. Son rôle d'amortissement est indispensable à la marche, à la course et en station debout. D'après Kapandji, le pied peut être comparé à une voûte supportée par 3 arches. <em>Les arches sont complètement développées à 13 ans.</em>
+</div>
+<table class="muscle-table">
+<thead><tr><th>Arche</th><th>Composants clés</th><th>Appui sol</th></tr></thead>
+<tbody>
+<tr>
+<td class="muscle-name"><strong>Arche médiale</strong> (la plus haute)</td>
+<td>Calcanéus (arrière) → Talus (clé de voûte, reçoit les efforts de la jambe) → Naviculaire (clé de voûte, 15–18 mm au-dessus du sol) → 1er cunéiforme → 1er métatarsien (avant)</td>
+<td>Tête du 1er méta (avec sésamoïdes) + Calcanéus</td>
+</tr>
+<tr>
+<td class="muscle-name"><strong>Arche latérale</strong> (peu concave)</td>
+<td>Calcanéus → Cuboïde (suspendu) → 5e métatarsien</td>
+<td>Tête du 5e méta + Calcanéus (parties molles)</td>
+</tr>
+<tr>
+<td class="muscle-name"><strong>Arche antérieure</strong></td>
+<td>Tête 1er méta (avec sésamoïdes) → Tête 5e méta — clé de voûte : 2e tête métatarsienne</td>
+<td>Parties molles (peu concave)</td>
+</tr>
+</tbody>
+</table>
+<div class="divider"></div>
+<h3 class="sub">Rôle de l'aponévrose plantaire</h3>
+<div class="info-box teal" style="margin-bottom:10px;">
+          Nappe fibreuse très peu extensible. Sa forme de voûte et la disposition de ses fibres lui permettent de se déformer lorsque le pied est en charge. Elle est considérée comme un <strong>système amortisseur</strong>.<br/>
+<strong>Rôle :</strong> (1) limiter passivement l'aplatissement de la voûte plantaire ; (2) limiter l'allongement du pied pendant sa mise en charge.
+        </div>
+<div class="divider"></div>
+<h3 class="sub">Système musculaire de soutien</h3>
+<table class="muscle-table">
+<thead><tr><th>Arche</th><th>Muscles principaux</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Antérieure</td><td>Long fibulaire, Tibial postérieur, Adducteur de l'hallux</td></tr>
+<tr><td class="muscle-name">Médiale</td><td>Long fléchisseur de l'hallux (+++), Long fléchisseur des orteils, Tibial postérieur, Adducteur de l'hallux, Long fibulaire</td></tr>
+<tr><td class="muscle-name">Externe / Latérale</td><td>Long fibulaire, Court fibulaire, Abducteur du 5e orteil</td></tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin-top:10px;">
+<strong>Le long fléchisseur de l'hallux</strong> a un rôle primordial de suspenseur du sustentaculum tali et du premier rayon du pied. Il <strong>limite le valgus du calcanéum</strong> lors de la phase d'amortissement.
+        </div>
+<div class="info-box amber" style="margin-top:10px;">
+<strong>Les muscles suspenseurs</strong> assurent un système de sanglage et limitent la déformation de la voûte (contraction excentrique de freinage). À l'image d'un ressort, leurs tendons emmagasinent l'énergie lors de l'écrasement et la restituent en fin de phase d'appui pour la propulsion.
+        </div>
+</div>
+</div>
+<!-- ── 5. Amortissement ── -->
+<div class="test-section-title">💥 5 — Systèmes d'amortissement</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<p style="margin-bottom:12px;">Lors de la marche ou de la course, le contact du pied sur le sol entraîne une <strong>onde de choc</strong> qui se transmet jusqu'au haut du corps. Les principaux amortisseurs du pied interviennent successivement :</p>
+<div class="synergy-grid" style="margin-bottom:14px;">
+<div class="synergy-item">1. <strong>Capiton plantaire</strong> (tissu graisseux en petites cloisons — absorbe Fv et Fh)</div>
+<div class="synergy-item">2. <strong>Freinage excentrique</strong> musculaire (selon la pose du pied)</div>
+<div class="synergy-item">3. <strong>Arches plantaires</strong></div>
+<div class="synergy-item">4. <strong>Articulation sous-talienne</strong> + ligaments de la cheville</div>
+<div class="synergy-item">5. <strong>Aponévrose plantaire</strong></div>
+<div class="synergy-item">6. <strong>Muscles suspenseurs plantaires</strong></div>
+</div>
+<div class="info-box teal" style="margin-bottom:10px;">
+<strong>Amortissement de l'articulation sous-talienne :</strong> Le valgus calcanéen (max 10°) se traduit par une <strong>rotation interne du tibia</strong> et un petit écartement de l'extrémité inférieure de la fibula.
+        </div>
+<h4 style="font-weight:600;margin:10px 0 8px;">Freinage excentrique selon la pose du pied</h4>
+<table class="rom-table">
+<thead><tr><th>Type de réception</th><th>Muscles en freinage excentrique</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Réception sur le talon</strong></td>
+<td>Tibial antérieur (freine l'abattement de l'avant-pied pour amortir l'impact)</td>
+</tr>
+<tr>
+<td><strong>Réception medio-pied</strong></td>
+<td>Triceps sural (soléaire + gastrocnémiens + aponévrose plantaire) — freine l'abaissement du talon · Puis freine l'avancée de l'axe jambier</td>
+</tr>
+</tbody>
+</table>
+<div class="info-box amber" style="margin-top:10px;">
+<strong>Risques d'un amortissement défaillant :</strong> Des semelles épaisses ou des chaussures inadaptées réduisent la proprioception et le tonus musculaire, rendant la course « non naturelle » et augmentant les pathologies liées aux micro-contraintes mécaniques.
+        </div>
+</div>
+</div>
+<div class="footnote"><cite>Source : P. César D.O — Biomécanique du pied 1ère partie, 1ère année ostéopathie IEOQ 2021. Usage privé.</cite></div>
+</section>
+<section class="section" id="arthro-talocheville" style="display:none;">
+<div class="section-title">Arthrologie — Articulation talo-crurale</div>
+<div class="section-sub">Thomas Gautier D.O. · IEOQ Année 1 — Ginglyme à 3 os : tibia, fibula, talus · Liée à la mobilité de la malléole latérale</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+      L'articulation de la cheville est liée à la <strong>mobilité de la malléole latérale</strong>, autrement dit à celle des articulations tibio-fibulaires. C'est un <strong>ginglyme</strong> impliquant 3 os (tibia, fibula, talus) formant la pince malléolaire.
+    </div>
+<!-- ÉLÉMENTS EN PRÉSENCE -->
+<div class="test-section-title">🦴 1 — Éléments en présence (3 os)</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">Surfaces articulaires</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Os / Surface</th><th>Situation</th><th>Répond à</th><th>Type</th><th>Forme / Caractéristiques</th><th>Regarde</th></tr></thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Tibia<small>Surface inférieure (pilon)</small></div></td>
+<td>Face inférieure du pilon tibial</td>
+<td>Face sup. du corps du talus (trochlée)</td>
+<td><span class="tag tag-teal">Ginglyme</span></td>
+<td>Quadrangulaire à grand axe oblique en dh. et en arr. Présente une crête postéro-antérieure oblique. Bord ant. plus large que post. Bord latéral plus large que médial. Bord post. descend plus bas que l'ant.</td>
+<td>En bas (et très légèrement en avt)</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Tibia<small>Surface malléolaire (malléole médiale)</small></div></td>
+<td>Face latérale de la malléole médiale</td>
+<td>Surface en virgule du talus</td>
+<td><span class="tag tag-teal">Plane, associée à la ginglyme</span></td>
+<td>Triangulaire à base antérieure</td>
+<td>En dehors</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Fibula<small>Malléole latérale</small></div></td>
+<td>½ inf. de la face médiale de la malléole fibulaire</td>
+<td>Face latérale du corps du talus</td>
+<td><span class="tag tag-teal">Associée à la ginglyme</span></td>
+<td>Triangulaire à sommet inférieur. Légèrement convexe verticalement (surtout en bas) et d'avt en arr.</td>
+<td>En dedans et légèrement en avant</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Talus<small>Surface trochléaire (trochlée)</small></div></td>
+<td>Face sup. du corps</td>
+<td>Face inf. du pilon tibial</td>
+<td><span class="tag tag-teal">Ginglyme</span></td>
+<td>Quadrangulaire à grand axe oblique en avt et légèrement en dh. <strong>Plus large en avt qu'en arr.</strong></td>
+<td>En haut</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Talus<small>Surface médiale, en virgule</small></div></td>
+<td>Partie sup. de la face médiale du corps</td>
+<td>Face latérale de la malléole médiale</td>
+<td><span class="tag tag-teal">Plane, associée à la ginglyme</span></td>
+<td>Virgule à grosse extrémité antérieure et concavité inférieure</td>
+<td>En dedans</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Talus<small>Surface latérale</small></div></td>
+<td>Face latérale du corps</td>
+<td>½ inf. face médiale de la malléole latérale</td>
+<td><span class="tag tag-teal">Associée à la ginglyme</span></td>
+<td>Triangulaire à base sup. et sommet déjeté en dh. Verticalement plane mais concave à la partie inf. D'avt en arr. légèrement convexe.</td>
+<td>En dh. et légèrement en arrière</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- MOYENS D'UNIONS -->
+<div class="test-section-title">🔗 2 — Moyens d'unions (5 types)</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon teal">🛡️</div><div class="card-title">Capsule</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;margin-bottom:10px;">S'insère au pourtour du cartilage, sauf en avant (en retrait du bord antérieur du tibia et sur la crête transversale du col du talus).</p>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:13px;">
+<div style="padding:8px 10px;background:var(--teal-50);border-radius:6px;border-left:2px solid var(--teal-400);"><strong>Lâche sagittalement</strong>, tendue sur les côtés. Récessus au niveau tibio-fibulaire inférieur.</div>
+<div style="padding:8px 10px;background:var(--navy-100);border-radius:6px;border-left:2px solid var(--navy-400);">2 culs-de-sac : ant. (en flexion dorsale) et post. (en flexion plantaire) — tractés par fibres profondes musculaires (releveurs en avant, long fléchisseur de l'hallux en arrière).</div>
+<div style="padding:8px 10px;background:var(--amber-100);border-radius:6px;border-left:2px solid var(--amber-500);">Innervation : classique sur 3 faces ; latéralement dans 20% des cas : nerf sural (purement sensitif) plutôt que nerf fibulaire superficiel.</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon navy">📋</div><div class="card-title">Ligaments collatéraux — LCF (latéral) &amp; LCT (médial)</div></div>
+<div class="card-body">
+<h3 class="sub">LCF — Ligament collatéral fibulaire (3 faisceaux)</h3>
+<table class="muscle-table" style="margin-bottom:14px;">
+<thead><tr><th></th><th>Faisceau antérieur</th><th>Faisceau moyen</th><th>Faisceau postérieur</th></tr></thead>
+<tbody>
+<tr><td><strong>Origine</strong></td><td>Bord ant. malléole lat. (partie moyenne)</td><td>Bord ant. malléole lat. (partie inf.)</td><td>Face méd. malléole lat. (en arr. de la surface articulaire = fosse malléolaire)</td></tr>
+<tr><td><strong>Trajet</strong></td><td>Oblique en avt, bas et dd.</td><td>Oblique en bas et arr.</td><td>Oblique en arr. et dd.</td></tr>
+<tr><td><strong>Terminaison</strong></td><td>Talus — col, partie latérale de la crête transversale</td><td>Calcanéus — face latérale, en arr. et au-dessus de la trochlée fibulaire</td><td>Talus — sillon limitant en bas et arr. la surface lat. du corps</td></tr>
+</tbody>
+</table>
+<h3 class="sub">LCT — Ligament collatéral tibial (plan profond + plan superficiel)</h3>
+<table class="muscle-table">
+<thead><tr><th></th><th>Faisceau ant. (plan profond)</th><th>Faisceau post. (plan profond)</th><th>Faisceau deltoïdien (plan superficiel)</th></tr></thead>
+<tbody>
+<tr><td><strong>Origine</strong></td><td>Tibia, face médiale, le long du bord ant.</td><td>Tibia, apex malléolaire, dans son échancrure</td><td>Tibia, face médiale, en arrière du faisceau ant. du plan profond</td></tr>
+<tr><td><strong>Trajet</strong></td><td>Oblique en avt, bas et dh. — large</td><td>Oblique en arr., bas — épais</td><td>Oblique en avt, bas et dh. — très large, en éventail</td></tr>
+<tr><td><strong>Terminaison</strong></td><td>Talus — col, partie médiale de la crête transversale</td><td>Talus — face méd. du corps, dans la concavité de la surface en virgule</td><td>1. Naviculaire · 2. Ligament calcanéo-naviculaire plant. · 3. Sustentaculum tali (bord sup.)</td></tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin-top:12px;">
+<strong>Ligament accessoire — Fibulo-talo-calcanéen :</strong> Fibula (lèvre médiale du bord post. malléole lat.) → se sépare en 2 branches → 1. Talus : processus latéral de la face post. 2. Calcanéus : partie postéro-latérale de la face supérieure (entre thalamus et tubérosité). Forme d'un Y à pointe postérieure.
+        </div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon amber">🔗</div><div class="card-title">Ligaments à distance &amp; éléments stabilisateurs</div></div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:7px;font-size:13.5px;">
+<div style="padding:8px 10px;background:var(--teal-50);border-radius:6px;border-left:2px solid var(--teal-400);">
+<strong>Ligaments à distance :</strong> Ligaments tibio-fibulaires inférieurs (ant. et post.) · Membrane interosseuse (MIO) · Ligament calcanéo-naviculaire plantaire (insertion au faisceau deltoïdien) · Rétinaculums : latéral (RMFi) et médial (RMF).
+          </div>
+<div style="padding:8px 10px;background:var(--navy-100);border-radius:6px;border-left:2px solid var(--navy-400);">
+<strong>Éléments stabilisateurs :</strong> Essentiellement les tendons rétromalléolaires médiaux et latéraux.
+          </div>
+</div>
+</div>
+</div>
+<!-- À RETENIR -->
+<div style="border-left:4px solid var(--teal-400);background:var(--teal-50);border-radius:0 10px 10px 0;padding:18px 20px;margin-bottom:24px;">
+<div style="font-size:14px;font-weight:700;color:var(--teal-700);margin-bottom:10px;">⭐ À retenir absolument — Arthrologie talo-crurale</div>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;">
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Trochlée talienne :</strong> plus large en avant qu'en arrière → en flexion dorsale, la partie large s'engage dans la pince = écartement fibulaire → importance clinique (diastasis)</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>LCF :</strong> 3 faisceaux (ant.= lig. talo-fibulaire ant., moy.= lig. calcanéo-fibulaire, post.= lig. talo-fibulaire post.) — faisceau ant. = le plus souvent lésé en entorse</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>LCT (deltoïde) :</strong> plan profond (2 faisceaux taliens) + plan superficiel (faisceau deltoïdien → naviculaire, lig. calcanéo-naviculaire, sustentaculum)</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Capsule :</strong> lâche sagittalement (2 culs-de-sac ant./post.), tendue sur les côtés · innervation latérale variable (nerf sural dans 20% des cas)</li>
+</ul>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre inférieur, Chapitre 3 — Articulation talo-crurale, Année 1, IEOQ · Usage privé</cite></div>
+</section>
+<section class="section" id="arthro-tibfib" style="display:none;">
+<div class="section-title">Arthrologie — Articulations tibio-fibulaires</div>
+<div class="section-sub">Thomas Gautier D.O. · IEOQ Année 1 — Supérieure (plane) + Inférieure (syndesmose) · Fonctionnellement liées à la cheville</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+      L'articulation de la cheville est liée à la mobilité de la malléole latérale, autrement dit à celle des articulations tibio-fibulaires. La <strong>supérieure</strong> est une arthrodie (glissements-bâillements) ; l'<strong>inférieure</strong> est une syndesmose (écartements-rapprochements).
+    </div>
+<!-- TYPES ARTICULAIRES -->
+<div class="test-section-title">🦴 1 — Types articulaires &amp; surfaces</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">Types articulaires</div></div>
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub">Tibio-fibulaire supérieure (TFS)</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;"><strong>Type :</strong> Surface plane encroûtée de cartilage hyalin → glissements-bâillements</div>
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;"><strong>Capsule propre.</strong> Partage le LCF du genou et le tendon du biceps fémoral avec le genou.</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Tibia :</strong> face postéro-latérale du condyle latéral — regarde en bas, en dehors et en arrière.</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Fibula :</strong> versant antéro-médial de la tête fibulaire.</div>
+</div>
+</div>
+<div>
+<h3 class="sub">Tibio-fibulaire inférieure (TFI)</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--amber-100);border-radius:6px;border-left:2px solid var(--amber-500);"><strong>Type : Syndesmose</strong> — pas de cartilage. Surfaces recouvertes de tissu fibreux interosseux. Permet des écartements-rapprochements (bien plus nets qu'une symphyse).</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;">Ni capsule ni synoviale. Un coussinet fibreux + récessus de la capsule talo-crurale s'invagine entre les 2 os (comme un soufflet).</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Tibia :</strong> face latérale extrémité distale, limitée par 2 tubercules (insertions des lig. tibio-fibulaires inf. ant. et post.).</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Fibula :</strong> moitié supérieure de la face médiale de la malléole latérale (sans cartilage).</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- MOYENS D'UNIONS -->
+<div class="test-section-title">🔗 2 — Moyens d'unions</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon navy">📋</div><div class="card-title">Moyens d'unions par articulation</div></div>
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub">TFS — Tibio-fibulaire supérieure</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;">Capsule + synoviale + ligaments indifférenciés</div>
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;border-left:2px solid var(--teal-400);"><strong>LCF du genou</strong> (ligament collatéral fibulaire) — gros ligament partagé avec le genou, franchit l'articulation</div>
+<div style="padding:7px 10px;background:var(--navy-100);border-radius:6px;">À distance : corde oblique (2B) + membrane interosseuse (MIO)</div>
+</div>
+</div>
+<div>
+<h3 class="sub">TFI — Tibio-fibulaire inférieure</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--amber-100);border-radius:6px;border-left:2px solid var(--amber-500);">2 forts ligaments : <strong>ant.</strong> (lig. tibio-fibulaire inf. ant.) + <strong>post.</strong> (lig. tibio-fibulaire inf. post. — s'étend jusqu'à la malléole médiale)</div>
+<div style="padding:7px 10px;background:var(--navy-100);border-radius:6px;">À distance : rétinaculum des muscles fibulaires (RMFi) + MIO</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- INTÉRÊTS OSTÉOPATHIQUES -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon coral">⚕️</div><div class="card-title">Intérêts ostéopathiques</div></div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> Les malléoles sont sous-cutanées et saillantes (parfaitement visibles). La latérale est plus fine, plus postérieure et plus basse que la médiale. Elles délimitent le cou-de-pied. La région antérieure montre les tendons releveurs. La postérieure est occupée par les 2 gouttières rétromalléolaires (séparées par le tendon calcanéen, oblique en bas et légèrement en dehors).
+          </div>
+<div class="info-box amber">
+<strong>Pince malléolaire :</strong> En flexion dorsale, la partie large de la trochlée talienne s'engage → écartement de la TFI. La fibula s'écarte tout en remontant légèrement et pivotant en rotation médiale. En flexion plantaire, la partie étroite se loge dans la pince → risque de ballottement si diastasis ou défaut de serrage → instabilité (risque entorse, notamment aux talons hauts).
+          </div>
+</div>
+</div>
+</div>
+<!-- À RETENIR -->
+<div style="border-left:4px solid var(--teal-400);background:var(--teal-50);border-radius:0 10px 10px 0;padding:18px 20px;margin-bottom:24px;">
+<div style="font-size:14px;font-weight:700;color:var(--teal-700);margin-bottom:10px;">⭐ À retenir absolument — Arthrologie tibio-fibulaires</div>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;">
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>TFS :</strong> arthrodie plane + capsule propre + partage LCF du genou (→ blocage TFS retentit sur la cheville, pas sur le genou)</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>TFI :</strong> syndesmose = pas de cartilage, pas de capsule, pas de synoviale · récessus de la capsule talo-crurale fait soufflet</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Flexion dorsale → écartement TFI</strong> (partie large du talus) · Fibula remonte + rotation médiale · Diastasis → instabilité → entorse</li>
+</ul>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre inférieur, Chapitre 4 — Articulations tibio-fibulaires, Année 1, IEOQ · Usage privé</cite></div>
+</section>
+<section class="section" id="arthro-subtal" style="display:none;">
+<div class="section-title">Arthrologie — Articulation subtalaire</div>
+<div class="section-sub">Thomas Gautier D.O. · IEOQ Année 1 — 2 surfaces anatomiquement indépendantes · Transition arrière-pied</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+      L'articulation subtalaire est particulière car composée de <strong>2 surfaces anatomiquement indépendantes</strong>, dont l'antérieure partage sa capsule avec l'articulation transverse du tarse (TT) médiale. Elle fait la transition entre les empilements des interlignes proximaux et la juxtaposition verticale des interlignes distaux.
+    </div>
+<!-- ÉLÉMENTS EN PRÉSENCE -->
+<div class="test-section-title">🦴 1 — Éléments en présence (2 os)</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">Surfaces articulaires — Talus &amp; Calcanéus</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Os / Surface</th><th>Situation</th><th>Répond à</th><th>Type</th><th>Forme</th><th>Regarde</th><th>Capsule</th></tr></thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Talus<small>Surface postérieure</small></div></td>
+<td>Face inférieure du corps du talus</td>
+<td>Thalamus (partie moy. face sup. du calcanéus)</td>
+<td><span class="tag tag-teal">Trochoïde</span></td>
+<td>Ovalaire à grand axe oblique en avt et en dh. Concave selon son grand axe, plane transversalement.</td>
+<td>En bas et légèrement en arrière</td>
+<td>Capsule propre</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Talus<small>Surface antérieure</small></div></td>
+<td>Face inférieure de la tête du talus</td>
+<td>Surface en semelle du calcanéus (partie ant. face sup.)</td>
+<td><span class="tag tag-teal">Trochoïde</span></td>
+<td>Ovalaire à grand axe oblique en avt et en dh. Convexe selon son grand axe, plane transversalement.</td>
+<td>En bas</td>
+<td>Capsule commune avec la TT médiale</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Calcanéus<small>Thalamus (surface post.)</small></div></td>
+<td>Partie moyenne de la face sup. du calcanéus</td>
+<td>Surface post. du talus</td>
+<td><span class="tag tag-teal">Trochoïde</span></td>
+<td>Inversement conformée à celle du talus</td>
+<td>En haut</td>
+<td>Capsule propre</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Calcanéus<small>Surface en semelle (ant.)</small></div></td>
+<td>Partie antéro-latérale de la face sup. du calcanéus</td>
+<td>Surface ant. du talus</td>
+<td><span class="tag tag-teal">Trochoïde</span></td>
+<td>Inversement conformée. Sa partie moyenne est rétrécie et lui donne un aspect en « semelle ».</td>
+<td>En haut</td>
+<td>Capsule commune avec la TT médiale</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- MOYENS D'UNIONS -->
+<div class="test-section-title">🔗 2 — Moyens d'unions (5 types)</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon navy">📋</div><div class="card-title">Ligaments propres de la subtalaire</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Ligament</th><th>Origine</th><th>Trajet</th><th>Terminaison</th><th>Remarque</th></tr></thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Lig. talo-calcanéen interosseux<small>(= lig. en haie)</small></div></td>
+<td>Talus — face inf. du col, dans le sinus tarsi</td>
+<td>Court, vertical — étendu sur toute la longueur du sinus tarsi</td>
+<td>Calcanéus — face sup., dans le sinus, le long de la surface ant.</td>
+<td>Ligament très important. 2 faisceaux (ant. + post.) ; parfois un 3e faisceau latéral = partie latérale du faisceau ant. Appelé aussi ligament en haie pour sa forme verticale, étendue et peu haute.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Lig. talo-calcanéen latéral</div></td>
+<td>Talus — apex de la face latérale du corps</td>
+<td>Vertical, court</td>
+<td>Calcanéus — bord latéral du thalamus</td>
+<td>Très court, doublé par le faisceau moyen du LCF de la cheville.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Lig. talo-calcanéen médial</div></td>
+<td>Talus — bord médial de la surface art. post.</td>
+<td>Vertical, court</td>
+<td>Calcanéus — bord médial du thalamus</td>
+<td>Très peu développé — symétrique du latéral.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Lig. talo-calcanéen postérieur</div></td>
+<td>Talus — processus latéral de la face post., débordant à la face latérale</td>
+<td>Court, aplati — oblique en bas, arr. et dh.</td>
+<td>Calcanéus — face sup., partie postéro-médiale (~1 cm du thalamus)</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<div class="info-box amber" style="margin-top:12px;">
+<strong>Ligaments à distance (3) :</strong> Ligament fibulo-talo-calcanéen (cf. talo-crurale) · Ligament collatéral tibial (plan superficiel dit deltoïdien) · Ligament collatéral fibulaire (faisceau moyen) — vont de la jambe au calcanéus.
+        </div>
+</div>
+</div>
+<!-- INTÉRÊTS OSTÉOPATHIQUES -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon coral">⚕️</div><div class="card-title">Intérêts ostéopathiques</div></div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> Non accessible directement — située entre 2 os empilés dont les côtés sont surplombés par les malléoles. On ne peut qu'approcher l'interligne.
+          </div>
+<div class="info-box amber">
+<strong>Mécanique et pathologique :</strong> Responsable de la stabilité de l'arrière-pied. Classiquement : elle « tangue, vire et roule » (mouvement réduit induisant des déplacements tridimensionnels). Sa récupération est indispensable pour un bon aplomb du pied. L'interligne vu sous 4 faces = toujours une ligne brisée → propension à la stabilité. La communauté capsulaire avec la TT médiale indique que subtalaire et TT médiale fonctionnent ensemble : c'est le <strong>complexe d'arrière-pied</strong>.
+          </div>
+<div class="info-box teal">
+<strong>Éléments stabilisateurs :</strong> Muscles rétromalléolaires à action coaptatrice — mention particulière pour le <strong>long flécheur de l'hallux</strong> qui sangle le talus par l'arrière avant de se plaquer sous le sustentaculum.
+          </div>
+</div>
+</div>
+</div>
+<!-- À RETENIR -->
+<div style="border-left:4px solid var(--teal-400);background:var(--teal-50);border-radius:0 10px 10px 0;padding:18px 20px;margin-bottom:24px;">
+<div style="font-size:14px;font-weight:700;color:var(--teal-700);margin-bottom:10px;">⭐ À retenir absolument — Arthrologie subtalaire</div>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;">
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>2 surfaces indépendantes :</strong> postérieure (capsule propre, type trochoïde) + antérieure (capsule commune avec TT médiale, type trochoïde)</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Lig. talo-calcanéen interosseux :</strong> LE ligament principal — dans le sinus tarsi, 2 faisceaux (ant./post.) — dit « en haie » pour sa forme</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Surface post. du talus :</strong> concave selon le grand axe · <strong>Surface ant. du talus :</strong> convexe selon le grand axe</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Complexe d'arrière-pied :</strong> Subtalaire + TT médiale fonctionnent ensemble (capsule commune) → toujours traiter les deux</li>
+</ul>
+<div style="background:#fff3cd;border-left:3px solid var(--amber-500);border-radius:0 6px 6px 0;padding:10px 14px;margin-top:12px;font-size:13px;color:#4a2e00;">
+<strong>🧠 Mnémotechnique :</strong> Subtalaire = « <strong>tangue, vire, roule</strong> » (comparaison marine) · Sinus tarsi = logement du ligament interosseux = <strong>croix</strong> de l'articulation (symbolise position + fonction de la surface, comme la croix symbolise la partie centrale) · Surface ant. talus = convexe (tête = bombée) · Surface post. talus = concave (corps = creusé)
+      </div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre inférieur, Chapitre 5 — Articulation subtalaire, Année 1, IEOQ · Usage privé</cite></div>
+</section>
+<section class="section" id="arthro-tt-medial" style="display:none;">
+<div class="section-title">Arthrologie — Transverse du Tarse Médiale (Talo-naviculaire)</div>
+<div class="section-sub">Chapitre 6 · Arthrologie membre inférieur — Thomas Gautier D.O. · IEOQ Année 1</div>
+<div class="info-box teal" style="margin-bottom:18px;">
+      L'articulation transverse du tarse (TT) est divisée en 2 compartiments : un <strong>latéral</strong> (calcanéo-cuboïdien) et un <strong>médial</strong> (talo-naviculaire). Ce compartiment a une singularité : il <strong>partage sa capsule avec la subtalaire antérieure</strong>, ce qui en fait une zone-clé pour la voûte plantaire.
+    </div>
+<!-- Éléments en présence -->
+<div class="test-section-title">🦴 1 — Éléments en présence (3)</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub" style="margin-top:0;">a. Le talus</h3>
+<table class="muscle-table">
+<thead><tr><th>Champ</th><th>Détail</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Située</td><td>Face antérieure du talus</td></tr>
+<tr><td class="muscle-name">Répond</td><td>À la glène du naviculaire et fibro-cartilage</td></tr>
+<tr><td class="muscle-name">Type</td><td>Sphéroïde</td></tr>
+<tr><td class="muscle-name">Forme</td><td>Ovalaire grand axe oblique en haut et en dehors</td></tr>
+<tr><td class="muscle-name">Regarde</td><td>En avant, en bas, en dedans</td></tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sub" style="margin-top:0;">b. Le naviculaire</h3>
+<div class="info-box teal" style="font-size:13px;margin-bottom:8px;">La surface articulaire porte le nom de <strong>glène</strong> en raison de sa concavité.</div>
+<table class="muscle-table">
+<thead><tr><th>Champ</th><th>Détail</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Située</td><td>Face postérieure du naviculaire</td></tr>
+<tr><td class="muscle-name">Répond</td><td>À la tête du talus</td></tr>
+<tr><td class="muscle-name">Type</td><td>Sphéroïde</td></tr>
+<tr><td class="muscle-name">Forme</td><td>Ovalaire grand axe oblique en haut et en dehors</td></tr>
+<tr><td class="muscle-name">Regarde</td><td>En arrière, en haut, en dehors</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="divider"></div>
+<h3 class="sub">c. Le fibro-cartilage glénoïdien</h3>
+<div class="info-box amber">
+          C'est le plan profond du <strong>ligament calcanéo-naviculaire plantaire</strong>. Il est triangulaire à base médiale, très épais, formant un support souple pour la partie inféro-médiale de la tête du talus. Il mérite son nom de <strong>« ligament ressort »</strong>.
+        </div>
+</div>
+</div>
+<!-- Moyens d'unions -->
+<div class="test-section-title">🔗 2 — Moyens d'unions (5 types)</div>
+<div class="card" style="margin-bottom:14px;">
+<div class="card-header"><div class="card-icon navy">🧲</div><div class="card-title">a. La capsule</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;margin-bottom:10px;">Son insertion se fait sur les 3 structures en jeu :</p>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;">
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">·</span>Au contact du cartilage du naviculaire, sauf en bas où elle double le fibro-cartilage.</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">·</span>Au bord libre du ligament calcanéo-naviculaire plantaire.</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">·</span>Sur le talus : en retrait à la face supérieure du col, sur la crête transversale, englobant la surface subtalaire antérieure, s'insérant en arrière d'elle.</li>
+</ul>
+<div class="divider"></div>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Caractéristique :</strong> Mince à la partie médiale et épaisse, résistante à la partie latérale.</div>
+<div class="synergy-item"><strong>Particularité :</strong> Commune à la subtalaire antérieure.</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:14px;">
+<div class="card-header"><div class="card-icon teal">🔗</div><div class="card-title">c. Les ligaments</div></div>
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:12px;">Les ligaments du pied sont <strong>essentiellement plantaires</strong>. C'est à ce seul niveau qu'ils ont un rôle à jouer. Deux sont importants, un 3e est accessoire.</div>
+<table class="muscle-table">
+<thead><tr><th>Ligament</th><th>Origine</th><th>Trajet</th><th>Terminaison</th><th>Remarque</th></tr></thead>
+<tbody>
+<tr>
+<td class="muscle-name">Calcanéo-naviculaire plantaire</td>
+<td>Calcanéus · Bord ant. du sustentaculum</td>
+<td>En avant</td>
+<td>Naviculaire · Bord inférieur de la glène</td>
+<td>Plan superficiel du fibro-cartilage</td>
+</tr>
+<tr>
+<td class="muscle-name">Faisceau médial du lig. bifurqué</td>
+<td>Calcanéus · Face sup., partie lat. du sinus tarsi, en dehors de l'insertion du CEO</td>
+<td>En avant et en dehors · Plan sagittal</td>
+<td>Naviculaire · Partie sup. de la face latérale</td>
+<td>Appelé aussi ligament calcanéo-naviculaire latéral</td>
+</tr>
+<tr>
+<td class="muscle-name">Lig. talo-naviculaire dorsal</td>
+<td colspan="4">Sans importance mécanique — petit épaississement capsulaire.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card" style="margin-bottom:14px;">
+<div class="card-header"><div class="card-icon amber">📍</div><div class="card-title">d. Ligaments à distance</div></div>
+<div class="card-body">
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;">
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--amber-500);font-weight:700;">·</span>Le <strong>ligament cuboïdo-naviculaire plantaire</strong> — puissant ligament interosseux unissant les interlignes transverses du tarse médial et latéral.</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--amber-500);font-weight:700;">·</span>Le <strong>ligament plantaire long</strong>, de la transverse du tarse latérale.</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--amber-500);font-weight:700;">·</span>Le <strong>faisceau latéral du ligament bifurqué</strong>.</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--amber-500);font-weight:700;">·</span>Le <strong>faisceau antérieur du ligament talo-calcanéen interosseux</strong>.</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--amber-500);font-weight:700;">·</span>Le <strong>ligament deltoïdien</strong> ou plan superficiel du LCT de la cheville.</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--amber-500);font-weight:700;">·</span><strong>L'aponévrose plantaire</strong>.</li>
+</ul>
+</div>
+</div>
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon coral">💪</div><div class="card-title">f. Éléments stabilisateurs</div></div>
+<div class="card-body">
+<div class="info-box teal">
+          Ce sont les <strong>tendons des muscles rétromalléolaires médiaux</strong>, notamment le <strong>tibial postérieur</strong>, qui éclate en expansions sous tout le tarse.
+        </div>
+</div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre inférieur, Chapitre 6 — Articulation transverse du tarse médiale, Année 1, IEOQ · Usage privé</cite></div>
+</section>
+<section class="section" id="arthro-tt-lateral" style="display:none;">
+<div class="section-title">Arthrologie — Transverse du Tarse Latérale (Calcanéo-cuboïdienne)</div>
+<div class="section-sub">Chapitre 7 · Arthrologie membre inférieur — Thomas Gautier D.O. · IEOQ Année 1</div>
+<!-- Éléments en présence -->
+<div class="test-section-title">🦴 1 — Éléments en présence (2)</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub" style="margin-top:0;">a. Calcanéus</h3>
+<table class="muscle-table">
+<thead><tr><th>Champ</th><th>Détail</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Située</td><td>Face ant. du calcanéus</td></tr>
+<tr><td class="muscle-name">Répond</td><td>Face post. du cuboïde</td></tr>
+<tr><td class="muscle-name">Type</td><td>En selle</td></tr>
+<tr><td class="muscle-name">Forme</td><td>Triangulaire à sommet inférieur · Concave verticalement dans sa ½ sup., convexe dans l'inf. · Convexe transversalement · Partie supérieure limitée par le <strong>rostre calcanéen</strong></td></tr>
+<tr><td class="muscle-name">Regarde</td><td>En avant</td></tr>
+<tr><td class="muscle-name">Rmq</td><td>À la partie supéro-médiale, il peut exister une petite facette pour le naviculaire</td></tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sub" style="margin-top:0;">b. Le cuboïde</h3>
+<div class="info-box teal">Sa surface articulaire est <strong>inversement conformée</strong> à celle du calcanéus.</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Moyens d'unions -->
+<div class="test-section-title">🔗 2 — Moyens d'unions (5 types)</div>
+<div class="card" style="margin-bottom:14px;">
+<div class="card-header"><div class="card-icon navy">🧲</div><div class="card-title">a. La capsule</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;">S'insère au pourtour des surfaces cartilagineuses. Plus mince en dehors et épaisse en dedans. Il existe un <strong>point fort entre la TT médiale et la TT latérale</strong>, zone renforcée par le ligament bifurqué.</p>
+</div>
+</div>
+<div class="card" style="margin-bottom:14px;">
+<div class="card-header"><div class="card-icon teal">🔗</div><div class="card-title">c. Les ligaments (3 importants + 1 accessoire)</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Ligament</th><th>Origine</th><th>Trajet</th><th>Terminaison</th><th>Remarque</th></tr></thead>
+<tbody>
+<tr>
+<td class="muscle-name">Calcanéo-cuboïdien plantaire</td>
+<td>Calcanéus · Tubérosité de la face plantaire</td>
+<td>En avant</td>
+<td>Cuboïde · Sur la tubérosité plantaire, en arr. du sillon du long fibulaire, entremêlé avec les insertions des court fléchisseur et opposant du V et court fléchisseur et adducteur oblique du I</td>
+<td>—</td>
+</tr>
+<tr>
+<td class="muscle-name">Ligament plantaire long</td>
+<td>Calcanéus · Partie moyenne de la face plantaire (recouvert par le carré plantaire)</td>
+<td>En avant</td>
+<td>1. Cuboïde : en avt du sillon du long fibulaire · 2. Bases métatarsiennes : face plantaire des 4 derniers</td>
+<td>Considéré comme le plan superficiel du ligament précédent</td>
+</tr>
+<tr>
+<td class="muscle-name">Faisceau latéral du lig. bifurqué</td>
+<td>Calcanéus · Face sup., partie lat. du sinus tarsi, en dehors de l'insertion du CEO</td>
+<td>En avant · Plan horizontal</td>
+<td>Cuboïde · Partie médiale de la face sup.</td>
+<td>Appelé aussi ligament calcanéo-cuboïdien médial</td>
+</tr>
+<tr>
+<td class="muscle-name">Lig. calcanéo-cuboïdien dorsal</td>
+<td colspan="4">Sans grand intérêt mécanique — petit épaississement capsulaire.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="card" style="margin-bottom:14px;">
+<div class="card-header"><div class="card-icon amber">📍</div><div class="card-title">d. Ligaments à distance</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;">Essentiellement le <strong>faisceau médial du ligament bifurqué</strong> (de la TT médiale) et <strong>l'aponévrose plantaire</strong>.</p>
+</div>
+</div>
+<div class="card" style="margin-bottom:14px;">
+<div class="card-header"><div class="card-icon coral">💪</div><div class="card-title">e. Éléments stabilisateurs</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;">Muscles intrinsèques de l'hallux (court fléchisseur et adducteur oblique) et du 5e orteil (opposant et court fléchisseur). En dorsal : le <strong>court extenseur des orteils (CEO)</strong>. Latéralement : les <strong>tendons fibulaires</strong>.</p>
+</div>
+</div>
+<!-- Intérêts ostéopathiques -->
+<div class="test-section-title">⚕️ 3 — Intérêts ostéopathiques</div>
+<div class="card" style="margin-bottom:24px;">
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong><br/>
+<strong>En dorsal :</strong> le squelette est palpable (poutre composite : os en dorsal, entrait musculo-ligamentaire en plantaire), notamment les interlignes, malgré les tendons extrinsèques.<br/>
+<strong>En plantaire :</strong> le capiton plantaire masque l'aponévrose. Le système capsulo-ligamentaire est repérable mais hors d'atteinte.<br/>
+<strong>Médialement :</strong> 3 éléments-clés — sustentaculum, tubérosité du naviculaire (repères faciles) ; tête talaire nécessite pied en flexion plantaire, abduction et pronation.<br/>
+<strong>Latéralement :</strong> on palpe le <strong>rostre calcanéen</strong> (délimitant l'interligne TT) — le styloïde du Ve métatarsien est plus en avant.
+          </div>
+<div class="info-box amber">
+<strong>Mécanique et pathologique :</strong> La TT a un fonctionnement lié à celui de la subtalaire (connexion anatomique). Sur le plan dynamique : déplacement tridimensionnel (inversion-éversion). En statique : le tarse antérieur est au sommet de la voûte plantaire, soutenu comme en étrier par l'entrecroisement du long fibulaire et des expansions du tibial antérieur. Le <strong>rostre calcanéen</strong> offre un frein à l'écrasement plantaire.<br/><br/>
+            Les ligaments du pied n'ont d'intérêt qu'en plantaire (rôle d'entrait). Seule exception : le <strong>ligament bifurqué</strong>, qui joue un rôle pivot entre les 2 compartiments de la TT.<br/><br/>
+<strong>Articulation intertarsienne antérieure :</strong> Capsule propre s'invaginant dans les interlignes transversaux. Trois ensembles ligamentaires plantaires renforcent ces interlignes : ligaments interosseux intercunéens et cunéo-cuboïdien plantaire · ligaments cunéo-naviculaires plantaires · puissant ligament cuboïdo-naviculaire plantaire.
+          </div>
+</div>
+</div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre inférieur, Chapitre 7 — Articulation transverse du tarse latérale, Année 1, IEOQ · Usage privé</cite></div>
+</section>
+<section class="section" id="arthro-tarso-meta" style="display:none;">
+<div class="section-title">Arthrologie — Articulation Tarso-Métatarsienne (Lisfranc)</div>
+<div class="section-sub">Chapitre 8 · Arthrologie membre inférieur — Thomas Gautier D.O. · IEOQ Année 1</div>
+<div class="info-box teal" style="margin-bottom:18px;">
+      Ensemble articulaire constitué des os antérieurs du tarse et des bases métatarsiennes, incluant les petites facettes intermétatarsiennes. L'ensemble de ces surfaces planes forme un <strong>système à emboîtement réciproque</strong>. Regroupement de <strong>9 os</strong> en 2 rangées.
+    </div>
+<!-- Éléments en présence -->
+<div class="test-section-title">🦴 1 — Éléments en présence</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<h3 class="sub" style="margin-top:0;">a. Tarse antérieur — 4 os, 5 surfaces articulaires</h3>
+<table class="muscle-table">
+<thead><tr><th>Os</th><th>Surface</th><th>Forme</th><th>Répond à</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Cunéiforme 1</td><td>Face ant.</td><td>Réniforme à hile latéral</td><td>M1</td></tr>
+<tr><td class="muscle-name">Cunéiforme 2</td><td>Face ant.</td><td>Triangulaire à base sup.</td><td>M2</td></tr>
+<tr><td class="muscle-name">Cunéiforme 3</td><td>Face ant.</td><td>Triangulaire à base supéro-lat.</td><td>M3</td></tr>
+<tr><td class="muscle-name">Cuboïde</td><td>Face ant.</td><td>1 facette médiale quadrangulaire → M4 · 1 facette latérale triangulaire à sommet lat. → M5</td><td>M4 et M5</td></tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin-top:10px;font-size:13px;">Toutes ces surfaces regardent en avant. L'articulation intègre également les facettes intermétatarsiennes situées aux faces adjacentes des os.</div>
+<div class="divider"></div>
+<h3 class="sub">b. Base métatarsienne</h3>
+<p style="font-size:13.5px;">Les surfaces articulaires sont <strong>inversement conformées</strong>. Surfaces planes formant un emboîtement réciproque.</p>
+</div>
+</div>
+<!-- Moyens d'unions -->
+<div class="test-section-title">🔗 2 — Moyens d'unions (5 types)</div>
+<div class="card" style="margin-bottom:14px;">
+<div class="card-header"><div class="card-icon navy">🧲</div><div class="card-title">a. La capsule — 3 capsules classiques</div></div>
+<div class="card-body">
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Capsule médiale :</strong> Jonction cunéiforme médial – M1</div>
+<div class="synergy-item"><strong>Capsule moyenne/médiane :</strong> Cunéiformes intermédiaire et latéral avec M2 et M3 (plus serrée que les autres)</div>
+<div class="synergy-item"><strong>Capsule latérale :</strong> Jonction cuboïde – M4 et M5</div>
+</div>
+<div class="info-box teal" style="margin-top:10px;font-size:13px;">Elles s'insèrent au pourtour des surfaces cartilagineuses, englobant les interlignes intermétatarsiens et s'invaginant à la partie antérieure des interlignes intercunéo-cuboïdiens. À noter également : existence d'une <strong>capsule intertarsienne antérieure</strong> (entre naviculaire et 3 cunéiformes).</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:14px;">
+<div class="card-header"><div class="card-icon teal">🔗</div><div class="card-title">c. Les ligaments</div></div>
+<div class="card-body">
+<div class="info-box amber" style="margin-bottom:12px;">Comme sur l'ensemble du pied, les ligaments sont <strong>plantaires</strong> (les dorsaux sont faibles et sans intérêt mécanique).</div>
+<ul style="list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;">
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">·</span>Ligaments tarso-métatarsiens plantaires franchissant chaque interligne.</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">·</span>Ligaments intermétatarsiens.</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">·</span>Ligaments interosseux intercunéens et cunéo-cuboïdien.</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">·</span>Ligaments cunéo-naviculaires plantaires.</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">·</span><strong>Ligament cuboïdo-naviculaire plantaire (dit ligament de Lisfranc)</strong> — très puissant.</li>
+</ul>
+<div class="divider"></div>
+<h3 class="sub">Ligaments interosseux cunéo-métatarsiens</h3>
+<div class="synergy-grid">
+<div class="synergy-item">C1 → M2</div>
+<div class="synergy-item">C2 → M2 et M3</div>
+<div class="synergy-item">C3 → M2 et M3 (fibres sagittales et croisées)</div>
+<div class="synergy-item">C3 → M3 et M4</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:14px;">
+<div class="card-header"><div class="card-icon amber">📍</div><div class="card-title">d. Ligaments à distance (muscles au contact)</div></div>
+<div class="card-body">
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Côté médial :</strong> Tendon du long fibulaire en plantaire · Tibial antérieur en dorsal</div>
+<div class="synergy-item"><strong>Côté latéral :</strong> Court fléchisseur et opposant du V</div>
+<div class="synergy-item"><strong>Au milieu :</strong> Expansions du tibial postérieur · Court fléchisseur et adducteur oblique du I</div>
+</div>
+</div>
+</div>
+<!-- Intérêts ostéopathiques -->
+<div class="test-section-title">⚕️ 3 — Intérêts ostéopathiques</div>
+<div class="card" style="margin-bottom:24px;">
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> L'interligne n'est pas palpable en dorsal malgré les tendons. Il n'est pas atteignable en plantaire du fait de la masse des parties molles.
+          </div>
+<div class="info-box amber">
+<strong>Mécanique — Les 3 palettes de De Doncker :</strong><br/>
+            Par l'encastrement de <strong>M2 entre les cunéiformes</strong>, celui-ci ne peut pas être très mobile → zone au faîte axial de la voûte plantaire, la plus stable. Son voisin M3 (même capsule) également.<br/>
+            En revanche, la <strong>palette médiale</strong> et surtout la <strong>palette latérale</strong> sont très mobiles.<br/>
+            Cet interligne démarre les 5 rayons du pied et règle l'aplomb des têtes métatarsiennes au sol.
+          </div>
+</div>
+</div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre inférieur, Chapitre 8 — Articulation tarso-métatarsienne, Année 1, IEOQ · Usage privé</cite></div>
+</section>
+<section class="section" id="arthro-mp-pied" style="display:none;">
+<div class="section-title">Arthrologie — Métatarso-Phalangiennes du Pied (MP)</div>
+<div class="section-sub">Chapitre 9 · Arthrologie membre inférieur — Thomas Gautier D.O. · IEOQ Année 1</div>
+<div class="info-box teal" style="margin-bottom:18px;">
+      Les articulations métatarso-phalangiennes (MP) sont au nombre de <strong>5</strong>. Celle de l'hallux est particulièrement importante en dimensions et fonctionnellement. Elles correspondent à la <strong>pliure entre l'avant-pied et le sol</strong> lors du décollement du pied dans la marche.
+    </div>
+<!-- Éléments en présence -->
+<div class="test-section-title">🦴 1 — Éléments en présence (12 pour les 4 MP des orteils + cas de l'hallux)</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub" style="margin-top:0;">a. Les 4 têtes métatarsiennes</h3>
+<table class="muscle-table">
+<thead><tr><th>Champ</th><th>Détail</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Située</td><td>Épiphyse distale du métatarsien</td></tr>
+<tr><td class="muscle-name">Répond</td><td>Base de la phalange et fibro-cartilage</td></tr>
+<tr><td class="muscle-name">Type</td><td>Ellipsoïde</td></tr>
+<tr><td class="muscle-name">Forme</td><td>Saillie hémisphérique aplatie transversalement · Plus étendue en plantaire qu'en dorsal</td></tr>
+<tr><td class="muscle-name">Regarde</td><td>En avant et en bas</td></tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sub" style="margin-top:0;">b. Les 4 glènes des bases des 1res phalanges</h3>
+<table class="muscle-table">
+<thead><tr><th>Champ</th><th>Détail</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Située</td><td>Face postérieure de la base de P1</td></tr>
+<tr><td class="muscle-name">Répond</td><td>Tête du métatarsien</td></tr>
+<tr><td class="muscle-name">Type</td><td>Ellipsoïde</td></tr>
+<tr><td class="muscle-name">Forme</td><td>Concave en tous sens</td></tr>
+<tr><td class="muscle-name">Regarde</td><td>En arrière</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="divider"></div>
+<h3 class="sub">c. Les 4 fibro-cartilages glénoïdiens</h3>
+<p style="font-size:13.5px;">Ils prolongent les surfaces glénoïdiennes vers le bas, se relevant vers l'arrière. Triangulaires à la coupe sagittale, leur bord antérieur s'insère sur le bord inférieur de la base de P1. Ils adhèrent à la capsule par leur face périphérique et sont encroûtés de cartilage à leur face profonde.</p>
+<div class="divider"></div>
+<h3 class="sub">d. L'hallux — 4 éléments en présence</h3>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Tête de M1 :</strong> Similaire aux autres, mais aussi large que haute. Présente une <strong>crête sagittale</strong> à la moitié inférieure, limitée par 2 sillons verticaux répondant aux sésamoïdes.</div>
+<div class="synergy-item"><strong>Base de P1 :</strong> Plus grosse mais analogue à ses voisines.</div>
+<div class="synergy-item"><strong>Fibro-cartilage glénoïdien :</strong> Semblable aux autres MP, mais inclut les sésamoïdes.</div>
+<div class="synergy-item"><strong>2 sésamoïdes :</strong> Inclus dans le fibro-cartilage, plus volumineux qu'à la main. Leur face profonde présente une crête qui glisse dans les sillons de la tête.</div>
+</div>
+</div>
+</div>
+<!-- Moyens d'unions -->
+<div class="test-section-title">🔗 2 — Moyens d'unions (5 types)</div>
+<div class="card" style="margin-bottom:14px;">
+<div class="card-body">
+<h3 class="sub" style="margin-top:0;">Capsule et synoviale</h3>
+<p style="font-size:13.5px;margin-bottom:10px;">S'insère au pourtour des surfaces, y compris du fibro-cartilage. Elle est <strong>lâche sagittalement et transversalement</strong>.</p>
+<div class="divider"></div>
+<h3 class="sub">Ligaments collatéraux</h3>
+<table class="muscle-table">
+<thead><tr><th>Champ</th><th>Détail</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Origine</td><td>De part et d'autre de la tête métatarsienne</td></tr>
+<tr><td class="muscle-name">Trajet</td><td>Vers l'avant et le bas, en éventail · Schématisé en 2 faisceaux : 1 sup. et 1 inf.</td></tr>
+<tr><td class="muscle-name">Terminaison</td><td>Sup. : bords latéraux de la base de P1 · Inf. : bords latéraux du fibro-cartilage</td></tr>
+</tbody>
+</table>
+<div class="divider"></div>
+<h3 class="sub">Ligaments à distance et éléments stabilisateurs</h3>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Ligaments à distance :</strong> Fibres de l'aponévrose plantaire.</div>
+<div class="synergy-item"><strong>Stabilisateurs :</strong> Tendons des muscles interosseux encadrant l'interligne. Pour la MP de l'hallux : l'appareil sésamoïdien.</div>
+</div>
+</div>
+</div>
+<!-- Intérêts ostéopathiques -->
+<div class="test-section-title">⚕️ 3 — Intérêts ostéopathiques</div>
+<div class="card" style="margin-bottom:24px;">
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> La morphologie de l'avant-pied met en évidence la conformation <strong>égyptienne, grecque ou carrée</strong>, provenant de la longueur différente des métatarsiens. La MP de l'hallux présente toujours un angle ouvert en dehors — P1 dirigée en avant et en dehors. L'aggravation donne un <strong>hallux valgus</strong>.
+          </div>
+<div class="info-box amber">
+<strong>Mécanique et pathologique :</strong> Cette jonction est très sollicitée dans le déroulement du pas, à la fin du demi-pas postérieur. La modification des appuis des têtes métatarsiennes peut provoquer des durillons en plantaire ou sur les côtés. Au niveau de l'hallux, le valgus (ou métatarsus varus) est très souvent rencontré : la tête se luxe en dedans et les sésamoïdes restent dans l'axe tendineux.
+          </div>
+</div>
+</div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre inférieur, Chapitre 9 — Articulations métatarso-phalangiennes, Année 1, IEOQ · Usage privé</cite></div>
+</section>
+<section class="section" id="arthro-ip-pied" style="display:none;">
+<div class="section-title">Arthrologie — Articulations Interphalangiennes du Pied (IP)</div>
+<div class="section-sub">Chapitre 10 · Arthrologie membre inférieur — Thomas Gautier D.O. · IEOQ Année 1</div>
+<div class="info-box teal" style="margin-bottom:18px;">
+      Ces articulations, de taille très réduite, ne sont pas axiales, souvent déformées voire soudées pour les plus petites. Leur anatomie est sujette à variations. On distingue les <strong>interphalangiennes proximales (IPP)</strong> et les <strong>distales (IPD)</strong>. Seul l'hallux n'en possède qu'une (IP). La description ci-dessous est celle de l'IPP. L'IPD est équivalente mais simplement plus petite.
+    </div>
+<!-- Éléments en présence -->
+<div class="test-section-title">🦴 1 — Éléments en présence (3)</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub" style="margin-top:0;">a. Tête d'une phalange</h3>
+<table class="muscle-table">
+<thead><tr><th>Champ</th><th>Détail</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Située</td><td>Extrémité distale de P1</td></tr>
+<tr><td class="muscle-name">Répond</td><td>Base de P2 et fibro-cartilage glénoïdien</td></tr>
+<tr><td class="muscle-name">Type</td><td>Ginglyme</td></tr>
+<tr><td class="muscle-name">Forme</td><td>Poulie pleine à grand axe transversal · Avec 1 gorge sagittale et 2 joues latérales</td></tr>
+<tr><td class="muscle-name">Regarde</td><td>En avant et légèrement en bas</td></tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sub" style="margin-top:0;">b. Base de la phalange suivante (glène)</h3>
+<table class="muscle-table">
+<thead><tr><th>Champ</th><th>Détail</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Située</td><td>Extrémité proximale de P2</td></tr>
+<tr><td class="muscle-name">Répond</td><td>Tête de P1</td></tr>
+<tr><td class="muscle-name">Type</td><td>Ginglyme</td></tr>
+<tr><td class="muscle-name">Forme</td><td>Poulie creuse à grand axe transversal · Avec 1 crête sagittale et 2 joues latérales</td></tr>
+<tr><td class="muscle-name">Regarde</td><td>En arrière</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="divider"></div>
+<h3 class="sub">c. Fibrocartilage plantaire</h3>
+<p style="font-size:13.5px;">Solidaire de la base de la phalange distale (bord inf.). Renfort plantaire sous forme d'une plaque fibro-cartilagineuse, grossièrement triangulaire à la coupe sagittale. La base répond au bord inférieur de la glène phalangienne, la face profonde est encroûtée de cartilage hyalin, et la face périphérique est adhérente à la capsule.</p>
+</div>
+</div>
+<!-- Moyens d'unions -->
+<div class="test-section-title">🔗 2 — Moyens d'unions (5 types)</div>
+<div class="card" style="margin-bottom:14px;">
+<div class="card-body">
+<h3 class="sub" style="margin-top:0;">Capsule</h3>
+<p style="font-size:13.5px;margin-bottom:10px;">S'insère au pourtour des bords libres de la glène, du fibro-cartilage glénoïdien et de la tête de la phalange précédente. <strong>Lâche sagittalement et tendue sur les côtés</strong>, où elle est renforcée par les ligaments collatéraux.</p>
+<div class="divider"></div>
+<h3 class="sub">Ligaments collatéraux</h3>
+<table class="muscle-table">
+<thead><tr><th>Champ</th><th>Détail</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Origine</td><td>De part et d'autre de la tête phalangienne</td></tr>
+<tr><td class="muscle-name">Trajet</td><td>Vers l'avant et le bas, en éventail · Schématisé en 2 faisceaux : 1 sup. et 1 inf.</td></tr>
+<tr><td class="muscle-name">Terminaison</td><td>Sup. : pour la phalange, sur les bords latéraux de la base · Inf. : pour le fibro-cartilage, sur ses bords</td></tr>
+</tbody>
+</table>
+<div class="divider"></div>
+<h3 class="sub">Éléments stabilisateurs</h3>
+<p style="font-size:13.5px;">Ce sont les <strong>terminaisons tendineuses</strong>, proches.</p>
+</div>
+</div>
+<!-- Intérêts ostéopathiques -->
+<div class="test-section-title">⚕️ 3 — Intérêts ostéopathiques</div>
+<div class="card" style="margin-bottom:24px;">
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> Mis à part l'IP de l'hallux (plus nette), ces zones articulaires sont situées dans un espace réduit aux contours difficilement cernables.
+          </div>
+<div class="info-box amber">
+<strong>Mécanique et pathologique :</strong> Les interphalangiennes sont souvent victimes de déformations orthopédiques, traumatiques ou rhumatismales. Les personnes âgées sont porteuses de ce genre de déformation. Ces articulations (surtout celle de l'IP de l'hallux) sont plus fortement sollicitées dans l'<strong>accroupissement</strong>, la <strong>descente des escaliers</strong> et à chaque fois que la pointe du pied se déroule au sol.
+          </div>
+</div>
+</div>
+</div>
+<!-- Tableau comparatif IPP / IPD -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon amber">📊</div><div class="card-title">Récapitulatif — IPP vs IPD vs IP de l'hallux</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Critère</th><th>IPP</th><th>IPD</th><th>IP hallux</th></tr></thead>
+<tbody>
+<tr><td><strong>Type articulaire</strong></td><td>Ginglyme</td><td>Ginglyme</td><td>Ginglyme</td></tr>
+<tr><td><strong>Os</strong></td><td>P1 → P2</td><td>P2 → P3</td><td>P1 → P2 hallux</td></tr>
+<tr><td><strong>Fibrocartilage</strong></td><td>Présent</td><td>Présent</td><td>Présent</td></tr>
+<tr><td><strong>Stabilisateurs</strong></td><td>Terminaisons tendineuses proches</td><td>Terminaisons tendineuses proches</td><td>Terminaisons tendineuses proches</td></tr>
+<tr><td><strong>Pathologies fréquentes</strong></td><td>Déformations orthopédiques, traumatiques, rhumatismales</td><td>Déformations orthopédiques, traumatiques, rhumatismales</td><td>IP hallux : sollicitation+++ en accroupissement, escaliers</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre inférieur, Chapitre 10 — Articulations interphalangiennes du pied, Année 1, IEOQ · Usage privé</cite></div>
+</section>
+<section class="section" id="tests-cheville" style="display:none;">
+<div class="section-title">Tests Orthopédiques — Cheville</div>
+<div class="section-sub">Ligaments collatéraux, syndesmose, tendon d'Achille &amp; Critères d'Ottawa — P. César 1ère année IEOQ 2025</div>
+<div class="test-section-title">🔵 Tests ligamentaires — Ligament Collatéral Médial &amp; Syndesmose</div>
+<div class="test-card" id="tch-rotlat">
+<div class="test-card-header" onclick="toggleTest('tch-rotlat')">
+<div class="test-card-name">Test de Provocation en Rotation Latérale / Abduction <small>LCM &amp; Syndesmose tibio-fibulaire</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">LCM</span><span class="tag tag-teal">Syndesmose</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">LCM cheville · Syndesmose tibio-fibulaire (LTFA + LTFP + Membrane interosseuse)</div></div>
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Assis en bord de table, pieds hors sol · Variante : DD à 90° genou</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Main 1 : maintient le tibia en rotation neutre (sans comprimer la pince tibio-fibulaire). Main 2 : saisit l'avant-pied, cheville à 90° de flexion dorsale, applique un mouvement de rotation latérale (abduction) par rapport au tibia. Variante syndesmose : saisir par le calcanéum + compression axiale dans l'axe du tibia pendant la rotation → augmente le stress sur la syndesmose.</div>
+<div class="test-positive"><div class="label">Test positif — LCM</div>Douleur reproduite en regard du LCM + laxité comparativement au côté sain.</div>
+<div class="test-positive"><div class="label">Test positif — Syndesmose</div>Douleur en regard de l'articulation tibio-fibulaire distale ou de la membrane interosseuse.</div>
+<div class="test-detail-grid" style="margin-top:10px;">
+<div class="test-detail-item"><div class="label">Stats (De César et al.)</div><div class="value">Se: 20% · Sp: 85% · RV+: 1.33</div></div>
+<div class="test-detail-item"><div class="label">Stats (Sman et al.)</div><div class="value">Se: 71% · Sp: 63% · RV+: 1.92</div></div>
+</div>
+<div class="video-links">
+<a class="video-btn fr" href="https://www.youtube.com/watch?v=XS0HPYu1eXY" rel="noopener" target="_blank">Rotation Latérale FR</a>
+</div>
+</div>
+</div>
+<div class="test-section-title">🟡 Tests ligamentaires — Ligament Collatéral Latéral</div>
+<div class="test-grid-2">
+<div class="test-card" id="tch-varus">
+<div class="test-card-header" onclick="toggleTest('tch-varus')">
+<div class="test-card-name">Test du Varus Forcé <small>LLE — LTFA, LTFP, LCF</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">LLE cheville</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Structures</div><div class="value">LTF Antérieur · LTF Postérieur · Ligament Calcanéo-Fibulaire</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 50% · Sp: 88% · RV+: 4.17 · RV-: 0.57 (Schwieterman)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient en DD, pieds hors de la table. Main 1 : maintient le tiers distal de la jambe en position neutre. Main 2 : empaume le calcanéum, amène passivement l'inversion.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur habituellement ressentie reproduite + amplitude d'inversion excessive vs côté sain.</div>
+<div class="info-box teal" style="font-size:13px;"><strong>Ciblage par degré de flexion :</strong> Inversion en flexion plantaire → LTFA. Position neutre → LCF. Flexion dorsale → LTFP.</div>
+</div>
+</div>
+<div class="test-card" id="tch-tiroir">
+<div class="test-card-header" onclick="toggleTest('tch-tiroir')">
+<div class="test-card-name">Test du Tiroir Antérieur <small>LTFA — Ligament Talo-Fibulaire Antérieur</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">LTFA</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">DD ou assis · Cheville à 20° de flexion plantaire</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 67% · Sp: 82% · RV+: 3.72 (Raatikaine) — meilleure validité</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique standard</div>Main 1 : maintient la pince tibio-fibulaire. Main 2 : empaume le calcanéum, cheville à 20° FP, traction antérieure de l'arrière-pied par rapport au tibia. Comparer la translation du talus au côté sain.</div>
+<div class="test-detail-full"><div class="label">Variante (DD, genou fléchi)</div>Cheville à 20° FP, main sous calcanéum reposant sur la table. Le thérapeute pousse la face antérieure du tibia vers l'arrière (translation du segment jambier).</div>
+<div class="test-positive"><div class="label">Test positif</div>Translation antérieure du talus &gt; 1 cm vs côté sain ET/OU arrêt "mou" en fin de mouvement (end-feel laxe) → rupture ou lésion du LTFA.</div>
+<div style="margin-top:8px;">
+<div class="test-sensitivity"><span style="min-width:90px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill mid" style="width:67%"></div></div><span>67%</span></div>
+<div class="test-sensitivity"><span style="min-width:90px;">Spécificité</span><div class="bar-wrap"><div class="bar-fill high" style="width:82%"></div></div><span>82%</span></div>
+</div>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=vAcBEYZKcto" rel="noopener" target="_blank">Physiotutors EN</a>
+<a class="video-btn fr" href="https://www.youtube.com/watch?v=GDwOJ9OI8g0" rel="noopener" target="_blank">Tiroir Cheville FR</a>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=UHNbm6Z3XK4" rel="noopener" target="_blank">Talar Tilt EN</a>
+<a class="video-btn fr" href="https://www.youtube.com/watch?v=XS0HPYu1eXY" rel="noopener" target="_blank">Varus Forcé FR</a>
+</div>
+</div>
+</div>
+<div class="test-section-title">🟠 Tests de la Syndesmose</div>
+<div class="test-card" id="tch-squeeze">
+<div class="test-card-header" onclick="toggleTest('tch-squeeze')">
+<div class="test-card-name">Test de Hopkinson — Squeeze Test <small>Syndesmose tibio-fibulaire</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Syndesmose</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Allongé · Genou à 90° · Pied à plat sur la table</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">De César: Se 30% · Sp 94% · RV+ 5 / Beumer: Se 57% · Sp 14%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Mains de part et d'autre de l'extrémité proximale de la jambe. Compression progressive de la fibula sur le tibia en descendant vers la cheville. Variante : cheville en flexion dorsale pour augmenter la tension sur la syndesmose.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur en regard de la syndesmose tibio-fibulaire distale ou de la membrane interosseuse. Plus la douleur se déclenche lors d'une pression proximale, plus l'atteinte de la syndesmose est prononcée.</div>
+<div class="info-box amber" style="font-size:13px;"><strong>Résultats très variables selon les études :</strong> Interpréter avec précaution. À combiner avec le test de rotation latérale pour la syndesmose.</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=z-7cJ7LpCqY" rel="noopener" target="_blank">Physiotutors EN</a>
+<a class="video-btn fr" href="https://www.youtube.com/watch?v=0nSFgkejsSU" rel="noopener" target="_blank">Squeeze Test FR</a>
+</div>
+</div>
+</div>
+<div class="test-section-title">🔴 Test du Tendon d'Achille</div>
+<div class="test-card" id="tch-thompson">
+<div class="test-card-header" onclick="toggleTest('tch-thompson')">
+<div class="test-card-name">Test de Thompson <small>Rupture du Tendon d'Achille — Gold Standard</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Tendon d'Achille</span><span class="tag tag-teal">Gold Standard</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Décubitus ventral · Pieds hors du bord de la table</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 96% · Sp: 93% · RV+: 13.71 · RV-: 0.04 (Schwieterman)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Le thérapeute agrippe et comprime le corps musculaire du triceps sural, et observe la flexion plantaire engendrée par cette compression.</div>
+<div class="test-positive"><div class="label">Test positif</div>Absence ou réduction marquée de la flexion plantaire comparativement au côté sain → rupture du tendon d'Achille. Test de référence par excellence.</div>
+<div style="margin-top:8px;">
+<div class="test-sensitivity"><span style="min-width:90px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill high" style="width:96%"></div></div><span>96%</span></div>
+<div class="test-sensitivity"><span style="min-width:90px;">Spécificité</span><div class="bar-wrap"><div class="bar-fill high" style="width:93%"></div></div><span>93%</span></div>
+</div>
+<div class="info-box teal" style="font-size:13px;margin-top:8px;"><strong>Attention :</strong> Une flexion plantaire résiduelle peut exister par action des muscles plantaire et fléchisseurs profonds même en cas de rupture complète du tendon d'Achille.</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=z-7cJ7LpCqY" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+</div>
+</div>
+<div class="test-section-title">🟣 Critères d'Ottawa — Cheville (Stiell 1992–2003)</div>
+<div class="card">
+<div class="card-header"><div class="card-icon coral">🏥</div><div class="card-title">Critères d'Ottawa — Indication de Radiographie</div></div>
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:14px;font-size:13px;"><strong>But :</strong> Déterminer la nécessité d'une radiographie diagnostique pour exclure une fracture de la cheville ou du pied. Sensibilité 100% pour les fractures de la cheville (Stiell et al. 1992). Applicable dès 2 ans. Conçu pour les traumatismes contondants uniquement (torsion, chute, coup direct).</div>
+<div class="test-detail-grid">
+<div class="test-detail-item">
+<div class="label">Radiographie cheville indiquée si douleur en zone malléolaire ET :</div>
+<div class="value" style="font-size:13px;">• Douleur à la palpation du bord postérieur ou de la pointe de la malléole latérale (A)<br/>• OU douleur à la palpation du bord postérieur ou de la pointe de la malléole médiale (B)<br/>• OU incapacité à faire 4 pas complets immédiatement après la blessure ET à l'examen</div>
+</div>
+<div class="test-detail-item">
+<div class="label">Radiographie pied indiquée si douleur médio-pied ET :</div>
+<div class="value" style="font-size:13px;">• Douleur à la palpation de la base du 5ème métatarsien (C)<br/>• OU douleur à la palpation du naviculaire (D)<br/>• OU incapacité à faire 4 pas complets</div>
+</div>
+</div>
+<div class="test-detail-full" style="margin-top:10px;"><div class="label">Pièges et limites</div>
+          · Cheville très enflée, déformée, insensible ou à perfusion réduite → blessure grave possible malgré critères normaux.<br/>
+          · Ne remplace pas le jugement clinique — outil d'aide à la décision uniquement.<br/>
+          · Modification de Buffalo : palper directement les zones proximales et médiales des malléoles, loin des tendons.<br/>
+          · Palper toute la longueur de la fibula, du tibia, de la cheville et du pied pour exclure les blessures concomitantes.</div>
+<div class="grille-eval-table" style="margin-top:12px;">
+<table class="grille-eval-table">
+<thead><tr><th>Zones à palper</th><th>Structure</th><th>Radiographie</th></tr></thead>
+<tbody>
+<tr><td>Bord postérieur malléole latérale (6 cm)</td><td>Fibula distale</td><td>Cheville</td></tr>
+<tr><td>Bord postérieur malléole médiale (6 cm)</td><td>Tibia distal</td><td>Cheville</td></tr>
+<tr><td>Base du 5ème métatarsien</td><td>M5</td><td>Pied</td></tr>
+<tr><td>Os naviculaire</td><td>Naviculaire</td><td>Pied</td></tr>
+<tr><td>Impossibilité 4 pas (immédiat + urgences)</td><td>Fonctionnel</td><td>Cheville</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="card" style="margin-top:16px;">
+<div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">Récapitulatif — Tests de la cheville par structure</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Structure / Pathologie</th><th>Test(s)</th><th>Stats clés</th></tr></thead>
+<tbody>
+<tr><td><strong>LCM cheville</strong></td><td>Rotation latérale / Abduction</td><td>Se 20–71% · Sp 63–85%</td></tr>
+<tr><td><strong>Syndesmose tibio-fibulaire</strong></td><td>Rotation latérale + Squeeze Test</td><td>Squeeze: Sp 94% · RV+ 5</td></tr>
+<tr><td><strong>LLE — LTFA (entorse classique)</strong></td><td>Varus forcé + Tiroir antérieur</td><td>Tiroir: Se 67% · Sp 82% · RV+ 3.72</td></tr>
+<tr><td><strong>Tendon d'Achille</strong></td><td>Test de Thompson</td><td>Se 96% · Sp 93% · RV+ 13.71</td></tr>
+<tr><td><strong>Fracture cheville/pied</strong></td><td>Critères d'Ottawa</td><td>Se 100% fractures</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote"><cite>Sources : P. César, Tests orthopédiques Cheville 1ère année IEOQ 2025 · Stiell IG et al. (1992, 1993) Critères Ottawa · Schwieterman B et al. (2013) Ankle/foot systematic review · De César PC et al. (2011) Syndesmose · Sman AD et al. (2015) Syndesmose · Raatikainen T et al. (1992) Tiroir antérieur</cite></div>
+</section>
+<section class="section" id="tech-osteo-cheville" style="display:none;">
+<div class="section-title">Techniques ostéopathiques — Cheville &amp; Pied</div>
+<div class="section-sub">Tests palpatoires · Tests vasculaires · Normalisations articulaires · P. César — 1ère année ostéo IEOQ 2021</div>
+<!-- ══ RAPPEL ANATOMIQUE ══ -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🦴</div><div class="card-title">Rappel anatomique — Os du pied et articulations clés</div></div>
+<div class="card-body">
+<div class="grid-2" style="gap:14px; margin-bottom:14px;">
+<div class="info-box teal"><strong>Tarse postérieur (arrière-pied)</strong><br/>Calcanéum · Talus (astragale)</div>
+<div class="info-box teal"><strong>Tarse antérieur (médio-pied)</strong><br/>Naviculaire · Cuboïde · Cunéiformes (×3)</div>
+</div>
+<div class="info-box teal" style="margin-bottom:10px;"><strong>Avant-pied :</strong> Métatarsiens (M1–M5) · Phalanges (P1, P2, P3)</div>
+<table class="muscle-table">
+<thead><tr><th>Articulation</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Sous-astragalienne (sous-talienne)<small>Postérieure + Antérieure</small></td><td>Relie la face inférieure du talus à la face supérieure du calcanéum. La portion postérieure unit l'arrière du talus au calcanéum postérieur ; la portion antérieure attache la tête du talus à la région antérosupérieure du calcanéum.</td></tr>
+<tr><td class="muscle-name">Chopart<small>Médio-tarsienne</small></td><td>Interligne entre talus/naviculaire d'une part, calcanéum/cuboïde d'autre part.</td></tr>
+<tr><td class="muscle-name">Lisfranc<small>Tarso-métatarsienne</small></td><td>Entre cunéiformes + cuboïde et les bases des 5 métatarsiens.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- ══ A — TESTS VASCULAIRES & PALPATOIRES ══ -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon coral">🩸</div><div class="card-title">A — Tests vasculaires &amp; palpatoires</div></div>
+<div class="card-body">
+<!-- Test vasculaire -->
+<div class="tech-card" id="tc-vasc" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">1 — Test vasculaire <small>Palpation des pouls du membre inférieur</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<table class="muscle-table">
+<thead><tr><th>Artère</th><th>Localisation / Palpation</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Artère fémorale</td><td>Triangle de Scarpa, sous le pli inguinal, mi-distance entre EIAS et symphyse pubienne.</td></tr>
+<tr><td class="muscle-name">Artère poplitée</td><td>Creux poplité, genou légèrement fléchi, palpation profonde entre les deux chefs du gastrocnémien.</td></tr>
+<tr><td class="muscle-name">Artère tibiale postérieure</td><td>En arrière de la malléole médiale, dans le canal tarsien.</td></tr>
+<tr><td class="muscle-name">Artère pédieuse (dorsale du pied)</td><td>Face dorsale du pied, entre 1er et 2e métatarsiens.</td></tr>
+</tbody>
+</table>
+<div class="tech-note"><div class="label">Note clinique</div>Comparer bilatéralement · Absence de pouls pédieux ou tibial postérieur → suspicion AOMI ou atteinte vasculaire → red flag</div>
+</div>
+</div>
+<!-- Ligaments latéraux -->
+<div class="tech-card" id="tc-lig-lat" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">2 — Test palpatoire ligaments latéraux &amp; tibio-fibulaires</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="grid-2" style="gap:12px; margin-bottom:12px;">
+<div>
+<div style="font-weight:600; color:var(--navy-700); margin-bottom:6px;">Ligaments latéraux</div>
+<ul style="list-style:none;padding:0;">
+<li style="padding:3px 0 3px 14px;position:relative;font-size:13.5px;"><span style="position:absolute;left:4px;color:var(--teal-400);font-weight:700;">·</span>Ligt talo-fibulaire antérieur (LTFA)</li>
+<li style="padding:3px 0 3px 14px;position:relative;font-size:13.5px;"><span style="position:absolute;left:4px;color:var(--teal-400);font-weight:700;">·</span>Ligt talo-fibulaire postérieur (LTFP)</li>
+<li style="padding:3px 0 3px 14px;position:relative;font-size:13.5px;"><span style="position:absolute;left:4px;color:var(--teal-400);font-weight:700;">·</span>Ligt calcanéo-fibulaire (LCF)</li>
+</ul>
+</div>
+<div>
+<div style="font-weight:600; color:var(--navy-700); margin-bottom:6px;">Ligaments tibio-fibulaires</div>
+<ul style="list-style:none;padding:0;">
+<li style="padding:3px 0 3px 14px;position:relative;font-size:13.5px;"><span style="position:absolute;left:4px;color:var(--teal-400);font-weight:700;">·</span>Ligt tibio-fibulaire antérieur</li>
+<li style="padding:3px 0 3px 14px;position:relative;font-size:13.5px;"><span style="position:absolute;left:4px;color:var(--teal-400);font-weight:700;">·</span>Ligt tibio-fibulaire postérieur</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Ligaments médiaux -->
+<div class="tech-card" id="tc-lig-med" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">3 — Test palpatoire ligaments médiaux (deltoïde)</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<ul style="list-style:none;padding:0;">
+<li style="padding:3px 0 3px 14px;position:relative;font-size:13.5px;"><span style="position:absolute;left:4px;color:var(--teal-400);font-weight:700;">·</span>Ligt tibio-calcanéen</li>
+<li style="padding:3px 0 3px 14px;position:relative;font-size:13.5px;"><span style="position:absolute;left:4px;color:var(--teal-400);font-weight:700;">·</span>Ligt tibio-naviculaire</li>
+<li style="padding:3px 0 3px 14px;position:relative;font-size:13.5px;"><span style="position:absolute;left:4px;color:var(--teal-400);font-weight:700;">·</span>Ligt talaire antérieur</li>
+<li style="padding:3px 0 3px 14px;position:relative;font-size:13.5px;"><span style="position:absolute;left:4px;color:var(--teal-400);font-weight:700;">·</span>Ligt talaire postérieur</li>
+<li style="padding:3px 0 3px 14px;position:relative;font-size:13.5px;"><span style="position:absolute;left:4px;color:var(--teal-400);font-weight:700;">·</span>Ligt calcanéo-naviculaire</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- ══ B — ARTICULATION TIBIO-TALIENNE ══ -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">🔬</div><div class="card-title">B — Tests &amp; normalisations ostéopathiques tibio-taliennes</div></div>
+<div class="card-body">
+<div class="tech-card" id="tc-tt-flex" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">1 — Test flexion dorsale / flexion plantaire <small>Articulation tibio-talienne</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">But</div>Explorer la possibilité d'avancée du talus par rapport au tibia lors de la flexion plantaire, et inversement en flexion dorsale.</div>
+<div class="tech-note"><div class="label">Interprétation</div>Si limitation de la flexion plantaire → possible tibia en antériorité.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tt-decop" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">2 — Test en décoaptation / normalisation tibio-talienne <small>Talus en impaction dans la pince tibio-fibulaire</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Indication</div>Talus impacté dans la mortaise tibio-fibulaire — limitation globale des amplitudes tibio-taliennes.</div>
+<div class="tech-step"><div class="label">Principe</div>Traction dans l'axe du membre inférieur pour décompacter le talus de la pince tibio-fibulaire.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tt-decop2" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">3 — Mobilisation en décoaptation cheville <small>+ Variante</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>Traction axiale progressive sur le pied (empaumer le calcanéum + avant-pied). Variante : tracteur debout en fente avant pour optimiser la force.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tt-tiroir" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">4 — Test tiroir antérieur &amp; postérieur <small>Articulation tibio-talienne</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>Une main stabilise le tibia distal, l'autre empaume le calcanéum. Translation antérieure puis postérieure du talus par rapport au tibia (cheville à 20° FP pour le tiroir antérieur).</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tt-norm-ant" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">4-1 — Normalisation dysfonction tibia antérieur / talus postérieur <small>HVBA — Articulation talocrurale</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Patient en décubitus dorsal (ou variante ventral)</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Ostéopathe face au pied du patient</div>
+</div>
+<div class="tech-step"><div class="label">Prise de main</div>Main craniale : tibia distal. Main caudale : calcanéum + avant-pied.</div>
+<div class="tech-step"><div class="label">Mise en tension</div>Flexion dorsale de l'ensemble du pied. Mise en tension vers la postériorité du tibia.</div>
+<div class="tech-step"><div class="label">Thrust (HVBA)</div>Impulsion rapide vers la postériorité du tibia (ou antériorité du talus selon la dysfonction). Variante en décubitus ventral : pression vers le bas sur le tibia.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tt-post" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">4-2-1 — Test en postériorité du talus / tibio-fibulaire</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Décubitus dorsal, contre-appui sous le tibia distal</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Face au pied, deux pouces sur la face antérieure du talus</div>
+</div>
+<div class="tech-step"><div class="label">Déroulement</div>Tester le talus en translation postérieure en ajoutant une flexion dorsale de la cheville.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tt-norm-tal-ant" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">4-2 — Normalisation dysfonction talus antérieur / tibio-fibulaire <small>HVBA</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Décubitus, pied à traiter en dehors de la table</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Assis/accroupi en bout de table, face au pied</div>
+</div>
+<div class="tech-step"><div class="label">Main interne</div>Bord ulnaire saisit le col du talus.</div>
+<div class="tech-step"><div class="label">Main externe</div>Saisit l'arrière du calcanéum.</div>
+<div class="tech-step"><div class="label">Mise en tension</div>Créer un « bloc » calcanéum-talus. Flexion dorsale globale (postérise le talus dans la pince) + décoaptation dans l'axe.</div>
+<div class="tech-step"><div class="label">Thrust</div>Après accumulation des tensions jusqu'à la barrière tissulaire, le thrust se fait en arrière et en bas (en demi-lune).</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tf-dist" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">5 — Test mobilité antéro-postérieure articulation tibio-fibulaire distale</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-note"><div class="label">Préalable</div>Absence de dysfonction antérieure du tibia avant de réaliser ce test.</div>
+<div class="tech-step"><div class="label">Technique</div>Stabilisation du tibia, translation antérieure puis postérieure de la fibula par rapport au tibia.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tf-ant" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">5-1 — Normalisation dysfonction fibula antérieure <small>Art. tibio-fibulaire distale</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Applicateur</div>Pisiforme ou eminence hypothénar sur la face antérieure de la malléole fibulaire.</div>
+<div class="tech-step"><div class="label">Thrust</div>Impulsion vers la postériorité de la malléole fibulaire.</div>
+<div class="tech-variant"><div class="label">Variante</div>Malléole fibulaire en antériorité — patient en décubitus latéral ou dorsal.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tf-post" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">5-2 — Normalisation dysfonction fibula postérieure <small>Art. tibio-fibulaire distale</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Applicateur</div>Pisiforme ou eminence hypothénar sur la face postérieure de la malléole fibulaire.</div>
+<div class="tech-step"><div class="label">Thrust</div>Impulsion vers l'antériorité de la malléole fibulaire.</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ══ C — ARTICULATION SUBTALAIRE ══ -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon amber">🔁</div><div class="card-title">C — Tests &amp; normalisations articulation subtalaire (sous-talienne)</div></div>
+<div class="card-body">
+<div class="tech-card" id="tc-st-rot" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">1 — Test rotation antéro-interne / postéro-externe du talus/calcanéum</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="info-box amber"><strong>Corrélations cliniques :</strong><br/>· Dysfonction en rotation antéro-interne → favorise le <strong>pied plat</strong><br/>· Dysfonction en rotation postéro-externe → favorise le <strong>pied creux</strong><br/>· On trouve plus souvent une perte de mobilité vers l'antéro-interne (dysfonction postéro-externe) ou une hypermobilité antéro-interne (sens du pied plat)</div>
+<div class="tech-step"><div class="label">Variante 1 — Test et mobilisation</div>Saisir le calcanéum d'une main, le talus de l'autre. Tester les rotations en valgus/varus de l'arrière-pied.</div>
+<div class="tech-step"><div class="label">Variante 2</div>Patient en décubitus, plante du pied en appui sur le sternum du praticien. Pulpe des pouces sur les faces latérales du col du talus. Le praticien imprime par oscillations du tronc des mouvements de valgus/varus de l'arrière-pied.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-st-pe" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">2 — Normalisation dysfonction postéro-externe talus/calcanéum</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>HVBA vers la rotation antéro-interne du calcanéum sous le talus fixé.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-st-ai" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">3 — Normalisation dysfonction antéro-interne talus/calcanéum</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>HVBA vers la rotation postéro-externe du calcanéum sous le talus fixé.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-calc-varus" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">4 — Normalisation calcanéum en dysfonction d'adduction <small>Varus calcanéen</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Décubitus controlatéral, face plantaire au contact de la cuisse du praticien</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>En fente avant, cuisse au contact</div>
+</div>
+<div class="tech-step"><div class="label">Prise de main</div>Pouce main caudale sur face latérale du calcanéum. Talon main céphalique couvre le pouce après reclinaison des tissus.</div>
+<div class="tech-step"><div class="label">Thrust</div>Impulsion en couple des deux mains vers l'abduction du calcanéum.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-calc-valgus" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">5 — Normalisation calcanéum en dysfonction d'abduction <small>Valgus calcanéen</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Thrust</div>Impulsion en couple des deux mains vers l'adduction du calcanéum.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-sinus-tarse" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">6 — Technique « ouverture sinus du tarse »</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Décubitus latéral, face médiale du pied en haut, talon en dehors de la table</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>En fente avant, cuisse au contact de la face plantaire</div>
+</div>
+<div class="tech-step"><div class="label">Main interne</div>Colonne du pouce sur l'interligne talus/calca — fixe le talus et la malléole interne sur la table.</div>
+<div class="tech-step"><div class="label">Main externe</div>Éminence thénar sur la face latérale du calcanéum, pouce dirigé vers l'interligne.</div>
+<div class="tech-step"><div class="label">Geste</div>Légère rotation de la ceinture scapulaire + appui vers le bas pour ouvrir le sinus du tarse par abduction du calcanéum.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-calc-ant" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">7 — Test &amp; normalisation calcanéum horizontalisé <small>Calcanéum en antériorité</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Test de mobilité</div>Main droite : amène l'avant-pied en flexion plantaire. Main gauche : essaie de postérioriser le calcanéum (le verticaliser) — poussée du dôme du calcanéum de haut en bas et d'arrière en avant (geste = « déchausser quelqu'un »).</div>
+<div class="tech-step"><div class="label">Normalisation</div>Patient en décubitus controlatéral. Main droite empaume le calcanéum. Main gauche (éminence thénar) renforce sur le dos de la main droite. Impulsion brève et sèche en sens de mise en tension (verticalisation du calcanéum).</div>
+<div class="tech-variant"><div class="label">Variante 1</div>Sujet décubitus dorsal, pied en dehors de la table, praticien debout au bout de table.</div>
+<div class="tech-variant"><div class="label">Variante 2</div>Sujet assis, praticien accroupi derrière.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-calc-post" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">8 — Test &amp; normalisation calcanéum verticalisé <small>Calcanéum en postériorité</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Test de mobilité</div>Main droite : amène l'avant-pied en flexion dorsale. Main gauche : essaie d'antérioriser le calcanéum (l'horizontaliser) — mouvement d'avant en arrière et de bas en haut (geste = « chausser quelqu'un »).</div>
+<div class="tech-step"><div class="label">Normalisation</div>Impulsion vers l'horizontalisation du calcanéum en flexion dorsale globale.</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ══ D — TARSE ANTÉRIEUR / MÉDIO-PIED ══ -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">🦶</div><div class="card-title">D — Tests &amp; normalisations tarse antérieur (médio-pied)</div></div>
+<div class="card-body">
+<div class="tech-card" id="tc-cubo" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">1 — Test &amp; mobilisation cuboïde haut ou bas</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="info-box teal">
+<strong>Cuboïde « haut »</strong> = rotation latérale, bord médial haut.<br/>
+<strong>Cuboïde « bas »</strong> = rotation médiale, bord médial bas.<br/>
+<strong>Note :</strong> Dysfonction cuboïde bas plus fréquente dans les entorses latérales.
+        </div>
+<div class="tech-step"><div class="label">1-1 Test cuboïde / calcanéum</div>Fixer le calcanéum, mobiliser le cuboïde en dorsiflexion/plantarflexion et rotation.</div>
+<div class="tech-step"><div class="label">1-2 Test cuboïde / 4e et 5e métatarsiens</div>Fixer le cuboïde, mobiliser les bases de M4-M5 en dorsal/plantaire.</div>
+<div class="tech-step"><div class="label">1-3 Test cuboïde / naviculaire</div>Mobilisation en pince entre cuboïde et naviculaire. Variante en décubitus ventral.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-cubo-bas" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">2 — Normalisation dysfonction cuboïde bas <small>Technique « snap shot »</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Procubitus, jambe homolatérale en dehors de la table</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Debout du côté à traiter</div>
+</div>
+<div class="tech-step"><div class="label">Position des mains</div>Pouces sur la face inférieure du cuboïde (bord interne). Autres doigts étalés sur la face dorsale du pied (ne pas dépasser le cuboïde).</div>
+<div class="tech-step"><div class="label">Mise en tension</div>Flexion dorsale de la cheville (jambe en triple flexion). Appui des pouces pour remonter le cuboïde + adduction (ouvre l'interligne calcanéo-cuboïdienne).</div>
+<div class="tech-step"><div class="label">Thrust (snap / coup de fouet)</div>Les 2 mains « balancent » le pied dans son axe jambier. Le mouvement balistique est stoppé brusquement au moment où le cuboïde atteint son maximum de remontée, par relâchement des doigts dorsaux.</div>
+<div class="tech-note"><div class="label">Remarque</div>La flexion dorsale n'est pas correctrice — elle sert à protéger les ligaments latéraux de la cheville.</div>
+<div class="tech-variant"><div class="label">Variante 2-2</div>Patient debout au bout de table (procubitus). Praticien debout derrière avec double prise palmaire sur la face plantaire.</div>
+<div class="tech-variant"><div class="label">Variante 2-3</div>Pouce main médiale sur bord latéral du cuboïde, première commissure enserre le cou-de-pied. Index renforcé de la main latérale. Compression en pince, mains entre les genoux du praticien → extension brève des genoux pour obtenir le slack du cuboïde.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-cubo-haut" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">3 — Normalisation dysfonction cuboïde haut <small>Dysfonction rare</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Décubitus, jambe en flexion</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Debout côté pied, tournant le dos au patient</div>
+</div>
+<div class="tech-step"><div class="label">Main interne</div>Pisiforme descend le long de la crête tibiale et se repose sur la face supérieure du cuboïde (zone sensible : passage musculo-tendineux).</div>
+<div class="tech-step"><div class="label">Main externe</div>Renfort de la main interne.</div>
+<div class="tech-step"><div class="label">Thrust</div>Mise en tension vers le bas, puis exagération des paramètres de mise en tension.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-navic" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">4 — Test articulation talo-naviculaire</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="info-box teal">
+<strong>Naviculaire « bas » (rotation latérale)</strong> = tubercule interne haut + bord latéral bas.<br/>
+<strong>Naviculaire « haut » (rotation médiale)</strong> = tubercule interne bas + bord latéral haut.
+        </div>
+<div class="tech-step"><div class="label">4-1 Normalisation naviculaire en rotation latérale (bas)</div>HVBA vers la rotation médiale du naviculaire. Variantes en décubitus dorsal et latéral.</div>
+<div class="tech-step"><div class="label">4 — Test 1er cunéiforme / naviculaire</div>Mobilisation en translation dorso-plantaire entre le naviculaire et le 1er cunéiforme.</div>
+<div class="tech-step"><div class="label">4-1 Normalisation 1er cunéiforme en rotation latérale</div>HVBA rotaion médiale du cunéiforme médial.</div>
+<div class="tech-step"><div class="label">4-2 Normalisation 2e cunéiforme en supériorité (HVBA)</div>Impulsion vers l'infériorité du 2e cunéiforme médian.</div>
+<div class="tech-variant"><div class="label">4-3 Variante</div>Normalisation 2e cunéiforme en supériorité avec applicateur décalé.</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ══ E — ARTICULATION TARSO-MÉTATARSIENNE ══ -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🦴</div><div class="card-title">E — Tests &amp; normalisations articulation tarso-métatarsienne (Lisfranc)</div></div>
+<div class="card-body">
+<div class="tech-card" id="tc-tm-gen" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">1 — Test de mobilité générale tarsométatarsiennes &amp; métatarsophalangiennes</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>Double prise en pince : une main fixe le tarse, l'autre mobilise les métatarsiens en dorsal/plantaire et en rotation.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tm-m1" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">1-1 — Normalisation dysfonction rotation latérale M1/cunéiforme <small>+ Variante flexion+pronation</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique principale</div>Fixation du 1er cunéiforme, HVBA en rotation médiale de M1.</div>
+<div class="tech-variant"><div class="label">Variante 1-2</div>Flexion + pronation du pied comme mise en tension, puis HVBA.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tm-m1-sup" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">1-3 — Normalisation dysfonction M1 en supériorité / cunéiforme <small>+ Variante 1-4</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>Pisiforme ou thénar sur base de M1. Impulsion vers l'infériorité.</div>
+<div class="tech-variant"><div class="label">Variante 1-4</div>Idem technique 1er cunéiforme haut mais applicateur déplacé sur la base de M1.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tm-m2" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">2 — Normalisation dysfonction M2 en supériorité <small>Également M3, M4</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>Pisiforme crânial sur la face supérieure de la base de M2 (ou M3-M4). Contre-appui plantaire. Impulsion vers l'infériorité du métatarsien.</div>
+<div class="tech-variant"><div class="label">Variante</div>Double contact digital pour affiner la précision sur M3-M4.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-tm-m5" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">3 — Normalisation dysfonction M5 en supériorité</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>Pisiforme de la main crâniale sur la face supérieure de la base du 5e métatarsien. Impulsion vers l'infériorité. Variante : traction en adduction du pied.</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ══ F — ARTICULATIONS MÉTATARSO-PHALANGIENNES & INTERPHALANGIENNES ══ -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">🦶</div><div class="card-title">F — Tests &amp; normalisations articulations métatarso-phalangiennes &amp; interphalangiennes</div></div>
+<div class="card-body">
+<div class="tech-card" id="tc-mtp" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">1 — Test &amp; normalisation 1ère articulation métatarso-phalangienne <small>P1/M1</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Test</div>Fixer M1, mobiliser P1 en dorsal/plantaire, rotation et décoaptation.</div>
+<div class="tech-step"><div class="label">Normalisation</div>HVBA dans la direction de la dysfonction (rotation médiale, rotation latérale, décoaptation) après mise en tension précise.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-mtp-gen" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">2 — Décoaptation générale métatarso-phalangiennes &amp; interphalangiennes</div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>Traction axiale successive de chaque orteil, de P1 à P3. Légère circumduction pour libérer les surfaces articulaires.</div>
+</div>
+</div>
+<div class="tech-card" id="tc-ip" onclick="this.classList.toggle('open')">
+<div class="tech-card-header">
+<div class="tech-card-name">3 — Test &amp; normalisation interphalangiennes <small>P2/P1 et P2/P3</small></div>
+<div class="test-toggle">›</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Test</div>Fixation phalange proximale, mobilisation de la distale en dorsal/plantaire et rotation.</div>
+<div class="tech-step"><div class="label">Normalisation</div>HVBA en décoaptation + direction de la dysfonction.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footnote"><cite>Source : P. César — Ostéopathie 1ère année, Tests cheville &amp; pied, Techniques de normalisation ostéopathique. IEOQ 2021. Document à compléter avec les notes prises en cours.</cite></div>
+</section>
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["biomec-cheville", "arthro-talocheville", "arthro-tibfib", "arthro-subtal", "arthro-tt-medial", "arthro-tt-lateral", "arthro-tarso-meta", "arthro-mp-pied", "arthro-ip-pied", "tests-cheville", "tech-osteo-cheville"];
+  var SUB_LABELS_LOCAL = {"biomec-cheville": "📖 Biomécanique", "arthro-talocheville": "🦴 Arthrologie talo-crurale", "arthro-tibfib": "🦴 Arthrologie tibio-fibulaires", "arthro-subtal": "🦴 Arthrologie subtalaire", "arthro-tt-medial": "🦴 TT médiale (Ch.6)", "arthro-tt-lateral": "🦴 TT latérale (Ch.7)", "arthro-tarso-meta": "🦴 Tarso-métatarsienne (Ch.8)", "arthro-mp-pied": "🦴 Métatarso-phalangiennes (Ch.9)", "arthro-ip-pied": "🦴 Interphalangiennes pied (Ch.10)", "tests-cheville": "🩺 Tests orthopédiques", "tech-osteo-cheville": "🖐️ Techniques ostéopathiques"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>

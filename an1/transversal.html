@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 1 · Transversal</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(1);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">📚</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 1ère Année</h1>
+      <p>Transversal — IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="index.html">← Catégories</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><strong>Transversal</strong> <span id="crumbSub">› 🏥 Critères d'Ottawa complets</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="ottawa" style="display:block;">
+<div class="section-title">Critères d'Ottawa — Cheville &amp; Genou</div>
+<div class="section-sub">Règles de décision clinique pour l'indication de radiographie — Stiell IG et al. 1992–2003 · P. César IEOQ 2025</div>
+<!-- INTRO COMMUNE -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header">
+<div class="card-icon teal">💡</div>
+<div class="card-title">Principe des Critères d'Ottawa</div>
+</div>
+<div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item">
+<div class="label">Objectif</div>
+<div class="value" style="font-size:13px;">Réduire le nombre de radiographies inutiles après traumatisme contondant, tout en n'omettant aucune fracture cliniquement significative. Outil d'aide à la décision — ne remplace pas le jugement clinique.</div>
+</div>
+<div class="test-detail-item">
+<div class="label">Conditions d'utilisation</div>
+<div class="value" style="font-size:13px;">Traumatisme contondant récent (torsion, chute, coup direct). Patient ≥ 2 ans (cheville) / ≥ 5 ans (genou). Douleur à la zone concernée. Examen réalisé dans les 10 jours post-traumatisme.</div>
+</div>
+<div class="test-detail-item">
+<div class="label">Validité globale</div>
+<div class="value" style="font-size:13px;">Sensibilité ~100% pour les fractures cliniquement importantes · Spécificité modérée (30–48%) → réduit les radios de 30–40% sans manquer de fracture.</div>
+</div>
+<div class="test-detail-item">
+<div class="label">Limites</div>
+<div class="value" style="font-size:13px;">Non applicable : douleurs atraumatiques · Blessures distrayantes · Déficit neurologique/vasculaire sévère · Grossesse (arbitrage dose/bénéfice) · Patient &lt; 2 ans (cheville) ou &lt; 5 ans (genou).</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ══════════ CHEVILLE ══════════ -->
+<div id="ott-cheville-anchor"></div>
+<div class="test-section-title">🦶 Critères d'Ottawa — CHEVILLE (Stiell 1992)</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon amber">📐</div>
+<div class="card-title">Zones anatomiques de référence — Cheville</div>
+</div>
+<div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item">
+<div class="label">Zone malléolaire (A &amp; B)</div>
+<div class="value" style="font-size:13px;">Malléole latérale (A) et médiale (B) : bord postérieur ou pointe, jusqu'à 6 cm en proximal sur le tibia/fibula.</div>
+</div>
+<div class="test-detail-item">
+<div class="label">Zone médio-pied (C &amp; D)</div>
+<div class="value" style="font-size:13px;">Base du 5ème métatarsien (C) · Os naviculaire (D).</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ARBRE DÉCISIONNEL CHEVILLE -->
+<div class="test-grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header">
+<div class="card-icon coral">🦵</div>
+<div class="card-title">Radiographie CHEVILLE indiquée si…</div>
+</div>
+<div class="card-body">
+<div class="info-box amber" style="margin-bottom:12px;font-size:13px;"><strong>Condition préalable :</strong> Douleur dans la région malléolaire</div>
+<div class="tech-step">
+<div class="label">Critère A — Malléole latérale</div>
+            Douleur à la palpation du bord postérieur ou de la pointe de la malléole <strong>latérale</strong> (sur 6 cm en proximal)
+          </div>
+<div class="tech-step">
+<div class="label">Critère B — Malléole médiale</div>
+            Douleur à la palpation du bord postérieur ou de la pointe de la malléole <strong>médiale</strong> (sur 6 cm en proximal)
+          </div>
+<div class="tech-step">
+<div class="label">Critère fonctionnel</div>
+            Incapacité à faire <strong>4 pas complets</strong> immédiatement après la blessure ET lors de l'examen clinique
+          </div>
+<div class="info-box teal" style="margin-top:8px;font-size:13px;">Au moins 1 critère positif → radio cheville recommandée. Aucun critère → radio non indiquée si marche possible.</div>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon teal">🦶</div>
+<div class="card-title">Radiographie PIED indiquée si…</div>
+</div>
+<div class="card-body">
+<div class="info-box amber" style="margin-bottom:12px;font-size:13px;"><strong>Condition préalable :</strong> Douleur dans la région médio-pied</div>
+<div class="tech-step">
+<div class="label">Critère C — Base 5ème métatarsien</div>
+            Douleur à la palpation ou à la pression de la base du <strong>5ème métatarsien</strong>
+</div>
+<div class="tech-step">
+<div class="label">Critère D — Os naviculaire</div>
+            Douleur à la palpation ou à la pression de l'<strong>os naviculaire</strong>
+</div>
+<div class="tech-step">
+<div class="label">Critère fonctionnel</div>
+            Incapacité à faire <strong>4 pas complets</strong> immédiatement après la blessure ET lors de l'examen clinique
+          </div>
+<div class="info-box teal" style="margin-top:8px;font-size:13px;">Au moins 1 critère positif → radio pied recommandée.</div>
+</div>
+</div>
+</div>
+<!-- PROTOCOLE PALPATION CHEVILLE -->
+<div class="test-card" id="ott-chv-proto">
+<div class="test-card-header" onclick="toggleTest('ott-chv-proto')">
+<div class="test-card-name">Protocole de palpation — Cheville <small>Ordre recommandé</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Étape par étape</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="tech-step"><div class="label">Étape 1 — Anamnèse</div>Confirmer : traumatisme contondant récent (torsion, chute, coup direct). Le patient doit avoir ≥ 2 ans. Identifier la localisation principale de la douleur.</div>
+<div class="tech-step"><div class="label">Étape 2 — Malléole interne (B)</div>Commencer par la malléole médiale (moins douloureuse). Palper sur 6 cm en proximal depuis la pointe vers le tibia. Rechercher crépitation et douleur osseuse (≠ douleur ligamentaire).</div>
+<div class="tech-step"><div class="label">Étape 3 — Malléole latérale (A)</div>Répéter pour la malléole latérale sur 6 cm en proximal depuis la pointe vers la fibula.</div>
+<div class="tech-step"><div class="label">Étape 4 — Pied (C et D)</div>Palper : calcanéum · Os naviculaire (face dorsale médiale) · Os cuboïde · Base du 5ème métatarsien · Métatarses (blessures concomitantes).</div>
+<div class="tech-step"><div class="label">Étape 5 — Test de marche</div>Demander au patient de faire 4 pas (avec ou sans boiterie acceptable). Si impossible immédiatement après le traumatisme ET à l'examen → critère positif.</div>
+<div class="tech-note"><div class="label">Modification de Buffalo (Leddy 1998)</div>Palper directement les zones situées à proximité des malléoles proximales et médiales, loin des tendons. Améliore la spécificité sans diminuer la sensibilité.</div>
+<div class="tech-note"><div class="label">Pièges à éviter</div>Cheville très enflée/déformée → blessure grave possible même si critères négatifs. Palper toute la longueur de la fibula et du tibia pour exclure une fracture de Maisonneuve (fibula proximale). Blessures distrayantes → examiner l'ensemble du membre.</div>
+</div>
+</div>
+<!-- STATISTIQUES CHEVILLE -->
+<div class="card" style="margin-bottom:28px;">
+<div class="card-header"><div class="card-icon teal">📊</div><div class="card-title">Validité — Critères d'Ottawa Cheville</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Auteurs</th><th>Sensibilité</th><th>Spécificité</th><th>Population</th></tr></thead>
+<tbody>
+<tr><td>Stiell et al. 1992 (étude originale)</td><td><strong>100%</strong></td><td>40%</td><td>Adultes urgences</td></tr>
+<tr><td>Stiell et al. 1993 (validation)</td><td><strong>100%</strong></td><td>48%</td><td>Adultes multicentriques</td></tr>
+<tr><td>Plint et al. 1999</td><td><strong>100%</strong></td><td>—</td><td>Enfants 2–16 ans</td></tr>
+<tr style="background:var(--teal-50);"><td colspan="2"><strong>Réduction des radiographies inutiles</strong></td><td colspan="2"><strong>30–40% sans fracture manquée</strong></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- ══════════ GENOU ══════════ -->
+<div id="ott-genou-anchor"></div>
+<div class="test-section-title">🦵 Critères d'Ottawa — GENOU (Stiell 1996)</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">ℹ️</div>
+<div class="card-title">Contexte clinique — Genou</div>
+</div>
+<div class="card-body">
+<div class="info-box teal" style="font-size:13px;">Les critères d'Ottawa pour le genou (Stiell IG et al. 1996, JAMA) ont une sensibilité de 98–100% pour les fractures du genou. Ils permettent de réduire le nombre de radiographies de ~28% après traumatisme du genou. Applicable aux patients ≥ 5 ans. Exclusion : fractures de stress, douleur atraumatique, réévaluation.</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon coral">🦵</div>
+<div class="card-title">Radiographie GENOU indiquée si AU MOINS UN critère est présent</div>
+</div>
+<div class="card-body">
+<div class="info-box amber" style="margin-bottom:16px;font-size:13px;"><strong>Condition préalable :</strong> Traumatisme contondant aigu du genou · Patient ≥ 55 ans OU présence d'un des critères ci-dessous</div>
+<div class="test-detail-grid">
+<div class="test-detail-item" style="border-left:3px solid var(--coral-500);">
+<div class="label" style="color:var(--coral-500);">Critère 1 — Âge</div>
+<div class="value" style="font-size:13.5px;"><strong>Âge ≥ 55 ans</strong></div>
+</div>
+<div class="test-detail-item" style="border-left:3px solid var(--coral-500);">
+<div class="label" style="color:var(--coral-500);">Critère 2 — Patella</div>
+<div class="value" style="font-size:13.5px;"><strong>Douleur isolée à la palpation de la patella</strong> (sans autre douleur osseuse du genou)</div>
+</div>
+<div class="test-detail-item" style="border-left:3px solid var(--coral-500);">
+<div class="label" style="color:var(--coral-500);">Critère 3 — Tête fibulaire</div>
+<div class="value" style="font-size:13.5px;"><strong>Douleur à la palpation de la tête de la fibula</strong></div>
+</div>
+<div class="test-detail-item" style="border-left:3px solid var(--coral-500);">
+<div class="label" style="color:var(--coral-500);">Critère 4 — Flexion</div>
+<div class="value" style="font-size:13.5px;"><strong>Incapacité à fléchir le genou à 90°</strong></div>
+</div>
+<div class="test-detail-item" style="border-left:3px solid var(--coral-500); grid-column:1/-1;">
+<div class="label" style="color:var(--coral-500);">Critère 5 — Mise en charge</div>
+<div class="value" style="font-size:13.5px;"><strong>Incapacité à porter le poids du corps et à faire 4 pas</strong> immédiatement après la blessure et à l'examen (la boiterie est acceptée)</div>
+</div>
+</div>
+<div class="info-box teal" style="margin-top:12px;font-size:13px;">
+<strong>Aucun critère présent + marche possible (4 pas, même en boitant)</strong> → radiographie non indiquée.<br/>
+<strong>≥ 1 critère positif</strong> → radiographie du genou recommandée (face + profil ± incidence de Rosenberg).
+        </div>
+</div>
+</div>
+<!-- PROTOCOLE PALPATION GENOU -->
+<div class="test-card" id="ott-gx-proto">
+<div class="test-card-header" onclick="toggleTest('ott-gx-proto')">
+<div class="test-card-name">Protocole de palpation — Genou <small>Étapes et pièges</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Étape par étape</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="tech-step"><div class="label">Étape 1 — Âge</div>Vérifier l'âge : ≥ 55 ans → critère automatiquement positif → radio indiquée. (Ossification plus fragile, fractures à plus faible énergie.)</div>
+<div class="tech-step"><div class="label">Étape 2 — Palpation patella</div>Palper la patella dans sa totalité (pôle supérieur, corps, pôle inférieur, faces latérale et médiale). Douleur osseuse isolée à la patella = critère 2. Distinguer douleur osseuse (fracture) vs tendineuse/ligamentaire.</div>
+<div class="tech-step"><div class="label">Étape 3 — Tête fibulaire</div>Palper la tête de la fibula (face latérale du genou, juste sous l'interligne). Douleur à la pression directe = critère 3. Important à ne pas oublier car souvent négligée.</div>
+<div class="tech-step"><div class="label">Étape 4 — Flexion à 90°</div>Demander une flexion active (ou passive si active impossible). Si le patient ne peut pas atteindre 90° de flexion = critère 4. Documenter l'amplitude maximale de flexion atteinte.</div>
+<div class="tech-step"><div class="label">Étape 5 — Test de marche (4 pas)</div>Demander au patient de faire 4 pas (la boiterie est acceptée). L'incapacité à faire ces 4 pas immédiatement après la blessure ET à l'examen = critère 5. Si le patient a pu marcher sur le terrain immédiatement après → critère moins pertinent.</div>
+<div class="tech-note"><div class="label">Structures à palper systématiquement</div>Condyles fémoraux médial et latéral · Plateau tibial médial et latéral · Interligne articulaire (ménisques) · Ligament rotulien · Tendons quadricipitaux · Épiphyse proximale du tibia.</div>
+<div class="tech-note"><div class="label">Pièges spécifiques au genou</div>
+          · Fracture de Segond (avulsion du plateau tibial latéral) → associée à rupture LCA, critère 5 souvent positif.<br/>
+          · Fracture du plateau tibial → peut permettre quelques pas → ne pas se fier uniquement au critère fonctionnel.<br/>
+          · Fracture de fatigue (stress fracture) → critères Ottawa NON applicables.<br/>
+          · Enfant &lt; 5 ans → cartilages de croissance → critères non validés dans cette population.<br/>
+          · Genou très gonflé (hémarthrose) → évocateur de lésion intra-articulaire sévère quelle que soit la marche.
+        </div>
+</div>
+</div>
+<!-- STATISTIQUES GENOU -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon teal">📊</div><div class="card-title">Validité — Critères d'Ottawa Genou</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Auteurs</th><th>Sensibilité</th><th>Spécificité</th><th>Réduction radios</th></tr></thead>
+<tbody>
+<tr><td>Stiell et al. 1996 (étude originale)</td><td><strong>100%</strong></td><td>49%</td><td>~28%</td></tr>
+<tr><td>Seaberg et al. 1994 (validation)</td><td><strong>100%</strong></td><td>54%</td><td>~31%</td></tr>
+<tr><td>Bachmann et al. 2004 (méta-analyse)</td><td><strong>98,5%</strong></td><td>49%</td><td>—</td></tr>
+<tr><td>Khine et al. 2001 (pédiatrie ≥ 5 ans)</td><td><strong>100%</strong></td><td>43%</td><td>~22%</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- TABLEAU COMPARATIF CHEVILLE VS GENOU -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon navy">⚖️</div><div class="card-title">Comparaison rapide — Cheville vs Genou</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Critère</th><th>Cheville (Stiell 1992)</th><th>Genou (Stiell 1996)</th></tr></thead>
+<tbody>
+<tr><td><strong>Âge minimal</strong></td><td>≥ 2 ans</td><td>≥ 5 ans (critère âge ≥ 55 ans)</td></tr>
+<tr><td><strong>Sensibilité fractures</strong></td><td>~100%</td><td>98,5–100%</td></tr>
+<tr><td><strong>Réduction radios</strong></td><td>30–40%</td><td>~28%</td></tr>
+<tr><td><strong>Critères osseux</strong></td><td>Malléole lat. (A) · Malléole méd. (B) · 5e méta (C) · Naviculaire (D)</td><td>Patella · Tête fibulaire · Âge ≥ 55 ans</td></tr>
+<tr><td><strong>Critère fonctionnel</strong></td><td>4 pas impossibles</td><td>4 pas impossibles OU flexion &lt; 90°</td></tr>
+<tr><td><strong>Radio indiquée si</strong></td><td>≥ 1 critère positif</td><td>≥ 1 critère positif</td></tr>
+<tr><td><strong>Radio non indiquée si</strong></td><td>Tous négatifs + marche possible</td><td>Tous négatifs + marche possible + flexion ≥ 90°</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- AIDE MÉMOIRE -->
+<div class="card">
+<div class="card-header"><div class="card-icon amber">🧠</div><div class="card-title">Aide-mémoire clinique rapide</div></div>
+<div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item" style="border-left:3px solid var(--teal-400);">
+<div class="label">Cheville — ABCD + marche</div>
+<div class="value" style="font-size:13px;">
+<strong>A</strong> = Malléole latérale (bord post. 6 cm)<br/>
+<strong>B</strong> = Malléole médiale (bord post. 6 cm)<br/>
+<strong>C</strong> = Base du 5ème métatarsien<br/>
+<strong>D</strong> = Os naviculaire<br/>
+              + Impossible de faire 4 pas
+            </div>
+</div>
+<div class="test-detail-item" style="border-left:3px solid var(--navy-400);">
+<div class="label">Genou — ÂGEPF</div>
+<div class="value" style="font-size:13px;">
+<strong>Â</strong>ge ≥ 55 ans<br/>
+<strong>G</strong>enoux — patella douloureuse<br/>
+<strong>E</strong>piphyse fibulaire douloureuse<br/>
+<strong>P</strong>as de flexion à 90°<br/>
+<strong>F</strong>uite à la marche (4 pas impossibles)
+            </div>
+</div>
+</div>
+<div class="info-box coral" style="margin-top:12px;font-size:13px;">
+<strong>Rappel fondamental :</strong> Les critères d'Ottawa sont des outils de <em>dépistage</em> à haute sensibilité — ils permettent d'<em>exclure</em> une fracture quand négatifs, mais ne la <em>confirment</em> pas quand positifs (spécificité modérée ~40–54%). Toujours intégrer dans un raisonnement clinique global.
+        </div>
+</div>
+</div>
+<div class="footnote">
+<cite>Sources : Stiell IG et al. (1992) Ann Emerg Med — Ottawa Ankle Rules · Stiell IG et al. (1993) JAMA — Validation · Stiell IG et al. (1996) JAMA — Ottawa Knee Rule · Seaberg DC et al. (1994) Ann Emerg Med — Knee validation · Bachmann LM et al. (2004) Br J Sports Med — Méta-analyse genou · Plint AC et al. (1999) Acad Emerg Med — Pédiatrie · Leddy JJ et al. (1998) Am J Sports Med — Modification Buffalo · Lai A &amp; Laughlin M (2022) Can J Emerg Nurs — Revue Ottawa</cite>
+</div>
+</section>
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["ottawa"];
+  var SUB_LABELS_LOCAL = {"ottawa": "🏥 Critères d'Ottawa complets"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>

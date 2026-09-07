@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 1 · Hanche</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(1);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🦴</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 1ère Année</h1>
+      <p>Hanche — IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="index.html">← Catégories</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><strong>Hanche</strong> <span id="crumbSub">› 📖 Biomécanique</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="biomec-hanche" onclick="showSub('biomec-hanche')">📖 Biomécanique</button><button type="button" class="nav-tab" data-sub="arthro-hanche" onclick="showSub('arthro-hanche')">🦴 Arthrologie coxo-fémorale</button><button type="button" class="nav-tab" data-sub="tests-hanche" onclick="showSub('tests-hanche')">🩺 Tests orthopédiques</button><button type="button" class="nav-tab" data-sub="tech-osteo-hanche" onclick="showSub('tech-osteo-hanche')">🖐️ Techniques ostéopathiques</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="biomec-hanche" style="display:block;">
+<div class="section-title">Biomécanique de la Hanche</div>
+<div class="section-sub">Cours 1ère année — P. César, IEOQ 2022 · Articulation coxo-fémorale, stabilité, mouvements &amp; musculature</div>
+<!-- ── Introduction ── -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:10px;">
+<strong>Articulation coxo-fémorale</strong> — Sphéroïde (énarthrose) à <strong>3 degrés de liberté</strong>. Unit le tronc au membre inférieur (bassin / os iliaque ↔ tête fémorale).<br/>
+          Très stable mais amplitudes limitées — contraire de l'épaule (mobile mais fragile).<br/>
+<strong>Fonction :</strong> orienter le membre inférieur dans toutes les directions + station érigée + marche.
+        </div>
+</div>
+</div>
+<!-- ── 1. Surfaces articulaires ── -->
+<div class="test-section-title">🦴 1 — Les surfaces articulaires</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub">Tête fémorale</h3>
+<div class="path-card">
+<ul>
+<li><strong>2/3 de sphère pleine</strong> — valeur angulaire de <strong>240°</strong></li>
+<li>Cartilage hyalin épais (5 mm), sauf fossette du ligament rond</li>
+<li>Grand axe prolonge l'axe du col</li>
+<li>Centre de la tête = sommet du grand trochanter</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Ligament de la tête fémorale (ligament rond)</h4>
+<ul>
+<li>Rôle stabilisateur encore mal défini — résiste aux forces de subluxation (45 kg de traction)</li>
+<li><strong>Tendu :</strong> flexion + adduction + rotation latérale</li>
+<li><strong>Détendu :</strong> abduction + rotation médiale</li>
+<li>Riche en récepteurs proprioceptifs · Vecteur artère nourricière (négligeable chez l'adulte)</li>
+<li>Micro-instabilité si rompu (aggravée par sport : course, football, tennis)</li>
+</ul>
+</div>
+</div>
+<div>
+<h3 class="sub">Acétabulum (cotyle)</h3>
+<div class="path-card">
+<ul>
+<li>Formé de <strong>3 os</strong> : ilium + pubis + ischium (cartilage en Y visible jusqu'à fin de croissance)</li>
+<li>Segment de sphère creuse — valeur angulaire de <strong>180°</strong></li>
+<li>Moitié seulement articulaire · Arrière-fond extra-articulaire (coussin adipeux, rôle proprioceptif)</li>
+<li>Surface articulaire en <strong>fer à cheval</strong>, ouverte en bas et en avant</li>
+<li>2 cornes : antérieure et postérieure</li>
+<li>Regarde en <strong>bas, dehors et avant</strong></li>
+</ul>
+</div>
+<div class="info-box amber">
+              Couverture de la tête fémorale maximale à <strong>90° de flexion + légère rotation latérale + légère abduction</strong> (vestige de la position quadrupède).<br/>
+              En position debout, la tête est mal recouverte.
+            </div>
+</div>
+</div>
+<div class="divider"></div>
+<h3 class="sub">Angles du col fémoral</h3>
+<table class="rom-table">
+<thead><tr><th>Angle</th><th>Plan</th><th>Valeur normale</th><th>Variations pathologiques</th></tr></thead>
+<tbody>
+<tr>
+<td><strong>Torsion (antéversion)</strong></td>
+<td>Horizontal</td>
+<td>8–15° (adulte) · 30° (enfant)</td>
+<td>Antéversion ↑ → rot. interne ↑, rot. externe ↓ · Rétroversion → inverse</td>
+</tr>
+<tr>
+<td><strong>Déclinaison (inclinaison)</strong></td>
+<td>Frontal</td>
+<td>120–130° (adulte) · ~150° (nourrisson)</td>
+<td>Coxa valga (&gt;125°) → force luxante des adducteurs · Coxa vara (&lt;125°) → dysplasie</td>
+</tr>
+</tbody>
+</table>
+<div class="info-box amber" style="margin-top:10px;">
+<strong>Antéversion anormale :</strong> torsion fémorale interne · rot. interne ↑ · rot. externe ↓ · Plus fréquent chez la femme.<br/>
+<strong>Rétroversion :</strong> torsion fémorale externe · rot. externe ↑ · rot. médiale ↓.
+        </div>
+</div>
+</div>
+<!-- ── 2. Stabilité passive ── -->
+<div class="test-section-title">🔒 2 — Moyens de stabilité passifs</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="grid-2" style="gap:14px;margin-bottom:14px;">
+<div class="path-card">
+<h4>Labrum acétabulaire</h4>
+<ul>
+<li>Fibrocartilage en anneau</li>
+<li>Congruence +++ · Stabilité</li>
+<li>Ligament transverse relie les 2 cornes (ferme la cavité en bas)</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Capsule articulaire</h4>
+<ul>
+<li>Manchon fibreux <strong>en sablier</strong>, très solide</li>
+<li>Tendue entre l'os iliaque et la base du col fémoral</li>
+<li>Fibres orbiculaires (zone orbiculaire) + ligaments renforçateurs</li>
+</ul>
+</div>
+</div>
+<h3 class="sub">Ligaments périarticulaires</h3>
+<table class="muscle-table">
+<thead><tr><th>Ligament</th><th>Localisation</th><th>Particularités</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Ilio-fémoral de Bertin</td><td>Antérieur (2 faisceaux)</td><td>Plus résistant · Limite l'extension · Faisceau sup. (prétrochantérien) : limite la rotation latérale · Faisceau inf. (prétrochantinien) : limite la rotation médiale</td></tr>
+<tr><td class="muscle-name">Pubo-fémoral</td><td>Antérieur-inférieur</td><td>Limite l'abduction et la rotation latérale</td></tr>
+<tr><td class="muscle-name">Ischio-fémoral</td><td>Postérieur</td><td>Limite la rotation médiale (interne) · Tendu en rotation interne et en flexion-adduction (FADIR)</td></tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin-top:10px;"><strong>Tous les ligaments sont tendus en extension et détendus en flexion.</strong></div>
+<div class="divider"></div>
+<h3 class="sub">Coaptation articulaire</h3>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Congruence</strong> Valeurs angulaires (22 kg de traction)</div>
+<div class="synergy-item"><strong>Capsule + ligaments</strong> Tendus en extension → stabilisation debout</div>
+<div class="synergy-item"><strong>Aspect en sablier</strong> de la capsule</div>
+<div class="synergy-item"><strong>Effet ventouse</strong> Étanchéité synoviale → dépression intra-articulaire</div>
+<div class="synergy-item"><strong>Liquide synovial</strong> Augmente l'adhésivité</div>
+</div>
+</div>
+</div>
+<!-- ── 3. Stabilité active ── -->
+<div class="test-section-title">💪 3 — Moyens de stabilité active (21 muscles)</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Zone</th><th>Muscles</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">En avant</td><td>Ilio-psoas · Droit fémoral · Sartorius</td></tr>
+<tr><td class="muscle-name">En dehors</td><td>Tenseur du fascia lata · Moyen glutéal · Petit glutéal</td></tr>
+<tr><td class="muscle-name">En arrière</td><td>Grand glutéal · Pelvitrochantériens (piriforme, carré crural, obturateurs int. et ext., jumeaux int. et ext.) · Ischio-jambiers (biceps fémoral, semi-tendineux, semi-membraneux)</td></tr>
+<tr><td class="muscle-name">En dedans</td><td>Pectiné · Adducteurs (grand, moyen, petit)</td></tr>
+</tbody>
+</table>
+<div class="divider"></div>
+<h3 class="sub">Architecture osseuse</h3>
+<p style="font-size:13.5px;">L'architecture osseuse fémorale proximale canalise la transmission des forces. Os cortical compact réparti en 3 lames + tissu spongieux en travées. Zone de fragilité : <strong>triangle de WARD</strong> (site de passage des traits de fracture).</p>
+<div class="divider"></div>
+<h3 class="sub">Vascularisation &amp; innervation</h3>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Vascularisation</strong> Artère fémorale profonde + artère obturatrice + artère fessière inférieure</div>
+<div class="synergy-item"><strong>Innervation capsulaire</strong> Nerf obturateur + nerf crural + nerf sciatique → innervation sensitive riche</div>
+</div>
+</div>
+</div>
+<!-- ── 4. Mouvements ── -->
+<div class="test-section-title">🔄 4 — Les mouvements (3 plans, 3 DDL)</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:12px;">
+<strong>Axe mécanique :</strong> milieu de la tête fémorale → milieu du genou (≠ axe anatomique diaphyse/col).
+        </div>
+<table class="rom-table" style="margin-bottom:14px;">
+<thead><tr><th>Plan</th><th>Mouvement</th><th>Amplitude</th><th>Limitations principales</th></tr></thead>
+<tbody>
+<tr>
+<td rowspan="2"><strong>Sagittal</strong></td>
+<td>Flexion (genou fléchi)</td>
+<td><span class="rom-val">120°</span></td>
+<td>Masse abdominale · Butée col/labrum · Capsule post. · Pas de limite ligamentaire (tous détendus)</td>
+</tr>
+<tr>
+<td>Flexion (genou tendu)</td>
+<td><span class="rom-val">100–110°</span></td>
+<td>Ischio-jambiers (muscles biarticulaires)</td>
+</tr>
+<tr>
+<td><strong>Sagittal</strong></td>
+<td>Extension</td>
+<td><span class="rom-val">20°</span> (genou ext.) / <span class="rom-val">10°</span> (genou fl.)</td>
+<td>Tous les ligaments tendus (ilio-fémoral++) · Droit fémoral · Capsule ant.</td>
+</tr>
+<tr>
+<td><strong>Frontal</strong></td>
+<td>Abduction</td>
+<td><span class="rom-val">45°</span></td>
+<td>Butée col / sourcil cotyloïdien · Capsule inférieure · Faisceaux pubo-fémoraux · Muscles adducteurs</td>
+</tr>
+<tr>
+<td><strong>Frontal</strong></td>
+<td>Adduction</td>
+<td><span class="rom-val">30°</span></td>
+<td>Ligs ilio-fémoral et ischio-fémoral (faisceaux sup.) · Ligt de la tête · Capsule sup. · Muscles abducteurs</td>
+</tr>
+<tr>
+<td><strong>Horizontal</strong></td>
+<td>Rotation latérale</td>
+<td><span class="rom-val">60°</span></td>
+<td>En extension : ligt ilio-fémoral (faisceau prétrochantérien) + pubo-fémoral + capsule ant. + rotateurs médiaux. En flexion : rotateurs médiaux seulement</td>
+</tr>
+<tr>
+<td><strong>Horizontal</strong></td>
+<td>Rotation médiale</td>
+<td><span class="rom-val">30°</span></td>
+<td>Pelvitrochantériens · Capsule post. · Ligt ischio-fémoral · Amplitude ↗ si antéversion du col ↗</td>
+</tr>
+</tbody>
+</table>
+<div class="info-box amber">
+          Un déficit d'extension est un <strong>flessum (flexum) de hanche</strong>. La perte d'extension avec l'âge provient principalement de la perte d'extensibilité du ligament ilio-fémoral.
+        </div>
+</div>
+</div>
+<!-- ── 5. Musculature détaillée ── -->
+<div class="test-section-title">🏋️ 5 — Musculature détaillée</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub">Muscles fléchisseurs</h3>
+<table class="muscle-table">
+<thead><tr><th>Muscle</th><th>Actions secondaires</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Psoas + Iliaque</td><td>Rotateur externe hanche</td></tr>
+<tr><td class="muscle-name">Sartorius</td><td>Rotateur externe + abducteur hanche · Flexion + rot. interne genou</td></tr>
+<tr><td class="muscle-name">Droit fémoral</td><td>Extension genou (plus efficace si genou fléchi)</td></tr>
+<tr><td class="muscle-name">Tenseur fascia lata</td><td>Abducteur + rotateur interne</td></tr>
+<tr><td class="muscle-name">Pectiné, Long adducteur, Gracile</td><td>Adducteurs</td></tr>
+<tr><td class="muscle-name">Faisceaux ant. petit + moyen fessier</td><td>—</td></tr>
+</tbody>
+</table>
+<h3 class="sub" style="margin-top:12px;">Muscles extenseurs</h3>
+<table class="muscle-table">
+<thead><tr><th>Muscle</th><th>Efficacité</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Grand fessier</td><td>Course, saut, terrain incliné · Rotateur externe</td></tr>
+<tr><td class="muscle-name">Ischio-jambiers (biceps long, semi-tendineux, semi-membraneux)</td><td>Plus efficace genou en extension · Marche normale</td></tr>
+<tr><td class="muscle-name">Faisceaux post. moyen + petit fessier</td><td>Rotateur externe</td></tr>
+<tr><td class="muscle-name">Grand adducteur</td><td>Extenseur accessoire</td></tr>
+</tbody>
+</table>
+</div>
+<div>
+<h3 class="sub">Muscles abducteurs</h3>
+<table class="muscle-table">
+<thead><tr><th>Muscle</th><th>Rôle</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Moyen fessier</td><td>Principal abducteur · Stabilisation transversale du bassin</td></tr>
+<tr><td class="muscle-name">Petit fessier</td><td>Abducteur</td></tr>
+<tr><td class="muscle-name">Tenseur du fascia lata</td><td>Abducteur + stabilisateur transversal</td></tr>
+<tr><td class="muscle-name">Grand fessier (fibres sup.)</td><td>—</td></tr>
+<tr><td class="muscle-name">Piriforme</td><td>Abducteur</td></tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin-top:8px;font-size:12.5px;">
+<strong>Muscle deltoïde fessier (Farabeuf) :</strong> Tenseur fascia lata (avant) + grand fessier superficiel (arrière) → bandelette ilio-tibiale → tubercule de Gerdy.
+            </div>
+<h3 class="sub" style="margin-top:12px;">Muscles rotateurs externes (pelvitrochantériens)</h3>
+<table class="muscle-table">
+<thead><tr><th>#</th><th>Muscle</th></tr></thead>
+<tbody>
+<tr><td>1</td><td class="muscle-name">Piriforme</td></tr>
+<tr><td>2</td><td class="muscle-name">Obturateur interne + jumeaux pelviens</td></tr>
+<tr><td>3</td><td class="muscle-name">Obturateur externe</td></tr>
+<tr><td>4</td><td class="muscle-name">Carré fémoral</td></tr>
+<tr><td>6</td><td class="muscle-name">Pectiné</td></tr>
+<tr><td>7</td><td class="muscle-name">Grand fessier + faisceau post. moyen/petit fessier 8</td></tr>
+</tbody>
+</table>
+<h3 class="sub" style="margin-top:12px;">Muscles rotateurs internes</h3>
+<p style="font-size:13px;">Moins nombreux : Faisceau antérieur moyen fessier (5) · Petit fessier (6) · Tenseur du fascia lata (7)</p>
+</div>
+</div>
+<div class="divider"></div>
+<div class="info-box coral">
+<strong>Inversion des actions musculaires selon la position :</strong><br/>
+          • Adducteurs : fléchisseurs à 0° → extenseurs à partir de 40° de flexion (sauf grand adducteur)<br/>
+          • Piriforme : rotateur externe + fléchisseur + abducteur à 0° → rotateur interne + extenseur + abducteur à partir de 60° de flexion<br/>
+          • En forte flexion : grand fessier + obturateur interne → abducteurs · Petit fessier + TFL → adducteurs
+        </div>
+</div>
+</div>
+<!-- ── 6. Équilibre du bassin ── -->
+<div class="test-section-title">⚖️ 6 — Équilibre transversal du bassin</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div class="path-card">
+<h4>En appui bilatéral</h4>
+<p style="font-size:13.5px;">Action simultanée et bilatérale des abducteurs et adducteurs. Si équilibrés → bassin stable transversalement.</p>
+</div>
+<div class="path-card">
+<h4>En appui unilatéral</h4>
+<p style="font-size:13.5px;">Seuls les abducteurs du côté porteur contrebalancent le poids (levier inter-appui). Le moyen fessier doit être fort, aidé du petit fessier et du TFL.</p>
+<p style="font-size:13px;margin-top:6px;"><strong>Signe de Trendelenburg :</strong> si les abducteurs sont insuffisants → bassin s'incline du côté sans appui (témoin de paralysie ou insuffisance des abducteurs).</p>
+</div>
+</div>
+<div class="info-box teal" style="margin-top:10px;">
+<strong>Balance de Pauwels :</strong> En appui unilatéral, le bras de levier des abducteurs (E-O) est environ 3× plus court que celui du poids du corps (O-T). La force musculaire des abducteurs doit donc être ~3× le poids du corps, ce qui génère une résultante articulaire ≈ 4× le poids sur la tête fémorale.
+        </div>
+<div class="divider"></div>
+<h3 class="sub">Facteurs musculaires et osseux de la stabilité</h3>
+<div class="synergy-grid">
+<div class="synergy-item"><strong>Muscles à direction transversale</strong> (pelvitrochantériens, petit/moyen fessier) → force coaptatrice = "appendeurs" de la hanche</div>
+<div class="synergy-item"><strong>Muscles à direction longitudinale</strong> (adducteurs) → force luxante vers le haut (s'efface en abduction)</div>
+<div class="synergy-item"><strong>Coxa valga</strong> (&gt;125°) → angle d'adduction ↑ → force luxante ↑ → traitement : abduction 90°</div>
+<div class="synergy-item"><strong>Antéversion excessive</strong> → découverture ant. de la tête → instabilité/tendance luxante en avant</div>
+</div>
+</div>
+</div>
+<!-- ── 7. Bourses séreuses ── -->
+<div class="test-section-title">🏺 7 — Bourses séreuses de la hanche</div>
+<div class="card" style="margin-bottom:18px;">
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Bourse</th><th>Localisation</th><th>Rôle</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">Trochantérienne</td><td>Entre face postéro-latérale du grand trochanter et grand fessier · Large, souvent multilobée</td><td>Protège le grand trochanter (impacts latéraux, décubitus lat.) · Protège la surface du grand fessier des frictions</td></tr>
+<tr><td class="muscle-name">Glutéo-fémorale</td><td>Entre tendon du grand fessier et vaste latéral</td><td>Friction tendineuse</td></tr>
+<tr><td class="muscle-name">Ischiatique (ischio-glutéale)</td><td>Entre tubérosité ischiatique et grand fessier</td><td>Protège la tubérosité (chutes sur les fesses, position assise)</td></tr>
+<tr><td class="muscle-name">Ilio-pectinée</td><td>Entre face antérieure de la capsule et face postérieure du tendon de l'iliopsoas</td><td>Friction capsule/iliopsoas</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote">
+<cite>Source : Biomécanique de la Hanche — Cours 1ère année, P. César, IEOQ 2022 · Kapandji IA (T.2) · Pauwels F. (Biomechanics of the Locomotor Apparatus)</cite>
+</div>
+</section>
+<section class="section" id="arthro-hanche" style="display:none;">
+<div class="section-title">Arthrologie — Articulation coxo-fémorale</div>
+<div class="section-sub">Thomas Gautier D.O. · IEOQ Année 1 — La plus grosse articulation du corps, sphéroïde (énarthrose), stabilité &amp; congruence</div>
+<div class="info-box teal" style="margin-bottom:20px;">
+      L'articulation de la hanche, ou coxo-fémorale, est la <strong>plus grosse articulation du corps</strong>. Portante, elle nécessite une excellente stabilité (concordance et congruence de ses surfaces). Sphéroïde à 3 degrés de liberté, elle règle l'orientation du membre dans l'espace.
+    </div>
+<!-- ÉLÉMENTS EN PRÉSENCE -->
+<div class="test-section-title">🦴 1 — Éléments en présence (4)</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">Surfaces articulaires</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Structure</th><th>Situation</th><th>Répond à</th><th>Type</th><th>Forme / Caractéristiques</th><th>Regarde</th></tr></thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Surface semi-lunaire<small>(partie articulaire de l'acétabulum)</small></div></td>
+<td>Face externe partie moyenne de l'os coxal — occupe la partie sup. et périphérique de l'acétabulum</td>
+<td>Tête fémorale</td>
+<td><span class="tag tag-teal">Sphéroïde congruente</span></td>
+<td>Hémisphère creux taillé en croissant à concavité inférieure. Corne postérieure plus large et plus saillante.</td>
+<td>En dh., en bas et en avt</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Tête fémorale</div></td>
+<td>Partie supéro-médiale de l'extrémité supérieure du fémur (séparée par le col anatomique)</td>
+<td>Surface semi-lunaire de l'acétabulum et labrum</td>
+<td><span class="tag tag-teal">Sphéroïde congruente</span></td>
+<td>2/3 de sphère pleine d'environ 4 à 5 cm de Ø</td>
+<td>En dd., en ht et en avt</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Labrum<small>(ancien bourrelet articulaire)</small></div></td>
+<td>Inséré sur le limbus (pourtour de l'acétabulum) et bord inférieur du lig. transverse</td>
+<td>Tête fémorale (face axiale)</td>
+<td>Fibro-cartilage annulaire</td>
+<td>Triangulaire à la coupe. Face axiale encroûtée de cartilage hyalin. Face périphérique accolée à la capsule. Face profonde insérée sur le limbus.</td>
+<td>—</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Ligament transverse de l'acétabulum</div></td>
+<td>Unit les 2 cornes de la surface semi-lunaire (en pont sur l'incisure ischio-pubienne)</td>
+<td>—</td>
+<td>Fibro-cartilage</td>
+<td>Encroûté de cartilage hyalin à sa face superficielle. Donne insertion à 1 des 3 racines du ligament de la tête.</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- MOYENS D'UNIONS -->
+<div class="test-section-title">🔗 2 — Moyens d'unions (6 types)</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon teal">🛡️</div><div class="card-title">Capsule</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;margin-bottom:10px;">Manchon fibreux cylindrique, rétréci à sa partie moyenne. Insertions :</p>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:13px;">
+<div style="padding:8px 10px;background:var(--teal-50);border-radius:6px;border-left:2px solid var(--teal-400);">Sur l'os coxal (limbus) et sur la lèvre supérieure du sillon supra-acétabulaire · Sur le ligament transverse (bord inférieur) · Sur le labrum (face périphérique)</div>
+<div style="padding:8px 10px;background:var(--navy-100);border-radius:6px;border-left:2px solid var(--navy-400);">Sur le fémur : partie latérale du col — ligne intertrochantérique en avant, bord sup. sillon de l'obturateur externe en arrière</div>
+</div>
+<div style="margin-top:10px;font-size:13px;">
+<strong>3 types de fibres :</strong>
+<ul style="margin:6px 0 0 16px;">
+<li><strong>Longitudinales :</strong> tendues de l'os coxal au fémur</li>
+<li><strong>Circulaires (orbiculaires) :</strong> resserrent la capsule dans sa portion sous-capitale</li>
+<li><strong>Arciformes :</strong> partent de l'os coxal, y retournent en arc de cercle → accentuent la rétention de la tête. Replis inférieurs renforcés = <strong>freins de la capsule</strong></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon navy">📋</div><div class="card-title">Ligaments</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Ligament</th><th>Origine</th><th>Trajet / Terminaison</th><th>Remarque</th></tr></thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Ilio-fémoral<small>Faisceau supérieur</small></div></td>
+<td>Os coxal — partie inf. de l'EIAI</td>
+<td>Oblique en dh. et en bas → tubercule sup. de la ligne intertrochantérique ant.</td>
+<td rowspan="2">Ligament composé de 2 faisceaux s'élargissant en éventail, passant en avant de la tête. Fibres éparses entre les 2 faisceaux. Anciennement ligament de Bertin.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Ilio-fémoral<small>Faisceau inférieur</small></div></td>
+<td>Os coxal — partie inf. de l'EIAI</td>
+<td>Oblique en bas et légèrement en dh. → tubercule inférieur de la ligne intertrochantérique</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Pubo-fémoral</div></td>
+<td>Os coxal — branche sup. du pubis au contact de l'acétabulum + crête pectiné</td>
+<td>Oblique en dh. et en bas (large, se rétrécit en bas) → face ant. extrémité sup. du fémur, en arrière du tubercule inf. ligne intertrochantérique</td>
+<td>S'ajoute à l'ilio-fémoral pour former un « Z » barrant la coxo-fémorale → interdit les luxations antérieures</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Ischio-fémoral</div></td>
+<td>Os coxal — ischion au contact de l'acétabulum, le long de la corne postérieure</td>
+<td>Dirigé en dh., avt, légèrement en ht. Divisé en 3 faisceaux (sup., moy., inf.) → face méd. grand trochanter (sup.) ; partie post. capsule portion latérale (moy.) ; partie inf. capsule (inf.)</td>
+<td>Seul ligament postérieur</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Ligament de la tête</div></td>
+<td>Os coxal — par 3 racines : ant. (arrière de la corne ant.), moy. (bord sup. du lig. transverse), post. (arrière de la corne post.)</td>
+<td>Racines se réunissent dans la fosse acétabulaire → se portent en ht et en dh. enroulant la tête → fovéa de la tête fémorale (cadran postéro-inférieur)</td>
+<td>Ligament original : intra-capsulaire mais extra-articulaire. Creux, renferme une artère.</td>
+</tr>
+</tbody>
+</table>
+<div class="info-box amber" style="margin-top:12px;">
+<strong>Ligament à distance :</strong> Fascia lata / Tractus ilio-tibial — du tubercule glutéal et crête iliaque → tubercule infra-condylaire du tibia. Hauban latéral passif plaqué contre le grand trochanter → poussée coaptatrice.
+        </div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header"><div class="card-icon amber">💪</div><div class="card-title">Éléments stabilisateurs musculaires (4)</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Muscle</th><th>Mécanisme stabilisateur</th></tr></thead>
+<tbody>
+<tr><td><strong>Droit fémoral</strong></td><td>3 tendons « chapeautent » la tête en la plaquant dans l'acétabulum. Tendon récurrent = renfort direct du faisceau supérieur du lig. ilio-fémoral.</td></tr>
+<tr><td><strong>Petit fessier</strong></td><td>Profond, donne des fibres au ligament ilio-fémoral.</td></tr>
+<tr><td><strong>Psoas-iliaque</strong></td><td>Puissant tendon se réfléchissant contre la tête fémorale → plaque fortement la tête dans l'acétabulum.</td></tr>
+<tr><td><strong>Obturateur externe</strong></td><td>Passe dans le sillon infra-acétabulaire (force ascensionnelle sur la corne post.) + enroule le col fémoral par l'arrière au contact de la capsule → intime de l'articulation.</td></tr>
+<tr><td><strong>Pectiné</strong></td><td>Renforce le ligament pubo-fémoral.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- INTÉRÊTS OSTÉOPATHIQUES -->
+<div class="card" style="margin-bottom:24px;">
+<div class="card-header"><div class="card-icon coral">⚕️</div><div class="card-title">Intérêts ostéopathiques</div></div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> Accès limité — l'articulation est entièrement enfouie sous un épais revêtement musculaire (corps charnus particulièrement puissants + muscles profonds + revêtement cellulo-graisseux). Le relief est celui de l'enveloppe des muscles larges.
+          </div>
+<div class="info-box amber">
+<strong>Mécanique et pathologique :</strong> La coxo-fémorale fait partie du complexe lombo-pelvi-fémoral (LPF) — jonction fonctionnelle tronc/membre inférieur. La stabilité prend le pas sur la mobilité (arthrodèse de hanche = bons résultats à court terme, mais lombalgies à terme). Fréquence des coxarthroses (primitives ou secondaires) du fait de la notion d'appui. Les dysplasies (coxa-valga, coxa-vara, coxa-retrorsa) → mauvaise répartition des contraintes → interventions correctrices fréquentes.
+          </div>
+</div>
+</div>
+</div>
+<!-- À RETENIR -->
+<div style="border-left:4px solid var(--teal-400);background:var(--teal-50);border-radius:0 10px 10px 0;padding:18px 20px;margin-bottom:24px;">
+<div style="font-size:14px;font-weight:700;color:var(--teal-700);margin-bottom:10px;">⭐ À retenir absolument — Arthrologie coxo-fémorale</div>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px;">
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>4 éléments :</strong> surface semi-lunaire + tête fémorale + labrum + ligament transverse de l'acétabulum</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Ligament ilio-fémoral :</strong> 2 faisceaux en éventail (EIAI → ligne intertrochantérique) — anciennement de Bertin</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Formation en Z :</strong> ilio-fémoral + pubo-fémoral → barre la face antérieure = anti-luxation antérieure</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Ischio-fémoral :</strong> seul ligament postérieur (3 faisceaux) — résiste à la rotation médiale forcée</li>
+<li style="padding:5px 0 5px 16px;position:relative;border-bottom:1px solid var(--teal-200);"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Ligament de la tête :</strong> 3 racines coxales → fovéa fémorale · intra-capsulaire mais extra-articulaire · renferme l'artère de la tête</li>
+<li style="padding:5px 0 5px 16px;position:relative;"><span style="position:absolute;left:4px;color:var(--teal-500);font-weight:700;">→</span><strong>Fibres capsulaires arciformes :</strong> partent et reviennent sur l'os coxal → replis inférieurs = freins de la capsule · sécurisent la tête en all positions</li>
+</ul>
+<div style="background:#fff3cd;border-left:3px solid var(--amber-500);border-radius:0 6px 6px 0;padding:10px 14px;margin-top:12px;font-size:13px;color:#4a2e00;">
+<strong>🧠 Mnémotechnique :</strong> Les ligaments sont <strong>IPI</strong> (Ilio-fémoral + Pubo-fémoral + Ischio-fémoral) — de l'avant vers l'arrière, comme les os de l'os coxal (ilium → pubis → ischion). Le Z anti-luxation = les 2 premiers (I + P).
+      </div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre inférieur, Chapitre 1 — Articulation coxo-fémorale, Année 1, IEOQ · Usage privé</cite></div>
+</section>
+<section class="section" id="tests-hanche" style="display:none;">
+<div class="section-title">Tests Orthopédiques — Hanche</div>
+<div class="section-sub">Coxo-fémorale, labrum, muscles périarticulaires &amp; coxarthrose — P. César 1ère année IEOQ 2023</div>
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header"><div class="card-icon coral">⚠️</div><div class="card-title">Préambule — Tests d'exclusion médicale</div></div>
+<div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item">
+<div class="label">Signes de gravité à rechercher</div>
+<div class="value" style="font-size:13px;">Douleurs inflammatoires (non mécaniques) · Limitation dans 2 ou 3 plans (arthrose = 0 ou 1 degré) · Douleur à l'appui · Douleur fessière → penser lombaire/SI · Douleur genou → arthrose hanche ou cruralgie</div>
+</div>
+<div class="test-detail-item">
+<div class="label">Caractéristiques douleur mécanique de hanche</div>
+<div class="value" style="font-size:13px;">Douleur après marche prolongée · Enraidissement avec dérouillage matinal · Parfois douleur dans l'aine ou irradiant vers le genou</div>
+</div>
+</div>
+<div class="info-box coral" style="margin-top:10px;font-size:13px;">Si 2 ou 3 des 4 tests principaux sont positifs → lésions structurelles possibles → consultation médicale et/ou examens complémentaires.</div>
+</div>
+</div>
+<div class="test-section-title">🔴 Tests principaux — 4 tests de référence</div>
+<div class="test-card" id="th-scour">
+<div class="test-card-header" onclick="toggleTest('th-scour')">
+<div class="test-card-name">Scour Test <small>Test de compression intra-articulaire — 2 temps</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Intra-articulaire</span><span class="tag tag-navy">Sacro-iliaque</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Toute pathologie intra-articulaire de la hanche ou sacro-iliaque</div></div>
+<div class="test-detail-item"><div class="label">Validité</div><div class="value">Se: 62–70% · Sp: 75–85% (Lequesne 2012, Sutlive 2008)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">1er Temps — Flexion + Adduction + Compression</div>Le praticien place la hanche en flexion et adduction et applique une force de compression dans l'axe du fût fémoral. La partie antéro-médiale de la tête fémorale passe sous l'acétabulum → compression intra-articulaire augmentée. Test positif si douleur connue reproduite ou si l'adduction est impossible.</div>
+<div class="test-detail-full"><div class="label">2ème Temps — Flexion + Abduction + Compression</div>Le praticien place la hanche en flexion et abduction et applique une force de compression dans l'axe du fût fémoral. La partie postéro-supérieure de la tête fémorale se retrouve dans l'arrière-fond de l'acétabulum → compression différente. Test positif si douleur connue reproduite.</div>
+<div class="test-sensitivity"><span style="min-width:90px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill mid" style="width:62%"></div></div><span>62–70%</span></div>
+<div class="test-sensitivity"><span style="min-width:90px;">Spécificité</span><div class="bar-wrap"><div class="bar-fill high" style="width:80%"></div></div><span>75–85%</span></div>
+</div>
+</div>
+<div class="test-card" id="th-faber">
+<div class="test-card-header" onclick="toggleTest('th-faber')">
+<div class="test-card-name">Test de FABER (Test de Patrick) <small>Flexion · Abduction · External Rotation</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">Coxo-fémorale</span><span class="tag tag-navy">Sacro-iliaque</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Articulation coxo-fémorale OU dysfonction sacro-iliaque / ilio-sacrée</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 69% · Sp: 16% · RV+: 0.82 · RV-: 1.94 (Dreyfuss et al.)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Position en chiffre 4 : cheville ipsilatérale posée sur le genou controlatéral. Le praticien pousse sur la face médiale du genou de façon à majorer l'abduction et stabilise de son autre main l'iliaque opposé. Gravité + poussée vers le bas.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur de consultation reproduite OU mouvement impossible. Localisation de la douleur guide le diagnostic : douleur inguinale → coxo-fémorale. Douleur sacro-fessière → sacro-iliaque. ⚠️ Peut être positif dans les lésions de sacro-iliaque.</div>
+<div class="info-box amber" style="font-size:13px;margin-top:8px;"><strong>Spécificité très faible (16%) :</strong> Test utile pour dépister mais ne permet pas de confirmer seul. Toujours corréler avec le Scour, le FADIR et le Fitzgerald.</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=89Qiht82zmg" rel="noopener" target="_blank">Physiotutors EN</a>
+<a class="video-btn fr" href="https://www.youtube.com/watch?v=o1Rzsjnl3Qs" rel="noopener" target="_blank">FABER FR</a>
+</div>
+</div>
+</div>
+<div class="test-card" id="th-faddir">
+<div class="test-card-header" onclick="toggleTest('th-faddir')">
+<div class="test-card-name">Test FADDIR — Impingement Test <small>Flexion · Adduction · Internal Rotation</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Conflit fémoro-acétabulaire</span><span class="tag tag-teal">Labrum</span><span class="tag tag-gray">Piriforme</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Conflit coxo-fémoral · Lésion labrum · Syndrome du piriforme · Nerf sciatique</div></div>
+<div class="test-detail-item"><div class="label">Stats — Conflit/Labrum</div><div class="value">Se: 94% · Sp: 9% (Reiman) — très sensible, peu spécifique</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient en décubitus dorsal. Le praticien amène la hanche en flexion + adduction + rotation interne. Demander au patient de localiser la douleur.</div>
+<div class="test-positive"><div class="label">Douleur antérieure (pli de l'aine)</div>→ Conflit fémoro-acétabulaire ou lésion du labrum antérieur. Se: 94% mais Sp très basse → bon test de dépistage, ne confirme pas seul.</div>
+<div class="test-positive"><div class="label">Douleur postérieure (piriforme ± irradiation)</div>→ Syndrome du piriforme ou atteinte du nerf sciatique. Se: 88% · Sp: 83% · RV+: 5.18 (Fishman) — meilleur profil diagnostique pour cette indication.</div>
+<div class="info-box amber" style="font-size:13px;margin-top:8px;"><strong>Faux positifs :</strong> Déficit en flexion de hanche, sport exigeant pour les MI, sexe masculin augmentent le risque de faux positif chez des sujets sains.</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=Q_x3Cv4_Q3Y" rel="noopener" target="_blank">Physiotutors EN</a>
+<a class="video-btn fr" href="https://www.youtube.com/watch?v=_4Zt1FzhCy8" rel="noopener" target="_blank">FADIR FR</a>
+</div>
+</div>
+</div>
+<div class="test-card" id="th-fitzgerald">
+<div class="test-card-header" onclick="toggleTest('th-fitzgerald')">
+<div class="test-card-name">Test de Fitzgerald <small>Test du Labrum — 2 temps</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Labrum antérieur</span><span class="tag tag-navy">Labrum postérieur</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">1er Temps — Labrum antérieur</div>But : mobiliser la partie antérieure du labrum.<br/>Hanche en flexion + rotation externe + abduction → puis amener vers extension + rotation médiale + adduction sur la table.<br/><strong>Test positif :</strong> Reproduction d'une douleur ou ressaut palpable par l'opérateur.</div>
+<div class="test-detail-full"><div class="label">2ème Temps — Labrum postérieur</div>But : mobiliser la partie postérieure du labrum.<br/>Hanche en flexion + rotation médiale + adduction → puis amener vers extension + rotation externe + abduction.<br/><strong>Test positif :</strong> Reproduction d'une douleur ou ressaut de la tête fémorale perçu par l'opérateur.</div>
+<div class="info-box teal" style="font-size:13px;"><strong>Mnémotechnique :</strong> Labrum antérieur → commencer en FABER (Flexion-ABduction-Ext. Rotation) → finir en FADIR. Labrum postérieur → commencer en FADIR → finir en FABER.</div>
+</div>
+</div>
+<div class="test-section-title">🟡 Tests complémentaires — Muscles &amp; stabilité</div>
+<div class="test-grid-2">
+<div class="test-card" id="th-microinst">
+<div class="test-card-header" onclick="toggleTest('th-microinst')">
+<div class="test-card-name">Test Micro-instabilité de Hanche <small>Jeune patient</small></div>
+<div class="test-card-tags"><span class="tag tag-gray">Instabilité capsulaire</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">En décubitus latéral</div>Patient en DL, hanche en abduction 45°, extension et légère rotation latérale. L'opérateur impose un appui trochantérien vers l'avant tout en majorant légèrement l'abduction + extension + rotation latérale. Positif si douleur de consultation reproduite.</div>
+<div class="test-detail-full"><div class="label">En décubitus ventral</div>Le praticien amène une rotation latérale de la hanche tout en effectuant une poussée sur la face postérieure du grand trochanter. Positif si douleur du patient reproduite.</div>
+</div>
+</div>
+<div class="test-card" id="th-craig">
+<div class="test-card-header" onclick="toggleTest('th-craig')">
+<div class="test-card-name">Test de Craig <small>Antéversion fémorale</small></div>
+<div class="test-card-tags"><span class="tag tag-gray">Col fémoral</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Décubitus ventral, genou fléchi à 90°</div></div>
+<div class="test-detail-item"><div class="label">Norme</div><div class="value">Antéversion normale : 8–15°</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Main caudale maintient genou à 90° de flexion. Main crâniale palpe le grand trochanter. Rotations médiales et latérales de hanche jusqu'à trouver la position où le grand trochanter est le plus proéminent latéralement → mesurer l'angle du tibia.</div>
+<div class="test-positive"><div class="label">Test positif</div>Rotation latérale &gt; 45° dans la position finale → laxité capsulaire. Pas de données de validité disponibles — utiliser avec un examen clinique complet.</div>
+</div>
+</div>
+</div>
+<div class="test-grid-2">
+<div class="test-card" id="th-thomas">
+<div class="test-card-header" onclick="toggleTest('th-thomas')">
+<div class="test-card-name">Test de Thomas (Original &amp; Modifié) <small>Ilio-psoas · Droit fémoral</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">Ilio-psoas</span><span class="tag tag-gray">Droit fémoral</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">Thomas Original — Ilio-psoas</div>Patient en DD. Saisit le genou du MI non testé et l'amène en flexion vers le tronc (rétroversion bassin, effacement lordose). Le MI testé est relâché sur la table.<br/><strong>Positif :</strong> La cuisse du MI testé "décolle" de la table → contracture ou hypoextensibilité de l'ilio-psoas OU rétraction capsulo-ligamentaire.</div>
+<div class="test-detail-full"><div class="label">Thomas Modifié — Ilio-psoas &amp; Droit fémoral</div>Patient en DD au bord de la table. Le talon du MI testé n'est plus soutenu (genou fléchi par gravité). Permet d'évaluer séparément ilio-psoas et droit fémoral.<br/><strong>Positif ilio-psoas :</strong> Flexion de hanche non réductible par extension passive du genou.<br/><strong>Positif droit fémoral :</strong> Gain d'extension de hanche lors de l'extension passive du genou, ou majoration de la flexion lors de la flexion passive du genou.<br/><strong>Bonus TFL :</strong> Abduction + rotation latérale spontanée → hypoextensibilité du TFL.</div>
+<div class="info-box amber" style="font-size:13px;"><strong>Précaution :</strong> La flexion de hanche du MI non testé doit entraîner une rétroversion du bassin sans être maximale (risque de faux positifs). Stats modifiées : Se 32%, Sp 57% (Vigotsky et al.).</div>
+</div>
+</div>
+<div class="test-card" id="th-ober">
+<div class="test-card-header" onclick="toggleTest('th-ober')">
+<div class="test-card-name">Test d'Ober <small>TFL · Bandelette ilio-tibiale</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">TFL / BIT</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">Technique</div>Patient en latérocubitus sur le côté sain. Main crâniale maintient le bassin en position neutre. Main caudale : abduction + extension de hanche, genou à 90°. Bandelette ilio-tibiale se superpose au grand trochanter. Lâcher en adduction tout en gardant la hanche en extension.</div>
+<div class="test-positive"><div class="label">Test positif</div>Le membre inférieur se maintient spontanément en abduction → contracture ou hypoextensibilité du TFL.</div>
+<div class="info-box amber" style="font-size:13px;"><strong>Controverse (Willett 2016) :</strong> L'évaluation sur cadavre après section de la BIT ne montre pas de différence significative. La limitation pourrait être liée aux petit/moyen fessiers et aux éléments capsulo-ligamentaires plutôt qu'au TFL lui-même.</div>
+</div>
+<div class="video-links">
+<a class="video-btn fr" href="https://www.youtube.com/watch?v=j91UbeFynSc" rel="noopener" target="_blank">Test Thomas FR</a>
+</div>
+</div>
+</div>
+<div class="test-section-title">🟢 Règle de Prédiction Clinique — Coxarthrose (Cluster de Sutlive)</div>
+<div class="card">
+<div class="card-header"><div class="card-icon teal">📊</div><div class="card-title">Cluster de Sutlive — Probabilité de Coxarthrose</div></div>
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:12px;font-size:13px;">Gold standard : radiographie de face du bassin (score de Kellgren &amp; Lawrence ≥ 2 = coxarthrose). 5 examens cliniques identifiés par Sutlive et al. (2008).</div>
+<div class="test-detail-full"><div class="label">Les 5 critères du Cluster de Sutlive</div>
+          1. Aggravation de la douleur lors du squat<br/>
+          2. Douleur latérale de hanche lors de la flexion active<br/>
+          3. Scour-test en adduction provoquant une douleur latérale ou à l'aine<br/>
+          4. Extension active de hanche douloureuse<br/>
+          5. Rotation médiale passive de hanche ≤ 25°
+        </div>
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">4/5 positifs → Probabilité coxarthrose</div><div class="value">91% — RV+ 24,00 · Sp 98%</div></div>
+<div class="test-detail-item"><div class="label">3/5 positifs</div><div class="value">RV+ 5,07 · Se 71% · Sp 86%</div></div>
+<div class="test-detail-item"><div class="label">5/5 positifs</div><div class="value">RV+ 7,00 · Se 14% · Sp 98%</div></div>
+<div class="test-detail-item"><div class="label">2/5 positifs</div><div class="value">RV+ 2,08 · Se 81% · Sp 61%</div></div>
+</div>
+<div class="info-box coral" style="margin-top:10px;font-size:13px;"><strong>Seuil clinique :</strong> ≥ 4 critères positifs = probabilité de 91% de coxarthrose confirmée à la radio → orienter vers consultation médicale pour imagerie.</div>
+</div>
+</div>
+<div class="footnote"><cite>Sources : P. César, Tests orthopédiques Hanche 1ère année IEOQ 2023 · Lequesne M (2012) Scour test · Sutlive TG et al. (2008) Cluster coxarthrose · Dreyfuss PH et al. FABER · Reiman MP et al. FADDIR · Fishman LM et al. Syndrome piriforme · Vigotsky AD et al. Thomas modifié</cite></div>
+</section>
+<section class="section" id="tech-osteo-hanche" style="display:none;">
+<div class="section-title">Techniques ostéopathiques — Hanche</div>
+<div class="section-sub">Tests ostéopathiques · Dysfonctions · Normalisations structurelles · P. César D.O — 1ère année ostéo IEOQ 2021</div>
+<!-- ══ A — TESTS OSTÉOPATHIQUES ══ -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🔬</div><div class="card-title">A — Tests ostéopathiques de la hanche</div></div>
+<div class="card-body">
+<div class="tech-card" id="th-circumd" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">1 — Test en circumduction</div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>Membre inférieur amené en triple flexion. L'opérateur imprime une circumduction en débutant par flexion + adduction + rotation interne, puis vers extension + abduction + rotation externe, en explorant progressivement toute l'amplitude.</div>
+<div class="tech-step"><div class="label">But</div>Détecter quel secteur articulaire présente une restriction de mobilité.</div>
+<div class="tech-variant"><div class="label">Variante</div>En décubitus latéral.</div>
+</div>
+</div>
+<div class="tech-card" id="th-flex" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">2 — Test de flexion</div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Sujet en décubitus dorsal en bord de table</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Ostéo côté à tester en fente avant</div>
+</div>
+<div class="tech-step"><div class="label">Prise</div>Main interne : prise en berceau du tibia ou face antérieure du genou. Main externe en postérieur sur l'EIPS pour contrôler le mouvement coxo-fémoral.</div>
+<div class="tech-step"><div class="label">Geste</div>Amener la cuisse en flexion sans entraîner de mouvement dans le bassin.</div>
+</div>
+</div>
+<div class="tech-card" id="th-ext" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">2 — Test d'extension</div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">En décubitus dorsal</div>Flexion maximale de la hanche opposée. L'ostéo contrôle le décollement ou non de la hanche à tester. Si soulèvement → déficit d'extension.</div>
+<div class="tech-step"><div class="label">En décubitus ventral</div>Prise en berceau face antérieure de la cuisse. Main céphalique en contrôle sur le sacrum et l'EIPS. Amener la cuisse en extension sans entraîner de mouvement dans le bassin.</div>
+</div>
+</div>
+<div class="tech-card" id="th-abd" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">3 — Test d'abduction</div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>Sujet en DD. Prise en berceau de la hanche, autre main en contrôle sur l'épine iliaque opposée. Amener la cuisse en abduction et s'arrêter juste avant la perception de déplacement de l'EIAS.</div>
+</div>
+</div>
+<div class="tech-card" id="th-add" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">4 — Test d'adduction <small>+ variante MI opposé en flexion</small></div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>Mêmes modalités que pour l'abduction. La main qui contrôle le bassin est soit sur l'EIAS homolatéral ou controlatéral.</div>
+</div>
+</div>
+<div class="tech-card" id="th-rot" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">5 — Test des rotations</div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">En extension de hanche</div>Ligaments en tension. L'opérateur saisit par les malléoles interne et externe l'extrémité inférieure du MI à tester. Il croise ses mains pour la rotation externe.</div>
+<div class="tech-step"><div class="label">En flexion de hanche</div>Ligaments relâchés. Respecter le plan frontal de rotation, genou à 90°, pas d'ADD ni ABD.</div>
+<div class="info-box teal"><strong>Rotation médiale :</strong> recouvre le pôle antéro-médial et postériorise la tête fémorale.<br/><strong>Rotation latérale :</strong> décomprime le pôle antéro-médial et augmente l'antériorité de la tête fémorale.</div>
+</div>
+</div>
+<div class="tech-card" id="th-gliss" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">6 — Test de glissement antérieur &amp; postérieur de la tête fémorale</div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Sujet en DD en bord de table</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Latéral à la hanche, genou sous la cuisse du sujet</div>
+</div>
+<div class="tech-step"><div class="label">Glissement postérieur</div>Prise en cerceau dans le pli inguinal sur la projection de la tête fémorale. Pression de haut en bas pour postérioriser la tête, puis analyse qualité et quantité de mouvement.</div>
+<div class="tech-step"><div class="label">Glissement antérieur</div>Même prise mais traction de bas en haut pour antérioriser la tête fémorale.</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ══ B — DYSFONCTIONS DE LA TÊTE FÉMORALE ══ -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon amber">⚠️</div><div class="card-title">B — Dysfonctions de la tête fémorale</div></div>
+<div class="card-body">
+<table class="muscle-table">
+<thead><tr><th>Dysfonction</th><th>Signes cliniques</th></tr></thead>
+<tbody>
+<tr><td class="muscle-name">1 — Antériorité<small>La plus fréquente</small></td><td>Flexion limitée/douloureuse · Flexion+ADD limitées+++ (pôle antéro-interne sous l'acétabulum) · Flexion+ABD limitées+</td></tr>
+<tr><td class="muscle-name">2 — Postériorité<small>Plus rare</small></td><td>Extension limitée/douloureuse · Limitation due à la rétraction capsulaire secondaire</td></tr>
+<tr><td class="muscle-name">3 — Adduction<small>Dysfonction en latéralité</small></td><td>Abduction limitée (fréquent arthrose) · Adduction libre · Flexion+ABD limitée+++</td></tr>
+<tr><td class="muscle-name">4 — Abduction<small>Dysfonction en médiale</small></td><td>Adduction limitée (fréquent nécrose) · Abduction libre · Flexion+ADD limitée+++</td></tr>
+<tr><td class="muscle-name">5 — Rotation externe</td><td>Rotation médiale limitée</td></tr>
+<tr><td class="muscle-name">6 — Rotation interne</td><td>Restriction de rotation médiale plus fréquente. Lors de la RM : surface du pôle antéro-interne passe sous le cotyle → glissement postérieur associé nécessaire.</td></tr>
+</tbody>
+</table>
+<div class="info-box coral" style="margin-top:14px;">
+<strong>Contre-indications absolues aux normalisations :</strong><br/>
+      Pathologie inflammatoire de la coxo-fémorale · Ostéonécrose de tête fémorale · Prothèse totale de hanche · Fracture
+    </div>
+<div class="divider"></div>
+<h3 class="sub">Principes des techniques de normalisation</h3>
+<table class="muscle-table">
+<thead><tr><th>Dysfonction</th><th>Principe correcteur</th></tr></thead>
+<tbody>
+<tr><td>Antérieure</td><td>Décompression du pôle supérieur + Postériorisation de la tête</td></tr>
+<tr><td>Postérieure</td><td>Décompression du pôle supérieur + Antériorisation</td></tr>
+<tr><td>Médiale</td><td>Décompression médiale ou interne</td></tr>
+<tr><td>Latérale</td><td>Technique de glissement médial</td></tr>
+<tr><td>Rotatoire</td><td>Si restriction RM → technique en RM · Si restriction RL → technique en RL</td></tr>
+</tbody>
+</table>
+<div class="tech-note" style="margin-top:12px;"><div class="label">Contexte clinique</div>La hanche fait partie du complexe lombo-pelvien. Les normalisations s'accompagneront toujours d'un examen du bassin, de la colonne lombaire et des autres articulations du MI.</div>
+</div>
+</div>
+<!-- ══ C — NORMALISATIONS ══ -->
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">🖐️</div><div class="card-title">C — Normalisations des dysfonctions de la tête fémorale</div></div>
+<div class="card-body">
+<div class="tech-card" id="th-circumd-comp" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">1 — Normalisation globale par circumduction/compression</div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Technique</div>Circumduction progressive avec augmentation du cercle. L'ostéo note les cadrans en restriction et applique une compression dans l'axe du fût fémoral sur ces secteurs. Reteste et répète au besoin.</div>
+<div class="tech-variant"><div class="label">Variante</div>Thrust compressif vers la table si le secteur restreint est isolé.</div>
+<div class="tech-note"><div class="label">Contre-indications</div>Sujet âgé · Pathologie de dégénérescence cartilagineuse (arthrose, nécrose).</div>
+</div>
+</div>
+<div class="tech-card" id="th-decomp-axe" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">2a — Décompression dans l'axe du fémur <small>Décompression du pôle supérieur</small></div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="info-box teal"><strong>But :</strong> Décomprimer le pôle supérieur de la tête fémorale.<br/><strong>Indications :</strong> Dysfonctions antérieure ou postérieure · Arthrose du pôle supéro-externe · Douleur au test flexion-abduction.<br/><strong>Contre-indication :</strong> Genou instable.</div>
+<div class="tech-step"><div class="label">Technique</div>Mise en flexion + légère abduction + rotation externe + traction dans l'axe par prise bimalléolaire. Traction répétée de façon rythmique 5 à 6 fois.</div>
+<div class="tech-step"><div class="label">Variantes en RI/RE</div>Rotation externe → antériorise la tête fémorale. Rotation médiale → postériorise la tête fémorale. Conserver la flexion de hanche (relâchement ligamentaire). Ne pas aller trop loin en RM (risque de verrouillage → décompression se ferait dans la sacro-iliaque).</div>
+<div class="tech-variant"><div class="label">Variante 1 en flexion</div>Pied du sujet calé par la cuisse de l'opérateur. Main passant en arrière du genou se solidarise avec l'avant-bras en saisissant le poignet opposé.</div>
+<div class="tech-variant"><div class="label">Variante 2</div>Patient en décubitus latéral.</div>
+</div>
+</div>
+<div class="tech-card" id="th-decomp-col" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">2b — Décompression dans l'axe du col fémoral <small>Glissement en dehors / Décompression latérale</small></div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="info-box teal"><strong>Indications :</strong> Arthrose du pôle interne · Douleur à la flexion+adduction.<br/><strong>Contre-indication :</strong> Problème vasculaire ou pathologie chirurgicale du pli de l'aine.</div>
+<div class="tech-step"><div class="label">Technique principale</div>Sujet en bord de table. Genou du sujet en appui sur le thorax de l'ostéo. Poussée vers le dehors dans l'axe du col fémoral, répétée de façon rythmique.</div>
+<div class="tech-variant"><div class="label">Variante décubitus latéral</div>Sujet en DD en bord de table, ostéopathe derrière. Main céphalique sur la crête iliaque, main caudale sur la face externe du genou. Poussée sur la face externe du genou + contre-prise sur la crête iliaque → glissement dans l'axe du col vers le dehors. Répéter 5 à 6 fois.</div>
+</div>
+</div>
+<div class="tech-card" id="th-norm-add" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">3 — Normalisation hanche en dysfonction d'adduction <small>Myotensif et HVBA — Dysfonction en latéralité</small></div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="info-box teal"><strong>Indications :</strong> Limitation de l'abduction · Dysfonction en latéralité.<br/><strong>Contre-indication :</strong> Bursite trochantérienne douloureuse.</div>
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Décubitus latéral</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Fente latérale en arrière du sujet</div>
+</div>
+<div class="tech-step"><div class="label">Déroulement</div>Main caudale en prise berceau sur la cuisse, main céphalique sur la crête iliaque. Amener la hanche en abduction jusqu'à la restriction. Placer l'avant-bras céphalique le long de la face externe de la cuisse, coude en appui sur le grand trochanter.</div>
+<div class="tech-step"><div class="label">Myotensif</div>Contraction isométrique des adducteurs → dans le temps de relaxation, gagner dans les paramètres de tension.</div>
+<div class="tech-step"><div class="label">Thrust</div>Thrust en couple avec traction longitudinale. Possible aussi par augmentation rythmique de l'amplitude contre la barrière restrictive.</div>
+</div>
+</div>
+<div class="tech-card" id="th-norm-abd" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">4 — Normalisation hanche en dysfonction d'abduction <small>Myotensif et HVBA — Dysfonction en médiale</small></div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="info-box teal"><strong>Contre-indications :</strong> Pathologie/troubles vasculaires du MI · Chirurgie ou lésion du pli inguinal.</div>
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Décubitus controlatéral</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Debout en arrière du sujet</div>
+</div>
+<div class="tech-step"><div class="label">Déroulement</div>1ère commissure de la main céphalique sur la partie interne de la cuisse (racine). Main caudale en berceau sur face externe. Amener en adduction jusqu'à la barrière. Main céphalique pousse vers la table sur le col fémoral (en dehors).</div>
+<div class="tech-step"><div class="label">Myotensif</div>Contraction isométrique des abducteurs → dans le temps de relaxation, gagner en tension.</div>
+<div class="tech-step"><div class="label">Thrust</div>Thrust en couple vers adduction + glissement externe de la tête + traction longitudinale. Possible sans impulsion par gain répétitif.</div>
+<div class="tech-variant"><div class="label">Variante</div>MI sain controlatéral en flexion sur un coussin.</div>
+</div>
+</div>
+<div class="tech-card" id="th-post" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">5 — Postériorisation de la tête fémorale <small>Dysfonction en antériorité — HVBA</small></div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="info-box teal"><strong>Indications :</strong> Dysfonction antérieure (fréquente) · Limitation de flexion.<br/><strong>Contre-indication :</strong> Bursite rétro-trochantérienne douloureuse · Problème de genou.</div>
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Décubitus dorsal</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Au pied du sujet, en fente arrière</div>
+</div>
+<div class="tech-step"><div class="label">Technique principale</div>Prise bimalléolaire de l'extrémité inférieure du tibia (mains solidarisées). Traction dans l'axe du MI + rotation interne pour postérioriser la tête. Accumulation des paramètres tensionnels → thrust en majorant la RI tout en conservant la traction par recul du corps.</div>
+<div class="tech-variant"><div class="label">Variante en flexion (traction caudale)</div>Mains croisées sur la racine de la cuisse. Traction caudale pour postérioriser + épaule sur la face postérieure du genou pour majorer la flexion. Possible en thrust ou poussée rythmique.</div>
+<div class="tech-variant"><div class="label">Variante en semi-flexion</div>Sujet en DD, genou légèrement fléchi. Appui sur la face antérieure de la racine de la cuisse → thrust direct vers la table.</div>
+</div>
+</div>
+<div class="tech-card" id="th-ant" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">6 — Antériorisation de la tête fémorale <small>Dysfonction en postériorité — HVBA en 2 temps</small></div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="info-box teal"><strong>Indications :</strong> Limitation d'extension · Dysfonction en postériorité.</div>
+<div class="tech-step"><div class="label">1er temps — Décubitus ventral</div>Opérateur côté opposé à la hanche en dysfonction. Prise en berceau face antérieure de la cuisse (main caudale). Main céphalique à cheval sur la crête iliaque et le sacrum. Amener la hanche en extension jusqu'à la barrière tissulaire.</div>
+<div class="tech-step"><div class="label">2ème temps</div>Avant-bras le long du fût fémoral (face postérieure), coude sur la face postérieure du grand trochanter. Thrust en couple vers extension + antériorisation de la tête + traction dans l'axe du fémur. Possible sans impulsion par augmentation répétée des paramètres.</div>
+</div>
+</div>
+<div class="tech-card" id="th-rl" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">7 — Technique en rotation latérale <small>Myotensif et HVBA</small></div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🪑</span>Sujet assis</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Face au sujet en fente avant</div>
+</div>
+<div class="tech-step"><div class="label">Déroulement</div>Pied du sujet posé sur le genou opposé (rotation latérale passive). L'ostéo stabilise le pied par sa cuisse. 1ère commissure de la main proximale dans le pli de l'aine (contrôle). Main distale sur la face interne du genou. Chercher la barrière en RL puis poussée sur la face interne du genou.</div>
+<div class="tech-variant"><div class="label">Variante myotensive</div>Contraction isométrique résistée des rotateurs médiaux.</div>
+</div>
+</div>
+<div class="tech-card" id="th-rm" onclick="this.classList.toggle('open')">
+<div class="tech-card-header"><div class="tech-card-name">8 — Technique en rotation médiale <small>Myotensif et HVBA</small></div><div class="test-toggle">›</div></div>
+<div class="tech-card-body">
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏️</span>Sujet en DD en bord de table</div>
+<div class="tech-position-chip"><span class="chip-icon">🧑‍⚕️</span>Côté opposé</div>
+</div>
+<div class="tech-step"><div class="label">Déroulement</div>Main céphalique sur la partie postérieure de la crête iliaque (débordant sur le sacrum). Main caudale saisit l'extrémité inf du tibia en pince. Imprimer une rotation médiale et s'arrêter juste avant la perception de mouvement dans le bassin.</div>
+<div class="tech-step"><div class="label">Thrust</div>Avec la main céphalique, recliner les tissus de dehors en dedans. Talon de la main sur le bord postérieur du grand trochanter. Accumulation des tensions → force verticale sur le bord postéro-externe du grand trochanter tout en majorant la rotation médiale.</div>
+<div class="tech-variant"><div class="label">Variante myotensive</div>Contractions isométriques résistées des rotateurs externes.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footnote"><cite>Source : P. César D.O — Techniques structurelles ostéopathiques de la Hanche, 1ère année ostéopathie IEOQ 2021. Usage privé.</cite></div>
+</section>
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["biomec-hanche", "arthro-hanche", "tests-hanche", "tech-osteo-hanche"];
+  var SUB_LABELS_LOCAL = {"biomec-hanche": "📖 Biomécanique", "arthro-hanche": "🦴 Arthrologie coxo-fémorale", "tests-hanche": "🩺 Tests orthopédiques", "tech-osteo-hanche": "🖐️ Techniques ostéopathiques"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>

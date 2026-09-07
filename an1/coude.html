@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 1 · Coude</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(1);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🦾</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 1ère Année</h1>
+      <p>Coude — IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="index.html">← Catégories</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><strong>Coude</strong> <span id="crumbSub">› 📖 Biomécanique</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="coude" onclick="showSub('coude')">📖 Biomécanique</button><button type="button" class="nav-tab" data-sub="arthro-coude" onclick="showSub('arthro-coude')">🦴 Arthrologie coude</button><button type="button" class="nav-tab" data-sub="tests-coude" onclick="showSub('tests-coude')">🩺 Tests orthopédiques</button><button type="button" class="nav-tab" data-sub="tech-coude" onclick="showSub('tech-coude')">🔧 Techniques structurelles</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="coude" style="display:block;">
+<div class="section-title">Biomécanique du coude</div>
+<div class="section-sub">Complexe articulaire intermédiaire du membre supérieur — P. César, IEOQ 2024</div>
+<!-- 3 articulations -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">🔩</div>
+<div class="card-title">Les 3 articulations du coude</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead>
+<tr>
+<th>Articulation</th>
+<th>Surfaces articulaires</th>
+<th>Type mécanique</th>
+<th>Degrés de liberté</th>
+<th>Mouvement principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Huméro-ulnaire (HU)<small>Articulation principale</small></div></td>
+<td>Trochlée humérale + grande incisure de l'ulna (grande cavité sigmoïde)</td>
+<td><span class="tag tag-navy">Trochlée (ginglyme)</span></td>
+<td>1 ddl</td>
+<td>Flexion / Extension</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Huméro-radiale (HR)<small>Articulation accessoire</small></div></td>
+<td>Capitulum (condyle) huméral + fovéa (cupule) de la tête radiale</td>
+<td><span class="tag tag-teal">Sphéroïde</span></td>
+<td>2 ddl</td>
+<td>Flexion/Extension + Prono-supination</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Radio-ulnaire proximale (RUP)<small>Articulation de la PS</small></div></td>
+<td>Pourtour tête radiale + petite incisure de l'ulna + ligament annulaire</td>
+<td><span class="tag tag-amber">Trochoïde (pivot)</span></td>
+<td>1 ddl</td>
+<td>Pronation / Supination</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Paramètres osseux + ROM -->
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header">
+<div class="card-icon navy">📐</div>
+<div class="card-title">Paramètres osseux fonctionnels</div>
+</div>
+<div class="card-body">
+<ul style="font-size:13.5px;color:var(--text2);list-style:none;padding:0;display:flex;flex-direction:column;gap:10px;">
+<li style="padding:10px;background:var(--teal-50);border-radius:8px;border:1px solid var(--teal-200);">
+<strong style="color:var(--teal-700);">Valgus physiologique</strong><br/>
+              170° chez l'homme — 160° chez la femme. Permet d'avoir la main légèrement écartée du corps en extension complète.
+            </li>
+<li style="padding:10px;background:var(--navy-100);border-radius:8px;border:1px solid var(--navy-200);">
+<strong style="color:var(--navy-700);">Angle de la palette humérale : 30°</strong><br/>
+              Obliquité de la palette par rapport à la diaphyse humérale → retarde le contact osseux et augmente l'amplitude de flexion jusqu'à 160°.
+            </li>
+<li style="padding:10px;background:var(--amber-100);border-radius:8px;border:1px solid #f0c865;">
+<strong style="color:var(--amber-500);">Spirale de la trochlée</strong><br/>
+              La gorge trochlée enroulée en spirale explique le valgus en extension et l'alignement (ou varus relatif) en flexion complète.
+            </li>
+<li style="padding:10px;background:var(--coral-100);border-radius:8px;border:1px solid #e8a89f;">
+<strong style="color:var(--coral-500);">Axe de flexion-extension</strong><br/>
+              Oblique en dedans (DD) et en bas — axe du capitulum + trochlée humérale.
+            </li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon teal">📊</div>
+<div class="card-title">Amplitudes et facteurs de limitation</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="rom-table">
+<tr>
+<th>Mouvement</th>
+<th>Actif (°)</th>
+<th>Passif (°)</th>
+<th>Facteur limitant</th>
+</tr>
+<tr>
+<td>Flexion</td>
+<td><span class="rom-val">145</span></td>
+<td><span class="rom-val">160</span></td>
+<td>Actif : masses musculaires ant. / Passif : processus coronoïde → fossette coronoïde + tension capsule post. + triceps</td>
+</tr>
+<tr>
+<td>Extension</td>
+<td><span class="rom-val">0°</span></td>
+<td><span class="rom-val">0° à –5°</span></td>
+<td>Bec de l'olécrane → fossette olécrânienne + capsule ant. + fléchisseurs (biceps, brachial ant., brachio-radial)</td>
+</tr>
+<tr>
+<td>Pronation</td>
+<td><span class="rom-val">80–85°</span></td>
+<td><span class="rom-val">~90°</span></td>
+<td>Interposition masses musculaires + membrane interosseuse (tension max fin supination)</td>
+</tr>
+<tr>
+<td>Supination</td>
+<td><span class="rom-val">85–90°</span></td>
+<td><span class="rom-val">~90°</span></td>
+<td>Ligament carré de Dénucé + membrane interosseuse</td>
+</tr>
+</table>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>NB : Pronation légèrement inférieure à la supination en raison de l'interposition des masses musculaires. Morrey BF (1981) : arc fonctionnel = 30°–130° flexion + 50° pron + 50° sup.</cite>
+</div>
+</div>
+</div>
+</div>
+<!-- Muscles -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">💪</div>
+<div class="card-title">Tableau musculaire complet — Coude et avant-bras</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead>
+<tr>
+<th>Action</th>
+<th>Muscle</th>
+<th>Innervation tronculaire</th>
+<th>Innervation radiculaire</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background:var(--teal-50);">
+<td rowspan="5"><span class="tag tag-teal">Flexion coude</span></td>
+<td><div class="muscle-name">Brachialis<small>Principal fléchisseur</small></div></td>
+<td>Musculo-cutané</td>
+<td><span class="tag tag-gray">C5 C6 (C7)</span></td>
+<td>Chef unique — insertions sur l'ulna</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Biceps brachii<small>Supinateur fort</small></div></td>
+<td>Musculo-cutané</td>
+<td><span class="tag tag-gray">C5 C6</span></td>
+<td>Action subluxante sur la tête radiale (↑↗)</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Brachioradialis<small>Neutre en prono-sup.</small></div></td>
+<td>Radial</td>
+<td><span class="tag tag-gray">C5 C6 (C7)</span></td>
+<td>Sup. si en pronation max / Pro. si en supination max</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Pronator teres<small>Accessoire</small></div></td>
+<td>Médian</td>
+<td><span class="tag tag-gray">C6 C7</span></td>
+<td>Accessoire de flexion + pronateur</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Flexor carpi ulnaris<small>Accessoire</small></div></td>
+<td>Ulnaire</td>
+<td><span class="tag tag-gray">C7 C8</span></td>
+<td>Accessoire de flexion</td>
+</tr>
+<tr style="background:var(--navy-100);">
+<td rowspan="2"><span class="tag tag-navy">Extension coude</span></td>
+<td><div class="muscle-name">Triceps brachii<small>Chef. long, médial, latéral</small></div></td>
+<td>Radial</td>
+<td><span class="tag tag-gray">C6 C7 C8</span></td>
+<td>Principal extenseur — 3 chefs</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Anconeus</div></td>
+<td>Radial</td>
+<td><span class="tag tag-gray">C7 C8 T1</span></td>
+<td>Extenseur accessoire — stabilisateur latéral</td>
+</tr>
+<tr style="background:var(--teal-50);">
+<td rowspan="3"><span class="tag tag-teal">Supination AVB</span></td>
+<td><div class="muscle-name">Biceps brachii<small>Principal en flexion</small></div></td>
+<td>Musculo-cutané</td>
+<td><span class="tag tag-gray">C5 C6</span></td>
+<td>Supinateur le plus puissant (coude fléchi)</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Supinateur<small>Principal en extension</small></div></td>
+<td>NIOP (radial)</td>
+<td><span class="tag tag-gray">C5 C6</span></td>
+<td>Actif coude en extension — entouré le radius</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Brachioradialis<small>Si pronation max</small></div></td>
+<td>Radial</td>
+<td><span class="tag tag-gray">C5 C6</span></td>
+<td>Ramène vers position neutre</td>
+</tr>
+<tr style="background:var(--amber-100);">
+<td rowspan="4"><span class="tag tag-amber">Pronation AVB</span></td>
+<td><div class="muscle-name">Pronator teres<small>Proximal — puissant</small></div></td>
+<td>Médian</td>
+<td><span class="tag tag-gray">C6 C7</span></td>
+<td>Chef huméral + chef ulnaire</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Pronator quadratus<small>Distal — fin de course</small></div></td>
+<td>NIOA (médian)</td>
+<td><span class="tag tag-gray">C8 T1</span></td>
+<td>Principal en fin d'amplitude — point d'attache membrane IO</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Flexor carpi radialis<small>Accessoire</small></div></td>
+<td>Médian</td>
+<td><span class="tag tag-gray">C6 C7</span></td>
+<td>Accessoire de pronation</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Brachioradialis<small>Si supination max</small></div></td>
+<td>Radial</td>
+<td><span class="tag tag-gray">C5 C6</span></td>
+<td>Ramène vers position neutre</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Ligaments + Membrane IO -->
+<div class="grid-2" style="margin-bottom:20px;">
+<div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon navy">🔗</div>
+<div class="card-title">LCU — Ligament collatéral ulnaire (LLI)</div>
+</div>
+<div class="card-body">
+<div style="font-size:13px;color:var(--text2);margin-bottom:12px;">Résiste aux forces en <strong>valgus</strong> (ouverture médiale) — sollicité maximalement lors du lancer.</div>
+<table class="muscle-table" style="font-size:12.5px;">
+<tr style="background:var(--navy-900);color:rgba(255,255,255,0.85);">
+<td style="padding:7px 10px;font-weight:600;">Faisceau</td>
+<td style="padding:7px 10px;font-weight:600;">Secteur actif</td>
+<td style="padding:7px 10px;font-weight:600;">Contribution</td>
+</tr>
+<tr>
+<td><strong>Antérieur</strong></td>
+<td>20°–120° flexion</td>
+<td>Principal frein valgus — <strong>55–60%</strong> des forces</td>
+</tr>
+<tr>
+<td><strong>Postérieur</strong></td>
+<td>&gt;120° (ext. complète)</td>
+<td>Contribution accrue en extension</td>
+</tr>
+<tr>
+<td><strong>Transverse (Cooper)</strong></td>
+<td>Toutes positions</td>
+<td>Stabilisation secondaire — renfort interne. Horizontal entre proc. coronoïde et olécrane.</td>
+</tr>
+</table>
+<div class="info-box coral" style="margin-top:10px;font-size:12.5px;">
+<strong>Clinique :</strong> Lésion classique dans le sport de lancer (baseball, javelot). Test en valgus à 25–30° de flexion (élimination verrou osseux olécranien).
+            </div>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon teal">🔗</div>
+<div class="card-title">LCR — Ligament collatéral radial (LLE)</div>
+</div>
+<div class="card-body">
+<div style="font-size:13px;color:var(--text2);margin-bottom:10px;">Résiste aux forces en <strong>varus</strong> (ouverture latérale) — critique en extension complète. Divisé en 3 faisceaux (ant., moy., post.) sans insertion directe sur le radius → se termine sur le <strong>ligament annulaire</strong>.</div>
+<div class="synergy-grid" style="grid-template-columns:1fr;">
+<div class="synergy-item"><strong>Stabilisation rotatoire latérale</strong>Prévient l'instabilité rotato postéro-latérale (ulna + radius pivotent vers l'arrière autour de l'humérus)</div>
+<div class="synergy-item"><strong>Maintien tête radiale / capitulum</strong>Travaille avec le ligament annulaire — empêche luxation/translation latérale lors prono-sup.</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon amber">📋</div>
+<div class="card-title">Moyens d'union passifs — Récapitulatif</div>
+</div>
+<div class="card-body">
+<ul style="font-size:13px;color:var(--text2);list-style:none;padding:0;display:flex;flex-direction:column;gap:7px;">
+<li style="padding:7px 10px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--teal-400);"><strong>Congruence osseuse</strong> — emboitement HU (stable) vs HR (moins stable)</li>
+<li style="padding:7px 10px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--navy-400);"><strong>Capsule articulaire</strong> + membrane synoviale — lâche en frontal (↕ flex/ext)</li>
+<li style="padding:7px 10px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--teal-400);"><strong>Ligament annulaire</strong> — stabilise RUP, encroûté cartilage (face interne)</li>
+<li style="padding:7px 10px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--navy-400);"><strong>Ligament carré de Dénucé</strong> — RUP inf., limite supination</li>
+<li style="padding:7px 10px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--teal-400);"><strong>Ligament triangulaire</strong> — stabilise radio-ulnaire distale (faisceaux ant. + post.) + surface articulaire avec le carpe</li>
+<li style="padding:7px 10px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--amber-500);"><strong>Corde oblique</strong> — extrémité prox. ulna → radius (contreventement)</li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon teal">🔀</div>
+<div class="card-title">Membrane interosseuse de l'avant-bras</div>
+</div>
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:10px;">
+<strong>Structure :</strong> Épaisseur ~2 mm, fibres orientées en diagonale de haut en bas, de l'ulna vers le radius. S'étend entre les bords interosseux du radius (médial) et de l'ulna (latéral).
+            </div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12.5px;">
+<div style="padding:8px;background:var(--teal-50);border-radius:6px;border:1px solid var(--teal-200);">
+<strong style="color:var(--teal-700);">Coaptation radius/ulna</strong><br/>Unit les 2 os tout en permettant leurs mouvements relatifs (prono-sup.)
+              </div>
+<div style="padding:8px;background:var(--navy-100);border-radius:6px;border:1px solid var(--navy-200);">
+<strong style="color:var(--navy-700);">Transmission des forces</strong><br/>Répartit les forces du radius vers l'ulna (appui main → protège art. prox. et dist.)
+              </div>
+<div style="padding:8px;background:var(--amber-100);border-radius:6px;border:1px solid #f0c865;">
+<strong style="color:var(--amber-500);">Point d'attache musculaire</strong><br/>Long fléchisseur pouce, carré pronateur et autres muscles profonds
+              </div>
+<div style="padding:8px;background:var(--coral-100);border-radius:6px;border:1px solid #e8a89f;">
+<strong style="color:var(--coral-500);">Tension maximale</strong><br/>En fin de supination → coaptation max. Certaines fibres tendues en fin de pronation
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Prono-supination -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">🔄</div>
+<div class="card-title">Cinématique de la prono-supination</div>
+</div>
+<div class="card-body">
+<div class="grid-2">
+<div>
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:12px;">
+<strong>Axe du mouvement :</strong> passe par le centre de la tête radiale (proximalement) et la styloïde ulnaire (distalement). L'extrémité inférieure du radius tourne autour de cet axe.
+            </p>
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:12px;">
+<strong>Évaluation clinique :</strong> coude fléchi à 90° (pour neutraliser les rotations médiales/latérales du bras).
+            </p>
+<div class="info-box teal">
+<strong>Supination :</strong> 2 os parallèles, membrane interosseuse en tension, tête radiale se postériorise.
+            </div>
+<div class="info-box amber" style="margin-top:8px;">
+<strong>Pronation :</strong> 2 os se croisent, masses musculaires interposées. Tête radiale (proximale) → antériorisation. Tête de l'ulna (distale) → postériorisation + latéralisation.
+            </div>
+</div>
+<div>
+<div class="info-box coral" style="margin-bottom:10px;">
+<strong>Point faible clinique :</strong> Stabilité de la tête radiale dans les mouvements forcés de prono-supination. Traction brutale ou répétée → subluxation inférieure de la tête radiale à l'intérieur du ligament annulaire = <strong>syndrome de la pronation douloureuse de l'enfant</strong> (« nursemaid's elbow »).
+            </div>
+<h3 class="sub">Stabilité compartimentale en flexion</h3>
+<ul style="font-size:13.5px;color:var(--text2);list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;">
+<li style="padding:8px 12px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-500);">
+<strong>Compartiment médial (HU) :</strong> Stable par emboitement osseux (congruence trochlée/incisure sigmoïde)
+              </li>
+<li style="padding:8px 12px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">
+<strong>Compartiment latéral (HR + RUP) :</strong> Moins stable (congruence réduite) → rôle capital du ligament annulaire + fibres LCR. Action subluxante du biceps sur le radius.
+              </li>
+<li style="padding:8px 12px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-400);">
+<strong>Extension complète :</strong> LCL faisceau antérieur + LCM faisceau postérieur globalement tendus → stabilité latérale assurée.
+              </li>
+</ul>
+</div>
+</div>
+<div class="footnote">
+<cite>Sources : P. César IEOQ 2024 ; Morrey BF, An KN (1983) — Articular and ligamentous contributions to the stability of the elbow joint ; Kapandji IA T.1 (7e éd.)</cite>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="arthro-coude" style="display:none;">
+<div class="section-title">Arthrologie — Articulations du coude</div>
+<div class="section-sub">Thomas Gautier D.O. · IEOQ Année 1 — Complexe articulaire huméro-ulnaire, huméro-radiale et radio-ulnaire proximale</div>
+<!-- Introduction -->
+<div class="info-box teal" style="margin-bottom:20px;">
+<strong>3 articulations, 1 cavité :</strong> Huméro-ulnaire (ginglyme) + Huméro-radiale (sphéroïde) + Radio-ulnaire proximale (trochoïde). Même cavité articulaire. Fonctionnellement : seules les 2 premières interviennent dans les mouvements du coude. Les luxations du coude sont les plus fréquentes chez l'adolescent (chute sur la paume en extension).
+    </div>
+<!-- Éléments en présence -->
+<div class="test-section-title">🦴 Éléments en présence (4)</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon teal">🦴</div>
+<div class="card-title">Surfaces articulaires</div>
+</div>
+<div class="card-body">
+<table class="muscle-table">
+<thead>
+<tr><th>Os / Structure</th><th>Surface</th><th>Type</th><th>Caractéristiques</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Humérus<small>Trochlée</small></div></td>
+<td>Partie médiale</td>
+<td><span class="tag tag-teal">Ginglyme</span></td>
+<td>Poulie pleine à grand axe transversal (légèrement oblique en dedans et en bas). Gorge + 2 joues. Joue médiale plus saillante, plus basse, plus large.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Humérus<small>Capitulum</small></div></td>
+<td>Partie latérale (inf. et ant. seulement)</td>
+<td><span class="tag tag-navy">Sphéroïde</span></td>
+<td>Demi-sphère légèrement aplatie transversalement. Regarde en bas et nettement en avant.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Ulna<small>Incisure trochléaire</small></div></td>
+<td>Face antéro-supérieure</td>
+<td><span class="tag tag-teal">Ginglyme</span></td>
+<td>Poulie creuse à grand axe transversal. Crête sagittale + 2 joues. Encroûtée de cartilage hyalin sauf au niveau du sillon transversal coronoïde/olécrâne.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Ulna<small>Incisure radiale</small></div></td>
+<td>Face latérale du coronoïde</td>
+<td><span class="tag tag-amber">Trochoïde</span></td>
+<td>Quadrangulaire à grand axe antéro-postérieur. Bords ant. et post. → insertion lig. annulaire ; bord inf. → lig. carré.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Radius<small>Fovéa</small></div></td>
+<td>Face supérieure de la tête</td>
+<td><span class="tag tag-navy">Sphéroïde</span></td>
+<td>Dépression ovalaire, grossièrement transversale. Non congruente. Limite antéro-médiale biseautée → zone capitulo-trochléaire.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Radius<small>Pourtour</small></div></td>
+<td>Bande sous la fovéa</td>
+<td><span class="tag tag-amber">Trochoïde</span></td>
+<td>Répond à l'incisure radiale de l'ulna et au lig. annulaire. Hauteur plus importante à la partie antéro-médiale.</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Ligament annulaire<small>Fibro-cartilage</small></div></td>
+<td>Cravate la tête radiale</td>
+<td><span class="tag tag-amber">Trochoïde congruente</span></td>
+<td>Plan superficiel ligamentaire + plan profond articulaire (cartilage hyalin). S'insère de part et d'autre de l'incisure radiale de l'ulna.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Moyens d'unions -->
+<div class="test-section-title">🔗 Moyens d'unions</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon navy">🔗</div>
+<div class="card-title">Capsule — Particularités</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:7px;font-size:13.5px;">
+<div style="padding:8px 12px;background:var(--teal-50);border-radius:7px;border-left:2px solid var(--teal-400);">Unique pour les 3 interlignes.</div>
+<div style="padding:8px 12px;background:var(--teal-50);border-radius:7px;border-left:2px solid var(--teal-400);">Lâche sagittalement et tendue sur les côtés → d'où les ligaments collatéraux.</div>
+<div style="padding:8px 12px;background:var(--navy-100);border-radius:7px;border-left:2px solid var(--navy-400);">Culs-de-sac ant. (en flexion) et post. (en extension) — tendus par fibres du brachial (av.) et vaste médial triceps (arr.).</div>
+<div style="padding:8px 12px;background:var(--amber-100);border-radius:7px;border-left:2px solid var(--amber-500);">Repli annulaire autour de la tête radiale + insertion à distance → autorise la prono-supination sans tension prématurée.</div>
+</div>
+<p style="font-size:13px;color:var(--text2);margin-top:10px;"><strong>Insertions :</strong> Sur l'humérus → longe les surfaces cartilagineuses + englobe fosses coronoïdienne (av.) et olécrânienne (arr.). Sur l'ulna → longe le pourtour des 2 incisures réunies. Sur le radius → partie moyenne du col (à distance). Sur le lig. annulaire → adhère à sa face périphérique.</p>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon teal">📋</div>
+<div class="card-title">Ligaments collatéraux</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub">LCU — Ligament collatéral ulnaire</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Origine :</strong> Épicondyle médial</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>3 faisceaux :</strong> ant. (→ coronoïde), moy. vertical (le plus puissant, renforcé FSD), post. (→ olécrâne)</div>
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;border-left:2px solid var(--teal-400);"><strong>Rôle :</strong> Le plus puissant du coude — s'oppose à l'exagération du valgus</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Lig. accessoire :</strong> Ulno-ulnaire (olécrâne → coronoïde), renforce le LCU</div>
+</div>
+</div>
+<div>
+<h3 class="sub">LCR — Ligament collatéral radial</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Origine :</strong> Épicondyle latéral</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>3 faisceaux :</strong> ant. (cravate lat. la tête radiale + renforce lig. annulaire ant.), moy. (le plus puissant, renforce lig. annulaire post. + renforcé supinateur), post. (→ olécrâne)</div>
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;border-left:2px solid var(--teal-400);"><strong>Terminaison :</strong> Incisure radiale de l'ulna (et non au radius)</div>
+</div>
+</div>
+</div>
+<div style="margin-top:12px;">
+<h3 class="sub">Ligament annulaire (fibro-cartilage)</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;">Fibres inférieures resserrées → retenue inférieure de la tête radiale.</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;">Fibres supérieures → prolongées aux bords ant. et post. du lig. carré → poche ligamentaire solide.</div>
+</div>
+<h3 class="sub" style="margin-top:10px;">Ligament carré</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:6px;"><strong>Origine :</strong> Bord inf. de l'incisure radiale de l'ulna → <strong>Terminaison :</strong> Partie médiale du col radial</div>
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;border-left:2px solid var(--teal-400);">Bords ant. et post. alternativement tendus/détendus en prono-supination — renforce la partie inférieure de l'interligne RU supérieure.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon amber">🔩</div>
+<div class="card-title">Ligaments à distance &amp; Éléments stabilisateurs</div>
+</div>
+<div class="card-body">
+<div class="grid-2" style="gap:14px;">
+<div>
+<h3 class="sub">Ligaments à distance (2)</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--amber-100);border-radius:6px;"><strong>Corde oblique (Weitbrecht) :</strong> oblique en dedans et en haut</div>
+<div style="padding:7px 10px;background:var(--amber-100);border-radius:6px;"><strong>MIO :</strong> membrane interosseuse — oblique en dedans et en bas</div>
+</div>
+</div>
+<div>
+<h3 class="sub">Éléments stabilisateurs musculaires</h3>
+<div style="display:flex;flex-direction:column;gap:5px;font-size:13px;">
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;"><strong>FSD :</strong> renforce faisceau moyen du LCU</div>
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;"><strong>Supinateur :</strong> renforce faisceau moyen du LCR</div>
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;"><strong>Anconé :</strong> franchit la partie latérale de l'interligne — coaptation</div>
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;"><strong>Brachial :</strong> adhère à la face antérieure de la capsule</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Intérêts ostéopathiques -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon amber">⚕️</div>
+<div class="card-title">Intérêts ostéopathiques</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div class="info-box teal">
+<strong>Morpho-palpatoire :</strong> En extension : alignement des 2 épicondyles et de l'olécrâne. En flexion : rapport triangulé (sommet inférieur). Palpation possible sur les côtés, notamment en dehors (contact huméro-radial accessible) — mobiliser la tête radiale par rapport au capitulum.
+          </div>
+<div class="info-box amber">
+<strong>Radio-ulnaire supérieure :</strong> Congruente et stable grâce au lig. annulaire (plaquage tête radiale sur l'ulna). Fonctionnellement couplée à la RUI.
+          </div>
+<div class="info-box teal">
+<strong>Huméro-radiale :</strong> Contact imparfait (assuré seulement en coaptation musculaire ou valgus). Sphéroïde n'exploitant que 2/3 degrés de liberté (ulna limite le 3e). La tête radiale est plus liée à l'ulna qu'à l'humérus.
+          </div>
+<div class="info-box amber">
+<strong>Huméro-ulnaire :</strong> Très stable. Une luxation provoque souvent une fracture de l'olécrâne ou du bec coronoïdien.
+          </div>
+</div>
+</div>
+</div>
+<div class="footnote"><cite>Source : Thomas Gautier D.O. — Arthrologie membre supérieur, Année 1, IEOQ · Chapitre 2 : Articulations du coude · Usage privé</cite></div>
+</section>
+<section class="section" id="tests-coude" style="display:none;">
+<div class="section-title">Tests Orthopédiques — Coude</div>
+<div class="section-sub">Ligaments collatéraux, épicondylalgies, tendon bicipital &amp; nerf ulnaire — P. César 1ère année IEOQ · Source : Piriforme.fr</div>
+<!-- LIGAMENT COLLATÉRAL MÉDIAL -->
+<div class="test-section-title">🔵 Tests ligamentaires — LCM (face médiale)</div>
+<div class="test-grid-2">
+<div class="test-card" id="tco-valgus">
+<div class="test-card-header" onclick="toggleTest('tco-valgus')">
+<div class="test-card-name">Test de provocation en Valgus <small>LCM du coude</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">LCM</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Rotation latérale d'épaule, coude à 20° de flexion</div></div>
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Ligament collatéral médial (LCM) du coude</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient assis ou debout. Thérapeute empaume le coude (pouce sur l'interligne médiale) et maintient l'extrémité distale de l'avant-bras. Application d'une force valgisante progressive pour mettre en tension le LCM.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur reproduite en regard de la face médiale du coude ET/OU excès de mobilité comparativement au côté controlatéral → lésion du LCM.</div>
+<div class="info-box teal" style="font-size:13px;margin-top:8px;"><strong>Comparaison bilatérale indispensable :</strong> Le valgus physiologique varie selon les individus. Seul un excès relatif par rapport au côté sain est significatif.</div>
+</div>
+</div>
+<div class="test-card" id="tco-moving-valgus">
+<div class="test-card-header" onclick="toggleTest('tco-moving-valgus')">
+<div class="test-card-name">Moving Valgus Stress Test <small>O'Driscoll 2005</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">LCM</span><span class="tag tag-teal">Gold Standard</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position départ</div><div class="value">Coude en flexion 90°, avant-bras en supination</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 100% · Sp: 75% (O'Driscoll 2005)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Force valgisante imposée et maintenue sur l'extrémité distale du bras et de l'avant-bras. Le clinicien amène ensuite le coude de la flexion (90°) vers l'extension complète, tout en maintenant la contrainte en valgus.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur reproduite en regard du LCM lors du passage de la flexion vers l'extension complète → lésion du LCM médial. La douleur est maximale entre 70° et 120° de flexion (zone critique).</div>
+<div style="margin-top:8px;">
+<div class="test-sensitivity"><span style="min-width:80px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill high" style="width:100%"></div></div><span>100%</span></div>
+<div class="test-sensitivity"><span style="min-width:80px;">Spécificité</span><div class="bar-wrap"><div class="bar-fill mid" style="width:75%"></div></div><span>75%</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- LIGAMENT COLLATÉRAL LATÉRAL -->
+<div class="test-section-title">🟡 Tests ligamentaires — LCL &amp; instabilité postéro-latérale</div>
+<div class="test-grid-2">
+<div class="test-card" id="tco-varus">
+<div class="test-card-header" onclick="toggleTest('tco-varus')">
+<div class="test-card-name">Test de provocation en Varus <small>LCL du coude</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">LCF</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Rotation interne d'épaule, coude à 20° de flexion</div></div>
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Ligament collatéral latéral (LCL) du coude</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Thérapeute empaume le coude (pouce sur l'interligne latérale). Application d'une force varisante (fermeture latérale) progressive. Coude en légère flexion à 20°.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur reproduite en regard de la face latérale du coude ET/OU excès de mobilité par rapport au côté controlatéral → lésion du LCL.</div>
+</div>
+</div>
+<div class="test-card" id="tco-chairpushup">
+<div class="test-card-header" onclick="toggleTest('tco-chairpushup')">
+<div class="test-card-name">Chair Push-Up Test <small>Instabilité postéro-latérale</small></div>
+<div class="test-card-tags"><span class="tag tag-amber">LCF</span><span class="tag tag-coral">IPL</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Assis, mains sur accoudoirs en supination, coudes fléchis 90°</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 88% · Se combinée avec Prone push test: 100%</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient assis avec les mains sur les accoudoirs d'une chaise, avant-bras en supination, coudes fléchis à 90°. On demande au patient de se soulever du siège par poussée sur ses bras.</div>
+<div class="test-positive"><div class="label">Test positif</div>Entre 30° de flexion et l'extension complète : ressaut, craquement, appréhension OU douleur → instabilité postéro-latérale du coude (LCL ulnaire insuffisant). Combiné au Prone Push Test → sensibilité 100%.</div>
+<div class="test-sensitivity"><span style="min-width:80px;">Sensibilité</span><div class="bar-wrap"><div class="bar-fill high" style="width:88%"></div></div><span>88%</span></div>
+</div>
+</div>
+</div>
+<!-- ÉPICONDYLALGIES LATÉRALES -->
+<div class="test-section-title">🟠 Tests épicondylalgie latérale — Tennis Elbow</div>
+<div class="test-grid-2">
+<div class="test-card" id="tco-cozen">
+<div class="test-card-header" onclick="toggleTest('tco-cozen')">
+<div class="test-card-name">Test de Cozen <small>Epicondylalgie latérale</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Tennis Elbow</span><span class="tag tag-amber">Extension active</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Épicondyle latéral · Long et court extenseur radial du carpe</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 84% (Saroja et al.) — données préliminaires</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient assis. Thérapeute maintient l'avant-bras. Poignet en pronation, inclinaison radiale et flexion, poing fermé. Résistance appliquée sur la face dorsale de la main contre laquelle le patient effectue une extension active du poignet.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur reproduite en regard de l'épicondyle latéral ou du long/court extenseur radial du carpe → épicondylalgie latérale (Tennis Elbow).</div>
+<div class="info-box amber" style="font-size:13px;margin-top:8px;"><strong>Précaution :</strong> Les données de validité sont issues d'une seule publication de qualité méthodologique limitée (Saroja et al.). À interpréter avec prudence.</div>
+</div>
+</div>
+<div class="test-card" id="tco-mill">
+<div class="test-card-header" onclick="toggleTest('tco-mill')">
+<div class="test-card-name">Test de Mill <small>Epicondylalgie latérale — Passif</small></div>
+<div class="test-card-tags"><span class="tag tag-coral">Tennis Elbow</span><span class="tag tag-gray">Passif</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Épicondyle latéral · Extenseurs radiaux du carpe</div></div>
+<div class="test-detail-item"><div class="label">Stats</div><div class="value">Se: 53% (Saroja et al.) — données préliminaires</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Thérapeute palpe l'épicondyle latéral tout en amenant PASSIVEMENT l'avant-bras en pronation + flexion du poignet + extension du coude. Mise en tension passive du long et court extenseur radial du carpe.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur reproduite en regard de l'épicondyle latéral ou des extenseurs radiaux → épicondylalgie latérale.</div>
+<div class="info-box teal" style="font-size:13px;margin-top:8px;"><strong>Cozen vs Mill :</strong> Le Test de Cozen sollicite les extenseurs en actif (contraction), le Test de Mill les étire passivement. Utiliser les deux en combinaison pour une meilleure évaluation.</div>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=8K7jzDIUpLI" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+<div class="video-links">
+<a class="video-btn physiotutors" href="https://www.youtube.com/watch?v=r_A84ox9JRM" rel="noopener" target="_blank">Physiotutors EN</a>
+</div>
+</div>
+</div>
+<!-- ÉPICONDYLALGIES MÉDIALES -->
+<div class="test-section-title">🟢 Tests épicondylalgie médiale — Golfer's Elbow</div>
+<div class="test-grid-2">
+<div class="test-card" id="tco-cozeninv">
+<div class="test-card-header" onclick="toggleTest('tco-cozeninv')">
+<div class="test-card-name">Test de Cozen Inversé <small>Golfer's Elbow — Actif</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Golfer's Elbow</span><span class="tag tag-amber">Flexion active</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Épicondyle médial · Fléchisseurs du poignet</div></div>
+<div class="test-detail-item"><div class="label">Pathologie</div><div class="value">Épicondylalgie médiale (Golfer's Elbow)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient assis. Thérapeute maintient l'avant-bras et palpe l'épicondyle médial. Poignet en supination et flexion, poing fermé. Résistance appliquée sur la face palmaire de la main contre laquelle le patient effectue une flexion active du poignet.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur reproduite en regard de l'épicondyle médial → épicondylalgie médiale. Évaluation en contraction contre résistance.</div>
+</div>
+</div>
+<div class="test-card" id="tco-millinv">
+<div class="test-card-header" onclick="toggleTest('tco-millinv')">
+<div class="test-card-name">Test de Mill Inversé <small>Golfer's Elbow — Passif</small></div>
+<div class="test-card-tags"><span class="tag tag-teal">Golfer's Elbow</span><span class="tag tag-gray">Passif</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-full"><div class="label">Technique</div>Thérapeute palpe l'épicondyle médial tout en amenant PASSIVEMENT l'avant-bras en supination + extension du poignet + extension du coude. Mise en tension passive des fléchisseurs du poignet.</div>
+<div class="test-positive"><div class="label">Test positif</div>Douleur reproduite en regard de l'épicondyle médial → épicondylalgie médiale.</div>
+<div class="info-box teal" style="font-size:13px;margin-top:8px;"><strong>Cozen inversé vs Mill inversé :</strong> Tests miroirs du coude latéral. Cozen inversé = actif (fléchisseurs en contraction). Mill inversé = passif (fléchisseurs en étirement). Combinaison recommandée pour différencier l'origine de la douleur.</div>
+</div>
+</div>
+</div>
+<!-- TENDON BICIPITAL & NERF ULNAIRE -->
+<div class="test-section-title">🟣 Tendon du biceps &amp; nerf ulnaire</div>
+<div class="test-grid-2">
+<div class="test-card" id="tco-hook">
+<div class="test-card-header" onclick="toggleTest('tco-hook')">
+<div class="test-card-name">Test de Hook <small>Test du Crochet — Tendon bicipital distal</small></div>
+<div class="test-card-tags"><span class="tag tag-navy">Biceps distal</span><span class="tag tag-coral">Rupture</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Abduction épaule 90°, rotation neutre, coude fléchi 90°, avant-bras en supination</div></div>
+<div class="test-detail-item"><div class="label">Structure cible</div><div class="value">Tendon distal du biceps (rupture totale ou partielle)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient place le bras à 90° d'abduction, rotation neutre d'épaule, coude fléchi à 90°, avant-bras en supination. Le clinicien tente de palper (crocheter) le tendon du biceps dans le creux antécubital avec l'index. Comparaison bilatérale.</div>
+<div class="test-positive"><div class="label">Test positif</div>Palpation du tendon du biceps anormale ou absente → rupture totale ou partielle distale du tendon du biceps brachial. En cas de rupture complète : rétraction visible du ventre musculaire (signe de Popeye).</div>
+<div class="info-box coral" style="font-size:13px;margin-top:8px;"><strong>Urgence :</strong> Rupture distale du biceps = consultation chirurgicale urgente si découverte récente. Risque de perte de force en supination (-40%) et flexion (-30%).</div>
+</div>
+</div>
+<div class="test-card" id="tco-tinel">
+<div class="test-card-header" onclick="toggleTest('tco-tinel')">
+<div class="test-card-name">Test de Tinel du coude <small>Nerf ulnaire — Tunnel cubital</small></div>
+<div class="test-card-tags"><span class="tag tag-gray">Nerf ulnaire</span><span class="tag tag-gray">Syndrome du canal cubital</span></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Cible anatomique</div><div class="value">Nerf ulnaire dans la gouttière épitrochlée-olécranienne (tunnel cubital)</div></div>
+<div class="test-detail-item"><div class="label">Territoire sensitif</div><div class="value">4ème et 5ème doigts (annulaire et auriculaire)</div></div>
+</div>
+<div class="test-detail-full"><div class="label">Technique</div>Patient avec coude en flexion, main sur l'épaule homolatérale. Le thérapeute repère le tunnel cubital et effectue des percussions répétitives avec les bouts des doigts (ou un marteau réflexe) en regard du passage du nerf ulnaire dans la gouttière épitrochlée-olécranienne.</div>
+<div class="test-positive"><div class="label">Test positif</div>Percussion de la gouttière reproduit les symptômes du patient : paresthésies (fourmillements, décharges électriques) dans le 4ème et/ou 5ème doigt OU douleur → syndrome du canal cubital (compression du nerf ulnaire).</div>
+<div class="info-box amber" style="font-size:13px;margin-top:8px;"><strong>Contexte clinique :</strong> Deuxième syndrome de compression nerveuse du membre supérieur après le canal carpien. Aggravé par la flexion prolongée du coude (ex. : téléphone, sommeil). Comparer avec le test de Tinel au poignet pour éliminer une compression distale.</div>
+</div>
+</div>
+</div>
+<!-- TABLEAU RÉCAPITULATIF -->
+<div class="card" style="margin-top:24px;">
+<div class="card-header">
+<div class="card-icon teal">📋</div>
+<div class="card-title">Récapitulatif — Tests du coude par structure</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Structure / Pathologie</th><th>Test(s) recommandé(s)</th><th>Points clés</th></tr></thead>
+<tbody>
+<tr><td><strong>LCM (face médiale)</strong></td><td>Test valgus statique + Moving Valgus Stress Test</td><td>Moving valgus = Se 100% · Douleur 70–120° flexion</td></tr>
+<tr><td><strong>LCF (face latérale) &amp; IPL</strong></td><td>Test varus + Chair Push-Up Test</td><td>Se 88% seul · 100% avec Prone Push Test</td></tr>
+<tr><td><strong>Épicondylalgie latérale</strong></td><td>Cozen (actif) + Mill (passif)</td><td>Cozen Se 84% · Combination augmente la valeur</td></tr>
+<tr><td><strong>Épicondylalgie médiale</strong></td><td>Cozen inversé (actif) + Mill inversé (passif)</td><td>Même principe que côté latéral, en miroir</td></tr>
+<tr><td><strong>Tendon bicipital distal</strong></td><td>Test de Hook / Crochet</td><td>Absence du tendon palpable = rupture · Urgence chir.</td></tr>
+<tr><td><strong>Nerf ulnaire</strong></td><td>Test de Tinel du coude</td><td>Paresthésies D4–D5 · Comparer avec Tinel au poignet</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="footnote">
+<cite>Sources : P. César, Cours 1ère année IEOQ · Piriforme.fr · O'Driscoll SW et al. (2005) Moving valgus stress test — Am J Sports Med · Saroja et al. — Cozen &amp; Mill validity · Walz DM et al. (2010) Biceps tendon rupture</cite>
+</div>
+</section>
+<section class="section" id="tech-coude" style="display:none;">
+<div class="section-title">Techniques Structurelles — Coude</div>
+<div class="section-sub">Tests &amp; normalisations ostéopathiques — P. César 1ère année IEOQ 2024 · Usage privé</div>
+<div class="info-box teal" style="margin-bottom:20px;font-size:13px;">
+<strong>Principe fondamental :</strong> Les positions des mains sont identiques pour le test et la correction. L'ostéopathe recherche la barrière restrictive puis applique thrust ou impulsions répétées dans le sens du pli du coude.
+    </div>
+<div class="test-section-title">🔵 1 — Dysfonction d'Abduction du Coude</div>
+<div class="tech-card" id="tech-co-abd-a">
+<div class="tech-card-header" onclick="toggleTest('tech-co-abd-a')">
+<div class="test-card-name">Technique Gaping Huméro-Radiale <small>Ouverture latérale capitulum–cupule radiale</small></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">But</div>Ouverture de l'interligne articulaire latéralement entre le capitulum huméral et la cupule radiale.</div>
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>Décubitus dorsal</div>
+<div class="tech-position-chip"><span class="chip-icon">👐</span>Ostéo latéral en fente avant</div>
+</div>
+<div class="tech-step"><div class="label">Prise main latérale</div>Index crochète le pourtour de l'olécrâne. Le poignet du patient repose sur l'avant-bras de l'opérateur.</div>
+<div class="tech-step"><div class="label">Prise main médiale</div>Contact par la 1ère commissure sur la partie supérieure de l'interligne huméro-ulnaire. L'avant-bras du patient calé entre le thorax et le bras du praticien, main en position neutre, avant-bras en <strong>supination</strong>. Le talon de la main médiale sur l'épicondyle médial du patient, perpendiculaire au pli de flexion.</div>
+<div class="tech-step"><div class="label">Normalisation</div>Légère flexion du coude 5 à 10°. Légère traction de séparation + poussée latérale de DD en DH, avant-bras en supination, accumulation de tension vers la barrière restrictive. Thrust ou impulsions répétées dans le sens du pli du coude.</div>
+<div class="tech-variant"><div class="label">Variante — Prise de main interne modifiée</div>L'opérateur place son pouce parallèle au pli du coude, avant-bras de l'ostéo perpendiculaire à l'interligne articulaire. Pouce et avant-bras dans le même axe. La main libre du patient repose sur l'avant-bras du praticien.</div>
+</div>
+</div>
+<div class="tech-card" id="tech-co-abd-b">
+<div class="tech-card-header" onclick="toggleTest('tech-co-abd-b')">
+<div class="test-card-name">Technique Gaping Huméro-Ulnaire Latéral &amp; Radio-Ulnaire <small>Ouverture latérale grande incisure–trochlée</small></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">But</div>Ouvrir l'interligne latéralement entre la grande incisure ulnaire et la trochlée humérale.</div>
+<div class="tech-step"><div class="label">Prises de mains</div>Index de la main latérale sur l'espace articulaire huméro-radial (contrôle l'ouverture). Index de la main interne crochète la partie latérale de l'olécrâne, pouce de la main interne parallèle au pli du coude, avant-bras du thérapeute perpendiculaire au pli du coude du patient.</div>
+<div class="tech-step"><div class="label">Test &amp; Normalisation</div>L'opérateur <strong>augmente légèrement la rotation externe humérale</strong> du patient avec l'intention d'ouverture de l'espace huméro-ulnaire latéral et radio-ulnaire. Normalisation : légère flexion + traction, impulsions répétées ou thrust dans le sens du pli du coude de DD en DH par la main médiale (avant-bras de l'ostéopathe dans l'alignement du pli du coude).</div>
+</div>
+</div>
+<div class="test-section-title">🟡 2 — Dysfonction d'Adduction du Coude</div>
+<div class="tech-card" id="tech-co-add">
+<div class="tech-card-header" onclick="toggleTest('tech-co-add')">
+<div class="test-card-name">Technique Gaping Huméro-Ulnaire Médial <small>Ouverture médiale grande incisure–trochlée</small></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">But</div>Ouvrir l'interligne articulaire médialement entre la grande incisure ulnaire et la trochlée humérale.</div>
+<div class="tech-positions">
+<div class="tech-position-chip"><span class="chip-icon">🛏</span>Décubitus dorsal</div>
+<div class="tech-position-chip"><span class="chip-icon">👐</span>Ostéo latéral, flexion de genoux</div>
+</div>
+<div class="tech-step"><div class="label">Positionnement</div>La partie distale du membre supérieur du patient entre le bras et le thorax de l'ostéopathe.</div>
+<div class="tech-step"><div class="label">Main latérale</div>Index crochète l'olécrâne pour contrôler l'ouverture médiale huméro-ulnaire. Contact avec la 1ère commissure sur le pli du coude, légèrement au-dessus du pli, par sa face externe.</div>
+<div class="tech-step"><div class="label">Main médiale</div>Index sur l'interligne articulaire en palpation pour contrôler l'ouverture médiale.</div>
+<div class="tech-step"><div class="label">Normalisation</div>Poussée rythmique ou thrust avec avant-bras perpendiculaire dans le sens du pli du coude.</div>
+<div class="tech-variant"><div class="label">Variante</div>La main du patient est libre et repose sur l'avant-bras de l'ostéopathe — permet un meilleur relâchement musculaire du patient.</div>
+</div>
+</div>
+<div class="test-section-title">🟠 3 — Dysfonction de la Tête Radiale</div>
+<div class="tech-card" id="tech-co-rad">
+<div class="tech-card-header" onclick="toggleTest('tech-co-rad')">
+<div class="test-card-name">Test &amp; Normalisation Tête Radiale Antérieure / Postérieure</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-note"><div class="label">Physiologie articulaire</div>La tête radiale se <strong>postériorise en flexion</strong> et s'<strong>antériorise en extension</strong>. Le thérapeute apprécie le mouvement de la tête radiale lors des mouvements de flexion/extension du coude.</div>
+<div class="tech-step"><div class="label">Test Tête Radiale</div>Palpation de la tête radiale sur la face latérale du coude. Flexion/extension passive du coude. Appréciation du mouvement antéro-postérieur de la tête radiale. Une tête radiale qui ne se postériorise pas en flexion = dysfonction en antériorité. Une tête radiale qui ne s'antériorise pas en extension = dysfonction en postériorité.</div>
+<div class="tech-step"><div class="label">B — Normalisation Dysfonction en Postériorité</div>Contact sur la face antérieure de la tête radiale. Mouvement rotatoire de bas en haut pour postérioriser la tête radiale vers la position de flexion.</div>
+<div class="tech-variant"><div class="label">Variante normalisation postériorité (patient assis)</div>L'opérateur contacte la tête radiale par la face latérale de l'index et effectue un mouvement rotatoire de bas en haut. Cette prise permet de mieux « doser » la poussée sur la tête radiale.</div>
+<div class="tech-step"><div class="label">C — Normalisation Dysfonction en Antériorité</div>Contact par p2p3 (2ème et 3ème doigts) ou pouce sur la face antérieure de la tête radiale. Poussée vers l'arrière en corrélation avec le mouvement d'extension du coude. Patient en décubitus.</div>
+</div>
+</div>
+<div class="test-section-title">🟣 4 — Membrane Interosseuse Radio-Ulnaire</div>
+<div class="tech-card" id="tech-co-mio">
+<div class="tech-card-header" onclick="toggleTest('tech-co-mio')">
+<div class="test-card-name">Test &amp; Technique des Baguettes — Membrane Interosseuse</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="tech-card-body">
+<div class="tech-step"><div class="label">Position</div>Patient en décubitus, bras le long du corps. Praticien en fente avant céphalique du côté homolatéral.</div>
+<div class="tech-step"><div class="label">Prises de mains — Technique des Baguettes</div>Main externe de l'ostéopathe contrôle le radius. Main interne sur l'ulna. Pouces face à face en regard de la membrane interosseuse par la face palmaire et dorsale. Image des deux baguettes parallèles.</div>
+<div class="tech-step"><div class="label">Test</div>Le praticien teste les possibilités de traction de la membrane en translation vers le haut, le bas, en supination, pronation. Recherche une sensation de densité ou de restriction dans le mouvement. Confirme en comparant la tension controlatérale.</div>
+<div class="tech-step"><div class="label">Technique de Relâchement Tissulaire (Strain &amp; Counterstrain — Jones)</div><strong>But :</strong> libérer la membrane interosseuse de tous points de tension musculaire associés à une douleur.<br/><strong>Protocole :</strong><br/>1. Palpation du distal vers le proximal en projection de la membrane entre radius et ulna, position neutre — recherche d'un point de tension douloureux.<br/>2. L'opérateur maintient la même direction de poussée ponctuelle et la même intensité sur le point douloureux.<br/>3. Recherche par placement des segments une position d'indolence (abolition de la douleur du point) en utilisant tous les paramètres : traction, compression, flex/ext, abd/add, pronation/supination.<br/>4. Maintien 90 secondes dans cette position d'indolence.<br/>5. Retour lent à la position de repos.<br/>6. Retester le point douloureux.</div>
+<div class="tech-note"><div class="label">Principe de Jones (Strain &amp; Counterstrain)</div>La dissipation de la douleur s'obtient en diminuant l'activité inadéquate des propriorécepteurs. L'opérateur place en raccourcissement notable le muscle qui contient le faisceau irrité, par mise en tension légère des antagonistes. Faces dorsale et palmaire accessibles selon la localisation du point douloureux.</div>
+</div>
+</div>
+<div class="footnote"><cite>Source : P. César, Techniques structurelles — Le Coude, 1ère année IEOQ 2024 · Usage privé — Résumé à compléter avec notes de cours</cite></div>
+</section>
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["coude", "arthro-coude", "tests-coude", "tech-coude"];
+  var SUB_LABELS_LOCAL = {"coude": "📖 Biomécanique", "arthro-coude": "🦴 Arthrologie coude", "tests-coude": "🩺 Tests orthopédiques", "tech-coude": "🔧 Techniques structurelles"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>

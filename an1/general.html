@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 1 · Général</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(1);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🔬</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 1ère Année</h1>
+      <p>Général — IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="index.html">← Catégories</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><strong>Général</strong> <span id="crumbSub">› 🔬 Fondements</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="fondements" onclick="showSub('fondements')">🔬 Fondements</button><button type="button" class="nav-tab" data-sub="rom-ms" onclick="showSub('rom-ms')">📐 ROM Membre supérieur</button><button type="button" class="nav-tab" data-sub="rom-mi" onclick="showSub('rom-mi')">📐 ROM Membre inférieur</button><button type="button" class="nav-tab" data-sub="pathologies" onclick="showSub('pathologies')">⚕️ Physiopathologie</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="fondements" style="display:block;">
+<div class="section-title">Fondements — Physiologie articulaire &amp; tendineuse</div>
+<div class="section-sub">Classification des articulations, structures synoviales, biomécanique du tendon — P. César IEOQ 2020 &amp; Tebache, Lamontagne, Kaux — EMC 2022</div>
+<!-- Types d'articulations -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon navy">🔩</div>
+<div class="card-title">Les 3 grands types d'articulations</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead>
+<tr>
+<th>Type</th>
+<th>Structure</th>
+<th>Cavité art.</th>
+<th>Mobilité</th>
+<th>Sous-types</th>
+<th>Exemples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Fibreuses<small>Synarthrose</small></div></td>
+<td>Tissu conjonctif fibreux. Pas de cartilage articulaire.</td>
+<td><span class="tag tag-coral">Aucune</span></td>
+<td>Immobile</td>
+<td><strong>Sutures</strong> (plane, écailleuse, dentelée) · <strong>Syndesmoses</strong> · <strong>Schyndilèse</strong> · <strong>Gomphose</strong></td>
+<td>Os du crâne · Membrane interosseuse · Vomer/sphénoïde · Alvéoles dentaires</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Cartilagineuses<small>Amphiarthrose</small></div></td>
+<td>Fibrocartilage ± ligaments périphériques. Pas ou peu de cavité.</td>
+<td><span class="tag tag-amber">Réduite/nulle</span></td>
+<td>Réduite</td>
+<td><strong>Synchondroses</strong> (cartilage hyalin temporaire) · <strong>Symphyses / amphiarthroses</strong> (fibrocartilage)</td>
+<td>Cartilage de conjugaison · Disques intervertébraux · Symphyse pubienne</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Synoviales<small>Diarthrose</small></div></td>
+<td>Surfaces cartilagineuses (cartilage hyalin) + capsule + membrane synoviale.</td>
+<td><span class="tag tag-teal">Présente +++</span></td>
+<td>Importante</td>
+<td>Sphéroïde · Ellipsoïde · Sellaire · Ginglyme · Trochoïde · Plane</td>
+<td>Majorité des articulations des membres</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Syssarcoses<small>Fasciales</small></div></td>
+<td>Muscle interposé entre deux surfaces osseuses. Glissement des fascias.</td>
+<td><span class="tag tag-gray">—</span></td>
+<td>Glissement</td>
+<td>—</td>
+<td>Dentelé antérieur → scapula / gril costal (ST)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Constitution synoviale + fibrocartilages -->
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header">
+<div class="card-icon teal">⚙️</div>
+<div class="card-title">Constitution des articulations synoviales</div>
+</div>
+<div class="card-body">
+<h3 class="sub" style="margin-top:0;">Surfaces articulaires osseuses</h3>
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;">Recouvertes de <strong>cartilage hyalin</strong> (lisse, blanc bleuté). Son épaisseur est proportionnelle à la pression qu'il supporte. <strong>Non vascularisé</strong> — nutrition exclusivement assurée par la synovie. La dégénérescence du cartilage hyalin → <span class="tag tag-coral">arthrose</span>.</p>
+<div class="info-box teal" style="margin-bottom:12px;">
+<strong>Synovie (liquide synovial) :</strong> Liquide translucide et visqueux sécrété par la membrane synoviale. Double rôle : lubrification des surfaces articulaires + nutrition du cartilage.
+          </div>
+<h3 class="sub">Surfaces fibrocartilagineuses</h3>
+<div style="display:flex;flex-direction:column;gap:8px;font-size:13px;">
+<div style="padding:8px 12px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-500);">
+<strong>Labrum (bourrelet)</strong> — Triangulaire, s'insère sur la périphérie osseuse + capsule. Augmente la profondeur et la surface articulaire. <em>Ex : glène de la scapula, acétabulum.</em>
+</div>
+<div style="padding:8px 12px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-500);">
+<strong>Ménisque</strong> — Triangulaire, interposé entre deux surfaces. Périphérie adhérente à la capsule, 2 faces libres. <em>Ex : genou (latéral + médial).</em>
+</div>
+<div style="padding:8px 12px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">
+<strong>Disque</strong> — Lentille biconcave, cloison complète adhérente à la capsule → 2 cavités secondaires. <em>Ex : articulation temporo-mandibulaire, sterno-claviculaire.</em>
+</div>
+<div class="info-box coral" style="font-size:12.5px;">
+<strong>Clinique :</strong> Ces 3 fibrocartilages sont partiellement avasculaires → <strong>absence de cicatrisation spontanée</strong> d'une déchirure. Fragment méniscal rompu et symptomatique = indication chirurgicale.
+            </div>
+</div>
+</div>
+</div>
+<div>
+<div class="card" style="margin-bottom:16px;">
+<div class="card-header">
+<div class="card-icon navy">🔗</div>
+<div class="card-title">Moyens d'union : capsule et ligaments</div>
+</div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;"><strong>Capsule articulaire :</strong> manchon fibreux inséré au pourtour des surfaces. Deux couches :</p>
+<ul style="font-size:13px;color:var(--text2);list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;margin-bottom:12px;">
+<li style="padding:6px 10px;background:var(--gray-50);border-radius:5px;border-left:2px solid var(--teal-400);">Couche externe : <strong>membrane fibreuse</strong> — épaisseur et résistance variables</li>
+<li style="padding:6px 10px;background:var(--gray-50);border-radius:5px;border-left:2px solid var(--navy-400);">Couche interne : <strong>membrane synoviale</strong> — richement vascularisée et innervée — sécrète la synovie</li>
+</ul>
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;"><strong>Ligaments :</strong> lames fibreuses — moyens d'union résistants (ligaments passifs). 3 localisations :</p>
+<div style="display:grid;grid-template-columns:1fr;gap:6px;font-size:12.5px;">
+<div style="padding:6px 10px;background:var(--teal-50);border-radius:5px;"><strong style="color:var(--teal-700);">Capsulaires</strong> — épaississements de la membrane fibreuse</div>
+<div style="padding:6px 10px;background:var(--navy-100);border-radius:5px;"><strong style="color:var(--navy-700);">Extracapsulaires</strong> — indépendants de la capsule, à distance</div>
+<div style="padding:6px 10px;background:var(--amber-100);border-radius:5px;"><strong style="color:var(--amber-500);">Intracapsulaires</strong> — dans la capsule mais hors cavité articulaire. Ex : LCA/LCP du genou</div>
+</div>
+<div class="info-box teal" style="margin-top:10px;font-size:12.5px;">
+<strong>Ligaments passifs vs actifs :</strong> Les ligaments sont les stabilisateurs passifs. Les <em>tendons des muscles péri-articulaires</em> constituent les <strong>ligaments actifs</strong> de l'articulation (concept clé en biomécanique).
+            </div>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon teal">⚡</div>
+<div class="card-title">Mécanique articulaire — positions clés</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:8px;font-size:13.5px;">
+<div style="padding:10px;background:var(--teal-50);border-radius:8px;border:1px solid var(--teal-200);">
+<strong style="color:var(--teal-700);">Position de repos</strong><br/>
+<span style="color:var(--text2);">Position permettant la <strong>relaxation maximale</strong> de la capsule articulaire et des structures péri-articulaires. = <strong>Position antalgique</strong> de l'articulation.</span>
+</div>
+<div style="padding:10px;background:var(--navy-100);border-radius:8px;border:1px solid var(--navy-200);">
+<strong style="color:var(--navy-700);">Position de fonction</strong><br/>
+<span style="color:var(--text2);">Position la plus adaptée à une fonction donnée. C'est dans cette position qu'une articulation devra être <strong>immobilisée en cas de nécessité</strong>.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Classification morphologique synoviales -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">📐</div>
+<div class="card-title">Classification des articulations synoviales — Morphologique &amp; Fonctionnelle</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead>
+<tr>
+<th>Type morphologique</th>
+<th>Description surfaces</th>
+<th>Axes mécaniques</th>
+<th>Degrés de liberté</th>
+<th>Mouvements permis</th>
+<th>Exemples anatomiques</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Sphéroïde<small>Énarthrose</small></div></td>
+<td>2 surfaces sphériques inversées (pleine + creuse)</td>
+<td>3 axes</td>
+<td><span class="tag tag-teal">3 ddl</span></td>
+<td>Fl/ext · Abd/Add · Rot. int/ext · <strong>Circumduction</strong></td>
+<td>GH (scapulo-humérale) · Coxo-fémorale</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Ellipsoïde<small>Condylaire</small></div></td>
+<td>2 surfaces ellipsoïdales (concave + convexe)</td>
+<td>2 axes</td>
+<td><span class="tag tag-navy">2 ddl</span></td>
+<td>Fl/ext · Abd/Add</td>
+<td>Radio-carpienne</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Sellaire<small>En selle / Toroïde</small></div></td>
+<td>Surfaces convexes dans un sens, concaves dans l'autre (emboîtement réciproque)</td>
+<td>2 axes</td>
+<td><span class="tag tag-navy">2 ddl</span></td>
+<td>Fl/ext · Abd/Add</td>
+<td>Carpo-métacarpienne du pouce (CMC1)</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Ginglyme<small>Trochléenne</small></div></td>
+<td>2 surfaces en poulie (pleine + creuse)</td>
+<td>1 axe transversal</td>
+<td><span class="tag tag-amber">1 ddl</span></td>
+<td>Fl/ext uniquement</td>
+<td>Huméro-ulnaire (coude) · IFP · IFD</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Trochoïde<small>Pivot</small></div></td>
+<td>2 surfaces cylindriques (pleine + creuse)</td>
+<td>1 axe vertical/longitudinal</td>
+<td><span class="tag tag-amber">1 ddl</span></td>
+<td>Rotation axiale uniquement</td>
+<td>Radio-ulnaire proximale · Atloïdo-axoïdienne</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Plane<small>Arthrodie</small></div></td>
+<td>2 surfaces planes</td>
+<td>0 (glissement)</td>
+<td><span class="tag tag-gray">Glissement limité</span></td>
+<td>Micro-glissements</td>
+<td>Zygapophysaires thoraciques · Acromio-claviculaire · Os du carpe</td>
+</tr>
+</tbody>
+</table>
+<div class="info-box teal" style="margin:12px 16px 16px;">
+<strong>Circumduction :</strong> Association des mouvements simples des 3 plans de l'espace (sphéroïdes). L'ensemble des mouvements possibles est représenté par un cône dont le sommet est le centre articulaire et la base est le cercle décrit par l'extrémité distale.
+        </div>
+</div>
+</div>
+<!-- ═══════════════ BIOMÉCANIQUE GÉNÉRALE ═══════════════ -->
+<div style="margin:28px 0 16px;border-left:4px solid var(--navy-500);padding-left:14px;">
+<div style="font-size:19px;font-weight:700;color:var(--navy-800);">Biomécanique générale — Concepts mécaniques fondamentaux</div>
+<div style="font-size:13px;color:var(--gray-500);">P. César — Introduction à la biomécanique, IEOQ · d'après Dufour M., Pillu M. — Biomécanique fonctionnelle, Masson</div>
+</div>
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header">
+<div class="card-icon navy">⚡</div>
+<div class="card-title">La force — définition et caractéristiques</div>
+</div>
+<div class="card-body">
+<div class="info-box teal" style="margin-bottom:12px;">
+<strong>Définition :</strong> Toute cause capable de modifier la vitesse d'un corps ou de provoquer sa déformation. Représentée par un vecteur, unité = Newton (N).
+          </div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12.5px;margin-bottom:12px;">
+<div style="padding:8px;background:var(--teal-50);border-radius:6px;border:1px solid var(--teal-200);">
+<strong style="color:var(--teal-700);">Forces externes</strong><br/>Force gravitaire · Poussée d'Archimède · Forces de contact direct ou indirect
+            </div>
+<div style="padding:8px;background:var(--navy-100);border-radius:6px;border:1px solid var(--navy-200);">
+<strong style="color:var(--navy-700);">Forces internes</strong><br/>Actives : produites par les muscles · Passives : mise en tension des structures passives
+            </div>
+</div>
+<p style="font-size:13px;color:var(--text2);margin-bottom:8px;"><strong>Caractéristiques d'une force (vecteur) :</strong> Direction · Sens · Point d'application · Norme/Intensité</p>
+<div class="info-box amber" style="font-size:12.5px;">
+<strong>Efficacité d'une force :</strong> Composante efficace = F × cos α · <strong>Bras de levier</strong> = distance entre la ligne de force et le pivot · <strong>Moment de la force</strong> = F × bras de levier
+          </div>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon teal">⚖️</div>
+<div class="card-title">Travail, énergie, puissance</div>
+</div>
+<div class="card-body">
+<div style="display:flex;flex-direction:column;gap:8px;font-size:13px;">
+<div style="padding:8px 12px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-500);">
+<strong>Travail</strong> = Force × Distance — Grandeur scalaire uniquement. Unité : Joules (J)
+            </div>
+<div style="padding:8px 12px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-500);">
+<strong>Énergie potentielle</strong> : Ep = mgh — énergie liée à la position ou la forme
+            </div>
+<div style="padding:8px 12px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">
+<strong>Énergie cinétique</strong> : Ec = ½mv² — énergie liée au mouvement
+            </div>
+<div style="padding:8px 12px;background:var(--gray-50);border-radius:6px;border-left:3px solid var(--gray-400);">
+<strong>Puissance</strong> = Travail / Temps — Unité : Watts (W)
+            </div>
+</div>
+<div class="info-box teal" style="margin-top:10px;font-size:12.5px;">
+<strong>Centre de gravité :</strong> Point fictif regroupant toutes les forces gravitaires. P = mg (en Newton). Centre global du corps humain au niveau de <strong>S2</strong>. Chaque segment exprimable en % du poids total.
+          </div>
+</div>
+</div>
+</div>
+<!-- Leviers -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon amber">🔧</div>
+<div class="card-title">Les leviers et poulies — application à la biomécanique musculaire</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead>
+<tr>
+<th>Type de levier</th>
+<th>Disposition F / P / A</th>
+<th>Caractéristique mécanique</th>
+<th>Exemples anatomiques</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="muscle-name">Inter-appui<small>1er genre — F.A.P</small></div></td>
+<td>Force · <strong>Pivot</strong> · Poids — Le pivot est entre la force et la résistance</td>
+<td>Equilibre stable. Peut amplifier force ou vitesse selon position du pivot.</td>
+<td>Articulation atlanto-occipitale (tête en équilibre) · Levier du pied en appui</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Inter-résistant<small>2e genre — F.P.A</small></div></td>
+<td>Force · <strong>Poids</strong> · Appui — Le poids est entre la force et le pivot</td>
+<td>Toujours amplificateur de force. Moins courant en biomécanique humaine.</td>
+<td>Montée sur la pointe des pieds (triceps sural)</td>
+</tr>
+<tr>
+<td><div class="muscle-name">Inter-force<small>3e genre — P.F.A</small></div></td>
+<td>Poids · <strong>Force</strong> · Appui — La force est entre le poids et le pivot</td>
+<td>Amplificateur de vitesse et d'amplitude. Force &gt; résistance. Levier désavantageux mais très fréquent chez l'humain.</td>
+<td>Flexion du coude (biceps) · Majorité des articulations des membres</td>
+</tr>
+</tbody>
+</table>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px;font-size:13px;">
+<div class="info-box teal" style="margin:0;">
+<strong>Poulie fixe :</strong> Renvoie une force dans une autre direction. Force exercée sur la poulie = 2F. Pas de gain de force.
+          </div>
+<div class="info-box navy" style="background:var(--navy-100);border-color:var(--navy-400);color:var(--navy-900);margin:0;">
+<strong>Poulie mobile :</strong> Le poids P est équilibré par 2F → force nécessaire divisée par 2. Système moufle : assemblage de poulies → réduction de l'effort, mais grand déplacement du filin.
+          </div>
+</div>
+<div class="footnote" style="padding:0 16px 12px;">
+<cite>Principe des leviers découvert par Archimède. Application : évaluer le bras de levier musculaire d'un muscle est essentiel pour comprendre son efficacité mécanique à un angle articulaire donné.</cite>
+</div>
+</div>
+</div>
+<!-- ═══════════════ PHYSIOLOGIE DU TENDON ═══════════════ -->
+<div style="margin:28px 0 16px;border-left:4px solid var(--teal-500);padding-left:14px;">
+<div style="font-size:19px;font-weight:700;color:var(--navy-800);">Physiologie du tendon normal</div>
+<div style="font-size:13px;color:var(--gray-500);">Tebache J., Lamontagne M., Kaux J.-F. — EMC Appareil locomoteur, 2022</div>
+</div>
+<!-- Histologie + composition -->
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header">
+<div class="card-icon teal">🔬</div>
+<div class="card-title">Structure hiérarchique du tendon</div>
+</div>
+<div class="card-body">
+<div style="font-size:13px;color:var(--text2);margin-bottom:12px;">Du plus petit au plus grand — chaque niveau est entouré d'une enveloppe de tissu conjonctif :</div>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:12.5px;margin-bottom:12px;">
+<div style="padding:7px 10px;background:var(--teal-50);border-radius:6px;border:1px solid var(--teal-200);display:flex;align-items:center;gap:10px;">
+<span style="font-weight:700;color:var(--teal-700);min-width:90px;">Tropocollagène</span>
+<span style="color:var(--text2);">Molécule unitaire (triple hélice α1+α2) — 1 nm</span>
+</div>
+<div style="padding:7px 10px;background:var(--teal-100);border-radius:6px;border:1px solid var(--teal-300);display:flex;align-items:center;gap:10px;">
+<span style="font-weight:700;color:var(--teal-700);min-width:90px;">Fibrille</span>
+<span style="color:var(--text2);">Plus petite structure — Ø 100–500 nm — entourée d'<strong>endoténon</strong></span>
+</div>
+<div style="padding:7px 10px;background:var(--navy-100);border-radius:6px;border:1px solid var(--navy-200);display:flex;align-items:center;gap:10px;">
+<span style="font-weight:700;color:var(--navy-700);min-width:90px;">Fibre</span>
+<span style="color:var(--text2);">Assemblage de fibrilles — Ø 1–20 µm</span>
+</div>
+<div style="padding:7px 10px;background:var(--navy-200);border-radius:6px;border:1px solid var(--navy-300);display:flex;align-items:center;gap:10px;">
+<span style="font-weight:700;color:var(--navy-700);min-width:90px;">Fascicule</span>
+<span style="color:var(--text2);">Assemblage de fibres — Ø 20–200 µm — entouré d'<strong>épiténon</strong></span>
+</div>
+<div style="padding:7px 10px;background:var(--amber-100);border-radius:6px;border:1px solid #f0c865;display:flex;align-items:center;gap:10px;">
+<span style="font-weight:700;color:var(--amber-500);min-width:90px;">Tendon</span>
+<span style="color:var(--text2);">Assemblage de fascicules — entouré du <strong>paraténon</strong> — ~500 µm</span>
+</div>
+</div>
+<div class="info-box teal" style="font-size:12.5px;">
+<strong>Composition (masse sèche) :</strong> Collagène type I : 60–75% (95% du collagène total) · Collagène III+V : 5% · Eau : 55% du poids total · Protéoglycans (aggrécan, décorine) · Glycoprotéines (ténascine-C, fibronectine, élastine 2%)
+          </div>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon navy">🔗</div>
+<div class="card-title">Jonctions et vascularisation</div>
+</div>
+<div class="card-body">
+<h3 class="sub" style="margin-top:0;">Jonctions</h3>
+<div style="display:flex;flex-direction:column;gap:7px;font-size:12.5px;margin-bottom:12px;">
+<div style="padding:8px 10px;background:var(--teal-50);border-radius:6px;border-left:3px solid var(--teal-500);">
+<strong>Enthèse fibreuse</strong> — S'insère sur les méta/diaphyses (périoste chez l'enfant, os chez l'adulte). Ex : tendon deltoïdien sur humérus, tendon d'Achille sur calcanéus.
+            </div>
+<div style="padding:8px 10px;background:var(--navy-100);border-radius:6px;border-left:3px solid var(--navy-500);">
+<strong>Enthèse fibrocartilagineuse</strong> — S'insère sur les épiphyses. 4 zones : fibres collagène + fibroblastes fusiformes → phénotype chondrocytaire → fibrocartilage minéralisé → os trabéculaire. Impliquée dans les processus physiopathologiques.
+            </div>
+<div style="padding:8px 10px;background:var(--amber-100);border-radius:6px;border-left:3px solid var(--amber-500);">
+<strong>Jonction myotendineuse</strong> — Zone fragile. Les myoblastes forment des invaginations où s'insèrent les microfibrilles de collagène → ↑ surface de contact → ↑ transmission des forces → ↓ contrainte sur le tendon.
+            </div>
+</div>
+<h3 class="sub">Vascularisation — 3 zones</h3>
+<ul style="font-size:12.5px;color:var(--text2);list-style:none;padding:0;display:flex;flex-direction:column;gap:4px;">
+<li style="padding:5px 8px;background:var(--gray-50);border-radius:4px;">→ <strong>Tiers proximal :</strong> jonction myotendineuse (art. musculaires périphériques)</li>
+<li style="padding:5px 8px;background:var(--gray-50);border-radius:4px;">→ <strong>Tiers distal :</strong> jonction ostéotendineuse</li>
+<li style="padding:5px 8px;background:var(--gray-50);border-radius:4px;">→ <strong>Portion moyenne :</strong> paraténon ou gaine synoviale</li>
+</ul>
+<div class="info-box coral" style="margin-top:8px;font-size:12.5px;">
+<strong>Zones critiques :</strong> Vascularisation compromise dans les zones de friction ou de compression (supra-épineux, tibial postérieur, tendon d'Achille). Le flux sanguin diminue avec l'âge.
+          </div>
+<h3 class="sub">Innervation — 4 types de récepteurs</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:12px;">
+<div style="padding:6px;background:var(--teal-50);border-radius:5px;"><strong>Type I</strong> — Corpuscules de Ruffini — variations de pression, adaptation lente</div>
+<div style="padding:6px;background:var(--navy-100);border-radius:5px;"><strong>Type II</strong> — Corpuscules de Vater-Pacini — mise en mouvement</div>
+<div style="padding:6px;background:var(--amber-100);border-radius:5px;"><strong>Type III</strong> — Récepteurs de Golgi — stimuli périphériques</div>
+<div style="padding:6px;background:var(--coral-100);border-radius:5px;"><strong>Type IV</strong> — Nocicepteurs — terminaisons libres</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Courbe de déformation + viscoélasticité -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">📈</div>
+<div class="card-title">Biomécanique tendineuse — Courbe de déformation et viscoélasticité</div>
+</div>
+<div class="card-body">
+<div class="grid-2">
+<div>
+<h3 class="sub" style="margin-top:0;">Courbe de déformation du tendon — 3 zones</h3>
+<div style="display:flex;flex-direction:column;gap:10px;">
+<div style="padding:12px;background:var(--teal-50);border-radius:8px;border:1px solid var(--teal-200);">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+<strong style="color:var(--teal-700);">Zone 1 — Toe region (pied de courbe)</strong>
+<span class="tag tag-teal">0–2% d'élongation</span>
+</div>
+<p style="font-size:13px;color:var(--text2);margin:0;">Mise en tension progressive et <strong>réversible</strong> des fibres de collagène. Les fibres s'alignent depuis leur position ondulante neutre. Rigidité faible → <strong>guide le mouvement</strong>.</p>
+</div>
+<div style="padding:12px;background:var(--navy-100);border-radius:8px;border:1px solid var(--navy-200);">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+<strong style="color:var(--navy-700);">Zone 2 — Linéaire</strong>
+<span class="tag tag-navy">2–4% d'élongation</span>
+</div>
+<p style="font-size:13px;color:var(--text2);margin:0;">Étirement <strong>réversible</strong> de toutes les fibres de collagène. Rigidité plus importante → <strong>assure la stabilité</strong>.</p>
+</div>
+<div style="padding:12px;background:var(--coral-100);border-radius:8px;border:1px solid var(--coral-500);">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;">
+<strong style="color:var(--coral-500);">Zone 3 — Extraphysiologique</strong>
+<span class="tag tag-coral">&gt;4% d'élongation</span>
+</div>
+<p style="font-size:13px;color:var(--text2);margin:0;">Déformation <strong>irréversible</strong>. Microruptures entre 4–8%. Premières lésions macroscopiques entre 8–10%. Rupture complète possible.</p>
+</div>
+</div>
+<div class="info-box amber" style="margin-top:12px;font-size:12.5px;">
+<strong>Vieillissement :</strong> La courbe est déplacée vers la gauche avec l'âge → lésions tendineuses apparaissant pour des charges moindres. Rupture favorisée par un travail excentrique, une modification de l'axe de travail ou une tension rapide/répétitive/oblique.
+            </div>
+</div>
+<div>
+<h3 class="sub" style="margin-top:0;">Viscoélasticité</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12.5px;margin-bottom:14px;">
+<div style="padding:10px;background:var(--teal-50);border-radius:6px;border:1px solid var(--teal-200);">
+<strong style="color:var(--teal-700);">Faible force</strong><br/>
+                Tendon plus déformable → absorbe plus d'énergie → efficacité de transfert de charge réduite
+              </div>
+<div style="padding:10px;background:var(--navy-100);border-radius:6px;border:1px solid var(--navy-200);">
+<strong style="color:var(--navy-700);">Force élevée</strong><br/>
+                Tendon plus rigide → plus efficace pour déplacement de charges importantes
+              </div>
+</div>
+<h3 class="sub">Mécanotransduction</h3>
+<div class="info-box teal" style="font-size:12.5px;margin-bottom:10px;">
+<strong>Définition :</strong> Processus physiologique par lequel les cellules tissulaires détectent et produisent une réponse biochimique à un stimulus mécanique.
+            </div>
+<div style="display:flex;flex-direction:column;gap:6px;font-size:12px;">
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:5px;"><strong>1. Mécanocoplage</strong> — Stimulus mécanique (compression/cisaillement) → déformation cellulaire → signaux chimiques intra/intercellulaires via intégrines + cytosquelette</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:5px;"><strong>2. Communication intercellulaire</strong> — Messagers : calcium et IP3 (triphosphate d'inositol). Via gap junctions (connexines 32 et 43). Propagation à distance.</div>
+<div style="padding:7px 10px;background:var(--gray-50);border-radius:5px;"><strong>3. Réponse effectrice</strong> — Modification d'architecture, différenciation, prolifération ou apoptose. Synthesis de collagène type I (anabolisme) ou dégradation selon le stimulus.</div>
+</div>
+<div class="info-box coral" style="margin-top:10px;font-size:12.5px;">
+<strong>Immobilisation :</strong> ↓ poids du tendon · ↓ rigidité · ↓ résistance à la traction. La sous-stimulation induit une réponse catabolique et l'apoptose des ténocytes.
+            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Cicatrisation tendineuse -->
+<div class="card">
+<div class="card-header">
+<div class="card-icon coral">⚕️</div>
+<div class="card-title">Cicatrisation tendineuse — 3 phases (~10 semaines)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="muscle-table">
+<thead>
+<tr>
+<th>Phase</th>
+<th>Durée</th>
+<th>Événements biologiques</th>
+<th>Tissu produit</th>
+<th>Conduite pratique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="tag tag-coral">1. Inflammation</span></td>
+<td>Quelques jours</td>
+<td>Hématome → facteurs chimiotactiques + vasodilatateurs. Afflux : neutrophiles, monocytes, macrophages, érythrocytes, plaquettes. Phagocytose du nécrotique. Fibroblastes : synthèse collagène <strong>type III</strong> + facteurs angiogéniques.</td>
+<td>Tissu inflammatoire + ébauche vasculaire</td>
+<td><span class="tag tag-coral">Mobilisation à éviter</span> — permettre le processus cicatriciel</td>
+</tr>
+<tr>
+<td><span class="tag tag-amber">2. Réparation</span></td>
+<td>~6 semaines</td>
+<td>Fibroblastes synthétisent collagène <strong>type III</strong> (++ protéoglycans, eau). Vaste réseau vasculaire reconstitué. Tissu essentiellement cellulaire.</td>
+<td>Tissu cicatriciel riche en eau et protéoglycans</td>
+<td><span class="tag tag-amber">Mobilisation sous le seuil douleur</span> — ↓ adhérences, longueur suffisante</td>
+</tr>
+<tr>
+<td><span class="tag tag-teal">3. Remodelage</span></td>
+<td>À partir 6e sem. → &gt;10 sem.</td>
+<td>↓ cellularité, ↓ glycosaminoglycans. Collagène <strong>type III → type I</strong> (orienté longitudinalement). Après 10 sem. : fibrosité ↑, résistance à la traction ↑. Métabolisme des ténocytes et vascularisation ↓.</td>
+<td>Tissu fibreux organisé — <em>mais ≠ tissu tendineux sain originel</em></td>
+<td><span class="tag tag-teal">Chargement progressif</span> — mécanotransduction favorise le type I</td>
+</tr>
+</tbody>
+</table>
+<div class="info-box amber" style="margin:12px 16px;">
+<strong>Facteurs de croissance impliqués :</strong> IGF-1 · PDGF · TGF-β · VEGF · bFGF · BMP. Si stimuli mécaniques insuffisants lors de la cicatrisation → tissu majoritairement cicatriciel + adhérences.
+        </div>
+<div class="info-box navy" style="margin:0 16px 16px;background:var(--navy-100);border-color:var(--navy-400);color:var(--navy-900);">
+<strong>Neuroplasticité tendineuse (TNT) :</strong> Les protocoles de rééducation classiques ne prennent pas en compte la commande motrice corticospinale → altération du recrutement musculaire possible. Le TNT (Tendon Neuroplastic Training) agit sur la commande corticospinale du complexe musculotendineux → meilleure efficacité dans certaines tendinopathies chroniques. (Rio et al., BJSM 2016)
+        </div>
+</div>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>Sources : P. César — Introduction biomécanique IEOQ 2020 ; Monique Remillieux — UE5, 2016 ; Tebache J., Lamontagne M., Kaux J.-F. — Tendon normal, EMC Appareil locomoteur 2022 (14-007-A-10)</cite>
+</div>
+</div>
+</section>
+<section class="section" id="rom-ms" style="display:none;">
+<div class="section-title">Amplitudes articulaires — Membre supérieur</div>
+<div class="section-sub">Valeurs normatives (adulte sain) — SFMCP / AMA Guides / Kapandji</div>
+<!-- Épaule -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">🦴</div>
+<div class="card-title">Épaule (complexe gléno-huméral + ceinture)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="rom-table">
+<tr>
+<th>Mouvement</th>
+<th>Min (°)</th>
+<th>Normale (°)</th>
+<th>Max (°)</th>
+<th>Articulations principales</th>
+</tr>
+<tr><td>Flexion (antépulsion)</td><td>150</td><td class="rom-val">170–180</td><td>180</td><td>GH, ST, SCC, AC</td></tr>
+<tr><td>Extension (rétropulsion)</td><td>40</td><td class="rom-val">45–60</td><td>60</td><td>GH principalement</td></tr>
+<tr><td>Abduction frontale</td><td>150</td><td class="rom-val">170–180</td><td>180</td><td>GH, ST, SCC, AC</td></tr>
+<tr><td>Adduction horizontale</td><td>30</td><td class="rom-val">40–50</td><td>50</td><td>GH</td></tr>
+<tr><td>Rotation interne (RI)</td><td>60</td><td class="rom-val">70–80</td><td>90</td><td>GH</td></tr>
+<tr><td>Rotation externe (RE)</td><td>60</td><td class="rom-val">60–90</td><td>90</td><td>GH</td></tr>
+<tr><td>Circumduction</td><td colspan="3" style="text-align:center;font-style:italic;">Mouvement combiné — conique</td><td>GH + ST + SCC + AC</td></tr>
+</table>
+</div>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>AMA Guides to the Evaluation of Permanent Impairment (6e éd.) ; Kapandji, Physiologie articulaire T.1 ; SFMCP Référentiels 2021</cite>
+</div>
+</div>
+<!-- Coude -->
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header">
+<div class="card-icon navy">💪</div>
+<div class="card-title">Coude</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="rom-table">
+<tr><th>Mouvement</th><th>Normale (°)</th><th>Articulation</th></tr>
+<tr><td>Flexion</td><td><span class="rom-val">140–150</span></td><td>Huméro-ulnaire (trochléenne)</td></tr>
+<tr><td>Extension</td><td><span class="rom-val">0 (–5 à –10)</span></td><td>Huméro-ulnaire</td></tr>
+<tr><td>Pronation</td><td><span class="rom-val">80–90</span></td><td>Radio-ulnaire sup. + inf.</td></tr>
+<tr><td>Supination</td><td><span class="rom-val">80–90</span></td><td>Radio-ulnaire sup. + inf.</td></tr>
+</table>
+</div>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>L'hyperextension ≥5° est physiologique chez la femme (laxité constitutive). La flexion fonctionnelle requise est 30–130° (Morrey, 1981).</cite>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon amber">✋</div>
+<div class="card-title">Poignet</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="rom-table">
+<tr><th>Mouvement</th><th>Normale (°)</th><th>Articulation</th></tr>
+<tr><td>Flexion palmaire</td><td><span class="rom-val">70–80</span></td><td>Radio-carpienne + médio-carpienne</td></tr>
+<tr><td>Extension dorsale</td><td><span class="rom-val">60–70</span></td><td>Radio-carpienne + médio-carpienne</td></tr>
+<tr><td>Inclinaison radiale (abduction)</td><td><span class="rom-val">20–25</span></td><td>Radio-carpienne</td></tr>
+<tr><td>Inclinaison ulnaire (adduction)</td><td><span class="rom-val">35–40</span></td><td>Radio-carpienne</td></tr>
+<tr><td>Circumduction</td><td colspan="2" style="text-align:center;font-style:italic;">Combiné 2 axes</td></tr>
+</table>
+</div>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>Flexion fonctionnelle poignet : 10°, extension : 35° (Brumfield &amp; Champoux, 1984).</cite>
+</div>
+</div>
+</div>
+<!-- Main -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">🤚</div>
+<div class="card-title">Main — doigts longs (MCP, IPP, IPD)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="rom-table">
+<tr>
+<th>Articulation</th>
+<th>Flexion (°)</th>
+<th>Extension (°)</th>
+<th>Ab/Adduction (°)</th>
+</tr>
+<tr><td>MCP (métacarpo-phalangienne)</td><td><span class="rom-val">90</span></td><td><span class="rom-val">0 à +30</span></td><td>20 (chaque côté)</td></tr>
+<tr><td>IPP (inter-phalangienne prox.)</td><td><span class="rom-val">100–110</span></td><td><span class="rom-val">0</span></td><td>—</td></tr>
+<tr><td>IPD (inter-phalangienne dist.)</td><td><span class="rom-val">70–80</span></td><td><span class="rom-val">0 à +20</span></td><td>—</td></tr>
+<tr><td>MCP Pouce</td><td><span class="rom-val">50–60</span></td><td><span class="rom-val">0</span></td><td>—</td></tr>
+<tr><td>IP Pouce</td><td><span class="rom-val">70–80</span></td><td><span class="rom-val">0 à +20</span></td><td>—</td></tr>
+<tr><td>Opposition pouce (CMC)</td><td colspan="3" style="text-align:center;font-style:italic;">Mesure par distance pouce–auriculaire : 0 cm = normale</td></tr>
+</table>
+</div>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>Kapandji IA, Physiologie articulaire T.1 ; Bunnell &amp; Boyes, Surgery of the Hand ; SFMCP 2021</cite>
+</div>
+</div>
+</section>
+<section class="section" id="rom-mi" style="display:none;">
+<div class="section-title">Amplitudes articulaires — Membre inférieur</div>
+<div class="section-sub">Valeurs normatives adulte sain — Kapandji T.2, AMA Guides, HAS</div>
+<!-- Hanche -->
+<div class="card" style="margin-bottom:20px;">
+<div class="card-header">
+<div class="card-icon teal">🦴</div>
+<div class="card-title">Hanche (coxo-fémorale)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="rom-table">
+<tr>
+<th>Mouvement</th>
+<th>Normale (°)</th>
+<th>Fonctionnel (°)</th>
+<th>Notes</th>
+</tr>
+<tr><td>Flexion (genou fléchi)</td><td><span class="rom-val">120–135</span></td><td>90–120</td><td>Augmentée si genou fléchi (ischio-jambiers)</td></tr>
+<tr><td>Flexion (genou tendu)</td><td><span class="rom-val">70–90</span></td><td>60–80</td><td>Limitée par tension ischio-jambiers</td></tr>
+<tr><td>Extension</td><td><span class="rom-val">15–20</span></td><td>10</td><td>Limitée par lig. ilio-fémoral (Y de Bigelow)</td></tr>
+<tr><td>Abduction</td><td><span class="rom-val">40–45</span></td><td>20</td><td>Limitée par adducteurs + capsule inf.</td></tr>
+<tr><td>Adduction</td><td><span class="rom-val">25–30</span></td><td>15</td><td>—</td></tr>
+<tr><td>Rotation interne (RI)</td><td><span class="rom-val">30–45</span></td><td>—</td><td>Mesurée en décubitus ventral, genou à 90°</td></tr>
+<tr><td>Rotation externe (RE)</td><td><span class="rom-val">45–60</span></td><td>—</td><td>RE &gt; RI physiologique</td></tr>
+</table>
+</div>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>Johnson et al. (1970) ; Murray MP et al. (1964) ; Kapandji IA, Physiologie articulaire T.2 ; HAS — Référentiel de cotation 2013</cite>
+</div>
+</div>
+<!-- Genou + cheville -->
+<div class="grid-2" style="margin-bottom:20px;">
+<div class="card">
+<div class="card-header">
+<div class="card-icon navy">🦵</div>
+<div class="card-title">Genou (fémoro-tibial + fémoro-patellaire)</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="rom-table">
+<tr><th>Mouvement</th><th>Normale (°)</th><th>Notes</th></tr>
+<tr><td>Flexion active</td><td><span class="rom-val">130–140</span></td><td>Jusqu'à 160° passif (talon-fesse)</td></tr>
+<tr><td>Extension</td><td><span class="rom-val">0 à –5</span></td><td>Hyperextension ≤10° pathologique (recurvatum)</td></tr>
+<tr><td>RI (genou fléchi 90°)</td><td><span class="rom-val">25–30</span></td><td>Ménisques + ligaments croisés</td></tr>
+<tr><td>RE (genou fléchi 90°)</td><td><span class="rom-val">35–45</span></td><td>RE &gt; RI au genou</td></tr>
+</table>
+</div>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>Note : La rotation automatique "screw-home" de 5–10° RE se produit en fin d'extension (verrouillage GH-fémoro-tibial). Kapandji T.2.</cite>
+</div>
+</div>
+<div class="card">
+<div class="card-header">
+<div class="card-icon amber">🦶</div>
+<div class="card-title">Cheville &amp; Pied</div>
+</div>
+<div class="card-body" style="padding:0;">
+<table class="rom-table">
+<tr><th>Mouvement</th><th>Normale (°)</th><th>Articulation</th></tr>
+<tr><td>Dorsiflexion (flexion dorsale)</td><td><span class="rom-val">15–20</span></td><td>Talo-crurale</td></tr>
+<tr><td>Flexion plantaire</td><td><span class="rom-val">40–50</span></td><td>Talo-crurale</td></tr>
+<tr><td>Inversion (varus + supination)</td><td><span class="rom-val">30–35</span></td><td>Sous-astragalienne + Chopart</td></tr>
+<tr><td>Éversion (valgus + pronation)</td><td><span class="rom-val">15–20</span></td><td>Sous-astragalienne + Chopart</td></tr>
+<tr><td>Abduction avant-pied</td><td><span class="rom-val">10–15</span></td><td>Chopart + Lisfranc</td></tr>
+<tr><td>Adduction avant-pied</td><td><span class="rom-val">20–25</span></td><td>Chopart + Lisfranc</td></tr>
+</table>
+</div>
+<div class="footnote" style="padding:10px 16px;margin:0;">
+<cite>Dorsiflexion fonctionnelle requise pour la marche : ≥10°. Pour la montée d'escaliers : ≥20°. (Perry J, 1992)</cite>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="pathologies" style="display:none;">
+<div class="section-title">Physiopathologie — Lésions de coiffe et conflits</div>
+<div class="section-sub">Mécanismes dégénératifs, traumatiques et vasculaires</div>
+<div class="grid-2">
+<div>
+<h3 class="sub">Théories étiologiques des lésions de coiffe</h3>
+<div class="path-card" style="border-left:3px solid var(--coral-500);">
+<h4>🔴 Théorie extrinsèque — Neer (1983)</h4>
+<ul>
+<li>Conflit mécanique entre tendon supra-spinatus et partie antérieure de l'acromion lors de l'élévation</li>
+<li>Contact physiologique en conditions normales → pathologique en cas de répétition, d'entésophyte coracoïdien ou d'épaississement tendineux</li>
+<li>Atteinte de la face superficielle (bursal side) de la coiffe</li>
+</ul>
+</div>
+<div class="path-card" style="border-left:3px solid var(--navy-500);">
+<h4>🔵 Théorie intrinsèque vasculaire — Codman (1934)</h4>
+<ul>
+<li>Zone critique hypovasculaire à la partie distale du tendon supra-spinatus ("critical zone")</li>
+<li>Vieillissement tendineux naturel sans possibilité de cicatrisation → lésions profondes (articular side)</li>
+<li>Favorisée par la surcharge fonctionnelle et la réduction vasculaire liée à l'âge</li>
+</ul>
+</div>
+<div class="path-card" style="border-left:3px solid var(--teal-500);">
+<h4>🟢 Théorie mixte (consensus actuel)</h4>
+<ul>
+<li>Les deux mécanismes sont complémentaires et synergiques</li>
+<li>Contraintes mécaniques extrinsèques + affaiblissement intrinsèque progressif</li>
+<li>Insuffisance fonctionnelle de la coiffe → ascension tête humérale → conflit secondaire</li>
+<li>Déséquilibre RI/RE → mauvais contrôle antéro-postérieur → dyskinésie scapulaire</li>
+</ul>
+</div>
+</div>
+<div>
+<h3 class="sub">5 facteurs physiopathologiques combinés</h3>
+<div class="card">
+<div class="card-body">
+<ol style="font-size:13.5px;color:var(--text2);padding-left:18px;display:flex;flex-direction:column;gap:12px;">
+<li><strong style="color:var(--navy-800);">Conflit mécanique (compression + frottement)</strong><br/>Contact anormal voûte coraco-acromiale / tendons coiffe</li>
+<li><strong style="color:var(--navy-800);">Dégénérescence tendineuse précoce</strong><br/>Pauvreté vasculaire naturelle (face profonde + insertion distale) + surcharge fonctionnelle</li>
+<li><strong style="color:var(--navy-800);">Insuffisance fonctionnelle de la coiffe</strong><br/>Non-abaissement de la tête lors de la contraction deltoïdienne → subluxation supérieure</li>
+<li><strong style="color:var(--navy-800);">Déséquilibre RI/RE</strong><br/>Mauvais contrôle positionnel antéro-postérieur → dyskinésie scapulaire</li>
+<li><strong style="color:var(--navy-800);">Surcharge mécanique</strong><br/>Occasionnelle ou répétée sur terrain dégénératif et/ou conflictuel préexistant</li>
+</ol>
+</div>
+</div>
+<h3 class="sub" style="margin-top:20px;">Contexte traumatique</h3>
+<div class="card">
+<div class="card-body">
+<div class="info-box amber">
+<strong>Sujet jeune :</strong> Nécessite un traumatisme à haute cinétique (chute de hauteur, AVP). Lésion franche rare.
+            </div>
+<div class="info-box coral" style="margin-top:10px;">
+<strong>Sujet âgé :</strong> Simple chute de sa hauteur peut aggraver brutalement une lésion dégénérative préexistante → tableau d'épaule pseudo-paralytique.
+            </div>
+<div class="info-box teal" style="margin-top:10px;">
+<strong>Voûte coraco-acromiale :</strong> Joue également un rôle d'amortisseur et de stabilisateur passif de la tête en cas de rupture de coiffe (Duchenne de Boulogne, Dolto, Gagey).
+            </div>
+</div>
+</div>
+<h3 class="sub" style="margin-top:20px;">Implications cliniques ostéopathiques</h3>
+<div class="info-box teal">
+<strong>Analyse segmentaire indispensable :</strong> Toute pathologie claviculaire, dyskinésie scapulaire, ou dysfonction rachidienne peut être à l'origine d'une bursite (conflit) ou d'une tendinite. Le rythme scapulo-huméral doit être évalué dans son contexte postural global. <em>(P. César, IEOQ)</em>
+</div>
+</div>
+</div>
+</section>
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["fondements", "rom-ms", "rom-mi", "pathologies"];
+  var SUB_LABELS_LOCAL = {"fondements": "🔬 Fondements", "rom-ms": "📐 ROM Membre supérieur", "rom-mi": "📐 ROM Membre inférieur", "pathologies": "⚕️ Physiopathologie"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>
