@@ -39,6 +39,23 @@ const OSTEO_SESSION_KEY = "osteoAuth";
 // Après connexion, tout le monde arrive sur la page de choix du contenu.
 const OSTEO_POST_LOGIN_PAGE = "home.html";
 
+// Préfixe relatif vers la racine du site, déduit de la façon dont CETTE
+// page a chargé auth-config.js (ex. "auth-config.js" à la racine → "",
+// "../auth-config.js" depuis an1/ ou an2/ → "../"). Indispensable
+// depuis que le contenu des années est réparti dans des sous-dossiers :
+// sans ça, une redirection vers "index.html" écrite en dur atterrissait
+// sur an1/index.html ou an2/index.html (le hub de catégories) au lieu
+// de la vraie page de connexion à la racine.
+const OSTEO_ROOT_PREFIX = (function () {
+  const s = document.currentScript;
+  if (s) {
+    const src = s.getAttribute("src") || "";
+    const idx = src.lastIndexOf("auth-config.js");
+    if (idx !== -1) return src.slice(0, idx);
+  }
+  return "";
+})();
+
 // Vérifie un couple utilisateur/mot de passe. Retourne l'entrée
 // correspondante (avec year/label) si valide, sinon null.
 function osteoCheckLogin(username, password) {
@@ -81,7 +98,7 @@ function osteoGetSession() {
 function osteoGuardPage(requiredYear) {
   const data = osteoGetSession();
   if (!data || requiredYear > data.year) {
-    window.location.replace("index.html");
+    window.location.replace(OSTEO_ROOT_PREFIX + "index.html");
   }
 }
 
@@ -90,7 +107,7 @@ function osteoGuardPage(requiredYear) {
 // comme la page de choix du contenu (home.html).
 function osteoRequireLogin() {
   if (!osteoGetSession()) {
-    window.location.replace("index.html");
+    window.location.replace(OSTEO_ROOT_PREFIX + "index.html");
   }
 }
 
@@ -99,5 +116,5 @@ function osteoLogout() {
   try {
     sessionStorage.removeItem(OSTEO_SESSION_KEY);
   } catch (e) {}
-  window.location.href = "index.html";
+  window.location.href = OSTEO_ROOT_PREFIX + "index.html";
 }
