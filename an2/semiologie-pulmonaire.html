@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 2 · Sémiologie — Pulmonaire</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(2);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🫁</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 2e Année</h1>
+      <p>Sémiologie — Pulmonaire · IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="semiologie.html">← Sémiologie</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><a href="semiologie.html" style="color:var(--teal-700);text-decoration:none;font-weight:600;">Sémiologie</a> <span style="color:var(--gray-300);">›</span> <strong>Pulmonaire</strong> <span id="crumbSub">› 🗣️ Interrogatoire</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="sp-interrogatoire" onclick="showSub('sp-interrogatoire')">🗣️ Interrogatoire</button><button type="button" class="nav-tab" data-sub="sp-examen" onclick="showSub('sp-examen')">🩺 Examen clinique</button><button type="button" class="nav-tab" data-sub="sp-asthme" onclick="showSub('sp-asthme')">💨 Asthme</button><button type="button" class="nav-tab" data-sub="sp-bpco" onclick="showSub('sp-bpco')">🌬️ BPCO</button><button type="button" class="nav-tab" data-sub="sp-pleuresies" onclick="showSub('sp-pleuresies')">💧 Pleurésies</button><button type="button" class="nav-tab" data-sub="sp-pneumothorax" onclick="showSub('sp-pneumothorax')">🎈 Pneumothorax</button><button type="button" class="nav-tab" data-sub="sp-toux" onclick="showSub('sp-toux')">🤧 Toux de l'adulte</button><button type="button" class="nav-tab" data-sub="sp-tuberculose" onclick="showSub('sp-tuberculose')">🦠 Tuberculose</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="sp-interrogatoire" style="display:block;">
+<div class="section-title">L'interrogatoire de la sphère pulmonaire</div>
+<div class="section-sub">Signes fonctionnels, physiques et généraux · Héloïse Bouësnard, D.O. — Chapitre 1, Pneumologie IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;">On distingue trois types de signes à l'interrogatoire : <strong>fonctionnels</strong> (symptômes subjectifs décrits par le patient), <strong>physiques</strong> (objectifs, constatés par le praticien) et <strong>généraux</strong> (traduisent l'impact global de la maladie sur l'organisme). Pour tout symptôme, préciser : <em>depuis quand ? comment ? mode de début ? allure évolutive ? fréquence ? notion d'exercice ?</em></div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">🗣️</div><div class="card-title">Les 4 signes fonctionnels majeurs</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:16%">Signe</th><th>À préciser</th></tr></thead>
+<tbody>
+<tr><td><strong>Toux</strong></td><td>Sèche ou grasse ? Matin ou nuit ? Déclenchée par l'exercice ? Signes associés ? — « La toux est un symptôme, non une maladie » (Hippocrate)</td></tr>
+<tr><td><strong>Expectoration</strong></td><td>Quand (matin, nuit, effort) ? Caractéristiques : muqueuse, purulente, hémoptysie</td></tr>
+<tr><td><strong>Dyspnée</strong></td><td>Essoufflement, respiration anormale/difficile, sensation d'asphyxie au pire. À l'exercice ou au repos ? Amélioration en position assise ? Horaire ? Inspiratoire ou expiratoire ? <strong>N'est pas spécifique à la sphère cardiaque.</strong></td></tr>
+<tr><td><strong>Douleur</strong></td><td>Le poumon est un organe peu/pas douloureux — c'est la <strong>plèvre</strong> qui est responsable des douleurs thoraciques (atteintes pariétales, cardiaques, œsophagiennes, pulmonaires).</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="grid-2" style="margin-bottom:18px;">
+<div class="path-card">
+<h4>Signes généraux &amp; antécédents</h4>
+<ul>
+<li>Asthénie, amaigrissement, anorexie, fièvre (prise ou non ? sueurs nocturnes → évoquer une tuberculose)</li>
+<li>ATCD personnels : vaccination BCG, dernier contrôle</li>
+<li>ATCD familiaux : maladies pulmonaires contagieuses, ATCD cardiovasculaires</li>
+<li>Mode de vie : profession (amiante, polluants), environnement, traitements/allergies, habitat (pollen, animaux)</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Tabagisme — paquets-années</h4>
+<ul>
+<li>Paquets-années = paquets/jour × nombre d'années</li>
+<li>10 paquets-années = risque de cancer ++ ; 12 paquets-années = +++</li>
+<li>Même un tabagisme léger (1-2 cig/jour) augmente significativement mortalité globale, cancer, maladies cardiorespiratoires</li>
+<li>Après 10 ans sans fumer, le risque de cancer du poumon devient presque nul</li>
+<li>Risques : cancers (poumon, ORL, vessie, reins), artérite, insuffisance respiratoire/myocarde, risques grossesse/enfants</li>
+</ul>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><div class="card-icon navy">🧩</div><div class="card-title">Corrélation signes fonctionnels / signes physiques selon le diagnostic</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Diagnostic (dyspnée)</th><th>Signes fonctionnels</th><th>Signes physiques</th></tr></thead>
+<tbody>
+<tr><td>Embolie pulmonaire aiguë</td><td>Polypnée, douleur basithoracique</td><td>Poumons clairs</td></tr>
+<tr><td>Asthme aigu</td><td>Contexte, dyspnée expiratoire</td><td>Sibilances</td></tr>
+<tr><td>Pneumopathie</td><td>Fièvre, douleur thoracique, toux</td><td>Foyer de crépitants</td></tr>
+<tr><td>Exacerbation BPCO</td><td>Contexte, toux, expectoration</td><td>Ronchis, sibilances</td></tr>
+<tr><td>Pneumothorax</td><td>Aigu, douleur inspiratoire</td><td>Silence auscultatoire</td></tr>
+<tr><td>Obstacle laryngé</td><td>Dyspnée inspiratoire</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="footnote">Source : Héloïse Bouësnard, D.O. — Chapitre 1, Pneumologie · IEOQ</div>
+
+</section>
+<section class="section" id="sp-examen" style="display:none;">
+<div class="section-title">Approche clinique de l'examen médical</div>
+<div class="section-sub">Méthode générale de consultation + examen physique pulmonaire · Héloïse Bouësnard, D.O. — Chapitre 2, Pneumologie IEOQ</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">Méthode générale de la consultation</div></div>
+<div class="card-body" style="padding:0;">
+<div class="test-detail-grid" style="padding:16px;">
+<div class="test-detail-item"><div class="label">Inspection générale</div><div class="value" style="font-size:13px;">Dès l'accueil, hors salle : sexe, âge, allure générale, ethnie/peau, essoufflement, mobilité, négligence vestimentaire (peut indiquer une affection neurologique), communication.</div></div>
+<div class="test-detail-item"><div class="label">Motif de consultation</div><div class="value" style="font-size:13px;">Toujours demander pourquoi le patient consulte, répondre précisément à sa demande.</div></div>
+<div class="test-detail-item"><div class="label">Interrogatoire</div><div class="value" style="font-size:13px;">Signes fonctionnels (circonstance, chronologie, mode, intensité, siège) · signes généraux (asthénie matinale = psychasthénie vs asthénie en cours de journée = plus problématique ; anorexie ; amaigrissement à quantifier ; fièvre) · antécédents · mode de vie (tabac, alcool, stress, profession).</div></div>
+<div class="test-detail-item"><div class="label">Examen clinique en 2 temps</div><div class="value" style="font-size:13px;">1) Observation/inspection (patient dévêtu jusqu'à la ceinture, assis, face au praticien) · 2) Palpation, percussion, auscultation, mobilisation.</div></div>
+<div class="test-detail-item"><div class="label">Synthèse clinique</div><div class="value" style="font-size:13px;">Intégrer signes fonctionnels + physiques → identifier un syndrome → formuler une hypothèse diagnostique.</div></div>
+<div class="test-detail-item"><div class="label">Degré d'urgence</div><div class="value" style="font-size:13px;">Immédiate (911) · chirurgicale (« tout de suite ») · « peut attendre ». Évaluer gravité, retentissement somatique et psychique.</div></div>
+</div>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🩺</div><div class="card-title">Examen pulmonaire spécifique</div></div>
+<div class="card-body">
+<div class="path-card" style="margin-bottom:10px;">
+<h4>Inspection thoracique</h4>
+<ul>
+<li>Fréquence respiratoire normale 12-16/min (&gt;16 = tachypnée/polypnée, &lt;12 = bradypnée)</li>
+<li>Ampliation thoracique : différence de diamètre ≈ 5 cm ; asymétrie = immobilité hémi-thoracique (évoque fracture) ; volet costal = double fracture sur ≥ 3 côtes</li>
+<li>Pectus excavatum = anomalie bénigne du sujet jeune, sans traitement nécessaire</li>
+<li>Signes extra-thoraciques : cyanose, ongles jaunis, hippocratisme digital (BPCO, mucoviscidose, causes hépatiques/cardiaques)</li>
+</ul>
+</div>
+<div class="info-box amber" style="margin-bottom:10px;">Motifs de consultation pulmonaire en ostéopathie : oppression thoracique, dyspnée, douleur thoracique/intercostale/référée, stress avec hyperventilation, ATCD infection pulmonaire (COVID long, pleurésie), ATCD chirurgie/fibrose, ATCD fractures/contusions costales, pathologie chronique (scoliose, Scheuermann, BPCO).</div>
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Palpation — face antérieure</div><div class="value" style="font-size:13px;">Amplitude respiratoire (pouces sur rebords costaux, pli cutané, inspiration profonde, écartement symétrique) · frémissement tactile vocal (« 33 », comparer les 2 côtés).</div></div>
+<div class="test-detail-item"><div class="label">Palpation — face postérieure</div><div class="value" style="font-size:13px;">Mains à plat de part et d'autre de la colonne, « 33 ». Vibrations ↓ = gaz/liquide dans la plèvre ; vibrations ↑ = condensation pulmonaire.</div></div>
+<div class="test-detail-item"><div class="label">Percussion</div><div class="value" style="font-size:13px;">Majeur sur 2 doigts posés sur la peau. Son normal = tympanique. Plus tympanique = épanchement gazeux ; mat = épanchement liquidien ou condensation.</div></div>
+<div class="test-detail-item"><div class="label">Auscultation</div><div class="value" style="font-size:13px;">Zones bilatérales (dos + devant). Respiration bouche ouverte augmente le murmure vésiculaire (audible à l'inspiration + début expiration).</div></div>
+</div>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon coral">👂</div><div class="card-title">Bruits anormaux à l'auscultation</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Bruit</th><th>Signification</th></tr></thead>
+<tbody>
+<tr><td>Diminution/abolition du murmure vésiculaire</td><td>Obésité, emphysème, infection</td></tr>
+<tr><td>Souffle tubaire</td><td>Syndrome de condensation pulmonaire</td></tr>
+<tr><td>Frottement pleural</td><td>Épanchement liquidien pleural</td></tr>
+<tr><td>Crépitants (petits craquements secs, fin d'inspiration)</td><td>Pneumonie, OAP</td></tr>
+<tr><td>Sibilants (sifflements expiratoires)</td><td>Bronchiolite, asthme</td></tr>
+<tr><td>Ronchi (bruits inspi/expiratoires)</td><td>Encombrement muqueux</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="info-box teal">Examens complémentaires (si besoin, après examen clinique) : imagerie (radio, IRM, scanner), scintigraphie de perfusion/ventilation, fibroscopie bronchique + biopsie, EFR (épreuves fonctionnelles respiratoires), gaz du sang (GDS).</div>
+
+<div class="footnote">Source : Héloïse Bouësnard, D.O. — Chapitre 2, Pneumologie · IEOQ</div>
+
+</section>
+<section class="section" id="sp-asthme" style="display:none;">
+<div class="section-title">L'asthme</div>
+<div class="section-sub">Obstruction bronchique paroxystique réversible · Héloïse Bouësnard, D.O. — Chapitre 3, Pneumologie IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;"><strong>Définition.</strong> Obstruction bronchique responsable d'épisodes de dyspnée paroxystique sifflante et réversible. Prévalence : ≈ 600&nbsp;000 personnes au Québec, près de 2,5 millions de Canadiens.</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🔬</div><div class="card-title">Physiopathologie &amp; étiologie</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;">Hypertonie des muscles bronchiques (bronchoconstriction) + hypersécrétion bronchique (bouchons muqueux) + œdème de la muqueuse/inflammation → réduction du diamètre des bronches → obstruction → difficulté respiratoire avec sifflement. Expiration difficile et lente (« bradypnée expiratoire »).</p>
+<div class="grid-2">
+<div class="path-card">
+<h4>Facteurs de risque personnels</h4>
+<ul><li>Prédisposition génétique, atopie/allergie (75% des asthmatiques)</li><li>Enfants, Afro-Américains</li><li>Hyperréactivité bronchique, obésité</li><li>Statut socioéconomique faible</li></ul>
+</div>
+<div class="path-card">
+<h4>Facteurs de risque environnementaux</h4>
+<ul><li>Tabac, pollution de l'air</li><li>Exposition professionnelle</li><li>Infections virales/bactériennes</li><li>Environnement aseptisé, stress, allergènes</li></ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon coral">🚨</div><div class="card-title">Trois formes cliniques</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:18%">Forme</th><th>Signes</th><th>Évolution</th></tr></thead>
+<tbody>
+<tr><td><strong>Crise d'asthme</strong></td><td>Début brutal souvent nocturne, dyspnée avec expiration difficile, thorax distendu, râles sibilants, <strong>pas de signe de gravité ni de fièvre</strong>. Durée : 1 à plusieurs heures.</td><td>Fin de crise marquée par expectoration visqueuse (crachat perlé). Stabilisation même sans traitement, récidives possibles → peut évoluer vers l'AADC.</td></tr>
+<tr><td><strong>Asthme à dyspnée continue (AADC)</strong></td><td>Dyspnée permanente + accès paroxystiques, expectoration abondante muqueuse/muco-purulente, râles sibilants et bronchiques.</td><td>Limitation des activités quotidiennes, réduction de la qualité de vie.</td></tr>
+<tr><td><strong style="color:var(--coral-500);">État de mal asthmatique</strong></td><td><span class="tag tag-coral">URGENCE MÉDICALE</span> Fièvre, dyspnée sévère avec tirage costal, cyanose, sueur, thorax immobile avec pauses respiratoires (silence auscultatoire), signes d'épuisement.</td><td>Amélioration possible sous traitement ; risque de coma/décès (mortalité ~2%) par asphyxie, insuffisance ventriculaire droite ou épuisement.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="grid-2" style="margin-bottom:18px;">
+<div class="test-detail-full">
+<div class="label">Signes d'épuisement (état de mal asthmatique)</div>
+Silence auscultatoire (risque imminent d'arrêt respiratoire) · signes cardiaques (tachycardie jonctionnelle, reflux hépato-jugulaire) · signes neuropsychologiques (angoisse/agitation ou perte de conscience = risque imminent d'arrêt respiratoire) · GDS : hypoxie + hypercapnie importantes.
+</div>
+<div class="test-positive">
+<div class="label">Signes d'alarme — asthme instable</div>
+Augmentation de la fréquence des crises · répétition quotidienne · obstruction matinale persistante · diminution du débit de pointe · augmentation de la dose de médicament par jour.
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon amber">⚖️</div><div class="card-title">Diagnostic différentiel — AADC vs BPCO</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:30%">Critère</th><th>Asthme à dyspnée continue (AADC)</th><th>BPCO</th></tr></thead>
+<tbody>
+<tr><td>Diminution du débit (EFR)</td><td>Oui, réversible ou partiellement réversible</td><td>Oui, non réversible</td></tr>
+<tr><td>Traitement de l'obstruction</td><td>Réversible (sympathomimétiques, anti-inflammatoires)</td><td>Non réversible</td></tr>
+<tr><td>Évolution</td><td>Peut évoluer vers l'asthme instable et grave (urgence)</td><td>Peut conduire à des complications respiratoires chroniques</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">💊</div><div class="card-title">Traitements</div></div>
+<div class="card-body">
+<div class="grid-2">
+<div class="path-card">
+<h4>De secours (soulageurs)</h4>
+<ul><li>Bronchodilatateurs courte durée (BACA, « pompes bleues ») — 1-5 min, durent 4-6h</li><li>Corticostéroïdes oraux — quelques jours seulement</li></ul>
+</div>
+<div class="path-card">
+<h4>Quotidiens (contrôleurs)</h4>
+<ul><li>Corticostéroïdes inhalés (CSI) — traitement de choix, « pompes oranges/brunes »</li><li>Bronchodilatateurs longue durée (BALA, 12h) — jamais seuls, toujours avec CSI</li><li>Antagonistes muscariniques longue durée (AMLA, 24h) si non contrôlé</li></ul>
+</div>
+</div>
+<div class="info-box teal" style="margin-top:12px;">Test de contrôle de l'asthme : score &gt; 20 = contrôle optimal ; score &lt; 20 = contrôle insuffisant. Mesures d'hygiène de vie : éviction du tabac, réduction de la pollution, traitement des foyers infectieux ORL/dentaires.</div>
+</div>
+</div>
+
+<div class="test-card" id="sp-asthme-still">
+<div class="test-card-header" onclick="toggleTest('sp-asthme-still')">
+<div class="test-card-name">Perspective ostéopathique historique <small>A.T. Still, 1910</small></div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<p style="font-size:13.5px;color:var(--text2);">Extrait d'« Ostéopathie : Recherche et pratique » — Still décrit une technique manuelle sur les côtes et la colonne dorsale (repositionnement costal via traction/rotation du bras, patient debout contre un chambranle de porte), rapportant des résultats constants sur ses patients asthmatiques lorsque les côtes déplacées étaient remises en place, avec récidive de l'asthme en cas de nouvelle descente costale.</p>
+</div>
+</div>
+
+<div class="footnote">Source : Héloïse Bouësnard, D.O. — Chapitre 3, Pneumologie · IEOQ</div>
+
+</section>
+<section class="section" id="sp-bpco" style="display:none;">
+<div class="section-title">La bronchopneumopathie chronique obstructive (BPCO)</div>
+<div class="section-sub">Bronchite chronique &amp; emphysème · Héloïse Bouësnard, D.O. — Chapitre 4, Pneumologie IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;"><strong>Définition.</strong> Maladie respiratoire chronique et progressive caractérisée par une obstruction permanente des voies respiratoires, résultant d'une inflammation chronique des bronches et/ou d'une destruction du parenchyme pulmonaire (emphysème). Évolutive, évitable, partiellement non réversible.</div>
+
+<div class="grid-2" style="margin-bottom:18px;">
+<div class="path-card">
+<h4>Bronchite chronique</h4>
+<ul>
+<li>Toux productive ≥ 3 mois/an pendant ≥ 2 ans consécutifs, sans fièvre</li>
+<li>Type obstructive (objectivée au spiromètre) → BPCO</li>
+<li>Type asthmatique (chez les asthmatiques) ≠ BPCO</li>
+<li>Facteur de risque pour la BPCO, mais tous ne développent pas une BPCO</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Emphysème</h4>
+<ul>
+<li>Destruction étendue et irréversible des parois alvéolaires + dilatation des alvéoles</li>
+<li>Perte d'élasticité pulmonaire → collapsus des voies aériennes à l'expiration (« piège à air »)</li>
+<li>Dyspnée progressive, même au repos</li>
+</ul>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🔬</div><div class="card-title">Physiopathologie — 4 étapes</div></div>
+<div class="card-body">
+<ol style="padding-left:20px;font-size:13.5px;color:var(--text2);line-height:1.8;">
+<li><strong>Inflammation chronique</strong> des voies respiratoires (tabac/pollution → activation macrophages/neutrophiles → épaississement de la paroi bronchique)</li>
+<li><strong>Remodelage/obstruction bronchique</strong> (hyperplasie des glandes à mucus → hypersécrétion, fibrose des petites bronches, perte du réflexe d'évacuation du mucus)</li>
+<li><strong>Destruction du parenchyme</strong> (perte des fibres élastiques, fusion des alvéoles = emphysème, ↓ surface d'échanges → hypoxémie, hypercapnie)</li>
+<li><strong>Conséquence fonctionnelle</strong> (limitation du débit expiratoire, hyperinflation, ↑ travail respiratoire → fatigue, dyspnée)</li>
+</ol>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon amber">🩺</div><div class="card-title">Symptômes</div></div>
+<div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Généraux</div><div class="value" style="font-size:13px;">Dyspnée d'effort, toux chronique, expectorations fréquentes (mucus blanchâtre puis jaune/verdâtre si infection), fatigue, infections respiratoires répétées.</div></div>
+<div class="test-detail-item"><div class="label">Bronchite chronique</div><div class="value" style="font-size:13px;">Toux grasse accentuée au lever/coucher (« toux du fumeur ») ; stade avancé : dyspnée au repos, œdème des jambes, cyanose.</div></div>
+<div class="test-detail-item"><div class="label">Emphysème</div><div class="value" style="font-size:13px;">Souffle court progressif, respiration sifflante, oppression thoracique, amaigrissement important.</div></div>
+<div class="test-detail-item"><div class="label">Exacerbations</div><div class="value" style="font-size:13px;">Déclenchées par pics de pollution, allergènes, infection. Formes graves : insuffisance respiratoire aiguë (dyspnée grave, anxiété sévère, sueurs, cyanose, confusion, hypoxie).</div></div>
+</div>
+</div>
+</div>
+
+<div class="info-box coral" style="margin-bottom:18px;"><strong>Réaction de l'organisme à l'hypoxie :</strong> hyperventilation · vasoconstriction hypoxique (↑ risque d'insuffisance cardiaque droite) · ↑ érythropoïèse (sang plus épais) · activation des muscles respiratoires accessoires (lèvres pincées, fatigue) · rétention de CO2 → hypercapnie évolutive.</div>
+
+<div class="grid-2" style="margin-bottom:18px;">
+<div class="path-card">
+<h4>Épidémiologie &amp; diagnostic</h4>
+<ul>
+<li>4,3% des ≥ 35 ans au Québec, 7,6% des ≥ 65 ans</li>
+<li>Causes : tabac +++, facteurs environnementaux/professionnels</li>
+<li>Diagnostic : radio thorax, EFR/spirométrie (nécessaire), ECG, gazométrie artérielle</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Traitement</h4>
+<ul>
+<li><strong>Sevrage tabagique — traitement clé</strong> : date d'arrêt, substituts nicotiniques, varénicline/bupropion</li>
+<li>Bronchodilatateurs, corticoïdes inhalés, antitussifs</li>
+<li>Kinésithérapie respiratoire, activité physique adaptée, soins palliatifs</li>
+</ul>
+</div>
+</div>
+
+<div class="test-card" id="sp-bpco-reco">
+<div class="test-card-header" onclick="toggleTest('sp-bpco-reco')">
+<div class="test-card-name">10 recommandations de bonnes pratiques</div>
+<div class="test-toggle">▼</div>
+</div>
+<div class="test-card-body">
+<ol style="padding-left:20px;font-size:13.5px;color:var(--navy-800);line-height:1.9;">
+<li>Penser à la BPCO devant tabagisme + symptômes chez une personne de plus de 40 ans</li>
+<li>La spirométrie est nécessaire pour poser le diagnostic de BPCO</li>
+<li>Le traitement repose sur : sevrage tabagique + activité physique + bronchodilatateurs</li>
+<li>La réadaptation respiratoire doit être proposée à tout patient dyspnéique</li>
+<li>Bien expliquer le maniement du dispositif d'inhalation</li>
+<li>Ne pas prescrire de corticoïde inhalé seul</li>
+<li>Ne pas prescrire de corticoïde oral au long cours</li>
+<li>L'antibiotique n'est pas systématique en cas d'exacerbation</li>
+<li>L'oxygénothérapie n'est renouvelée que si hypoxémie sévère</li>
+<li>Aborder la personne de confiance, les directives anticipées et les soins palliatifs suffisamment tôt</li>
+</ol>
+</div>
+</div>
+
+<div class="footnote">Source : Héloïse Bouësnard, D.O. — Chapitre 4, Pneumologie · IEOQ</div>
+
+</section>
+<section class="section" id="sp-pleuresies" style="display:none;">
+<div class="section-title">Les pathologies pleurales (pleurésies)</div>
+<div class="section-sub">Épanchement liquidien de la plèvre · Héloïse Bouësnard, D.O. — Chapitre 5, Pneumologie IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;"><strong>Important : la pleurésie n'est pas une maladie mais un syndrome</strong> traduisant un écoulement de liquide dans la plèvre. Anatomie : feuillet viscéral (adhère au poumon), feuillet pariétal (sous la paroi thoracique), pression intra-pleurale négative (garde les feuillets collés). Types de liquide : clair (jaune), purulent, hémothorax (sang).</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🔬</div><div class="card-title">Mécanismes — transsudats vs exsudats</div></div>
+<div class="card-body">
+<div class="grid-2">
+<div class="path-card">
+<h4>Transsudats</h4>
+<ul>
+<li>Problème mécanique de pression (ex. œdèmes pulmonaires)</li>
+<li>Liquide pauvre en protéines</li>
+<li><strong>99% des cas = problème de cœur gauche</strong> ; sinon problème hépatique ou rénal</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Exsudats</h4>
+<ul>
+<li>Inflammation séreuse (infection, tumeur) → liquide + protéines (jaune citrin clair, parfois hématique)</li>
+<li>~30% cancers (bronches, sein, plèvre, mésothéliome/amiante)</li>
+<li>~30% infectieux (tuberculose, bactéries, virus)</li>
+<li>~30% autres (embolie pulmonaire, PR, abcès sous-phrénique, pancréatite)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon coral">🎯</div><div class="card-title">Trépied pathognomonique à l'examen clinique</div></div>
+<div class="card-body">
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px;">
+<span class="tag tag-coral" style="font-size:13px;padding:6px 14px;">Abolition du murmure vésiculaire</span>
+<span class="tag tag-coral" style="font-size:13px;padding:6px 14px;">Abolition des vibrations vocales</span>
+<span class="tag tag-coral" style="font-size:13px;padding:6px 14px;">Matité franche à la percussion</span>
+</div>
+<p style="font-size:13px;color:var(--text2);">+ Inspection : immobilité de l'hémithorax · Auscultation : frottement pleural possible, souffle pleurétique parfois présent.</p>
+<p style="font-size:13.5px;color:var(--navy-800);margin-top:8px;"><strong>Clinique — interrogatoire :</strong> douleur latéralisée du côté de la pleurésie, irradiant vers le cou/épaule, aggravée par l'inspiration profonde ; toux souvent sèche ; dyspnée surtout au changement de position (couché sur le côté opposé).</p>
+</div>
+</div>
+
+<div class="test-detail-grid" style="margin-bottom:18px;">
+<div class="test-detail-item"><div class="label">Selon la cause</div><div class="value" style="font-size:13px;">Cancer = épanchement insidieux et lent à se constituer. Infectieux = fièvre variable, crachat purulent ou sanglant.</div></div>
+<div class="test-detail-item"><div class="label">Tolérance</div><div class="value" style="font-size:13px;">Moins bonne chez personnes âgées/fragiles ; dépend de la cause, de l'importance et de la rapidité de formation (plus lent = mieux toléré). Pleurésie cancéreuse souvent mieux tolérée que pleurésie cardiaque.</div></div>
+<div class="test-detail-item"><div class="label">Pleurésie purulente</div><div class="value" style="font-size:13px;">Syndrome infectieux important + liquide purulent ; étiologie = infection bactérienne grave.</div></div>
+<div class="test-detail-item"><div class="label">Hémothorax</div><div class="value" style="font-size:13px;">Sang dans la plèvre (accident, coup de couteau) ; à la radio, niveau horizontal observé.</div></div>
+</div>
+
+<div class="info-box amber">Ponction pleurale : objectif diagnostique et/ou thérapeutique, distinction exsudat/transsudat essentielle. Traitement : pas de traitement spécifique de la pleurésie elle-même ; évacuation rapide si mal tolérée ; traiter la cause sous-jacente.</div>
+
+<div class="info-box teal" style="margin-top:12px;"><strong>Point pour l'ostéopathe :</strong> considérer la pleurésie devant une douleur thoracique, l'évoquer chez les patients à ATCD favorisants (insuffisance cardiaque, cancer) et devant une douleur de l'épaule (notamment droite).</div>
+
+<div class="footnote">Source : Héloïse Bouësnard, D.O. — Chapitre 5, Pneumologie · IEOQ</div>
+
+</section>
+<section class="section" id="sp-pneumothorax" style="display:none;">
+<div class="section-title">Le pneumothorax (PNO)</div>
+<div class="section-sub">Épanchement aérien de la plèvre · Héloïse Bouësnard, D.O. — Chapitre 6, Pneumologie IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;"><strong>Définition.</strong> Présence d'air dans la cavité pleurale, avec collapsus partiel ou complet du poumon. La plèvre normalement fermée sous vide est « ébréchée » ; l'air pénètre depuis l'extérieur ou depuis les poumons.</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🎈</div><div class="card-title">Types de pneumothorax</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:22%">Type</th><th style="width:28%">Terrain</th><th>Causes et mécanismes</th></tr></thead>
+<tbody>
+<tr><td><strong>Spontané idiopathique</strong></td><td>Le plus fréquent ; sujets jeunes, grands et maigres, plutôt masculins</td><td>Croissance osseuse vertébrale rapide (13-16 ans) : plèvre/poumon croissent moins vite → bulles sous-pleurales pouvant se rompre → brèche</td></tr>
+<tr><td><strong>Spontané par brèche viscérale secondaire</strong></td><td>Secondaire à d'autres pathologies pulmonaires</td><td>BPCO/asthme ; maladies interstitielles</td></tr>
+<tr><td><strong>Iatrogène</strong></td><td>Brèche causée par une intervention médicale</td><td>Ponction pleurale mal effectuée</td></tr>
+<tr><td><strong>Post-traumatique</strong></td><td>Souvent associé à un hémothorax</td><td>Plaie à l'arme blanche, accident de voiture</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="test-detail-grid" style="margin-bottom:18px;">
+<div class="test-detail-item"><div class="label">Clinique — interrogatoire</div><div class="value" style="font-size:13px;">Syndrome pleural : douleur unilatérale, augmentée à l'inspiration profonde, irradiant vers cou/épaule, hyperaiguë, brutale et extrêmement précise ; +/- petite toux sèche et essoufflement.</div></div>
+<div class="test-detail-item"><div class="label">Clinique — examen</div><div class="value" style="font-size:13px;">Syndrome d'épanchement aérien : abolition des vibrations vocales, murmure vésiculaire absent, tympanisme à la percussion.</div></div>
+<div class="test-detail-item"><div class="label">Radiographie</div><div class="value" style="font-size:13px;">Clarté radiographique (poumon « noir »), absence de trame pulmonaire.</div></div>
+<div class="test-detail-item"><div class="label">Problématique clinique</div><div class="value" style="font-size:13px;">Pas de problème de diagnostic — l'enjeu est d'apprécier la <strong>tolérance</strong> (bien, moyennement, mal tolérée).</div></div>
+</div>
+
+<div class="card">
+<div class="card-header"><div class="card-icon amber">💊</div><div class="card-title">Traitement selon la tolérance</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<tbody>
+<tr><td style="width:35%"><strong>Bien toléré</strong></td><td>Repos au lit</td></tr>
+<tr><td><strong>Moyennement toléré</strong></td><td>Ponction à l'aiguille</td></tr>
+<tr><td><strong>Mal toléré</strong></td><td>Pose d'un drain</td></tr>
+<tr><td><strong>Récidives fréquentes</strong></td><td>Intervention chirurgicale dès la 1ère récidive controlatérale ; discussion en cas de récidive homolatérale</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="info-box coral" style="margin-top:12px;"><strong>Problématique du médecin :</strong> diagnostic facile ; question thérapeutique = repos ou drain ; <strong>le problème principal reste la récidive.</strong></div>
+
+<div class="footnote">Source : Héloïse Bouësnard, D.O. — Chapitre 6, Pneumologie · IEOQ</div>
+
+</section>
+<section class="section" id="sp-toux" style="display:none;">
+<div class="section-title">La toux de l'adulte</div>
+<div class="section-sub">Démarche diagnostique et orientation étiologique · Héloïse Bouësnard, D.O. — Chapitre 7, Pneumologie IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;"><strong>Définition.</strong> Symptôme non spécifique pouvant révéler ou accompagner presque toutes les maladies respiratoires. Acte réflexe provoquant l'expulsion violente du contenu des voies respiratoires — mécanisme de défense involontaire, mais commandable. Utile et à respecter quand productive ; à combattre quand irritative et inutile (sèche).</div>
+
+<div class="grid-2" style="margin-bottom:18px;">
+<div class="path-card">
+<h4>Complications</h4>
+<ul>
+<li>Fractures costales (sujets âgés/ostéoporotiques)</li>
+<li>Perturbations circulation cérébrale (vertiges, syncope, ictus laryngé)</li>
+<li>Pneumothorax, rupture d'anévrisme intrathoracique (rare)</li>
+<li>Hernie abdominale/inguinale, incontinence urinaire</li>
+<li>Asthénie, insomnie, exclusion sociale</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Démarche diagnostique en 2 étapes</h4>
+<ul>
+<li>1) Caractériser précisément le symptôme</li>
+<li>2) L'intégrer au schéma sémiologique général (autres symptômes, signes généraux, ATCD, facteurs de risque, examens complémentaires)</li>
+</ul>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Caractéristiques du symptôme à préciser</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:22%">Critère</th><th>Détail</th></tr></thead>
+<tbody>
+<tr><td>Mode de début/ancienneté</td><td>Aiguë (heures à 3 sem.) · subaiguë (3-8 sem.) · chronique (&gt; 8 sem.)</td></tr>
+<tr><td>Productivité</td><td>Sèche (sans expectoration) vs grasse/productive (bronchite chronique, infection)</td></tr>
+<tr><td>Caractère</td><td>Permanente (infection sinusienne, cancer, coqueluche, fibrose) vs intermittente (allergie, RGO, hyperréactivité)</td></tr>
+<tr><td>Horaire</td><td>Matinale (bronchite chronique, DDB) · nocturne (RGO, allergie, asthme) · diurne (psychogène)</td></tr>
+<tr><td>Tonalité/rythme</td><td>Coqueluchoïde (quintes) · spasmodique (asthme) · rauque aboyante (laryngée) · bitonale (paralysie récurrentielle)</td></tr>
+<tr><td>Facteurs déclenchants</td><td>Alimentation (fausse route), rire, parole, changement de position (plèvre, RGO), décubitus (RGO, IC gauche)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon amber">🧭</div><div class="card-title">Orientation étiologique</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:24%">Type de toux</th><th>Caractéristiques principales</th></tr></thead>
+<tbody>
+<tr><td><strong>Toux aiguë récente</strong></td><td>Infectieux : ORL, broncho-pulmonaire, coqueluche (sèche quinteuse, aboyante). Cardiaque : IC gauche (expectoration séreuse, mousseuse, rosée). Allergique : sèche, nocturne. Toxique : OAP post-inhalation gaz toxiques. Pleurale : sèche, aux changements de position, douleur basithoracique.</td></tr>
+<tr><td><strong>Toux chronique productive</strong></td><td>Bronchite chronique : grasse, muqueuse, matinale, sujet &gt; 40 ans fumeur. DDB/mucoviscidose : abondante, parfois purulente, matinale.</td></tr>
+<tr><td><strong>Toux chronique sèche</strong></td><td>Cancer bronchique : fréquente, nocturne, non soulagée par antitussifs, souvent hémoptysie. Pathologies interstitielles : sèche, crépitants. ORL, RGO, équivalent d'asthme, toux iatrogène.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="info-box coral"><strong>À retenir :</strong> les causes les plus fréquentes de toux chronique sont la pathologie ORL et le RGO. Les toux médicamenteuses sont de plus en plus courantes (voir « pneumotox.com »). Devant une toux récente ou un changement de sémiologie, <strong>surtout chez un fumeur, penser au cancer bronchique</strong> et envisager une fibroscopie bronchique.</div>
+
+<div class="footnote">Source : Héloïse Bouësnard, D.O. — Chapitre 7, Pneumologie · IEOQ</div>
+
+</section>
+<section class="section" id="sp-tuberculose" style="display:none;">
+<div class="section-title">La tuberculose</div>
+<div class="section-sub">Infection à Mycobacterium tuberculosis · Héloïse Bouësnard, D.O. — Chapitre 8, Pneumologie IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;"><strong>Définition.</strong> Maladie infectieuse générale, principalement pulmonaire, causée par <em>Mycobacterium tuberculosis</em> (bacille de Koch). Peut affecter d'autres organes.</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🦠</div><div class="card-title">Agent pathogène &amp; mécanismes</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;">99% <em>M. tuberculosis hominis</em>, 1% <em>M. tuberculosis bovis</em> (transmission via produits laitiers non pasteurisés). Croissance lente (5-7 sem.), strictement aérobies, forte résistance aux traitements (surtout immunodéprimés).</p>
+<ol style="padding-left:20px;font-size:13.5px;color:var(--navy-800);line-height:1.85;">
+<li>Transmission aérienne (inhalation de gouttelettes → bacilles atteignent les alvéoles)</li>
+<li>Phagocytose par les macrophages, mais le bacille empêche la fusion phagosome-lysosome → survit et se multiplie</li>
+<li>Recrutement de lymphocytes T → formation du <strong>granulome tuberculeux</strong></li>
+<li>Persistance : le bacille peut rester latent des années ; si immunité baisse (VIH, malnutrition, vieillesse) → réactivation</li>
+<li>Destruction du tissu pulmonaire, formation de cavernes (favorisent la contagiosité)</li>
+<li>Dissémination systémique → tuberculose miliaire (méninges, reins, os)</li>
+</ol>
+</div>
+</div>
+
+<div class="grid-2" style="margin-bottom:18px;">
+<div class="path-card">
+<h4>Diagnostic</h4>
+<ul>
+<li>Chez le patient : crachats, tubage gastrique à jeun, fibroscopie</li>
+<li>Laboratoire : coloration de Ziehl, cultures (Löwenstein, croissance lente)</li>
+<li>Test tuberculinique : injection intradermique PPD, lecture 48-72h → mesure de l'<strong>induration</strong> (pas la rougeur)</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Épidémiologie &amp; facteurs prédisposants</h4>
+<ul>
+<li>≈ 10 millions de cas, 3 millions de décès/an (Asie, Afrique, Amérique du Sud)</li>
+<li>Québec/Canada : prévalence accrue chez populations immigrantes et inuites</li>
+<li>Migration (risque x5 à x10), absence de BCG, VIH, diabète, précarité</li>
+</ul>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><div class="card-icon amber">📋</div><div class="card-title">Trois formes cliniques</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:22%">Forme</th><th>Caractéristiques</th></tr></thead>
+<tbody>
+<tr><td><strong>Primo-infection tuberculeuse</strong></td><td>Souvent latente, asymptomatique. Diagnostic basé sur la conversion cutanée à la tuberculine. Radio souvent normale ; BK parfois non détecté.</td></tr>
+<tr><td><strong>Tuberculose pulmonaire commune</strong></td><td>Découverte via dépistage radiologique ou signes généraux (AEG, sueurs). Radio = nodules formant des infiltrats, parfois cavernes. Réaction cutanée et BK généralement positifs.</td></tr>
+<tr><td><strong>Tuberculose miliaire</strong></td><td>Dissémination sanguine précoce. Lésions disséminées millimétriques (« grain de mil » à la radio). Toux, dyspnée, fièvre, AEG marquée. Réaction cutanée pouvant être négative si immunodépression sévère.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="footnote">Source : Héloïse Bouësnard, D.O. — Chapitre 8, Pneumologie · IEOQ</div>
+
+</section>
+
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["sp-interrogatoire", "sp-examen", "sp-asthme", "sp-bpco", "sp-pleuresies", "sp-pneumothorax", "sp-toux", "sp-tuberculose"];
+  var SUB_LABELS_LOCAL = {"sp-interrogatoire": "🗣️ Interrogatoire", "sp-examen": "🩺 Examen clinique", "sp-asthme": "💨 Asthme", "sp-bpco": "🌬️ BPCO", "sp-pleuresies": "💧 Pleurésies", "sp-pneumothorax": "🎈 Pneumothorax", "sp-toux": "🤧 Toux de l'adulte", "sp-tuberculose": "🦠 Tuberculose"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    if (initial) applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>

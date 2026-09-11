@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 2 · Sémiologie — Neurologique</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(2);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🧠</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 2e Année</h1>
+      <p>Sémiologie — Neurologique · IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="semiologie.html">← Sémiologie</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><a href="semiologie.html" style="color:var(--teal-700);text-decoration:none;font-weight:600;">Sémiologie</a> <span style="color:var(--gray-300);">›</span> <strong>Neurologique</strong> <span id="crumbSub">› 🧠 SNC & Méninges</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="sn-snc" onclick="showSub('sn-snc')">🧠 SNC & Méninges</button><button type="button" class="nav-tab" data-sub="sn-telencephale" onclick="showSub('sn-telencephale')">🧩 Télencéphale</button><button type="button" class="nav-tab" data-sub="sn-organisation" onclick="showSub('sn-organisation')">🔀 Organisation du SN</button><button type="button" class="nav-tab" data-sub="sn-reflexes" onclick="showSub('sn-reflexes')">🔨 Réflexes</button><button type="button" class="nav-tab" data-sub="sn-sensibilite" onclick="showSub('sn-sensibilite')">✋ Sensibilité</button><button type="button" class="nav-tab" data-sub="sn-motricite" onclick="showSub('sn-motricite')">🏃 Motricité</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+    <section class="section active" id="sn-snc" style="display:block;">
+<div class="section-title">Les différents systèmes nerveux (SNC, espaces liquidiens, SNP, SNA)</div>
+<div class="section-sub">Moelle épinière, méninges, LCR, nerfs crâniens · Cours de Neurologie, IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;">Vue d'ensemble des grandes divisions du système nerveux : <strong>SNC</strong> (encéphale + moelle épinière), <strong>espaces liquidiens</strong> (méninges, LCR), <strong>SNP</strong> (nerfs crâniens et rachidiens) et <strong>SNA</strong> (sympathique/parasympathique/entérique).</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🧵</div><div class="card-title">Moelle épinière &amp; méninges</div></div>
+<div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Moelle épinière</div><div class="value" style="font-size:13px;">Divisée en métamères, chacun avec 4 racines (2 antérieures motrices, 2 postérieures sensitives). S'arrête en <strong>L2</strong> chez l'adulte → <strong>ponctions lombaires sous L2</strong>. Le cône médullaire se prolonge par le filum terminal ; les racines sacrées lombaires forment la <strong>queue de cheval</strong>.</div></div>
+<div class="test-detail-item"><div class="label">31 paires de nerfs spinaux</div><div class="value" style="font-size:13px;">8 cervicaux, 12 thoraciques, 5 lombaires, 5 sacrés, 1 coccygien.</div></div>
+<div class="test-detail-item"><div class="label">Substance grise (en H)</div><div class="value" style="font-size:13px;">Corne antérieure (motoneurones, motricité volontaire) · corne postérieure (neurones sensitifs) · corne latérale (thoracique/lombaire haut — système sympathique).</div></div>
+<div class="test-detail-item"><div class="label">Racines</div><div class="value" style="font-size:13px;"><strong>Antérieure = motrice</strong> (centrifuge) · <strong>postérieure = sensitive</strong> (centripète), neurones pseudo-unipolaires, soma dans le <strong>ganglion spinal</strong>.</div></div>
+</div>
+<div class="info-box coral" style="margin-top:12px;"><strong>Méninges (dehors → dedans) :</strong> dure-mère → arachnoïde → pie-mère. Piège d'examen classique — <strong>hématome extra-dural/épidural</strong> = entre dure-mère et crâne (« le citron » à l'imagerie), souvent rupture de l'artère méningée moyenne après trauma, potentiellement mortel ; <strong>hématome sous-dural</strong> = entre arachnoïde et dure-mère (« la banane »).</div>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">💧</div><div class="card-title">Liquide céphalo-rachidien (LCR)</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);">Produit par les plexus choroïdes (ventricules latéraux). Circule : ventricules latéraux → trous de Monro → III<sup>e</sup> ventricule → aqueduc de Sylvius → IV<sup>e</sup> ventricule → trous de Luschka/Magendie → espace sous-arachnoïdien. Réabsorbé par les villosités arachnoïdiennes vers les sinus veineux. Production ≈ 500 mL/jour. Pathologie associée : hydrocéphalie.</p>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon amber">🧠</div><div class="card-title">Les 12 nerfs crâniens — fonction et test clinique</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:6%">N°</th><th style="width:16%">Nom</th><th>Fonction</th><th>Test clinique</th></tr></thead>
+<tbody>
+<tr><td>I</td><td>Olfactif</td><td>Odorat</td><td>Identifier une odeur (savon, café), tester chaque narine</td></tr>
+<tr><td>II</td><td>Optique</td><td>Vue</td><td>Échelle visuelle, vision périphérique, lampe de poche</td></tr>
+<tr><td>III</td><td>Oculomoteur</td><td>Mouvements oculaires (haut/bas/dedans), pupille, paupières</td><td>Suivre un objet, réflexe pupillaire, ptôse</td></tr>
+<tr><td>IV</td><td>Trochléaire</td><td>Mouvement oculaire bas/dedans</td><td>Suivre un objet</td></tr>
+<tr><td>V</td><td>Trijumeau</td><td>Sensation faciale, mastication</td><td>Épingle/coton, réflexe cornéen, force masséters</td></tr>
+<tr><td>VI</td><td>Abducteur</td><td>Mouvement oculaire externe</td><td>Tourner les yeux en dehors</td></tr>
+<tr><td>VII</td><td>Facial</td><td>Muscles faciaux, goût, salivation, larmes</td><td>Sourire, montrer les dents, goût</td></tr>
+<tr><td>VIII</td><td>Vestibulocochléaire</td><td>Audition, équilibre</td><td>Diapason/écouteurs, marche en ligne droite</td></tr>
+<tr><td>IX</td><td>Glossopharyngien</td><td>Déglutition, réflexe pharyngé, langage</td><td>Déglutir, dire « aaaa », abaisse-langue</td></tr>
+<tr><td>X</td><td>Vague</td><td>Déglutition, réflexe pharyngé, langage</td><td>Évalué avec le IX</td></tr>
+<tr><td>XI</td><td>Accessoire</td><td>Rotation du cou, haussement d'épaules</td><td>Tourner la tête / hausser les épaules contre résistance</td></tr>
+<tr><td>XII</td><td>Hypoglosse</td><td>Mouvement de la langue</td><td>Tirer la langue, vérifier déviation</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="grid-2" style="margin-bottom:18px;">
+<div class="card">
+<div class="card-header"><div class="card-icon navy">↔️</div><div class="card-title">Centripète vs centrifuge</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Type</th><th>Direction</th><th>Fonction</th></tr></thead>
+<tbody>
+<tr><td>Centripète</td><td>Périphérie → SNC</td><td>Sensitive / afférente</td></tr>
+<tr><td>Centrifuge</td><td>SNC → Périphérie</td><td>Motrice / efférente</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="path-card">
+<h4>Système nerveux autonome (SNA)</h4>
+<ul>
+<li><strong>Sympathique</strong> : stress (« combat/fuite »), noradrénaline, ganglions paravertébraux</li>
+<li><strong>Parasympathique</strong> : homéostasie (« repos/digestion »), acétylcholine, nerf vague + nerfs sacrés</li>
+<li><strong>Système entérique</strong> : « petit cerveau » digestif — plexus myentérique d'Auerbach (motilité), plexus sous-muqueux de Meissner (sécrétions/absorption)</li>
+</ul>
+</div>
+</div>
+
+<div class="info-box amber">Pathologies citées en cours : Parkinson (dégénérescence neuronale, contrôle moteur), Alzheimer (mémoire/cognition), troubles mentaux (dépression, schizophrénie).</div>
+
+<div class="footnote">Source : Cours de Neurologie, IEOQ, Promotion 2024-2025.</div>
+
+</section>
+<section class="section" id="sn-telencephale" style="display:none;">
+<div class="section-title">Le télencéphale — vue d'ensemble du cerveau</div>
+<div class="section-sub">Lobes, aires fonctionnelles, système limbique · Cours de Neurologie, IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;">Organisation du télencéphale (deux hémisphères cérébraux), des aires fonctionnelles du cortex, du diencéphale et du système limbique.</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🧩</div><div class="card-title">Fonctions des lobes cérébraux</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:14%">Lobe</th><th>Fonctions principales</th></tr></thead>
+<tbody>
+<tr><td><strong>Frontal</strong></td><td>Initiation/planification des mouvements volontaires, aire motrice primaire, fonctions exécutives (jugement, raisonnement, attention), régulation émotions/comportement social, <strong>aire de Broca</strong> (langage moteur, hémisphère gauche)</td></tr>
+<tr><td><strong>Pariétal</strong></td><td>Intégration sensorielle (toucher, pression, température, douleur), schéma corporel/proprioception, compréhension du langage (gyrus supramarginal/angulaire), raisonnement spatial et mathématique</td></tr>
+<tr><td><strong>Occipital</strong></td><td>Traitement visuel (aires primaires et associatives), reconnaissance des formes/couleurs/mouvements, mémoire visuelle</td></tr>
+<tr><td><strong>Temporal</strong></td><td>Traitement auditif, reconnaissance voix/objets/visages, mémoire (hippocampe), émotions (amygdale), <strong>aire de Wernicke</strong> (compréhension du langage, souvent à gauche)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="test-detail-grid" style="margin-bottom:18px;">
+<div class="test-detail-item"><div class="label">Cortex cérébral</div><div class="value" style="font-size:13px;">Substance grise en surface (2-4 mm), circonvolutions (gyrus) et sillons augmentant la surface fonctionnelle.</div></div>
+<div class="test-detail-item"><div class="label">Sillons repères</div><div class="value" style="font-size:13px;">Sillon central (Rolando) sépare frontal/pariétal · sillon latéral (Sylvius) sépare frontal/temporal · sillon pariéto-occipital sépare pariétal/occipital.</div></div>
+<div class="test-detail-item"><div class="label">Gyrus pré/postcentral</div><div class="value" style="font-size:13px;"><strong>Précentral</strong> = aire motrice primaire (cellules pyramidales, décussation pyramidale). <strong>Postcentral</strong> = aire sensitive primaire — somatotopie <strong>inversée</strong> (jambes en haut, tête/mains en bas) et <strong>croisée</strong> (côté droit du corps → hémisphère gauche).</div></div>
+<div class="test-detail-item"><div class="label">Corps calleux</div><div class="value" style="font-size:13px;">Relie les deux hémisphères ; sa section entraîne des déficits de coordination interhémisphérique (piège classique : syndrome de déconnexion).</div></div>
+</div>
+
+<div class="grid-2" style="margin-bottom:18px;">
+<div class="path-card">
+<h4>Structures sous-corticales</h4>
+<ul>
+<li>Noyaux basaux : coordination des mouvements</li>
+<li>Thalamus : relais sensoriel vers le cortex (sauf olfaction)</li>
+<li>Hypothalamus : fonctions autonomes (sommeil, température, appétit, axe hormonal hypophysaire)</li>
+</ul>
+</div>
+<div class="path-card">
+<h4>Système limbique</h4>
+<ul>
+<li>Hypothalamus, amygdale, thalamus, corps mamillaires, hippocampe</li>
+<li>Contrôle des émotions, mémoire/apprentissage</li>
+</ul>
+</div>
+</div>
+
+<div class="info-box coral"><strong>Corrélation clinico-anatomique à retenir :</strong> la <strong>substance noire</strong> (mésencéphale) contient des neurones dopaminergiques dont la dégénérescence est associée à la <strong>maladie de Parkinson</strong>. Thalamus : noyau <strong>VPL</strong> = relais des infos somatiques sensorielles vers le gyrus post-central ; <strong>VL/VA</strong> = relais moteurs vers le cortex moteur.</div>
+
+<div class="footnote">Source : Cours de Neurologie, IEOQ, Promotion 2024-2025.</div>
+
+</section>
+<section class="section" id="sn-organisation" style="display:none;">
+<div class="section-title">Organisation du système nerveux — systèmes moteur et sensitif</div>
+<div class="section-sub">Voie pyramidale vs extra-pyramidale, niveaux périphérique/médullaire/cérébral · Cours de Neurologie, IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;">Organisation générale du système moteur et du système sensitif, et leurs points de connexion à trois niveaux : périphérique, médullaire et cérébral.</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon coral">⚡</div><div class="card-title">Voie pyramidale vs extra-pyramidale</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:22%">Caractéristique</th><th>Voie pyramidale</th><th>Voie extra-pyramidale</th></tr></thead>
+<tbody>
+<tr><td>Type de contrôle</td><td>Volontaire</td><td>Automatique, postural</td></tr>
+<tr><td>Origine</td><td>Cortex moteur</td><td>Noyaux sous-corticaux</td></tr>
+<tr><td>Trajet</td><td>Capsule interne → tronc cérébral → moelle</td><td>Connexions complexes tronc cérébral/moelle</td></tr>
+<tr><td>Décussation</td><td>Oui (bulbe rachidien)</td><td>Non ou partielle</td></tr>
+<tr><td>Faisceaux principaux</td><td>Cortico-spinal (membres), cortico-nucléaire (visage)</td><td>Réticulo-spinal (tonus postural), vestibulo-spinal (équilibre), rubro-spinal (coordination)</td></tr>
+<tr><td>Rôle</td><td>Mouvements fins et précis</td><td>Ajustement du tonus musculaire et posture</td></tr>
+<tr><td>Exemple</td><td>Écrire, jouer du piano</td><td>Marcher, équilibre, réflexes posturaux</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="test-detail-grid" style="margin-bottom:18px;">
+<div class="test-detail-item"><div class="label">Système moteur — 3 structures</div><div class="value" style="font-size:13px;">Muscle (effecteur) · motoneurone alpha (corne antérieure, plaque motrice) · voie motrice centrale.</div></div>
+<div class="test-detail-item"><div class="label">Système sensoriel somatique</div><div class="value" style="font-size:13px;">Récepteurs dispersés dans tout le corps (contrairement aux autres sens localisés) ; capte toucher, température, douleur, proprioception ; entre à la moelle par la <strong>racine postérieure</strong>.</div></div>
+<div class="test-detail-item"><div class="label">Niveau médullaire</div><div class="value" style="font-size:13px;">Une partie des infos sensitives monte au cerveau/cervelet, une autre se connecte directement aux motoneurones → <strong>réflexes</strong> (ex. réflexe myotatique/rotulien, réflexe de retrait).</div></div>
+<div class="test-detail-item"><div class="label">Niveau cérébral</div><div class="value" style="font-size:13px;">Sensibilité → lobe pariétal ; motricité → lobe frontal ; lien via le lobule paracentral. Voie temporale = « Quoi ? », voie pariétale = « Où ? ».</div></div>
+</div>
+
+<div class="card">
+<div class="card-header"><div class="card-icon navy">🎯</div><div class="card-title">Organisation du contrôle moteur volontaire</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:22%">Étape</th><th>Fonction</th><th>Localisation principale</th></tr></thead>
+<tbody>
+<tr><td>Idée du mouvement</td><td>« Je veux faire ce geste »</td><td>Aires associatives frontales/pariétales</td></tr>
+<tr><td>Planification</td><td>Organisation du geste</td><td>Aires prémotrices/supplémentaires</td></tr>
+<tr><td>Exécution</td><td>Commande motrice consciente</td><td>Aire motrice primaire (lobe frontal)</td></tr>
+<tr><td>Régulation</td><td>Ajustement, coordination</td><td>Cervelet + noyaux gris centraux</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="info-box amber" style="margin-top:12px;"><strong>Plasticité neuronale :</strong> capacité du SNC à créer/renforcer des connexions, base de l'adaptation et de l'apprentissage.</div>
+
+<div class="footnote">Source : Cours de Neurologie, IEOQ, Promotion 2024-2025 (citation de Charles Sherrington, 1924).</div>
+
+</section>
+<section class="section" id="sn-reflexes" style="display:none;">
+<div class="section-title">Les réflexes</div>
+<div class="section-sub">Motoneurones α/γ, FNM vs OTG, réflexe myotatique et de retrait · Cours de Neurologie, IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;">Organisation sensitive/motrice périphérique, système moteur somatique, motoneurone, et réflexes (myotatique, tendineux, de flexion/extension croisée) — chapitre central pour l'examen neurologique clinique (ROT).</div>
+
+<div class="test-detail-grid" style="margin-bottom:18px;">
+<div class="test-detail-item"><div class="label">Informations sensitives</div><div class="value" style="font-size:13px;">Extéroception (5 sens) · intéroception (organes internes, sauf douleur → SNC directement) · proprioception (position du corps).</div></div>
+<div class="test-detail-item"><div class="label">Définition d'un réflexe — 5 éléments</div><div class="value" style="font-size:13px;">Récepteur, voie afférente, centre synaptique, voie efférente (motoneurone α), muscle cible.</div></div>
+<div class="test-detail-item"><div class="label">Réflexe myotatique/ROT</div><div class="value" style="font-size:13px;">Étirement passif du muscle → contraction réflexe (ex. réflexe rotulien). Segmentaire (un seul niveau médullaire) — <strong>application clinique directe : le ROT localise le niveau lésionnel.</strong></div></div>
+<div class="test-detail-item"><div class="label">Unité motrice</div><div class="value" style="font-size:13px;">1 motoneurone alpha + toutes les fibres qu'il innerve (Sherrington). <strong>Principe de taille</strong> : recrutement des petites unités d'abord, puis des grandes.</div></div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🔩</div><div class="card-title">Motoneurones alpha vs gamma</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Type</th><th>Fibre innervée</th><th>Localisation</th><th>Rôle</th><th>Effet</th></tr></thead>
+<tbody>
+<tr><td><strong>Alpha (α)</strong></td><td>Extrafusales (contractiles)</td><td>Corne antérieure</td><td>Contraction volontaire ou réflexe</td><td>Produit la force musculaire</td></tr>
+<tr><td><strong>Gamma (γ)</strong></td><td>Intrafusales (fuseaux)</td><td>Corne antérieure, près des α</td><td>Ajuste la sensibilité du fuseau</td><td>Maintient la tension du fuseau, détection fine de l'étirement</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon coral">⚠️</div><div class="card-title">FNM vs OTG — piège fréquent</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:22%">Caractéristique</th><th>Fuseau neuromusculaire (FNM)</th><th>Organe tendineux de Golgi (OTG)</th></tr></thead>
+<tbody>
+<tr><td>Localisation</td><td>Dans le muscle (fibres intrafusales)</td><td>Jonction muscle-tendon</td></tr>
+<tr><td>Stimulus détecté</td><td>Étirement du muscle</td><td>Tension musculaire</td></tr>
+<tr><td>Fibres sensorielles</td><td>Ia et II</td><td>Ib</td></tr>
+<tr><td>Réaction</td><td>Contraction réflexe (myotatique)</td><td>Relâchement (myotatique inverse)</td></tr>
+<tr><td>Rôle principal</td><td>Maintenir le tonus, prévenir l'étirement excessif</td><td>Protéger contre surcharge, éviter les déchirures</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="info-box amber" style="margin-bottom:18px;"><strong>Réflexe de flexion/retrait (polysynaptique) :</strong> stimulus nociceptif → flexion du membre + inhibition réciproque des extenseurs + <strong>réflexe d'extension croisée</strong> controlatéral (maintien de l'équilibre). Inhibition réciproque : activation des fléchisseurs + relâchement des antagonistes (fibres Ia → interneurones inhibiteurs).</div>
+
+<div class="card">
+<div class="card-header"><div class="card-icon teal">💪</div><div class="card-title">Types de fibres musculaires</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th>Type</th><th>Couleur</th><th>Métabolisme</th><th>Caractéristiques</th><th>Fonction</th></tr></thead>
+<tbody>
+<tr><td>Lentes (I)</td><td>Rouge</td><td>Oxydatif</td><td>Contraction lente, résistante à la fatigue</td><td>Posture, endurance (dos)</td></tr>
+<tr><td>Rapides résistantes (IIa)</td><td>Rosée</td><td>Mixte</td><td>Rapide modérée, bonne résistance</td><td>Activité soutenue (quadriceps)</td></tr>
+<tr><td>Rapides fatigables (IIb/IIx)</td><td>Blanche</td><td>Anaérobie</td><td>Très rapide/puissante, fatigue vite</td><td>Efforts brefs intenses (bras)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="footnote">Source : Cours de Neurologie, IEOQ, Promotion 2024-2025.</div>
+
+</section>
+<section class="section" id="sn-sensibilite" style="display:none;">
+<div class="section-title">La sensibilité — voies lemniscale et extra-lemniscale</div>
+<div class="section-sub">Récepteurs cutanés, douleur, dermatomes · Cours de Neurologie, IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;">Physiologie générale de la sensibilité (réception → transduction → transmission → modulation → intégration), récepteurs cutanés, puis les deux grandes voies : <strong>lemniscale</strong> (tact fin, proprioception consciente) et <strong>extra-lemniscale</strong> (douleur, température).</div>
+
+<div class="test-detail-grid" style="margin-bottom:18px;">
+<div class="test-detail-item"><div class="label">Types de sensibilité</div><div class="value" style="font-size:13px;">Extéroceptive (cutanée + sens spéciaux) · proprioceptive (position/mouvement) · intéroceptive/végétative (viscères, inconsciente).</div></div>
+<div class="test-detail-item"><div class="label">5 étapes de la sensibilité</div><div class="value" style="font-size:13px;">Réception → transduction (stimulus → signal électrique) → transmission → modulation (inhibition/activation) → intégration (interprétation SNC).</div></div>
+<div class="test-detail-item"><div class="label">Fibres Aδ vs C</div><div class="value" style="font-size:13px;"><strong>Aδ</strong> : myélinisées, rapides, douleur vive/localisée (« piquante »), voie néospinothalamique. <strong>C</strong> : amyélinisées, lentes, douleur sourde/diffuse (« brûlure »), voie paléospinothalamique.</div></div>
+<div class="test-detail-item"><div class="label">Organisation à 3 neurones</div><div class="value" style="font-size:13px;">1<sup>er</sup> neurone (ganglion rachidien postérieur) · 2<sup>e</sup> (moelle/tronc cérébral) · 3<sup>e</sup> (thalamus → cortex controlatéral). <strong>Une atteinte à chaque niveau donne un tableau clinique différent — point d'examen classique.</strong></div></div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🖐️</div><div class="card-title">Mécanorécepteurs cutanés — à connaître par cœur</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:20%">Récepteur</th><th>Détecte</th><th>Adaptation</th><th>Champ récepteur</th></tr></thead>
+<tbody>
+<tr><td>Corpuscules de Pacini</td><td>Vibration haute fréquence</td><td>Rapide</td><td>Grand</td></tr>
+<tr><td>Corpuscules de Meissner</td><td>Tact fin, vibration basse fréquence</td><td>Rapide</td><td>Petit (peau glabre)</td></tr>
+<tr><td>Disques de Merkel</td><td>Pression légère</td><td>Lente</td><td>Petit</td></tr>
+<tr><td>Corpuscules de Ruffini</td><td>Étirement</td><td>Lente</td><td>Grand</td></tr>
+<tr><td>Bulbes de Krause</td><td>Zones spécifiques</td><td>—</td><td>—</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="grid-2" style="margin-bottom:18px;">
+<div class="card">
+<div class="card-header"><div class="card-icon amber">🧴</div><div class="card-title">Peau glabre vs poilue</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<tbody>
+<tr><td style="width:36%">Épiderme</td><td>Épais</td></tr>
+<tr><td>Annexes</td><td>Glandes sudoripares</td></tr>
+<tr><td>Densité de récepteurs</td><td>Très élevée</td></tr>
+<tr><td>Récepteurs principaux</td><td>Meissner, Merkel, Pacini, Ruffini</td></tr>
+<tr><td>Localisation</td><td>Doigts, paumes, plantes, lèvres, front</td></tr>
+</tbody>
+</table>
+<p style="font-size:11.5px;color:var(--gray-500);padding:8px 12px 0;">Ci-dessus : caractéristiques de la peau <strong>glabre</strong>. La peau <strong>poilue</strong> (reste du corps) a un épiderme fin, des glandes sébacées + poils, une densité de récepteurs plus faible (Ruffini, récepteurs folliculaires), utile surtout à la détection précoce de mouvement/vigilance.</p>
+</div>
+</div>
+<div class="path-card">
+<h4>Discrimination tactile</h4>
+<ul>
+<li>Test des deux points, lecture Braille</li>
+<li>Liée à la densité de mécanorécepteurs à petit champ récepteur (Merkel, Meissner)</li>
+<li>Et au traitement cortical dédié aux doigts (homoncule sensitif)</li>
+</ul>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon coral">🔀</div><div class="card-title">Voie lemniscale vs voie extra-lemniscale</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:22%">Caractéristique</th><th>Voie lemniscale (cordon dorsal)</th><th>Voie extra-lemniscale (spinothalamique)</th></tr></thead>
+<tbody>
+<tr><td>Fibres</td><td>Aβ (grosses, rapides, myélinisées)</td><td>Aδ (rapides fines) + C (lentes, amyéliniques)</td></tr>
+<tr><td>Récepteurs</td><td>Meissner, Pacini, Merkel, Ruffini</td><td>Terminaisons libres (douleur, température)</td></tr>
+<tr><td>Sensibilité</td><td>Tact discriminatif, proprioception consciente, vibration, stéréognosie</td><td>Douleur, température, tact grossier</td></tr>
+<tr><td>Décussation</td><td>Au bulbe (tronc cérébral)</td><td>Dans la moelle</td></tr>
+<tr><td>Fonction</td><td>Localisation précise, texture, forme</td><td>Protection : nociception, alerte</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="card">
+<div class="card-header"><div class="card-icon teal">🛤️</div><div class="card-title">Trajet neuronal de la voie lemniscale</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:10%">Neurone</th><th>Origine</th><th>Trajet</th><th>Synapse</th></tr></thead>
+<tbody>
+<tr><td>1<sup>er</sup></td><td>Récepteurs tact/pression/proprioception</td><td>Racine postérieure → cordon postérieur homolatéral (Goll et Burdach)</td><td>Noyaux gracile et cunéiforme au bulbe</td></tr>
+<tr><td>2<sup>e</sup></td><td>Noyaux gracile/cunéiforme</td><td>Décussation → lemnisque médian → thalamus</td><td>Thalamus (noyau VPL)</td></tr>
+<tr><td>3<sup>e</sup></td><td>Thalamus (VPL)</td><td>Capsule interne → cortex</td><td>Cortex somatosensoriel primaire (S1)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="footnote">Source : Cours de Neurologie, IEOQ, Promotion 2025-2026. (Partie 1/2 — voir aussi « Sensibilité — voie extra-lemniscale, douleur » ci-dessous.)</div>
+
+<h3 class="sub" style="margin-top:28px;">Sensibilité (partie 2) — Voie extra-lemniscale, douleur, thermorégulation, topographie</h3>
+
+<div class="info-box coral" style="margin-bottom:18px;"><strong>Nociception ≠ douleur</strong> (distinction fondamentale) : nociception = processus neurophysiologique inconscient de détection ; douleur = expérience consciente sensorielle + émotionnelle. Peuvent exister l'une sans l'autre (anesthésie générale = nociception sans douleur ; douleur neuropathique/membre fantôme = douleur sans nociception).</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🎯</div><div class="card-title">Nociception vs douleur</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:22%">Critère</th><th>Nociception</th><th>Douleur</th></tr></thead>
+<tbody>
+<tr><td>Définition</td><td>Détection neurophysiologique d'un stimulus dangereux</td><td>Expérience sensorielle/émotionnelle produite par le cerveau</td></tr>
+<tr><td>Conscience</td><td>Inconsciente</td><td>Consciente</td></tr>
+<tr><td>Origine</td><td>Récepteurs périphériques (nocicepteurs)</td><td>Intégration centrale (moelle, tronc, thalamus, cortex)</td></tr>
+<tr><td>Peut exister sans l'autre</td><td>Oui (anesthésie générale)</td><td>Oui (douleur neuropathique, membre fantôme)</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="test-detail-grid" style="margin-bottom:18px;">
+<div class="test-detail-item"><div class="label">Nocicepteurs</div><div class="value" style="font-size:13px;">Terminaisons libres, silencieuses au repos, activées par stimuli mécaniques/thermiques (&gt;43°C)/chimiques (H+, bradykinine, histamine). Absents du cerveau sauf méninges.</div></div>
+<div class="test-detail-item"><div class="label">Hyperalgésie primaire vs secondaire</div><div class="value" style="font-size:13px;"><strong>Primaire</strong> : au site de la lésion, sensibilisation périphérique (inflammation → prostaglandines, bradykinine, cytokines). <strong>Secondaire</strong> : zones adjacentes, sensibilisation <strong>centrale</strong> (corne dorsale).</div></div>
+<div class="test-detail-item"><div class="label">Allodynie — piège d'examen</div><div class="value" style="font-size:13px;">Douleur provoquée par un stimulus normalement indolore. Ne pas confondre : <strong>hyperalgésie</strong> = réponse exagérée à un stimulus douloureux ; <strong>allodynie</strong> = douleur à un stimulus non douloureux.</div></div>
+<div class="test-detail-item"><div class="label">Douleur référée</div><div class="value" style="font-size:13px;">Nocicepteurs viscéraux et cutanés partagent la même voie médullaire → douleur viscérale perçue comme cutanée (angine de poitrine, appendicite).</div></div>
+</div>
+
+<div class="info-box amber" style="margin-bottom:18px;"><strong>Syndrome de Brown-Séquard</strong> (lésion médullaire hémisection) — corrélation clinico-anatomique très importante : la voie spinothalamique décusse <strong>immédiatement dans la moelle</strong> (contrairement à la voie lemniscale qui décusse au bulbe). Résultat : déficit <strong>moteur et tact/proprioception du côté de la lésion</strong>, déficit <strong>douleur/température du côté opposé</strong>.</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon teal">🚪</div><div class="card-title">Théorie du portillon (Gate Control, Melzack &amp; Wall 1965)</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);">Les fibres Aβ (toucher, gros diamètre) activent des interneurones inhibiteurs (GABA/glycine) qui « ferment la porte » aux messages nociceptifs Aδ/C → base physiologique du massage, TENS, glace, frottement après un choc.</p>
+<p style="font-size:13px;color:var(--text2);margin-top:8px;"><strong>Modulation de la douleur à 4 niveaux :</strong> périphérique (sensibilisation) · spinale (gate control) · supraspinale descendante (PAG, noyaux du raphé/sérotonine, locus coeruleus/noradrénaline) · corticale (attention, émotion, stress, effet placebo/nocebo). Endorphines : peptides endogènes antalgiques, action bloquée par la naloxone.</p>
+</div>
+</div>
+
+<div class="path-card" style="margin-bottom:18px;">
+<h4>Topographie des territoires sensitifs</h4>
+<ul>
+<li>Niveau cutané : <strong>dermatomes</strong> = territoire radiculaire par nerf rachidien (outil clinique essentiel pour localiser une atteinte)</li>
+<li>Niveau médullaire : <strong>lamination de Rexed</strong> (9 couches, I à IX) — fibres médianes = régions inférieures (sacré/lombaire), fibres latérales = régions supérieures (thoracique/cervical)</li>
+<li>Niveau cortical : somatotopie du cortex pariétal (homoncule), aires de Wernicke (compréhension) et de Broca (production du langage)</li>
+</ul>
+</div>
+
+<div class="info-box coral"><strong>Cortex pariétal postérieur</strong> : intégration multimodale (tactile/visuelle/motrice). Lésions → <strong>agnosie/astéréognosie</strong> (incapacité à reconnaître un objet par le toucher malgré une sensibilité normale) et <strong>syndrome de négligence/héminégligence</strong> (ignorance d'une partie du corps ou de l'espace).</div>
+
+<div class="footnote">Source : Cours de Neurologie, IEOQ, Promotion 2025-2026.</div>
+
+</section>
+<section class="section" id="sn-motricite" style="display:none;">
+<div class="section-title">La motricité</div>
+<div class="section-sub">Voie pyramidale et système extrapyramidal, conséquences cliniques · Cours de Neurologie, IEOQ</div>
+
+<div class="info-box teal" style="margin-bottom:18px;">Anatomie de la voie descendante motrice : organisation en deux neurones, systèmes pyramidal (latéral/antérieur) et extrapyramidal (ventromédian), somatotopie, et conséquences cliniques des lésions.</div>
+
+<div class="test-detail-grid" style="margin-bottom:18px;">
+<div class="test-detail-item"><div class="label">Système moteur descendant = 2 neurones</div><div class="value" style="font-size:13px;"><em>(à l'inverse des 3 neurones du système sensitif — point de comparaison classique)</em>. 1<sup>er</sup> neurone (central) : aire motrice (gyrus précentral) → corne antérieure de la moelle (faisceau pyramidal). 2<sup>e</sup> neurone (périphérique) = motoneurone α, « voie finale commune » : corne antérieure → plaque motrice.</div></div>
+<div class="test-detail-item"><div class="label">Coordination du mouvement volontaire</div><div class="value" style="font-size:13px;">Pensée volontaire → aire prémotrice (planifie) → cortex pariétal postérieur (perception corporelle) → cervelet (ajuste tonus/posture) → aire motrice (déclenche la commande).</div></div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon navy">🏃</div><div class="card-title">Faisceau pyramidal (cortico-spinal)</div></div>
+<div class="card-body">
+<p style="font-size:13.5px;color:var(--text2);margin-bottom:10px;">Origine aires 4 et 6 du cortex moteur frontal → capsule interne → pédoncule cérébral → pont → pyramide bulbaire → <strong>décussation à la jonction bulbe-moelle</strong>.</p>
+<table class="grille-eval-table">
+<thead><tr><th style="width:26%">Voie</th><th style="width:14%">% du faisceau</th><th style="width:26%">Décussation</th><th>Fonction principale</th></tr></thead>
+<tbody>
+<tr><td>Cortico-spinale <strong>latérale</strong></td><td>90%</td><td>Bulbe rachidien (décussation pyramidale)</td><td>Mouvements fins et précis des mains/doigts (muscles distaux)</td></tr>
+<tr><td>Cortico-spinale <strong>antérieure</strong></td><td>10%</td><td>Moelle épinière (niveau segmentaire)</td><td>Muscles axiaux/proximaux, posture</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="card" style="margin-bottom:18px;">
+<div class="card-header"><div class="card-icon amber">⚙️</div><div class="card-title">Système extrapyramidal (ventromédian)</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:22%">Faisceau</th><th>Origine</th><th>Localisation moelle</th><th>Fonctions principales</th></tr></thead>
+<tbody>
+<tr><td>Rubro-spinal</td><td>Noyau rouge (mésencéphale)</td><td>Cordon latéral (avant pyramidal croisé)</td><td>Motricité instinctive, équilibre postural, supplée le pyramidal (sauf doigts)</td></tr>
+<tr><td>Réticulo-spinal médial</td><td>Formation réticulée du pont</td><td>Faisceau longitudinal médian</td><td>Musculature antigravitaire, tonus postural</td></tr>
+<tr><td>Réticulo-spinal latéral</td><td>Formation réticulée du bulbe</td><td>Cordon latéral</td><td>Automatismes de locomotion, toux/éternuement</td></tr>
+<tr><td>Tecto-spinal</td><td>Tubercules quadrijumeaux</td><td>Plaque tectale → moelle cervicale</td><td>Réflexes posturaux, réflexe oculo-céphalogyre</td></tr>
+</tbody>
+</table>
+<p style="font-size:12.5px;color:var(--gray-500);padding:10px 12px 0;">Le faisceau <strong>rubro-spinal</strong> a un rôle réduit chez l'humain (vs autres mammifères) et <strong>ne fait pas partie du système pyramidal</strong> — piège fréquent.</p>
+</div>
+</div>
+
+<div class="info-box coral" style="margin-bottom:18px;">
+<strong>Conséquences cliniques des lésions (corrélation clinico-anatomique majeure) :</strong>
+<ul style="margin:8px 0 0 18px;padding:0;font-size:13px;">
+<li>Lésion isolée du corticospinal : déficit initial, récupération partielle grâce au rubrospinal, mais déficit <strong>permanent</strong> = faiblesse des fléchisseurs distaux, incapacité à mobiliser les doigts indépendamment</li>
+<li>Lésion combinée (corticospinal + rubrospinal) : incapacité de mouvements indépendants bras/mains, mouvements lents/imprécis, posture globalement conservée</li>
+<li><strong>AVC</strong> touchant cortex moteur/corticospinal : paralysie immédiate <strong>controlatérale</strong>, récupération partielle possible, déficit persistant typique = mouvements fins des doigts</li>
+</ul>
+</div>
+
+<div class="test-detail-grid" style="margin-bottom:18px;">
+<div class="test-detail-item"><div class="label">Faisceau pyramidal crânien (cortico-nucléaire)</div><div class="value" style="font-size:13px;">Décusse au haut du tronc cérébral ; faisceau géniculé (nerfs crâniens moteurs V, VII, IX, X, XI bulbaire, XII) ; faisceau oculo-céphalogyre (III, IV, VI, XI médullaire).</div></div>
+<div class="test-detail-item"><div class="label">Somatotopie du faisceau pyramidal</div><div class="value" style="font-size:13px;">Organisée selon la finesse du mouvement (pas la masse musculaire) ; latéral → médial : tête/cou (cortico-nucléaire) puis main/membre sup/tronc/membre inf (cortico-spinal).</div></div>
+<div class="test-detail-item"><div class="label">Terminaison du faisceau pyramidal</div><div class="value" style="font-size:13px;">~5-10% synapse directe sur motoneurones α (précision, muscles distaux) ; majorité via interneurones ; certains modulent aussi les motoneurones γ (ajustement du tonus).</div></div>
+</div>
+
+<div class="card">
+<div class="card-header"><div class="card-icon teal">📊</div><div class="card-title">Système pyramidal vs extrapyramidal — synthèse</div></div>
+<div class="card-body" style="padding:0;">
+<table class="grille-eval-table">
+<thead><tr><th style="width:20%">Système</th><th>Faisceaux principaux</th><th>Fonction</th></tr></thead>
+<tbody>
+<tr><td><strong>Pyramidal</strong></td><td>Cortico-spinal (latéral/antérieur), cortico-nucléaire</td><td>Mouvement volontaire précis et fin</td></tr>
+<tr><td><strong>Extrapyramidal</strong></td><td>Ventro-médian (vestibulo-, réticulo-, tecto-spinal) + rubro-spinal</td><td>Contrôle postural, tonus musculaire, coordination automatique</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="footnote">Source : Cours de Neurologie, IEOQ, Promotion 2024-2025. (Chapitre numéroté « Chapitre 9 » dans le document source.)</div>
+
+</section>
+
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script>
+  var LOCAL_IDS = ["sn-snc", "sn-telencephale", "sn-organisation", "sn-reflexes", "sn-sensibilite", "sn-motricite"];
+  var SUB_LABELS_LOCAL = {"sn-snc": "🧠 SNC & Méninges", "sn-telencephale": "🧩 Télencéphale", "sn-organisation": "🔀 Organisation du SN", "sn-reflexes": "🔨 Réflexes", "sn-sensibilite": "✋ Sensibilité", "sn-motricite": "🏃 Motricité"};
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '\u203a ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    if (initial) applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>
