@@ -1,0 +1,96 @@
+/* ── Additions for the split category-page navigation (hub + search) ── */
+
+.crumb-bar {
+  background: var(--gray-50);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 60;
+}
+.crumb-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+.crumb-cats-link {
+  font-size: 12.5px;
+  color: var(--teal-700);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+.crumb-cats-link:hover { text-decoration: underline; }
+.crumb-text {
+  font-size: 12.5px;
+  color: var(--text2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.crumb-text strong { color: var(--navy-800); font-weight: 600; }
+
+.site-search { position: relative; width: min(360px, 60vw); flex-shrink: 0; }
+.site-search input {
+  width: 100%;
+  padding: 8px 14px 8px 32px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+}
+.site-search input:focus { outline: none; border-color: var(--teal-400); }
+.site-search-icon {
+  position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+  font-size: 12px; opacity: .55; pointer-events: none;
+}
+.site-search-results {
+  display: none;
+  position: absolute; top: calc(100% + 6px); left: 0; right: 0;
+  background: #fff; border: 1px solid var(--border); border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  max-height: 380px; overflow-y: auto;
+  z-index: 200; text-align: left;
+}
+.site-search-results.open { display: block; }
+.ssr-item { display: block; padding: 10px 14px; border-bottom: 1px solid var(--gray-100); text-decoration: none; color: inherit; }
+.ssr-item:last-child { border-bottom: none; }
+.ssr-item:hover { background: var(--teal-50); }
+.ssr-crumb { font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--teal-700); font-weight: 700; margin-bottom: 3px; }
+.ssr-snippet { font-size: 12.5px; color: var(--text2); line-height: 1.5; }
+.ssr-snippet mark { background: var(--teal-200); color: var(--teal-900); padding: 0 2px; border-radius: 2px; }
+.ssr-empty { padding: 14px; font-size: 12.5px; color: var(--gray-500); font-style: italic; }
+
+.nav-tab.tab-link { gap: 6px; }
+.nav-tab .ext-icon { font-size: 10.5px; opacity: .55; }
+
+mark.search-hit { background: var(--teal-300); color: var(--teal-900); padding: 0 2px; border-radius: 2px; scroll-margin-top: 100px; }
+mark.search-hit.current { background: var(--amber-500); color: #fff; }
+
+@media (max-width: 768px) {
+  .crumb-bar { padding: 10px 14px; }
+  .site-search { width: 100%; order: 3; }
+}
+
+.badge.badge-link { cursor: pointer; text-decoration: none; }
+.badge.badge-link:hover { background: rgba(255,255,255,0.22); }
+
+/* shared.css hides the legacy top nav-tabs bar (the sidebar used to be the
+   real navigation) — this page repurposes that same bar as its real,
+   only navigation, so force it back on. */
+.main-nav { display: block !important; }
+.main-nav .nav-inner { display: flex !important; }
+.hamburger-btn { display: none !important; }
+.nav-drawer { display: none !important; }
+.bottom-bar { display: none !important; }

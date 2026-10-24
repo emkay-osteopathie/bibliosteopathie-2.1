@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparateur de directions — BibliOstéo IEOQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:#e9e6df;
+    color:#1a1c1e;
+    min-height:100vh;
+    padding-bottom:80px;
+    transition:background .3s ease;
+  }
+
+  /* ================= THEME TOKENS ================= */
+  body[data-theme="a"]{
+    --bg:#f7f5ef; --surface:#ffffff; --surface-2:#efece2; --raised:#ffffff;
+    --text:#23282a; --text-dim:#4c5457; --text-muted:#7a8285;
+    --accent:#2f6f63; --accent-strong:#20514a; --accent-soft:rgba(47,111,99,0.1);
+    --accent-2:#c07a3f; --accent-2-soft:rgba(192,122,63,0.12);
+    --border:#e2ddd0; --border-strong:#cfc8b6;
+    --font-display:'Newsreader',serif; --display-weight:500; --display-style:normal;
+    --radius:14px; --shadow:0 6px 24px rgba(30,30,20,0.08);
+    background:var(--bg);
+  }
+  body[data-theme="b"]{
+    --bg:#f1e7d4; --surface:#fbf5e8; --surface-2:#e9dbb9; --raised:#fdf9ee;
+    --text:#382c20; --text-dim:#5e4f3c; --text-muted:#8a7a5f;
+    --accent:#b5543c; --accent-strong:#8f3f2b; --accent-soft:rgba(181,84,60,0.12);
+    --accent-2:#6b7a4c; --accent-2-soft:rgba(107,122,76,0.14);
+    --border:#ddccA0; --border-strong:#c9b581;
+    --font-display:'Fraunces',serif; --display-weight:500; --display-style:normal;
+    --radius:6px; --shadow:0 6px 22px rgba(80,55,25,0.12);
+    background:var(--bg);
+  }
+  body[data-theme="c"]{
+    --bg:#0d131e; --surface:#141d2b; --surface-2:#1b2536; --raised:#182031;
+    --text:#eef1f5; --text-dim:rgba(238,241,245,0.78); --text-muted:rgba(238,241,245,0.5);
+    --accent:#c9a24a; --accent-strong:#e2bd6c; --accent-soft:rgba(201,162,74,0.12);
+    --accent-2:#7d97b8; --accent-2-soft:rgba(125,151,184,0.12);
+    --border:rgba(255,255,255,0.09); --border-strong:rgba(255,255,255,0.18);
+    --font-display:'Cormorant Garamond',serif; --display-weight:600; --display-style:normal;
+    --radius:16px; --shadow:0 10px 34px rgba(0,0,0,0.45);
+    background:var(--bg);
+  }
+
+  /* ================= SWITCHER BAR ================= */
+  .switcher{
+    position:sticky; top:0; z-index:50;
+    background:#14171a; color:#fff;
+    padding:14px 20px;
+    display:flex; align-items:center; justify-content:center;
+    gap:14px; flex-wrap:wrap;
+    font-size:13px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+  }
+  .switcher-label{ color:rgba(255,255,255,0.55); font-weight:500; letter-spacing:.03em; }
+  .switcher-btn{
+    appearance:none; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.06);
+    color:#fff; padding:8px 16px; border-radius:100px; font-size:13px; font-weight:500;
+    cursor:pointer; transition:all .2s; font-family:'Inter',sans-serif;
+  }
+  .switcher-btn:hover{ background:rgba(255,255,255,0.14); }
+  .switcher-btn.active{ background:#fff; color:#14171a; border-color:#fff; }
+
+  .theme-caption{
+    text-align:center; padding:20px 20px 4px; max-width:640px; margin:0 auto;
+    color:#5a5f66; font-size:13.5px; line-height:1.6;
+  }
+  body[data-theme="c"] .theme-caption{ color:rgba(255,255,255,0.55); }
+
+  .mock-wrap{ max-width:1040px; margin:0 auto; padding:28px 20px 0; display:flex; flex-direction:column; gap:34px; }
+  .frame{
+    border-radius:18px; overflow:hidden;
+    border:1px solid rgba(0,0,0,0.08);
+    box-shadow:0 12px 40px rgba(0,0,0,0.14);
+  }
+  .frame-bar{
+    background:#dcdcdc; padding:9px 14px; display:flex; gap:6px; align-items:center;
+  }
+  .frame-dot{ width:10px; height:10px; border-radius:50%; background:#b8b8b8; }
+  .frame-label{
+    margin-left:10px; font-size:11.5px; color:#7a7a7a; font-family:'Inter',sans-serif; letter-spacing:.03em;
+  }
+  .frame-body{ background:var(--bg); }
+
+  /* ================= LOGIN MOCK ================= */
+  .login-mock{
+    display:flex; flex-direction:column; align-items:center; text-align:center;
+    padding:56px 24px 48px; gap:0;
+  }
+  .brand-row{ display:flex; align-items:center; gap:10px; margin-bottom:34px; }
+  .brand-icon{
+    width:38px; height:38px; border-radius:10px; display:flex; align-items:center; justify-content:center;
+    background:var(--accent); color:var(--surface); flex-shrink:0;
+  }
+  .brand-icon svg{ width:20px; height:20px; }
+  .brand-text{ text-align:left; }
+  .brand-name{ font-family:var(--font-display); font-weight:var(--display-weight); font-size:16px; color:var(--text); }
+  .brand-sub{ font-size:11px; color:var(--text-muted); }
+
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:7px; font-size:11.5px; font-weight:500; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--accent); background:var(--accent-soft);
+    border:1px solid var(--accent-soft); padding:6px 14px; border-radius:100px; margin-bottom:22px;
+  }
+  .eyebrow::before{ content:''; width:6px; height:6px; border-radius:50%; background:var(--accent); }
+
+  .login-h1{
+    font-family:var(--font-display); font-weight:var(--display-weight); font-style:var(--display-style);
+    font-size:clamp(30px,4.6vw,44px); color:var(--text); line-height:1.05; margin-bottom:14px;
+  }
+  .login-h1 em{ color:var(--accent); font-style:var(--display-style); }
+  .login-desc{ max-width:380px; font-size:14.5px; color:var(--text-dim); line-height:1.7; margin-bottom:30px; }
+
+  .card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow);
+  }
+  .login-card{ width:100%; max-width:360px; padding:28px; text-align:left; }
+  .field{ margin-bottom:16px; }
+  .field label{ display:block; font-size:12px; color:var(--text-muted); margin-bottom:6px; font-weight:500; }
+  .field .fake-input{
+    width:100%; background:var(--surface-2); border:1px solid var(--border); border-radius:9px;
+    padding:12px 13px; color:var(--text-muted); font-size:14px;
+  }
+  .btn-primary{
+    width:100%; display:flex; align-items:center; justify-content:center; gap:8px;
+    background:var(--accent); color:var(--surface); border:none; padding:13px 24px;
+    border-radius:999px; font-size:14.5px; font-weight:600; font-family:'Inter',sans-serif;
+    margin-top:6px; cursor:default;
+  }
+  body[data-theme="c"] .btn-primary{ color:#0d131e; }
+  body[data-theme="b"] .login-card{ border-radius:4px; }
+
+  /* ================= HOME MOCK ================= */
+  .site-header{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+    padding:20px 30px; border-bottom:1px solid var(--border);
+  }
+  .header-left{ display:flex; align-items:center; gap:12px; }
+  .session-pill{
+    font-size:11.5px; font-weight:500; color:var(--accent); background:var(--accent-soft);
+    border:1px solid var(--accent-soft); padding:6px 13px; border-radius:100px;
+  }
+  .logout-pill{
+    font-size:11.5px; color:var(--text-muted); border:1px solid var(--border-strong);
+    padding:6px 13px; border-radius:100px;
+  }
+  .home-hero{ text-align:center; padding:44px 24px 8px; }
+  .home-eyebrow{
+    display:inline-block; font-size:11px; font-weight:500; letter-spacing:.1em; text-transform:uppercase;
+    color:var(--accent); background:var(--accent-soft); padding:5px 13px; border-radius:100px; margin-bottom:16px;
+  }
+  .home-hero h2{
+    font-family:var(--font-display); font-weight:var(--display-weight); font-size:clamp(26px,4vw,36px);
+    color:var(--text); margin-bottom:10px;
+  }
+  .home-hero h2 em{ color:var(--accent); font-style:var(--display-style); }
+  .home-hero p{ color:var(--text-dim); font-size:14px; max-width:420px; margin:0 auto; }
+
+  .cards-grid{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px;
+    padding:32px 30px 44px;
+  }
+  .year-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:22px 20px; display:flex; flex-direction:column; gap:12px; box-shadow:var(--shadow);
+  }
+  .year-card.locked{ opacity:.5; }
+  .yc-badge{
+    width:40px; height:40px; border-radius:10px; display:flex; align-items:center; justify-content:center;
+    background:var(--accent-soft); color:var(--accent);
+  }
+  .yc-badge svg{ width:20px; height:20px; }
+  .year-card.an2 .yc-badge{ background:var(--accent-2-soft); color:var(--accent-2); }
+  .yc-label{ font-size:10.5px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); }
+  .year-card.an2 .yc-label{ color:var(--accent-2); }
+  .yc-title{ font-family:var(--font-display); font-weight:var(--display-weight); font-size:22px; color:var(--text); }
+  .yc-desc{ font-size:12.5px; color:var(--text-muted); line-height:1.55; }
+
+  /* ================= CONTENT PAGE MOCK ================= */
+  .content-header{
+    background:var(--surface-2); padding:26px 30px 0; border-bottom:1px solid var(--border);
+  }
+  .ch-row{ display:flex; align-items:flex-end; gap:16px; padding-bottom:18px; }
+  .ch-icon{
+    width:44px; height:44px; border-radius:11px; background:var(--accent); color:var(--surface);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  }
+  .ch-icon svg{ width:22px; height:22px; }
+  body[data-theme="c"] .ch-icon{ color:#0d131e; }
+  .ch-title{ font-family:var(--font-display); font-weight:var(--display-weight); font-size:21px; color:var(--text); }
+  .ch-sub{ font-size:12px; color:var(--text-muted); margin-top:2px; }
+  .nav-tabs{ display:flex; gap:4px; padding:0 0; overflow-x:auto; }
+  .nav-tab{
+    padding:11px 16px; font-size:12.5px; font-weight:500; color:var(--text-muted);
+    border-bottom:2px solid transparent; white-space:nowrap;
+  }
+  .nav-tab.active{ color:var(--accent); border-bottom-color:var(--accent); }
+
+  .content-body{ padding:28px 30px 44px; display:flex; flex-direction:column; gap:22px; }
+  .panel{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); overflow:hidden;
+  }
+  .panel-head{ padding:14px 18px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
+  .panel-dot{ width:9px; height:9px; border-radius:50%; background:var(--accent); }
+  .panel-title{ font-size:13.5px; font-weight:600; color:var(--text); }
+  .panel-body{ padding:16px 18px; }
+
+  table.mock-table{ width:100%; border-collapse:collapse; font-size:12.5px; }
+  table.mock-table th{
+    text-align:left; padding:8px 10px; color:var(--text-muted); font-weight:600; font-size:11px;
+    text-transform:uppercase; letter-spacing:.04em; border-bottom:1px solid var(--border);
+  }
+  table.mock-table td{ padding:9px 10px; border-bottom:1px solid var(--border); color:var(--text-dim); }
+  table.mock-table tr:last-child td{ border-bottom:none; }
+  table.mock-table td.strong{ color:var(--text); font-weight:600; }
+
+  .phase{ border:1px solid var(--border); border-radius:10px; overflow:hidden; margin-top:4px; }
+  .phase + .phase{ margin-top:10px; }
+  .phase-head{ display:flex; align-items:center; gap:12px; padding:11px 14px; background:var(--surface-2); }
+  .phase-range{ font-family:var(--font-display); font-weight:var(--display-weight); font-size:16px; color:var(--accent); min-width:60px; }
+  .phase-name{ font-size:13px; font-weight:600; color:var(--text); }
+  .phase-open{ padding:13px 14px; font-size:12.5px; color:var(--text-dim); line-height:1.65; background:var(--surface); }
+
+  footer.mock-footer{ text-align:center; padding:18px; font-size:11.5px; color:var(--text-muted); border-top:1px solid var(--border); }
+
+  @media (max-width:600px){
+    .mock-wrap{ padding:20px 12px 0; }
+    .cards-grid{ padding:24px 16px 34px; }
+    .content-body{ padding:22px 16px 34px; }
+  }
+</style>
+</head>
+<body data-theme="a">
+
+<div class="switcher">
+  <span class="switcher-label">Direction :</span>
+  <button class="switcher-btn active" data-t="a" onclick="setTheme('a')">A · Clinique épuré</button>
+  <button class="switcher-btn" data-t="b" onclick="setTheme('b')">B · Organique / anatomique</button>
+  <button class="switcher-btn" data-t="c" onclick="setTheme('c')">C · Premium sombre repensé</button>
+</div>
+
+<p class="theme-caption" id="caption"></p>
+
+<div class="mock-wrap">
+
+  <!-- LOGIN -->
+  <div class="frame">
+    <div class="frame-bar"><span class="frame-dot"></span><span class="frame-dot"></span><span class="frame-dot"></span><span class="frame-label">index.html — connexion</span></div>
+    <div class="frame-body">
+      <div class="login-mock">
+        <div class="brand-row">
+          <div class="brand-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4c1.5 0 2.5 1 2.5 2.5S7.5 9 6 9s-2.5-1-2.5-2.5S4.5 4 6 4z"/><path d="M18 20c1.5 0 2.5-1 2.5-2.5S19.5 15 18 15s-2.5 1-2.5 2.5.5 2.5 2.5 2.5z"/><path d="M7.5 8l9 8"/></svg>
+          </div>
+          <div class="brand-text">
+            <div class="brand-name">BibliOstéo IEOQ</div>
+            <div class="brand-sub">P. César &amp; H. Bouësnard</div>
+          </div>
+        </div>
+        <div class="eyebrow">Accès étudiant</div>
+        <h1 class="login-h1">Bibliothèque<br><em>Ostéopathique</em></h1>
+        <p class="login-desc">Connecte-toi avec l'identifiant fourni pour ton année d'étude afin d'accéder aux notes et outils de révision.</p>
+        <div class="card login-card">
+          <div class="field"><label>Nom d'utilisateur</label><div class="fake-input">eleve.an1</div></div>
+          <div class="field"><label>Mot de passe</label><div class="fake-input">••••••••</div></div>
+          <div class="btn-primary">Accéder à ma bibliothèque →</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOME -->
+  <div class="frame">
+    <div class="frame-bar"><span class="frame-dot"></span><span class="frame-dot"></span><span class="frame-dot"></span><span class="frame-label">home.html — choix du contenu</span></div>
+    <div class="frame-body">
+      <div class="site-header">
+        <div class="header-left">
+          <div class="brand-icon" style="width:32px;height:32px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4c1.5 0 2.5 1 2.5 2.5S7.5 9 6 9s-2.5-1-2.5-2.5S4.5 4 6 4z"/><path d="M18 20c1.5 0 2.5-1 2.5-2.5S19.5 15 18 15s-2.5 1-2.5 2.5.5 2.5 2.5 2.5z"/><path d="M7.5 8l9 8"/></svg>
+          </div>
+          <div class="brand-text"><div class="brand-name" style="font-size:14px;">Bibliothèque Ostéopathique</div><div class="brand-sub">IEOQ</div></div>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;">
+          <span class="session-pill">Connecté · Année 2</span>
+          <span class="logout-pill">Se déconnecter</span>
+        </div>
+      </div>
+      <div class="home-hero">
+        <span class="home-eyebrow">Sélection du contenu</span>
+        <h2>Quel contenu veux-tu <em>consulter</em> ?</h2>
+        <p>Ton accès inclut le contenu de ton année et de toutes les années précédentes.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="year-card an1">
+          <div class="yc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg></div>
+          <div class="yc-label">Programme</div>
+          <div class="yc-title">1ère Année</div>
+          <p class="yc-desc">Fondements de l'ostéopathie, anatomie de base, techniques structurelles et fasciales.</p>
+        </div>
+        <div class="year-card an2">
+          <div class="yc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+          <div class="yc-label">Programme</div>
+          <div class="yc-title">2e Année</div>
+          <p class="yc-desc">Approfondissement clinique, biomécanique et applications thérapeutiques.</p>
+        </div>
+        <div class="year-card locked">
+          <div class="yc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+          <div class="yc-label">Programme</div>
+          <div class="yc-title">3e Année</div>
+          <p class="yc-desc">Réservé aux élèves de 3e année et plus.</p>
+        </div>
+        <div class="year-card locked">
+          <div class="yc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+          <div class="yc-label">Programme</div>
+          <div class="yc-title">4e Année</div>
+          <p class="yc-desc">Réservé aux élèves de 4e année et plus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT PAGE -->
+  <div class="frame">
+    <div class="frame-bar"><span class="frame-dot"></span><span class="frame-dot"></span><span class="frame-dot"></span><span class="frame-label">an1.html — page de contenu</span></div>
+    <div class="frame-body">
+      <div class="content-header">
+        <div class="ch-row">
+          <div class="ch-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4c1.5 0 2.5 1 2.5 2.5S7.5 9 6 9s-2.5-1-2.5-2.5S4.5 4 6 4z"/><path d="M18 20c1.5 0 2.5-1 2.5-2.5S19.5 15 18 15s-2.5 1-2.5 2.5.5 2.5 2.5 2.5z"/><path d="M7.5 8l9 8"/></svg></div>
+          <div><div class="ch-title">Année 1 · Bibliothèque</div><div class="ch-sub">Fondements &amp; anatomie de base</div></div>
+        </div>
+        <div class="nav-tabs">
+          <div class="nav-tab">Anatomie</div>
+          <div class="nav-tab active">Biomécanique</div>
+          <div class="nav-tab">Techniques</div>
+          <div class="nav-tab">Tests cliniques</div>
+        </div>
+      </div>
+      <div class="content-body">
+        <div class="panel">
+          <div class="panel-head"><span class="panel-dot"></span><span class="panel-title">Muscles de la hanche</span></div>
+          <div class="panel-body">
+            <table class="mock-table">
+              <thead><tr><th>Muscle</th><th>Origine</th><th>Insertion</th><th>Action</th></tr></thead>
+              <tbody>
+                <tr><td class="strong">Grand fessier</td><td>Crête iliaque, sacrum</td><td>Tractus ilio-tibial</td><td>Extension, rotation ext.</td></tr>
+                <tr><td class="strong">Moyen fessier</td><td>Face externe de l'ilium</td><td>Grand trochanter</td><td>Abduction de hanche</td></tr>
+                <tr><td class="strong">Psoas-iliaque</td><td>Vertèbres lombaires, fosse iliaque</td><td>Petit trochanter</td><td>Flexion de hanche</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <div class="phase">
+            <div class="phase-head"><span class="phase-range">01</span><span class="phase-name">Phase d'appui — cycle de marche</span></div>
+          </div>
+          <div class="phase">
+            <div class="phase-head"><span class="phase-range">02</span><span class="phase-name">Phase oscillante — cycle de marche</span></div>
+            <div class="phase-open">Le membre inférieur quitte le sol : flexion de hanche et de genou, dorsiflexion de cheville pour assurer le dégagement du pied.</div>
+          </div>
+        </div>
+      </div>
+      <footer class="mock-footer">© 2026 IEOQ · P. César &amp; H. Bouësnard</footer>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const captions = {
+    a: "Fond clair sable, typographie serif éditoriale (Newsreader) pour les titres, accent sauge/teal profond. Look cabinet moderne, clinique et très lisible pour l'étude.",
+    b: "Palette parchemin/terracotta/olive, serif chaleureuse (Fraunces), coins moins arrondis, esprit planche anatomique classique. Plus \"humain\" et texturé que clinique.",
+    c: "Base sombre repensée : bleu nuit profond, accent or/cuivre discret (au lieu du teal néon), serif élégante (Cormorant). Registre cabinet privé / institution haut de gamme."
+  };
+  function setTheme(t){
+    document.body.dataset.theme = t;
+    document.querySelectorAll('.switcher-btn').forEach(b => b.classList.toggle('active', b.dataset.t === t));
+    document.getElementById('caption').textContent = captions[t];
+  }
+  setTheme('a');
+</script>
+
+</body>
+</html>
