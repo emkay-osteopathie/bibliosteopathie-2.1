@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 3 · Traumatologie — Chapitre 2 : Genou</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(3);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🦵</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 3e Année</h1>
+      <p>Traumatologie · Chapitre 2 — Genou : ligaments et ménisques · IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="traumatologie.html">← Traumatologie</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><a href="traumatologie.html" style="color:var(--teal-700);text-decoration:none;font-weight:600;">Traumatologie</a> <span style="color:var(--gray-300);">›</span> <strong>Chapitre 2</strong> <span id="crumbSub">› 🧠 Anatomie et biomécanique</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="tr2-anatomie" onclick="showSub('tr2-anatomie')">🧠 Anatomie et biomécanique</button>
+    <button type="button" class="nav-tab" data-sub="tr2-lca" onclick="showSub('tr2-lca')">🔗 LCA</button>
+    <button type="button" class="nav-tab" data-sub="tr2-lcp" onclick="showSub('tr2-lcp')">🧵 LCP</button>
+    <button type="button" class="nav-tab" data-sub="tr2-menisques" onclick="showSub('tr2-menisques')">🌙 Ménisques</button>
+    <button type="button" class="nav-tab" data-sub="tr2-fractures" onclick="showSub('tr2-fractures')">🦴 Fractures du genou</button>
+    <button type="button" class="nav-tab" data-sub="tr2-quiz" onclick="showSub('tr2-quiz')">🎯 Quiz général</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+
+<!-- ═══════════════ 1. ANATOMIE & BIOMÉCANIQUE ═══════════════ -->
+<section class="section active" id="tr2-anatomie" style="display:block;">
+<div class="section-title">Les pathologies traumatiques du genou</div>
+<div class="section-sub">Anatomie, biomécanique, généralités sur les entorses</div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🧠</div><div class="card-title">Anatomie</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">3 articulations</div><div class="value">Tibio-fémorale · fémoro-patellaire · tibio-fibulaire proximale</div></div>
+<div class="test-detail-item"><div class="label">Stabilisation</div><div class="value"><strong>Passive</strong> : ligaments et capsule · <strong>Active</strong> : muscles</div></div>
+</div>
+<div class="path-card"><h4>Rôles des ménisques</h4><ul>
+<li><strong>Augmenter la congruence articulaire</strong> en compensant la non-concordance des surfaces articulaires</li>
+<li><strong>Absorber les chocs</strong></li>
+<li>Rôle de <strong>lubrification</strong> de l’articulation du genou</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">📐</div><div class="card-title">Biomécanique</div></div><div class="card-body">
+<table class="grille-eval-table"><thead><tr><th>Mouvement</th><th>Amplitude</th></tr></thead><tbody>
+<tr><td><strong>Flexion / extension</strong></td><td>150° – 0° – 10°</td></tr>
+<tr><td><strong>Rotation tibiale</strong></td><td>RE = 10° / 40° · RI = 10° / 30° — <strong>présente seulement lorsque le genou est fléchi</strong> (Kapandji)</td></tr>
+</tbody></table>
+<div class="test-detail-grid" style="margin-top:14px;">
+<div class="test-detail-item"><div class="label">En extension</div><div class="value">Genou très <strong>stable</strong> · vulnérable aux <strong>fractures et ruptures ligamentaires</strong></div></div>
+<div class="test-detail-item"><div class="label">En flexion</div><div class="value">Genou très <strong>mobile</strong> · vulnérable aux <strong>lésions ligamentaires et méniscales</strong></div></div>
+</div>
+<div class="info-box teal" style="margin-bottom:0;">L’articulation possède un <strong>faible emboîtement des surfaces</strong>, ce qui l’expose aux risques d’entorses et de luxations.</div>
+</div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🩹</div><div class="card-title">Les entorses du genou — généralités</div></div><div class="card-body">
+<div class="path-card"><ul>
+<li><strong>Types :</strong> LCA, LCP, ménisques, LCI et LCE</li>
+<li>Origine <strong>traumatique</strong> en général</li>
+<li>Importance de connaître / comprendre le <strong>mécanisme de lésion</strong> pour bien cibler la structure atteinte</li>
+<li>Plusieurs <strong>tests orthopédiques manuels</strong> permettent d’identifier l’atteinte, avec l’avantage du <strong>comparatif avec l’autre genou</strong></li>
+</ul></div>
+<div class="info-box teal" style="margin-bottom:0;"><strong>Selon Magee</strong>, la majorité des lésions ligamentaires et méniscales peuvent être diagnostiquées <strong>seulement avec un examen clinique</strong>.</div>
+</div></div>
+
+<div id="quiz-anatomie"></div>
+
+<div class="footnote">Source : « Traumatologie – 3e année : Les pathologies traumatiques du genou », IEOQ. Références : Gray’s Anatomie pour les étudiants ; Magee, <em>Pathology and intervention in musculoskeletal rehabilitation</em> ; Kapandji. Le cours nomme le LCI et le LCE parmi les types d’entorses, mais ce chapitre détaille le LCA, le LCP et les ménisques.</div>
+</section>
+
+<!-- ═══════════════ 2. LCA ═══════════════ -->
+<section class="section" id="tr2-lca" style="display:none;">
+<div class="section-title">Entorse du ligament croisé antérieur (LCA)</div>
+<div class="section-sub">Anatomie, étiologie, mécanisme, anamnèse, diagnostic, traitements, phase chronique</div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🔗</div><div class="card-title">Attaches et rôles</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Attache fémorale</div><div class="value">Postéro-externe sur le fémur</div></div>
+<div class="test-detail-item"><div class="label">Attache tibiale</div><div class="value">Antéro-interne sur le tibia <strong>et sur la corne antérieure du ménisque interne</strong></div></div>
+</div>
+<div class="path-card"><h4>Rôles</h4><ul>
+<li><strong>Stabilisation +++</strong> : freine l’hyperextension, tout en gardant une tension dans certains faisceaux en flexion aussi</li>
+<li>Aide au <strong>glissement antérieur des condyles du fémur</strong> lors de la flexion</li>
+<li><strong>Bloque les rotations tibiales</strong> en extension complète</li>
+<li>Retient à lui seul <strong>85 % du tiroir antérieur</strong> du tibia (Magee)</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🎯</div><div class="card-title">Étiologie et mécanisme lésionnel</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Qui ?</div><div class="value">Sujet entre <strong>15 et 45 ans</strong> (90 % des cas, Magee) · 16-39 ans · <strong>femme &gt; homme</strong></div></div>
+<div class="test-detail-item"><div class="label">Contexte</div><div class="value">Généralement chez le sportif : ski, basketball, hockey, soccer, football…</div></div>
+</div>
+<div class="path-card"><h4>Mécanisme</h4><ul>
+<li>La principale composante est la <strong>mise en charge (MEC) sur le MI blessé</strong></li>
+<li>Trauma en <strong>pivot</strong>, avec ou sans contact</li>
+<li>Souvent : <strong>valgus + flexion + RI</strong></li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🩺</div><div class="card-title">Anamnèse et observations</div></div><div class="card-body">
+<div class="path-card"><h4>Anamnèse</h4><ul>
+<li>Contexte de trauma clair ; le patient a entendu un <strong>« pop »</strong> (pas toujours)</li>
+<li><strong>Douleur immédiate et œdème</strong></li>
+<li>MEC peu ou pas possible suite au trauma</li>
+<li>Craquement possible (biomécanique de flexion / extension perturbée +++)</li>
+<li><strong>Sensation d’instabilité</strong></li>
+<li>Orthèses ? Zimmer ? Chirurgie faite ou à venir (ou pas) ?</li>
+</ul></div>
+<div class="info-box teal" style="margin-bottom:0;"><strong>Si récent</strong> (post-trauma ou chirurgie) : œdème, <strong>test du glaçon</strong> peut être positif.</div>
+</div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🧪</div><div class="card-title">Diagnostic</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Clinique</div><div class="value">Anamnèse, test du tiroir antérieur, test de Lachman, etc.</div></div>
+<div class="test-detail-item"><div class="label">Imagerie</div><div class="value">À compléter avec tes notes (le cours montre une IRM sagittale)</div></div>
+</div>
+<div class="path-card"><h4>Les tests les plus étudiés et validés</h4><ul>
+<li><strong>Pivot shift test</strong></li>
+<li><strong>Test de Lachman</strong></li>
+<li><strong>Test du tiroir antérieur</strong></li>
+<li><strong>Lever sign test</strong> (test de Lelli)</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🔀</div><div class="card-title">Lésions associées</div></div><div class="card-body">
+<div class="path-card"><ul>
+<li>Douleur à l’insertion du <strong>LCI et / ou LCE</strong> (possible déchirure associée)</li>
+<li>Douleur de l’<strong>interligne médiale</strong> (possible atteinte méniscale : <strong>24 à 42 %</strong>)</li>
+<li><strong>Fracture par avulsion</strong>, en général sur l’attache au niveau du fémur</li>
+<li>Fracture de la fibula et / ou du tibia</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🛠️</div><div class="card-title">Traitements</div></div><div class="card-body">
+<div class="path-card"><h4>La décision d’opérer ou non dépend de…</h4><ul>
+<li>Atteinte isolée du LCA vs atteintes multiples du genou (ménisque, LCI, etc.)</li>
+<li>Niveau d’activité physique, type d’activité, et désir de retourner rapidement à ses activités</li>
+<li>Attentes et buts du patient</li>
+<li>Intensité de l’instabilité</li>
+<li>Intensité de la déchirure</li>
+</ul></div>
+<table class="grille-eval-table"><thead><tr><th>Approche</th><th>Contenu</th></tr></thead><tbody>
+<tr><td><strong>Fonctionnels recommandés</strong></td><td>Pharmacologique · rapide retour à la marche et au vélo (avec ou sans attelle) · <strong>physiothérapie +++ pré et / ou post-op</strong> · kinésiologie</td></tr>
+<tr><td><strong>Orthopédiques recommandés</strong></td><td>Immobilisation de 4 à 6 semaines (Zimmer), « mais de plus en plus aucune mobilisation » (tel qu’écrit dans le cours)</td></tr>
+<tr><td><strong>Chirurgicaux recommandés</strong></td><td><strong>Ostéo-réinsertion et / ou ligamentoplastie.</strong> Chez les gens avec déchirure de <strong>50 à 100 %</strong> ; chez les sportifs, on peut opérer à <strong>&lt; 50 %</strong>. Greffon : <strong>ischio-jambiers, tendon rotulien, gracile</strong>. Réadaptation en moyenne <strong>6 à 12 mois</strong>. Tendance : on opère de moins en moins.</td></tr>
+</tbody></table>
+<div class="info-box teal" style="margin-bottom:0;">Le cours s’appuie sur le consensus du <strong>Panther Symposium</strong> (traitement après blessure du LCA) : les traitements chirurgical et non chirurgical sont tous deux acceptables, et la décision se prend de façon partagée avec le patient.</div>
+</div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">⏳</div><div class="card-title">Phase chronique</div></div><div class="card-body">
+<div class="path-card"><ul>
+<li>Le patient décrit une <strong>« faiblesse »</strong> et parfois des <strong>blocages</strong></li>
+<li><strong>Atrophie musculaire</strong></li>
+<li>Lésions de <strong>« compensation »</strong> possibles : lombaire, hanche, etc.</li>
+<li><strong>Si non opéré :</strong> les tests orthopédiques peuvent être encore positifs</li>
+<li>Guérison des cicatrices ? <strong>Adhérences</strong> ?</li>
+<li><strong>Hypermobilité / laxité en extension</strong> : surtout glissement antérieur, rotation médiale, ainsi que valgus / varus en hyperextension</li>
+</ul></div></div></div>
+
+<div id="quiz-lca"></div>
+
+<div class="footnote">Source : « Traumatologie – 3e année : Entorse du ligament croisé antérieur », IEOQ. Références : Magee ; Gauthier, <em>Tests cliniques en musculosquelettique</em> ; Panther Symposium ACL Treatment Consensus Group (2020).</div>
+</section>
+
+<!-- ═══════════════ 3. LCP ═══════════════ -->
+<section class="section" id="tr2-lcp" style="display:none;">
+<div class="section-title">Entorse du ligament croisé postérieur (LCP)</div>
+<div class="section-sub">Caractéristiques, mécanismes, lésions associées, diagnostic, traitements</div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🧵</div><div class="card-title">Généralités</div></div><div class="card-body">
+<div class="path-card"><ul>
+<li><strong>Plus rare que le LCA</strong></li>
+<li>Le LCP est le <strong>ligament le plus fort du genou</strong></li>
+<li>Attaches : à compléter avec tes notes (non détaillées dans les diapositives)</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🩺</div><div class="card-title">Présentation clinique</div></div><div class="card-body">
+<div class="path-card"><ul>
+<li>Sensation parfois même <strong>audible d’un « pop »</strong> lors du trauma</li>
+<li>Possible œdème, mais plusieurs patients retournent rapidement à une fonction « normale »</li>
+<li><strong>Instabilité présente</strong>, mais pas comparable à la rupture du LCA</li>
+<li>Par contre, <strong>douleur souvent présente à la descente des escaliers</strong></li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">💥</div><div class="card-title">Mécanismes lésionnels</div></div><div class="card-body">
+<p style="font-size:13.5px;margin-bottom:10px;">Accident sportif, accident de la route ou de travail. Selon Magee :</p>
+<div class="path-card"><ul>
+<li><strong>Chute sur un genou fléchi</strong> avec la cheville en flexion plantaire</li>
+<li><strong>« Dashboard injury »</strong> (impact du genou fléchi contre le tableau de bord)</li>
+<li><strong>Force vers le bas sur la cuisse</strong> pendant que le genou est en hyperflexion</li>
+<li><strong>Hyperflexion</strong></li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🔀</div><div class="card-title">Lésions associées</div></div><div class="card-body">
+<div class="info-box amber" style="margin-top:0;margin-bottom:0;">Dans <strong>27 % des cas</strong> d’entorse du LCP, on retrouve aussi une <strong>déchirure méniscale</strong> (Magee) — surtout du <strong>ménisque médial</strong>, et surtout si le mécanisme de lésion se produit à <strong>&gt; 60° de flexion</strong> du genou.</div>
+</div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🧪</div><div class="card-title">Diagnostic</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Clinique</div><div class="value">Anamnèse, mécanisme de lésion · tests orthopédiques : <strong>tiroir postérieur, signe de Godfrey, Jacob</strong>, etc.</div></div>
+<div class="test-detail-item"><div class="label">Imagerie</div><div class="value"><strong>IRM</strong> et / ou <strong>arthroscopie</strong></div></div>
+</div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🛠️</div><div class="card-title">Traitements</div></div><div class="card-body">
+<div class="path-card"><h4>Conservateurs</h4><ul>
+<li><strong>Parolie et Bergfel :</strong> avec des quadriceps suffisamment forts, la majorité des patients évitaient la chirurgie</li>
+<li><strong>Dejour et al. :</strong> chez les symptomatiques, pendant les <strong>12 mois</strong> suivant le trauma, le genou s’adapte et la chirurgie peut encore être évitée ; un haut pourcentage retournait au sport</li>
+<li>Par contre, quelques études : <strong>dégénérescence du compartiment médial à 10 ans (90 %)</strong> et <strong>syndrome fémoro-patellaire (55 %)</strong> chez certains</li>
+</ul></div>
+<div class="path-card"><h4>Chirurgical : réparation vs remplacement</h4><ul>
+<li>Réparation du LCP</li>
+<li>Remplacement : <strong>idem au LCA</strong></li>
+</ul></div></div></div>
+
+<div id="quiz-lcp"></div>
+
+<div class="footnote">Source : « Traumatologie – 3e année : Entorse du ligament croisé postérieur », IEOQ. Références : Magee.</div>
+</section>
+
+<!-- ═══════════════ 4. MÉNISQUES ═══════════════ -->
+<section class="section" id="tr2-menisques" style="display:none;">
+<div class="section-title">Les lésions méniscales</div>
+<div class="section-sub">Anatomie, déchirure, diagnostic, tests, traitements, kyste</div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🌙</div><div class="card-title">Anatomie et types de ruptures</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Attaches</div><div class="value">Le <strong>ménisque interne</strong> a une attache avec le <strong>LCI</strong> et le <strong>LCA</strong></div></div>
+<div class="test-detail-item"><div class="label">Vascularisation</div><div class="value">Le <strong>tiers interne</strong> des ménisques est <strong>avasculaire</strong></div></div>
+</div>
+<div class="path-card"><h4>Types de ruptures (schémas du cours)</h4><ul>
+<li>Longitudinale · transversale · horizontale (découverte par la fissure)</li>
+<li>En anse de seau · en bec de perroquet · en battant de cloche</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">⚠️</div><div class="card-title">Déchirure méniscale</div></div><div class="card-body">
+<div class="path-card"><ul>
+<li><strong>Blessure du genou la plus fréquente</strong></li>
+<li>Lésions <strong>isolées</strong> des ménisques vs <strong>polyatteinte</strong> (LCA et LCI)</li>
+<li>Peut être <strong>dégénératif si &gt; 45 ans</strong>, mais la majorité sont traumatiques</li>
+<li><strong>Mécanisme :</strong> distorsion du genou</li>
+<li>S’ensuit une sensation de <strong>blocage</strong> léger à sévère, constant ou intermittent</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🧪</div><div class="card-title">Diagnostic et tests</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Clinique</div><div class="value">Anamnèse (mécanisme de lésion) · flexion forcée, <strong>Bounce home</strong>, O’Donoghue, <strong>McMurray</strong>, <strong>Apley compression</strong>, signe de Steinman, Thessaly…</div></div>
+<div class="test-detail-item"><div class="label">Imagerie</div><div class="value"><strong>IRM</strong> et / ou <strong>arthroscopie</strong></div></div>
+</div>
+<div class="info-box amber" style="margin-bottom:14px;">Malgré la multitude de tests orthopédiques, il y a <strong>beaucoup de faux négatifs et de faux positifs</strong>.</div>
+
+<div class="card" style="margin:0 0 14px;"><div class="card-header"><div class="card-icon amber">🧪</div><div class="card-title">Test de McMurray</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Patient en DD · examinateur debout ipsilatéral</div></div>
+<div class="test-detail-item"><div class="label">Manœuvre</div><div class="value">Genou en <strong>flexion complète + RE tibial</strong>, puis extension lente de la jambe en maintenant en <strong>valgus</strong></div></div>
+</div>
+<div class="test-positive"><div class="label">Interprétation</div>Si <strong>douleur ou « clic »</strong> pendant l’extension : test positif → atteinte du <strong>ménisque interne</strong>. Pour le <strong>ménisque externe</strong> : RI tibial + maintien en <strong>varus</strong>.</div>
+</div></div>
+
+<div class="card" style="margin:0;"><div class="card-header"><div class="card-icon amber">🧪</div><div class="card-title">Apley compression</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Patient en DV · examinateur debout ipsilatéral</div></div>
+<div class="test-detail-item"><div class="label">Manœuvre</div><div class="value">Appui dans l’<strong>axe du tibia + RI</strong> (puis tester la RE)</div></div>
+</div>
+<div class="test-positive"><div class="label">Interprétation</div>Si <strong>douleur</strong> : positif → atteinte méniscale.</div>
+</div></div>
+</div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">💊</div><div class="card-title">Traitements</div></div><div class="card-body">
+<div class="info-box teal" style="margin-top:0;"><strong>D’abord conservateur !</strong> Physiothérapie · ostéopathie · acupuncture · kinésiologie. Chirurgie possible : <strong>méniscectomie partielle ou totale</strong>.</div>
+<table class="grille-eval-table"><thead><tr><th>Option</th><th>À retenir</th></tr></thead><tbody>
+<tr><td><strong>Méniscectomie</strong></td><td><strong>Risques :</strong> développement d’<strong>arthrose prématurée</strong>, douleur persistante, risque d’hémorragie et d’infection. Chirurgie pratiquée +++ (coûts pour la société). <strong>Récupération complète : 3 à 8 mois</strong> selon le type de patient. Indications : à compléter avec tes notes.</td></tr>
+<tr><td><strong>Méniscectomie et arthrose</strong></td><td>Étude de Longo et al. (méniscectomie partielle arthroscopique, 5 à 12 ans, comparée au genou opposé) : compartiment <strong>médial 17,2 % → 65,96 %</strong> · compartiment <strong>latéral 17,64 % → 58,82 %</strong> (pré-opératoire → post-opératoire).</td></tr>
+<tr><td><strong>Réparation méniscale</strong></td><td>Si la déchirure est dans la <strong>zone vascularisée</strong> : possibilité de <strong>suturer</strong> le ménisque. Fait seulement si peu ou pas d’évolution post-trauma.</td></tr>
+<tr><td><strong>Greffe de ménisque</strong></td><td><strong>Rare ++</strong>. Greffon provenant d’un donneur. Réadaptation plus longue (<strong>6 à 9 mois</strong>).</td></tr>
+</tbody></table></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🫧</div><div class="card-title">Autre atteinte méniscale : kyste du ménisque externe</div></div><div class="card-body">
+<div class="path-card"><ul>
+<li>Kyste à la périphérie du ménisque, lui-même fissuré · plutôt <strong>rare</strong></li>
+<li>Dégénératif ou traumatique</li>
+<li>Apparition d’une <strong>masse palpable sur la face externe du genou</strong></li>
+<li>Possible <strong>atteinte du n. fibulaire commun</strong></li>
+</ul></div></div></div>
+
+<div id="quiz-menisques"></div>
+
+<div class="footnote">Source : « Traumatologie – 3e année : Les lésions méniscales », IEOQ. Tests : Gauthier, <em>Tests cliniques en musculosquelettique</em>, 2014. Étude citée : Longo et al., <em>Knee osteoarthritis after arthroscopic partial meniscectomy</em>.</div>
+</section>
+
+<!-- ═══════════════ 5. FRACTURES ═══════════════ -->
+<section class="section" id="tr2-fractures" style="display:none;">
+<div class="section-title">Les fractures du genou</div>
+<div class="section-sub">Types, points communs, complications, règles d’Ottawa, observations, traitements</div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">Types et points communs</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Types</div><div class="value">Fémur distal · patella · tibia proximal · fibula proximale</div></div>
+<div class="test-detail-item"><div class="label">Points communs</div><div class="value">Nature traumatique <strong>directe vs indirecte</strong> · douleur du genou · œdème · <strong>épanchement articulaire</strong> · impotence fonctionnelle</div></div>
+</div>
+<div class="path-card"><h4>Complications communes</h4><ul>
+<li>Raideurs / <strong>ankylose</strong></li>
+<li><strong>Gonarthrose</strong></li>
+<li><strong>Ostéoarthrite</strong> si fracture ouverte</li>
+<li><strong>Cal vicieux</strong> avec désaxation : difficultés à la marche et douleurs chroniques</li>
+<li><strong>Thrombophlébite</strong></li>
+<li><strong>Syndrome douloureux régional complexe</strong> (anciennement algodystrophie / algoneurodystrophie)</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">📋</div><div class="card-title">Diagnostic — règles d’Ottawa pour la radiographie</div></div><div class="card-body">
+<div class="path-card"><h4>Blessure récente au genou (moins de 7 jours) <em>et</em> au moins un des critères suivants</h4><ul>
+<li><strong>&gt; 55 ans</strong></li>
+<li><strong>Sensibilité isolée à la patella</strong></li>
+<li><strong>Sensibilité à la tête fibulaire</strong></li>
+<li><strong>Incapacité de fléchir le genou à 90°</strong></li>
+<li><strong>Incapacité de MEC</strong> immédiatement après le trauma ou de faire <strong>4 pas</strong></li>
+</ul></div>
+<div class="info-box teal" style="margin-bottom:0;">Le cours rappelle que, depuis mai 2020, les physiothérapeutes du Québec peuvent <strong>prescrire des radiographies</strong> selon certaines modalités (ordonnances collectives).</div>
+</div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🚩</div><div class="card-title">Observation post-trauma selon la fracture</div></div><div class="card-body">
+<table class="grille-eval-table"><thead><tr><th>Fracture</th><th>Observations</th></tr></thead><tbody>
+<tr><td><strong>Fémur distal</strong></td><td>Signes fonctionnels : <strong>douleurs +++, impossibilité de MEC</strong>. Examen : œdème, <strong>déformation en varus et RE</strong>, raccourcissement du membre. Peu ou pas possible de mobiliser (douleur +++).</td></tr>
+<tr><td><strong>Tibia proximal</strong></td><td>Œdème important, +/- déformation. <strong>Douleur localisée au tibia seulement.</strong></td></tr>
+<tr><td><strong>Fibula proximale</strong></td><td>Œdème, +/- déformation. <strong>Douleur à la tête fibulaire.</strong> Neuro : <strong>possible atteinte du nerf fibulaire commun</strong>.</td></tr>
+<tr><td><strong>Patella</strong></td><td><strong>Peu ou pas possible de faire l’extension du genou.</strong> Œdème et douleur devant le genou. Peu ou pas de déformation. <strong>Parfois difficile à diagnostiquer, même avec une radiographie.</strong></td></tr>
+</tbody></table>
+<div class="info-box coral" style="margin-top:14px;margin-bottom:0;"><strong>Red flags à vérifier (fémur distal, tibia, fibula) :</strong> <strong>artérielle</strong> → palpation des pouls périphériques (a. tibiale postérieure et pédieuse) · <strong>neurologique</strong> → sensibilité et motricité des orteils · <strong>cutanée</strong> → fracture ouverte ?</div>
+</div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🛠️</div><div class="card-title">Traitements médicaux</div></div><div class="card-body">
+<div class="path-card"><ul>
+<li><strong>Si non déplacée :</strong> immobilisation</li>
+<li><strong>Si déplacée, ouverte ou complexe :</strong> chirurgie</li>
+</ul></div>
+<div class="info-box amber" style="margin-bottom:0;"><strong>Notre rôle en ostéopathie :</strong> la diapositive de fin du cours ne contient qu’un titre. À compléter avec tes notes de classe.</div>
+</div></div>
+
+<div id="quiz-fractures"></div>
+
+<div class="footnote">Source : « Traumatologie – 3e année : Les fractures du genou », IEOQ.</div>
+</section>
+
+<!-- ═══════════════ 6. QUIZ GÉNÉRAL ═══════════════ -->
+<section class="section" id="tr2-quiz" style="display:none;">
+<div class="section-title">Quiz général — Genou : ligaments et ménisques</div>
+<div class="section-sub">Toutes les questions du chapitre, dans un ordre aléatoire à chaque chargement</div>
+<div class="info-box teal" style="margin-top:0;">Clique sur une réponse pour la valider. Les questions « réponse courte » se corrigent avec le bouton <strong>Voir la réponse</strong> : essaie de répondre à voix haute d’abord. Le score n’est pas enregistré.</div>
+<div id="quiz-general"></div>
+</section>
+
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script src="quiz.js"></script>
+<script>
+  /* ── Questions de révision (une série par section) ── */
+  var QUIZ = {
+    "anatomie": [
+      { t:'mcq', q:"Combien d’<strong>articulations</strong> le genou comprend-il selon le cours ?", c:["2","3","4","5"], a:1, e:"Tibio-fémorale, fémoro-patellaire et tibio-fibulaire proximale." },
+      { t:'mcq', q:"Qu’est-ce qui assure la <strong>stabilisation passive</strong> du genou ?", c:["Les muscles","Les ligaments et la capsule","Les ménisques seulement","Le tissu adipeux infrapatellaire"], a:1, e:"Les muscles assurent la stabilisation active." },
+      { t:'mcq', q:"Quelle est l’amplitude de <strong>flexion / extension</strong> du genou donnée dans le cours ?", c:["90° – 0° – 10°","120° – 0° – 0°","150° – 0° – 10°","180° – 0° – 20°"], a:2, e:"La rotation tibiale (RE 10°/40°, RI 10°/30°) n’est présente que lorsque le genou est fléchi (Kapandji)." },
+      { t:'mcq', q:"Le genou est vulnérable aux <strong>lésions ligamentaires et méniscales</strong> surtout en…", c:["Extension","Flexion","Hyperextension seulement","Position neutre"], a:1, e:"En extension, il est plutôt vulnérable aux fractures et aux ruptures ligamentaires." },
+      { t:'mcq', q:"Selon <strong>Magee</strong>, la majorité des lésions ligamentaires et méniscales peuvent être diagnostiquées…", c:["Seulement par IRM","Seulement par arthroscopie","Seulement avec un examen clinique","Seulement par radiographie"], a:2, e:"D’où l’importance du mécanisme de lésion, des tests orthopédiques et du comparatif avec l’autre genou." },
+      { t:'open', q:"Quels sont les <strong>rôles des ménisques</strong> ?", a:"Augmenter la <strong>congruence articulaire</strong> en compensant la non-concordance des surfaces articulaires, <strong>absorber les chocs</strong> et jouer un rôle de <strong>lubrification</strong> de l’articulation." },
+      { t:'open', q:"Pourquoi le genou est-il exposé aux entorses et aux luxations ?", a:"Il possède un <strong>faible emboîtement des surfaces</strong> : il est très stable en extension, mais très mobile en flexion." }
+    ],
+    "lca": [
+      { t:'mcq', q:"Quel <strong>pourcentage du tiroir antérieur</strong> du tibia le LCA retient-il à lui seul (Magee) ?", c:["25 %","50 %","85 %","100 %"], a:2, e:"Il freine aussi l’hyperextension et bloque les rotations tibiales en extension complète." },
+      { t:'mcq', q:"Sur quelle structure le LCA s’attache-t-il, en plus du tibia (antéro-interne) ?", c:["La corne antérieure du ménisque interne","La corne postérieure du ménisque externe","La patella","La tête fibulaire"], a:0, e:"Attache fémorale : postéro-externe." },
+      { t:'mcq', q:"Quel est le profil <strong>typique</strong> d’une entorse du LCA ?", c:["Personne âgée, homme, sédentaire","Sportif de 15 à 45 ans, plus fréquent chez la femme","Enfant de moins de 10 ans","Travailleur de plus de 65 ans"], a:1, e:"15 à 45 ans dans 90 % des cas (Magee) ; femme &gt; homme ; ski, basketball, hockey, soccer, football…" },
+      { t:'mcq', q:"Quel est le <strong>mécanisme</strong> fréquent d’une entorse du LCA ?", c:["Hyperflexion sur genou fléchi avec choc antérieur","Trauma en pivot avec MEC : souvent valgus + flexion + RI","Impact direct sur la face externe du genou en extension","Chute sur la patella"], a:1, e:"La principale composante est la mise en charge sur le MI blessé, avec ou sans contact." },
+      { t:'mcq', q:"Parmi les tests <strong>les plus étudiés et validés</strong> du LCA, lequel <strong>n’est pas</strong> cité dans le cours ?", c:["Pivot shift","Lachman","Tiroir antérieur","McMurray"], a:3, e:"Le McMurray sert au ménisque. Pour le LCA : pivot shift, Lachman, tiroir antérieur, lever sign test (Lelli)." },
+      { t:'mcq', q:"Quel pourcentage d’<strong>atteinte méniscale</strong> associée est rapporté lors d’une douleur de l’interligne médiale avec entorse du LCA ?", c:["2 à 5 %","24 à 42 %","60 à 75 %","90 à 100 %"], a:1, e:"Autres lésions associées : douleur à l’insertion du LCI / LCE, fracture par avulsion (attache fémorale), fracture de la fibula et / ou du tibia." },
+      { t:'mcq', q:"Chez qui opère-t-on généralement selon le cours ?", c:["Seulement après 60 ans","Déchirure de 50 à 100 % ; chez les sportifs, on peut opérer à moins de 50 %","Toutes les déchirures sans exception","Jamais, le traitement est toujours conservateur"], a:1, e:"Tendance actuelle : on opère de moins en moins. Réadaptation moyenne de 6 à 12 mois." },
+      { t:'open', q:"Quels éléments décrivent l’<strong>anamnèse</strong> d’une entorse du LCA ?", a:"Contexte de trauma clair, le patient a entendu un <strong>« pop »</strong> (pas toujours), douleur immédiate et <strong>œdème</strong>, MEC peu ou pas possible, craquement possible, <strong>sensation d’instabilité</strong>. On demande aussi s’il porte une orthèse (Zimmer) et si une chirurgie est faite ou à venir." },
+      { t:'open', q:"De quoi dépend la <strong>décision d’opérer</strong> ou non ?", a:"Atteinte isolée du LCA vs atteintes multiples (ménisque, LCI…) · niveau et type d’activité physique, désir de retour rapide · attentes et buts du patient · intensité de l’instabilité · intensité de la déchirure." },
+      { t:'open', q:"Que peut-on observer en <strong>phase chronique</strong> ?", a:"Sensation de <strong>faiblesse</strong> et parfois blocages, <strong>atrophie musculaire</strong>, lésions de compensation (lombaire, hanche), tests orthopédiques encore positifs si non opéré, adhérences / cicatrices, et <strong>hypermobilité / laxité en extension</strong> (glissement antérieur, rotation médiale, valgus / varus en hyperextension)." }
+    ],
+    "lcp": [
+      { t:'mcq', q:"Quelle affirmation sur le LCP est <strong>exacte</strong> ?", c:["Il est plus fréquemment lésé que le LCA","C’est le ligament le plus fort du genou","Il ne provoque jamais d’instabilité","Il se lèse uniquement en extension"], a:1, e:"L’entorse du LCP est plus rare que celle du LCA." },
+      { t:'mcq', q:"Quelle <strong>douleur</strong> est souvent présente après une entorse du LCP ?", c:["À la montée sur la pointe des pieds","À la descente des escaliers","Au repos strict la nuit","À la rotation du cou"], a:1, e:"L’instabilité est présente, mais pas comparable à celle d’une rupture du LCA." },
+      { t:'mcq', q:"Lequel est un <strong>mécanisme lésionnel</strong> typique du LCP ?", c:["Valgus + flexion + RI avec pivot","Dashboard injury","Hyperextension forcée","Torsion du pied en inversion"], a:1, e:"Autres mécanismes (Magee) : chute sur un genou fléchi avec cheville en flexion plantaire, force vers le bas sur la cuisse genou en hyperflexion, hyperflexion." },
+      { t:'mcq', q:"Quelle proportion des entorses du LCP s’accompagne aussi d’une <strong>déchirure méniscale</strong> (Magee) ?", c:["5 %","15 %","27 %","60 %"], a:2, e:"Surtout le ménisque médial, surtout si le mécanisme se produit à plus de 60° de flexion." },
+      { t:'mcq', q:"Quel test est utilisé pour le <strong>LCP</strong> ?", c:["Tiroir postérieur","Lachman","Pivot shift","McMurray"], a:0, e:"Aussi : signe de Godfrey, Jacob. Imagerie : IRM et / ou arthroscopie." },
+      { t:'open', q:"Que disent <strong>Parolie et Bergfel</strong> et <strong>Dejour et al.</strong> sur le traitement conservateur du LCP ?", a:"<strong>Parolie et Bergfel :</strong> avec des quadriceps suffisamment forts, la majorité des patients évitaient la chirurgie. <strong>Dejour et al. :</strong> chez les symptomatiques, pendant les 12 mois suivant le trauma, le genou s’adapte et la chirurgie peut encore être évitée ; un haut pourcentage retourne au sport." },
+      { t:'open', q:"Quelles <strong>réserves</strong> existent sur le traitement conservateur du LCP ?", a:"Quelques études ont démontré une <strong>dégénérescence du compartiment médial à 10 ans (90 %)</strong> et que certains développaient un <strong>syndrome fémoro-patellaire (55 %)</strong>." }
+    ],
+    "menisques": [
+      { t:'mcq', q:"Quelle est la <strong>blessure du genou la plus fréquente</strong> selon le cours ?", c:["La déchirure du LCA","La déchirure méniscale","La fracture de la patella","L’entorse du LCP"], a:1, e:"Peut être dégénérative si &gt; 45 ans, mais la majorité sont traumatiques. Mécanisme : distorsion du genou." },
+      { t:'mcq', q:"Quel <strong>tiers</strong> des ménisques est avasculaire ?", c:["Le tiers externe","Le tiers moyen","Le tiers interne","Aucun"], a:2, e:"Si la déchirure est dans la zone vascularisée, une suture est possible (seulement si peu ou pas d’évolution post-trauma)." },
+      { t:'mcq', q:"Au <strong>McMurray</strong>, quelle manœuvre cible le <strong>ménisque interne</strong> ?", c:["Flexion complète + RE tibial, extension lente en valgus","Flexion complète + RI tibial, extension lente en varus","Compression axiale + RI","Extension forcée en varus"], a:0, e:"Positif si douleur ou « clic » pendant l’extension. Pour le ménisque externe : RI tibial + maintien en varus." },
+      { t:'mcq', q:"Quelle est la position du patient à l’<strong>Apley compression</strong> ?", c:["Décubitus dorsal","Décubitus ventral","Debout","Assis"], a:1, e:"Appui dans l’axe du tibia + RI (puis tester la RE). Douleur = positif → atteinte méniscale." },
+      { t:'mcq', q:"Que dit le cours des <strong>tests orthopédiques</strong> pour les ménisques ?", c:["Ils sont 100 % fiables","Beaucoup de faux négatifs et de faux positifs malgré leur multitude","Ils sont inutiles","Ils ne sont utilisables que sous anesthésie"], a:1, e:"L’imagerie est l’IRM et / ou l’arthroscopie." },
+      { t:'mcq', q:"Quel est le <strong>risque</strong> à long terme de la méniscectomie ?", c:["Ostéoporose","Développement d’arthrose prématurée","Cal vicieux","Algodystrophie systématique"], a:1, e:"Autres risques : douleur persistante, hémorragie, infection. Récupération complète : 3 à 8 mois." },
+      { t:'mcq', q:"Quelle <strong>complication nerveuse</strong> peut accompagner un kyste du ménisque externe ?", c:["Atteinte du n. fibulaire commun","Atteinte du n. sciatique complète","Atteinte du n. saphène","Atteinte du n. obturateur"], a:0, e:"Le kyste se manifeste par une masse palpable sur la face externe du genou. Plutôt rare ; dégénératif ou traumatique." },
+      { t:'open', q:"Quel est le <strong>traitement de première intention</strong> d’une déchirure méniscale ?", a:"<strong>Conservateur d’abord</strong> : physiothérapie, ostéopathie, acupuncture, kinésiologie. Chirurgie possible : méniscectomie partielle ou totale." },
+      { t:'open', q:"Que montre l’étude de Longo et al. sur la <strong>méniscectomie et l’arthrose</strong> ?", a:"Par rapport au genou opposé, l’arthrose radiographique passe de <strong>17,2 % à 65,96 %</strong> (compartiment médial) et de <strong>17,64 % à 58,82 %</strong> (compartiment latéral) entre le pré-opératoire et le post-opératoire (suivi de 5 à 12 ans)." },
+      { t:'open', q:"Que sait-on de la <strong>greffe de ménisque</strong> ?", a:"<strong>Rare ++</strong>, greffon provenant d’un donneur, réadaptation plus longue (<strong>6 à 9 mois</strong>)." }
+    ],
+    "fractures": [
+      { t:'mcq', q:"Parmi ces os, lequel <strong>n’est pas</strong> un type de fracture du genou cité ?", c:["Fémur distal","Patella","Tibia proximal","Clavicule"], a:3, e:"Types : fémur distal, patella, tibia proximal, fibula proximale." },
+      { t:'mcq', q:"Quel est <strong>l’un</strong> des critères des <strong>règles d’Ottawa</strong> pour la radiographie du genou ?", c:["Âge &lt; 18 ans","Sensibilité isolée à la patella","Œdème modéré seulement","Douleur nocturne"], a:1, e:"Blessure récente (&lt; 7 jours) + au moins un critère : &gt; 55 ans, sensibilité isolée à la patella, sensibilité à la tête fibulaire, incapacité de fléchir à 90°, incapacité de MEC ou de faire 4 pas." },
+      { t:'mcq', q:"Quelle fracture s’accompagne d’une <strong>possible atteinte du nerf fibulaire commun</strong> ?", c:["Fémur distal","Patella","Fibula proximale","Tibia distal"], a:2, e:"Douleur à la tête fibulaire, œdème et +/- déformation." },
+      { t:'mcq', q:"Quelle fracture se manifeste par une <strong>incapacité ou difficulté à faire l’extension</strong> du genou et est parfois difficile à diagnostiquer même en radiographie ?", c:["Patella","Tibia proximal","Fémur distal","Fibula proximale"], a:0, e:"Œdème et douleur devant le genou, peu ou pas de déformation." },
+      { t:'mcq', q:"Quelle <strong>déformation</strong> est décrite pour la fracture du fémur distal ?", c:["Valgus et RI","Varus et RE avec raccourcissement du membre","Recurvatum","Aucune déformation"], a:1, e:"Signes fonctionnels : douleurs +++, impossibilité de MEC." },
+      { t:'mcq', q:"Quelle est la bonne <strong>prise en charge</strong> d’une fracture <strong>non déplacée</strong> ?", c:["Chirurgie systématique","Immobilisation","Infiltration","Aucune surveillance"], a:1, e:"Si déplacée, ouverte ou complexe : chirurgie." },
+      { t:'open', q:"Quels <strong>red flags</strong> doit-on vérifier après une fracture du fémur distal, du tibia ou de la fibula ?", a:"<strong>Artérielle :</strong> palpation des pouls périphériques (a. tibiale postérieure et pédieuse). <strong>Neurologique :</strong> sensibilité et motricité des orteils. <strong>Cutanée :</strong> fracture ouverte ?" },
+      { t:'open', q:"Quelles sont les <strong>complications communes</strong> des fractures du genou ?", a:"Raideurs / ankylose, <strong>gonarthrose</strong>, ostéoarthrite si fracture ouverte, <strong>cal vicieux</strong> avec désaxation (difficultés à la marche et douleurs chroniques), <strong>thrombophlébite</strong>, et <strong>syndrome douloureux régional complexe</strong> (anciennement algodystrophie)." }
+    ]
+  };
+
+  var LOCAL_IDS = ["tr2-anatomie","tr2-lca","tr2-lcp","tr2-menisques","tr2-fractures","tr2-quiz"];
+  var SUB_LABELS_LOCAL = {
+    "tr2-anatomie": "🧠 Anatomie et biomécanique",
+    "tr2-lca": "🔗 LCA",
+    "tr2-lcp": "🧵 LCP",
+    "tr2-menisques": "🌙 Ménisques",
+    "tr2-fractures": "🦴 Fractures du genou",
+    "tr2-quiz": "🎯 Quiz général"
+  };
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '› ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    renderQuiz(document.getElementById('quiz-anatomie'), QUIZ["anatomie"]);
+    renderQuiz(document.getElementById('quiz-lca'), QUIZ["lca"]);
+    renderQuiz(document.getElementById('quiz-lcp'), QUIZ["lcp"]);
+    renderQuiz(document.getElementById('quiz-menisques'), QUIZ["menisques"]);
+    renderQuiz(document.getElementById('quiz-fractures'), QUIZ["fractures"]);
+    var all = [].concat(QUIZ["anatomie"], QUIZ["lca"], QUIZ["lcp"], QUIZ["menisques"], QUIZ["fractures"]);
+    renderQuiz(document.getElementById('quiz-general'), all, { shuffle: true, title: 'Quiz général' });
+
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    if (initial) applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>

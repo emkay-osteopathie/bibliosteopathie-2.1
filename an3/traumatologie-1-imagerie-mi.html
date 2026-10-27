@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<title>Bibliothèque Ostéopathique — IEOQ · Année 3 · Traumatologie — Chapitre 1</title>
+<script src="../auth-config.js"></script>
+<script>osteoGuardPage(3);</script>
+<link rel="stylesheet" href="shared.css">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-logo">🦴</div>
+    <div class="header-text">
+      <h1>Bibliothèque — 3e Année</h1>
+      <p>Traumatologie · Chapitre 1 — Imagerie et traumatologie du MI · IEOQ</p>
+    </div>
+    <div class="header-badges">
+      <a class="badge badge-link" href="traumatologie.html">← Traumatologie</a>
+    </div>
+  </div>
+</header>
+
+<div class="crumb-bar">
+  <div class="crumb-left">
+    <a class="crumb-cats-link" href="index.html">← Toutes les catégories</a>
+    <span class="crumb-text"><a href="traumatologie.html" style="color:var(--teal-700);text-decoration:none;font-weight:600;">Traumatologie</a> <span style="color:var(--gray-300);">›</span> <strong>Chapitre 1</strong> <span id="crumbSub">› 🩻 Imagerie</span></span>
+  </div>
+  <div class="site-search">
+    <span class="site-search-icon">🔎</span>
+    <input type="text" id="siteSearchInput" placeholder="Rechercher dans la bibliothèque…" autocomplete="off">
+    <div class="site-search-results" id="siteSearchResults"></div>
+  </div>
+</div>
+
+<nav class="main-nav">
+  <div class="nav-inner">
+    <button type="button" class="nav-tab active" data-sub="tr-imagerie" onclick="showSub('tr-imagerie')">🩻 Imagerie</button>
+    <button type="button" class="nav-tab" data-sub="tr-bassin" onclick="showSub('tr-bassin')">🦴 Bassin</button>
+    <button type="button" class="nav-tab" data-sub="tr-femur-prox" onclick="showSub('tr-femur-prox')">🦵 Fémur proximal</button>
+    <button type="button" class="nav-tab" data-sub="tr-coxarthrose" onclick="showSub('tr-coxarthrose')">⚙️ Coxarthrose</button>
+    <button type="button" class="nav-tab" data-sub="tr-diaphyse" onclick="showSub('tr-diaphyse')">📏 Diaphyse du fémur</button>
+    <button type="button" class="nav-tab" data-sub="tr-quiz" onclick="showSub('tr-quiz')">🎯 Quiz général</button>
+  </div>
+</nav>
+
+<div class="main-wrapper">
+  <div class="main-content">
+
+<!-- ═══════════════ 1. IMAGERIE ═══════════════ -->
+<section class="section active" id="tr-imagerie" style="display:block;">
+<div class="section-title">Les imageries diagnostiques</div>
+<div class="section-sub">Rayons X, IRM, tomodensitométrie, échographie, médecine nucléaire, fluoroscopie</div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🎯</div><div class="card-title">Objectifs du cours de traumatologie</div></div><div class="card-body"><table class="grille-eval-table"><thead><tr><th>#</th><th>Objectif</th></tr></thead><tbody>
+<tr><td>1</td><td>Connaître les différents <strong>tests / évaluations diagnostiques</strong> pour les atteintes traumatologiques</td></tr>
+<tr><td>2</td><td>Connaître les différentes <strong>atteintes traumatiques</strong> possibles pour le MI et le MS, ainsi que leurs <strong>complications ou séquelles</strong> possibles</td></tr>
+<tr><td>3</td><td>Savoir les <strong>identifier</strong> chez les bénéficiaires (anamnèse, mécanismes de lésion, tests objectifs…)</td></tr>
+<tr><td>4</td><td>Déterminer si le bénéficiaire peut être <strong>pris en charge en ostéopathie</strong> ou s’il doit être <strong>référé</strong>, et à qui</td></tr>
+</tbody></table></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🩻</div><div class="card-title">Comparaison des imageries</div></div><div class="card-body"><table class="grille-eval-table"><thead><tr><th>Imagerie</th><th>Principe</th><th>Points forts / utilisations</th><th>À savoir</th></tr></thead><tbody>
+<tr><td><strong>Radiographie</strong> (rayons X)</td><td>Images produites par l’énergie des rayons X. Plus une structure absorbe les rayons X, plus elle ressort <strong>claire</strong> ; les tissus mous les laissent majoritairement passer.</td><td>Os, calcifications, lithiases, tumeurs denses, densité pulmonaire (pneumonie), forme du cœur, objets avalés / aspirés / pénétrants (ex. balle de fusil).</td><td>Visualise sur <strong>un seul plan</strong>. Produits de contraste possibles.</td></tr>
+<tr><td><strong>IRM</strong> (résonance magnétique)</td><td>Champ magnétique + ondes de radiofréquence → images en <strong>coupes</strong> des différentes couches de tissus.</td><td>Très efficace pour les <strong>tissus mous</strong> : lésions musculaires ou tendineuses, tumeurs, hernie discale.</td><td><strong>Aucune radiation</strong>, n’importe quel plan, 20-50 min. Contraste possible (gadolinium). <strong>Contre-indications :</strong> stimulateur cardiaque, éclats de métal dans les yeux. <strong>Précaution :</strong> claustrophobie / anxiété.</td></tr>
+<tr><td><strong>Tomographie axiale</strong> (TDM / scan / CT-scan / TACO)</td><td>Rayons X émis de façon <strong>rotatoire</strong> → images en coupes, en 3 dimensions.</td><td>Lésions osseuses, densité osseuse, saignements intracrâniens, lésions d’organes, hernie discale.</td><td>10 à 30 min. Avec ou sans produit de contraste <strong>iodé</strong> (orale, IV ou rectale selon l’examen). Synonymes : tomodensitométrie, tomographie axiale commandée par ordinateur.</td></tr>
+<tr><td><strong>Échographie</strong> (ultrasonographie)</td><td>Appareil à <strong>ultrasons</strong> → images en <strong>temps réel</strong> sur un sonographe (écran).</td><td>Parties molles : muscles, tendons, organes, vaisseaux. Peut <strong>guider des infiltrations ou des biopsies</strong>.</td><td><strong>Indolore.</strong> Statique ou en mouvement, avec ou sans contraste. Plusieurs types : obstétricale, pelvienne (externe / endorectale / endovaginale), musculosquelettique, abdominale, cardiaque (externe ou œsophagienne), doppler…</td></tr>
+<tr><td><strong>PET-scan</strong> (TEP : tomographie par émission de positrons)</td><td>Médecine nucléaire : produit radioactif (oral / injecté / respiré) qui se fixe habituellement à un <strong>sucre (glucose)</strong>.</td><td>S’accumule dans les cellules qui consomment beaucoup d’énergie (cellules cancéreuses ou cérébrales). Peut aussi détecter des problèmes cardiaques ou cérébraux.</td><td>Fait partie de la médecine nucléaire avec la scintigraphie osseuse.</td></tr>
+<tr><td><strong>Scintigraphie osseuse</strong></td><td>Injection d’un contraste radioactif <strong>comparable au calcium</strong> qui se retrouve dans les os et articulations. Les régions problématiques en <strong>absorbent davantage</strong>.</td><td>Détecte les <strong>fractures (#)</strong>, les <strong>métastases osseuses</strong>, la présence d’<strong>arthrite</strong>.</td><td><strong>Avantage :</strong> visualise l’état du squelette en minimisant la dose de radiation.</td></tr>
+<tr><td><strong>Fluoroscopie</strong> (radioscopie)</td><td>Radiographie combinée à un produit de contraste → permet d’observer les structures évaluées <strong>en mouvement</strong>.</td><td>Contraste par injection, ingestion ou lavement.</td><td>Peut aussi être un traitement : <strong>infiltration sous radioscopie</strong>.</td></tr>
+</tbody></table></div></div>
+
+<div class="info-box teal"><strong>Pour s’y retrouver :</strong> os / densité → radiographie ou scan · tissus mous sans radiation → IRM · temps réel, guidage d’infiltration → échographie · activité cellulaire / métastases → médecine nucléaire · structures en mouvement → fluoroscopie.</div>
+
+<div id="quiz-imagerie"></div>
+
+<div class="footnote">Source : « Traumatologie – 3e année : Les imageries diagnostiques », IEOQ.</div>
+</section>
+
+<!-- ═══════════════ 2. BASSIN ═══════════════ -->
+<section class="section" id="tr-bassin" style="display:none;">
+<div class="section-title">Traumatologie du bassin</div>
+<div class="section-sub">Rôles du bassin, types de fractures, urgence, complications, séquelles</div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🦴</div><div class="card-title">Rôles du bassin</div></div><div class="card-body">
+<div class="path-card"><ul>
+<li><strong>Protection et soutien</strong> de la vessie, du rectum, du canal anal et des voies de la reproduction</li>
+<li><strong>Transmet les efforts</strong> entre le rachis et les MI</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">⚠️</div><div class="card-title">Fractures du bassin — étiologie et gravité</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Sujet jeune</div><div class="value">Traumatisme violent : accident impliquant un véhicule motorisé (AVP), chute sévère…</div></div>
+<div class="test-detail-item"><div class="label">Personne âgée</div><div class="value">Fracture liée à l’<strong>ostéoporose</strong></div></div>
+<div class="test-detail-item"><div class="label">Enfant</div><div class="value">Plus rare, mais possible (1-2 %)</div></div>
+<div class="test-detail-item"><div class="label">Gravité</div><div class="value"><strong>Grave +++</strong> — urgence médicale : polytraumatisme, hémorragie possible, infection (ouvertures et ruptures viscérales)</div></div>
+</div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🧩</div><div class="card-title">Types de fractures</div></div><div class="card-body">
+<table class="grille-eval-table"><thead><tr><th>Type</th><th>Risques</th><th>Traitement</th></tr></thead><tbody>
+<tr><td><strong>Extra-articulaire A</strong></td><td>Voir le schéma du cours</td><td>Immobilisation et / ou chirurgie</td></tr>
+<tr><td><strong>Extra-articulaires B et C</strong></td><td>Risque d’<strong>hémorragie ++</strong> ; atteintes nerveuses et viscérales</td><td>Chirurgie nécessaire (ostéosynthèses)</td></tr>
+<tr><td><strong>Extra-articulaire D</strong></td><td>Risque <strong>élevé</strong> d’atteintes vasculo-nerveuses et viscérales ++ ; possible fracture du sacrum aussi</td><td>Chirurgie nécessaire (ostéosynthèses)</td></tr>
+<tr><td><strong>Intra-articulaire : cotyle / acétabulum</strong></td><td><strong>Fracture la plus fréquente du bassin.</strong> Compromet la congruence articulaire → <strong>risque d’arthrose précoce</strong></td><td>Chirurgie : ROFI et parfois PPH ou prothèse partielle</td></tr>
+</tbody></table>
+<div class="info-box amber" style="margin-bottom:0;"><strong>Question posée en classe :</strong> quel est le <em>mécanisme de lésion</em> d’une fracture du cotyle (avec luxation de la hanche possible) ? Complète avec tes notes de cours.</div>
+</div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🚨</div><div class="card-title">Prise en charge d’urgence</div></div><div class="card-body">
+<div class="info-box coral" style="margin-top:0;"><strong>Référence d’urgence (911).</strong> Signes vitaux et RCR au besoin (contexte de trauma grave).</div>
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Observations</div><div class="value">Raccourcissement d’un MI · hématome / ecchymoses · urétrorragie · plaie</div></div>
+<div class="test-detail-item"><div class="label">Palpation</div><div class="value">Défense abdominale à la palpation (DLR ++ et possible atteinte viscérale) · DLR à la mobilisation des iliaques</div></div>
+</div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">📉</div><div class="card-title">Lésions associées et complications (immédiates et secondaires)</div></div><div class="card-body">
+<div class="path-card"><h4>Vasculaires et générales</h4><ul>
+<li>Jusqu’à <strong>30 % de décès</strong> si fracture majeure et atteinte vasculaire</li>
+<li>Hémorragie et / ou hématome rétropéritonéal</li>
+<li><strong>Thrombophlébite 35 à 60 %</strong> · <strong>embolie pulmonaire 5 %</strong> (secondaires à la fracture et / ou à la chirurgie)</li>
+<li>Atteintes multiples en contexte de trauma grave : polytrauma, atteintes thoraco-pleurales, TCC, rachidiennes, abdominales, paralysie…</li>
+<li>Autres fractures · plaies et cicatrices secondaires à l’accident et / ou à la chirurgie</li>
+</ul></div>
+<div class="path-card"><h4>Troubles urinaires (lésions urétrales)</h4><ul>
+<li>RAU (rétention aiguë d’urine) : <strong>15,6 %</strong></li>
+<li>Oligurie : <strong>1,6 %</strong></li>
+<li>Urétrorragie</li>
+<li>Hématurie : <strong>15,6 %</strong></li>
+</ul></div>
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Chez la femme</div><div class="value">La fracture de la <strong>SP</strong> augmente le risque de séquelles. Troubles urinaires 21 à 67 %. Troubles sexuels 21-62 %, surtout des dyspareunies.</div></div>
+<div class="test-detail-item"><div class="label">Chez l’homme</div><div class="value">La fracture de la <strong>SI</strong> augmente le risque de séquelles. Atteintes prostatiques : dysfonction sexuelle 61 % (dont 19 % de dysfonction érectile).</div></div>
+</div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🏥</div><div class="card-title">Prise en charge post-opératoire</div></div><div class="card-body">
+<div class="path-card"><ul>
+<li>Souvent <strong>quelques temps en soins intensifs</strong> vu les polytraumas sévères</li>
+<li>Prise en charge <strong>multidisciplinaire</strong>, généralement en centre de réadaptation (médecin, infirmière, physio, ergo et plus)</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🧬</div><div class="card-title">Séquelles possibles</div></div><div class="card-body">
+<table class="grille-eval-table"><thead><tr><th>Type</th><th>Séquelles</th></tr></thead><tbody>
+<tr><td><strong>Ostéo-articulaires</strong></td><td>Cal vicieux · arthrose · DLR pelviennes / lombaires / SI · troubles de la marche · MI inégaux · <strong>nécrose de la tête fémorale</strong> (test de FABER modifié positif +++ → <strong>référer</strong>) · complications pour la grossesse</td></tr>
+<tr><td><strong>Neurologiques</strong></td><td>Atteintes motrices et sensitives du <strong>plexus sacré (L4 à S3)</strong> : n. sciatique → n. tibial (L4-S3) · n. fibulaire commun (L4-S2) · n. pudendal (S2-S4) · n. fessier supérieur (L4-S1). Atteinte sensitive du <strong>plexus coccygien (S4 à Co)</strong>.</td></tr>
+<tr><td><strong>Urogénitales et digestives</strong></td><td>Sténose urétrale · troubles de la miction persistants / incontinences · dysfonctions sexuelles masculines et féminines · accouchement plus complexe · constipation</td></tr>
+</tbody></table></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🧪</div><div class="card-title">Test de FABER modifié</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">FABER classique</div><div class="value">La force est appliquée <strong>sur le genou vers le sol</strong>.</div></div>
+<div class="test-detail-item"><div class="label">FABER modifié</div><div class="value">La pression se fait <strong>dans l’axe du fémur</strong>.</div></div>
+</div>
+<div class="test-positive"><div class="label">Interprétation</div>Une <strong>DLR intense +++ à la coxo-fémorale (CF)</strong> pourrait signifier une <strong>nécrose avasculaire de la tête fémorale</strong>. Drapeau jaune (<em>yellow flag</em>) → référer.</div>
+</div></div>
+
+<div id="quiz-bassin"></div>
+
+<div class="footnote">Source : « Traumatologie – 3e année : Traumatologie du bassin », IEOQ. Abréviations : SP = symphyse pubienne · SI = sacro-iliaque (selon l’usage du cours).</div>
+</section>
+
+<!-- ═══════════════ 3. FÉMUR PROXIMAL ═══════════════ -->
+<section class="section" id="tr-femur-prox" style="display:none;">
+<div class="section-title">Fracture du fémur proximal</div>
+<div class="section-sub">Anatomie, biomécanique, étiologie, types, traitement, évolution, nécrose avasculaire</div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🧠</div><div class="card-title">Rappels d’anatomie et de biomécanique</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Vascularisation de la tête</div><div class="value">Renforcée par l’<strong>artère du ligament de la tête fémorale</strong>. L’<strong>artère circonflexe fémorale</strong> provient de l’artère fémorale.</div></div>
+<div class="test-detail-item"><div class="label">Biomécanique de la hanche</div><div class="value">Articulation <strong>stable +++</strong> (support du tronc, locomotion) et <strong>mobile +++</strong>.</div></div>
+</div>
+<div class="info-box teal" style="margin-bottom:0;">« Articulation la plus difficile à luxer de tout le corps. » — Kapandji</div>
+</div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🎯</div><div class="card-title">Étiologie</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Sujet jeune</div><div class="value">Trauma violent : accident de voiture, ski…</div></div>
+<div class="test-detail-item"><div class="label">Sujet &gt; 60 ans</div><div class="value">Trauma violent, ou plus léger lié à l’<strong>ostéoporose</strong> / chute (troubles d’équilibre)</div></div>
+</div>
+<div class="path-card"><h4>Facteurs de risque chez le sujet &gt; 60 ans</h4><ul>
+<li>Ostéoporose, chute secondaire à des troubles d’équilibre</li>
+<li>Femme &gt; homme caucasien</li>
+<li>Cigarette</li>
+<li>Polymédication</li>
+<li>Sédentarité</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🧩</div><div class="card-title">Types de fractures, diagnostic et traitement</div></div><div class="card-body">
+<table class="grille-eval-table"><thead><tr><th>Fracture</th><th>Particularités</th><th>Traitement médical</th></tr></thead><tbody>
+<tr><td><strong>Du col</strong></td><td>Souvent <strong>intracapsulaire</strong> : risque pour la vascularisation ++ (risque de <strong>nécrose</strong>)</td><td>Non déplacée : <strong>ROFI</strong>. Déplacée : ROFI ou <strong>hémi-prothèse</strong> ; dépend aussi de l’âge (PTH possible)</td></tr>
+<tr><td><strong>Intertrochantérienne</strong></td><td><strong>Extracapsulaire</strong> : évolution favorable</td><td><strong>ROFI</strong></td></tr>
+<tr><td><strong>De la diaphyse fémorale</strong></td><td>Souvent accompagnée de lésions des parties molles (muscles, neurovasculaires), risque d’embolie ; risque d’infection si fracture ouverte</td><td><strong>ROFI</strong></td></tr>
+</tbody></table>
+<div class="path-card" style="margin-top:14px;"><h4>Diagnostic</h4><ul>
+<li><strong>DLR +++</strong> et atteinte de la mise en charge (MEC)</li>
+<li>Déformation (inconstante) : raccourcissement et rotation externe ; angulation si trauma violent</li>
+<li>Fracture ouverte possible pour la diaphyse : risque vasculo-nerveux ++</li>
+<li>Rechercher d’autres lésions : genou et bassin, commotion…</li>
+<li>Radiographie / IRM / angiographie au besoin</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">📈</div><div class="card-title">Post-chirurgie et évolution</div></div><div class="card-body">
+<div class="path-card"><h4>Post-chirurgie</h4><ul>
+<li>Une <strong>réhabilitation intensive</strong> peut ramener le patient à sa condition pré-fracture ; jusqu’à <strong>6 mois</strong> de réadaptation parfois nécessaires</li>
+<li>Chez le sujet âgé, une prise en charge inadéquate expose à : plaies de lit, infections urinaires, thrombophlébite, embolie pulmonaire, <strong>syndrome de glissement</strong></li>
+</ul></div>
+<table class="grille-eval-table"><thead><tr><th>Fracture</th><th>Évolution</th></tr></thead><tbody>
+<tr><td><strong>Du col</strong></td><td><strong>Décès dans 25 % des cas</strong> dans l’année qui suit (Magee), syndrome de glissement · nécrose de la tête fémorale possible · arthrose (si traitée par ostéosynthèse) · si PTH : <strong>73 %</strong> des patients ont des DLR à l’aine (Magee) · cal osseux · risque de thrombophlébite</td></tr>
+<tr><td><strong>Intertrochantérienne</strong></td><td>Évolution habituellement favorable · risque de cal</td></tr>
+<tr><td><strong>Diaphyse</strong></td><td>Cal vicieux · atteintes nerveuses (sciatique)</td></tr>
+</tbody></table>
+<div class="info-box coral" style="margin-bottom:0;"><strong>Risque de thrombophlébite dans tous les cas.</strong></div>
+</div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🩸</div><div class="card-title">Nécrose avasculaire de la tête fémorale</div></div><div class="card-body">
+<div class="path-card"><h4>Signes et symptômes (S&amp;S)</h4><ul>
+<li>Douleur intense à la hanche</li>
+<li>Diminution du ROM de la hanche et raideur ++</li>
+<li>Revoir l’historique : les symptômes peuvent être associés à toutes sortes de pathologies de la hanche</li>
+<li><strong>FABER modifié positif +++</strong></li>
+<li>La radiographie n’est pas toujours efficace ; l’<strong>IRM est l’examen de choix</strong> pour le diagnostic</li>
+<li>Traitée par <strong>chirurgie</strong></li>
+</ul></div></div></div>
+
+<div id="quiz-femur-prox"></div>
+
+<div class="footnote">Source : « Traumatologie – 3e année : Fracture du fémur proximal », IEOQ. Références du cours : Magee (<em>Pathology and intervention in musculoskeletal rehabilitation</em>), Kapandji (<em>Anatomie fonctionnelle</em>), Gauthier (<em>Tests cliniques en musculosquelettique</em>).</div>
+</section>
+
+<!-- ═══════════════ 4. COXARTHROSE ═══════════════ -->
+<section class="section" id="tr-coxarthrose" style="display:none;">
+<div class="section-title">Coxarthrose</div>
+<div class="section-sub">Définition, étiologies, évaluation clinique, radiographie, traitements, PTH</div>
+
+<div class="info-box teal" style="margin-top:0;margin-bottom:18px;"><strong>Définition :</strong> dégénérescence de l’articulation coxo-fémorale par usure ou vieillissement du cartilage.</div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🧬</div><div class="card-title">Étiologies</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Coxarthroses primitives</div><div class="value"><strong>40 %</strong></div></div>
+<div class="test-detail-item"><div class="label">Coxarthroses secondaires</div><div class="value"><strong>60 %</strong></div></div>
+</div>
+<div class="path-card"><h4>Causes des coxarthroses secondaires</h4><ul>
+<li>Post-trauma : fracture / luxation</li>
+<li>Après déformation acquise (ostéonécrose, épiphysiolyse, ostéochondrite)</li>
+<li>Secondaire à une malformation congénitale subluxante : du cotyle / acétabulum, du fémur proximal, ou mixte</li>
+<li>Secondaire à une protrusion de la tête fémorale</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🩺</div><div class="card-title">Évaluation clinique</div></div><div class="card-body">
+<div class="path-card"><h4>Anamnèse — la douleur</h4><ul>
+<li>Souvent <strong>chronique</strong>, d’<strong>origine mécanique</strong></li>
+<li>Matin &gt; soir, accompagnée de <strong>raideur</strong> ; diminue au courant de la journée</li>
+<li><strong>Douleur à l’aine</strong></li>
+<li>Nuit · AVQ / AVD</li>
+</ul></div>
+<div class="path-card"><h4>Examen clinique</h4><ul>
+<li>Boiterie ? Aide à la marche ?</li>
+<li>Diminution de la lordose lombaire</li>
+<li>Diminution des AA de la hanche (surtout <strong>RI / RE et extension</strong>)</li>
+<li>Diminution du rebond articulaire</li>
+<li>FABER peut-être positif · <strong>FADIR positif</strong> · Trendelenburg pourrait être positif</li>
+</ul></div>
+<div class="card" style="margin:14px 0 0;"><div class="card-header"><div class="card-icon amber">🧪</div><div class="card-title">FADIR (Flexion – ADDuction – RI)</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Position</div><div class="value">Patient en DD, D.O. debout homolatéral</div></div>
+<div class="test-detail-item"><div class="label">Manœuvre</div><div class="value">Flexion de hanche à <strong>90°</strong>, puis ADD et RI</div></div>
+</div>
+<div class="test-positive"><div class="label">Résultat</div>Positif si <strong>DLR</strong>. Signe une <strong>atteinte CF</strong> : coxarthrose, déchirure du labrum, accrochage fémoro-acétabulaire…</div>
+</div></div>
+</div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🩻</div><div class="card-title">Radiographie</div></div><div class="card-body">
+<div class="path-card"><ul>
+<li><strong>Pincement articulaire</strong></li>
+<li><strong>Condensation sous-chondrale</strong></li>
+<li><strong>Ostéophytes</strong></li>
+<li><strong>Géode osseuse</strong> (visible au scan)</li>
+</ul></div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">💊</div><div class="card-title">Traitements</div></div><div class="card-body">
+<div class="info-box teal" style="margin-top:0;"><strong>Traitement numéro 1 : les activités physiques !</strong> Vélo / pédalier / natation / marche et plus.</div>
+<div class="path-card"><ul>
+<li><strong>Ostéopathie :</strong> à compléter avec tes notes de cours</li>
+<li><strong>Médicaux :</strong> AINS / antidouleurs / infiltrations intra-articulaires de plus en plus évités ; quand elles sont pratiquées, elles se font sous <strong>échoguidage</strong></li>
+<li><strong>Dernier recours : PTH</strong></li>
+<li>Physiothérapie · acupuncture · activités physiques</li>
+</ul></div>
+<div class="path-card"><h4>PTH (prothèse totale de hanche)</h4><ul>
+<li>Durée de vie : environ <strong>15 ans</strong> selon l’utilisation</li>
+<li><strong>Complications possibles :</strong> allongement du membre · <strong>luxation</strong> (post-op, le patient doit éviter de croiser les jambes et la flexion &gt; 90° ; en DL il devrait avoir un oreiller) · thrombophlébite · sédentarité / mauvaise prise en charge post-op / ankylose</li>
+<li>En général, la PTH change la vie du patient pour le mieux +++</li>
+</ul></div></div></div>
+
+<div id="quiz-coxarthrose"></div>
+
+<div class="footnote">Source : « Traumatologie – 3e année : Coxarthrose », IEOQ. Tests : Gauthier, <em>Tests cliniques en musculosquelettique</em>, 2014.</div>
+</section>
+
+<!-- ═══════════════ 5. DIAPHYSE ═══════════════ -->
+<section class="section" id="tr-diaphyse" style="display:none;">
+<div class="section-title">Fracture de la diaphyse du fémur</div>
+<div class="section-sub">Mécanisme, signes et symptômes, complications à court, moyen et long terme</div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">💥</div><div class="card-title">Mécanisme et présentation</div></div><div class="card-body">
+<div class="test-detail-grid">
+<div class="test-detail-item"><div class="label">Mécanisme</div><div class="value">Impact violent (accident de voiture, ski…) · chez la personne âgée : <strong>chute</strong> · chez l’enfant : <strong>attention à la maltraitance</strong></div></div>
+<div class="test-detail-item"><div class="label">S&amp;S</div><div class="value"><strong>DLR ++++</strong> · impossibilité de MEC · longueur de jambe · déformation de la cuisse · fracture ouverte ?</div></div>
+</div></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">⏱️</div><div class="card-title">Complications</div></div><div class="card-body">
+<table class="grille-eval-table"><thead><tr><th>Délai</th><th>Complications</th></tr></thead><tbody>
+<tr><td><strong>Court terme</strong></td><td><strong>Risque vasculaire ++++++</strong> et donc risque d’<strong>hémorragie ++</strong> · risque d’atteinte nerveuse · autres lésions (trauma violent = polytrauma) · infection si fracture ouverte · décès (secondaire à une hémorragie ou à un autre trauma)</td></tr>
+<tr><td><strong>Moyen terme</strong></td><td><strong>Vasculo-nerveuses :</strong> hémorragie, thrombophlébite, atteinte du n. sciatique · <strong>embolie graisseuse</strong> d’origine traumatique · <strong>infection :</strong> ostéite, <strong>pseudarthrose aseptique</strong> (non-consolidation) · décès (secondaire à une embolie / hémorragie)</td></tr>
+<tr><td><strong>Long terme</strong></td><td>Atteintes nerveuses · <strong>amputation si nécrose</strong> · cal vicieux · adhérences · boiterie · longueur de jambes asymétrique</td></tr>
+</tbody></table></div></div>
+
+<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🛠️</div><div class="card-title">Traitements</div></div><div class="card-body">
+<div class="path-card"><ul>
+<li><strong>Chirurgie</strong> (ROFI)</li>
+<li>Traitement des <strong>infections</strong> et des <strong>risques emboliques</strong></li>
+<li><strong>Réadaptation physique +++</strong></li>
+</ul></div></div></div>
+
+<div id="quiz-diaphyse"></div>
+
+<div class="footnote">Source : « Traumatologie – 3e année : Fracture de la diaphyse du fémur », IEOQ.</div>
+</section>
+
+<!-- ═══════════════ 6. QUIZ GÉNÉRAL ═══════════════ -->
+<section class="section" id="tr-quiz" style="display:none;">
+<div class="section-title">Quiz général — Traumatologie</div>
+<div class="section-sub">Toutes les questions du chapitre, dans un ordre aléatoire à chaque chargement</div>
+<div class="info-box teal" style="margin-top:0;">Clique sur une réponse pour la valider. Les questions « réponse courte » se corrigent avec le bouton <strong>Voir la réponse</strong> : essaie de répondre à voix haute d’abord. Le score n’est pas enregistré.</div>
+<div id="quiz-general"></div>
+</section>
+
+  </div>
+</div>
+
+<button type="button" onclick="osteoLogout()" title="Se déconnecter"
+  style="position:fixed;bottom:18px;right:18px;z-index:9999;display:flex;align-items:center;gap:6px;background:#221f1a;color:#fff;border:1px solid rgba(255,255,255,0.18);border-radius:30px;padding:8px 16px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;cursor:pointer;box-shadow:0 4px 16px rgba(40,30,20,0.3);">
+  ⏻ Déconnexion
+</button>
+
+<script src="app.js"></script>
+<script src="quiz.js"></script>
+<script>
+  /* ── Questions de révision (une série par section) ── */
+  var QUIZ = {
+    "imagerie": [
+      { t:'mcq', q:"Quelle imagerie n’utilise <strong>aucune radiation</strong> et est très efficace pour évaluer les tissus mous ?", c:["Radiographie","IRM","Tomodensitométrie (scan)","Scintigraphie osseuse"], a:1, e:"L’IRM utilise un champ magnétique et des ondes de radiofréquence, dans n’importe quel plan." },
+      { t:'mcq', q:"Laquelle de ces situations est une <strong>contre-indication</strong> à l’IRM ?", c:["Une prothèse de hanche en céramique","Un stimulateur cardiaque","Une fracture récente","Une allergie à l’iode"], a:1, e:"Contre-indications citées : stimulateur cardiaque et éclats de métal dans les yeux. La claustrophobie et l’anxiété sont des précautions." },
+      { t:'mcq', q:"Le <strong>scan (TDM)</strong> repose sur…", c:["Des ultrasons en temps réel","Un champ magnétique","Des rayons X émis de façon rotatoire pour produire des coupes en 3D","Un produit radioactif fixé au glucose"], a:2, e:"Il est surtout apprécié pour les lésions osseuses, la densité osseuse, les saignements intracrâniens et les lésions d’organes. Contraste iodé possible." },
+      { t:'mcq', q:"Quelle imagerie est <strong>indolore</strong>, en <strong>temps réel</strong>, et peut guider une infiltration ou une biopsie ?", c:["L’échographie","La radiographie","Le PET-scan","L’IRM"], a:0, e:"L’échographie visualise les parties molles (muscles, tendons, organes, vaisseaux), en statique ou en mouvement." },
+      { t:'mcq', q:"Au <strong>PET-scan</strong>, le produit radioactif se fixe habituellement à…", c:["Du calcium","Du glucose","De l’iode","Du gadolinium"], a:1, e:"Il s’accumule dans les cellules qui consomment beaucoup d’énergie (cellules cancéreuses ou cérébrales). Le contraste de la scintigraphie osseuse, lui, est comparable au calcium." },
+      { t:'mcq', q:"Quelle est la durée habituelle d’une <strong>IRM</strong> par rapport à un <strong>scan</strong> ?", c:["IRM 20-50 min ; scan 10-30 min","IRM 10-30 min ; scan 20-50 min","Les deux durent environ 5 min","IRM 60 min ; scan 60 min"], a:0, e:"L’IRM est généralement plus longue que le scan." },
+      { t:'open', q:"Que peut détecter la <strong>scintigraphie osseuse</strong> et quel est son avantage ?", a:"Elle détecte les <strong>fractures</strong>, les <strong>métastases osseuses</strong> et la présence d’<strong>arthrite</strong>. Avantage : elle permet de visualiser l’état du squelette en <strong>minimisant la dose de radiation</strong>. Les régions osseuses problématiques absorbent davantage le produit radioactif." },
+      { t:'open', q:"Qu’est-ce qui distingue la <strong>fluoroscopie</strong> d’une radiographie simple ?", a:"C’est une radiographie <strong>combinée à un produit de contraste</strong> (injection, ingestion ou lavement) qui permet d’observer les structures <strong>en mouvement</strong>. Elle peut aussi servir de traitement (infiltration sous radioscopie)." },
+      { t:'open', q:"Pourquoi une radiographie « normale » ne suffit-elle pas toujours à explorer un problème de tissus mous ?", a:"Les tissus mous laissent majoritairement passer les rayons X ; seules les structures qui les absorbent (os, calcifications, tumeurs denses) ressortent clairement. De plus, la radiographie ne visualise que <strong>sur un seul plan</strong>. Pour les tissus mous, l’<strong>IRM</strong> ou l’<strong>échographie</strong> sont plus appropriées." }
+    ],
+    "bassin": [
+      { t:'mcq', q:"Quel est le principal mécanisme d’une fracture du bassin chez le <strong>sujet jeune</strong> ?", c:["Ostéoporose","Traumatisme violent (AVP, chute sévère)","Microtraumatismes répétés","Sédentarité"], a:1, e:"Chez la personne âgée, la fracture est liée à l’ostéoporose ; chez l’enfant, elle est plus rare (1-2 %)." },
+      { t:'mcq', q:"Quelle est la <strong>fracture la plus fréquente du bassin</strong> ?", c:["Fracture de l’ilium","Fracture du sacrum","Fracture du cotyle (acétabulum)","Fracture du pubis"], a:2, e:"Elle compromet la congruence articulaire et expose à une arthrose précoce. Traitement chirurgical : ROFI, parfois PPH ou prothèse partielle." },
+      { t:'mcq', q:"Parmi les types de fractures extra-articulaires, lequel présente un risque <strong>élevé</strong> d’atteintes vasculo-nerveuses et viscérales, avec possible fracture du sacrum ?", c:["Type A","Type B","Type C","Type D"], a:3, e:"A : immobilisation et / ou chirurgie. B et C : risque d’hémorragie ++, chirurgie nécessaire. D : risque élevé d’atteintes vasculo-nerveuses et viscérales." },
+      { t:'mcq', q:"Face à une <strong>fracture du bassin</strong> suspectée en contexte de trauma grave, la première action est…", c:["Mobiliser les iliaques pour tester la douleur","Référer en urgence (911) et surveiller les signes vitaux","Faire un test de FABER modifié","Programmer une IRM la semaine suivante"], a:1, e:"Référence d’urgence (911), signes vitaux et RCR au besoin dans un contexte de trauma grave." },
+      { t:'mcq', q:"Quel taux de <strong>thrombophlébite</strong> est rapporté après une fracture du bassin ?", c:["1 à 5 %","10 à 15 %","35 à 60 %","Plus de 90 %"], a:2, e:"L’embolie pulmonaire est rapportée à environ 5 %. Jusqu’à 30 % de décès si fracture majeure avec atteinte vasculaire." },
+      { t:'mcq', q:"Parmi ces atteintes, laquelle est rapportée à <strong>15,6 %</strong> lors de lésions urétrales ?", c:["Oligurie","Rétention aiguë d’urine (RAU) et hématurie","Constipation","Urétrorragie uniquement"], a:1, e:"RAU 15,6 %, hématurie 15,6 %, oligurie 1,6 %, avec urétrorragie possible." },
+      { t:'mcq', q:"Quelle <strong>racine nerveuse</strong> couvre le plexus sacré, atteint dans les séquelles neurologiques du bassin ?", c:["L1 à L3","L4 à S3","S4 à Co","T10 à L1"], a:1, e:"Plexus sacré L4-S3 (n. sciatique, tibial, fibulaire commun, pudendal S2-S4, fessier supérieur). Le plexus coccygien (S4 à Co) est surtout sensitif." },
+      { t:'open', q:"Quels <strong>signes observer</strong> et que <strong>palper</strong> en cas de fracture du bassin ?", a:"<strong>Observations :</strong> raccourcissement d’un MI, hématome / ecchymoses, urétrorragie, plaie. <strong>Palpation :</strong> défense abdominale (DLR ++, possible atteinte viscérale) et DLR à la mobilisation des iliaques." },
+      { t:'open', q:"Quelles sont les <strong>séquelles ostéo-articulaires</strong> possibles d’une fracture du bassin, et laquelle impose de référer ?", a:"Cal vicieux, arthrose, DLR pelviennes / lombaires / SI, troubles de la marche, MI inégaux, complications pour la grossesse, et <strong>nécrose de la tête fémorale</strong> (FABER modifié positif +++) → <strong>référer</strong>." },
+      { t:'open', q:"Quelle différence y a-t-il entre le <strong>FABER</strong> classique et le <strong>FABER modifié</strong> ? Que suggère une DLR intense ?", a:"FABER classique : la force est appliquée sur le genou vers le sol. FABER modifié : la pression se fait <strong>dans l’axe du fémur</strong>. Une DLR intense +++ à la coxo-fémorale pourrait signifier une <strong>nécrose avasculaire de la tête fémorale</strong> (drapeau jaune)." }
+    ],
+    "femur-prox": [
+      { t:'mcq', q:"Selon Kapandji, la hanche est « l’articulation…»", c:["la plus mobile du corps","la plus difficile à luxer de tout le corps","la plus fréquemment fracturée","la moins vascularisée"], a:1, e:"La hanche est à la fois stable +++ (support du tronc, locomotion) et mobile +++." },
+      { t:'mcq', q:"Quelle artère renforce, avec l’artère du ligament de la tête fémorale, la vascularisation de la <strong>tête du fémur</strong> ?", c:["L’artère circonflexe fémorale (issue de l’artère fémorale)","L’artère glutéale supérieure","L’artère obturatrice","L’artère poplitée"], a:0, e:"La fragilité de cette vascularisation explique le risque de nécrose lors des fractures du col." },
+      { t:'mcq', q:"Quelle fracture est <strong>souvent intracapsulaire</strong> avec risque de nécrose ?", c:["Intertrochantérienne","Du col","De la diaphyse","Subtrochantérienne"], a:1, e:"La fracture intertrochantérienne, extracapsulaire, a une évolution plutôt favorable." },
+      { t:'mcq', q:"Quel est le traitement d’une fracture du col <strong>non déplacée</strong> ?", c:["ROFI","Hémi-prothèse","Immobilisation seule sans chirurgie","Infiltration sous radioscopie"], a:0, e:"Si déplacée : ROFI ou hémi-prothèse selon l’âge (PTH possible)." },
+      { t:'mcq', q:"Quel facteur <strong>n’est pas</strong> cité parmi les facteurs de risque de fracture du fémur proximal chez le sujet &gt; 60 ans ?", c:["Polymédication","Cigarette","Sédentarité","Hyperactivité sportive"], a:3, e:"Facteurs cités : ostéoporose, chute (troubles d’équilibre), femme &gt; homme caucasien, cigarette, polymédication, sédentarité." },
+      { t:'mcq', q:"Après une <strong>fracture du col</strong>, quel pourcentage de décès dans l’année suivante est rapporté (Magee) ?", c:["5 %","10 %","25 %","50 %"], a:2, e:"Syndrome de glissement possible. Si PTH, 73 % des patients ont des DLR à l’aine (Magee)." },
+      { t:'mcq', q:"Quel est l’<strong>examen de choix</strong> pour diagnostiquer une nécrose avasculaire de la tête fémorale ?", c:["Radiographie","IRM","Échographie","Scintigraphie seule"], a:1, e:"La radiographie n’est pas toujours efficace. Traitement : chirurgie." },
+      { t:'open', q:"Quels sont les <strong>signes et symptômes</strong> d’une nécrose avasculaire de la tête fémorale ?", a:"Douleur intense à la hanche, diminution du ROM et raideur ++, symptômes pouvant être associés à toutes sortes de pathologies de la hanche (revoir l’historique), <strong>FABER modifié positif +++</strong>. IRM = examen de choix ; traitement chirurgical." },
+      { t:'open', q:"Quels <strong>risques</strong> guettent le sujet âgé après une chirurgie de la hanche si la prise en charge est inadéquate ?", a:"Plaies de lit, infections urinaires, thrombophlébite, embolie pulmonaire et <strong>syndrome de glissement</strong>. Une réhabilitation intensive peut le ramener à sa condition pré-fracture ; jusqu’à 6 mois de réadaptation peuvent être nécessaires." },
+      { t:'open', q:"Quel risque est présent <strong>dans tous les cas</strong> de fracture du fémur proximal ?", a:"Le risque de <strong>thrombophlébite</strong>." }
+    ],
+    "coxarthrose": [
+      { t:'mcq', q:"Quelle proportion des coxarthroses est <strong>secondaire</strong> ?", c:["10 %","40 %","60 %","90 %"], a:2, e:"40 % sont primitives et 60 % secondaires (post-trauma, déformation acquise, malformation congénitale subluxante, protrusion de la tête fémorale)." },
+      { t:'mcq', q:"Quelle description correspond le mieux à la douleur de la coxarthrose ?", c:["Aiguë, brutale, strictement nocturne","Chronique, d’origine mécanique, raideur matinale qui diminue dans la journée, douleur à l’aine","Uniquement présente au repos complet","Douleur thoracique à l’inspiration"], a:1, e:"Douleur matin &gt; soir accompagnée de raideur, à l’aine, d’origine mécanique." },
+      { t:'mcq', q:"Quelles <strong>amplitudes</strong> sont surtout diminuées dans la coxarthrose ?", c:["Flexion et abduction uniquement","RI / RE et extension","Adduction uniquement","Aucune"], a:1, e:"On observe aussi une diminution de la lordose lombaire et du rebond articulaire." },
+      { t:'mcq', q:"Quel test est décrit ainsi : hanche à 90° de flexion, puis adduction et rotation interne ?", c:["FABER","FADIR","Trendelenburg","Thomas"], a:1, e:"Positif si DLR ; signe une atteinte coxo-fémorale (coxarthrose, déchirure du labrum, accrochage fémoro-acétabulaire)." },
+      { t:'mcq', q:"Lequel de ces signes <strong>n’est pas</strong> un signe radiographique de coxarthrose ?", c:["Pincement articulaire","Ostéophytes","Condensation sous-chondrale","Cal osseux hypertrophique"], a:3, e:"Signes : pincement, condensation sous-chondrale, ostéophytes ; géode osseuse visible au scan." },
+      { t:'mcq', q:"Quel est le <strong>traitement numéro 1</strong> de la coxarthrose selon le cours ?", c:["La PTH d’emblée","Les infiltrations répétées","Les activités physiques","Le repos complet"], a:2, e:"Vélo, pédalier, natation, marche et plus. La PTH est le dernier recours." },
+      { t:'open', q:"Quelle est la <strong>durée de vie</strong> approximative d’une PTH et quelles précautions post-op éviter la luxation ?", a:"Environ <strong>15 ans</strong> selon l’utilisation. Le patient doit éviter de <strong>croiser les jambes</strong> et la <strong>flexion &gt; 90°</strong> ; en décubitus latéral, il devrait avoir un <strong>oreiller</strong>. Autres complications : allongement du membre, thrombophlébite, sédentarité / mauvaise prise en charge post-op / ankylose." },
+      { t:'open', q:"Que dit le cours sur les <strong>AINS, les antidouleurs et les infiltrations</strong> dans la coxarthrose ?", a:"Ils sont <strong>de plus en plus évités</strong> ; quand les infiltrations intra-articulaires sont pratiquées, elles se font sous <strong>échoguidage</strong>. Les alternatives : physiothérapie, acupuncture, activités physiques ; PTH en dernier recours." }
+    ],
+    "diaphyse": [
+      { t:'mcq', q:"Chez un <strong>enfant</strong> avec une fracture de la diaphyse du fémur, à quoi faut-il penser ?", c:["À une carence en calcium","À la maltraitance","À une coxarthrose","À une scoliose"], a:1, e:"Mécanisme habituel : impact violent ; chez la personne âgée : chute." },
+      { t:'mcq', q:"Quel est le <strong>risque principal à court terme</strong> d’une fracture de la diaphyse du fémur ?", c:["Raideur articulaire","Risque vasculaire (hémorragie)","Boiterie","Cal vicieux"], a:1, e:"Risque vasculaire ++++++ et donc risque d’hémorragie ++. Risque nerveux aussi, polytrauma possible, infection si ouverte." },
+      { t:'mcq', q:"Parmi ces complications à <strong>moyen terme</strong>, laquelle est décrite comme « d’origine traumatique » ?", c:["L’embolie graisseuse","L’arthrose","L’algodystrophie","La coxarthrose"], a:0, e:"Aussi à moyen terme : infection (ostéite), pseudarthrose aseptique (non-consolidation), complications vasculo-nerveuses." },
+      { t:'mcq', q:"Parmi ces complications, laquelle est typiquement <strong>à long terme</strong> ?", c:["Hémorragie immédiate","Cal vicieux et longueur de jambes asymétrique","Embolie graisseuse","Choc hémorragique"], a:1, e:"Long terme : atteintes nerveuses, amputation si nécrose, cal vicieux, adhérences, boiterie, longueur de jambes asymétrique." },
+      { t:'open', q:"Quels sont les <strong>S&amp;S</strong> d’une fracture de la diaphyse du fémur ?", a:"<strong>DLR ++++</strong>, impossibilité de MEC, longueur de jambe modifiée, déformation de la cuisse, et recherche d’une <strong>fracture ouverte</strong>." },
+      { t:'open', q:"Quels sont les trois axes de <strong>traitement</strong> d’une fracture de la diaphyse ?", a:"<strong>Chirurgie</strong> (ROFI), <strong>traitement des infections et des risques emboliques</strong>, et <strong>réadaptation physique +++</strong>." },
+      { t:'open', q:"Quelles <strong>atteintes nerveuses</strong> peuvent survenir après une fracture de la diaphyse du fémur ?", a:"Atteinte du <strong>nerf sciatique</strong> (à moyen terme) et, plus largement, des atteintes nerveuses à long terme. Le risque d’atteinte vasculo-nerveuse est élevé, surtout si la fracture est ouverte." }
+    ]
+  };
+
+  var LOCAL_IDS = ["tr-imagerie","tr-bassin","tr-femur-prox","tr-coxarthrose","tr-diaphyse","tr-quiz"];
+  var SUB_LABELS_LOCAL = {
+    "tr-imagerie": "🩻 Imagerie",
+    "tr-bassin": "🦴 Bassin",
+    "tr-femur-prox": "🦵 Fémur proximal",
+    "tr-coxarthrose": "⚙️ Coxarthrose",
+    "tr-diaphyse": "📏 Diaphyse du fémur",
+    "tr-quiz": "🎯 Quiz général"
+  };
+
+  function showSub(id) {
+    document.querySelectorAll('.section').forEach(function (s) {
+      s.classList.remove('active');
+      s.style.display = 'none';
+    });
+    document.querySelectorAll('.nav-tab[data-sub]').forEach(function (t) {
+      t.classList.toggle('active', t.dataset.sub === id);
+    });
+    var target = document.getElementById(id);
+    if (target) {
+      target.style.display = 'block';
+      target.classList.add('active');
+    }
+    var crumb = document.getElementById('crumbSub');
+    if (crumb) crumb.textContent = '› ' + (SUB_LABELS_LOCAL[id] || id);
+    if (history.replaceState) history.replaceState(null, '', '#' + id);
+  }
+
+  (function () {
+    /* Quiz par section */
+    renderQuiz(document.getElementById('quiz-imagerie'), QUIZ["imagerie"]);
+    renderQuiz(document.getElementById('quiz-bassin'), QUIZ["bassin"]);
+    renderQuiz(document.getElementById('quiz-femur-prox'), QUIZ["femur-prox"]);
+    renderQuiz(document.getElementById('quiz-coxarthrose'), QUIZ["coxarthrose"]);
+    renderQuiz(document.getElementById('quiz-diaphyse'), QUIZ["diaphyse"]);
+    /* Quiz général : toutes les questions, ordre aléatoire */
+    var all = [].concat(QUIZ["imagerie"], QUIZ["bassin"], QUIZ["femur-prox"], QUIZ["coxarthrose"], QUIZ["diaphyse"]);
+    renderQuiz(document.getElementById('quiz-general'), all, { shuffle: true, title: 'Quiz général' });
+
+    var hash = location.hash.replace('#', '');
+    var initial = LOCAL_IDS.indexOf(hash) !== -1 ? hash : LOCAL_IDS[0];
+    if (initial && initial !== LOCAL_IDS[0]) showSub(initial);
+
+    if (hash && LOCAL_IDS.indexOf(hash) === -1) {
+      setTimeout(function () {
+        var el = document.getElementById(hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    }
+
+    if (initial) applyHighlightFromURL(document.getElementById(initial));
+
+    initSiteSearch(document.getElementById('siteSearchInput'), document.getElementById('siteSearchResults'), './');
+  })();
+</script>
+
+</body>
+</html>
