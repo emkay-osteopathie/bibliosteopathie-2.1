@@ -560,6 +560,15 @@
  {
   "cat": "tem",
   "catLabel": "TEM",
+  "sub": "mi-synthese",
+  "subLabel": "Ch. 2 · 📊 Synthèse",
+  "id": "mi-synthese",
+  "file": "tem-2-membre-inferieur.html",
+  "text": "Synthèse du membre inférieur Tableau récapitulatif des tests et corrections Tableau de révision rapide. Le protocole classique s’applique partout : ≈ 20 % de force, 5–7 s, à la BM (aigu) ou un peu avant (chronique), puis nouvelle BM ou étirement ≈ 30 s. 📊 Vue d’ensemble Muscle Test (court si…) Correction (le sujet force vers…) Mollet FD du pied < 90° sans force ; genou fléchi = soléaire, tendu = gastrocnémiens Flexion plantaire Adducteurs Abduction < 45° avant la 1ère tension ; EIAS qui part Adduction (genou plié) ; abduction pour les abducteurs Psoas Thomas : jambe non horizontale, extension < 10°, pas de ressort Genou vers le haut + rotation externe Droit fémoral Procubitus : talon vers la fesse difficile ; tibia ≠ 90° au Thomas Genou vers la table + extension du genou Ischio-jambiers Flexion de hanche genou tendu (≈ 80°) ; extension du genou hanche fléchie Flexion du genou / extension de hanche (ou antagonistes) TFL Décubitus latéral : le genou ne touche pas la table Abduction (BM en adduction) Piriforme Genou vers l’intérieur limité ; FARI positif (sciatalgie) Pied vers l’intérieur (= rotation externe)"
+ },
+ {
+  "cat": "tem",
+  "catLabel": "TEM",
   "sub": "tr-rappel",
   "subLabel": "Ch. 3 · 📌 Rappel du protocole",
   "id": "tr-rappel",
@@ -619,6 +628,15 @@
   "id": "tr-elevateur",
   "file": "tem-3-tronc.html",
   "text": "Muscle élévateur de la scapula Test, allongement du muscle court, tonification des abaisseurs (TEM rythmique) 🔎 Phase de test — tension / longueur Position du sujet Décubitus. La main homolatérale au muscle à tester est placée en supination sous le bassin (fesse) pour fixer le bras. Position du thérapeute Main controlatérale soutient la tête : grande flexion, inclinaison et rotation controlatérales totales . Main homolatérale sous la scapula , talon de la main sur la partie supérieure de l’épine pour la maintenir caudalement. Réalisation Élévateur court si le sujet décrit un inconfort à l’ angle supéro-médial de la scapula et/ou une douleur au processus épineux de C2 Pas de ressort / rebond au niveau de la scapula : le thérapeute sent un blocage, un arrêt dur de la pression caudale 🛠️ Phase de correction 1ère approche : allongement du muscle court Étape 1 Même position que le test : le sujet ramène en même temps la tête vers la position de départ (vers la table et vers le côté du muscle) et lève l’épaule vers l’oreille . 5–7 s . Étape 2 Le sujet relâche sur le souffle. Étape 3 Au 2e souffle : le thérapeute amène la tête en nouvelle flexion, inclinaison et rotation controlatérale + descente de la scapula (le sujet aide : « en soufflant, amenez votre épaule vers le bas, vers votre bassin » ). Étirement 30 s , répété au moins une fois. 2e approche : tonification des « antagonistes », les abaisseurs de la scapula L’élévateur de la scapula fonctionne avec le trapèze supérieur et le petit pectoral ; leur raccourcissement induit une scapula ailée , associée à une inhibition/faiblesse des rhomboïdes, grand dentelé, trapèze moyen et inférieur Sujet debout ou assis ; thérapeute dos au sujet, un doigt avec une légère pression sur le bord médial (ou la pointe) de la scapula Consigne : « rapidement mais doucement, amenez l’omoplate vers la colonne vertébrale, poussez contre mon doigt » Quand le sujet sait activer ces muscles : TEM rythmique = 20 contractions en 10 secondes , mouvement détaché (contracte, arrête, recommence) Effet : inhibition réciproque automatique de l’élévateur (et du trapèze supérieur) + activation du grand dentelé, des rhomboïdes et des trapèzes moyen/inférieur Variante : contact à la pointe de la scapula ; le sujet amène l’omoplate vers le sol en décomposant bien le mouvement Cette technique peut être enseignée au sujet pour qu’il l’applique régulièrement au quotidien."
+ },
+ {
+  "cat": "tem",
+  "catLabel": "TEM",
+  "sub": "tr-synthese",
+  "subLabel": "Ch. 3 · 📊 Synthèse",
+  "id": "tr-synthese",
+  "file": "tem-3-tronc.html",
+  "text": "Synthèse du tronc Tableau récapitulatif des tests et corrections Tableau de révision rapide. Le protocole classique s’applique partout : ≈ 20 % de force, 5–7 s, à la BM (aigu) ou un peu avant (chronique), puis nouvelle BM ou étirement ≈ 30 s. 📊 Vue d’ensemble Muscle Test (court si…) Correction (le sujet force vers…) Carré des lombes Abduction de hanche : CL actif avant 25° ou en 1er Inclinaison homolatérale / abduction ; étirement à l’ inspiration Paravertébraux Antéflexion assise > 10 cm front-genoux ; vague respiratoire « en bloc » Retour au neutre / regard opposé (assis) ; levée de jambe (procubitus) Trapèze sup. Descente de l’épaule difficile, fin dure (latéro-flexion 30–40°) Tête vers l’épaule ET épaule vers l’oreille Scalènes Élévation de la ceinture scapulaire à l’inspiration Lever + tourner la tête, apnée inspiratoire SCOM Menton qui part en avant à la flexion cranio-cervicale Lever la tête en apnée inspiratoire Élévateur de la scapula Inconfort angle supéro-médial, douleur C2, arrêt dur Tête vers la table en levant l’épaule (ou TEM rythmique des abaisseurs)"
  },
  {
   "cat": "tem",
@@ -704,10 +722,28 @@
  {
   "cat": "tem",
   "catLabel": "TEM",
-  "sub": "ms-poignet",
-  "subLabel": "Ch. 4 · 💪 Fléchisseurs / extenseurs du poignet",
-  "id": "ms-poignet",
+  "sub": "ms-flechisseurs",
+  "subLabel": "Ch. 4 · 💪 Fléchisseurs du poignet",
+  "id": "ms-flechisseurs",
   "file": "tem-4-membre-superieur.html",
-  "text": "Muscles fléchisseurs et extenseurs du poignet Épicondyliens médiaux et latéraux, auto-traitement possible Une douleur à l’ épicondyle médial de l’humérus accompagne souvent une tension des muscles épicondyliens médiaux (fléchisseurs du poignet). Cette méthode peut être facilement auto-réalisée par le sujet. 🛠️ Correction Position du sujet Assis. Position du thérapeute Soutient le bras et fléchit totalement le coude du sujet. Fléchisseurs du poignet · BM Amener une extension du poignet (paume vers le plafond) : la BM est trouvée par cette extension. Contraction Le sujet force doucement vers la flexion pendant 5–7 s . Progression Augmenter l’extension du poignet, en respectant le protocole TEM. Extenseurs du poignet : même logique. BM trouvée en allant vers la flexion du coude et du poignet ; contraction en extension ."
+  "text": "Muscles fléchisseurs du poignet Épicondyliens médiaux, auto-traitement possible Une douleur à l’ épicondyle médial de l’humérus accompagne souvent une tension des muscles épicondyliens médiaux (fléchisseurs du poignet). Cette méthode peut être facilement auto-réalisée par le sujet. 🛠️ Correction Position du sujet Assis. Position du thérapeute Soutient le bras et fléchit totalement le coude du sujet. BM Amener une extension du poignet (paume vers le plafond) : la BM est trouvée par cette extension. Contraction Le sujet force doucement vers la flexion pendant 5–7 s . Progression Augmenter l’extension du poignet, en respectant le protocole TEM."
+ },
+ {
+  "cat": "tem",
+  "catLabel": "TEM",
+  "sub": "ms-extenseurs",
+  "subLabel": "Ch. 4 · 💪 Extenseurs du poignet",
+  "id": "ms-extenseurs",
+  "file": "tem-4-membre-superieur.html",
+  "text": "Muscles extenseurs du poignet Épicondyliens latéraux, auto-traitement possible Même logique que pour les fléchisseurs, appliquée aux muscles épicondyliens latéraux (extenseurs du poignet). 🛠️ Correction Position du sujet Assis. Position du thérapeute Soutient le bras ; coude et poignet amenés vers la flexion . BM La BM est trouvée en allant vers la flexion du coude et du poignet . Contraction Le sujet force doucement en extension pendant 5–7 s . Progression Augmenter la flexion du poignet, en respectant le protocole TEM."
+ },
+ {
+  "cat": "tem",
+  "catLabel": "TEM",
+  "sub": "ms-synthese",
+  "subLabel": "Ch. 4 · 📊 Synthèse",
+  "id": "ms-synthese",
+  "file": "tem-4-membre-superieur.html",
+  "text": "Synthèse du membre supérieur Tableau récapitulatif des tests et corrections Tableau de révision rapide. Le protocole classique s’applique partout : ≈ 20 % de force, 5–7 s, à la BM (aigu) ou un peu avant (chronique), puis nouvelle BM ou étirement ≈ 30 s. 📊 Vue d’ensemble Muscle Test (court si…) Correction (le sujet force vers…) Grand pectoral Épaules enroulées ; palpation à 90° (claviculaire) / 90–135° (costal) Adduction Petit pectoral Rétropulsion + ascension de l’épaule difficile Épaule vers l’avant et le bas (7–10 s) Grand dorsal Bras près des jambes penché ; coude dévié en décubitus Coude vers le sacrum + inclinaison Infra-épineux Main à l’omoplate opposée douloureuse ; avant-bras ne reste pas parallèle Rotation externe (vers le haut) Supra-épineux Douleur postérieure à l’abduction Abduction Sous-scapulaire Douleur à la palpation ; avant-bras ne reste pas parallèle Poignet vers le plafond (rotation interne) Biceps Douleur à l’élévation contre résistance Supination Brachial Extension du coude limitée Flexion (pronation totale) Fléchisseurs / extenseurs du poignet Douleur épicondyle médial / latéral Flexion / extension du poignet"
  }
 ]
