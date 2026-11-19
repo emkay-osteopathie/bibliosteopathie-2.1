@@ -14,6 +14,13 @@
 <link rel="stylesheet" href="../assets/shared.css">
 <link rel="stylesheet" href="../assets/nav.css">
 <link rel="stylesheet" href="../assets/quiz.css">
+<style>
+  .itabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px;padding-bottom:12px;border-bottom:1px solid var(--navy-200);}
+  .itab{font-family:inherit;font-size:12.5px;font-weight:600;color:var(--navy-600);background:#fff;border:1px solid var(--navy-200);border-radius:999px;padding:7px 14px;cursor:pointer;transition:all .15s;}
+  .itab:hover{border-color:var(--teal-500);color:var(--teal-700);}
+  .itab.active{background:var(--teal-600);border-color:var(--teal-600);color:#fff;}
+  .ipane{display:none;} .ipane.active{display:block;}
+</style>
 </head>
 <body>
 
@@ -60,26 +67,30 @@
 <div class="section-title">Les TEM, c’est quoi ?</div>
 <div class="section-sub">Avant-propos : place des TEM, principe, intérêts</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🧰</div><div class="card-title">Où se placent les TEM dans l’arsenal ostéopathique ?</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-tem-quoi"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('tem-quoi',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('tem-quoi',1)">🧰 Où se placent les TEM dans l’arsena…</button><button type="button" class="itab" data-i="2" onclick="showInner('tem-quoi',2)">🎯 Principe</button><button type="button" class="itab" data-i="3" onclick="showInner('tem-quoi',3)">✅ Ce que permettent les TEM</button><button type="button" class="itab" data-i="4" onclick="showInner('tem-quoi',4)">👍 Pourquoi les utiliser ?</button><button type="button" class="itab" data-i="5" onclick="showInner('tem-quoi',5)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li>Les TEM sont des techniques <strong>structurelles</strong> dont le substrat est le <strong>tissu mou</strong> : muscles et fascias.</li><li>Formule du cours : <strong>une position précise + une contraction et une direction appropriées = un résultat exact</strong> sur un muscle ou une articulation.</li><li>Elles permettent d’<strong>augmenter la mobilité</strong> d’une articulation, d’<strong>activer</strong> un muscle, de <strong>relâcher</strong> un muscle (agoniste ou antagoniste) et son fascia, de « <strong>défibroser</strong> » un muscle.</li><li>Atouts : <strong>parfaites pour un public algique</strong>, rapides et simples, <strong>patient-centrées</strong> (le patient s’engage), orientées vers la <strong>tolérance à l’activité</strong> plutôt que le soulagement de symptômes.</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🧰</div><div class="card-title">Où se placent les TEM dans l’arsenal ostéopathique ?</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li><strong>Techniques fonctionnelles</strong> : crâniennes, fasciales, liquidiennes, biodynamiques…</li><li><strong>Techniques structurelles</strong> : TOG (traitement ostéopathique général), thrust… <strong>et techniques d’énergie musculaire (TEM)</strong></li></ul></div>
 <div class="info-box teal" style="margin-bottom:0;">Le <strong>substrat</strong> des TEM, ce sont les <strong>tissus mous : muscles et fascias</strong>.</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🎯</div><div class="card-title">Principe</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🎯</div><div class="card-title">Principe</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li>Une <strong>position musculaire précise</strong></li><li>Différents <strong>types de contractions</strong></li><li>Différentes <strong>actions post-contraction</strong></li></ul></div>
 <p style="font-size:13.5px;color:var(--text2);line-height:1.6;">→ impact sur l’<strong>état d’un muscle</strong> (contracté, relâché, court, long…) ou d’un groupe musculaire, et sur l’<strong>état articulaire</strong>.</p>
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">✅</div><div class="card-title">Ce que permettent les TEM</div></div><div class="card-body">
+</div><div class="ipane" data-i="3"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">✅</div><div class="card-title">Ce que permettent les TEM</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li><strong>Augmenter la mobilité</strong> d’une articulation</li><li><strong>Activer</strong> un muscle</li><li><strong>Relâcher</strong> un muscle (agoniste ou antagoniste) et un fascia</li><li><strong>« Défibroser »</strong> un muscle</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">👍</div><div class="card-title">Pourquoi les utiliser ?</div></div><div class="card-body">
+</div><div class="ipane" data-i="4"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">👍</div><div class="card-title">Pourquoi les utiliser ?</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li><strong>Parfaites pour un public algique</strong></li><li><strong>Rapides et simples</strong> à mettre en place</li><li>Démarche <strong>« patient-centré » (EBP)</strong> : elles nécessitent l’<strong>engagement du patient</strong></li><li>Elles répondent à un objectif de redonner une <strong>tolérance à une activité</strong>, et non à un simple soulagement de symptômes</li></ul></div>
 
 </div></div>
 <div class="info-box teal" style="margin-bottom:18px;"><strong>Les TEM, c’est :</strong> une position précise + une contraction + une direction appropriée = un résultat exact sur un muscle ou une articulation.</div>
-<div class="tech-card" id="gal-tem-quoi" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-tem-quoi')"><div class="tech-card-name">📷 Illustrations du cours <small>(p. 3 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p03.webp" target="_blank" rel="noopener"><img data-src="img/tem-p03.webp" alt="Cours TEM, page 3" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-tem-quoi"></div>
+</div><div class="ipane" data-i="5"><div id="quiz-tem-quoi"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -88,24 +99,28 @@
 <div class="section-title">Un brin d’histoire</div>
 <div class="section-sub">Mitchell Senior et Junior, successeurs, données actuelles</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">👨‍⚕️</div><div class="card-title">Fred Mitchell Senior : le fondateur</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-tem-histoire"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('tem-histoire',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('tem-histoire',1)">👨‍⚕️ Fred Mitchell Senior</button><button type="button" class="itab" data-i="2" onclick="showInner('tem-histoire',2)">👨‍👦 Fred Mitchell Junior</button><button type="button" class="itab" data-i="3" onclick="showInner('tem-histoire',3)">📚 Les successeurs</button><button type="button" class="itab" data-i="4" onclick="showInner('tem-histoire',4)">🔬 Données actuelles de la science</button><button type="button" class="itab" data-i="5" onclick="showInner('tem-histoire',5)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>Fred L. Mitchell Senior</strong> : fondateur. Influencé par T. J. Ruddy et C. Kettler (effort du sujet contre résistance). 1ères techniques décrites en <strong>1948</strong>, d’abord pour le <strong>bassin et les sacro-iliaques</strong> (« Muscular Cooperation technics »).</li><li><strong>Fred Mitchell Junior</strong> : donne le nom « <strong>Muscle Energy Technics</strong> » et étend le principe à <strong>toutes les articulations</strong> (1960–1964, avec Paul Kimberly).</li><li>Après 1974 (décès de Mitchell Sr) : Stiles, Sutton, Pruzzo, Moran, Greenman… <strong>Karel Lewit</strong> (relaxation post-isométrique) et <strong>Vladimir Janda</strong> (muscles toniques / phasiques) : non-ostéopathes déterminants.</li><li>Science actuelle : <strong>Gary Fryer</strong> (Australie) réévalue l’efficacité des TEM, dans le contexte du modèle <strong>bio-psycho-social</strong> et du patient acteur de sa santé.</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">👨‍⚕️</div><div class="card-title">Fred Mitchell Senior : le fondateur</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li>Fred Lockwood Mitchell : « créateur » des TEM (on parle souvent de « techniques Mitchell »)</li><li>Influencé par <strong>Thomas Jefferson Ruddy</strong> et <strong>Carl Kettler</strong> : techniques demandant l’<strong>effort du sujet contre une résistance</strong></li><li>Premières techniques décrites en <strong>1948</strong>, d’abord pour la <strong>correction du bassin et des sacro-iliaques</strong></li><li>Nom d’origine : <strong>« Muscular Cooperation technics »</strong></li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">👨‍👦</div><div class="card-title">Fred Mitchell Junior</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">👨‍👦</div><div class="card-title">Fred Mitchell Junior</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li>À l’origine de l’appellation <strong>« Muscle Energy Technics »</strong> (TEM)</li><li><strong>1960–1964</strong> : travaille avec son père</li><li>Étend le principe (dédié au bassin) à <strong>l’ensemble des articulations du corps</strong></li><li>Aidé de <strong>Paul Kimberly</strong>, ancien collaborateur de Mitchell Sr</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">📚</div><div class="card-title">Les successeurs</div></div><div class="card-body">
+</div><div class="ipane" data-i="3"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">📚</div><div class="card-title">Les successeurs</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li>Après le décès de Mitchell père (<strong>1974</strong>) : Edward Stiles, Sara Sutton, Neil Pruzzo, Peter Moran, Greenman… (surtout dans l’enseignement)</li><li><strong>Karel Lewit</strong> (médecin, thérapeute manuel) : notion de <strong>« post-isometric relaxation »</strong></li><li><strong>Vladimir Janda</strong> : identification des muscles <strong>posturaux/toniques</strong> et <strong>phasiques</strong>, modèles musculaires</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🔬</div><div class="card-title">Données actuelles de la science</div></div><div class="card-body">
+</div><div class="ipane" data-i="4"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🔬</div><div class="card-title">Données actuelles de la science</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li>Évolution du modèle <strong>bio-médical</strong> vers le modèle <strong>bio-psycho-social</strong> ; prise en charge <strong>patient-centré</strong> ; le mouvement et la mobilité sont mis en avant</li><li>L’efficacité des TEM a été <strong>réévaluée</strong> ; figure de proue : l’Australien <strong>Gary Fryer</strong></li><li>Idée de départ (Viola Fryman, 1987) : le patient peut <strong>contribuer au traitement</strong> avec un minimum d’activité du praticien</li><li>Ce cours propose des techniques éprouvées par la <strong>clinique</strong> et par la <strong>recherche actuelle</strong></li></ul></div>
 
 </div></div>
-<div class="tech-card" id="gal-tem-histoire" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-tem-histoire')"><div class="tech-card-name">📷 Illustrations du cours <small>(p. 4–5 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p04.webp" target="_blank" rel="noopener"><img data-src="img/tem-p04.webp" alt="Cours TEM, page 4" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p05.webp" target="_blank" rel="noopener"><img data-src="img/tem-p05.webp" alt="Cours TEM, page 5" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-tem-histoire"></div>
+</div><div class="ipane" data-i="5"><div id="quiz-tem-histoire"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -114,26 +129,30 @@
 <div class="section-title">Quelques rappels physiologiques</div>
 <div class="section-sub">Architecture musculaire, muscles toniques/phasiques, barrières</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🪆</div><div class="card-title">Architecture musculaire : des « poupées russes »</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-tem-physio"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('tem-physio',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('tem-physio',1)">🪆 Architecture musculaire</button><button type="button" class="itab" data-i="2" onclick="showInner('tem-physio',2)">⚙️ Modèle mécanique du muscle</button><button type="button" class="itab" data-i="3" onclick="showInner('tem-physio',3)">⚖️ Muscle tonique vs muscle phasique</button><button type="button" class="itab" data-i="4" onclick="showInner('tem-physio',4)">🚧 Barrière articulaire, physiologique…</button><button type="button" class="itab" data-i="5" onclick="showInner('tem-physio',5)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li>Muscle = « poupées russes » : <strong>myofibrille</strong> (actine-myosine) → <strong>fibre</strong> (endomysium) → <strong>fascicule</strong> (périmysium) → <strong>muscle</strong> (épimysium) → les 3 couches forment le <strong>tendon</strong>.</li><li>Modèle mécanique : <strong>CC</strong> (ponts actine-myosine), <strong>CES</strong> (série ≈ tendons), <strong>CEP</strong> (parallèle ≈ enveloppes). À la contraction : CC se rapprochent, CES s’allongent, CEP se raccourcissent.</li><li><strong>Tonique</strong> (fibres I, lente, peu fatigable, posture, plutôt mono-articulaire) → devient <strong>court/tendu</strong>. <strong>Phasique</strong> (fibres II, rapide, fatigable, mouvement, plutôt poly-articulaire) → devient <strong>faible</strong>.</li><li><strong>BA</strong> (contact osseux, limite du passif) &gt; <strong>BP</strong> (tension maximale des tissus mous, limite de l’actif) &gt; <strong>BM</strong> (première résistance, à l’intérieur du mouvement physiologique).</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🪆</div><div class="card-title">Architecture musculaire : des « poupées russes »</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li><strong>Myofibrille</strong> : ponts d’<strong>actine-myosine</strong> (unités contractiles)</li><li><strong>Fibre musculaire</strong> (= cellule) : plusieurs myofibrilles, entourée d’<strong>endomysium</strong></li><li><strong>Faisceau</strong> : plusieurs fibres, cohésion par le <strong>périmysium</strong> → faisceau + périmysium = <strong>fascicule</strong></li><li><strong>Muscle</strong> : plusieurs faisceaux, cohésion par l’<strong>épimysium</strong></li><li>Endomysium + périmysium + épimysium se rejoignent aux extrémités pour former le <strong>tendon</strong></li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">⚙️</div><div class="card-title">Modèle mécanique du muscle</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">⚙️</div><div class="card-title">Modèle mécanique du muscle</div></div><div class="card-body">
 <table class="grille-eval-table"><thead><tr><th>Composant</th><th>Correspond à</th><th>Lors d’une contraction</th><th>Lors d’un étirement</th></tr></thead><tbody><tr><td><strong>CC</strong> composants contractiles</td><td>Ponts actine-myosine</td><td>Se rapprochent</td><td>—</td></tr><tr><td><strong>CES</strong> élastiques en série</td><td>Globalement les tendons</td><td>S’allongent</td><td>S’étirent</td></tr><tr><td><strong>CEP</strong> élastiques en parallèle</td><td>Enveloppes (endomysium, périmysium…)</td><td>Se raccourcissent</td><td>S’étirent, avec un peu plus d’emphase</td></tr></tbody></table>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">⚖️</div><div class="card-title">Muscle tonique vs muscle phasique (Janda)</div></div><div class="card-body">
+</div><div class="ipane" data-i="3"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">⚖️</div><div class="card-title">Muscle tonique vs muscle phasique (Janda)</div></div><div class="card-body">
 <table class="grille-eval-table"><thead><tr><th></th><th>Tonique</th><th>Phasique</th></tr></thead><tbody><tr><td>Fibres</td><td>Plus de fibres de <strong>type I</strong> (contraction lente, rouges)</td><td>Plus de fibres de <strong>type II</strong> (contraction rapide)</td></tr><tr><td>Fatigabilité</td><td>Peu fatigable</td><td>Fatigable</td></tr><tr><td>Rôle</td><td>Posture, stabilité des articulations/mouvements</td><td>Mouvements</td></tr><tr><td>Disposition</td><td>Plutôt mono-articulaire</td><td>Plutôt poly-articulaire</td></tr><tr><td>Si dysfonction…</td><td><strong>Court / tendu</strong></td><td><strong>Faible</strong></td></tr></tbody></table>
 <div class="info-box amber" style="margin-bottom:0;"><strong>Remarque :</strong> un muscle phasique peut devenir tonique selon ses sollicitations. Exemple : les <strong>scalènes</strong>, phasiques pour la mobilité cervicale, deviennent toniques chez les personnes asthmatiques ou stressées de manière chronique (ils maintiennent les 2 premières côtes en position inspiratoire haute).</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🚧</div><div class="card-title">Barrière articulaire, physiologique et motrice</div></div><div class="card-body">
+</div><div class="ipane" data-i="4"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🚧</div><div class="card-title">Barrière articulaire, physiologique et motrice</div></div><div class="card-body">
 <table class="grille-eval-table"><thead><tr><th>Barrière</th><th>Définition</th></tr></thead><tbody><tr><td><strong>Barrière articulaire (BA)</strong></td><td>Limite du mouvement physiologique <strong>passif</strong> : le contact osseux de l’articulation</td></tr><tr><td><strong>Barrière physiologique (BP)</strong></td><td>Limite du mouvement physiologique <strong>actif</strong> : tension maximale des tissus mous (muscles, ligaments, capsule). Elle varie avec l’âge, le sport, les étirements, les pathologies → nouveau « Neutre » (N)</td></tr><tr><td><strong>Barrière motrice (BM)</strong></td><td><strong>Première résistance</strong> du mouvement, première sensation de tension musculaire. La bonne réalisation de certaines TEM se fait <strong>à cet endroit</strong></td></tr></tbody></table>
 <div class="info-box teal" style="margin-bottom:0;">Ordre dans l’amplitude : <strong>neutre → BM → BP → BA</strong>. La BM se situe donc à l’intérieur du mouvement physiologique.</div>
 
 </div></div>
-<div class="tech-card" id="gal-tem-physio" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-tem-physio')"><div class="tech-card-name">📷 Illustrations du cours <small>(p. 6–8 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p06.webp" target="_blank" rel="noopener"><img data-src="img/tem-p06.webp" alt="Cours TEM, page 6" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p07.webp" target="_blank" rel="noopener"><img data-src="img/tem-p07.webp" alt="Cours TEM, page 7" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p08.webp" target="_blank" rel="noopener"><img data-src="img/tem-p08.webp" alt="Cours TEM, page 8" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-tem-physio"></div>
+</div><div class="ipane" data-i="5"><div id="quiz-tem-physio"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -142,34 +161,38 @@
 <div class="section-title">Les différentes contractions</div>
 <div class="section-sub">Isométrique, RPI / IR, pulsées, isotoniques, isolytiques, isocinétiques</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🔒</div><div class="card-title">Contraction isométrique : le protocole classique</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-tem-contractions"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('tem-contractions',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('tem-contractions',1)">🔒 Contraction isométrique</button><button type="button" class="itab" data-i="2" onclick="showInner('tem-contractions',2)">🌬️ Aide respiratoire</button><button type="button" class="itab" data-i="3" onclick="showInner('tem-contractions',3)">🧠 Pourquoi ça relâche ?</button><button type="button" class="itab" data-i="4" onclick="showInner('tem-contractions',4)">⚡ TEM pulsées / rythmiques</button><button type="button" class="itab" data-i="5" onclick="showInner('tem-contractions',5)">🏋️ Autres contractions</button><button type="button" class="itab" data-i="6" onclick="showInner('tem-contractions',6)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>Isométrique (protocole classique)</strong> : ≈ <strong>20 % de force</strong>, <strong>5–7 s</strong>, à la BM (aigu) ou un peu avant (chronique), puis nouvelle BM ou étirement ≈ 30 s.</li><li>Explications : <strong>RPI</strong> (après contraction des agonistes), <strong>IR</strong> (contraction des antagonistes) et <strong>distraction avant étirement</strong> : les mécanismes sont discutés mais considérés comme efficaces.</li><li><strong>Pulsées (Ruddy)</strong> : ≈ 2 contractions/s, séries de 20, faible intensité. <strong>Isotonique concentrique</strong> : renforce (≤ 2 s). <strong>Excentrique lente</strong> : endurance des posturaux. <strong>Isolytique</strong> : excentrique rapide pour fibroses. <strong>Isocinétique</strong> : force croissante, ≤ 4 s, petites articulations.</li><li>Exception respiratoire : pour le <strong>carré des lombes</strong>, l’étirement se fait à l’<strong>inspiration</strong> (le muscle se contracte à l’expiration).</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🔒</div><div class="card-title">Contraction isométrique : le protocole classique</div></div><div class="card-body">
 <div class="tech-step"><div class="label">1 · Positionner</div>Placer le muscle à traiter à sa <strong>barrière motrice</strong> (ou juste avant).</div>
 <div class="tech-step"><div class="label">2 · Contracter</div>Contraction douce (<strong>≈ 20 % de la force du sujet</strong>), selon la force et la direction indiquées par le thérapeute, pendant <strong>5 à 7 secondes</strong>.</div>
 <div class="tech-step"><div class="label">3 · Relâcher et progresser</div>Après relâchement et temps de repos : <strong>nouvelle BM</strong> (situation aiguë ou articulation) ou <strong>étirement</strong> du muscle (situation chronique).</div>
 <div class="info-box amber" style="margin-bottom:0;"><strong>Aigu</strong> = douleur ou blessure de <strong>3 semaines maximum</strong>, encore en remodelage. Le traitement d’une <strong>articulation</strong> reprend toujours le principe de l’aigu (on cherche juste une nouvelle BM) : « <em>ça relâche, ou pas</em> ».</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🌬️</div><div class="card-title">Aide respiratoire (facultative)</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🌬️</div><div class="card-title">Aide respiratoire (facultative)</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li>1ère inspiration pour <strong>préparer</strong> la contraction</li><li><strong>Apnée inspiratoire</strong> (ou inspiration) pendant les 5–7 s de contraction</li><li>Arrêt progressif de l’apnée en même temps que la contraction</li><li>2e inspiration puis <strong>souffle</strong> : le sujet se relâche complètement ; pendant ce souffle on cherche une <strong>nouvelle BM</strong> ou on fait l’<strong>étirement</strong></li></ul></div>
 <div class="info-box coral" style="margin-bottom:0;"><strong>Exception : le carré des lombes.</strong> Il se contracte à l’expiration : l’étirement se fait donc pendant l’<strong>inspiration</strong>.</div>
 <div class="info-box teal" style="margin:12px 0 0;">Les TEM agissent aussi sur le <strong>fascia</strong>. Un muscle « court » s’explique plus par sa composante fasciale que musculaire : pour mobiliser un fascia, la force doit être <strong>légère</strong> (d’où les 20 %).</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🧠</div><div class="card-title">Pourquoi ça relâche ? (hypothèses)</div></div><div class="card-body">
+</div><div class="ipane" data-i="3"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🧠</div><div class="card-title">Pourquoi ça relâche ? (hypothèses)</div></div><div class="card-body">
 <table class="grille-eval-table"><thead><tr><th>Mécanisme</th><th>Principe</th><th>Limite</th></tr></thead><tbody><tr><td><strong>RPI</strong> — relaxation post-isométrique</td><td>Après contraction isométrique des <strong>agonistes</strong> : réflexe d’inhibition, période réfractaire → relaxation, gain de longueur et d’amplitude</td><td>Période d’inhibition très courte, jugée peu significative cliniquement</td></tr><tr><td><strong>IR</strong> — inhibition réciproque</td><td>Contraction des <strong>antagonistes</strong> → inhibition des agonistes (ex. triceps contracté → biceps inhibé). Utile en cas de douleur / traumatisme</td><td>Effet très fugace</td></tr><tr><td><strong>Distraction avant étirement</strong></td><td>Étude Azevedo et al. (2011) : une contraction isométrique, même d’un muscle à distance (biceps pour un genou), distrait le corps avant l’étirement</td><td>—</td></tr></tbody></table>
 <div class="info-box teal" style="margin-bottom:0;">Faute de données sur le mécanisme exact de cette <strong>tolérance à l’étirement</strong>, on considère que RPI et IR sont <strong>tous deux efficaces</strong>.</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">⚡</div><div class="card-title">TEM pulsées / rythmiques (méthode de Ruddy)</div></div><div class="card-body">
+</div><div class="ipane" data-i="4"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">⚡</div><div class="card-title">TEM pulsées / rythmiques (méthode de Ruddy)</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li>Série de contractions <strong>contre résistance, par à-coups</strong>, un peu plus rapides que le rythme cardiaque : <strong>≈ 2 contractions / seconde</strong>, courtes et de faible intensité</li><li>Muscle ou articulation maintenu à la <strong>BM</strong> ; <strong>séries de 20</strong>, puis nouvelle barrière et nouvelle série (la direction peut changer)</li><li>Effets : <strong>inhibe</strong> les agonistes, <strong>renforce</strong> un antagoniste, ↑ oxygénation des tissus, ↑ circulation lymphatique et veineuse, impact proprioceptif et intéroceptif (posture statique et dynamique)</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🏋️</div><div class="card-title">Autres contractions</div></div><div class="card-body">
+</div><div class="ipane" data-i="5"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🏋️</div><div class="card-title">Autres contractions</div></div><div class="card-body">
 <table class="grille-eval-table"><thead><tr><th>Type</th><th>Objectif</th><th>Modalités</th></tr></thead><tbody><tr><td><strong>Isotonique concentrique</strong></td><td>Renforcer le muscle agoniste ; fibres de type II (muscles phasiques)</td><td>Pas de notion de BM. Départ en position de repos, <strong>forte contraction ≤ 2 s</strong> dans toute l’amplitude ; contre-force du thérapeute <strong>inférieure</strong> à celle du patient, <strong>augmentée à chaque répétition</strong></td></tr><tr><td><strong>Isotonique excentrique lente</strong></td><td>Redonner l’<strong>endurance</strong> des muscles posturaux (fibres de type I)</td><td>Lente, faible résistance. Ex. ischio-jambiers hypertoniques + quadriceps inhibé : étirement actif du quadriceps (le tonifie, inhibe les ischios) puis étirement des ischios</td></tr><tr><td><strong>Isolytique</strong> (excentrique rapide)</td><td>Étirement rapide d’un muscle <strong>fibrosé</strong></td><td>Crée des micro-traumatismes <strong>contrôlés</strong> pour réduire les adhérences entre parties élastiques et non élastiques</td></tr><tr><td><strong>Isocinétique</strong></td><td>Efficacité et coordination d’un groupe musculaire ; ↑ tonus de base</td><td>Concentrique avec <strong>force croissante</strong> dans l’amplitude ; <strong>≤ 4 s</strong> ; idéal pour les <strong>petites articulations</strong> (poignet, cheville)</td></tr></tbody></table>
 
 </div></div>
-<div class="tech-card" id="gal-tem-contractions" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-tem-contractions')"><div class="tech-card-name">📷 Illustrations du cours <small>(p. 9–12 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p09.webp" target="_blank" rel="noopener"><img data-src="img/tem-p09.webp" alt="Cours TEM, page 9" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p10.webp" target="_blank" rel="noopener"><img data-src="img/tem-p10.webp" alt="Cours TEM, page 10" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p11.webp" target="_blank" rel="noopener"><img data-src="img/tem-p11.webp" alt="Cours TEM, page 11" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p12.webp" target="_blank" rel="noopener"><img data-src="img/tem-p12.webp" alt="Cours TEM, page 12" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-tem-contractions"></div>
+</div><div class="ipane" data-i="6"><div id="quiz-tem-contractions"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -178,11 +201,15 @@
 <div class="section-title">Premiers contacts avec les TEM</div>
 <div class="section-sub">Rencontre de la barrière motrice et exercice de palpation</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🧈</div><div class="card-title">Sentir la barrière motrice</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-tem-bm"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('tem-bm',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('tem-bm',1)">🧈 Sentir la barrière motrice</button><button type="button" class="itab" data-i="2" onclick="showInner('tem-bm',2)">🦵 Exercice de palpation</button><button type="button" class="itab" data-i="3" onclick="showInner('tem-bm',3)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li>La BM est une <strong>caractéristique clinique</strong> : la <strong>première résistance</strong> à l’allongement d’un muscle ; on la cherche à l’<strong>opposé</strong> du mouvement du muscle (adducteurs → abduction).</li><li>Analogies du cours : <strong>chocolat liégeois</strong> (chantilly facile, puis crème plus ferme) et <strong>élastique</strong> (peu de force avant sa mise en tension, plus après).</li><li>Exercice : <strong>yeux fermés</strong> pour ressentir avec tout le membre supérieur, puis <strong>main d’écoute</strong> (sans pression) sur les adducteurs pour sentir la tension apparaître puis disparaître.</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">🧈</div><div class="card-title">Sentir la barrière motrice</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li>La BM est une <strong>caractéristique clinique</strong> : la <strong>première résistance</strong> à l’allongement d’un muscle</li><li>Elle se cherche <strong>à l’opposé du mouvement</strong> du muscle testé (adducteurs → vers l’<strong>abduction</strong>)</li><li><strong>Analogie du chocolat liégeois</strong> : la cuillère traverse la chantilly facilement, puis rencontre la crème au chocolat, plus ferme = léger à-coup = BM</li><li><strong>Analogie de l’élastique</strong> : avant sa première mise en tension, peu de force ; après, il faut plus de force pour prolonger l’étirement</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🦵</div><div class="card-title">Exercice de palpation : BM des adducteurs (membre inférieur droit)</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🦵</div><div class="card-title">Exercice de palpation : BM des adducteurs (membre inférieur droit)</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus, légèrement décalé vers le côté droit de la table (membre inférieur droit près du bord). Membre inférieur gauche très légèrement en abduction.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute (1ère partie)</div><div class="value">Dos au patient. Main externe sous le talon, main interne sur la face médiale du genou (sécurise la prise).</div></div></div>
 <div class="tech-step"><div class="label">1ère partie · les yeux fermés</div>Amener doucement la jambe droite en <strong>abduction</strong> (hors de la table) jusqu’à la <strong>première résistance</strong>, ressentie avec <strong>tout le membre supérieur</strong> (main → épaule). S’arrêter, ouvrir les yeux et évaluer l’angle d’abduction. Répéter plusieurs fois pour comparer angle et sensations.</div>
 <div class="tech-step"><div class="label">2e partie · main d’écoute</div>Le thérapeute est <strong>entre les jambes</strong> du sujet, face à lui. Main externe sous la jambe à tester, main interne posée <strong>sans pression</strong> sur la face médiale de la cuisse (pulpe des doigts sur les adducteurs). Après avoir trouvé la BM, la main interne perçoit une <strong>tension des adducteurs</strong>.</div>
@@ -190,8 +217,8 @@
 <div class="info-box teal" style="margin-bottom:0;">Deux manières de repérer la BM : la <strong>différence de force</strong> nécessaire avant/après (1ère partie) ou une <strong>main d’écoute</strong> qui sent le début ou la fin de la tension (2e partie).</div>
 
 </div></div>
-<div class="tech-card" id="gal-tem-bm" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-tem-bm')"><div class="tech-card-name">📷 Illustrations du cours <small>(p. 13–15 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p13.webp" target="_blank" rel="noopener"><img data-src="img/tem-p13.webp" alt="Cours TEM, page 13" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p14.webp" target="_blank" rel="noopener"><img data-src="img/tem-p14.webp" alt="Cours TEM, page 14" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p15.webp" target="_blank" rel="noopener"><img data-src="img/tem-p15.webp" alt="Cours TEM, page 15" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-tem-bm"></div>
+</div><div class="ipane" data-i="3"><div id="quiz-tem-bm"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -200,7 +227,7 @@
 <div class="section-title">Quiz général — Introduction aux TEM</div>
 <div class="section-sub">Toutes les questions des onglets précédents, dans un ordre aléatoire à chaque chargement</div>
 
-<div class="info-box teal" style="margin-top:0;">Clique sur une réponse pour la valider. Les questions « réponse courte » se corrigent avec le bouton <strong>Voir la réponse</strong> : essaie de répondre à voix haute d’abord. Le score n’est pas enregistré.</div>
+<!--BLK|info|teal||--><div class="info-box teal" style="margin-top:0;">Clique sur une réponse pour la valider. Les questions « réponse courte » se corrigent avec le bouton <strong>Voir la réponse</strong> : essaie de répondre à voix haute d’abord. Le score n’est pas enregistré.</div>
 <div id="quiz-general"></div>
 
 </section>
@@ -543,6 +570,13 @@
     if (crumb) crumb.textContent = '› ' + (SUB_LABELS_LOCAL[id] || id);
     if (history.replaceState) history.replaceState(null, '', '#' + id);
     if (!keepScroll) window.scrollTo({ top: 0 });
+  }
+
+  function showInner(uid, i) {
+    var w = document.getElementById('it-' + uid);
+    if (!w) return;
+    w.querySelectorAll(':scope > .itabs > .itab').forEach(function (b) { b.classList.toggle('active', +b.dataset.i === i); });
+    w.querySelectorAll(':scope > .ipane').forEach(function (p) { p.classList.toggle('active', +p.dataset.i === i); });
   }
 
   /* Planches du cours : les images ne se chargent qu'à l'ouverture de l'accordéon */

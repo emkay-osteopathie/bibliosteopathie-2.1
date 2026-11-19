@@ -14,6 +14,13 @@
 <link rel="stylesheet" href="../assets/shared.css">
 <link rel="stylesheet" href="../assets/nav.css">
 <link rel="stylesheet" href="../assets/quiz.css">
+<style>
+  .itabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px;padding-bottom:12px;border-bottom:1px solid var(--navy-200);}
+  .itab{font-family:inherit;font-size:12.5px;font-weight:600;color:var(--navy-600);background:#fff;border:1px solid var(--navy-200);border-radius:999px;padding:7px 14px;cursor:pointer;transition:all .15s;}
+  .itab:hover{border-color:var(--teal-500);color:var(--teal-700);}
+  .itab.active{background:var(--teal-600);border-color:var(--teal-600);color:#fff;}
+  .ipane{display:none;} .ipane.active{display:block;}
+</style>
 </head>
 <body>
 
@@ -52,6 +59,7 @@
     <button type="button" class="nav-tab" data-sub="mi-ischios" onclick="showSub('mi-ischios')">🦵 Ischio-jambiers</button>
     <button type="button" class="nav-tab" data-sub="mi-tfl" onclick="showSub('mi-tfl')">🦵 Tenseur du fascia lata</button>
     <button type="button" class="nav-tab" data-sub="mi-piriforme" onclick="showSub('mi-piriforme')">🦵 Piriforme</button>
+    <button type="button" class="nav-tab" data-sub="mi-synthese" onclick="showSub('mi-synthese')">📊 Synthèse</button>
     <button type="button" class="nav-tab" data-sub="mi-quiz" onclick="showSub('mi-quiz')">🎯 Quiz général</button>
   </div>
 </nav>
@@ -63,7 +71,7 @@
 <div class="section-title">TEM et muscles posturaux — membre inférieur</div>
 <div class="section-sub">Rappel du protocole classique avant de passer muscle par muscle</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📌</div><div class="card-title">Protocole classique d’un muscle court (rappel)</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-mi-rappel"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('mi-rappel',0)">📌 Protocole classique d’un muscle cou…</button><button type="button" class="itab" data-i="1" onclick="showInner('mi-rappel',1)">⚖️ Aigu ou chronique ?</button></div><div class="ipane active" data-i="0"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📌</div><div class="card-title">Protocole classique d’un muscle court (rappel)</div></div><div class="card-body">
 <div class="tech-step"><div class="label">1 · Barrière motrice</div>Placer le muscle à sa <strong>BM</strong> (situation <strong>aiguë</strong>) ou <strong>un peu avant</strong> la BM (situation <strong>chronique</strong>).</div>
 <div class="tech-step"><div class="label">2 · Contraction isométrique</div><strong>≈ 20 % de la force</strong>, <strong>5 à 7 s</strong>, thérapeute qui s’oppose ; respiration biomécaniquement liée (apnée inspiratoire) si possible. Agonistes <em>ou</em> antagonistes (si l’agoniste est douloureux).</div>
 <div class="tech-step"><div class="label">3 · Relâchement</div>Relâcher <strong>progressivement</strong> (pas d’à-coup), sur un souffle.</div>
@@ -71,13 +79,13 @@
 <div class="tech-step"><div class="label">5 · Répéter</div>Jusqu’à ne plus obtenir de gain d’amplitude (au moins 1 répétition).</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">⚖️</div><div class="card-title">Aigu ou chronique ?</div></div><div class="card-body">
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">⚖️</div><div class="card-title">Aigu ou chronique ?</div></div><div class="card-body">
 <table class="grille-eval-table"><thead><tr><th></th><th>Situation aiguë</th><th>Situation chronique</th></tr></thead><tbody><tr><td>Définition</td><td>Douleur ou blessure ≤ 3 semaines, en remodelage</td><td>Muscle court/tendu installé</td></tr><tr><td>1ère contraction</td><td>À la <strong>barrière motrice</strong></td><td><strong>Un peu avant</strong> la BM</td></tr><tr><td>Après la contraction</td><td><strong>Nouvelle BM</strong></td><td><strong>Étirement</strong> au-delà de la BM, ≈ 30 s</td></tr><tr><td>Articulation</td><td>On applique toujours la logique de l’aigu : « ça relâche, ou pas »</td><td>—</td></tr></tbody></table>
 
 </div></div>
 <div class="info-box amber" style="margin-bottom:12px;"><strong>Test avant correction :</strong> on corrige un muscle seulement s’il est retrouvé <strong>court</strong> au test de tension/longueur. Pour chaque muscle : <strong>position du sujet</strong>, <strong>position du thérapeute</strong>, <strong>réalisation</strong> et <strong>interprétation</strong>.</div>
 <div class="info-box teal" style="margin-bottom:18px;">Chaque onglet suivant décrit <strong>un muscle</strong> (test + correction). Le cours indique que les techniques suivantes ne reprennent plus que les <strong>alternatives</strong> au protocole classique, qui reste valable. Le détail du protocole est dans l’onglet « Contractions » de la page <a href="tem-1-introduction.html#tem-contractions" style="color:var(--teal-700);font-weight:600;">Introduction</a>.</div>
-<div class="tech-card" id="gal-mi-rappel" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-mi-rappel')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 16 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p16.webp" target="_blank" rel="noopener"><img data-src="img/tem-p16.webp" alt="Cours TEM, page 16" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -86,13 +94,17 @@
 <div class="section-title">Gastrocnémiens et soléaire</div>
 <div class="section-sub">Test de tension/longueur et correction (jambe droite)</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-mi-mollet"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('mi-mollet',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('mi-mollet',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('mi-mollet',2)">🛠️ Correction</button><button type="button" class="itab" data-i="3" onclick="showInner('mi-mollet',3)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>Test</strong> : traction du talon + flexion dorsale (FD). Normal = <strong>90° sans force</strong> ; mollet court = la FD vers 90° demande de la force.</li><li><strong>Qui est court ?</strong> FD difficile genou fléchi → <strong>soléaire</strong> (mono-articulaire). FD difficile genou tendu mais facile genou fléchi → <strong>gastrocnémiens</strong>.</li><li><strong>Correction</strong> : le sujet force (≈ 20 %, 5–7 s) vers la <strong>flexion plantaire</strong>. <strong>Aigu</strong> : à la BM puis nouvelle BM. <strong>Chronique</strong> : avant la BM, puis étirement 30 s ; 2e contraction à la <strong>moitié</strong> de l’amplitude de FD.</li><li>Même protocole pour les deux : seule la position du genou change (<strong>fléchi = soléaire</strong>, <strong>tendu = gastrocnémiens</strong>). Agonistes douloureux → contracter les <strong>antagonistes</strong>.</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus, <strong>pieds dépassant le bord de la table</strong>.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Aux pieds du sujet, face à lui. <strong>Main externe</strong> (gauche) en berceau sous le talon, juste sous le tendon d’Achille (sans pression dessus). <strong>Main interne</strong> (droite) englobe délicatement le cou-de-pied, pouce sans pression sous la voûte plantaire (bord médial).</div></div></div>
 <div class="path-card" style=""><h4>Réalisation</h4><ul><li>La main gauche fait une <strong>traction du talon</strong> dans l’axe de la jambe</li><li>En même temps, la main droite pousse doucement le pied vers la verticale (légère pression céphalique sur la voûte plantaire)</li><li><strong>Normal</strong> : la flexion dorsale atteint <strong>90° sans force</strong></li><li><strong>Mollet court</strong> : la flexion dorsale vers 90° <strong>demande de la force</strong></li></ul></div>
 <h4 style="font-size:14px;font-weight:600;margin:4px 0 8px;">Quel muscle est en cause ?</h4><table class="grille-eval-table"><thead><tr><th>Test</th><th>Genou</th><th>Interprétation</th></tr></thead><tbody><tr><td>FD vers 90° demande de la force</td><td><strong>Fléchi</strong> (coussin)</td><td><strong>Soléaire court</strong> (muscle mono-articulaire : n’agit que sur la cheville)</td></tr><tr><td>FD difficile en extension, <strong>puis facile</strong> genou fléchi</td><td>Extension → flexion</td><td><strong>Gastrocnémiens courts</strong> (bi-articulaires)</td></tr></tbody></table>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Idem test.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Idem test.</div></div></div>
 <h4 style="font-size:14px;font-weight:600;margin:4px 0 8px;">Situation aiguë — contraction à la barrière motrice</h4><div class="tech-step"><div class="label">Étape 1</div>Amener la cheville en <strong>flexion dorsale</strong> jusqu’à la 1ère résistance = <strong>BM</strong>.</div>
 <div class="tech-step"><div class="label">Étape 2</div>Le sujet force DOUCEMENT (≈ 20 %) vers la <strong>flexion plantaire</strong>, 5 à 7 s (apnée inspiratoire possible).</div>
@@ -108,8 +120,8 @@
 </div></div>
 <div class="info-box amber" style="margin-bottom:12px;"><strong>Le protocole est identique</strong> pour les gastrocnémiens et le soléaire ; seule la position du genou change : <strong>soléaire court → genou fléchi</strong> ; <strong>gastrocnémiens courts → genou en extension</strong>.</div>
 <div class="info-box teal" style="margin-bottom:18px;"><strong>Si l’utilisation des agonistes est douloureuse</strong>, on peut contracter les <strong>antagonistes</strong>, avec les mêmes principes de positionnement (BM si aigu, avant la BM si chronique), de durée et de force.</div>
-<div class="tech-card" id="gal-mi-mollet" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-mi-mollet')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 16–18 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p16.webp" target="_blank" rel="noopener"><img data-src="img/tem-p16.webp" alt="Cours TEM, page 16" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p17.webp" target="_blank" rel="noopener"><img data-src="img/tem-p17.webp" alt="Cours TEM, page 17" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p18.webp" target="_blank" rel="noopener"><img data-src="img/tem-p18.webp" alt="Cours TEM, page 18" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-mi-mollet"></div>
+</div><div class="ipane" data-i="3"><div id="quiz-mi-mollet"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -118,15 +130,19 @@
 <div class="section-title">Muscles adducteurs</div>
 <div class="section-sub">Pectiné, court / long / grand adducteur — jambe droite</div>
 
+<div class="itabs-wrap" id="it-mi-adducteurs"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('mi-adducteurs',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('mi-adducteurs',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('mi-adducteurs',2)">🛠️ Correction</button><button type="button" class="itab" data-i="3" onclick="showInner('mi-adducteurs',3)">🛏️ Alternative</button><button type="button" class="itab" data-i="4" onclick="showInner('mi-adducteurs',4)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>Test</strong> : abduction jusqu’à la BM (effort ↑ main droite, tension adducteurs main gauche, <strong>EIAS qui part vers l’extérieur</strong>). Si <strong>≥ 45°</strong> avant la 1ère tension : test sans objet.</li><li><strong>Discriminer</strong> adducteurs / ischio-jambiers médiaux : à la BM, le sujet plie le genou. BM qui <strong>disparaît</strong> = ischios médiaux ; BM <strong>inchangée</strong> = adducteurs.</li><li><strong>Correction</strong> : ≈ 20 %, 5–7 s, vers la BM (adducteurs) ou à l’opposé (abducteurs) ; 2e BM (aigu) ou étirement jusqu’à 30 s (chronique) ; répéter jusqu’à <strong>45° d’abduction</strong>.</li><li>Position du genou : <strong>adducteurs = genou plié</strong> ; <strong>ischios médiaux = jambe tendue</strong>. Alternative si décubitus impossible : <strong>décubitus latéral</strong> opposé (éviter pivot du bassin).</li></ul></div>
+
+</div></div>
 <div class="info-box amber" style="margin-bottom:12px;"><strong>Avant-propos :</strong> l’abduction peut être limitée par les <strong>adducteurs</strong> (pectiné, court/long/grand adducteur) mais aussi par les <strong>ischio-jambiers médiaux</strong> (semi-tendineux, semi-membraneux). Il faut donc <strong>discriminer</strong> à qui appartient la limitation.</div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus, <strong>légèrement décalé vers le côté droit</strong> de la table (MI droit proche du bord) ; MI gauche très légèrement en abduction.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Face au sujet, <strong>entre la jambe à tester (droite) et la table</strong>. Main gauche soutient la jambe, main droite sur la face médiale de la cuisse.</div></div></div>
 <div class="path-card" style=""><h4>Réalisation</h4><ul><li>La main gauche fait une <strong>abduction</strong> jusqu’au 1er signe de tension (= <strong>BM</strong>), perçue par 3 éléments :</li><li>① main/bras droit : <strong>augmentation d’effort</strong> une fois la BM passée</li><li>② main gauche : tension perçue au niveau des adducteurs</li><li>③ signe visuel : l’<strong>EIAS</strong> se déplace vers l’extérieur</li></ul></div>
 <div class="info-box coral" style="margin-bottom:12px;"><strong>Si l’abduction atteint 45° (ou plus) avant la 1ère tension, le test n’a plus lieu d’être</strong> : aucune probabilité de retrouver un muscle court.</div>
 <h4 style="font-size:14px;font-weight:600;margin:4px 0 8px;">Adducteurs ou ischio-jambiers médiaux ?</h4><table class="grille-eval-table"><thead><tr><th>À la BM, le sujet plie le genou…</th><th>Conclusion</th></tr></thead><tbody><tr><td>La BM <strong>disparaît</strong> (plus d’abduction possible)</td><td>Restriction due aux <strong>ischio-jambiers médiaux</strong></td></tr><tr><td>La BM <strong>ne change pas</strong></td><td>Restriction due aux <strong>adducteurs</strong></td></tr></tbody></table>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Idem test.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Idem test.</div></div></div>
 <div class="tech-step"><div class="label">Étape 1</div>Le thérapeute maintient la jambe à la <strong>BM</strong> (aigu) ou <strong>un peu avant</strong> (chronique).</div>
 <div class="tech-step"><div class="label">Étape 2</div>Le sujet contracte doucement (≈ 20 %), 5–7 s : <strong>vers la BM</strong> (agonistes = adducteurs) ou <strong>à l’opposé</strong> (antagonistes = abducteurs).</div>
@@ -135,12 +151,12 @@
 <div class="info-box teal" style="margin-bottom:0;"><strong>Même mode opératoire</strong> pour les adducteurs et les ischio-jambiers médiaux ; seule la position du genou change : <strong>adducteurs → genou plié</strong>, pied pendant passivement hors de la table ; <strong>ischio-jambiers médiaux → jambe tendue</strong>.</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🛏️</div><div class="card-title">Alternative : décubitus latéral</div></div><div class="card-body">
+</div><div class="ipane" data-i="3"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🛏️</div><div class="card-title">Alternative : décubitus latéral</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li>Si une douleur ne permet pas le décubitus : sujet en <strong>décubitus latéral opposé au côté à traiter</strong> (décubitus latéral gauche pour des muscles droits)</li><li><strong>Éviter le pivotement du bassin et la latéro-flexion lombaire</strong></li><li>Thérapeute <strong>derrière</strong> le sujet : bras/main <strong>caudal</strong> contrôle et ressent la BM de la jambe (tendue ou fléchie) ; main <strong>crâniale</strong> appuie sur la face latérale du bassin pour le stabiliser</li></ul></div>
 
 </div></div>
-<div class="tech-card" id="gal-mi-adducteurs" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-mi-adducteurs')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 18–20 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p18.webp" target="_blank" rel="noopener"><img data-src="img/tem-p18.webp" alt="Cours TEM, page 18" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p19.webp" target="_blank" rel="noopener"><img data-src="img/tem-p19.webp" alt="Cours TEM, page 19" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p20.webp" target="_blank" rel="noopener"><img data-src="img/tem-p20.webp" alt="Cours TEM, page 20" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-mi-adducteurs"></div>
+</div><div class="ipane" data-i="4"><div id="quiz-mi-adducteurs"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -149,14 +165,18 @@
 <div class="section-title">Muscle ilio-psoas</div>
 <div class="section-sub">Test de Thomas, correction et méthode en procubitus</div>
 
+<div class="itabs-wrap" id="it-mi-psoas"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('mi-psoas',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('mi-psoas',1)">🔎 Test · de Thomas</button><button type="button" class="itab" data-i="2" onclick="showInner('mi-psoas',2)">🛠️ Correction · 1ère méthode</button><button type="button" class="itab" data-i="3" onclick="showInner('mi-psoas',3)">🛌 2e méthode</button><button type="button" class="itab" data-i="4" onclick="showInner('mi-psoas',4)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>Test de Thomas</strong> : jambe testée pendante ; normale = <strong>horizontale</strong>, extension ≈ <strong>10°</strong>, effet <strong>ressort</strong>. Psoas court = jambe en flexion ou pas d’extension ni de ressort.</li><li><strong>Droit fémoral d’abord</strong> : s’il est court en même temps que le psoas (tibia ≠ 90° avec la cuisse), on le traite en premier.</li><li><strong>Correction (Thomas)</strong> : BM vers l’extension + légère rotation interne ; le sujet pousse le genou <strong>vers le haut ET en rotation externe</strong> (psoas = fléchisseur + rotateur externe), 5–7 s ; étirement vers le sol ≈ 30 s.</li><li><strong>2e méthode en procubitus</strong> : coussin sous l’abdomen, doigts en L2–L3 pour sentir l’<strong>antépulsion</strong> lombaire ; élévation normale ≈ 10° (≈ 15 cm).</li></ul></div>
+
+</div></div>
 <div class="info-box amber" style="margin-bottom:12px;"><strong>Penser au droit fémoral !</strong> Si le psoas <em>et</em> le droit fémoral sont retrouvés courts, c’est le <strong>droit fémoral qui est traité en premier</strong>. Le psoas est fléchisseur <em>et</em> rotateur externe de hanche (insertion sur le petit trochanter).</div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Test de Thomas (jambe droite)</div></div><div class="card-body">
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Test de Thomas (jambe droite)</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus, le « coccyx » le plus proche du bord de la table. <strong>Jambe gauche</strong> en flexion totale de hanche et de genou, rapprochée du thorax. <strong>Jambe droite</strong> pendante dans le vide.</div></div></div>
 <table class="grille-eval-table"><thead><tr><th>Résultat</th><th>Interprétation</th></tr></thead><tbody><tr><td>Jambe testée <strong>horizontale</strong>, parallèle au sol ET amenable en <strong>extension (≈ 10°)</strong> ET <strong>effet ressort / rebond</strong></td><td><strong>Psoas normal</strong></td></tr><tr><td>Jambe en <strong>flexion</strong> (dépasse l’horizontale, au-dessus du plan de la table)</td><td><strong>Psoas court</strong></td></tr><tr><td>Jambe à l’horizontale mais <strong>pas d’extension</strong> ni de ressort</td><td><strong>Psoas court</strong></td></tr><tr><td>Jambe pendante, <strong>cuisse sous le niveau de la table</strong></td><td>Certaine <strong>laxité</strong> du psoas</td></tr></tbody></table>
 <div class="path-card" style="margin-bottom:0;"><h4>À repérer dans la même position</h4><ul><li><strong>Droit fémoral court</strong> si : le tibia ne fait pas passivement <strong>90°</strong> avec la cuisse, ou le genou s’étend quand on appuie sur la cuisse (rebond). Angle ≤ ≈ 50° : risque de blessure future des ischio-jambiers</li><li>Psoas <em>et</em> droit fémoral courts : la flexion passive du genou entraîne une <strong>extension compensatrice lombaire</strong> (lordose) et une ↑ de la flexion de hanche</li><li><strong>Sillon</strong> sur la face latérale de la cuisse + légère déviation externe de la jambe = <strong>TFL court</strong></li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction — 1ère méthode (Thomas)</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction — 1ère méthode (Thomas)</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Même position que le test de Thomas ; jambe non testée maintenue par le patient (ou pied sur le corps du thérapeute). Le pied de la jambe à traiter repose sur la cuisse du thérapeute.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Aux pieds du sujet, de côté ; sa jambe caudale (gauche) légèrement fléchie sert de support ; <strong>deux mains</strong> saisissent la cuisse du sujet.</div></div></div>
 <div class="tech-step"><div class="label">Étape 1</div>Partir d’une <strong>grande flexion de hanche + rotation externe</strong>. Chercher la 1ère BM vers l’<strong>extension</strong> et une légère <strong>rotation interne</strong> (aigu), ou démarrer un peu avant la BM avec une légère flexion de hanche (chronique).</div>
 <div class="tech-step"><div class="label">Étape 2</div>Le sujet force <strong>en même temps</strong> avec son genou vers le haut (empêché par les mains du thérapeute) et vers la <strong>rotation externe</strong> (pied contre la jambe du thérapeute), 5–7 s, avec ou sans aide respiratoire.</div>
@@ -164,13 +184,13 @@
 <div class="tech-step"><div class="label">Étape 4</div>Répéter jusqu’à ne plus obtenir d’allongement.</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🛌</div><div class="card-title">2e méthode : test et correction en procubitus</div></div><div class="card-body">
+</div><div class="ipane" data-i="3"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🛌</div><div class="card-title">2e méthode : test et correction en procubitus</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Procubitus, <strong>coussin sous l’abdomen</strong> (évite une hyperlordose) <em>ou</em> pied de la jambe non traitée au sol (lombaires neutres).</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Debout, <strong>côté opposé</strong> à la jambe à traiter. Main caudale (droite) en berceau juste au-dessus de la patella. <strong>Talon de la main crâniale</strong> sur la face dorsale du sacrum ou la tubérosité ischiatique (stabilise le bassin) ; doigts sur le rachis lombaire <strong>L2–L3</strong> pour sentir l’<strong>antépulsion</strong> des vertèbres quand le psoas est étiré au-delà de la BM.</div></div></div>
 <div class="path-card" style="margin-bottom:0;"><ul><li><strong>Test</strong> : lever la jambe de la table. Un psoas normal permet ≈ <strong>10° d’extension (≈ 15 cm)</strong> avant résistance ; une tension précoce s’accompagne d’une antériorité lombaire</li><li><strong>Correction</strong> si résistance avant 10° : travailler depuis cette position (aigu) ou plus bas (chronique). Le sujet force progressivement (≈ 20 %) avec jambe/genou <strong>vers la table</strong>, 5–7 s, puis même protocole</li><li>Étirement chronique <strong>progressif</strong>, en écoute avec la main crâniale : <strong>aucune extension lombaire</strong> ne doit se produire ; la pression sur le sacrum contrôle le bassin</li></ul></div>
 
 </div></div>
-<div class="tech-card" id="gal-mi-psoas" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-mi-psoas')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 21–23 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p21.webp" target="_blank" rel="noopener"><img data-src="img/tem-p21.webp" alt="Cours TEM, page 21" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p22.webp" target="_blank" rel="noopener"><img data-src="img/tem-p22.webp" alt="Cours TEM, page 22" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p23.webp" target="_blank" rel="noopener"><img data-src="img/tem-p23.webp" alt="Cours TEM, page 23" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-mi-psoas"></div>
+</div><div class="ipane" data-i="4"><div id="quiz-mi-psoas"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -179,24 +199,28 @@
 <div class="section-title">Muscle droit fémoral</div>
 <div class="section-sub">Test et correction en procubitus, alternative excentrique</div>
 
+<div class="itabs-wrap" id="it-mi-droit-femoral"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('mi-droit-femoral',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('mi-droit-femoral',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('mi-droit-femoral',2)">🛠️ Correction</button><button type="button" class="itab" data-i="3" onclick="showInner('mi-droit-femoral',3)">🐌 Alternative</button><button type="button" class="itab" data-i="4" onclick="showInner('mi-droit-femoral',4)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li>Muscle <strong>poly-articulaire</strong> : extension du genou + flexion de hanche.</li><li><strong>Test</strong> (procubitus) : talon vers la fesse. <strong>Difficile</strong> → droit fémoral court (testable aussi avec le test de Thomas : tibia ≠ 90° avec la cuisse).</li><li><strong>Correction</strong> : le sujet ramène le <strong>genou vers la table</strong> (flexion de hanche) <em>et</em> <strong>allonge la jambe</strong> (extension du genou), 5–7 s, puis BM ou étirement.</li><li><strong>Alternative chronique</strong> : contractions isotoniques <strong>excentriques lentes des ischio-jambiers</strong> (tonifie les ischios, inhibe le quadriceps).</li></ul></div>
+
+</div></div>
 <div class="info-box teal" style="margin-bottom:12px;">Le droit fémoral est <strong>poly-articulaire</strong> : on utilise son action d’<strong>extension du genou</strong> et de <strong>flexion de hanche</strong>. Son test peut se faire avec le test de Thomas (voir onglet Ilio-psoas) ou en procubitus (ci-dessous).</div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Procubitus, si possible avec un <strong>coussin sous l’abdomen</strong> (évite l’hyperlordose).</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Debout, <strong>côté de la jambe à traiter</strong>. Main crâniale (droite pour une jambe droite) sur la face dorsale du <strong>sacrum / tubérosité ischiatique</strong> (stabilise le bassin). Main caudale saisit la <strong>cheville</strong> ou soutient en berceau juste au-dessus de la rotule.</div></div></div>
 <div class="path-card" style=""><h4>Réalisation</h4><ul><li>Amener le genou en <strong>flexion</strong> (talon vers la fesse)</li><li>S’il est <strong>difficile</strong> d’amener le talon vers la fesse → <strong>droit fémoral court</strong></li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Même position que le test.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Même position que le test.</div></div></div>
 <div class="path-card" style=""><ul><li>Le sujet ramène en même temps le <strong>genou vers la table</strong> (flexion de hanche) et <strong>allonge la jambe</strong> (extension du genou)</li><li>Mêmes grandes étapes : respiration associée, contraction de 5–7 s, nouvelle BM ou étirement selon aigu/chronique…</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🐌</div><div class="card-title">Alternative (situation chronique) : contractions isotoniques excentriques lentes des ischio-jambiers</div></div><div class="card-body">
+</div><div class="ipane" data-i="3"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🐌</div><div class="card-title">Alternative (situation chronique) : contractions isotoniques excentriques lentes des ischio-jambiers</div></div><div class="card-body">
 <div class="path-card" style="margin-bottom:0;"><ul><li>Sujet en <strong>procubitus</strong>. Le thérapeute teste la BM du droit fémoral (talon vers la fesse)</li><li>Le patient <strong>maintient activement</strong> cette position (ischio-jambiers)</li><li>Le thérapeute <strong>allonge la jambe</strong> en demandant de garder la contraction des ischios, <strong>sans empêcher le mouvement</strong></li><li>Effet : <strong>tonifie les ischio-jambiers</strong> et <strong>inhibe le quadriceps</strong> (donc le droit fémoral), ou renforce la tolérance à l’étirement du quadriceps qui suit</li><li>Après la contraction, le talon est ramené vers la fesse pour procéder à l’étirement</li></ul></div>
 <div class="info-box coral" style="margin:12px 0 0;">Une fois le droit fémoral traité, <strong>ne pas oublier le psoas</strong> s’il avait été testé court.</div>
 
 </div></div>
-<div class="tech-card" id="gal-mi-droit-femoral" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-mi-droit-femoral')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 23–24 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p23.webp" target="_blank" rel="noopener"><img data-src="img/tem-p23.webp" alt="Cours TEM, page 23" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p24.webp" target="_blank" rel="noopener"><img data-src="img/tem-p24.webp" alt="Cours TEM, page 24" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-mi-droit-femoral"></div>
+</div><div class="ipane" data-i="4"><div id="quiz-mi-droit-femoral"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -205,20 +229,24 @@
 <div class="section-title">Muscles ischio-jambiers</div>
 <div class="section-sub">Deux tests (fibres hautes / basses), correction et alternatives</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test : 2 possibilités</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-mi-ischios"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('mi-ischios',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('mi-ischios',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('mi-ischios',2)">🛠️ Correction · protocole classique</button><button type="button" class="itab" data-i="3" onclick="showInner('mi-ischios',3)">🔁 Alternative</button><button type="button" class="itab" data-i="4" onclick="showInner('mi-ischios',4)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>2 tests</strong> : hanche en <strong>extension</strong> (fibres hautes ; flexion de hanche genou tendu, difficile vers ≈ 80°) et hanche en <strong>flexion</strong> (fibres basses ; extension du genou, tension sentie par la main crâniale).</li><li>Position de la jambe non testée : <strong>fléchie</strong> (pied à plat) si les fléchisseurs de hanche sont courts, sinon allongée.</li><li><strong>Protocole classique</strong> inchangé (BM/avant la BM, ≈ 20 %, 5–7 s, 2e BM ou étirement 30 s). <strong>Alternatives</strong> : via les <strong>antagonistes</strong> (extension du genou contre résistance) ou contraction isotonique excentrique lente du quadriceps.</li><li>À partir d’ici, le cours ne décrit plus que des <strong>alternatives</strong> au protocole classique, qui reste valable.</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test : 2 possibilités</div></div><div class="card-body">
 <div class="test-detail-grid">
 <div class="test-detail-item"><div class="label">1 · Hanche en extension → fibres <strong>hautes</strong></div><div class="value"><strong>Sujet</strong> : décubitus. Si les fléchisseurs de hanche sont courts : jambe non testée fléchie, pied à plat (bassin neutre) ; sinon jambe allongée.<br><strong>Thérapeute</strong> : debout côté jambe à traiter ; main crâniale en écoute sur la face postérieure de la jambe, main caudale englobe la partie distale de la jambe.<br><strong>Test</strong> : flexion de hanche genou en extension totale jusqu’à la BM. Élévation vers <strong>80°</strong> difficile → raccourcissement ; correction dans cette position.</div></div>
 <div class="test-detail-item"><div class="label">2 · Hanche en flexion → fibres <strong>basses</strong></div><div class="value"><strong>Sujet</strong> : décubitus ; jambe testée en <strong>flexion totale de hanche</strong> maintenue par le patient (doigts croisés derrière le haut de la cuisse).<br><strong>Thérapeute</strong> : debout côté jambe à traiter ; main crâniale en écoute sur la face postérieure de l’extrémité distale de la cuisse ; main caudale sous le talon.<br><strong>Test</strong> : extension du genou (talon vers le haut) jusqu’à une résistance ou une tension perçue par la main crâniale (partie basse des ischios). Correction dans cette position.</div></div>
 </div>
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction — protocole classique</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction — protocole classique</div></div><div class="card-body">
 <div class="tech-step"><div class="label">Étape 1</div>Rechercher la 1ère <strong>BM</strong> (aigu) ou un peu avant (chronique).</div>
 <div class="tech-step"><div class="label">Étape 2</div>Contraction progressive et faible (≈ <strong>20 %</strong>), <strong>5–7 s</strong>, avec respiration biomécaniquement liée.</div>
 <div class="tech-step"><div class="label">Étape 3</div><strong>Nouvelle BM</strong> (aigu) ou <strong>étirement passif</strong> non douloureux d’environ <strong>30 s</strong> (chronique).</div>
 <div class="tech-step"><div class="label">Étape 4</div>Reproduire jusqu’à ne plus gagner d’amplitude.</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🔁</div><div class="card-title">Alternative : ischio-jambiers « bas » via les antagonistes (jambe droite)</div></div><div class="card-body">
+</div><div class="ipane" data-i="3"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🔁</div><div class="card-title">Alternative : ischio-jambiers « bas » via les antagonistes (jambe droite)</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus. Jambe testée en flexion totale de hanche maintenue par le patient (doigts croisés derrière la cuisse) ; <strong>mollet sur l’épaule « côté table »</strong> du thérapeute.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Debout côté jambe à traiter, face au sujet. Main « côté table » sur la jambe non traitée (stabilité) ; main externe sur le <strong>tibia</strong> (stabilise et écoute la BM).</div></div></div>
 <div class="tech-step"><div class="label">Étape 1</div>Le sujet force doucement (≈ 20 %) vers l’<strong>extension du genou</strong> pendant que le thérapeute empêche le mouvement.</div>
 <div class="tech-step"><div class="label">Étape 2</div>Respiration appropriée.</div>
@@ -227,8 +255,8 @@
 <div class="info-box teal" style="margin-bottom:0;"><strong>Autre possibilité (isotonique excentrique lente du quadriceps)</strong> : le patient résiste faiblement à une flexion du genou induite par le thérapeute → étirement du quadriceps contracté (le tonifie). La longueur des ischios est ensuite retestée jambe tendue ; si besoin, étirement de 30 s jambe tendue avant de reproduire la contraction excentrique.</div>
 
 </div></div>
-<div class="tech-card" id="gal-mi-ischios" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-mi-ischios')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 25–27 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p25.webp" target="_blank" rel="noopener"><img data-src="img/tem-p25.webp" alt="Cours TEM, page 25" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p26.webp" target="_blank" rel="noopener"><img data-src="img/tem-p26.webp" alt="Cours TEM, page 26" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p27.webp" target="_blank" rel="noopener"><img data-src="img/tem-p27.webp" alt="Cours TEM, page 27" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-mi-ischios"></div>
+</div><div class="ipane" data-i="4"><div id="quiz-mi-ischios"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -237,12 +265,16 @@
 <div class="section-title">Tenseur du fascia lata (TFL)</div>
 <div class="section-sub">Test en décubitus latéral, correction en décubitus</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-mi-tfl"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('mi-tfl',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('mi-tfl',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('mi-tfl',2)">🛠️ Correction</button><button type="button" class="itab" data-i="3" onclick="showInner('mi-tfl',3)">🔁 Alternative</button><button type="button" class="itab" data-i="4" onclick="showInner('mi-tfl',4)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>Test</strong> : décubitus latéral, jambe en position neutre, genou fléchi à 90° puis lâché vers la table. TFL normal = <strong>le genou touche la table</strong> ; sinon sujet non détendu ou <strong>TFL court</strong>.</li><li><strong>Correction</strong> : BM en <strong>adduction</strong> (le TFL est abducteur) ; le sujet force doucement vers l’<strong>abduction</strong>, 5–7 s ; étirement vers l’adduction ≈ 30 s. <strong>Le bassin ne doit pas bouger</strong>.</li><li>Un TFL court peut être faible ou non. Un <strong>sillon latéral de la cuisse</strong> au test de Thomas évoque un TFL court.</li><li>Alternative : même technique en <strong>décubitus latéral</strong> (jambe à traiter sur la table, légère extension + adduction).</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus latéral <strong>gauche</strong> (pour une jambe droite), dos proche du bord. Jambe gauche fléchie, tenue par ses mains (doigts croisés). Jambe à tester en <strong>position neutre de hanche</strong>, soutenue par le thérapeute.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value"><strong>Derrière</strong> le patient. Main crâniale (gauche) en berceau sous la partie distale de la cuisse ; main caudale saisit la cheville.</div></div></div>
 <div class="path-card" style=""><h4>Réalisation</h4><ul><li>Maintenir la jambe en position neutre (sans abduction/adduction, ni en avant ou en arrière du tronc)</li><li>Fléchir le genou jusqu’à <strong>90°</strong> sans créer de flexion de hanche</li><li>En gardant la cheville, <strong>laisser le genou descendre vers la table</strong></li><li><strong>TFL normal</strong> : cuisse et genou descendent facilement jusqu’à ce que le genou touche la table</li><li>Cuisse qui reste en l’air → soit sujet non détendu, soit <strong>TFL court</strong> (qui peut être faible ou non)</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus. Jambe non traitée (gauche) en flexion de genou et de hanche ; <strong>jambe à traiter tendue sur la table, passant sous la jambe fléchie</strong>.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Debout, <strong>côté opposé</strong> à la jambe à traiter, au niveau du genou de la jambe fléchie. Main crâniale sur l’<strong>EIAS</strong> homolatérale (stabilité du bassin) ; le <strong>tronc</strong> contacte le genou fléchi (stabilise l’iliaque homolatéral au TFL) ; main caudale en berceau mollet/genou.</div></div></div>
 <div class="tech-step"><div class="label">Étape 1</div>Chercher la <strong>BM en adduction</strong> (le TFL est abducteur).</div>
 <div class="tech-step"><div class="label">Étape 2</div>Le sujet force doucement (≈ 20 %) vers l’<strong>abduction</strong>, le thérapeute s’opposant.</div>
@@ -251,12 +283,12 @@
 <div class="tech-step"><div class="label">Étape 5</div>Répéter jusqu’à ne plus obtenir de résultat.</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🔁</div><div class="card-title">Alternative : décubitus latéral</div></div><div class="card-body">
+</div><div class="ipane" data-i="3"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🔁</div><div class="card-title">Alternative : décubitus latéral</div></div><div class="card-body">
 <div class="path-card" style="margin-bottom:0;"><ul><li>Jambe à traiter sur la table ; l’autre jambe en flexion de hanche et de genou, <strong>devant</strong> la jambe à traiter</li><li>Thérapeute <strong>derrière</strong> le sujet</li><li>BM recherchée en amenant la jambe (côté table) en <strong>légère extension et adduction</strong> (vers le plafond), main crâniale sur le bassin (stabilise), main caudale sous la jambe/genou</li><li>Le sujet force <strong>vers la table</strong>…</li></ul></div>
 
 </div></div>
-<div class="tech-card" id="gal-mi-tfl" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-mi-tfl')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 28 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p28.webp" target="_blank" rel="noopener"><img data-src="img/tem-p28.webp" alt="Cours TEM, page 28" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-mi-tfl"></div>
+</div><div class="ipane" data-i="4"><div id="quiz-mi-tfl"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -265,29 +297,47 @@
 <div class="section-title">Muscle piriforme</div>
 <div class="section-sub">Tests (étirement, FARI), correction et compression ischémique</div>
 
+<div class="itabs-wrap" id="it-mi-piriforme"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('mi-piriforme',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('mi-piriforme',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('mi-piriforme',2)">🔎 2e méthode</button><button type="button" class="itab" data-i="3" onclick="showInner('mi-piriforme',3)">🛠️ Correction · procubitus</button><button type="button" class="itab" data-i="4" onclick="showInner('mi-piriforme',4)">🥚 Autre méthode</button><button type="button" class="itab" data-i="5" onclick="showInner('mi-piriforme',5)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li>Le piriforme est <strong>rotateur externe jusqu’à 60° de flexion de hanche</strong>, puis devient <strong>rotateur interne</strong>.</li><li><strong>Test 1</strong> : genou amené vers l’intérieur (flexion de genou &lt; 60°, jambe croisée) → amplitude limitée + gêne derrière le grand trochanter. <strong>Test 2 : FARI/FAIR</strong> (Flexion, Adduction, Rotation Interne) : positif si <strong>douleur de type sciatique</strong>.</li><li><strong>Correction</strong> (procubitus, genou à 90°) : BM en amenant le pied vers l’extérieur ; le sujet force le pied vers l’<strong>intérieur</strong> (= rotation externe).</li><li><strong>Autre méthode</strong> : <strong>compression ischémique</strong> au coude derrière le grand trochanter, en <strong>alternance</strong> avec la contraction (pression pendant le maintien de l’étirement, relâchée pendant la contraction).</li></ul></div>
+
+</div></div>
 <div class="info-box amber" style="margin-bottom:12px;"><strong>Rappel :</strong> le piriforme est <strong>rotateur externe jusqu’à 60° de flexion de hanche</strong> ; au-delà de cet angle, il devient <strong>rotateur interne</strong>.</div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value"><strong>1ère méthode</strong> — Décubitus. Jambe non traitée tendue. Jambe à traiter : genou fléchi (&lt; 60°), croise l’autre jambe, pied posé sur la table du côté latéral de la jambe tendue.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Côté de la jambe à traiter. Avant-bras et main crâniale sur les <strong>deux EIAS</strong> (stabilise le bassin) ; main caudale au niveau du genou.</div></div></div>
 <div class="path-card" style=""><h4>Réalisation</h4><ul><li>Amener le genou <strong>vers l’intérieur</strong> pour initier l’étirement du piriforme</li><li><strong>Piriforme court</strong> : mouvement limité et gêne décrite par le patient à la <strong>face postérieure du grand trochanter</strong></li><li>La correction peut se faire dans cette même position : le sujet force avec son genou <strong>vers l’extérieur</strong></li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">2e méthode : test de FARI (FAIR)</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">2e méthode : test de FARI (FAIR)</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus latéral <strong>opposé</strong> à la jambe à tester. Jambe non traitée tendue. Jambe à traiter posée sur l’autre : hanche en flexion (60°), genou entre 60 et 90°.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value"><strong>Devant</strong> le sujet. Main crâniale sur la face latérale de l’iliaque (côté du piriforme testé) ; main caudale au genou.</div></div></div>
 <div class="path-card" style="margin-bottom:0;"><ul><li><strong>F</strong>lexion, <strong>A</strong>dduction, <strong>R</strong>otation <strong>I</strong>nterne de hanche : la main crâniale stabilise, l’autre appuie sur le genou vers la table</li><li>Test <strong>positif</strong> si une <strong>douleur de type sciatique</strong> est déclenchée lors de l’appui</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction — procubitus</div></div><div class="card-body">
+</div><div class="ipane" data-i="3"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction — procubitus</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">En <strong>procubitus</strong>.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Côté du piriforme à traiter. Main et bras/aisselle caudaux maintiennent le genou à <strong>90° de flexion</strong> ; main crâniale sur l’<strong>EIPS</strong> et l’os iliaque homolatéral.</div></div></div>
 <div class="path-card" style="margin-bottom:0;"><ul><li><strong>BM</strong> recherchée en amenant le pied vers l’<strong>extérieur</strong></li><li>Le sujet force avec sa jambe/pied <strong>vers l’intérieur</strong>, contre le bras du thérapeute, pour créer une rotation externe</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🥚</div><div class="card-title">Autre méthode : compression ischémique</div></div><div class="card-body">
+</div><div class="ipane" data-i="4"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🥚</div><div class="card-title">Autre méthode : compression ischémique</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus latéral <strong>opposé</strong> au piriforme à traiter, le plus près possible du bord antérieur de la table. Les deux jambes en flexion de hanche et de genou (genoux hors de la table).</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Sur le côté du sujet, face à lui. Tronc contre le bassin (stabilise). Main caudale saisit la cheville de la jambe du dessus (= jambe à traiter). <strong>Coude crânial légèrement en arrière du grand trochanter</strong>, au niveau de l’insertion du piriforme.</div></div></div>
 <div class="path-card" style="margin-bottom:0;"><ul><li>BM recherchée en amenant le pied <strong>vers le haut</strong> ; le sujet force <strong>vers le bas</strong> (la table)</li><li>L’appui est <strong>inconfortable mais ne doit pas être douloureux</strong></li><li>Protocole TEM habituel (BM, aigu/chronique, respiration) avec <strong>alternance</strong> : le thérapeute maintient l’étirement et appuie avec le coude <strong>5 s</strong> ; quand le sujet force isométriquement vers le bas, il <strong>relâche la pression sans perdre le contact</strong></li></ul></div>
 
 </div></div>
-<div class="tech-card" id="gal-mi-piriforme" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-mi-piriforme')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 29–31 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p29.webp" target="_blank" rel="noopener"><img data-src="img/tem-p29.webp" alt="Cours TEM, page 29" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p30.webp" target="_blank" rel="noopener"><img data-src="img/tem-p30.webp" alt="Cours TEM, page 30" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p31.webp" target="_blank" rel="noopener"><img data-src="img/tem-p31.webp" alt="Cours TEM, page 31" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-mi-piriforme"></div>
+</div><div class="ipane" data-i="5"><div id="quiz-mi-piriforme"></div>
+</div></div>
+<div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
+
+</section>
+
+<section class="section" id="mi-synthese" style="display:none;">
+<div class="section-title">Synthèse du membre inférieur</div>
+<div class="section-sub">Tableau récapitulatif des tests et corrections</div>
+
+<div class="itabs-wrap" id="it-mi-synthese"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('mi-synthese',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('mi-synthese',1)">📊 Vue d’ensemble</button></div><div class="ipane active" data-i="0"><div class="info-box teal" style="margin-top:0;">Tableau de révision rapide. Le <strong>protocole classique</strong> s’applique partout : ≈ 20 % de force, 5–7 s, à la BM (aigu) ou un peu avant (chronique), puis nouvelle BM ou étirement ≈ 30 s.</div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:0;"><div class="card-header"><div class="card-icon navy">📊</div><div class="card-title">Vue d’ensemble</div></div><div class="card-body">
+<table class="grille-eval-table"><thead><tr><th>Muscle</th><th>Test (court si…)</th><th>Correction (le sujet force vers…)</th></tr></thead><tbody><tr><td><strong>Mollet</strong></td><td>FD du pied &lt; 90° sans force ; genou fléchi = soléaire, tendu = gastrocnémiens</td><td>Flexion plantaire</td></tr><tr><td><strong>Adducteurs</strong></td><td>Abduction &lt; 45° avant la 1ère tension ; EIAS qui part</td><td>Adduction (genou plié) ; abduction pour les abducteurs</td></tr><tr><td><strong>Psoas</strong></td><td>Thomas : jambe non horizontale, extension &lt; 10°, pas de ressort</td><td>Genou vers le haut + rotation externe</td></tr><tr><td><strong>Droit fémoral</strong></td><td>Procubitus : talon vers la fesse difficile ; tibia ≠ 90° au Thomas</td><td>Genou vers la table + extension du genou</td></tr><tr><td><strong>Ischio-jambiers</strong></td><td>Flexion de hanche genou tendu (≈ 80°) ; extension du genou hanche fléchie</td><td>Flexion du genou / extension de hanche (ou antagonistes)</td></tr><tr><td><strong>TFL</strong></td><td>Décubitus latéral : le genou ne touche pas la table</td><td>Abduction (BM en adduction)</td></tr><tr><td><strong>Piriforme</strong></td><td>Genou vers l’intérieur limité ; FARI positif (sciatalgie)</td><td>Pied vers l’intérieur (= rotation externe)</td></tr></tbody></table>
+
+</div></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -296,7 +346,7 @@
 <div class="section-title">Quiz général — TEM du membre inférieur</div>
 <div class="section-sub">Toutes les questions des onglets de cette page, dans un ordre aléatoire à chaque chargement</div>
 
-<div class="info-box teal" style="margin-top:0;">Clique sur une réponse pour la valider. Les questions « réponse courte » se corrigent avec le bouton <strong>Voir la réponse</strong> : essaie de répondre à voix haute d’abord. Le score n’est pas enregistré.</div>
+<!--BLK|info|teal||--><div class="info-box teal" style="margin-top:0;">Clique sur une réponse pour la valider. Les questions « réponse courte » se corrigent avec le bouton <strong>Voir la réponse</strong> : essaie de répondre à voix haute d’abord. Le score n’est pas enregistré.</div>
 <div id="quiz-general"></div>
 
 </section>
@@ -678,7 +728,7 @@
  ]
 };
 
-  var LOCAL_IDS = ["mi-rappel","mi-mollet","mi-adducteurs","mi-psoas","mi-droit-femoral","mi-ischios","mi-tfl","mi-piriforme","mi-quiz"];
+  var LOCAL_IDS = ["mi-rappel","mi-mollet","mi-adducteurs","mi-psoas","mi-droit-femoral","mi-ischios","mi-tfl","mi-piriforme","mi-synthese","mi-quiz"];
   var SUB_LABELS_LOCAL = {
     "mi-rappel": "📌 Rappel du protocole",
     "mi-mollet": "🦵 Mollet",
@@ -688,6 +738,7 @@
     "mi-ischios": "🦵 Ischio-jambiers",
     "mi-tfl": "🦵 Tenseur du fascia lata",
     "mi-piriforme": "🦵 Piriforme",
+    "mi-synthese": "📊 Synthèse",
     "mi-quiz": "🎯 Quiz général"
   };
 
@@ -711,6 +762,13 @@
     if (crumb) crumb.textContent = '› ' + (SUB_LABELS_LOCAL[id] || id);
     if (history.replaceState) history.replaceState(null, '', '#' + id);
     if (!keepScroll) window.scrollTo({ top: 0 });
+  }
+
+  function showInner(uid, i) {
+    var w = document.getElementById('it-' + uid);
+    if (!w) return;
+    w.querySelectorAll(':scope > .itabs > .itab').forEach(function (b) { b.classList.toggle('active', +b.dataset.i === i); });
+    w.querySelectorAll(':scope > .ipane').forEach(function (p) { p.classList.toggle('active', +p.dataset.i === i); });
   }
 
   /* Planches du cours : les images ne se chargent qu'à l'ouverture de l'accordéon */

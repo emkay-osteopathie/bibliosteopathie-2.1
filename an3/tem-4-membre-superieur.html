@@ -14,6 +14,13 @@
 <link rel="stylesheet" href="../assets/shared.css">
 <link rel="stylesheet" href="../assets/nav.css">
 <link rel="stylesheet" href="../assets/quiz.css">
+<style>
+  .itabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px;padding-bottom:12px;border-bottom:1px solid var(--navy-200);}
+  .itab{font-family:inherit;font-size:12.5px;font-weight:600;color:var(--navy-600);background:#fff;border:1px solid var(--navy-200);border-radius:999px;padding:7px 14px;cursor:pointer;transition:all .15s;}
+  .itab:hover{border-color:var(--teal-500);color:var(--teal-700);}
+  .itab.active{background:var(--teal-600);border-color:var(--teal-600);color:#fff;}
+  .ipane{display:none;} .ipane.active{display:block;}
+</style>
 </head>
 <body>
 
@@ -53,7 +60,9 @@
     <button type="button" class="nav-tab" data-sub="ms-sous-scapulaire" onclick="showSub('ms-sous-scapulaire')">💪 Sous-scapulaire</button>
     <button type="button" class="nav-tab" data-sub="ms-biceps" onclick="showSub('ms-biceps')">💪 Biceps brachial</button>
     <button type="button" class="nav-tab" data-sub="ms-brachial" onclick="showSub('ms-brachial')">💪 Brachial</button>
-    <button type="button" class="nav-tab" data-sub="ms-poignet" onclick="showSub('ms-poignet')">💪 Fléchisseurs / extenseurs du poignet</button>
+    <button type="button" class="nav-tab" data-sub="ms-flechisseurs" onclick="showSub('ms-flechisseurs')">💪 Fléchisseurs du poignet</button>
+    <button type="button" class="nav-tab" data-sub="ms-extenseurs" onclick="showSub('ms-extenseurs')">💪 Extenseurs du poignet</button>
+    <button type="button" class="nav-tab" data-sub="ms-synthese" onclick="showSub('ms-synthese')">📊 Synthèse</button>
     <button type="button" class="nav-tab" data-sub="ms-quiz" onclick="showSub('ms-quiz')">🎯 Quiz général</button>
   </div>
 </nav>
@@ -65,7 +74,7 @@
 <div class="section-title">TEM et muscles posturaux — membre supérieur</div>
 <div class="section-sub">Rappel du protocole classique avant de passer muscle par muscle</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📌</div><div class="card-title">Protocole classique d’un muscle court (rappel)</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-ms-rappel"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('ms-rappel',0)">📌 Protocole classique d’un muscle cou…</button><button type="button" class="itab" data-i="1" onclick="showInner('ms-rappel',1)">⚖️ Aigu ou chronique ?</button></div><div class="ipane active" data-i="0"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📌</div><div class="card-title">Protocole classique d’un muscle court (rappel)</div></div><div class="card-body">
 <div class="tech-step"><div class="label">1 · Barrière motrice</div>Placer le muscle à sa <strong>BM</strong> (situation <strong>aiguë</strong>) ou <strong>un peu avant</strong> la BM (situation <strong>chronique</strong>).</div>
 <div class="tech-step"><div class="label">2 · Contraction isométrique</div><strong>≈ 20 % de la force</strong>, <strong>5 à 7 s</strong>, thérapeute qui s’oppose ; respiration biomécaniquement liée (apnée inspiratoire) si possible. Agonistes <em>ou</em> antagonistes (si l’agoniste est douloureux).</div>
 <div class="tech-step"><div class="label">3 · Relâchement</div>Relâcher <strong>progressivement</strong> (pas d’à-coup), sur un souffle.</div>
@@ -73,13 +82,13 @@
 <div class="tech-step"><div class="label">5 · Répéter</div>Jusqu’à ne plus obtenir de gain d’amplitude (au moins 1 répétition).</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">⚖️</div><div class="card-title">Aigu ou chronique ?</div></div><div class="card-body">
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">⚖️</div><div class="card-title">Aigu ou chronique ?</div></div><div class="card-body">
 <table class="grille-eval-table"><thead><tr><th></th><th>Situation aiguë</th><th>Situation chronique</th></tr></thead><tbody><tr><td>Définition</td><td>Douleur ou blessure ≤ 3 semaines, en remodelage</td><td>Muscle court/tendu installé</td></tr><tr><td>1ère contraction</td><td>À la <strong>barrière motrice</strong></td><td><strong>Un peu avant</strong> la BM</td></tr><tr><td>Après la contraction</td><td><strong>Nouvelle BM</strong></td><td><strong>Étirement</strong> au-delà de la BM, ≈ 30 s</td></tr><tr><td>Articulation</td><td>On applique toujours la logique de l’aigu : « ça relâche, ou pas »</td><td>—</td></tr></tbody></table>
 
 </div></div>
 <div class="info-box amber" style="margin-bottom:12px;"><strong>Test avant correction :</strong> on corrige un muscle seulement s’il est retrouvé <strong>court</strong> au test de tension/longueur. Pour chaque muscle : <strong>position du sujet</strong>, <strong>position du thérapeute</strong>, <strong>réalisation</strong> et <strong>interprétation</strong>.</div>
 <div class="info-box teal" style="margin-bottom:18px;">Chaque onglet suivant décrit <strong>un muscle</strong> (test + correction). Le cours indique que les techniques suivantes ne reprennent plus que les <strong>alternatives</strong> au protocole classique, qui reste valable. Le détail du protocole est dans l’onglet « Contractions » de la page <a href="tem-1-introduction.html#tem-contractions" style="color:var(--teal-700);font-weight:600;">Introduction</a>.</div>
-<div class="tech-card" id="gal-ms-rappel" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-ms-rappel')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 44 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p44.webp" target="_blank" rel="noopener"><img data-src="img/tem-p44.webp" alt="Cours TEM, page 44" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -88,24 +97,28 @@
 <div class="section-title">Muscle grand pectoral</div>
 <div class="section-sub">Observation, test palpatoire, 2 méthodes de correction</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Test</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-ms-grand-pectoral"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('ms-grand-pectoral',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('ms-grand-pectoral',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('ms-grand-pectoral',2)">🛠️ Correction · 1ère méthode : abduction vari…</button><button type="button" class="itab" data-i="3" onclick="showInner('ms-grand-pectoral',3)">📐 2e méthode</button><button type="button" class="itab" data-i="4" onclick="showInner('ms-grand-pectoral',4)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>Observation</strong> : épaules enroulées en avant (surtout si faisceau claviculaire court) ; en décubitus, une épaule plus en avant.</li><li><strong>Palpation</strong> selon l’abduction : bras à <strong>90° = faisceau claviculaire</strong> ; entre <strong>90° et 135° = faisceaux costaux et abdominaux</strong>.</li><li><strong>Correction</strong> : le sujet force vers l’<strong>adduction</strong> 5–7 s ; étirement <strong>en 2 temps</strong> (éloigner le bras du thorax avec l’aide du sujet, puis l’humérus sous le plan de la table), 30 s.</li><li><strong>2e méthode</strong> : bras à 90° d’abduction et coude à 90°, le sujet force vers l’adduction ; extension horizontale pour l’étirement.</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Test</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li><strong>Observation</strong> : si le grand pectoral est court (surtout le faisceau claviculaire), le sujet présente des <strong>épaules enroulées en avant</strong> ; en décubitus, <strong>une épaule en avant</strong> du thorax</li><li><strong>Palpatoire</strong> : sujet en décubitus ; on fait varier l’<strong>abduction du bras</strong> pour évaluer les différentes fibres</li></ul></div>
 <table class="grille-eval-table"><thead><tr><th>Abduction du bras</th><th>Fibres testées</th></tr></thead><tbody><tr><td><strong>90°</strong></td><td>Faisceau <strong>claviculaire</strong></td></tr><tr><td>Entre <strong>90° et 135°</strong></td><td>Faisceaux <strong>costaux et abdominaux</strong></td></tr></tbody></table>
 <div class="info-box teal" style="margin-bottom:0;">S’il est court : une <strong>tension</strong> est perçue et le sujet rapporte une <strong>sensibilité</strong> des tissus palpés.</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Correction — 1ère méthode : abduction variable selon les fibres</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Correction — 1ère méthode : abduction variable selon les fibres</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus, l’épaule homolatérale <strong>en dehors de la table</strong> (extension horizontale du bras sous le plan de la table). Main controlatérale à hauteur des fibres à traiter (claviculaires, sternales ou costales).</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Côté du grand pectoral. Une main saisit le bras pour placer le <strong>grand axe de l’humérus dans l’axe des fibres</strong> à traiter (ou celles avec un point gâchette) ; l’autre main sur la main du sujet posée sur le pectoral (stabilise).</div></div></div>
 <div class="path-card" style="margin-bottom:0;"><ul><li>Une fois la BM trouvée, le sujet force contre la résistance en <strong>adduction du bras</strong>, <strong>5–7 s</strong></li><li>Il relâche sur un souffle ; au 2e souffle, étirement maintenu <strong>30 s</strong> en <strong>2 temps</strong> (évite une contrainte trop forte sur l’épaule) : <strong>1)</strong> bras éloigné du thorax avec l’aide du sujet (abduction) ; <strong>2)</strong> étirement pur en amenant doucement l’humérus <strong>sous le plan de la table</strong></li><li>Reproduit 1 ou 2 fois. La position du thérapeute peut varier (face au sujet ou à sa tête) : l’essentiel est la <strong>position du bras</strong></li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">📐</div><div class="card-title">2e méthode : abduction à 90°</div></div><div class="card-body">
+</div><div class="ipane" data-i="3"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">📐</div><div class="card-title">2e méthode : abduction à 90°</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus, épaule homolatérale hors de la table. Bras à <strong>90° d’abduction</strong> et coude à <strong>90° de flexion</strong>. Main controlatérale sur le sternum.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Côté du grand pectoral, <strong>face au sujet</strong>, à hauteur de son bassin. Avant-bras externe sur la face antérieure de l’avant-bras du sujet, main au poignet. Main « côté table » sur la face antérieure de l’épaule/pectoral (fixe la région).</div></div></div>
 <div class="path-card" style="margin-bottom:0;"><ul><li>Le sujet force doucement vers l’<strong>adduction</strong> avec son avant-bras</li><li>Après la contraction : <strong>extension horizontale</strong> du bras pour étirer le pectoral, <strong>30 s</strong></li><li>Répéter au moins une fois de plus</li></ul></div>
 
 </div></div>
-<div class="tech-card" id="gal-ms-grand-pectoral" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-ms-grand-pectoral')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 44–45 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p44.webp" target="_blank" rel="noopener"><img data-src="img/tem-p44.webp" alt="Cours TEM, page 44" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p45.webp" target="_blank" rel="noopener"><img data-src="img/tem-p45.webp" alt="Cours TEM, page 45" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-ms-grand-pectoral"></div>
+</div><div class="ipane" data-i="4"><div id="quiz-ms-grand-pectoral"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -114,8 +127,12 @@
 <div class="section-title">Muscle petit pectoral</div>
 <div class="section-sub">Test et correction en décubitus latéral</div>
 
+<div class="itabs-wrap" id="it-ms-petit-pectoral"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('ms-petit-pectoral',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('ms-petit-pectoral',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('ms-petit-pectoral',2)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li>Élément majeur de l’<strong>épaule en avant</strong> : essentiel à traiter.</li><li><strong>Test</strong> (décubitus latéral, thérapeute dans le dos) : rétropulsion + ascension de l’épaule ; si <strong>difficile</strong> → petit pectoral court.</li><li><strong>Correction</strong> : le sujet amène l’épaule <strong>vers l’avant et le bas</strong> 7–10 s ; léger étirement (rétropulsion) 5–30 s ; répéter 1 à 2 fois.</li></ul></div>
+
+</div></div>
 <div class="info-box teal" style="margin-bottom:12px;">Le petit pectoral est un élément majeur dans une situation d’<strong>épaule en avant</strong> : il est essentiel de le traiter.</div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Test et correction</div></div><div class="card-body">
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Test et correction</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus latéral <strong>opposé</strong> au muscle à traiter, proche du <strong>bord postérieur</strong> de la table.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value"><strong>Dans le dos</strong> du sujet. Bras caudal passé sous le coude « côté plafond », main sur le pectoral à traiter (ou dans le creux axillaire au contact du muscle) ; main crâniale sur la face postérieure de la scapula.</div></div></div>
 <div class="tech-step"><div class="label">Test</div>Provoquer une <strong>rétropulsion et une ascension</strong> de l’épaule en ramenant les deux mains vers soi. Si l’épaule ne se déplace pas facilement vers l’arrière et le haut → <strong>petit pectoral possiblement court</strong>.</div>
 <div class="tech-step"><div class="label">Contraction</div>Le sujet amène son épaule <strong>vers l’avant (et le bas)</strong> pendant <strong>7 à 10 s</strong>.</div>
@@ -123,8 +140,8 @@
 <div class="tech-step"><div class="label">Répéter</div>1 à 2 fois de plus.</div>
 
 </div></div>
-<div class="tech-card" id="gal-ms-petit-pectoral" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-ms-petit-pectoral')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 46 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p46.webp" target="_blank" rel="noopener"><img data-src="img/tem-p46.webp" alt="Cours TEM, page 46" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-ms-petit-pectoral"></div>
+</div><div class="ipane" data-i="2"><div id="quiz-ms-petit-pectoral"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -133,23 +150,27 @@
 <div class="section-title">Muscle grand dorsal</div>
 <div class="section-sub">Tests (debout, décubitus), 2 méthodes de correction</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Test (plusieurs positions)</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-ms-grand-dorsal"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('ms-grand-dorsal',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('ms-grand-dorsal',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('ms-grand-dorsal',2)">🛠️ Correction · 1ère méthode</button><button type="button" class="itab" data-i="3" onclick="showInner('ms-grand-dorsal',3)">🛌 2e méthode</button><button type="button" class="itab" data-i="4" onclick="showInner('ms-grand-dorsal',4)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>Debout</strong>, tronc penché à l’horizontale : les bras ne pendent pas à la verticale (proches des jambes) → grand dorsal court ; confirmation : élévation du bras impossible sans effort <strong>avant que le coude dépasse l’occiput</strong>.</li><li><strong>Décubitus</strong>, bras au-dessus de la tête sur la table : <strong>coude dévié en latéral</strong>, extension incomplète → grand dorsal court (un bras qui ne se pose pas sans effort évoque aussi le grand pectoral).</li><li><strong>1re méthode</strong> (même position que la « banane » du carré des lombes) : le sujet amène le <strong>coude vers le sacrum</strong> et s’incline vers le côté traité, 5–7 s ; étirement 5–30 s.</li><li><strong>2e méthode</strong> : décubitus latéral, bras en abduction à la BM ; le sujet ramène le bras sur le corps ; étirement en 2 temps (comme le grand pectoral).</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Test (plusieurs positions)</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li><strong>Debout, penché en avant</strong> (tronc horizontal, bras relâchés) : si les bras ne pendent pas verticalement, restriction possible ; si un (ou deux) membre(s) pend(ent) <strong>près des jambes</strong> → grand dorsal court</li><li><strong>Confirmation</strong> : thérapeute devant, un côté à la fois ; une main stabilise la scapula, l’autre élève le bras vers la tête. Mouvement impossible sans effort/tension supplémentaire <strong>avant que le coude dépasse l’occiput</strong> → grand dorsal court</li><li><strong>En décubitus</strong> : bras au-dessus de la tête sur la table ; normalement ils sont horizontaux près du niveau de l’épaule avec une bonne longueur au contact de la table. Court : coude <strong>dévié latéralement</strong>, extension complète impossible</li></ul></div>
 <div class="info-box amber" style="margin-bottom:0;"><strong>Remarques :</strong> en position semi-fléchie, si le bras dépasse la verticale en pendant, le <strong>trapèze supérieur</strong> de ce bras est probablement court. En décubitus, un bras qui ne peut se poser sans effort indique un <strong>grand pectoral</strong> court.</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Correction — 1ère méthode (même position que la « banane » du carré des lombes)</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Correction — 1ère méthode (même position que la « banane » du carré des lombes)</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus. La jambe <strong>opposée</strong> au grand dorsal est croisée (par le thérapeute) sur la jambe homolatérale ; pieds éventuellement hors table. Main côté thérapeute au <strong>creux axillaire</strong> ; main côté grand dorsal <strong>derrière le cou/la tête</strong> pour saisir l’avant-bras crânial du thérapeute (coude vers le plafond).</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Côté opposé au grand dorsal. Main caudale (après avoir amené les jambes en inclinaison lombaire opposée) sur l’<strong>EIAS</strong> homolatérale ; main crâniale sous l’épaule, au creux axillaire (peut déborder sur le bord latéral du grand dorsal).</div></div></div>
 <div class="path-card" style="margin-bottom:0;"><ul><li>Le sujet amène doucement son <strong>coude vers son sacrum</strong> (vers son bassin) et <strong>s’incline vers le côté</strong> du grand dorsal traité, <strong>5–7 s</strong></li><li>Après relâchement, le thérapeute transfère son poids sur sa jambe caudale en reculant : étirement maintenu <strong>5 à 30 s</strong> ; répéter au moins une fois</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🛌</div><div class="card-title">2e méthode : décubitus latéral</div></div><div class="card-body">
+</div><div class="ipane" data-i="3"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon amber">🛌</div><div class="card-title">2e méthode : décubitus latéral</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus latéral, <strong>côté à traiter vers le plafond</strong>. Bras amené en abduction jusqu’à la BM, coude fléchi, main posée sur la tête.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value"><strong>À la tête</strong> du sujet. Main crâniale saisit le relief de l’épaule ; main caudale stabilise l’arrière du thorax ou la crête iliaque (et ressent la contraction/tension du grand dorsal).</div></div></div>
 <div class="path-card" style="margin-bottom:0;"><ul><li>Le sujet ramène doucement le bras/coude <strong>vers le bas</strong> (sur le corps), <strong>5–7 s</strong></li><li>Le thérapeute augmente l’abduction (nouvelle BM ou étirement) en stabilisant, en <strong>2 temps</strong> comme pour le grand pectoral : <strong>1)</strong> mouvement opposé des mains pour mettre le grand dorsal en tension ; <strong>2)</strong> mouvement vers le sol par flexion de ses genoux</li><li>Répéter au moins une fois</li></ul></div>
 
 </div></div>
-<div class="tech-card" id="gal-ms-grand-dorsal" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-ms-grand-dorsal')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 47–48 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p47.webp" target="_blank" rel="noopener"><img data-src="img/tem-p47.webp" alt="Cours TEM, page 47" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p48.webp" target="_blank" rel="noopener"><img data-src="img/tem-p48.webp" alt="Cours TEM, page 48" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-ms-grand-dorsal"></div>
+</div><div class="ipane" data-i="4"><div id="quiz-ms-grand-dorsal"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -158,19 +179,23 @@
 <div class="section-title">Muscle infra-épineux</div>
 <div class="section-sub">Deux méthodes de test, correction en rotation interne</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-ms-infra-epineux"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('ms-infra-epineux',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('ms-infra-epineux',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('ms-infra-epineux',2)">🛠️ Correction</button><button type="button" class="itab" data-i="3" onclick="showInner('ms-infra-epineux',3)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>Test 1</strong> : toucher le bord supérieur de l’omoplate opposée par-dessus la tête (rotation externe) : <strong>douloureux</strong> → infra-épineux court.</li><li><strong>Test 2</strong> : décubitus, épaule à 90° d’abduction, coude fléchi, avant-bras parallèle au tronc, paume vers le sol (rotation interne). Si <strong>l’avant-bras ne reste pas parallèle au sol</strong> (coude vers le sol) → court.</li><li><strong>Correction</strong> : BM en baissant l’avant-bras vers le sol (rotation interne) ; le sujet force (≈ 20 %) vers le haut 5–7 s ; puis plus de rotation interne.</li><li><strong>Attention</strong> : éviter que l’épaule ne <strong>s’élève de la table</strong> (faussé l’étirement).</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Décubitus (2e méthode), épaule à tester sur la table, <strong>90° d’abduction</strong>, coude fléchi (avant-bras parallèle au tronc), paume vers l’arrière (vers le sol) : cela crée une <strong>rotation interne</strong> et met l’infra-épineux (rotateur externe) en tension.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">À la tête du sujet, regardant vers les pieds ; main interne appuie légèrement sur l’épaule pour la maintenir sur la table.</div></div></div>
 <div class="path-card" style=""><h4>Réalisation</h4><ul><li><strong>1ère méthode (sensation du sujet)</strong> : toucher avec la main le bord supérieur de l’omoplate opposée en passant par le haut et l’arrière (derrière la tête) = rotation externe de la tête humérale. Si l’effort est <strong>douloureux</strong> → raccourcissement envisagé</li><li><strong>2e méthode</strong> : si l’infra-épineux est court, le sujet <strong>n’arrive pas à maintenir son avant-bras parallèle au sol</strong> (le cours précise qu’il oriente alors son coude vers le sol)</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Même position que le test.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Idem test, avec la <strong>main externe sur l’avant-bras</strong> du sujet.</div></div></div>
 <div class="path-card" style=""><ul><li><strong>BM</strong> : baisser l’avant-bras vers le sol (rotation interne)</li><li>Le sujet force légèrement (<strong>≈ 20 %</strong>) avec l’avant-bras <strong>vers le haut</strong>, contre la résistance, <strong>5–7 s</strong></li><li>Puis, sur un souffle, l’avant-bras est amené <strong>vers le sol</strong> (aidé ou non par le sujet) pour augmenter la <strong>rotation interne</strong></li></ul></div>
 <div class="info-box coral" style="margin-bottom:0;">Lors de l’augmentation de la rotation interne, <strong>éviter que l’épaule ne s’élève de la table</strong> : cela fausserait l’étirement du muscle.</div>
 
 </div></div>
-<div class="tech-card" id="gal-ms-infra-epineux" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-ms-infra-epineux')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 49 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p49.webp" target="_blank" rel="noopener"><img data-src="img/tem-p49.webp" alt="Cours TEM, page 49" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-ms-infra-epineux"></div>
+</div><div class="ipane" data-i="3"><div id="quiz-ms-infra-epineux"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -179,18 +204,22 @@
 <div class="section-title">Muscle supra-épineux</div>
 <div class="section-sub">Test en position assise et correction</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-ms-supra-epineux"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('ms-supra-epineux',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('ms-supra-epineux',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('ms-supra-epineux',2)">🛠️ Correction</button><button type="button" class="itab" data-i="3" onclick="showInner('ms-supra-epineux',3)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>Test</strong> (assis, thérapeute derrière) : une main stabilise l’épaule, l’autre tient le coude ; bras amené en <strong>adduction</strong>, le sujet force vers l’<strong>abduction</strong> (coude vers l’extérieur).</li><li><strong>Douleur à l’arrière de l’épaule</strong> lors de l’abduction → supra-épineux court.</li><li><strong>Correction</strong> : même positionnement, protocole classique (BM, contraction 5–7 s, aide respiratoire…).</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Phase de test — tension / longueur</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Assis.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Derrière le sujet. Une main stabilise l’épaule homolatérale au muscle ; l’autre saisit le coude du sujet.</div></div></div>
 <div class="path-card" style=""><h4>Réalisation</h4><ul><li>Le bras est amené en <strong>adduction</strong> ; le sujet force vers l’<strong>abduction</strong> (coude vers l’extérieur)</li><li><strong>Douleur à l’arrière de l’épaule</strong> au moment de l’abduction → <strong>raccourcissement du supra-épineux</strong> envisagé</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Même positionnement que le test.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Même positionnement que le test.</div></div></div>
 <div class="path-card" style="margin-bottom:0;"><ul><li>Protocole TEM habituel : <strong>BM</strong>, contraction <strong>5–7 s</strong>, aide respiratoire, nouvelle BM ou étirement selon aigu/chronique…</li></ul></div>
 
 </div></div>
-<div class="tech-card" id="gal-ms-supra-epineux" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-ms-supra-epineux')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 50 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p50.webp" target="_blank" rel="noopener"><img data-src="img/tem-p50.webp" alt="Cours TEM, page 50" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-ms-supra-epineux"></div>
+</div><div class="ipane" data-i="3"><div id="quiz-ms-supra-epineux"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -199,18 +228,22 @@
 <div class="section-title">Muscle sous-scapulaire</div>
 <div class="section-sub">Palpation directe, test visuel, correction en rotation externe</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Test — 2 méthodes</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-ms-sous-scapulaire"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('ms-sous-scapulaire',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('ms-sous-scapulaire',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('ms-sous-scapulaire',2)">🛠️ Correction</button><button type="button" class="itab" data-i="3" onclick="showInner('ms-sous-scapulaire',3)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>Test 1 – palpation</strong> : traction du bras (décubitus), l’autre main palpe en regard de la face ventrale de la scapula ; <strong>douleur</strong> → raccourcissement envisagé.</li><li><strong>Test 2 – visuel</strong> : bras à 90° d’abduction, coude à 90°, paume vers le plafond ; si l’avant-bras <strong>ne reste pas parallèle au sol</strong> → sous-scapulaire court (éviter toute antériorité de l’épaule).</li><li><strong>Correction</strong> (même position) : le sujet force doucement <strong>poignet vers le plafond</strong> 5–7 s ; puis <strong>rotation externe</strong> du bras au-delà de la BM, étirement ≤ 30 s.</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Test — 2 méthodes</div></div><div class="card-body">
 <div class="path-card" style=""><ul><li><strong>1ère méthode : palpation directe</strong> (une douleur d’épaule, de scapula ou de bras peut dépendre du sous-scapulaire). Sujet en décubitus : une main saisit le bras et crée une <strong>traction</strong>, l’autre palpe en regard de la <strong>face ventrale de la scapula</strong>. Douleur → raccourcissement envisagé</li><li><strong>2e méthode : test visuel</strong>. Décubitus, bras à <strong>90° d’abduction</strong>, coude à 90° de flexion, avant-bras parallèle au sol, paume vers l’avant (plafond). Si le bras <strong>ne peut rester dans cette position</strong> → sous-scapulaire court</li></ul></div>
 <div class="info-box coral" style="margin-bottom:0;"><strong>Attention :</strong> lors de la mise en place, prévenir toute <strong>antériorité de l’épaule</strong>, qui rendrait le test peu fiable.</div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Même position que le test.</div></div></div>
 <div class="path-card" style="margin-bottom:0;"><ul><li>Le sujet force doucement avec son <strong>poignet vers le plafond</strong>, <strong>5–7 s</strong></li><li>Après relâchement, le thérapeute augmente la <strong>rotation externe</strong> du bras au-delà de la BM pour créer un étirement de <strong>30 s maximum</strong></li></ul></div>
 
 </div></div>
-<div class="tech-card" id="gal-ms-sous-scapulaire" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-ms-sous-scapulaire')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 50–51 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p50.webp" target="_blank" rel="noopener"><img data-src="img/tem-p50.webp" alt="Cours TEM, page 50" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a><a href="img/tem-p51.webp" target="_blank" rel="noopener"><img data-src="img/tem-p51.webp" alt="Cours TEM, page 51" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-ms-sous-scapulaire"></div>
+</div><div class="ipane" data-i="3"><div id="quiz-ms-sous-scapulaire"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -219,17 +252,21 @@
 <div class="section-title">Muscle biceps brachial</div>
 <div class="section-sub">Tests (résistance, longue portion) et correction</div>
 
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Test</div></div><div class="card-body">
+<div class="itabs-wrap" id="it-ms-biceps"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('ms-biceps',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('ms-biceps',1)">🔎 Test</button><button type="button" class="itab" data-i="2" onclick="showInner('ms-biceps',2)">🛠️ Correction</button><button type="button" class="itab" data-i="3" onclick="showInner('ms-biceps',3)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li><strong>Test 1</strong> : <strong>douleur</strong> quand le bras semi-fléchi est élevé contre résistance → biceps « stressé », donc court.</li><li><strong>Test 2 (longue portion)</strong> : assis, bras rétropulsé et semi-fléchi, dos de la main devant la fesse controlatérale ; flexion contre résistance ; douleur = tendon stressé.</li><li><strong>Correction</strong> : le thérapeute utilise la <strong>pronation</strong> de l’avant-bras (tension ↑) ; le sujet contracte en <strong>supination</strong> ≈ 10 s ; puis plus de pronation + extension du coude ; plusieurs fois.</li></ul></div>
+
+</div></div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon navy">🔎</div><div class="card-title">Test</div></div><div class="card-body">
 <div class="path-card" style="margin-bottom:0;"><ul><li><strong>1ère méthode</strong> : biceps « stressé », donc court, si une <strong>douleur</strong> est présente quand le bras semi-fléchi est élevé <strong>contre résistance</strong></li><li><strong>2e méthode (longue portion)</strong> : sujet assis, bras <strong>rétropulsé</strong> et semi-fléchi, dos de la main en regard de la fesse controlatérale ; il fléchit le bras contre résistance. Douleur déclenchée → tendon stressé, biceps probablement court</li></ul></div>
 
 </div></div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
+</div><div class="ipane" data-i="2"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Phase de correction</div></div><div class="card-body">
 <div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Même position que le test.</div></div></div>
 <div class="path-card" style="margin-bottom:0;"><ul><li>Le thérapeute utilise une <strong>pronation de l’avant-bras</strong> pour augmenter la tension sur le muscle</li><li>Le sujet contracte en <strong>supination</strong> pendant environ <strong>10 s</strong></li><li>Après relâchement, le bras est amené dans une <strong>plus grande pronation</strong> et en <strong>extension du coude</strong></li><li>Réalisé plusieurs fois</li></ul></div>
 
 </div></div>
-<div class="tech-card" id="gal-ms-biceps" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-ms-biceps')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 51 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p51.webp" target="_blank" rel="noopener"><img data-src="img/tem-p51.webp" alt="Cours TEM, page 51" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-ms-biceps"></div>
+</div><div class="ipane" data-i="3"><div id="quiz-ms-biceps"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -238,32 +275,75 @@
 <div class="section-title">Muscle brachial</div>
 <div class="section-sub">Correction en pronation totale (biceps inhibé)</div>
 
+<div class="itabs-wrap" id="it-ms-brachial"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('ms-brachial',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('ms-brachial',1)">🛠️ Correction</button><button type="button" class="itab" data-i="2" onclick="showInner('ms-brachial',2)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li>Muscle <strong>mono-articulaire</strong> : si l’<strong>extension du bras</strong> est limitée, il peut en être la cause.</li><li><strong>Correction</strong> : amener le bras vers l’<strong>extension</strong> jusqu’à la BM, en <strong>pronation totale</strong> (pour inhiber l’action du biceps) ; le sujet force vers la <strong>flexion</strong>.</li></ul></div>
+
+</div></div>
 <div class="info-box teal" style="margin-bottom:12px;">Le brachial est un muscle <strong>mono-articulaire</strong>. Si l’<strong>extension du bras</strong> est limitée, il peut en être la cause.</div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Correction</div></div><div class="card-body">
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Correction</div></div><div class="card-body">
 <div class="path-card" style="margin-bottom:0;"><ul><li>Amener le bras vers l’<strong>extension</strong> pour trouver une <strong>BM</strong>, en <strong>pronation totale</strong> (pour inhiber l’action du biceps)</li><li>Le sujet force vers la <strong>flexion</strong>…</li><li>Suite du protocole TEM habituel (5–7 s, nouvelle BM ou étirement)</li></ul></div>
 
 </div></div>
-<div class="tech-card" id="gal-ms-brachial" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-ms-brachial')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 51 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p51.webp" target="_blank" rel="noopener"><img data-src="img/tem-p51.webp" alt="Cours TEM, page 51" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-ms-brachial"></div>
+</div><div class="ipane" data-i="2"><div id="quiz-ms-brachial"></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
 
-<section class="section" id="ms-poignet" style="display:none;">
-<div class="section-title">Muscles fléchisseurs et extenseurs du poignet</div>
-<div class="section-sub">Épicondyliens médiaux et latéraux, auto-traitement possible</div>
+<section class="section" id="ms-flechisseurs" style="display:none;">
+<div class="section-title">Muscles fléchisseurs du poignet</div>
+<div class="section-sub">Épicondyliens médiaux, auto-traitement possible</div>
 
-<div class="info-box teal" style="margin-bottom:12px;">Une douleur à l’<strong>épicondyle médial de l’humérus</strong> accompagne souvent une tension des muscles <strong>épicondyliens médiaux</strong> (fléchisseurs du poignet). Cette méthode peut être facilement <strong>auto-réalisée</strong> par le sujet.</div>
-<div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Correction</div></div><div class="card-body">
-<div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Assis.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Soutient le bras et <strong>fléchit totalement le coude</strong> du sujet.</div></div></div>
-<div class="tech-step"><div class="label">Fléchisseurs du poignet · BM</div>Amener une <strong>extension du poignet</strong> (paume vers le plafond) : la BM est trouvée par cette extension.</div>
-<div class="tech-step"><div class="label">Contraction</div>Le sujet force doucement vers la <strong>flexion</strong> pendant <strong>5–7 s</strong>.</div>
-<div class="tech-step"><div class="label">Progression</div>Augmenter l’extension du poignet, en respectant le protocole TEM.</div>
-<div class="info-box amber" style="margin-bottom:0;"><strong>Extenseurs du poignet</strong> : même logique. BM trouvée en allant vers la <strong>flexion du coude et du poignet</strong> ; contraction en <strong>extension</strong>.</div>
+<div class="itabs-wrap" id="it-ms-flechisseurs"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('ms-flechisseurs',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('ms-flechisseurs',1)">🛠️ Correction</button><button type="button" class="itab" data-i="2" onclick="showInner('ms-flechisseurs',2)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li>Une douleur à l’<strong>épicondyle médial</strong> accompagne souvent une tension des muscles épicondyliens médiaux (fléchisseurs du poignet).</li><li><strong>Correction</strong> (sujet assis) : coude <strong>totalement fléchi</strong>, bras soutenu, <strong>extension du poignet</strong> (paume vers le plafond) jusqu’à la BM ; le sujet force doucement vers la <strong>flexion</strong> 5–7 s ; puis extension du poignet ↑.</li><li>Technique <strong>auto-réalisable</strong> par le sujet.</li></ul></div>
 
 </div></div>
-<div class="tech-card" id="gal-ms-poignet" style="margin-bottom:18px;"><div class="tech-card-header" onclick="openGallery('gal-ms-poignet')"><div class="tech-card-name">📷 Illustrations du cours (planches du polycopié) <small>(p. 52 du polycopié — cliquer pour agrandir)</small></div><div class="test-toggle">▾</div></div><div class="tech-card-body"><a href="img/tem-p52.webp" target="_blank" rel="noopener"><img data-src="img/tem-p52.webp" alt="Cours TEM, page 52" style="width:100%;max-width:760px;display:block;margin:0 auto 12px;border:1px solid var(--border);border-radius:8px;background:#fff;"></a></div></div>
-<div id="quiz-ms-poignet"></div>
+<div class="info-box teal" style="margin-bottom:12px;">Une douleur à l’<strong>épicondyle médial de l’humérus</strong> accompagne souvent une tension des muscles <strong>épicondyliens médiaux</strong> (fléchisseurs du poignet). Cette méthode peut être facilement <strong>auto-réalisée</strong> par le sujet.</div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Correction</div></div><div class="card-body">
+<div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Assis.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Soutient le bras et <strong>fléchit totalement le coude</strong> du sujet.</div></div></div>
+<div class="tech-step"><div class="label">BM</div>Amener une <strong>extension du poignet</strong> (paume vers le plafond) : la BM est trouvée par cette extension.</div>
+<div class="tech-step"><div class="label">Contraction</div>Le sujet force doucement vers la <strong>flexion</strong> pendant <strong>5–7 s</strong>.</div>
+<div class="tech-step"><div class="label">Progression</div>Augmenter l’extension du poignet, en respectant le protocole TEM.</div>
+
+</div></div>
+</div><div class="ipane" data-i="2"><div id="quiz-ms-flechisseurs"></div>
+</div></div>
+<div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
+
+</section>
+
+<section class="section" id="ms-extenseurs" style="display:none;">
+<div class="section-title">Muscles extenseurs du poignet</div>
+<div class="section-sub">Épicondyliens latéraux, auto-traitement possible</div>
+
+<div class="itabs-wrap" id="it-ms-extenseurs"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('ms-extenseurs',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('ms-extenseurs',1)">🛠️ Correction</button><button type="button" class="itab" data-i="2" onclick="showInner('ms-extenseurs',2)">🎯 Quiz</button></div><div class="ipane active" data-i="0"><!--BLK|card|teal|📋|L’essentiel à retenir--><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon teal">📋</div><div class="card-title">L’essentiel à retenir</div></div><div class="card-body">
+<div class="path-card" style="margin-bottom:0;"><ul><li>Même logique que pour les fléchisseurs, inversée : douleur et tension des muscles <strong>épicondyliens latéraux</strong>.</li><li><strong>BM</strong> trouvée en allant vers la <strong>flexion du coude et du poignet</strong> ; le sujet contracte en <strong>extension</strong> 5–7 s ; puis flexion du poignet ↑ (protocole classique).</li><li>Technique <strong>auto-réalisable</strong> par le sujet.</li></ul></div>
+
+</div></div>
+<div class="info-box teal" style="margin-bottom:12px;">Même logique que pour les fléchisseurs, appliquée aux muscles <strong>épicondyliens latéraux</strong> (extenseurs du poignet).</div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:18px;"><div class="card-header"><div class="card-icon coral">🛠️</div><div class="card-title">Correction</div></div><div class="card-body">
+<div class="test-detail-grid"><div class="test-detail-item"><div class="label">Position du sujet</div><div class="value">Assis.</div></div><div class="test-detail-item"><div class="label">Position du thérapeute</div><div class="value">Soutient le bras ; coude et poignet amenés vers la <strong>flexion</strong>.</div></div></div>
+<div class="tech-step"><div class="label">BM</div>La BM est trouvée en allant vers la <strong>flexion du coude et du poignet</strong>.</div>
+<div class="tech-step"><div class="label">Contraction</div>Le sujet force doucement en <strong>extension</strong> pendant <strong>5–7 s</strong>.</div>
+<div class="tech-step"><div class="label">Progression</div>Augmenter la flexion du poignet, en respectant le protocole TEM.</div>
+
+</div></div>
+</div><div class="ipane" data-i="2"><div id="quiz-ms-extenseurs"></div>
+</div></div>
+<div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
+
+</section>
+
+<section class="section" id="ms-synthese" style="display:none;">
+<div class="section-title">Synthèse du membre supérieur</div>
+<div class="section-sub">Tableau récapitulatif des tests et corrections</div>
+
+<div class="itabs-wrap" id="it-ms-synthese"><div class="itabs"><button type="button" class="itab active" data-i="0" onclick="showInner('ms-synthese',0)">📋 En bref</button><button type="button" class="itab" data-i="1" onclick="showInner('ms-synthese',1)">📊 Vue d’ensemble</button></div><div class="ipane active" data-i="0"><div class="info-box teal" style="margin-top:0;">Tableau de révision rapide. Le <strong>protocole classique</strong> s’applique partout : ≈ 20 % de force, 5–7 s, à la BM (aigu) ou un peu avant (chronique), puis nouvelle BM ou étirement ≈ 30 s.</div>
+</div><div class="ipane" data-i="1"><div class="card" style="margin-bottom:0;"><div class="card-header"><div class="card-icon navy">📊</div><div class="card-title">Vue d’ensemble</div></div><div class="card-body">
+<table class="grille-eval-table"><thead><tr><th>Muscle</th><th>Test (court si…)</th><th>Correction (le sujet force vers…)</th></tr></thead><tbody><tr><td><strong>Grand pectoral</strong></td><td>Épaules enroulées ; palpation à 90° (claviculaire) / 90–135° (costal)</td><td>Adduction</td></tr><tr><td><strong>Petit pectoral</strong></td><td>Rétropulsion + ascension de l’épaule difficile</td><td>Épaule vers l’avant et le bas (7–10 s)</td></tr><tr><td><strong>Grand dorsal</strong></td><td>Bras près des jambes penché ; coude dévié en décubitus</td><td>Coude vers le sacrum + inclinaison</td></tr><tr><td><strong>Infra-épineux</strong></td><td>Main à l’omoplate opposée douloureuse ; avant-bras ne reste pas parallèle</td><td>Rotation externe (vers le haut)</td></tr><tr><td><strong>Supra-épineux</strong></td><td>Douleur postérieure à l’abduction</td><td>Abduction</td></tr><tr><td><strong>Sous-scapulaire</strong></td><td>Douleur à la palpation ; avant-bras ne reste pas parallèle</td><td>Poignet vers le plafond (rotation interne)</td></tr><tr><td><strong>Biceps</strong></td><td>Douleur à l’élévation contre résistance</td><td>Supination</td></tr><tr><td><strong>Brachial</strong></td><td>Extension du coude limitée</td><td>Flexion (pronation totale)</td></tr><tr><td><strong>Fléchisseurs / extenseurs du poignet</strong></td><td>Douleur épicondyle médial / latéral</td><td>Flexion / extension du poignet</td></tr></tbody></table>
+
+</div></div>
+</div></div>
 <div class="footnote">Source : cours « Techniques d’Énergie Musculaire (TEM) », Nicolas Acquié, 3e année 2026/2027, IEOQ.</div>
 
 </section>
@@ -272,7 +352,7 @@
 <div class="section-title">Quiz général — TEM du membre supérieur</div>
 <div class="section-sub">Toutes les questions des onglets de cette page, dans un ordre aléatoire à chaque chargement</div>
 
-<div class="info-box teal" style="margin-top:0;">Clique sur une réponse pour la valider. Les questions « réponse courte » se corrigent avec le bouton <strong>Voir la réponse</strong> : essaie de répondre à voix haute d’abord. Le score n’est pas enregistré.</div>
+<!--BLK|info|teal||--><div class="info-box teal" style="margin-top:0;">Clique sur une réponse pour la valider. Les questions « réponse courte » se corrigent avec le bouton <strong>Voir la réponse</strong> : essaie de répondre à voix haute d’abord. Le score n’est pas enregistré.</div>
 <div id="quiz-general"></div>
 
 </section>
@@ -599,7 +679,7 @@
    "a": "Une <strong>limitation de l’extension du bras (coude)</strong>."
   }
  ],
- "ms-poignet": [
+ "ms-flechisseurs": [
   {
    "t": "mcq",
    "q": "Une douleur à l’<strong>épicondyle médial</strong> accompagne souvent une tension de…",
@@ -625,6 +705,13 @@
    "e": "Paume vers le plafond."
   },
   {
+   "t": "open",
+   "q": "Cette technique peut-elle être pratiquée par le patient seul ?",
+   "a": "<strong>Oui</strong> : le cours précise que cette méthode peut être facilement <strong>auto-réalisée</strong> par le sujet."
+  }
+ ],
+ "ms-extenseurs": [
+  {
    "t": "mcq",
    "q": "Pour les <strong>extenseurs</strong>, vers quoi le sujet force-t-il ?",
    "c": [
@@ -637,14 +724,21 @@
    "e": "BM trouvée en allant vers la flexion du coude et du poignet."
   },
   {
-   "t": "open",
-   "q": "Cette technique peut-elle être pratiquée par le patient seul ?",
-   "a": "<strong>Oui</strong> : le cours précise que cette méthode peut être facilement <strong>auto-réalisée</strong> par le sujet."
+   "t": "mcq",
+   "q": "Dans quel sens cherche-t-on la <strong>BM</strong> des extenseurs ?",
+   "c": [
+    "Vers la flexion du coude et du poignet",
+    "Vers la supination",
+    "Vers l’abduction",
+    "Vers l’extension du poignet"
+   ],
+   "a": 0,
+   "e": "La BM se cherche à l’opposé du mouvement du muscle."
   }
  ]
 };
 
-  var LOCAL_IDS = ["ms-rappel","ms-grand-pectoral","ms-petit-pectoral","ms-grand-dorsal","ms-infra-epineux","ms-supra-epineux","ms-sous-scapulaire","ms-biceps","ms-brachial","ms-poignet","ms-quiz"];
+  var LOCAL_IDS = ["ms-rappel","ms-grand-pectoral","ms-petit-pectoral","ms-grand-dorsal","ms-infra-epineux","ms-supra-epineux","ms-sous-scapulaire","ms-biceps","ms-brachial","ms-flechisseurs","ms-extenseurs","ms-synthese","ms-quiz"];
   var SUB_LABELS_LOCAL = {
     "ms-rappel": "📌 Rappel du protocole",
     "ms-grand-pectoral": "💪 Grand pectoral",
@@ -655,7 +749,9 @@
     "ms-sous-scapulaire": "💪 Sous-scapulaire",
     "ms-biceps": "💪 Biceps brachial",
     "ms-brachial": "💪 Brachial",
-    "ms-poignet": "💪 Fléchisseurs / extenseurs du poignet",
+    "ms-flechisseurs": "💪 Fléchisseurs du poignet",
+    "ms-extenseurs": "💪 Extenseurs du poignet",
+    "ms-synthese": "📊 Synthèse",
     "ms-quiz": "🎯 Quiz général"
   };
 
@@ -681,6 +777,13 @@
     if (!keepScroll) window.scrollTo({ top: 0 });
   }
 
+  function showInner(uid, i) {
+    var w = document.getElementById('it-' + uid);
+    if (!w) return;
+    w.querySelectorAll(':scope > .itabs > .itab').forEach(function (b) { b.classList.toggle('active', +b.dataset.i === i); });
+    w.querySelectorAll(':scope > .ipane').forEach(function (p) { p.classList.toggle('active', +p.dataset.i === i); });
+  }
+
   /* Planches du cours : les images ne se chargent qu'à l'ouverture de l'accordéon */
   function openGallery(id) {
     var el = document.getElementById(id);
@@ -695,7 +798,7 @@
   }
 
   (function () {
-    var KEYS = ["ms-grand-pectoral", "ms-petit-pectoral", "ms-grand-dorsal", "ms-infra-epineux", "ms-supra-epineux", "ms-sous-scapulaire", "ms-biceps", "ms-brachial", "ms-poignet"], all = [];
+    var KEYS = ["ms-grand-pectoral", "ms-petit-pectoral", "ms-grand-dorsal", "ms-infra-epineux", "ms-supra-epineux", "ms-sous-scapulaire", "ms-biceps", "ms-brachial", "ms-flechisseurs", "ms-extenseurs"], all = [];
     KEYS.forEach(function (k) {
       if (!QUIZ[k]) return;
       renderQuiz(document.getElementById('quiz-' + k), QUIZ[k], { title: 'Mini-quiz de révision' });
